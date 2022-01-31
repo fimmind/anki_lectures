@@ -1,0 +1,51 @@
+deck:
+  id: 1161815265
+  name: University::1-st Semester::Calculus (proofs)
+model:
+  id: 1761624185
+  name: UUIDLatexCloze
+  latex:
+    svg: True
+    pre: |
+      \documentclass[12pt, a5paper]{article}
+      \usepackage[width=10cm, top=0.5cm, bottom=2cm]{geometry}
+
+      \usepackage[T1,T2A]{fontenc}
+      \usepackage[utf8]{inputenc}
+      \usepackage[english,russian]{babel}
+      \usepackage{libertine}
+
+      \usepackage{amsmath}
+      \usepackage{amssymb}
+      \usepackage{amsthm}
+      \usepackage{mathrsfs}
+
+      \setlength{\parindent}{0pt}
+
+      \renewcommand{\thesection}{}
+      \renewcommand{\thesubsection}{}
+      \renewcommand{\thesubsubsection}{}
+      \renewcommand{\theparagraph}{}
+
+      \newenvironment{note}[1]{\par\noindent\rule{\linewidth}{0.1mm}}{}
+      \newenvironment{cloze}[2][\ldots]{}{}
+
+      \begin{document}
+      \pagestyle{empty}
+      \noindent\rule{0.01mm}{0.01mm}\hfill\rule{0.01mm}{0.01mm}
+    post: |
+      \end{document}
+  template:
+    front: |
+      {{cloze:Text}}
+    back: |
+      {{cloze:Text}}
+
+      {{#Back Extra}}
+      <br><br><br>
+      {{Back Extra}}
+      {{/Back Extra}}
+    css: |
+      .card {
+        text-align: center;
+      }
