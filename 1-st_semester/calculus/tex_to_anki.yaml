@@ -7,7 +7,7 @@ model:
   latex:
     svg: True
     pre: |
-      \documentclass[12pt, a5paper]{article}
+      \documentclass[11pt, a5paper]{article}
       \usepackage[width=10cm, top=0.5cm, bottom=2cm]{geometry}
 
       \usepackage[T1,T2A]{fontenc}
