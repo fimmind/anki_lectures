@@ -10,7 +10,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
-\usepackage{changepage}
+\usepackage{framed}
 
 \setlength{\parindent}{0pt}
 
@@ -20,7 +20,7 @@
 \renewcommand{\theparagraph}{}
 
 \newenvironment{note}[1]{\subsubsection{(#1)}}{}
-\newenvironment{cloze}[2][\ldots]{\begin{adjustwidth}{0.5cm}{0cm}}{\end{adjustwidth}}
+\newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
 \newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
 
 \begin{document}
