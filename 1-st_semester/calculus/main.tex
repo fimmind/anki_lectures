@@ -19,7 +19,7 @@
 \renewcommand{\thesubsubsection}{Note \arabic{subsubsection}}
 \renewcommand{\theparagraph}{}
 
-\newenvironment{note}[1]{\subsubsection{(#1)}}{}
+\newenvironment{note}[1]{\subsubsection{}}{}
 \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
 \newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
 
@@ -44,7 +44,7 @@
     \end{note}
 
     \begin{note}{010c7f55d37742fea697ee54e1b20715}
-        Как показать, что произвольное бесконечное множество \( A \) содерждит
+        Как показать, что произвольное бесконечное множество \( A \) содержит
         счётное подмножество?
 
         \begin{cloze}{1}
@@ -61,8 +61,8 @@
     \end{note}
 
     \begin{note}{61cad32098d341eb8086313887d6cd8c}
-        Как показать, что любое подмножество \( B \) счётного подмножества \( A
-        \) счётно?
+        Как показать, что любое бесконечное подмножество \( B \) счётного
+        подмножества \( A \) счётно?
 
         \begin{cloze}{1}
             Пронумеровать элементы множества \( B \) в порядке их появления в
@@ -82,11 +82,11 @@
 
     \begin{note}{bad29a5101fe46c3bd91ed4d7f33015b}
         Как показать, что не более чем счётное объединение не более чем счётных
-        множеств не более чем счётное?
+        множеств не более чем счётно?
 
         \begin{cloze}{1}
-            Расположить элементы множеств по строкам в бесконечную таблицу и
-            пронумеровать их в порядке их появления на ``побочных'' диагоналях.
+            Расположить элементы множеств по строкам в таблицу и пронумеровать
+            их в порядке их появления на ``побочных'' диагоналях.
         \end{cloze}
     \end{note}
 
@@ -99,6 +99,162 @@
             , \) где \[
                 \mathbb Q _q := \left\{ \frac{p}{q} \mid p \in \mathbb Z  \right\}.
             \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{fa0bde6f987c45f9b12f1e7a19f5ed7f}
+        Пусть \( [a,  b] \) --- невырожденный отрезок. Как можно задать биекцию
+        \( \varphi : [a,  b] \to [0, 1] \)?
+
+        \begin{cloze}{1}
+            \[
+                \varphi(x) = \frac{(x - a)^{n}}{(b - a)^{n}}, \quad n \in
+                \mathbb N.
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{d7dc9d0004e9406e8bedb136412f6d07}
+        Как доказать, что для любого бесконечного множества \( A \) и его конечного
+        подмножества \( B \) (пусть \( |B| = m \)) \[
+            A \setminus B \sim  A?
+        \]
+
+        \begin{cloze}{1}
+            Рассмотрим произвольную последовательность \[
+                \{ x_n \}_{n = 1} ^{\infty }
+            \] несовпадающих элементов множества \( A \) такую, что первые её \( m \)
+            элементов --- это все элементы множества \( B. \) Обозначим теперь \[
+                \varphi(x) = \begin{cases}
+                    x_{k + m}, & x = x_k, \\
+                    x, & x \not\in \{ x_n \}_{n = 1}^{\infty }.
+                \end{cases}
+            \] Тогда \( \varphi : A \to A \setminus B \) --- биекция, а значит
+            \( A \setminus B \sim A. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{75dda33bf56f4c7dae2140052f8d6f52}
+        Как доказать, что \( [0, 1] \sim \mathbb R  \)?
+
+        \begin{cloze}{1}
+            \begin{itemize}
+                \item \( [0, 1] \sim (0, 1),  \) поскольку \( (0, 1) = [0, 1]
+                    \setminus \{ 0, 1 \},  \)
+                \item \( (0, 1) \sim \mathbb R, \)  поскольку \( \cot (\pi
+                    x)|_{(0, 1)} \) --- биекция.
+            \end{itemize}
+            Получаем \( [0, 1] \sim (0, 1) \sim \mathbb R \implies [0, 1] \sim
+            \mathbb R. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{c8ec225de29d4338add7adcea48cc2a2}
+        Приведите пример системы вложенных отрезков в множестве \( \mathbb Q  \)
+        для которой не выполняется аксиома Кантора.
+
+        \begin{cloze}{1}
+            Можно рассмотреть последовательность вложенных отрезков \[
+                \{ [1;2], [1{,}4;1{,}5], [1{,}41;1{,}42],
+                    [1{,}414;1{,}415],\ldots \}
+            \] концы которых --- все более и более точные десятичные приближения
+            иррационального числа \( \sqrt{2}. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{e12a9ee541074f3f83c0236b906973d1}
+        \[
+            A \setminus (A \setminus B) = \begin{icloze}{1}A \cap B.\end{icloze}
+        \]
+    \end{note}
+
+    \begin{note}{59b526f72a4343fb936d1fa20561c886}
+        Как доказать, что \; \( C_{n + 1}^{k + 1} = C_n^k + C_n^{k + 1} \)?
+        \begin{cloze}{1}
+            \begin{align*}
+                C_{n + 1}^{k + 1} &= \frac{(n + 1)!}{(k + 1)!(n - k)!} \\
+                &= C_n^k \cdot \left( \frac{n + 1}{k + 1}  \right) \\
+                &= C_n^k \cdot \left( 1 + \frac{n - k}{k + 1}  \right) \\
+                &= C_n^k + \frac{n! (n - k)}{k!(n - k)!(k + 1)} \\
+                &= C_n^k + \frac{n!}{(k + 1)!(n - (k + 1))!} \\
+                &= C_n^k + C_n^{k + 1}.
+            \end{align*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{a20a03ca2ebe4b5d85249845f15f1561}
+        Как доказать, что во всяком конечном подмножестве \(\mathbb{R}\) есть
+        наибольший элемент?
+
+        \begin{cloze}{1}
+            По индукции:
+            \begin{itemize}
+                \item максимум множества из одного элемента есть сам этот
+                    элемент;
+                \item максимум множества из \( n > 1 \) элемента есть либо
+                    максимум каких-либо \( n - 1 \) его элементов, либо значение
+                    оставшегося \( n \)-ого элемента.
+            \end{itemize}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{02fab2f581504672bc9dc06a5dfa4166}
+        Как доказать, что во всяком непустом ограниченном сверху множестве \( A
+        \subset \mathbb Z \) есть наибольший элемент?
+
+        \begin{cloze}{1}
+            Выберем произвольный \( x_0 \in A \) и обозначим \[
+                \begin{gathered}
+                    A_0 = \{ x \mid x \in A \land x \geqslant x_0 \},  \\
+                    A_1 = A \setminus A_0.
+                \end{gathered}
+            \]
+            Тогда \( A_0 \) --- конечное подмножество \( \mathbb R, \) а значит
+            существует \( \max A_0. \) При этом любой элемент из \( A_1 \)
+            строго меньше любого элемента из \( A_0,  \) а значит \[
+                \forall x \in A \quad x \leqslant \max A_0,
+            \]
+            т.е. \( \max A = \max A_0. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{c7dd2e717d9c47199cf723b912cf4e34}
+        Как доказать, что во всяком интервале есть хотя бы одно рациональное
+        число?
+
+        \begin{cloze}{1}
+            Пусть \( (a, b) \) --- интервал в \( \mathbb R. \) Тогда по аксиоме
+            Архимеда \[
+               \exists n \in \mathbb N \quad n > (b - a).
+            \]
+            Нетрудно показать, что \[
+                \dfrac{\lfloor na \rfloor + 1}{n} \in (a, b) \cap \mathbb Q .
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{d8e380894b49477d9b690778e94ae82c}
+        Как доказать, что у любой последовательности может быть не более одного
+        предела?
+
+        \begin{cloze}{1}
+            Допустим обратное: \( \quad x_n \to a, \quad x_n \to b, \quad a \neq b. \)
+
+            Возьмём \( \varepsilon = \frac{|b - a|}{2} > 0. \) Тогда из
+            определения предела \[
+                \exists N \in \mathbb N \quad \forall n > N \quad
+                \begin{cases}
+                    |x_n - a| < \varepsilon, \\
+                    |x_n - b| < \varepsilon.
+                \end{cases}
+            \]
+            Но тогда
+            \begin{multline*}
+                |a - b| = |a - x_n + x_n - b| \leqslant |a - x_n| + |b - x_n| \\
+                < \varepsilon + \varepsilon = |a - b|,
+            \end{multline*}
+            т.е. \( |a - b| < |a - b| \implies \) противоречие \( \implies a =
+            b. \)
         \end{cloze}
     \end{note}
 \end{document}
