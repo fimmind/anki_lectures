@@ -10,6 +10,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
+\usepackage{changepage}
 
 \setlength{\parindent}{0pt}
 
@@ -18,8 +19,9 @@
 \renewcommand{\thesubsubsection}{}
 \renewcommand{\theparagraph}{}
 
-\newenvironment{note}[1]{\par\noindent\rule{\linewidth}{0.1mm}}{}
-\newenvironment{cloze}[2][\ldots]{}{}
+\newenvironment{note}[1]{\pagebreak[3]\par\noindent\rule{\linewidth}{0.1mm}}{}
+\newenvironment{cloze}[2][\ldots]{\begin{adjustwidth}{0.5cm}{0cm}}{\end{adjustwidth}}
+\newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
 
 \begin{document}
     \begin{note}{61211f8d77d34c9fa47e8872540de683}
