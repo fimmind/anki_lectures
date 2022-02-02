@@ -210,11 +210,18 @@
                 \end{gathered}
             \]
             Тогда \( A_0 \) --- конечное подмножество \( \mathbb R, \) а значит
-            существует \( \max A_0. \) При этом любой элемент из \( A_1 \)
-            строго меньше любого элемента из \( A_0,  \) а значит \[
-                \forall x \in A \quad x \leqslant \max A_0,
-            \]
-            т.е. \( \max A = \max A_0. \)
+            существует \( \max A_0. \) При этом для любого \( x \in A \) имеем
+            два случая:
+            \begin{enumerate}
+                \item если \( x \in A_0,  \) то \( x \leqslant \max A_0 \) по
+                    определению максимума;
+                \item если \( x \not\in A_0,  \) то по построению \( A_0 \)
+                    имеем \[ \forall \hat{x} \in A_0 \quad x < \hat{x}, \] а
+                    значит \( x < \max A_0. \)
+            \end{enumerate}
+
+            В любом случае имеем \( x \leqslant \max A_0, \) так что \( \max A_0
+            = \max A \) по определению.
         \end{cloze}
     \end{note}
 
@@ -225,11 +232,27 @@
         \begin{cloze}{1}
             Пусть \( (a, b) \) --- интервал в \( \mathbb R. \) Тогда по аксиоме
             Архимеда \[
-               \exists n \in \mathbb N \quad n > (b - a).
-            \]
-            Нетрудно показать, что \[
+               \exists n \in \mathbb N \quad n > \frac{1}{b - a} \implies b - a
+               > \frac{1}{n}.
+            \] Нетрудно показать, что \[
                 \dfrac{\lfloor na \rfloor + 1}{n} \in (a, b) \cap \mathbb Q .
             \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{9428e0290086401db17d784b26f66839}
+        Если \( \forall \varepsilon > 0 \quad |b - a| < \varepsilon, \) то
+        \begin{icloze}{1}\( a = b. \)\end{icloze}
+    \end{note}
+
+    \begin{note}{3eaaa1f0f8624d8db6fa6824b7394a4a}
+        Как доказать, что если \( \forall \varepsilon > 0 \quad |b - a| <
+        \varepsilon, \) то \( a = b \)?
+
+        \begin{cloze}{1}
+            Допустим, что \( a \neq b. \) Тогда для \( \varepsilon = |b - a| > 0
+            \) не выполняется \( \varepsilon < |b - a| \implies \) противоречие
+            \( \implies a = b. \)
         \end{cloze}
     \end{note}
 
@@ -238,23 +261,23 @@
         предела?
 
         \begin{cloze}{1}
-            Допустим обратное: \( \quad x_n \to a, \quad x_n \to b, \quad a \neq b. \)
-
-            Возьмём \( \varepsilon = \frac{|b - a|}{2} > 0. \) Тогда из
-            определения предела \[
-                \exists N \in \mathbb N \quad \forall n > N \quad
+            Из определения предела \[
+                \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad
                 \begin{cases}
-                    |x_n - a| < \varepsilon, \\
-                    |x_n - b| < \varepsilon.
+                    |x_n - a| < \frac{\varepsilon}{2}, \\
+                    |x_n - b| < \frac{\varepsilon}{2}.
                 \end{cases}
             \]
-            Но тогда
-            \begin{multline*}
-                |a - b| = |a - x_n + x_n - b| \leqslant |a - x_n| + |b - x_n| \\
-                < \varepsilon + \varepsilon = |a - b|,
-            \end{multline*}
-            т.е. \( |a - b| < |a - b| \implies \) противоречие \( \implies a =
-            b. \)
+            Но тогда \[
+                \begin{aligned}
+                    |a - b| &= |a - x_n + x_n - b| \leqslant |a - x_n| + |b - x_n| < \\
+                            &< \frac{\varepsilon}{2} +
+                            \frac{\varepsilon}{2} = \varepsilon
+                \end{aligned}
+            \] \(
+                \implies \forall \varepsilon > 0 \quad |b - a| <
+                \varepsilon \implies a = b.
+            \)
         \end{cloze}
     \end{note}
 \end{document}
