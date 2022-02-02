@@ -273,12 +273,124 @@
                 \begin{aligned}
                     |a - b| &= |a - x_n + x_n - b| \leqslant |a - x_n| + |b - x_n| < \\
                             &< \frac{\varepsilon}{2} +
-                            \frac{\varepsilon}{2} = \varepsilon
+                            \frac{\varepsilon}{2} = \varepsilon.
                 \end{aligned}
-            \] \(
-                \implies \forall \varepsilon > 0 \quad |b - a| <
+            \]
+            Получаем, что \(
+                \forall \varepsilon > 0 \quad |b - a| <
                 \varepsilon \implies a = b.
             \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{1e1fe886e2334eb18a97c2ab2cfadc49}
+        Как доказать, что любая сходящаяся последовательность ограничена сверху?
+
+        \begin{cloze}{1}
+            Пусть \( x_n \to a \in \mathbb R. \) Возьмём \( \varepsilon > 0; \)
+            тогда по определению предела \[
+                \exists N \in \mathbb N \quad \forall n > N \quad a -
+                1 < x_n < a + 1,
+            \] т.е. множество \( A := \{ x_n \mid n > N \} \) ограниченно сверху
+            значением \( a + 1, \) но тогда все множество \( A \) ограниченно
+            сверху значением \[
+                \max \{ x_1, x_2, \ldots, x_N, a - 1 \}.
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{4712e0fed7a44e8bac81bae5c16d1810}
+        Если \( \forall \varepsilon > 0 \quad a - b < \varepsilon, \) то
+        \begin{icloze}{1}\( a \leqslant b. \)\end{icloze}
+    \end{note}
+
+    \begin{note}{b0c8d698cc304040a59c01dc5852ed8b}
+        Как доказать, что если \( \forall \varepsilon > 0 \quad a - b <
+        \varepsilon, \) то \( a \leqslant b \)?
+
+        \begin{cloze}{1}
+            Допустим, что \( a > b. \) Тогда для \( \varepsilon = a - b > 0 \)
+            не выполняется \( a - b < \varepsilon \implies  \) противоречие \(
+            \implies a \leqslant b. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{f492d02ab40942c3bb31727a84b97f36}
+        Как доказать теорему о предельном переходе в неравенстве для
+        последовательностей?
+
+        \begin{cloze}{1}
+            Пусть \( \quad x_n \to a, \quad y_n \to b, \quad \forall n\; x_n
+            \leqslant y_n. \)
+
+            Тогда из определения предела \[
+                \begin{gathered}
+                    \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
+                    \forall n > N \quad \begin{cases}
+                        a - \frac{\varepsilon}{2} < x_n, \\
+                        y_n < b + \frac{\varepsilon}{2}
+                    \end{cases} \\
+                    \begin{aligned}
+                        &\implies a - \frac{\varepsilon}{2} < x_n \leqslant y_n < b + \frac{\varepsilon}{2} \\
+                        &\implies a - b < \varepsilon.
+                    \end{aligned}
+                \end{gathered}
+            \]
+            Получаем, что \( \forall \varepsilon > 0 \quad a - b < \varepsilon
+            \implies a \leqslant b. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{6d56b828715344a4981b505177237b3d}
+        Как доказать теорему о сжатой последовательности?
+
+        \begin{cloze}{1}
+            Пусть \( \quad x_n \to a, \quad z_n \to a, \quad
+            \forall n\; x_n \leqslant y_n \leqslant z_n. \)
+
+            Тогда из определения предела \[
+                \begin{gathered}
+                    \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
+                    \forall n > N \quad \begin{cases}
+                        a - \varepsilon < x_n, \\
+                        z_n < a + \varepsilon
+                    \end{cases} \\
+                    \begin{aligned}
+                        &\implies a - \varepsilon < x_n \leqslant y_n \leqslant
+                        x_n < a + \varepsilon \\
+                        &\implies a - \varepsilon < y_n < a + \varepsilon \\
+                        &\overset{\text{\tiny def}}\implies y_n \to a.
+                    \end{aligned}
+                \end{gathered}
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{120b6a6635764d8eb06a8353c96ff71c}
+        Как доказать, что \( \forall \{ x_n \} \quad x \to a \iff x - a \to 0 \)?
+
+        \begin{cloze}{1}
+            Из определения предела \begin{multline*}
+                x \to a \overset{\text{\tiny def}}\iff  \\
+                \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
+                \forall n > N \quad |x - a| < \varepsilon \\
+                \overset{\text{\tiny def}}\iff x - a \to 0.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{ee8b4fecca4148bcb931714d65a0f370}
+        Как доказать, что произведение бесконечно малой последовательности на
+        ограниченную есть бесконечно малая?
+
+        \begin{cloze}{1}
+            Пусть \( x_n \to 0, \quad \forall n\; |y_n| \leqslant M \in \mathbb R _+. \)
+
+            Тогда из определения предела \begin{multline*}
+                \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
+                \forall n > N \quad |x_n| < \frac{\varepsilon}{M} \\
+                \implies |x_n y_n| < \varepsilon \overset{\text{\tiny def}}\implies  x_n y_n \to 0.
+            \end{multline*}
         \end{cloze}
     \end{note}
 \end{document}
