@@ -28,7 +28,6 @@ model:
       \renewcommand{\thesubsubsection}{Note \arabic{subsubsection}}
       \renewcommand{\theparagraph}{}
 
-      \newenvironment{note}[1]{\subsubsection{(#1)}}{}
       \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
       \newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
 
