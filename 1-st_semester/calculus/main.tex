@@ -291,7 +291,7 @@
         Как доказать, что любая сходящаяся последовательность ограничена сверху?
 
         \begin{cloze}{1}
-            Пусть \( x_n \to a \in \mathbb R. \) Возьмём \( \varepsilon > 0; \)
+            Пусть \( x_n \to a \in \mathbb R. \) Возьмём \( \varepsilon = 1; \)
             тогда по определению предела \[
                 \exists N \in \mathbb N \quad \forall n > N \quad a -
                 1 < x_n < a + 1,
@@ -363,7 +363,7 @@
                         &\implies a - \varepsilon < x_n \leqslant y_n \leqslant
                         x_n < a + \varepsilon \\
                         &\implies a - \varepsilon < y_n < a + \varepsilon \\
-                        &\overset{\text{\tiny def}}\implies y_n \to a.
+                        &\overset{\!\!\text{\tiny def}}\implies y_n \to a.
                     \end{aligned}
                 \end{gathered}
             \]
@@ -375,10 +375,10 @@
 
         \begin{cloze}{1}
             Из определения предела \begin{multline*}
-                x \to a \overset{\text{\tiny def}}\iff  \\
+                x \to a \overset{\hspace{-1pt}\text{\tiny def}}\iff  \\
                 \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
                 \forall n > N \quad |x - a| < \varepsilon \\
-                \overset{\text{\tiny def}}\iff x - a \to 0.
+                \overset{\hspace{-1pt}\text{\tiny def}}\iff x - a \to 0.
             \end{multline*}
         \end{cloze}
     \end{note}
@@ -388,12 +388,219 @@
         ограниченную есть бесконечно малая?
 
         \begin{cloze}{1}
-            Пусть \( x_n \to 0, \quad \forall n\; |y_n| \leqslant M \in \mathbb R _+. \)
+            Пусть \( x_n \to 0, \quad \exists M > 0 \quad \forall n\; |y_n| \leqslant M. \)
 
             Тогда из определения предела \begin{multline*}
                 \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad
                 \forall n > N \quad |x_n| < \frac{\varepsilon}{M} \\
-                \implies |x_n y_n| < \varepsilon \overset{\text{\tiny def}}\implies  x_n y_n \to 0.
+                \implies |x_n y_n| < \varepsilon \overset{\!\!\text{\tiny def}}\implies  x_n y_n \to 0.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{40b8a99aaa204cab959c483aa6fee51c}
+        Как доказать, что если \( \quad x_n \to a, \quad y_n \to b, \quad \) то \[
+            x_n + y_n \to a + b?
+        \]
+
+        \begin{cloze}{1}
+            Из определения предела \[
+                \begin{gathered}
+                    \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad \forall n > \mathbb N \quad \begin{cases}
+                        |x_n - a| < \frac{\varepsilon}{2}, \\
+                        |y_n - b| < \frac{\varepsilon}{2}
+                    \end{cases} \\
+                    \begin{aligned}
+                        &\implies |(x_n + y_n) - (a + b)| \leqslant |x_n - a| + |y_n - b| < \varepsilon \\
+                        &\overset{\!\!\text{\tiny def}}\implies x_n + y_n \to a + b.
+                    \end{aligned}
+                \end{gathered}
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{e6c2b0c279e043f4b1582b4b93a0a695}
+        Как доказать, что если \( \quad x_n \to a, \quad y_n \to b, \quad \) то \[
+            x_n y_n \to ab?
+        \]
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                x_n y_n - ab = x_n y_n - x_n b + x_n b - ab \\
+                = \underbrace{x_n}_{\text{орг.}} \underbrace{(y_n -
+                b)}_{\text{б.м.}} - \underbrace{b}_{\text{огр.}}
+                \underbrace{(x_n - a)}_{\text{б.м.}} \longrightarrow 0 \\
+                \implies x_n y_n \to ab.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{0ad2f5ec6e414af58c65e717bab87321}
+        Как доказать, что если \( x_n \to a \neq 0,  \) то \( \left\{ \frac{1}{x_n} \right\} \) ограничена?
+
+        \begin{cloze}{1}
+            Возмем \( \varepsilon = \frac{|a|}{2} > 0. \) Тогда по определению предела \[
+                \begin{gathered}
+                    \exists N \in \mathbb N \quad \forall n > N \quad |x_n - a| < \frac{|a|}{2} \\
+                    \begin{aligned}
+                        &\implies |a| = |a - x_n + x_n| \leqslant |x - x_n| + |x_n| < \frac{|a|}{2} + |x_n| \\
+                        &\implies \forall n > N \quad |x_n| > \frac{|a|}{2}. \\
+                    \end{aligned}
+                \end{gathered}
+            \]
+            Обозначим \( k := \min \left\{ |x_1|, |x_2|, \ldots, |x_N|, \frac{|a|}{2} \right\}. \) Тогда \[
+                \forall n \quad \frac{1}{|x_n|} \leqslant \frac{1}{k}.
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{321261a3f4294e4e93998ebc9b7ee7b6}
+        Как доказать, что если \( \quad x_n \to a, \quad \) то \[
+            \frac{1}{y_n} \to \frac{1}{a}?
+        \]
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                \frac{1}{x_n} - \frac{1}{a} = \frac{a - x_n}{x_n a} =
+                \underbrace{(a - x_n)}_{\text{б.м.} }  \cdot
+                \underbrace{\frac{1}{x_n a}}_{\text{огр.} } \to 0 \\
+                \implies \frac{1}{x_n} \to \frac{1}{a}.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{c0d240f325d2436fa82b626d092650ad}
+        Как доказать, что если \( \quad x_n \to a, \quad y_n \to b \neq 0, \quad \) то \[
+            \frac{x_n}{y_n} \to \frac{a}{b}?
+        \]
+
+        \begin{cloze}{1}
+            \[
+                \frac{x_n}{y_n} = x_n \cdot \frac{1}{y_n} \to a \cdot \frac{1}{b} = \frac{a}{b}.
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{935ce2afa1d8446eaf3c05d6a8e7cc9f}
+        Как доказать, что если \( x_n \to a,  \) то \( |x_n| \to |a| \)?
+
+        \begin{cloze}{1}
+            Из определения предела
+            \begin{multline*}
+                \forall \varepsilon > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad |x_n - a| < \varepsilon \\
+                \implies | |x_n| - |a| | \leqslant  |x_n - a| < \varepsilon \overset{\!\!\text{\tiny def}}\implies |x_n| \to |a|.
+            \end{multline*}
+        \end{cloze}
+   \end{note}
+
+   \begin{note}{530467bc97fb479e9e07f028a0339d42}
+        Пусть \( x_n \to +\infty \) и \( \{ y_n \} \) ограниченна снизу. Как доказать, что \[ x_n + y_n \to +\infty? \]
+
+        \begin{cloze}{1}
+            \( \{ y_n \} \) ограничена \( \implies \exists m > 0 \quad \forall n \; y_n > m. \)
+
+            Тогда из определения предела
+            \begin{multline*}
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > E - m \\
+                \implies x_n + y_n > E \overset{\!\!\text{\tiny def}}\implies x_n + y_n \to +\infty.
+            \end{multline*}
+        \end{cloze}
+   \end{note}
+
+    \begin{note}{c6a76a8262d54e07a6c35d1ef23fb6df}
+        Как доказать, что если \( x_n \to +\infty, \) то \( (-x_n) \to -\infty \)?
+
+        \begin{cloze}{1}
+            Из определения предела
+            \begin{multline*}
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > E \\
+                \implies -x_n < -E \overset{\!\!\text{\tiny def}}\implies (-x_n) \to -\infty.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{f3549ee7a37d4d2983df8f7b6f7308e2}
+        Как доказать, что если \( x_n \to -\infty \) и \( \{ y_n \} \) ограничена сверху, то \[
+            x_n + y_n \to -\infty?
+        \]
+
+        \begin{cloze}{1}
+            Очевидно, что \( -x_n \to -\infty  \) и \( \{ -y_n \} \)  ограничена снизу, значит \[
+                -x_n - y_n \to +\infty \implies x_n + y_n \to -\infty.
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{2a9c150676e64b28b32989c7bb381a61}
+        Как доказать, что если \( x_n \to \infty  \) и \( \{ y_n \} \) ограниченна, что \[
+            x_n + y_n \to \infty?
+        \]
+
+        \begin{cloze}{1}
+            \( \{ y_n \} \) ограничена \( \implies \exists m, M \in \mathbb R \quad \forall n \quad m < y_n < M. \)
+
+            Тогда из определения предела
+            \begin{multline*}
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad \left[ {
+                    \begin{array}{@{}l@{\quad}l@{}}
+                        x_n > E - M, \\
+                        x_n < -E - m
+                    \end{array}
+                } \right. \\
+                \implies \left[ {
+                    \begin{array}{@{}l@{\quad}l@{}}
+                        x_n + y_n > E, \\
+                        x_n + y_n < -E
+                    \end{array}
+                } \right.
+                \implies |x_n + y_n| > E \\
+                \overset{\!\!\text{\tiny def}}\implies x_n + y_n \to \infty.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{8eb238f0ba4e4993a464d39c5aa7d5ad}
+		Как доказать, что если \( x_n \to \pm \infty  \) и \( \forall n \quad y_n \geqslant b > 0,  \) то \[
+            x_n y_n \to \pm \infty?
+		\]
+
+        \begin{cloze}{1}
+            Докажем для определённости случай с \( x_n \to +\infty. \)
+
+            Тогда из определения предела
+            \begin{multline*}
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > \frac{E}{b} \\
+                \implies x_n y_n > E \overset{\!\!\text{\tiny def}}\implies x_n y_n \to +\infty.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{136d69a689a14768bf3886968976cd48}
+		Как доказать, что если \( x_n \to \pm \infty  \) и \( \forall n \quad y_n \leqslant b < 0,  \) то \[
+            x_n y_n \to \pm \infty?
+		\]
+
+        \begin{cloze}{1}
+            Докажем для определённости случай с \( x_n \to +\infty. \)
+
+            Тогда из определения предела
+            \begin{multline*}
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > \frac{E}{b} \implies x_n b < E \\
+                \implies x_n y_n \leqslant x_n b < E \implies x_n y_n < E \\
+                \overset{\!\!\text{\tiny def}}\implies x_n y_n \to -\infty.
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{42c2ae7685c94559ac1625d9957beaef}
+		Как доказать, что если \( x_n \to \infty  \) и \( \forall n \quad |y_n| \geqslant b > 0,  \) то \[
+            x_n y_n \to \infty?
+		\]
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                x_n \to \infty \implies |x_n| \to +\infty \implies |x_n y_n| \to +\infty \\
+                \implies x_n y_n \to \infty.
             \end{multline*}
         \end{cloze}
     \end{note}
