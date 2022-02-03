@@ -22,7 +22,11 @@
 
 \newenvironment{note}[1]{\goodbreak\par\subsubsection{\hfill \color{lightgray}\tiny #1}}{}
 \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
-\newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
+\newenvironment{icloze}[2][\ldots]{%
+  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2:: }%
+}{%
+  \text{\tiny \color{lightgray}\}\}}\unskip%
+}
 
 \begin{document}
     \begin{note}{61211f8d77d34c9fa47e8872540de683}
