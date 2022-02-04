@@ -443,7 +443,7 @@
                 \begin{gathered}
                     \exists N \in \mathbb N \quad \forall n > N \quad |x_n - a| < \frac{|a|}{2} \\
                     \begin{aligned}
-                        &\implies |a| = |a - x_n + x_n| \leqslant |x - x_n| + |x_n| < \frac{|a|}{2} + |x_n| \\
+                        &\implies |a| = |a - x_n + x_n| \leqslant |a - x_n| + |x_n| < \frac{|a|}{2} + |x_n| \\
                         &\implies \forall n > N \quad |x_n| > \frac{|a|}{2}. \\
                     \end{aligned}
                 \end{gathered}
@@ -456,7 +456,7 @@
 
     \begin{note}{321261a3f4294e4e93998ebc9b7ee7b6}
         Как доказать, что если \( \quad x_n \to a, \quad \) то \[
-            \frac{1}{y_n} \to \frac{1}{a}?
+            \frac{1}{x_n} \to \frac{1}{a}?
         \]
 
         \begin{cloze}{1}
@@ -525,7 +525,7 @@
         \]
 
         \begin{cloze}{1}
-            Очевидно, что \( -x_n \to -\infty  \) и \( \{ -y_n \} \)  ограничена снизу, значит \[
+            Очевидно, что \( -x_n \to +\infty  \) и \( \{ -y_n \} \)  ограничена снизу, значит \[
                 -x_n - y_n \to +\infty \implies x_n + y_n \to -\infty.
             \]
         \end{cloze}
@@ -537,14 +537,14 @@
         \]
 
         \begin{cloze}{1}
-            \( \{ y_n \} \) ограничена \( \implies \exists m, M \in \mathbb R \quad \forall n \quad m < y_n < M. \)
+            \( \{ y_n \} \) ограничена \( \implies \exists M \in \mathbb R \quad \forall n \quad -M < y_n < M. \)
 
             Тогда из определения предела
             \begin{multline*}
                 \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad \left[ {
                     \begin{array}{@{}l@{\quad}l@{}}
-                        x_n > E - M, \\
-                        x_n < -E - m
+                        x_n > E + M, \\
+                        x_n < -E - M
                     \end{array}
                 } \right. \\
                 \implies \left[ {
@@ -553,7 +553,6 @@
                         x_n + y_n < -E
                     \end{array}
                 } \right.
-                \implies |x_n + y_n| > E \\
                 \overset{\!\!\text{\tiny def}}\implies x_n + y_n \to \infty.
             \end{multline*}
         \end{cloze}
@@ -577,7 +576,7 @@
 
     \begin{note}{136d69a689a14768bf3886968976cd48}
 		Как доказать, что если \( x_n \to \pm \infty  \) и \( \forall n \quad y_n \leqslant b < 0,  \) то \[
-            x_n y_n \to \pm \infty?
+            x_n y_n \to \mp \infty?
 		\]
 
         \begin{cloze}{1}
@@ -585,9 +584,9 @@
 
             Тогда из определения предела
             \begin{multline*}
-                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > \frac{E}{b} \implies x_n b < E \\
-                \implies x_n y_n \leqslant x_n b < E \implies x_n y_n < E \\
-                \overset{\!\!\text{\tiny def}}\implies x_n y_n \to -\infty.
+                \forall E > 0 \quad \exists N \in \mathbb N \quad \forall n > N \quad x_n > \frac{E}{-b} \\
+                \implies x_n b < -E \implies x_n y_n \leqslant x_n b < -E \\
+                \implies x_n y_n < -E \overset{\!\!\text{\tiny def}}\implies x_n y_n \to -\infty.
             \end{multline*}
         \end{cloze}
     \end{note}
