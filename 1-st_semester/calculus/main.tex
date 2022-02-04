@@ -603,4 +603,75 @@
             \end{multline*}
         \end{cloze}
     \end{note}
+
+    \begin{note}{5ddf20539ae042b89ed368baefea93fa}
+        Как доказать, что \( o(c \cdot f(x)) = o(f(x)) \quad \forall c \in \mathbb R \)?
+
+        \begin{cloze}{1}
+            \[
+                o(c \cdot f(x)) \overset{\text{def}}= \underbrace{\alpha(x)}_{\text{б.м.}} \operatorname{\cdot} c \operatorname{\cdot} f(x)
+                = \underbrace{\alpha(x) \operatorname{\cdot} c}_{\text{б.м.} } \operatorname{\cdot} f(x) \overset{\text{def}}= o(f(x)).
+            \]
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{ff3a996ecf5440ef9fec11b8e2b11e57}
+        Как доказать, что \( o(f(x)) \pm o(f(x)) = o(f(x)) \)?
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                o(f(x)) \pm o(f(x)) \overset{\text{def}}= \underbrace{\alpha_1(x)}_{\text{б.м.} }  f(x) \pm \underbrace{\alpha_2(x)}_{\text{б.м.} }  f(x) = \\
+                = \underbrace{(\alpha_1(x) \pm \alpha_2(x))}_{\text{б.м.} }  \operatorname{\cdot} f(x) \overset{\text{def}}= o(f(x)).
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{31f4dbdff85847fd8f20fa30144e98b1}
+        Как доказать, что \( o(f(x)) \operatorname{\cdot} o(g(x)) = o(f(x) \operatorname{\cdot} g(x)) \)?
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                o(f(x)) \operatorname{\cdot} o(g(x)) \overset{\text{def}}= \underbrace{\alpha_1(x)}_{\text{б.м.} }  f(x) \operatorname{\cdot} \underbrace{\alpha_2(x)}_{\text{б.м.} }  \operatorname{\cdot} g(x) \\
+                = \underbrace{\alpha_1(x)\alpha_2(x)}_{\text{б.м.}} \operatorname{\cdot} f(x)g(x) = o(f(x) \operatorname{\cdot} g(x))
+            \end{multline*}
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{892f003287eb48a38ce2353f652924d2}
+        Как доказать, что \( f(x) \sim g(x) \iff f(x) = g(x) + o(g(x)) \)?
+
+        \begin{cloze}{1}
+            \begin{multline*}
+                f(x) \sim g(x) \overset{\hspace{-1pt}\text{\tiny def}}\iff f(x) = \alpha(x) g(x) \iff \\
+                \begin{aligned}
+                    f(x) &= (1 + \alpha'(x)) g(x) = g(x) + \alpha'(x)g(x) \\
+                    &\overset{\text{def}}= g(x) + o(g(x)),
+                \end{aligned}
+            \end{multline*}
+            где \( \quad \alpha(x) \to 1, \quad \alpha'(x) := \alpha(x) - 1 \to 0. \)
+        \end{cloze}
+    \end{note}
+
+    \begin{note}{87497006d56b46f9a80f18cc9ac04c5e}
+        Пусть \( \{ [a_n, b_n] \}_{n = 1}^{\infty } \) --- последовательность стягивающихся отрезков. Как доказать, что \[
+            \exists! c : \quad c \in \bigcap _{n = 1} ^{\infty } [a_n, b_n]?
+        \]
+
+        \begin{cloze}{1}
+            Из аксиомы Кантора о вложенных отрезках имеем существование \( c. \)
+            Рассмотрим теперь произвольный \( \bar{c} \) из \( \bigcap_{n = 1}^{\infty } [a_n, b_n]. \) Тогда
+            \[
+                \forall n \quad \begin{cases}
+                    a_n \leqslant c \leqslant b_n, \\
+                    a_n \leqslant \bar{c} \leqslant b_n
+                \end{cases}
+                \implies a_n - b_n \leqslant c - \bar{c} \leqslant b_n - a_n,
+            \]
+            но по определению стягивающихся отрезков \( a_n - b_n \to 0,  \) а значит по теореме о сжатой последовательности
+            \[
+                c - \bar{c} \to 0 \implies c - \bar{c} = 0 \implies \bar{c} = c.
+            \]
+            Получаем и единственность \( c. \)
+        \end{cloze}
+    \end{note}
 \end{document}
