@@ -1,6 +1,17 @@
-deck:
-  id: 1161815265
-  name: University::1-st Semester::Calculus (proofs)
+decks:
+  1161815265:
+    name: University::1-st Semester::Calculus (proofs)
+    source_files:
+      - 1-st_semester/calculus/main.tex
+  2146803481:
+    name: University::2-nd Semester::Algebra
+    source_files:
+      - 2-nd_semester/algebra/main.tex
+  1225322298:
+    name: University::2-nd Semester::Calculus
+    source_files:
+      - 2-nd_semester/calculus/main.tex
+
 model:
   id: 1761624185
   name: UUIDLatexCloze
