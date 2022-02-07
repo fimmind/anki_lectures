@@ -1,0 +1,52 @@
+deck:
+  id: 2146803481
+  name: University::2-nd Semester::Algebra
+model:
+  id: 1761624185
+  name: UUIDLatexCloze
+  latex:
+    svg: True
+    pre: |
+      \documentclass[11pt, a5paper]{article}
+      \usepackage[width=10cm, top=0.5cm, bottom=2cm]{geometry}
+
+      \usepackage[T1,T2A]{fontenc}
+      \usepackage[utf8]{inputenc}
+      \usepackage[english,russian]{babel}
+      \usepackage{libertine}
+
+      \usepackage{amsmath}
+      \usepackage{amssymb}
+      \usepackage{amsthm}
+      \usepackage{mathrsfs}
+      \usepackage{framed}
+
+      \setlength{\parindent}{0pt}
+
+      \renewcommand{\thesection}{}
+      \renewcommand{\thesubsection}{}
+      \renewcommand{\thesubsubsection}{Note \arabic{subsubsection}}
+      \renewcommand{\theparagraph}{}
+
+      \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
+      \newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
+
+      \begin{document}
+      \pagestyle{empty}
+      \noindent\rule{0.01mm}{0.01mm}\hfill\rule{0.01mm}{0.01mm}
+    post: |
+      \end{document}
+  template:
+    front: |
+      {{cloze:Text}}
+    back: |
+      {{cloze:Text}}
+
+      {{#Back Extra}}
+      <br><br><br>
+      {{Back Extra}}
+      {{/Back Extra}}
+    css: |
+      .card {
+        text-align: center;
+      }
