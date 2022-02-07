@@ -1,0 +1,101 @@
+\documentclass[11pt, a5paper]{article}
+\usepackage[width=10cm, top=0.5cm, bottom=2cm]{geometry}
+
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{libertine}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{framed}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0pt}
+
+\renewcommand{\thesection}{}
+\renewcommand{\thesubsection}{Note \arabic{subsection}}
+\renewcommand{\thesubsubsection}{}
+\renewcommand{\theparagraph}{}
+
+\newenvironment{note}[1]{\goodbreak\par\subsection{\hfill \color{lightgray}\tiny #1}}{}
+\newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
+\newenvironment{icloze}[2][\ldots]{%
+  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2:: }%
+}{%
+  \text{\tiny \color{lightgray}\}\}}\unskip%
+}
+
+\begin{document}
+\section{Лекция 07.02.22}
+\begin{note}{662fbe59ca984f5b820ad1041f1eb840}
+    Пусть \( f(x) : D \subset \mathbb R  \to \mathbb R, a \in D. \)
+    \begin{icloze}{2}Многочлен \( p(x) \) степени \( n \)  такой, что \[
+        \begin{gathered}
+            f(x) = p(x) + o((x - a)^{n}), \\
+            f(a) = p(a),
+        \end{gathered}
+    \]\end{icloze}
+    называется \begin{icloze}{1}многочленом Тейлора функции \( f \) порядка \( n \) в точке \( a. \)\end{icloze}
+\end{note}
+
+\begin{note}{738279ec323b45e29a170a4e41b4bce0}
+    Если многочлен Тейлора функции \( f \) порядка \( n \) в точке \( a \) существует, то \begin{icloze}{1}он единственен.\end{icloze}
+\end{note}
+
+\begin{note}{8f605243b193465799ba06e1576d171e}
+    В чём ключевая идея доказательства единственности многочлена Тейлора?
+
+    \begin{cloze}{1}
+        Пусть коэффициент \( r_m  \) при \( (x - a)^{m} \) --- первый ненулевой коэффициент в многочлене \( p - q \).
+        Тогда \[
+            \frac{p - q}{(x - a)^{m} } \underset{x \to a}\longrightarrow r_m,
+        \] но при этом \[
+            \frac{p - q}{(x - a)^{m} } = o((x - a)^{n - m}) \underset{x \to a}\longrightarrow 0 \implies r_m = 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{f4110a9b63c640be96d810d835d0d1fd}
+    \begin{icloze}{2}Многочлен Тейлора функции \( f \) порядка \( n \) в точке \( a \)\end{icloze} обозначается \begin{icloze}{1}\( T_{a, n} f.  \)\end{icloze}
+\end{note}
+
+\begin{note}{97c12315facb454e987cb94fae99be75}
+\[
+    \left. f(x) \right|_{x = a} \overset{\text{def}}= \begin{icloze}{1}f(a).\end{icloze}
+\]
+\end{note}
+
+\begin{note}{cf7e5ab30b564c139557fd0a940f8204}
+    \[
+        \left. \left((x - a)^{k} \right)^{(n)}  \right|_{x = a} =
+        \begin{icloze}{1}
+            \begin{cases}
+                0, & n \neq k, \\
+                n!, & n = k.
+            \end{cases}
+        \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7597b782ce5f4e92998cc6445ce6f40e}
+    \subsubsection{<<\begin{icloze}{3}Свойство n раз дифференцируемой функции\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\( f : D \subset R \to \mathbb R, a \in D, n \in \mathbb N \) и \[
+        f(a) = f'(a) = \cdots = f^{(n)} (a) = 0.
+    \]\end{icloze}
+    Тогда \begin{icloze}{1}\( f(x) = o((x - a)^{n} ),  x \to a \).\end{icloze}
+\end{note}
+
+
+\begin{note}{99a8f041e1a34dba923a682c6500c46b}
+    \subsubsection{<<\begin{icloze}{3}Формула Тейлора-Пеано\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\( f : D \subset R \to \mathbb R, a \in D, n \in \mathbb N \) и \( f \) \( n \) раз дифференцируема в точке \( a. \)  \end{icloze}
+    Тогда \begin{icloze}{1}\[
+        T_{a, n} f = \sum_{k=0}^{n} \frac{f^{(k)} (a)}{k!} (x - a)^{k}.
+    \]\end{icloze}
+\end{note}
+\end{document}
