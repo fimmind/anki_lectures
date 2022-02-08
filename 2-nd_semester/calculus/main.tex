@@ -89,6 +89,101 @@
     Тогда \begin{icloze}{1}\( f(x) = o((x - a)^{n} ),  x \to a \).\end{icloze}
 \end{note}
 
+\begin{note}{22aa07051d4c4e0ebb08ce0114be5429}
+    \subsubsection{<<Определение \( o \)-малого в терминах \( \varepsilon, \delta. \)>>}
+
+    \begin{multline*}
+        f(x) = o(g(x)) \overset{\hspace{-1pt}\text{\tiny def}}\iff \\
+        \begin{icloze}{1}
+            \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall x \in D \cap \dot V_{\delta} \quad |f(x)| \leqslant \varepsilon |g(x)|.
+        \end{icloze}
+    \end{multline*}
+\end{note}
+
+\begin{note}{957fd9747bd84545bd6b1cca723d72ba}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N \), \begin{icloze}{2}\(f(a) = 0, \)
+    \[
+        f'(x) = o((x - a)^{n} ), \quad x \to a.
+    \]\end{icloze}
+    Тогда \( f(x) = \begin{icloze}{1}o((x - a)^{n + 1}), \quad x \to a.\end{icloze} \)
+\end{note}
+
+\begin{note}{a6bfd750e8e142afadb6fb1ebdb5040d}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N, f(a) = 0, \)
+    \[
+        f'(x) = o((x - a)^{n} ), \quad x \to a.
+    \]
+    Каков первый шаг в доказательстве того, что
+    \[
+        f(x) = o((x - a)^{n + 1}), \quad x \to a?
+    \]
+
+    \begin{cloze}{1}
+        Расписать равенство \( f'(x) = o((x - a)^{n} ) \) по определению в терминах \( \varepsilon, \delta. \)
+        При этом \( \delta \) выбирается так, что \( \dot V_{\delta} \subset D. \)
+    \end{cloze}
+\end{note}
+
+\begin{note}{cb1eee862a1a4d34821bc2a7808afa0e}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N, f(a) = 0, \)
+    \[
+        f'(x) = o((x - a)^{n} ), \quad x \to a.
+    \]
+    В чем первая ключевая идея доказательства того, что
+    \[
+        f(x) = o((x - a)^{n + 1}), \quad x \to a?
+    \]
+
+    \begin{cloze}{1}
+        По формуле конечных приращений
+        \[
+            \begin{gathered}
+                f(x) = f'(a + \theta(x - a)) \cdot (x - a), \quad \theta \in (0, 1).
+            \end{gathered}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{fe72b791cd844bf7909cbe33e50fd55d}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N, f(a) = 0, \)
+    \[
+        f'(x) = o((x - a)^{n} ), \quad x \to a.
+    \]
+    В чем вторая ключевая идея доказательства того, что
+    \[
+        f(x) = o((x - a)^{n + 1}), \quad x \to a?
+    \]
+
+    \begin{cloze}{1}
+        \[
+            a + \theta(x - a) \in \dot V_{\delta} (a) \implies f'(a + \theta(x - a)) < \varepsilon|x - a|^{n}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b7ddf1bbcdf84c769dd7b409e5be494d}
+    Какой метод используется в доказательстве свойства \( n \)-раз дифференцируемой функции?
+
+    \begin{cloze}{1}
+        Доказательство по индукции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f04179797fd64614827341d425616341}
+    Какова основная идея в доказательстве свойства \( n \)-раз дифференцируемой функции (базовый случай)?
+
+    \begin{cloze}{1}
+        Из определения дифференцируемости следует, что \[ f(x) = o(x - a). \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{f04179797fd64614827341d425616341}
+    Какова основная идея в доказательстве свойства \( n \)-раз дифференцируемой функции (индукционный переход)?
+
+    \begin{cloze}{1}
+        Из индукционного предположения \( f'(x) = o((x - a)^{n} ) \), но тогда \( f(x) = o((x - a)^{n + 1} ) \)
+    \end{cloze}
+\end{note}
 
 \begin{note}{99a8f041e1a34dba923a682c6500c46b}
     \subsubsection{<<\begin{icloze}{3}Формула Тейлора-Пеано\end{icloze}>>}
