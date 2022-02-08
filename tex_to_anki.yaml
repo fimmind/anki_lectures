@@ -36,7 +36,7 @@ model:
 
       \renewcommand{\thesection}{}
       \renewcommand{\thesubsection}{}
-      \renewcommand{\thesubsubsection}{Note \arabic{subsubsection}}
+      \renewcommand{\thesubsubsection}{}
       \renewcommand{\theparagraph}{}
 
       \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
