@@ -92,10 +92,11 @@
 \begin{note}{22aa07051d4c4e0ebb08ce0114be5429}
     \subsubsection{<<Определение \( o \)-малого в терминах \( \varepsilon, \delta. \)>>}
 
+    Пусть \( f, g : D \subset \mathbb R \to \mathbb R \), \( a \) --- предельная точка \( D \). Тогда
     \begin{multline*}
-        f(x) = o(g(x)) \overset{\hspace{-1pt}\text{\tiny def}}\iff \\
+        f(x) = o(g(x)), \quad x \to a \overset{\hspace{-1pt}\text{\tiny def}}\iff \\
         \begin{icloze}{1}
-            \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall x \in D \cap \dot V_{\delta} \quad |f(x)| \leqslant \varepsilon |g(x)|.
+            \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall x \in D \cap \dot V_{\delta}(a) \quad |f(x)| \leqslant \varepsilon |g(x)|.
         \end{icloze}
     \end{multline*}
 \end{note}
@@ -105,6 +106,7 @@
     \[
         f'(x) = o((x - a)^{n} ), \quad x \to a.
     \]\end{icloze}
+
     Тогда \( f(x) = \begin{icloze}{1}o((x - a)^{n + 1}), \quad x \to a.\end{icloze} \)
 \end{note}
 
@@ -119,8 +121,8 @@
     \]
 
     \begin{cloze}{1}
-        Расписать равенство \( f'(x) = o((x - a)^{n} ) \) по определению в терминах \( \varepsilon, \delta. \)
-        При этом \( \delta \) выбирается так, что \( \dot V_{\delta} \subset D. \)
+        Расписать равенство \( f'(x) = o((x - a)^{n} ) \) в терминах \( \varepsilon, \delta. \)
+        При этом \( \delta \) выбирается так, что \( \dot V_{\delta}(a) \subset D. \)
     \end{cloze}
 \end{note}
 
@@ -156,7 +158,7 @@
 
     \begin{cloze}{1}
         \[
-            a + \theta(x - a) \in \dot V_{\delta} (a) \implies f'(a + \theta(x - a)) < \varepsilon|x - a|^{n}.
+            a + \theta(x - a) \in \dot V_{\delta} (a) \implies |f'(a + \theta(x - a))| < \varepsilon|x - a|^{n}.
         \]
     \end{cloze}
 \end{note}
@@ -165,7 +167,7 @@
     Какой метод используется в доказательстве свойства \( n \)-раз дифференцируемой функции?
 
     \begin{cloze}{1}
-        Доказательство по индукции.
+        Индукция по \( n. \)
     \end{cloze}
 \end{note}
 
