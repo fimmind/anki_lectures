@@ -133,4 +133,41 @@
     Пусть \( W = \mathbb R ^{n}, \quad V \subset W  \) --- линейное подпространство в \( W, \quad \) \( e_1, e_2, \ldots, e_k  \)  --- \begin{icloze}{2}базис в \( V. \)\end{icloze}
     Тогда в \( W \) существует базис вида \begin{icloze}{1}\( e_1, e_2, \ldots e_k, e_{k + 1}, \ldots e_n.  \)\end{icloze}
 \end{note}
+
+\section{Семинар 09.02.22}
+\begin{note}{3fd21160928849f8acbc526a60229e49}
+    Пусть \( e_1, e_2, \ldots, e_n \) и \( e'_1, e'_2, \ldots, e'_n \) --- два базиса в линейном пространстве \( V \).
+    Тогда \begin{icloze}{2}матрицей перехода от базиса \( e \) к базису \( e' \)\end{icloze} называют
+    \begin{icloze}{1}матрицу \( C \) такую, что для любого \( v \in V \), если
+    \[
+        \begin{gathered}
+            v = \lambda_1 e_1 + \lambda_2 e_2 + \cdots + \lambda_n e_n, \\
+            v = \mu_1 e'_1 + \mu_2 e'_2 + \cdots + \mu_n e'_n,
+        \end{gathered}
+    \]
+    то
+    \[
+        C \begin{bmatrix}
+            \mu_1 \\ \mu_2 \\ \vdots \\ \mu_n
+        \end{bmatrix}
+        =
+        \begin{bmatrix}
+            \lambda_1 \\ \lambda_2 \\ \vdots \\ \lambda_n
+        \end{bmatrix}.
+    \]
+\end{icloze}
+\end{note}
+
+\begin{note}{88fab27df46a451190278cbc1d38698f}
+    \begin{icloze}{2}Матрицу перехода от базиса \( e \) к базису \( e' \)\end{icloze} обычно обозначают \begin{icloze}{1}\( C_{e \to e'}  \).\end{icloze}
+\end{note}
+
+\begin{note}{c9e84965d5ea4157b50f6576e2cbddad}
+    Пусть \( e_1, e_2, \ldots, e_n \) и \( e'_1, e'_2, \ldots, e'_n \) --- два базиса в линейном пространстве.
+    Как в явном виде задать матрицу \( C_{e \to e'} \)?
+
+    \begin{cloze}{1}
+        Столбцы \( C_{e \to e'} \) --- это координаты векторов \( e'_1, e'_2, \ldots, e'_n \) в базисе \( e_1, e_2, \ldots, e_n \).
+    \end{cloze}
+\end{note}
 \end{document}
