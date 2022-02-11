@@ -62,6 +62,16 @@
     \begin{icloze}{2}Многочлен Тейлора функции \( f \) порядка \( n \) в точке \( a \)\end{icloze} обозначается \begin{icloze}{1}\( T_{a, n} f.  \)\end{icloze}
 \end{note}
 
+\begin{note}{1b7244a616994615a1d41bbc85768a3f}
+    \subsubsection{<<\begin{icloze}{3}Формула Тейлора для многочленов\end{icloze}>>}
+
+    Пусть \( p \) --- \begin{icloze}{2}многочлен степени не более \( n \).\end{icloze} Тогда \begin{icloze}{1}
+        \[
+            p(x) = \sum_{k=0}^{n} \frac{p^{(k)} (a)}{k! } (x - a)^{k}.
+        \]
+    \end{icloze}
+\end{note}
+
 \begin{note}{97c12315facb454e987cb94fae99be75}
 \[
     \left. f(x) \right|_{x = a} \overset{\text{def}}= \begin{icloze}{1}f(a).\end{icloze}
@@ -78,6 +88,14 @@
             \end{cases}
         \end{icloze}
     \]
+\end{note}
+
+\begin{note}{9b6c61f4867142bea860ca4d00c07174}
+    В чем основная идея доказательства истинности формулы Тейлора для многочленов?
+
+    \begin{cloze}{1}
+        Записать \( p(x) \) с неопределенными коэффициентами и вычислить \( p^{(k)} (a) \) для \( k = 0, 1, 2, \ldots, n \).
+    \end{cloze}
 \end{note}
 
 \begin{note}{7597b782ce5f4e92998cc6445ce6f40e}
@@ -178,7 +196,39 @@
 
     Пусть \begin{icloze}{2}\( f : D \subset R \to \mathbb R, a \in D, n \in \mathbb N \) и \( f \) \( n \) раз дифференцируема в точке \( a. \)  \end{icloze}
     Тогда \begin{icloze}{1}\[
-        T_{a, n} f = \sum_{k=0}^{n} \frac{f^{(k)} (a)}{k!} (x - a)^{k}.
+        f(x) = \sum_{k=0}^{n} \frac{f^{(k)} (a)}{k!} (x - a)^{k} + o((x - a)^{n} ).
     \]\end{icloze}
 \end{note}
+
+\section{Лекция 11.02.22}
+\begin{note}{8c823210f5c94ab99024c3e8c3d6778a}
+    \[
+        \begin{icloze}{2}\Delta _{a, b}\end{icloze}
+        \overset{\text{def}}=
+        \begin{icloze}{1}\begin{cases}
+            [a, b], & a \leqslant b, \\
+            [b, a], & a \geqslant b.
+        \end{cases}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9755fb6343494fa9b0034b4542e518d3}
+    \[
+        \begin{icloze}{2}\widetilde \Delta _{a, b}\end{icloze}
+        \overset{\text{def}}=
+        \begin{icloze}{1}\begin{cases}
+            [a, b], & a \leqslant b, \\
+            [b, a], & a \geqslant b.
+        \end{cases}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{dbb25fcd6e834aa2ae54ec6ddc0c6787}
+    \[
+        \begin{icloze}{2}R_{a, n} f \end{icloze}
+        \overset{\text{def}}=
+        \begin{icloze}{1}f - T_{a, n} f\end{icloze}
+    \]
+\end{note}
+
 \end{document}
