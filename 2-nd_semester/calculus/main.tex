@@ -23,9 +23,9 @@
 \newenvironment{note}[1]{\goodbreak\par\subsection{\hfill \color{lightgray}\tiny #1}}{}
 \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
 \newenvironment{icloze}[2][\ldots]{%
-  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2:: }%
+  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2::}\ %
 }{%
-  \text{\tiny \color{lightgray}\}\}}\unskip%
+  \ \text{\tiny\color{lightgray}\}\}}\unskip%
 }
 
 \begin{document}
@@ -201,6 +201,45 @@
 \end{note}
 
 \section{Лекция 11.02.22}
+\begin{note}{3bf65c72c3374838aecaa626de8a3a4d}
+    Каков первый шаг в доказательстве истинности формулы Тейлора-Пеано?
+
+    \begin{cloze}{1}
+        Обозначить через \( p(x) \) многочлен в формуле:
+        \[
+            f(x) = \underbrace{\sum_{k=0}^{n} \frac{f^{(k)} (a)}{k!} (x - a)^{k}}_{p(x)}  + o((x - a)^{n} ).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{6f41684761ec41308bf9f95619ec1849}
+    Чему для \( k \leqslant n \) равна \( p^{(k)} (a) \) в доказательстве истинности формулы Тейлора-Пеано?
+
+    \begin{cloze}{1}
+        \[
+            p^{(k)} (a) = f^{(k)} (a).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{72455c0671414c80aca4c9ef2ba63d44}
+    В чем основная идея доказательства истинности формулы Тейлора-Пеано?
+
+    \begin{cloze}{1}
+        По свойству \( n \) раз дифференцируемой функции \( f(x) - p(x) = o((x - a)^{n} )\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{db6e4a55afed4c5d95a38869cf9d2e00}
+    Что позволяет применить свойство \( n \) раз дифференцируемой функции в доказательстве формулы Тейлора-Пеано?
+
+    \begin{cloze}{1}
+        \[
+            \forall k \left. \leqslant n \quad \left(f(x) - p(x)\right)^{(k)} \right|_{x = a} = 0
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{8c823210f5c94ab99024c3e8c3d6778a}
     \[
         \begin{icloze}{2}\Delta _{a, b}\end{icloze}
@@ -231,4 +270,135 @@
     \]
 \end{note}
 
+\begin{note}{0d92b12a18f34554a0251578aa811b7f}
+    \subsubsection{<<\begin{icloze}{3}Формула Тейлора-Лагранжа\end{icloze}>>}
+
+    Пусть \( f : D \subset \mathbb R \to \mathbb R \), \quad \( a, x \in \mathbb R, a \neq x \), \quad \begin{icloze}{2}\( f \in C^{n} (\Delta _{a, x} ) \), \( f^{(n)} \) дифференцируема на \( \widetilde \Delta _{a, x}  \).\end{icloze} Тогда
+    \begin{icloze}{1}
+        найдется \( c \in \widetilde \Delta _{a, x}  \), для которой
+        \[
+            f(x) = T_{a, n} f (x) + \frac{f^{(n + 1)} (c)}{(n + 1)! }  (x - a)^{n + 1}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f9314b4b0e184f52826c8f740c873e21}
+    При \( n = 0 \) формула Тейлора-Лагранжа эквивалентна \begin{icloze}{1}теореме Лагранжа\end{icloze}.
+\end{note}
+
+\begin{note}{5fe508cfd3c445c4b15093e8d2c8c504}
+    В чем основная идея доказательства истинности формулы Тейлора-Лагранжа?
+
+    \begin{cloze}{1}
+        Вычислить производную функции \( F(t) = R_{t, n} f(x) \) и найти точку \( c \) по теореме Коши.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e1a329fbc3ef4c5981773d8baad7d3b1}
+    Для каких \( t \) определяется функция \( F(t) \) в доказательстве истинности формулы Тейлора-Лагранжа?
+
+    \begin{cloze}{1}
+        \[
+            t \in \Delta _{a, x}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{a4f7e43161cc4c9fb58ac7a250610c50}
+    Для каких \( t \) вычисляется \( F'(t) \) в доказательстве истинности формулы Тейлора-Лагранжа?
+
+    \begin{cloze}{1}
+        \[
+            t \in \widetilde \Delta _{a, x}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{73e4df5e1b074010a95ee5dbe0458338}
+    К каким функциям применяется теорема Коши в доказательстве истинности формулы Тейлора-Лагранжа?
+
+    \begin{cloze}{1}
+        К \( F(t) \) и \( \varphi(t) = (x - t)^{n + 1}  \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b1d63dae062e4a438ceb891f94a33e96}
+    К каким точкам применяется теорема Коши в доказательстве истинности формулы Тейлора-Лагранжа?
+
+    \begin{cloze}{1}
+        К границам отрезка \( \Delta _{a, x}  \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b8f3f99b66794d59b6fa546eb06d7fb3}
+    Какое неявное условие позволяет применить теорему коши к функциям \( F(t) \) и \( \varphi(t) \) с точках \( a \) и \( x \)?
+
+    \begin{cloze}{1}
+        \[
+            F(x) = 0, \quad \varphi(x) = 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{e425a1ef13124799b6b391e3884f86f1}
+    По формуле Тейлора-Пиано при \( x \to 0 \)
+    \[
+        \begin{icloze}{2}e^{x}\end{icloze} = \begin{icloze}{1}\sum_{k=0}^{n} \frac{x^{k} }{k! } + o(x^{n} ).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{70a13102af174271b95762b24e6b1169}
+    По формуле Тейлора-Пиано при \( x \to 0 \)
+    \[
+        \begin{icloze}{2}\sin x\end{icloze} = \begin{icloze}{1}\sum_{k=0}^{n} (-1)^{k} \frac{x^{2k + 1} }{(2k + 1)! } + o\!\left(x^{2n + 2}\right). \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9c528f645b0741ef90f268989f7701eb}
+    По формуле Тейлора-Пиано при \( x \to 0 \)
+    \[
+        \begin{icloze}{2}\cos x\end{icloze} = \begin{icloze}{1}\sum_{k=0}^{n} (-1)^{k} \frac{x^{2k} }{(2k)! } + o\!\left(x^{2n + 1}\right). \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{90ff22c33f67493fae3fa800e93905f4}
+    По формуле Тейлора-Пиано при \( x \to 0 \)
+    \[
+        \begin{icloze}{2}\ln (1 + x)\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{n} (-1)^{k - 1} \frac{x^{k} }{k } + o\!\left(x^{n}\right). \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{aaf8ef38d3bb409baf7c7fcc1df14f48}
+    \begin{icloze}{3}Обобщённый биномиальный коэффициент\end{icloze} задаётся формулой
+    \[
+        C_\alpha^k = \begin{icloze}{1}\frac{\alpha(\alpha - 1) \cdots (\alpha - k + 1)}{k! }\end{icloze}, \quad \alpha \in \begin{icloze}{2}\mathbb R\end{icloze}.
+    \]
+\end{note}
+
+\begin{note}{5ed01e7f4e8e4b22adf1929f60e4d4f5}
+    По формуле Тейлора-Пиано при \( x \to 0 \)
+    \[
+        \begin{icloze}{2}(1 + x)^{\alpha} \end{icloze} = \begin{icloze}{1}\sum_{k=0}^{n} C_\alpha^k x^{k} + o\!\left(x^{n}\right). \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{eb36b5f5a2b04e44b4d5b13d2278ff40}
+    Формулу Тейлора-Пеано для \( (1 + x)^{\alpha} \) называют \begin{icloze}{1}биномиальным разложением\end{icloze}.
+\end{note}
+
+\begin{note}{7d3d35d9fcb344458f0d82ed7b2d940f}
+    Пусть \begin{icloze}{3}функция \( f \) удовлетворяет условиям для разложения по формуле Тейлора-Лагранжа.\end{icloze}
+    Тогда если
+    \begin{icloze}{2}
+        \[
+            \forall t \in \widetilde \Delta _{a, x} \quad |f^{(n + 1)} (t)| \leqslant M,
+        \]
+    \end{icloze}
+    то
+    \begin{icloze}{1}
+        \[
+            |R_{a, n} f(x)| \leqslant \frac{M|x - a|^{n + 1} }{(n + 1)! }.
+        \]
+    \end{icloze}
+\end{note}
 \end{document}
