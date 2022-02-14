@@ -15,6 +15,10 @@
 
 \setlength{\parindent}{0pt}
 
+% Force \pagebreak for every section
+\let\oldsection\section
+\renewcommand\section{\pagebreak\oldsection}
+
 \renewcommand{\thesection}{}
 \renewcommand{\thesubsection}{Note \arabic{subsection}}
 \renewcommand{\thesubsubsection}{}

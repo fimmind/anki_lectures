@@ -15,6 +15,10 @@
 
 \setlength{\parindent}{0pt}
 
+% Force \pagebreak for every section
+\let\oldsection\section
+\renewcommand\section{\pagebreak\oldsection}
+
 \renewcommand{\thesection}{}
 \renewcommand{\thesubsection}{Note \arabic{subsection}}
 \renewcommand{\thesubsubsection}{}
@@ -156,8 +160,6 @@
     \end{cloze}
 \end{note}
 
-\pagebreak
-
 \section{Семинар 09.02.22}
 \begin{note}{3fd21160928849f8acbc526a60229e49}
     Пусть \( e_1, e_2, \ldots, e_n \) и \( e'_1, e'_2, \ldots, e'_n \) --- два базиса в линейном пространстве \( V \).
@@ -194,8 +196,6 @@
         Столбцы \( C_{e \to e'} \) --- это координаты векторов \( e'_1, e'_2, \ldots, e'_n \) в базисе \( e_1, e_2, \ldots, e_n \).
     \end{cloze}
 \end{note}
-
-\pagebreak
 
 \section{Лекция 14.02.22}
 \begin{note}{825be05cbe9f4850806682f4db48f5e1}
