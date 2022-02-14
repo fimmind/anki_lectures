@@ -194,4 +194,101 @@
         Столбцы \( C_{e \to e'} \) --- это координаты векторов \( e'_1, e'_2, \ldots, e'_n \) в базисе \( e_1, e_2, \ldots, e_n \).
     \end{cloze}
 \end{note}
+
+\pagebreak
+
+\section{Лекция 14.02.22}
+\begin{note}{825be05cbe9f4850806682f4db48f5e1}
+    Пусть \( W \) --- линейное пространство, \( V_1, V_2 \triangleleft W \).
+    \begin{icloze}{2}Сумму \( V_1 + V_2 \)\end{icloze} называют \begin{icloze}{1}прямой сум\-мой,\end{icloze} если \begin{icloze}{2}\( V_1 \cap V_2 = \{ 0 \} \).\end{icloze}
+\end{note}
+
+\begin{note}{90c98477312541878454fb9689685fc8}
+    \begin{icloze}{2}Прямая сумма подпространств \( V_1 \) и \( V_2 \)\end{icloze} обозначается \begin{icloze}{1}
+        \[
+            V_1 \oplus V_2.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{951dc5cc9d7d4722ac40423e92273c7a}
+    Пусть \( V_1 \) и \( V_2 \) --- два линейных подпространства. Тогда эквивалентны следующие утверждения:
+    \begin{enumerate}
+        \item \begin{icloze}{1}\( V_1 + V_2 \) --- прямая сумма;\end{icloze}
+        \item \begin{icloze}{2}\( \dim (V_1 + V_2) = \dim V_1 + \dim V_2 \);\end{icloze}
+        \item \begin{icloze}{3}Для любого \( a \in V_1 + V_2 \) разложение разложение \( a \) в сумму \( v_1 + v_2 \), где \( v_1 \in V_1, v_2 \in V_2 \), единственно.\end{icloze}
+    \end{enumerate}
+\end{note}
+
+\begin{note}{78239c298e504fa9841235fdd06ac419}
+    \subsubsection{<<\begin{icloze}{3}Монотонность размерности подпространств\end{icloze}>>}
+
+    Пусть \( W \) --- линейное пространство, \( V \triangleleft W \). Тогда
+    \begin{enumerate}
+        \item \begin{icloze}{1}\( \dim V \leqslant \dim W \),\end{icloze}
+        \item \begin{icloze}{2}\( \dim V = \dim W \iff V = W \).\end{icloze}
+    \end{enumerate}
+\end{note}
+
+\begin{note}{a6b854ec7f5b4473a76276e0bff1e272}
+    \begin{icloze}{3}Отображение \( f : V \to W \)\end{icloze} называется \begin{icloze}{2}линейным отображением,\end{icloze} \begin{icloze}{1}если
+        \begin{enumerate}
+            \item \( f(x + y) = f(x) + f(y), \quad \forall x, y \in V \),
+            \item \( f(\lambda x) = \lambda f(x), \quad \forall \lambda \in \mathbb R, x \in V \).
+        \end{enumerate}
+    \end{icloze}
+\end{note}
+
+\begin{note}{4008d3f9d2224ec38cb2e9b8a78aab64}
+    Линейное отображение так же ещё называют \begin{icloze}{1}линейным оператором.\end{icloze}
+\end{note}
+
+\begin{note}{df5862f6f1d4456cb943a7f07c8d8b68}
+    Линейный оператор \( f : V \to W \) называется \begin{icloze}{1}и\-зо\-мор\-физм\-ом линейных пространств\end{icloze} тогда и только тогда, когда \begin{icloze}{2}\( f \) --- биекция.\end{icloze}
+\end{note}
+
+\begin{note}{d8bd78dfda034119ae049b476da96449}
+    Линейные пространства \( V \) и \( W \) называются \begin{icloze}{1}и\-зо\-мор\-фны\-ми\end{icloze} тогда и только тогда, когда \begin{icloze}{1}
+        существует изоморфизм
+        \[
+            f : V \to W.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{2d4f456313e24261b688216f4b7f199e}
+    Отношение \begin{icloze}{2}изоморфности\end{icloze} обозначается символом \begin{icloze}{1}\( \simeq  \). \end{icloze}
+\end{note}
+
+\begin{note}{7112c4ddaf614005b6a37c3f4fbd3edc}
+    Если \( f : V \to W \) --- изоморфизм, то \( f^{-1} : W \to V \) \begin{icloze}{1}--- тоже изоморфизм.\end{icloze}
+\end{note}
+
+\begin{note}{9fa02b16e5e74fcea192355d84b99109}
+    Пусть \( V, W \) --- конечномерные линейные пространства. Тогда
+    \[
+        \begin{icloze}{2}V \simeq W\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}\dim V = \dim W.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{13b90eb2ff704cc69e067a3f047966cc}
+    Пусть \( f : V \to W \) --- линейный оператор. Тогда \begin{icloze}{2}матрицей линейного оператора \( f \) в паре базисов в \( V \) и \( W \) соответственно\end{icloze} называют \begin{icloze}{1}матрицу \( A \), переводящую координаты любого вектора \( v \in V \) в координаты вектора \( f(v) \in W \) в соответствующих базисах.\end{icloze}
+\end{note}
+
+\begin{note}{d8ecf4d0e7a546668528944588ba6060}
+    Пусть \( f : V \to W \) --- линейный оператор,
+    \begin{itemize}
+        \item \( e_1, e_2, \ldots, e_n  \) --- базис в \( V \),
+        \item \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m  \) --- базис в \( W \).
+    \end{itemize}
+    Как в явном виде задать матрицу оператора \( f \) в этих базисах?
+
+    \begin{cloze}{1}
+        \( j \)-ый столбец --- это координаты вектора \( f(e_j) \) в базисе \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m \)
+    \end{cloze}
+\end{note}
+
+\begin{note}{b595ad9b198f46299eb5af10d49e413d}
+    Композиция линейных операторов --- тоже \begin{icloze}{1}линейный оператор.\end{icloze}
+\end{note}
 \end{document}
