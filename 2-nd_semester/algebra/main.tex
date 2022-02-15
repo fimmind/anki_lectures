@@ -27,7 +27,7 @@
 \newenvironment{note}[1]{\goodbreak\par\subsection{\hfill \color{lightgray}\tiny #1}}{}
 \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
 \newenvironment{icloze}[2][\ldots]{%
-  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2:: }%
+  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2::}\!
 }{%
   \text{\tiny \color{lightgray}\}\}}\unskip%
 }
@@ -220,6 +220,14 @@
     \end{enumerate}
 \end{note}
 
+\begin{note}{fc93fb548c854d70af3f9cf3017866cb}
+    В чем основная идея доказательства того, что если для любого \( a \in V_1 + V_2 \) разложение разложение \( a \) в сумму \( v_1 + v_2 \), где \( v_1 \in V_1, v_2 \in V_2 \), единственно, то \( V_1 + V_2 \) --- прямая сумма?
+
+    \begin{cloze}{1}
+        Показать, что если \( a = v_1 + v_2 \in V_1 \cap V_2 \), то \( v_1 = v_2 = 0 \).
+    \end{cloze}
+\end{note}
+
 \begin{note}{78239c298e504fa9841235fdd06ac419}
     \subsubsection{<<\begin{icloze}{3}Монотонность размерности подпространств\end{icloze}>>}
 
@@ -268,6 +276,10 @@
     Если \( f : V \to W \) --- изоморфизм, то \( f^{-1} : W \to V \) \begin{icloze}{1}--- тоже изоморфизм.\end{icloze}
 \end{note}
 
+\begin{note}{b439505227ea4814b084a811815b59d3}
+    Отношение изоморфности удовлетворяет аксиомам отношения \begin{icloze}{1}эквивалентности.\end{icloze}
+\end{note}
+
 \begin{note}{9fa02b16e5e74fcea192355d84b99109}
     Пусть \( V, W \) --- конечномерные линейные пространства. Тогда
     \[
@@ -276,23 +288,49 @@
 \end{note}
 
 \begin{note}{13b90eb2ff704cc69e067a3f047966cc}
-    Пусть \( f : V \to W \) --- линейный оператор. Тогда \begin{icloze}{2}матрицей линейного оператора \( f \) в паре базисов в \( V \) и \( W \) соответственно\end{icloze} называют \begin{icloze}{1}матрицу \( A \), переводящую координаты любого вектора \( v \in V \) в координаты вектора \( f(v) \in W \) в соответствующих базисах.\end{icloze}
+    Пусть \( f : V \to W \) --- линейный оператор. Тогда \begin{icloze}{2}матрицей линейного оператора \( f \) в паре базисов в \( V \) и \( W \) со\-от\-вет\-ствен\-но\end{icloze} называют \begin{icloze}{1}матрицу \( A \), переводящую координаты любого вектора \( v \in V \) в координаты вектора \( f(v) \in W \) в соответствующих базисах.\end{icloze}
 \end{note}
 
 \begin{note}{d8ecf4d0e7a546668528944588ba6060}
+    \subsubsection{<<\begin{icloze}{2}Теорема о матрице линейного оператора\end{icloze}>>}
     Пусть \( f : V \to W \) --- линейный оператор,
     \begin{itemize}
-        \item \( e_1, e_2, \ldots, e_n  \) --- базис в \( V \),
-        \item \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m  \) --- базис в \( W \).
+        \item \begin{icloze}{3}\( e_1, e_2, \ldots, e_n  \)\end{icloze} --- базис в \( V \),
+        \item \begin{icloze}{3}\( \tilde e_1, \tilde e_2, \ldots, \tilde e_m  \)\end{icloze} --- базис в \( W \).
     \end{itemize}
     Как в явном виде задать матрицу оператора \( f \) в этих базисах?
 
     \begin{cloze}{1}
-        \( j \)-ый столбец --- это координаты вектора \( f(e_j) \) в базисе \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m \)
+        \( j \)-ый столбец --- это координаты вектора \( f(e_j) \) в базисе \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1235d9dc6038426387ee1c7475309a4f}
+    Как можно компактно перефразировать утверждение теоремы о матрице линейного оператора?
+
+    \begin{cloze}{1}
+        \[
+            f(e) = \tilde e A.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{8e1ba2b68d414caeb7d229ba34833e8d}
+    В чем ключевая идея доказательства теоремы о матрице линейного оператора?
+
+    \begin{cloze}{1}
+        \[
+            f(e\lambda) = f(e)\lambda = \tilde e A \lambda,
+        \]
+        где \( \lambda \) --- координаты вектора из \( V \) в базисе \( e \).
     \end{cloze}
 \end{note}
 
 \begin{note}{b595ad9b198f46299eb5af10d49e413d}
     Композиция линейных операторов --- тоже \begin{icloze}{1}линейный оператор.\end{icloze}
+\end{note}
+
+\begin{note}{c13a12af79d9432ab1df0d1bab6f905c}
+    Матрица композиции линейных операторов есть \begin{icloze}{1}произведение матриц этих операторов.\end{icloze}
 \end{note}
 \end{document}
