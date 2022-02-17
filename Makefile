@@ -6,4 +6,4 @@ apkg:
 	@tex_to_anki
 
 import: apkg
-	@anki out.apkg
+	@anki out.apkg --no-sandbox
