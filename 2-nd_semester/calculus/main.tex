@@ -27,9 +27,9 @@
 \newenvironment{note}[1]{\goodbreak\par\subsection{\hfill \color{lightgray}\tiny #1}}{}
 \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
 \newenvironment{icloze}[2][\ldots]{%
-  \ignorespaces\text{\tiny \color{lightgray} \{\{c#2::}\ %
+  \ignorespaces\text{\tiny \color{lightgray}\{#2} %
 }{%
-  \ \text{\tiny\color{lightgray}\}\}}\unskip%
+  \text{\tiny\color{lightgray}\}}\unskip%
 }
 
 \begin{document}
@@ -448,5 +448,137 @@
     \[
         \int a^{x} \: dx = \begin{icloze}{1}\frac{a^{x} }{\ln a} + C\end{icloze}.
     \]
+\end{note}
+
+\section{Лекция 18.02.22}
+\begin{note}{b55d92bf361d4e31b5e60975656b3fb4}
+    \subsubsection{<<\begin{icloze}{5}Критерий возрастания функции на промежутке\end{icloze}>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
+    \begin{itemize}
+        \item \begin{icloze}{2}\( f \!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
+              \begin{icloze}{3}\( \iff  \)\end{icloze}
+              \begin{icloze}{1}\( f'(x) \geqslant 0 \quad \forall x \in (A, B) \).\end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{63e919dff3ba4ea282cb06d25b445300}
+    \subsubsection{<<\begin{icloze}{5}Достаточное условие строгого убывания \\ \phantom{<<}функции на промежутке\end{icloze}>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
+    \begin{itemize}
+        \item \begin{icloze}{2}\( f \!\nearrow\!\!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
+              \begin{icloze}{3}\( \impliedby  \)\end{icloze}
+              \begin{icloze}{1}\( f'(x) > 0 \quad \forall x \in (A, B) \).\end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{2e3edf0757ba4f72bbdbb5b66dca690d}
+    \subsubsection{<<\begin{icloze}{5}Критерий постоянства функции на промежутке\end{icloze}>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
+    \begin{itemize}
+        \item \begin{icloze}{2}\( f \) постоянна на \( \langle A, B \rangle  \)\end{icloze}
+              \begin{icloze}{3}\( \iff  \)\end{icloze}
+              \begin{icloze}{1}\( f'(x) = 0 \quad \forall x \in [A, B] \).\end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{2dfd421d331745a0a8b2da63493d1b4f}
+    Пусть \begin{icloze}{3}\( f, g \in C[A, B\rangle \) и дифференцируемы на \( (A,  B) \).\end{icloze} Тогда
+    Если \begin{icloze}{2}\( f(A) = g(A) \) и
+    \[
+        f'(x) g'(x) \quad \forall x \in [A, B\rangle,
+    \]
+\end{icloze}    то
+    \begin{icloze}{1}\[
+        f(x) \geqslant g(x) \quad \forall x \in [A, B\rangle.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{0f2a5e13f0a2495388e631ac0b4776aa}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D \). Тогда точка \( a \) называется \begin{icloze}{2}точкой максимума функции \( f \),\end{icloze} если
+    \begin{icloze}{1}\[
+                         \exists \delta > 0 \quad \forall x \in \dot V_{\delta} (a) \cap D \quad f(x) \leqslant f(a).
+                     \]\end{icloze}
+\end{note}
+
+\begin{note}{a89063cdc4a34df7aa891ad50a98d0a8}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D \). Тогда точка \( a \) называется \begin{icloze}{2}точкой строгого максимума функции \( f \),\end{icloze} если
+    \begin{icloze}{1}\[
+        \exists \delta > 0 \quad \forall x \in \dot V_{\delta} (a) \cap D \quad f(x) < f(a).
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{0c2db077ea274453a5c14d982fe1c571}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D \). Тогда точка \( a \) называется \begin{icloze}{2}точкой минимума функции \( f \),\end{icloze} если
+    \begin{icloze}{1}\[
+        \exists \delta > 0 \quad \forall x \in \dot V_{\delta} (a) \cap D \quad f(x) \geqslant f(a).
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{3bc6223309d34118a582302414c9632e}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D \). Тогда точка \( a \) называется \begin{icloze}{2}точкой строгого минимума функции \( f \),\end{icloze} если
+    \begin{icloze}{1}\[
+        \exists \delta > 0 \quad \forall x \in \dot V_{\delta} (a) \cap D \quad f(x) > f(a).
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{a1e964e24fc6456ca0a297c008405c34}
+    Если \begin{icloze}{2}точка \( a \) является точкой минимума или максимума функции \( f \),\end{icloze} то \( a \) называется \begin{icloze}{1}точкой экстремума \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{98f3cebf02ca464ab3cf9e94355caaa2}
+    \subsubsection{<<\begin{icloze}{3}Необходимое условие экстремума\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \), \( f \) дифференцируема в точке \( a \).\end{icloze}
+    Тогда \begin{icloze}{1}если \( a \) является точкой экстремума \( f \), то \( f'(a) = 0 \). \end{icloze}
+\end{note}
+
+\begin{note}{96502706cad4449ab9ac44074765a384}
+    Точка \( a \) называется \begin{icloze}{1}стационарной точкой функции \( f \),\end{icloze} если
+    \begin{icloze}{2}\[
+        f'(a) = 0.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{99ca6c71ff484416941c4e10086ca6ea}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \). Тогда
+    \begin{icloze}{1}точка \( a \in (A, B) \)\end{icloze} называется \begin{icloze}{2}критической
+    точкой,\end{icloze} если \begin{icloze}{1}либо \( a \) стационарна для \( f \), либо \(
+    f \) не дифференцируема в точке \( a \).\end{icloze}
+\end{note}
+
+\begin{note}{40f1ebf761e14f5ba885b2276d64dae7}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда все
+    \begin{icloze}{2}точки экстремума \( f \), принадлежащие \( A, B \),\end{icloze}
+    лежат в \begin{icloze}{1}множестве её критических точек.\end{icloze}
+\end{note}
+
+\begin{note}{e8adcc7d8b474840907e72b38014fcdc}
+    Пусть \( f \in C[a, b] \). Тогда
+    \[
+        \begin{icloze}{3}\max f([a, b])\end{icloze} = \begin{icloze}{1}\max \left\{ f(a), f(b), \max f(C) \right\},\end{icloze}
+    \]
+    где \( C \) --- \begin{icloze}{2}множество критических точек \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{909932c22cec4a5fb5d8cfb506e7dbfb}
+    \subsubsection{<<\begin{icloze}{4}Достаточное условие экстремума в терминах \( f' \)\end{icloze}>>}
+
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in (A, B)  \), \( f \) непрерывна в точке \( a \) и дифференцируема на \( \dot V_{\delta} (a) \), \( \delta > 0 \).\end{icloze}
+    Если
+    \begin{icloze}{1}\[
+        \operatorname{sgn} f'(x) = \operatorname{sgn} (a - x) \quad \forall x \in \dot V_{\delta} (a),
+    \]\end{icloze}
+    то \begin{icloze}{2}\( a \) --- точка строго максимума \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{1b1674e5941040ee87e83073a1a0d57b}
+    \subsubsection{<<Достаточное условие экстремума в терминах \( f' \)>>}
+
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \), \( a \in (A, B)  \), \( f \) непрерывна в точке \( a \) и дифференцируема на \( \dot V_{\delta} (a) \), \( \delta > 0 \).
+    Если
+    \begin{icloze}{1}\[
+        \operatorname{sgn} f'(x) = \operatorname{sgn} (x - a) \quad \forall x \in \dot V_{\delta} (a),
+    \]\end{icloze}
+    то \begin{icloze}{2}\( a \) --- точка строго минимума \( f \).\end{icloze}
 \end{note}
 \end{document}
