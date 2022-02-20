@@ -105,7 +105,7 @@
 \begin{note}{7597b782ce5f4e92998cc6445ce6f40e}
     \subsubsection{<<\begin{icloze}{3}Свойство n раз дифференцируемой функции\end{icloze}>>}
 
-    Пусть \begin{icloze}{2}\( f : D \subset R \to \mathbb R, a \in D, n \in \mathbb N \) и \[
+    Пусть \begin{icloze}{2}\( f : D \subset \mathbb R \to \mathbb R, a \in D \) и \[
         f(a) = f'(a) = \cdots = f^{(n)} (a) = 0.
     \]\end{icloze}
     Тогда \begin{icloze}{1}\( f(x) = o((x - a)^{n} ),  x \to a \).\end{icloze}
@@ -455,9 +455,9 @@
     \subsubsection{<<\begin{icloze}{5}Критерий возрастания функции на промежутке\end{icloze}>>}
     Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
     \begin{itemize}
-        \item \begin{icloze}{2}\( f \!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
-              \begin{icloze}{3}\( \iff  \)\end{icloze}
-              \begin{icloze}{1}\( f'(x) \geqslant 0 \quad \forall x \in (A, B) \).\end{icloze}
+        \item {}\begin{icloze}{2}\( f \!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
+            \begin{icloze}{3}\( \iff  \)\end{icloze}
+            \begin{icloze}{1}\( f'(x) \geqslant 0 \quad \forall x \in (A, B) \).\end{icloze}
     \end{itemize}
 \end{note}
 
@@ -465,9 +465,9 @@
     \subsubsection{<<\begin{icloze}{5}Достаточное условие строгого убывания \\ \phantom{<<}функции на промежутке\end{icloze}>>}
     Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
     \begin{itemize}
-        \item \begin{icloze}{2}\( f \!\nearrow\!\!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
-              \begin{icloze}{3}\( \impliedby  \)\end{icloze}
-              \begin{icloze}{1}\( f'(x) > 0 \quad \forall x \in (A, B) \).\end{icloze}
+        \item {}\begin{icloze}{2}\( f \!\nearrow\!\!\nearrow \) на \( \langle A, B \rangle  \)\end{icloze}
+            \begin{icloze}{3}\( \impliedby  \)\end{icloze}
+            \begin{icloze}{1}\( f'(x) > 0 \quad \forall x \in (A, B) \).\end{icloze}
     \end{itemize}
 \end{note}
 
@@ -475,21 +475,21 @@
     \subsubsection{<<\begin{icloze}{5}Критерий постоянства функции на промежутке\end{icloze}>>}
     Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle  \) и дифференцируема на \( (A, B) \).\end{icloze} Тогда
     \begin{itemize}
-        \item \begin{icloze}{2}\( f \) постоянна на \( \langle A, B \rangle  \)\end{icloze}
-              \begin{icloze}{3}\( \iff  \)\end{icloze}
-              \begin{icloze}{1}\( f'(x) = 0 \quad \forall x \in [A, B] \).\end{icloze}
+        \item {}\begin{icloze}{2}\( f \) постоянна на \( \langle A, B \rangle  \)\end{icloze}
+            \begin{icloze}{3}\( \iff  \)\end{icloze}
+            \begin{icloze}{1}\( f'(x) = 0 \quad \forall x \in [A, B] \).\end{icloze}
     \end{itemize}
 \end{note}
 
 \begin{note}{2dfd421d331745a0a8b2da63493d1b4f}
     Пусть \begin{icloze}{3}\( f, g \in C[A, B\rangle \) и дифференцируемы на \( (A,  B) \).\end{icloze} Тогда
     Если \begin{icloze}{2}\( f(A) = g(A) \) и
-    \[
-        f'(x) g'(x) \quad \forall x \in [A, B\rangle,
-    \]
-\end{icloze}    то
+        \[
+            f'(x) > g'(x) \quad \forall x \in (A, B),
+        \]
+    \end{icloze}    то
     \begin{icloze}{1}\[
-        f(x) \geqslant g(x) \quad \forall x \in [A, B\rangle.
+        f(x) > g(x) \quad \forall x \in (A, B\rangle.
     \]\end{icloze}
 \end{note}
 
@@ -548,7 +548,7 @@
 
 \begin{note}{40f1ebf761e14f5ba885b2276d64dae7}
     Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда все
-    \begin{icloze}{2}точки экстремума \( f \), принадлежащие \( A, B \),\end{icloze}
+    \begin{icloze}{2}точки экстремума \( f \), принадлежащие \( (A, B) \),\end{icloze}
     лежат в \begin{icloze}{1}множестве её критических точек.\end{icloze}
 \end{note}
 
