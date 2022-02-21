@@ -633,4 +633,169 @@
     \]\end{icloze}
     то \begin{icloze}{2}\( a \) --- точка строго минимума \( f \).\end{icloze}
 \end{note}
+
+\section{Лекция 21.02.22}
+\begin{note}{4d119e495cf043019ed8ee01f9a7957a}
+    \subsubsection{<<\begin{icloze}{4}Достаточное условие экстремума в терминах \( f'' \) \end{icloze}>>}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \), \( f'' \) определена в точке \( a \), \( f'(a) = 0 \).\end{icloze}
+    Тогда если \begin{icloze}{1}\( f''(a) > 0 \),\end{icloze} то \begin{icloze}{2}\( a \) --- точка строгого минимума \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{f8b71055f7eb427f8226b47df9ed1e05}
+    \subsubsection{<<Достаточное условие экстремума в терминах \( f'' \) >>}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \), \( f'' \) определена в точке \( a \), \( f'(a) = 0 \).
+    Тогда если \begin{icloze}{1}\( f''(a) < 0 \),\end{icloze} то \begin{icloze}{2}\( a \) --- точка строгого максимума \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{5e0ea19ce2b043c693e2cbc7752fcaf1}
+    Каков первый шаг в доказательстве достаточного условия экстремума в терминах \( f'' \)?
+
+    \begin{cloze}{1}
+        Выразить \( f(x) - f(a) \)  по формуле Тейлора-Пиано с
+        \[
+            o((x - a)^2 ).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{3124302c512c44bfac961f48e231e1cc}
+    В чем основная идея доказательства достаточного условия экстремума в терминах \( f'' \)?
+
+    \begin{cloze}{1}
+        Вынести в формуле Тейлора-Пиано \( \frac{f''(x)}{2} (x - a)^2  \) за скобки, далее по теореме о стабилизации функции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{bb068aa42bfe43deb084eaa739cd08c6}
+    \subsubsection{<<\begin{icloze}{5}Связь экстремума со старшими производными\end{icloze}>>}
+
+    Пусть \begin{icloze}{4}\( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \),\end{icloze}
+    \begin{icloze}{3}\[
+                         \begin{gathered}
+                             f'(a) = f''(a) = \cdots = f^{(n - 1)}(a) = 0, \\
+                             f^{(n)}(a) \neq 0.
+                         \end{gathered}
+                     \]\end{icloze}
+    Тогда если \begin{icloze}{2}\( n \) нечётно,\end{icloze} то \begin{icloze}{1}\( f \) не имеет экстремума в точке \( a \).\end{icloze}
+\end{note}
+
+\begin{note}{b8ec49e21174443588a98b2e5c8cc032}
+    \subsubsection{<<Связь экстремума со старшими производными>>}
+
+    Пусть \( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \),
+    \[
+        \begin{gathered}
+            f'(a) = f''(a) = \cdots = f^{(n - 1)}(a) = 0, \\
+            f^{(n)}(a) \neq 0.
+        \end{gathered}
+    \]
+    Тогда если \begin{icloze}{2}\( n \) чётно,\end{icloze} \begin{icloze}{1}то достаточное условие аналогично достаточному условию в терминах \( f'' \).\end{icloze}
+\end{note}
+
+\begin{note}{d2426d6723fd4c20966bd4397dce3eb3}
+    \subsubsection{<<\begin{icloze}{3}Теорема Дарбу\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\( f \) дифференцируема на \( \langle A, B \rangle  \), \( a, b \in \langle A, B \rangle \),
+    \[
+        f'(a) < 0, \quad f'(b) > 0.
+    \]\end{icloze}
+    Тогда \begin{icloze}{1}\( \exists c \in (a, b) \quad f'(c) = 0 \).\end{icloze}
+\end{note}
+
+\begin{note}{43152412fd6f41e984fc4a4e96521633}
+    В чем основная идея доказательства теоремы Дарбу?
+
+    \begin{cloze}{1}
+        По теореме Вейерштрасса существует точка минимума \( c \), далее по теореме Ферма.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b0b7d5c649bf4839bde1e90102df6405}
+    Что позволяет применить теорему Ферма в доказательстве теоремы Дарбу?
+
+    \begin{cloze}{1}
+        \( c \) --- внутренняя точка промежутка \( (a, b) \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{d480b573cf054a67a6bf5596881b0afb}
+    Как в доказательстве теорему Дарбу показать, что \( c \) не лежит на границе \( [a, b] \)?
+
+    \begin{cloze}{1}
+        Расписать \( f'(a) \) через правосторонний предел и показать, что \( a \) --- не локальный минимум. Аналогично для \( b \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{bc1402d472ba422ea18b051e2a0615c4}
+    Пусть \begin{icloze}{3}\( f \) дифференцируема на \( \langle A, B \rangle  \).\end{icloze} Если
+    \begin{icloze}{2}\[
+        f'(x) \neq 0 \quad \forall x \in \langle A, B \rangle,
+    \]\end{icloze}
+    то \begin{icloze}{1}\( f \) строго монотонна на \( \langle A, B \rangle  \).\end{icloze}
+\end{note}
+
+\begin{note}{e29cdd0f22c346cab64fe288db3fbdb8}
+    В чем основная идея доказательства следствия о монотонности функции с ненулевой производной?
+
+    \begin{cloze}{1}
+        Доказать от противного, что \( f' \) не меняет знак на \( \langle A, B \rangle  \).
+        Далее по достаточному условию строгой монотонности.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9fc77ac828a342f885c48ee472c09734}
+    \subsubsection{<<\begin{icloze}{2}Следствие из теорему Дарбу \\
+    \phantom{<<} \quad о сохранении промежутка.\end{icloze}>>}
+
+    \begin{icloze}{1}Пусть \( f \) дифференцируема на \( \langle A, B \rangle  \). Тогда \( f'(\langle A, B \rangle ) \) --- промежуток.\end{icloze}
+\end{note}
+
+\begin{note}{56d20a83493a46d1ac834fec9f4ebdef}
+    В чем основная идея доказательства следствия из теоремы Дарбу о сохранении промежутка?
+
+    \begin{cloze}{1}
+        Показать, что для любых \( a, b \in \langle A, B \rangle  \)
+        \[
+            [f'(a), f'(b)] \subset f'(\langle A, B \rangle ).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{0cd99b9f1fae4d1aadfac35788f440c6}
+    Какое упрощение принимается (для определённости) для точек \( a, b \in \langle A, B \rangle  \) в доказательстве следствия из теоремы Дарбу о сохранении промежутка?
+
+    \begin{cloze}{1}
+        \[
+            f'(a) \leqslant f'(b).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{9ee92cbcb63b46e78fe63b31bbf7f924}
+    Как в доказательстве следствия из теоремы Дарбу о сохранении промежутка показать, что
+    \[
+        \forall y \in (f'(a), f'(b)) \quad y \in f(\langle A, B \rangle )?
+    \]
+
+    \begin{cloze}{1}
+        Применить теорему Дарбу к функции
+        \[
+            F(x) = f(x) - y \cdot x
+        \]
+        в точках \( a \) и \( b \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3c1144d31e264164b099479d41f9abe3}
+    \subsubsection{<<\begin{icloze}{2}Следствие из теорему Дарбу \\
+    \phantom{<<} \quad о скачках производной.\end{icloze}>>}
+
+    \begin{icloze}{1}Пусть \( f \) дифференцируема на \( \langle A, B \rangle  \). Тогда функция \( f' \) не имеет скачков на \( \langle A, B \rangle  \).\end{icloze}
+\end{note}
+
+\begin{note}{f94b4bdf90b14fa0a4256a492cf742a5}
+    В чем основная идея доказательства следствия из теоремы Дарбу о скачках производной?
+
+    TODO
+\end{note}
 \end{document}
