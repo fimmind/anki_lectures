@@ -356,4 +356,132 @@
 \begin{note}{c13a12af79d9432ab1df0d1bab6f905c}
     Матрица композиции линейных операторов есть \begin{icloze}{1}произведение матриц этих операторов.\end{icloze}
 \end{note}
+
+\section{Лекция 21.02.22}
+\begin{note}{13db7f12a2e14ffca2f5e09197cd3e07}
+    Пусть \( f : V \to W \) --- линейный оператор,  \( A \) --- матрица оператора \( f \) в базисах \( e \) и \( \tilde e \) соответственно. Как преобразуется матрица \( A \) при замене базисов \( e \to e', \tilde e \to \tilde e'? \)
+
+    \begin{cloze}{1}
+        \[
+            A' = C^{-1}_{\tilde e \to \tilde e'} \; A \; C_{e \to e'}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{015e02c15f134a53b50a24729fb6ac3d}
+    Пусть \( f : V \to V \) --- линейный оператор,  \( A \) --- матрица оператора \( f \) в базисе \( e \). Как преобразуется матрица \( A \) при замене базиса \( e \to e' \)?
+
+    \begin{cloze}{1}
+        \[
+            A' = C^{-1}_{e \to e'} \; A \; C_{e \to e'}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{e3c3292adefb4657a177843c8840476d}
+    Пусть \( f : V \to V \) --- линейный оператор, \( A \) и \( A' \) --- матрицы оператора \( f \) в двух базисах \( e \) и \( e' \) соответственно.
+    Тогда \( \det A' = \begin{icloze}{1}\det A\end{icloze} \).
+\end{note}
+
+\begin{note}{79b8fed369c447dfb53f352258ed6940}
+    \begin{icloze}{2}Определителем оператора \( f : V \to V \)\end{icloze} называется \begin{icloze}{1}о\-пре\-де\-ли\-тель матрицы оператора \( f \) в произвольном базисе.\end{icloze}
+\end{note}
+
+\begin{note}{79b8fed369c447dfb53f352258ed6940}
+    \begin{icloze}{2}Рангом оператора \( f : V \to V \)\end{icloze} называется \begin{icloze}{1}ранг матрицы оператора \( f \) в произвольном базисе.\end{icloze}
+\end{note}
+
+\begin{note}{d36be29fb7a342599a7f73709043bb1f}
+    \begin{icloze}{2}След матрицы \( A \)\end{icloze} обозначается \begin{icloze}{1}\( \operatorname{tr}  A \).\end{icloze}
+\end{note}
+
+\begin{note}{3c423489fc4f422aaa906fbcc2041ec3}
+    Пусть \( A \in \begin{icloze}{3}\mathbb R ^{n \times n}\end{icloze} \). Тогда \( \displaystyle \begin{icloze}{2}\operatorname{tr} A\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sum_{i=1}^{n} a_{ii}\end{icloze} \).
+\end{note}
+
+\begin{note}{55e76656e4fc4920969acdfb57634355}
+    \begin{icloze}{2}Следом оператора \( f : V \to V \)\end{icloze} называется \begin{icloze}{1}след матрицы оператора \( f \) в произвольном базисе.\end{icloze}
+\end{note}
+
+\begin{note}{1da0c4fffac341f89821707b4a1b38a6}
+    Пусть \( f : V \to W \) --- линейный оператор. Тогда
+    \[
+        \begin{icloze}{2}\ker f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}f^{-1}(\left\{ 0 \right\}).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f8fe0ceb74f84386932c4100743fb775}
+    Пусть \( f : V \to W \) --- линейный оператор. Тогда
+    \[
+        \begin{icloze}{2}\operatorname{im} f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}f(V).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{56a80e8376154f29b490e470ceac8bc3}
+    Пусть \( f : V \to W \) --- линейный оператор. Можно ли утверждать, что всегда \( \ker f \triangleleft V \)?
+
+    \begin{cloze}{1}
+        Да, поскольку линейная комбинация нулей \( f \) --- тоже нуль \( f \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{28f55b0f2daa4b35b1859196e2d41ede}
+    Пусть \( f : V \to W \) --- линейный оператор. Можно ли утверждать, что всегда \( \ker f \triangleleft W \)?
+
+    \begin{cloze}{1}
+        Нет, \( \ker f \triangleleft V \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a4bde4e9272d4bef89c915f6390ca148}
+    Пусть \( f : V \to W \) --- линейный оператор. Можно ли утверждать, что всегда \( \operatorname{im} f \triangleleft W \)?
+
+    \begin{cloze}{1}
+        Да, поскольку \( \forall f(u), f(v) \in \operatorname{im} f \)
+        \[
+            \alpha f(u) + \beta f(v) = f(\alpha u + \beta v) \in \operatorname{im} f.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{7b17eb03a5e640f8bddefa0aaa6656c3}
+    Пусть \( f : V \to W \) --- линейный оператор. Можно ли утверждать, что всегда \( \operatorname{im} f \triangleleft V \)?
+
+    \begin{cloze}{1}
+        Нет, \( \operatorname{im} f \triangleleft W \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5c7bf3d386eb4fa181cdb696fc0f9ab5}
+    Пусть \( f : V \to W \) --- линейный оператор. Как связаны размерности \( V \), \( \ker f \) и \( \operatorname{im} f \)?
+
+    \begin{cloze}{1}
+        \[
+            \dim \ker f + \dim \operatorname{im} f = \dim V.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{8a962591377f49c1a6b297a1efe008e9}
+    \[
+        \dim \operatorname{im} f = \begin{icloze}{1}\operatorname{rk} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a85a7d7b1e3d47939cc717cb8da889ac}
+    Пусть \( f : W \to W \) --- линейный оператор. \begin{icloze}{1}Пространство \( V \triangleleft W \)\end{icloze} называется \begin{icloze}{2}инвариантным относительно оператора \( f \),\end{icloze} если
+    \begin{icloze}{1}\[
+        f(V) \in V. \operatorname{im}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{e3d31c73908d4103b6c9caf2377e4432}
+    Примеры инвариантных подпространств в контексте произвольного оператора \( f : W \to W \):
+
+    \begin{cloze}{1}
+        \[
+            \ker f, \operatorname{im} f.
+        \]
+    \end{cloze}
+\end{note}
 \end{document}
