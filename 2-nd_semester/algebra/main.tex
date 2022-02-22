@@ -430,10 +430,48 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{b6ef54a20af44801aceb30b556b95011}
+    Пусть \( f : V \to W \) --- линейный оператор. В чем основная идея доказательства следующей формулы?
+    \[
+        \dim \ker f + \dim \operatorname{im} f = \dim V
+    \]
+
+    \begin{cloze}{1}
+        Дополнить базис в \( \ker f \) до базиса в \( V \) и построить из них базис в \( \operatorname{im} f \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{26a0af100d5b4c459a74ba6384b7c554}
+    Пусть \( f : V \to W \) --- линейный оператор,
+    \begin{itemize}
+        \item \( e_1,e_2, \ldots, e_k  \) --- базис в \( \ker f \);
+        \item \( e_1,e_2, \ldots, e_k, e_{k+1}, \ldots, e_n  \) --- базис в \( V \).
+    \end{itemize}
+    Как выглядит базис в \( \operatorname{im} f \)?
+
+    \begin{cloze}{1}
+        \[
+            f(e_{k+1}), \ldots, f(e_n).
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{8a962591377f49c1a6b297a1efe008e9}
+    Пусть \( f : W \to W \) --- линейный оператор. Тогда
     \[
         \dim \operatorname{im} f = \begin{icloze}{1}\operatorname{rk} f.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{2acbea4466f54360bc19e2065a44fc95}
+    Пусть \( f : W \to W \) --- линейный оператор. Как показать, что
+    \[
+        \dim \operatorname{im} f = \operatorname{rk} f?
+    \]
+
+    \begin{cloze}{1}
+        Показать, что в координатном выражении \( \operatorname{im} f \) есть линейная оболочка столбцов матрицы оператора \( f \).
+    \end{cloze}
 \end{note}
 
 \begin{note}{a85a7d7b1e3d47939cc717cb8da889ac}
@@ -451,5 +489,18 @@
             \ker f, \operatorname{im} f.
         \]
     \end{cloze}
+\end{note}
+
+\begin{note}{e64a247c0efb47f8be38d4ab4ef17b05}
+    Пусть \( f : W \to W \) --- линейный оператор,  \( e_1,e_2, \ldots, e_n  \) --- \begin{icloze}{4}дополнение до базиса в \( W \) базиса \( e_1,e_2, \ldots, e_k  \) в инвариантном подпространстве \( V \triangleleft W \).\end{icloze} Тогда \begin{icloze}{3}матрица оператора \( f \) в базисе \( e_1,e_2, \ldots, e_k  \)\end{icloze} примет вид
+    \[
+        A = \begin{icloze}{1}
+            \begin{bmatrix}
+                T_{11} & T_{12} \\
+                0 & T_{22}
+            \end{bmatrix},
+        \end{icloze}
+    \]
+    где \( T_{11}  \) --- это \begin{icloze}{2}матрица \( f |_{V}  \) в базисе \( e_1,e_2, \ldots, e_k  \).\end{icloze}
 \end{note}
 \end{document}
