@@ -1,36 +1,4 @@
-\documentclass[11pt, a5paper]{article}
-\usepackage[width=10cm, top=0.5cm, bottom=2cm]{geometry}
-
-\usepackage[T1,T2A]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
-\usepackage{libertine}
-
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{mathrsfs}
-\usepackage{framed}
-\usepackage{xcolor}
-
-\setlength{\parindent}{0pt}
-
-% Force \pagebreak for every section
-\let\oldsection\section
-\renewcommand\section{\pagebreak\oldsection}
-
-\renewcommand{\thesection}{}
-\renewcommand{\thesubsection}{Note \arabic{subsection}}
-\renewcommand{\thesubsubsection}{}
-\renewcommand{\theparagraph}{}
-
-\newenvironment{note}[1]{\goodbreak\par\subsection{\hfill \color{lightgray}\tiny #1}}{}
-\newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
-\newenvironment{icloze}[2][\ldots]{%
-  \ignorespaces\text{\tiny \color{lightgray}\{\{#2::}\hspace{0pt}%
-}{%
-  \hspace{0pt}\text{\tiny\color{lightgray}\}\}}\unskip%
-}
+\input{../../prelude.tex}
 
 \begin{document}
 \section{Лекция 07.02.22}
