@@ -360,7 +360,7 @@
 
 \begin{note}{c766c427b7e44be8a2e40e872ec7dd2b}
     \[
-        C_{-1}^{k} = (-1)^{k}.
+        C_{-1}^{k} = \begin{icloze}{1}(-1)^{k}.\end{icloze}
     \]
 \end{note}
 
@@ -765,5 +765,53 @@
     В чем основная идея доказательства следствия из теоремы Дарбу о скачках производной?
 
     TODO
+\end{note}
+
+\begin{note}{027449ca442a449786b58ca872e4aff2}
+    \begin{icloze}{3}Функция \( f : \langle A, B \rangle \to \mathbb R  \)\end{icloze} называется \begin{icloze}{2}выпуклой на \( \langle A, B \rangle  \),\end{icloze} если
+    \begin{icloze}{1}\[
+        \begin{gathered}
+            \forall a, b \in \langle A, B \rangle, \lambda \in (0,1) \\
+            f(\lambda a + (1 - \lambda)b) \leqslant \lambda f(a) + (1 - \lambda)f(b).
+        \end{gathered}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{0073407c9c4f473cb4759784548208bd}
+    \begin{icloze}{3}Функция \( f : \langle A, B \rangle \to \mathbb R  \)\end{icloze} называется \begin{icloze}{2}строго выпуклой на \( \langle A, B \rangle  \),\end{icloze} если
+    \begin{icloze}{1}\[
+        \begin{gathered}
+            \forall a, b \in \langle A, B \rangle, \lambda \in (0,1) \\
+            f(\lambda a + (1 - \lambda)b) < \lambda f(a) + (1 - \lambda)f(b).
+        \end{gathered}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{a0e64a51b1ac405c9e5806d135c272da}
+    \subsubsection{<<\begin{icloze}{4}Критерий строгой выпуклости \( f \) на \( \langle A, B \rangle  \)\end{icloze}>>}
+
+    Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда \begin{icloze}{3}равносильны\end{icloze} следующие утверждения.
+    \begin{itemize}
+        \item \begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
+        \item \begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливо неравенство
+                \[
+                    \frac{f(c) - f(a)}{c - a} < \frac{f(b) - f(c)}{b - c}.
+                \]
+            \end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{8969555424f24b2c8347358586f381e8}
+    \subsubsection{<<\begin{icloze}{4}Лемма о трёх хордах\end{icloze}>>}
+
+    Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда \begin{icloze}{3}равносильны\end{icloze} следующие утверждения.
+    \begin{itemize}
+        \item \begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
+        \item \begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливы неравенства
+                \[
+                    \frac{f(c) - f(a)}{c - a} < \frac{f(b) - f(a)}{b - a}  < \frac{f(b) - f(c)}{b - c}.
+                \]
+            \end{icloze}
+    \end{itemize}
 \end{note}
 \end{document}
