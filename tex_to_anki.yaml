@@ -11,6 +11,15 @@ decks:
     name: University::2-nd Semester::Calculus
     source_files:
       - 2-nd_semester/calculus/main.tex
+  2005274619:
+    name: University::Lie Algebras
+    description: |
+      <div style="text-align: center">
+        My notes for <br> <i>Introduction to Lie Algebras and Representation Theory</i>
+      </div>
+    source_files:
+      - lie_algebras/main.tex
+
 
 model:
   id: 1761624185
