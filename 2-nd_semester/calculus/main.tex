@@ -814,4 +814,110 @@
             \end{icloze}
     \end{itemize}
 \end{note}
+
+\section{Лекция 25.02.22}
+\begin{note}{0abcc31a29c74496883c555de61b5af7}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in \langle A, B \rangle  \)
+    \[
+        F(x) := \frac{f(x) - f(a)}{x - a}.
+    \]\end{icloze}
+
+    Тогда если \begin{icloze}{2}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} то
+    \begin{icloze}{1}
+        \begin{center}
+            \( F \!\!\nearrow \) на \( \langle A, B \rangle \setminus \left\{ a \right\} \).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{6658c8d28bde461584886f85aacf4977}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in \langle A, B \rangle  \)
+    \[
+        F(x) := \frac{f(x) - f(a)}{x - a}.
+    \]\end{icloze}
+
+    Тогда если \begin{icloze}{2}\( f \) строго выпукла на \( \langle A, B \rangle  \),\end{icloze} то
+    \begin{icloze}{1}
+        \begin{center}
+            \( F \!\!\nearrow\!\nearrow  \) на \( \langle A, B \rangle \setminus \left\{ a \right\} \).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{0bb5876454d448878db0853372d90fe7}
+    Пусть \begin{icloze}{3}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} \begin{icloze}{2}\( a \in \langle A, B )  \).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \exists f'_+(a) \in [-\infty, +\infty ).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{960c7add5b8c4ab4b798301f26f12648}
+    Пусть \begin{icloze}{3}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} \begin{icloze}{2}\( a \in (A, B \rangle  \).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \exists f'_-(a) \in (-\infty, +\infty ].
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{2e664465fdc5410ca8b72059cfe627bc}
+    Пусть \begin{icloze}{3}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} \begin{icloze}{2}\( a \in (A, B) \).\end{icloze} Тогда \begin{icloze}{1}\( f'_+ (a) \) и \( f'_- (a) \) конечны и \( f'_+ (a) \leqslant f'_+ (a) \).\end{icloze}
+\end{note}
+
+\begin{note}{eb64f07db3d3434197d40b0980a78e66}
+    Если функция \( f \) выпукла на \( \langle A, B \rangle  \), то она \begin{icloze}{1}непрерывна на \( (A, B) \).\end{icloze}
+\end{note}
+
+\begin{note}{9f16939e7619449e9fe1d75a7aae2e87}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R  \), \( a \in \langle A, B \rangle  \).\end{icloze}
+    \begin{icloze}{2}Прямая \( y = g(x) \)\end{icloze} называется \begin{icloze}{1}опорной для функции в точке \( a \),\end{icloze} если
+    \begin{icloze}{2}
+        она проходит через точку \( (a, f(a)) \) и
+        \[
+            \begin{gathered}
+                f(x) \geqslant g(x) \quad \forall x \in \langle A, B \rangle.
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7b835ae738654ba5a0921df5133181e7}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R  \), \( a \in \langle A, B \rangle  \).
+    \begin{icloze}{2}Прямая \( y = g(x) \)\end{icloze} называется \begin{icloze}{1}строго опорной для функции в точке \( a \),\end{icloze} если
+    \begin{icloze}{2}
+        она проходит через точку \( (a, f(a)) \) и
+        \[
+            \begin{gathered}
+                f(x) > g(x) \quad \forall x \in \langle A, B \rangle \setminus \left\{ a \right\}.
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{fedf029d618e48ddabe81280b131b72b}
+    Пусть \begin{icloze}{5}\( f : \langle A, B \rangle \to \mathbb R  \), \( f \) выпукла на \( \langle A, B \rangle  \), \( a \in (A, B) \),\end{icloze} прямая \( \ell \) задаётся
+    \begin{icloze}{4}
+        уравнением
+        \[
+            y = f(a) + k(x - a).
+        \]
+    \end{icloze}
+
+    Тогда прямая \( \ell  \) является \begin{icloze}{1}опорной для функции \( f \)
+    в точке \( a \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{2}
+        \( k \in [f'_+ (a), f'_- (a) ] \).
+    \end{icloze}
+\end{note}
+
+\begin{note}{8ceccffa4cbe4c8d8330451f4f53876c}
+    Пусть \begin{icloze}{4}\( f : \langle A, B \rangle \to \mathbb R  \), \( f \) строго выпукла на \( \langle A, B \rangle  \), \( a \in (A, B) \),\end{icloze} прямая \( \ell \) задаётся уравнением
+    \[
+        y = f(a) + k(x - a).
+    \]
+
+    Тогда прямая \( \ell  \) является \begin{icloze}{1}строго опорной для функции \( f \) в точке \( a \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{2}\( k \in [f'_+ (a), f'_- (a) ] \).\end{icloze}
+\end{note}
 \end{document}
