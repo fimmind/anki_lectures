@@ -503,4 +503,121 @@
     \]
     где \( T_{11}  \) --- это \begin{icloze}{2}матрица \( f |_{V}  \) в базисе \( e_1,e_2, \ldots, e_k  \).\end{icloze}
 \end{note}
+
+\section{Лекция 28.02.22}
+\begin{note}{9932dc2853764661928eedc8d44ddd74}
+    Линейный оператор \( f : W \to W \) называется \begin{icloze}{2}невырожденным,\end{icloze} если \begin{icloze}{1}\( \det f \neq 0 \).\end{icloze}
+\end{note}
+
+\begin{note}{2e565e676da342fb8cdacf4d62de05e8}
+    Пусть \( f : V \to V \) --- линейный оператор. Следующие 5 условий эквивалентны:
+    \begin{enumerate}
+        \item \( f \) невырождено;
+        \begin{icloze}{1}
+            \item \( \ker f = \left\{ 0 \right\} \);
+            \item \( \operatorname{im} f = V \);
+            \item \( \operatorname{rk} f = \dim V \);
+            \item \( f \) --- биекция.
+        \end{icloze}
+    \end{enumerate}
+\end{note}
+
+\begin{note}{8f9f5108ac8847299f21fd40619c6612}
+    Пусть \( f : W \to W \) --- линейный оператор. Как доказать, что если \( f \) --- невырожденный оператор то \( f \) --- биекция?
+
+    \begin{cloze}{1}
+        Показать, что если \( f \) задаётся матрицей \( A \), то \( f^{-1} \) задаётся матрицей \( A^{-1} \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{0c8915aebdc24427ab211efa79c6e07a}
+    Пусть \( f : W \to W \) --- линейный оператор. Как доказать, что если \( f \) --- биекция, то \( f \) --- невырожденный оператор.
+
+    \begin{cloze}{1}
+        \[
+            \det (f \circ f^{-1}) = |E| \implies \det f \neq 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{198b26e615c745edbd313c2f62029546}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор.\end{icloze} Тогда \begin{icloze}{1}число \( \lambda \in \mathbb C  \)\end{icloze} называется \begin{icloze}{2}собственным значением оператора \( f \),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \exists v \in V \quad f(v) = \lambda v.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f0b8dcb8a69748a0a51393ae495884b4}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор.\end{icloze} Тогда \begin{icloze}{1}вектор \( v \in V \)\end{icloze} называется \begin{icloze}{2}собственным вектором оператора \( f \),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \exists \lambda \in \mathbb C \quad f(v) = \lambda v.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{22a614bf26ea4db3ae297b5c647e6517}
+    \begin{icloze}{2}Спектром оператора\end{icloze} называется \begin{icloze}{1}множество собственных значений этого оператора.\end{icloze}
+\end{note}
+
+\begin{note}{1f331a6bd4c84dc4996f323fd40b5a22}
+    \begin{icloze}{2}Спектр\end{icloze} оператора \( f \) обозначается \begin{icloze}{1}\( \operatorname{spec} f \).\end{icloze}
+\end{note}
+
+\begin{note}{ff82c9b056384c19b0a176b637c3941c}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор,  \( \lambda \in \mathbb C  \).\end{icloze} Тогда \( \lambda \) является собственным значением \( f \) \begin{icloze}{2}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \det (f - \lambda E) = 0.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a96c7b61477946699a72e8a792c8bf75}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор.\end{icloze} Тогда \begin{icloze}{2}уравнение
+    \[
+        \det (f - \lambda E) = 0
+    \]
+    \end{icloze} называется \begin{icloze}{1}характеристическим уравнением оператора \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{a7a86475fc014d3c8fe1d63fa3a766ea}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор.\end{icloze} Тогда \begin{icloze}{2}выражение
+    \[
+        \det (f - \lambda E)
+    \]
+    \end{icloze} называется \begin{icloze}{1}характеристическим многочленом оператора \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{976ac89d4ea7486080b6c2c8473946d9}
+    Пусть \( f : V \to V \) --- линейный оператор. Почему
+    \[
+        \det (f - \lambda E)
+    \]
+    является многочленом переменной \( \lambda \)?
+
+    \begin{cloze}{1}
+        Если \( A \) --- матрица оператора \( f \), то \( \left| A - \lambda E \right|  \) --- многочлен переменной \( \lambda \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5376672e8b21438896bc774aa4ac2275}
+    Пусть
+    \[
+        A = \begin{bmatrix}
+            a_{11} & a_{12} \\
+            a_{21} & a_{22}
+        \end{bmatrix}.
+    \]
+    Тогда
+    \[
+        \begin{icloze}{2}\begin{vmatrix}
+            a_{11} - \lambda & a_{12} \\
+            a_{21} & a_{22} - \lambda
+        \end{vmatrix}\end{icloze}
+        = \begin{icloze}{1}|A| - \lambda \operatorname{tr} A + \lambda^2.\end{icloze}
+\]
+\end{note}
 \end{document}
