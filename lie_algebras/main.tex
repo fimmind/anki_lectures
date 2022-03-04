@@ -1,11 +1,19 @@
 \input{../prelude.tex}
 
 \begin{document}
-\section{1.1. The notion of Lie algebra}
+\section{Prerequisites}
+\begin{note}{621caffff9ce421bb4309fc0c1cf144c}
+    A function is said to be \begin{icloze}{2}multilinear\end{icloze} if and only if it is \begin{icloze}{1}linear separately in each variable.\end{icloze}
+\end{note}
 
+\begin{note}{1a514ffb24744a278834d0048496a850}
+    A function is said to be \begin{icloze}{2}bilinear\end{icloze} if and only if \begin{icloze}{1}it is a multilinear function of two argument.\end{icloze}
+\end{note}
+
+\section{1.1. The notion of Lie algebra}
 \begin{note}{686bbc96abfb46e883a4acb108450cc1}
     At the first place a Lie algebra is \begin{icloze}{1}a vector space \( L \)
-    over a field \( F \)\end{icloze}.
+    over a field \( \mathrm F \)\end{icloze}.
 \end{note}
 
 \begin{note}{7a252531934f4c00829418ab1f3a1d01}
@@ -65,5 +73,26 @@
 \begin{note}{db6289e2261549bcb58877ac4d6f36f7}
     \begin{icloze}{2}The axiom (\( L 3 \)) from the definition of a Lie algebra\end{icloze} is called
     \begin{icloze}{1}the Jacobi identity\end{icloze}.
+\end{note}
+
+\begin{note}{fdd2c3d3027e4a34be5e9540f148a9cd}
+    Let \( L \), \( L' \) be two Lie algebras over \( \mathrm F \). \begin{icloze}{1}A vector space isomorphism \( \phi : L \to L' \) satisfying
+    \[
+        \phi([xy]) = [\phi(x) \phi(y)] \quad \forall x,y \in L
+    \]\end{icloze}
+    is called \begin{icloze}{2}an isomorphism of Lie algebras.\end{icloze}
+\end{note}
+
+\begin{note}{cbd7fbe2d06c41e29e72d8075fc10e5f}
+    We say that two Lie algebras \( L \), \( L' \) over \( \mathrm F \) are \begin{icloze}{2}isomorphic\end{icloze} if \begin{icloze}{1}there exists a Lie algebra isomorphism \( \phi : L \to L' \).\end{icloze}
+\end{note}
+
+\begin{note}{fe5ab449614b4098a1e81d3d86903d64}
+    Let \( L \) be a Lie algebra over \( \mathrm F \). \begin{icloze}{2}A subspace \( K \) of \( L \) satisfying
+        \[
+            [xy] \in K \quad \forall x,y \in K.
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}a subalgebra of \( L \)\end{icloze}
 \end{note}
 \end{document}
