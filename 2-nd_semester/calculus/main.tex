@@ -917,4 +917,151 @@
 
     Тогда прямая \( \ell  \) является \begin{icloze}{1}строго опорной для функции \( f \) в точке \( a \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{2}\( k \in [f'_-(a), f'_+(a)]\).\end{icloze}
 \end{note}
+
+\section{04.03.22}
+\begin{note}{acc9492d0b4f4c4a8e6b1688ee26ed5e}
+    В чем геометрический смысл \( T_{a, 1} f(x) \)?
+
+    \begin{cloze}{1}
+        График \( T_{a, 1} f(x) \) --- это касательная к функции \( f \) в точке \( a \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{570272578ee74dd988ea80f9e95cbc6f}
+    \subsubsection{<<Связь выпуклости функции с её касательными>>}
+
+    Пусть \begin{icloze}{4}\( f : \langle A, B \rangle \to \mathbb R \), \( f \) дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}функция \( f \) выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда,\end{icloze} когда
+    \begin{icloze}{1}
+        \[
+            \begin{gathered}
+                \forall a \in (A, B), \quad x \in \langle A, B \rangle \\
+                f(x) \geqslant T_{a, 1} f(x).
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{32700c2a93204435b3f66db20ea03bf7}
+    \subsubsection{<<Связь выпуклости функции с её касательными>>}
+
+    Пусть \begin{icloze}{4}\( f : \langle A, B \rangle \to \mathbb R \), \( f \) дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}функция \( f \) строго выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \begin{gathered}
+                \forall a \in (A, B), x \in \langle A, B \rangle \setminus \left\{ a \right\} \\
+                f(x) > T_{a, 1} f(x).
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{76ff105d143e49dea8fe8db2b74ee9ff}
+    В чем основная идея доказательства теоремы о связи выпуклости функции с её касательными?
+
+    \begin{cloze}{1}
+        \( f \) дифференцируема в любой точке \( (A, B) \) \( \implies \) касательная совпадает с опорной прямой.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3b6d6467bd5144febe2b52fd934c971a}
+    Пусть \begin{icloze}{3}\( f : (A, +\infty) \to \mathbb R \) имеет при \( x \to +\infty \) асимптоту \( y = kx + b \).\end{icloze}
+    Тогда если \begin{icloze}{2}\( f \) выпукла на \( (A, +\infty) \),\end{icloze} то
+    \begin{icloze}{1}
+        \[
+            f(x) \geqslant kx + b \quad \forall x \in (A, +\infty).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{e766cccf8cdf4765b58203bef6244390}
+    Пусть \begin{icloze}{3}\( f : (A, +\infty) \to \mathbb R \) имеет при \( x \to +\infty \) асимптоту \( y = kx + b \).\end{icloze}
+    Тогда если \begin{icloze}{2}\( f \) строго выпукла на \( (A, +\infty) \),\end{icloze} то
+    \begin{icloze}{1}
+        \[
+            f(x) > kx + b \quad \forall x \in (A, +\infty).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{94e7cdb6145142c3bb7cc8115035e5ad}
+    \subsubsection{<<Связь выпуклости функции с \( f' \)>>}
+
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle \), \( f \) дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}\( f \) выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \begin{center}
+            \( f' \!\!\nearrow \) на \( (A, B) \).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{cfdb1a58f41247169b530e3bc3f5b061}
+    \subsubsection{<<Связь выпуклости функции с \( f' \)>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle \), \( f \) дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}\( f \) строго выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \begin{center}
+            \( f' \!\!\nearrow\!\nearrow \) на \( (A, B) \).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{1db6c044058c49e68328ad272c648da8}
+    \subsubsection{<<Связь выпуклости функции с \( f'' \)>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle \), \( f \) дважды дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}\( f \) выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            f''(x) \geqslant 0 \quad \forall x \in (A, B).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d78c1dfaebde4a2e89fdccfb43309163}
+    \subsubsection{<<Связь выпуклости функции с \( f'' \)>>}
+    Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle \), \( f \) дважды дифференцируема на \( (A, B) \).\end{icloze}
+    Тогда \begin{icloze}{2}\( f \) строго выпукла на \( \langle A, B \rangle \),\end{icloze} \begin{icloze}{3}если\end{icloze}
+    \begin{icloze}{1}
+        \[
+            f''(x) > 0 \quad \forall x \in (A, B).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{399c82ffb7094f2e8e4a74da8023fc60}
+    Пусть \begin{icloze}{3}\( f :  \langle A, B \rangle \to \mathbb R, a \in (A, B) \).\end{icloze}
+    Точка \( a \) называется \begin{icloze}{2}точкой перегиба функции \( f \),\end{icloze} если
+    \begin{icloze}{1}
+        \begin{itemize}
+            \item \( \exists \delta > 0 \) такое, что \( V_\delta (a) \subset (A, B) \) и \( f \) имеет разный характер выпуклости на \( (a - \delta, a] \) и \( [a, a + \delta) \);
+            \item \( f \) непрерывна в точке \( a \);
+            \item \( \exists f'(a) \in \overline{\mathbb R} \).
+        \end{itemize}
+    \end{icloze}
+\end{note}
+
+\begin{note}{9aa5847a39ac46e8ad8dbee41e14a904}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \), \( f \) дважды дифференцируема на \( a \).
+    Если \begin{icloze}{2}\( a \) является точкой перегиба \( f \),\end{icloze} то \begin{icloze}{1}\( f''(a) = 0 \).\end{icloze}
+\end{note}
+
+\begin{note}{aca76c8bcbef4e38ad13dd619d48d19d}
+    Является ли нулевая вторая производная достаточным условием перегиба?
+
+    \begin{cloze}{1}
+        Нет, это только необходимое условие.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c3615f4ec8d84748bde8c518c9e98375}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R, a \in (A, B) \), \( f \) непрерывна в точке \( a \) и имеет в ней производную из \( \overline{\mathbb R} \).\end{icloze}
+    Тогда если \begin{icloze}{1}\( \exists \delta > 0 \) такое, что \( f \) дважды дифференцируема на \( \dot V_{\delta}(a) \) и
+    \begin{itemize}
+        \item либо \quad \( \operatorname{sgn} f''(x) = \operatorname{sgn} (a - x) \quad \forall x \in \dot V_{\delta}(a), \)
+        \item либо \quad \( \operatorname{sgn} f''(x) = \operatorname{sgn} (x - a) \quad \forall x \in \dot V_{\delta}(a), \)
+    \end{itemize}\end{icloze}
+    то \begin{icloze}{2}\( a \) --- точка перегиба \( f \).\end{icloze}
+\end{note}
 \end{document}
