@@ -641,4 +641,280 @@
         = \begin{icloze}{1}|A| - \lambda \operatorname{tr} A + \lambda^2.\end{icloze}
 \]
 \end{note}
+
+\section{Лекция 07.03.22}
+\begin{note}{0d6c679eb377462e90e8ac9bba29dd61}
+    Пусть \( f : W \to W \) --- линейный оператор.
+    \begin{icloze}{2}Характеристический многочлен оператора \( f \)\end{icloze} обозначается \begin{icloze}{1}
+    \[
+        \chi_f (\lambda).
+    \]
+\end{icloze}
+\end{note}
+
+\begin{note}{78106143b649485eb1c075b2388eb22e}
+    Пусть \begin{icloze}{3}\( f : W \to W \) --- линейный оператор и \( V \triangleleft W \) инвариантно относительно \( f \).\end{icloze}
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\( \chi_{f|_V} (\lambda) \)\end{icloze} --- \begin{icloze}{1}делитель \( \chi_f (\lambda) \).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{6deeef304fd8465bbff331e4241bde67}
+    Пусть \( f : W \to W \) --- линейный оператор и \( V \triangleleft W \) инвариантно относительно \( f \).
+    Тогда
+    \begin{center}
+        \( \chi_{f|_V} (\lambda) \) --- делитель \( \chi_f (\lambda) \).
+    \end{center}
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что \( \chi_f (\lambda) \) --- определитель соответствующей квазитреугольной матрицы оператора \( f \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cdb0a7bde4e044e48a5a798a8052f163}
+    Пусть \( f : W \to W \) --- линейный оператор.
+    \begin{icloze}{1}Множество всех собственных векторов \( f \) с собственным значением \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
+\end{note}
+
+\begin{note}{545e4fc3988d45fdafc099f74fe38f36}
+    Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    В кратком выражении
+    \[
+        \begin{icloze}{2}V_f(\lambda)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\ker (f - \lambda E).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{edf7cad1b7df422181105ad8bf31a210}
+    Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    Всегда ли
+    \[
+        V_{f} (\lambda) \triangleleft W?
+    \]
+
+    \begin{cloze}{1}
+        Да, всегда, потому что \( V_{f} (\lambda) = \ker (f - \lambda E) \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{de964305c22b4993819a8d5095504e53}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    \begin{icloze}{1}Размерность \( V_f (\lambda) \)\end{icloze} называют \begin{icloze}{2}геометрической кратностью собственного значения \( \lambda \).\end{icloze}
+\end{note}
+
+\begin{note}{f6b8139d2f0e46d38a2dd075ff83b2f4}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    \begin{icloze}{2}Геометрическая кратность собственного значения \( \lambda \)\end{icloze} обозначается \begin{icloze}{1}\( S_f (\lambda) \).\end{icloze}
+\end{note}
+
+\begin{note}{eff6d05e42b34f078450044f6153939b}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    \begin{icloze}{1}Кратность \( \lambda \) как корня \( \chi_f \)\end{icloze} называют \begin{icloze}{2}алгебраической кратностью собственным значением \( \lambda \).\end{icloze}
+\end{note}
+
+\begin{note}{856a933db82641cd87b0ee5f34647b1a}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    \begin{icloze}{2}Алгебраическая кратность собственного значения \( \lambda \)\end{icloze} обозначается \begin{icloze}{1}\( m_f (\lambda) \).\end{icloze}
+\end{note}
+
+\begin{note}{b7431a88515043deacf49cf7fdb735c6}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    Тогда \begin{icloze}{1}\( S_f (\lambda) \leqslant m_f (\lambda) \).\end{icloze}
+\end{note}
+
+\begin{note}{6b913f908a194114bee71fb9a7526282}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
+    Тогда \( S_f (\lambda) \leqslant m_f (\lambda) \).
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что \( V_f (\lambda) \) инвариантно относительно \( f \) \\
+        \phantom{} \hfill \( \implies \) \( \chi_f \) делится на \( \chi_{\tilde f} \), где \( \tilde f = f|_{V_f(\lambda)} \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{58579b404ae34478b736df96c853c6e6}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \), \: \begin{icloze}{2}\( \tilde f = f|_{V_f(\lambda)} \).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{3}\chi_{\tilde f} (t)\end{icloze} = \begin{icloze}{1}(\lambda - t)^{S_f(\lambda)}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8d63ff53045545709809018e1492b231}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \), \: \( \tilde f = f|_{V_f(\lambda)} \).
+    Откуда следует, что
+    \[
+        \chi_{\tilde f} (t) = (\lambda - t)^{S_f(\lambda)} \quad?
+    \]
+
+    \begin{cloze}{1}
+        \( \tilde f \) представляется  матрицей \( \lambda E \) порядка \( \dim V_f(\lambda) \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a3b9ba1c4e884a7bb1e3c4764f063d1f}
+    \begin{icloze}{2}Оператор \( f : x \mapsto \lambda x \), где \( \lambda \in \mathbb R \),\end{icloze} называется \begin{icloze}{1}скалярным оператором.\end{icloze}
+\end{note}
+
+\begin{note}{51a455604c9c4d7eadc3fe5ab0af6397}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор.\end{icloze}
+    \( f \) называется \begin{icloze}{2}диагонализуемым оператором,\end{icloze} если \begin{icloze}{1}существует базис в \( V \), в котором матрица оператора \( f \) является диагональной.\end{icloze}
+\end{note}
+
+\begin{note}{b01b69fc3ebc4c0c839a0c153f85d041}
+    \begin{icloze}{1}Диагональная матрица с элементами \( a_1, a_2, \ldots, a_n \) на диагонали\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            \operatorname{diag}(a_1, a_2, \ldots, a_n).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{8066b576097a49fb9d5aa3c4580a27c5}
+    Пусть \( f : V \to V \)--- линейный оператор.
+    Если а базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( e_1, e_2, \ldots, e_n \)\end{icloze} --- \begin{icloze}{1}собственные векторы \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{19e6a7fb9c8e4f04a3711d479f2c628e}
+    Пусть \( f : V \to V \)--- линейный оператор.
+    Если а базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( a_1, a_2, \ldots, a_n \)\end{icloze} --- \begin{icloze}{1}собственные значения \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{1176411a2bf147348b94dd69b9bbad73}
+    Пусть \begin{icloze}{5}\( f : V \to V \) --- линейный оператор.\end{icloze} Тогда оператор \( f \) \begin{icloze}{2}диагонализуем\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{2}для любого собственного значения \( \lambda \)
+    \[
+        S_f(\lambda) = m_f(\lambda).
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{ca827a11abb047fda276763e1e593ef1}
+    В чем основная идея доказательства критерия диагонализуемости оператора (необходимость)?
+
+    \begin{cloze}{1}
+        Покзать, что если \( f \) представляется матрицей \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то по определению
+        \[
+            \chi_f (\lambda) = \prod_{i = 1}^{n} (a_i - \lambda).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{0fc84832f2b548cfa9a4ef9a51326b77}
+    Пусть \( f : V \to V \) --- линейный оператор, \begin{icloze}{3}\( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \),\end{icloze} \begin{icloze}{2}\( \forall j \: v_j \in V_f (\lambda_j) \).\end{icloze}
+    Тогда \begin{icloze}{1}система векторов \( v_1, \ldots, v_n \) линейно независима.\end{icloze}
+\end{note}
+
+\begin{note}{2a1e5294e5c34d889ca747ab0b44fa0a}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \), \( \forall j \: v_j \in V_f (\lambda_j) \).
+    Тогда система векторов \( v_1, \ldots, v_n \) линейно независима.
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+         Применяем \( f \) к произвольной равной нулю линейной комбинации, пока не получится СЛАУ с основной матрицей --- определителем Вандермонда.
+    \end{cloze}
+\end{note}
+
+\begin{note}{cfe344113f4e40b2b27ecfee11beb647}
+    В чем основная идея доказательства критерия диагонализуемости оператора (достаточность)?
+
+    \begin{cloze}{1}
+        Составить систему векторов из базисов в \( V_f (\lambda_j) \) и показать, что она является базисом \( V \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{fbb72d710ce84fe6b5237ee1f15112a8}
+    Почему система векторов, составленная в доказательстве критерия диагонализуемости оператора (достаточность), является порождающей?
+
+    \begin{cloze}{1}
+        Из условия \( \dim V_f (\lambda_j) = m_f (\lambda_j) \), а значит система содержит \( \deg \chi_f = \dim V \) элементов.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5fd54902e7f34d00bad3222902a6bdf6}
+    Почему система векторов, составленная в доказательстве критерия диагонализуемости оператора (достаточность), является линейно независимой?
+
+    \begin{cloze}{1}
+        Любая её линейная комбинация есть линейная комбинация системы векторов \( v_1, \ldots, v_n \), где \( v_j \in V_f (\lambda_j) \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{435490ce764048d9a55b762d6175cf59}
+    Если оператор \( f : V  \to V \) имеет \( \dim V \) различных собственных значений, то \begin{icloze}{1}\( f \) диагонализуем.\end{icloze}
+\end{note}
+
+\begin{note}{8757ff57337847268575f5903d640f08}
+    Как доказать, что если оператор \( f : V \to V \) имеет \( \dim V \) различных собственных значений, то \( f \) диагонализуем.
+
+    \begin{cloze}{1}
+        \begin{multline*}
+            \forall \lambda \in \operatorname{spec} f \quad 1 \leqslant S_f(\lambda) \leqslant m_f(\lambda) = 1 \\
+            \implies  S_f (\lambda) = m_f (\lambda).
+        \end{multline*}
+    \end{cloze}
+\end{note}
+
+\begin{note}{b7cd455d24424dd0879b90d7cad89a6b}
+    \begin{icloze}{3}Пусть пространство \( V = V_1 \oplus V_2 \).\end{icloze}
+    \begin{icloze}{1}Оператор \( P : V \to V \), переводящий сумму \( v_1 + v_2 \) векторов из \( V_1 \) и \( V_2 \) соответственно в вектор \( v_1 \),\end{icloze} называется \begin{icloze}{2}оператором проектирования на \( V_1 \) параллельно \( V_2 \).\end{icloze}
+\end{note}
+
+\begin{note}{522c1911d5d04c898b070c53537026b2}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        \operatorname{im} P = \begin{icloze}{1}V_1.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0e8f1308502e41f9bfbddc3a9a153514}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        \ker P = \begin{icloze}{1}V_2.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{27181bd7474e4091aee4fa9dba20ae0f}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        \operatorname{spec} P = \begin{icloze}{1}\left\{ 0, 1 \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{448f428dbef544a9a7ad66228e473bea}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        m_P (0) = \begin{icloze}{1}\dim V_2.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d4a2a9780d1a4e1db35238e91f3875b9}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        S_P (0) = \begin{icloze}{1}\dim V_2.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{322376ccf5e4418bb64b5e8b886d8aac}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        m_P (1) = \begin{icloze}{1}\dim V_1.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c81e19cdfaa649f18565d2f7625646ce}
+    Пусть \( V = V_1 \oplus V_2 \) и \( P : V \to V \) --- оператор проектирования на \( V_1 \) параллельно \( V_2 \).
+    Тогда
+    \[
+        S_P (1) = \begin{icloze}{1}\dim V_1.\end{icloze}
+    \]
+\end{note}
 \end{document}
