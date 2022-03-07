@@ -1064,4 +1064,166 @@
     \end{itemize}\end{icloze}
     то \begin{icloze}{2}\( a \) --- точка перегиба \( f \).\end{icloze}
 \end{note}
+
+\section{Семинар 03.02.22}
+\begin{note}{95c692ffa52646cfb2ce013546586bc2}
+    Основная формула метода интегрирования по частям:
+    \begin{cloze}{1}
+        \[
+            \int u\: dv = uv - \int v\: du.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{e2df459e1699495f980cdddacc633f6f}
+    В чем основная идея доказательства основной формулы интегрирования по частям?
+
+    \begin{cloze}{1}
+        \[
+            (uv)'  = u' v + u v' \implies uv = \int v u'\: dx. + \int u v'\: dx.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{655ebf6da8c1489f84fdaeea82dcc793}
+    \[
+        \int \begin{icloze}{2}\ln x\end{icloze}\: dx = \begin{icloze}{1}x \ln x - x\end{icloze} + C
+    \]
+\end{note}
+
+\begin{note}{310668af95114f9fbe87673be333fec8}
+    \[
+        \int \begin{icloze}{2}\frac{1}{\sin x}\end{icloze}\: dx = \begin{icloze}{1}\ln\left| \tan \frac{x}{2} \right|\end{icloze} + C
+    \]
+\end{note}
+
+\begin{note}{898276fe3ef943c49921748d594000c8}
+    \[
+        \int \begin{icloze}{2}\frac{1}{\cos x}\end{icloze}\: dx = \begin{icloze}{1}\ln\left| \frac{1 + \tan \frac{x}{2}}{1 - \tan \frac{x}{2}} \right|\end{icloze} + C
+    \]
+\end{note}
+
+\section{Лекция 07.03.22}
+\begin{note}{8d4e84ad6e1a4cdc91020e2f61878f24}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \).\end{icloze}
+    \begin{icloze}{1}Функция \( F : \langle A, B \rangle \to \mathbb R \)\end{icloze} наызвается \begin{icloze}{2}первообразной функции \( f \),\end{icloze} если
+    \begin{icloze}{1}F дифференцируема на \( \langle A, B \rangle \) и
+    \[
+        F'(x) = f(x) \quad \forall x \in \langle A, B \rangle.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{5436ab9b46cf488eb5fa6c2353bd3616}
+    \begin{icloze}{1}Множество всех первообразных функции \( f \) на промежутке \( \langle A, B \rangle \)\end{icloze} обозначается \begin{icloze}{2}\( \mathscr P_f(\langle A, B \rangle) \).\end{icloze}
+\end{note}
+
+\begin{note}{ec64c5e7734140f888511699374deaec}
+    Пусть \begin{icloze}{4}\( f, F, G : \langle A, B \rangle \to \mathbb R \), \( F \in \mathscr P_f(\langle A, B \rangle) \).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}G \in \mathscr P_f (\langle A, B \rangle) \end{icloze}
+        \begin{icloze}{3}\iff\end{icloze}
+        \begin{icloze}{1}\exists c \in \mathbb R \quad G(x) = F(x) + c.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e9bbf7b29a8d40b48aad130674b03cc9}
+    Пусть \( f, F, G : \langle A, B \rangle \to \mathbb R \), \( F \in \mathscr P_f(\langle A, B \rangle) \).
+    Тогда
+    \[
+        G \in \mathscr P_f (\langle A, B \rangle) \implies
+        \exists c \in \mathbb R \quad G(x) = F(x) + c.
+    \]
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        \( (F(x) - G(x))' \equiv 0 \) на \( \langle A, B \rangle \) \( \implies \) \( F(x) - G(x) \) постоянна на \( \langle A, B \rangle \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{64bcacf18cb94a4e9b96e551eff15e5b}
+    Пусть \( f, F, G : \langle A, B \rangle \to \mathbb R \), \( F \in \mathscr P_f(\langle A, B \rangle) \).
+    Тогда
+    \[
+        G \in \mathscr P_f (\langle A, B \rangle) \impliedby
+        \exists c \in \mathbb R \quad G(x) = F(x) + c.
+    \]
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Тривиально следует из определения первообразной.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b196b146568446a2b31a62a77bcddd45}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R, \quad F \in \mathscr P_f (\langle A, B \rangle) \).\end{icloze}
+    \begin{icloze}{1}Множество функций
+                     \[
+                         \left\{ F(x) + c \mid c \in \mathbb R \right\}
+                     \]\end{icloze}
+    называется \begin{icloze}{2}неопределённым интегралом \( f \) на \( \langle A, B \rangle \).\end{icloze}
+\end{note}
+
+\begin{note}{98516b869bc740b9bacfcc5244a89cb0}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \).\end{icloze}
+    \begin{icloze}{1}Неопределённый интеграл функции \( f \)  на \( \langle A, B \rangle \)\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            \int f(x)\: dx.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7581f732c1c44de4bc99eae39e01f4ea}
+    Корректна ли запись
+    \[
+        \int f(x)\: dx = F(x) + C \quad?
+    \]
+
+    \begin{cloze}{1}
+        Строго говоря нет, поскольку формально интеграл является множеством, а не функцией, но такая запись удобна на практике.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ad021cd0f9bd4d9ca316d3574a3b67a4}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \) и \( f \) имеет первообразную на \( \langle A, B \rangle \).
+    \[
+        \left( \int f(x)\: dx \right)' \overset{\text{def}}= \begin{icloze}{1}f(x).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a2f17fea47484277b1a9d9349fbea7ff}
+    Пусть \( f, g : \langle A, B \rangle \to \mathbb R \), \quad \( F \in \mathscr P_f (\langle A, B \rangle), G \in \mathscr P_g (\langle A, B \rangle) \).
+    \[
+        \int f(x)\: dx + \int g(x)\: dx \overset{\text{def}}= \begin{icloze}{1}\Big\{ F(x) + H(x) + C \mid C \in \mathbb R \Big\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7d5f8b97d72747df93959cee3fb0bae9}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \) и \( f \) имеет первообразную на \( \langle A, B \rangle \), \( \lambda \in \mathbb R \).
+    \[
+        \int f(x)\: dx \overset{\text{def}}= \begin{icloze}{1}\Big\{ \lambda f(x) + C \mid C \in \mathbb R \Big\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3fb6e723afb54981be16c06cf2bfb210}
+    Из \begin{icloze}{3}теоремы Дарбу\end{icloze} следует, что
+    если \begin{icloze}{2}\( f \) имеет первообразную на промежутке \( \langle A, B \rangle \),\end{icloze}
+    то \begin{icloze}{1}\( f \) не имеет скачков на \( \langle A, B \rangle \)\end{icloze}
+\end{note}
+
+\begin{note}{3c586c7317d247a3be4f7b50373a0d46}
+    Является ли непрерывность функции \( f \) необходимым условием для существования у неё первообразной?
+
+    \begin{cloze}{1}
+        Нет, поскольку \( f \) может иметь точки разрыва второго рода.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ca1243ec222b4440903a1f5a22a53b16}
+    \subsubsection{<<Достаточное условие существования \\\phantom{<<}первообразной>>}
+    \begin{icloze}{1}Если \( f \) непрерывна на \( \langle A, B \rangle \), то \( f \) имеет первообразную на \( \langle A, B \rangle \).\end{icloze}
+\end{note}
 \end{document}
