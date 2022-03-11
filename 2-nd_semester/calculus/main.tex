@@ -1066,25 +1066,6 @@
 \end{note}
 
 \section{Семинар 03.03.22}
-\begin{note}{95c692ffa52646cfb2ce013546586bc2}
-    Основная формула метода интегрирования по частям:
-    \begin{cloze}{1}
-        \[
-            \int u\: dv = uv - \int v\: du.
-        \]
-    \end{cloze}
-\end{note}
-
-\begin{note}{e2df459e1699495f980cdddacc633f6f}
-    В чем основная идея доказательства основной формулы интегрирования по частям?
-
-    \begin{cloze}{1}
-        \[
-            (uv)'  = u' v + u v' \implies uv = \int v u'\: dx. + \int u v'\: dx.
-        \]
-    \end{cloze}
-\end{note}
-
 \begin{note}{655ebf6da8c1489f84fdaeea82dcc793}
     \[
         \int \begin{icloze}{2}\ln x\end{icloze}\: dx = \begin{icloze}{1}x \ln x - x\end{icloze} + C
@@ -1288,5 +1269,78 @@
 \begin{note}{ca1243ec222b4440903a1f5a22a53b16}
     \subsubsection{<<Достаточное условие существования \\\phantom{<<}первообразной>>}
     \begin{icloze}{1}Если \( f \) непрерывна на \( \langle A, B \rangle \), то \( f \) имеет первообразную на \( \langle A, B \rangle \).\end{icloze}
+\end{note}
+
+\section{Лекция 11.03.22}
+\begin{note}{8d01db3371424aba95e1092ffa2cd4dc}
+    Пусть \begin{icloze}{3}\( f : E \subset \mathbb R \to \mathbb R \).\end{icloze} \begin{icloze}{1}Функция \( F : E \to \mathbb R \)\end{icloze} называется \begin{icloze}{2}первообразной \( f \) на множестве \( E \),\end{icloze} если \begin{icloze}{1}\( F \) дифференцируема на \( E \) и \( F'(x) = f(x) \) для любого \( x \in E \).\end{icloze}
+\end{note}
+
+\begin{note}{a36222511f224d049fc0a1fc0c465aa5}
+    Интеграл \( \int f(x)\: dx \) называется \begin{icloze}{2}берущимся,\end{icloze} если \begin{icloze}{1}функция \( f \) имеет элементарную первообразную.\end{icloze}
+\end{note}
+
+\begin{note}{937d08196fed4fea9d424dfd802f1c82}
+    Пусть \( f, g : \langle A, B \rangle \to \mathbb R \) имеют на  \( \langle A, B \rangle \) первообразную. Тогда для любых \( \alpha, \beta \in \mathbb R \setminus \left\{ 0 \right\} \)
+    \[
+        \int \left( \alpha f(x) + \beta g(x) \right)\: dx = \begin{icloze}{1}\alpha \int f(x)\: dx + \beta \int g(x)\: dx.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2f7dd89b9a244dacbf41650571c4f13c}
+    Как доказать свойство линейности неопределённого интеграла?
+
+    \begin{cloze}{1}
+        По определению интеграла и первообразной.
+    \end{cloze}
+\end{note}
+
+\begin{note}{26b34c9a101f488aaed5ddee4ddd43d2}
+    \subsubsection{<<Теорема о замене переменной \\
+    \phantom{<<}в неопределённом интеграле>>}
+
+    Пусть \begin{icloze}{2}\( f : \langle A, B \rangle \to \mathbb R \), \( F \in \mathscr P_f (\langle A, B \rangle) \), \( \varphi : \langle C, D \rangle \to \langle A, B \rangle \) и \( \varphi \) дифференцируема на \( \langle C, D \rangle \).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \int f(\varphi(x)) \cdot \varphi'(x)\: dx = F(\varphi(x)) + C.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{2f7dd89b9a244dacbf41650571c4f13c}
+    Как доказать теорему о замене переменной в неопределённом интеграле?
+
+    \begin{cloze}{1}
+        По определению интеграла и первообразной.
+    \end{cloze}
+\end{note}
+
+\begin{note}{cf45cd81236549efb89f81fcce13349f}
+    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( \varphi : \langle C, D \rangle \to \langle A, B \rangle \) и \( \varphi \) дифференцируема на \( \langle A, B \rangle \) и обратима.\end{icloze} Тогда если \begin{icloze}{1}\( G \) --- первообразная функции \( \left( f \circ \varphi \right) \cdot \varphi' \),\end{icloze} то
+    \[
+        \begin{icloze}{2}\int f(x)\: dx\end{icloze} = \begin{icloze}{1}G(\varphi^{-1} (x)) + C.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f1d541a0c135409c8aef89920ad254e8}
+    \subsubsection{<<Формула интегрирования по частям>>}
+    Пусть \begin{icloze}{2}\( f, g \in C^{1} \left( \langle A, B \rangle \right) \).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \int f(x) g'(x)\: dx = f(x) g(x) -  \int g(x) f'(x)\: dx.
+        \]
+    \end{icloze}
+\end{note}
+
+
+\begin{note}{e2df459e1699495f980cdddacc633f6f}
+    В чем основная идея доказательства основной формулы интегрирования по частям?
+
+    \begin{cloze}{1}
+        \[
+            (uv)'  = u' v + u v' \implies uv = \int v u'\: dx + \int u v'\: dx.
+        \]
+    \end{cloze}
 \end{note}
 \end{document}
