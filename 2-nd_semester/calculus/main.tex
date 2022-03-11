@@ -1065,7 +1065,7 @@
     то \begin{icloze}{2}\( a \) --- точка перегиба \( f \).\end{icloze}
 \end{note}
 
-\section{Семинар 03.02.22}
+\section{Семинар 03.03.22}
 \begin{note}{95c692ffa52646cfb2ce013546586bc2}
     Основная формула метода интегрирования по частям:
     \begin{cloze}{1}
@@ -1100,6 +1100,69 @@
 \begin{note}{898276fe3ef943c49921748d594000c8}
     \[
         \int \begin{icloze}{2}\frac{1}{\cos x}\end{icloze}\: dx = \begin{icloze}{1}\ln\left| \frac{1 + \tan \frac{x}{2}}{1 - \tan \frac{x}{2}} \right|\end{icloze} + C
+    \]
+\end{note}
+
+\begin{note}{ce3022e62a4f4a6ea2d13195a9f94d31}
+    \[
+        \int \begin{icloze}{2}\frac{1}{x^2 + a^2}\end{icloze}\: dx
+        = \begin{icloze}{1}\frac{1}{a} \arctan \frac{x}{a}\end{icloze} + C
+        \quad (\begin{icloze}{3}a > 0\end{icloze})
+    \]
+\end{note}
+
+\begin{note}{8661888336db411a89fed337ad926a76}
+    \[
+        \int \begin{icloze}{2}\frac{A}{x + a}\end{icloze}\: dx
+        = \begin{icloze}{1}A \ln\left| x + a \right|\end{icloze} + C
+    \]
+\end{note}
+
+\begin{note}{2cd6c699811f4760be34715a24b0081f}
+    \[
+        \int \begin{icloze}{2}\frac{1}{nx + a}\end{icloze}\: dx
+        = \begin{icloze}{1}\frac{1}{n} \ln\left| x + \frac{a}{n} \right|\end{icloze} + C
+        \quad (\begin{icloze}{3}n \neq 0\end{icloze})
+    \]
+\end{note}
+
+\begin{note}{b7b778e748574ee8b52225ae5669cbe6}
+    \[
+        \int \begin{icloze}{2}\frac{A}{(x + a)^{k}}\end{icloze}\: dx
+        = \begin{icloze}{1}\frac{A}{(1 - k)(x - a)^{k - 1}}\end{icloze} + C
+        \quad (\begin{icloze}{3}k \neq 1\end{icloze})
+    \]
+\end{note}
+
+\begin{note}{72b0aaea0b254078bbfcc47745885653}
+    \begin{multline*}
+        \int \begin{icloze}{4}\frac{Mx + N}{x^2 + px + q}\end{icloze}\: dx = \\
+        \begin{icloze}{1}\frac{M}{2} \ln\left| x^2 + px + q \right|\end{icloze}
+        + \begin{icloze}{2}\frac{2N - pM}{2a} \arctan \frac{2x + p}{2a}\end{icloze} \\
+        + C,
+    \end{multline*}
+    где \( \displaystyle a^2 := \begin{icloze}{3}\frac{4q - p^2}{4} > 0\end{icloze} \).
+\end{note}
+
+\begin{note}{c7fcc3d1ab9443d2855e310bfb0beee8}
+    \begin{multline*}
+        \int \begin{icloze}{3}\frac{Mx + N}{\left( x^2 + px + q \right)^{k}}\end{icloze}\: dx = \\
+        \int \begin{icloze}{1}\frac{N - M \frac{p}{2}}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt +
+        \begin{icloze}{1}\int \frac{Mt}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt + C,
+    \end{multline*}
+    где \( \displaystyle \quad t := \begin{icloze}{2}x + \frac{p}{2},\end{icloze} \quad a^2 := \begin{icloze}{2}\frac{4q - p^2}{4} > 0\end{icloze} \).
+\end{note}
+
+\begin{note}{a3d0cc7201b74c4c9fab9590e7a6c0b2}
+    \begin{align*}
+        I_k &=: \int \begin{icloze}{3}\frac{1}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt \quad (\begin{icloze}{4}k > 1, a \neq 0\end{icloze}) \\
+        I_k &= \begin{icloze}{1}\frac{2k - 3}{2(k - 1)a^2} I_{k - 1}\end{icloze} + \begin{icloze}{2}\frac{t}{2(k - 1)a^2(t^2 + a^2)^{k - 1}}\end{icloze}
+    \end{align*}
+\end{note}
+
+\begin{note}{972b3ecb92a94f62b12e46795945593d}
+    \[
+        \int \begin{icloze}{2}\frac{Mt}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt = \begin{icloze}{1}\frac{M}{2(1 - k)(t^2 + a^2)^{k - 1}}\end{icloze} + C
     \]
 \end{note}
 
