@@ -53,8 +53,8 @@ model:
 
       \begin{document}
       \pagestyle{empty}
-      \noindent\rule{0.01mm}{0.01mm}\hfill\rule{0.01mm}{0.01mm}
     post: |
+      \unskip\phantom{}\hfill\rule{0.01mm}{0.01mm}
       \end{document}
   template:
     front: |
@@ -69,4 +69,10 @@ model:
     css: |
       .card {
         text-align: center;
+        color: black;
+        background-color: white;
+        padding: 20px 0;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 650px;
       }
