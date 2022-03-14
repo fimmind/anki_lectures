@@ -679,6 +679,11 @@
     \begin{icloze}{1}Множество всех собственных векторов \( f \) с собственным значением \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
 \end{note}
 
+\begin{note}{785c107694984499a5fd89afd052841c}
+    Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Тогда \begin{icloze}{2}\( V_f(\lambda) \)\end{icloze} называется \begin{icloze}{1}собственным подпространством оператора \( f \).\end{icloze}
+\end{note}
+
 \begin{note}{545e4fc3988d45fdafc099f74fe38f36}
     Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \) --- собственное значение \( f \).
     В кратком выражении
@@ -917,4 +922,220 @@
         S_P (1) = \begin{icloze}{1}\dim V_1.\end{icloze}
     \]
 \end{note}
+
+\section{Лекция 14.03.22}
+\begin{note}{d32917879c284285842d17bbfc251d30}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор, \( v \in V \), \( k \in \mathbb N \).\end{icloze} Вектор \( v \) называется \begin{icloze}{2}корневым вектором высоты \( k \) оператора \( f \),\end{icloze} если \begin{icloze}{1}существует такое \( \lambda \in \mathbb C \), что
+    \[
+        \begin{gathered}
+            (f - \lambda E)^{k} v = 0, \\
+            (f - \lambda E)^{k - 1} v \neq 0.
+        \end{gathered}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{83d2e0cc0a894b54ac4d3604babf2d57}
+    Корневой вектор высоты \begin{icloze}{2}\( 1 \)\end{icloze} оператора \( f \) --- это \begin{icloze}{1}собственный вектор этого оператора.\end{icloze}
+\end{note}
+
+\begin{note}{9e3747b6754c4bad9076277f39c4e920}
+    \( \lambda \) из определения корневого вектора оператора \( f \) --- это всегда \begin{icloze}{1}собственное значение \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{a4093e0c9f55478ebd2eb2defda323df}
+    Как показать, что \( \lambda \) из определения корневого вектора всегда является собственным вектором?
+
+    \begin{cloze}{1}
+        Из определения \( (f - \lambda E)^{k} v = 0 \implies \det (f - \lambda E) = 0 \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{999c7f68724546db81750f9e997d0a1b}
+    Пусть \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).\end{icloze}
+    Тогда \begin{icloze}{2}\( (f - \lambda E) v \)\end{icloze} --- \begin{icloze}{1}корневой вектор высоты \( k - 1 \).\end{icloze}
+\end{note}
+
+\begin{note}{264901faf0bb401e91105512f04f06dc}
+    Пусть \( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).
+    Тогда \( (f - \lambda E) v \) --- корневой вектор высоты \( k - 1 \).
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Из определения корневого вектора
+        \[
+            (f - \lambda E)^{k - 1} \cdot (f - \lambda E)v = 0
+        \]
+        и аналогично с неравенством нулю для степени \( k - 2 \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{50c2388c1fa843dfa616f85d4cecfa2f}
+    Система \begin{icloze}{3}корневых векторов разных высот,\end{icloze} отвечающих \begin{icloze}{2}одному и тому же собственному значению оператора,\end{icloze} \begin{icloze}{1}линейно независима.\end{icloze}
+\end{note}
+
+\begin{note}{de47eb56e219455a8497a97ad90b861d}
+    Как доказать, что система корневых векторов разных высот, отвечающих одному и тому же собственному значению оператора, линейно независима.
+
+    \begin{cloze}{1}
+        Приравнять линейную комбинацию к нулю и домножать её на \( (f - \lambda E)^{k_j - 1} \) в порядке убывания высот \( k_j \) корневых векторов системы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{187218f20c2b46ab9309b3385f2012f4}
+    Пусть \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).\end{icloze}
+    Тогда система
+    \begin{icloze}{2}
+        \[
+            v,\: (f - \lambda E) v,\: (f - \lambda E)^{2} v,\: \ldots,\: (f - \lambda E)^{k - 1} v
+        \]
+    \end{icloze}
+    \begin{icloze}{1}линейно независима.\end{icloze}
+\end{note}
+
+\begin{note}{f77f36f44a0a4dbfb7fe6d8a6b58db75}
+    Пусть \( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).
+    Тогда система
+    \[
+        v,\: (f - \lambda E) v,\: (f - \lambda E)^{2} v,\: \ldots,\: (f - \lambda E)^{k - 1} v
+    \]
+    линейно независима.
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что это система корневых векторов разных высот, отвечающих одному и тому же собственному значению \( \lambda \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3ab579b8e03a47ec865a43fc21bd39b7}
+    Система \begin{icloze}{3}корневых векторов,\end{icloze} отвечающих \begin{icloze}{2}разным собственным значениям оператора,\end{icloze} \begin{icloze}{1}линейно независима.\end{icloze}
+\end{note}
+
+\begin{note}{04c77a5799504d088141691461b44095}
+    Пусть \( v \) --- корневой вектор высоты \( k \) оператора \( f \). Тогда \begin{icloze}{2}\( (f - \lambda E)^{k - 1}v \)\end{icloze} --- \begin{icloze}{1}это собственный вектор оператора \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{59e9653333744cccaf670372a881ab06}
+    Как доказать, что система корневых векторов, отвечающих разным собственным значениям оператора, линейно независима.
+
+    \begin{cloze}{1}
+        Домножить произвольную линейную комбинацию на
+        \[
+            (f - \lambda_1 E)^{k_1 - 1} \;\; (f - \lambda_2 E)^{k_2} \cdots (f - \lambda_l E)^{k_l}
+        \]
+        и получить равенство нулю первого коэффициента. Далее аналогично для остальных коэффициентов.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5b16ae3e6ef643508aa2e1f086ffde51}
+    Пусть \( f : V \to V \) --- линейный оператор.
+    \begin{icloze}{1}Множество всех корневых векторов разных высот, отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} называется \begin{icloze}{2}корневым подпространством, отвечающим собственному значению \( \lambda \).\end{icloze}
+\end{note}
+
+\begin{note}{2779025573314db7aa326077599c90b3}
+    Пусть \( f : V \to V \) --- линейный оператор.
+    \begin{icloze}{2}Корневое подпространство, отвечающее собственному значению \( \lambda \),\end{icloze} обозначается \begin{icloze}{1}\( K_f (\lambda) \).\end{icloze}
+\end{note}
+
+\begin{note}{d70f06c975144b6e835736be38336c4a}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Всегда ли \( K_f(\lambda) \triangleleft V \)?
+
+    \begin{cloze}{1}
+        Да, всегда (тривиально следует из определения).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e3330d597cd547a385f694495c2dc291}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор, \( k \in \mathbb N \).\end{icloze}
+    \[
+        \begin{icloze}{2}N_{f,k}(\lambda)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\ker (f - \lambda E)^{k}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{42d32fc206824eafb2be52cb821ffafd}
+    Пусть \( f : V \to V \) --- линейный оператор, \( k \in \mathbb N \).
+    Всегда ли \( N_{f,k}(\lambda) \triangleleft V \)?
+
+    \begin{cloze}{1}
+        Да, всегда (тривиально следует из определения).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ba89f8d6240947edac91e39df44d92bc}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Как \( K_f(\lambda) \) выражается через \( N_{f,k} (\lambda) \)?
+
+    \begin{cloze}{1}
+        \[
+            K_f(\lambda) = \bigcup_{k \geqslant 1}^{} N_{f,k}(\lambda)
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{c11610dbf64143fbaeeb57dfc3d66af0}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Тогда \( \dim K_f(\lambda) = \begin{icloze}{1}m_f(\lambda)\end{icloze} \).
+\end{note}
+
+\begin{note}{efee3536114a40d28eb925c540f796bf}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Тогда \( \dim K_f(\lambda) = m_f(\lambda) \).
+    В чем основная идея доказательства?
+
+    TODO (?)
+\end{note}
+
+\begin{note}{d928d6cded3a434a9c3f615c48190ff0}
+    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}V\end{icloze} = \begin{icloze}{1}K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{16e24ba8ea07492581171c4ee92a6c95}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).
+    Тогда
+    \[
+        V = K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).
+    \]
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что сумма \( K_f(\lambda_j) \)
+        \begin{enumerate}
+            \item является прямой,
+            \item порождает все пространство \( V \).
+        \end{enumerate}
+    \end{cloze}
+\end{note}
+
+\begin{note}{12b8b0705d6b4daf886d155d26b8d4f4}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).
+    Тогда
+    \[
+        V = K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).
+    \]
+    Почему сумма \( K_f(\lambda_j) \) прямая?
+
+    \begin{cloze}{1}
+        Линейная комбинация векторов \( v_j \) из \( K_f (\lambda_j) \) --- это линяния комбинация корневых векторов, отвечающих разным собственным значениям.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ae4ac17697d146c194afc0f17091b028}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).
+    Тогда
+    \[
+        V = K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).
+    \]
+    Почему сумма \( K_f(\lambda_j) \) порождает все \( V \)?
+
+    \begin{cloze}{1}
+        \[
+            \sum_{j=1}^{l} \dim K_f(\lambda_j) = \sum_{j=1}^{l} m_f(\lambda_j)
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
