@@ -49,7 +49,7 @@
 \begin{note}{a5081684e6014eeb8d4cd352f7dfd46b}
     Пусть \( V \triangleleft \mathbb R ^{n}. \) Тогда всегда существует \( A \in \mathbb R ^{\begin{icloze}{2}m \times n\end{icloze}}  \) такая, что
     \begin{icloze}{1}\[
-        V = \{ x \in \mathbb R ^{n}  \mid Ax = 0  \}
+        V = \ker A.
     \]\end{icloze}
 \end{note}
 
@@ -513,7 +513,7 @@
 \end{note}
 
 \begin{note}{e64a247c0efb47f8be38d4ab4ef17b05}
-    Пусть \( f : W \to W \) --- линейный оператор,  \( e_1,e_2, \ldots, e_n  \) --- \begin{icloze}{4}дополнение до базиса в \( W \) базиса \( e_1,e_2, \ldots, e_k  \) в инвариантном подпространстве \( V \triangleleft W \).\end{icloze} Тогда \begin{icloze}{3}матрица оператора \( f \) в базисе \( e_1,e_2, \ldots, e_k  \)\end{icloze} примет вид
+    Пусть \( f : W \to W \) --- линейный оператор,  \( e_1,e_2, \ldots, e_n  \) --- \begin{icloze}{4}дополнение до базиса в \( W \) базиса \( e_1,e_2, \ldots, e_k  \) в инвариантном подпространстве \( V \triangleleft W \).\end{icloze} Тогда \begin{icloze}{3}матрица оператора \( f \) в базисе \( e_1,e_2, \ldots, e_n  \)\end{icloze} примет вид
     \[
         A = \begin{icloze}{1}
             \begin{bmatrix}
@@ -544,7 +544,7 @@
 \end{note}
 
 \begin{note}{8f9f5108ac8847299f21fd40619c6612}
-    Пусть \( f : W \to W \) --- линейный оператор. Как доказать, что если \( f \) --- невырожденный оператор то \( f \) --- биекция?
+    Пусть \( f : W \to W \) --- линейный оператор. Как доказать, что если \( f \) --- невырожденный оператор, то \( f \) --- биекция?
 
     \begin{cloze}{1}
         Показать, что если \( f \) задаётся матрицей \( A \), то \( f^{-1} \) задаётся матрицей \( A^{-1} \).
@@ -634,10 +634,7 @@
     \]
     Тогда
     \[
-        \begin{icloze}{2}\begin{vmatrix}
-            a_{11} - \lambda & a_{12} \\
-            a_{21} & a_{22} - \lambda
-        \end{vmatrix}\end{icloze}
+        \begin{icloze}{2}\left| A - \lambda E \right|\end{icloze}
         = \begin{icloze}{1}|A| - \lambda \operatorname{tr} A + \lambda^2.\end{icloze}
 \]
 \end{note}
@@ -647,7 +644,7 @@
     Пусть \( f : W \to W \) --- линейный оператор.
     \begin{icloze}{2}Характеристический многочлен оператора \( f \)\end{icloze} обозначается \begin{icloze}{1}
     \[
-        \chi_f (\lambda).
+        \chi_f.
     \]
 \end{icloze}
 \end{note}
@@ -656,7 +653,7 @@
     Пусть \begin{icloze}{3}\( f : W \to W \) --- линейный оператор и \( V \triangleleft W \) инвариантно относительно \( f \).\end{icloze}
     Тогда
     \begin{center}
-        \begin{icloze}{2}\( \chi_{f|_V} (\lambda) \)\end{icloze} --- \begin{icloze}{1}делитель \( \chi_f (\lambda) \).\end{icloze}
+        \begin{icloze}{2}\( \chi_{f|_V} \)\end{icloze} --- \begin{icloze}{1}делитель \( \chi_f \).\end{icloze}
     \end{center}
 \end{note}
 
@@ -664,18 +661,18 @@
     Пусть \( f : W \to W \) --- линейный оператор и \( V \triangleleft W \) инвариантно относительно \( f \).
     Тогда
     \begin{center}
-        \( \chi_{f|_V} (\lambda) \) --- делитель \( \chi_f (\lambda) \).
+        \( \chi_{f|_V} \) --- делитель \( \chi_f \).
     \end{center}
 
     В чем основная идея доказательства?
 
     \begin{cloze}{1}
-        Показать, что \( \chi_f (\lambda) \) --- определитель соответствующей квазитреугольной матрицы оператора \( f \).
+        Показать, что \( \chi_f \) --- определитель соответствующей квазитреугольной матрицы оператора \( f \).
     \end{cloze}
 \end{note}
 
 \begin{note}{cdb0a7bde4e044e48a5a798a8052f163}
-    Пусть \( f : W \to W \) --- линейный оператор.
+    Пусть \begin{icloze}{3}\( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).\end{icloze}
     \begin{icloze}{1}Множество всех собственных векторов \( f \) с собственным значением \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
 \end{note}
 
@@ -781,12 +778,12 @@
 
 \begin{note}{8066b576097a49fb9d5aa3c4580a27c5}
     Пусть \( f : V \to V \)--- линейный оператор.
-    Если а базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( e_1, e_2, \ldots, e_n \)\end{icloze} --- \begin{icloze}{1}собственные векторы \( f \).\end{icloze}
+    Если в базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( e_1, e_2, \ldots, e_n \)\end{icloze} --- \begin{icloze}{1}собственные векторы \( f \).\end{icloze}
 \end{note}
 
 \begin{note}{19e6a7fb9c8e4f04a3711d479f2c628e}
     Пусть \( f : V \to V \)--- линейный оператор.
-    Если а базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( a_1, a_2, \ldots, a_n \)\end{icloze} --- \begin{icloze}{1}собственные значения \( f \).\end{icloze}
+    Если в базисе \( e_1, e_2, \ldots, e_n \) матрица оператора \( f \) равна \( \operatorname{diag} (a_1, a_2, \ldots, a_n) \), то \begin{icloze}{2}\( a_1, a_2, \ldots, a_n \)\end{icloze} --- \begin{icloze}{1}собственные значения \( f \).\end{icloze}
 \end{note}
 
 \begin{note}{1176411a2bf147348b94dd69b9bbad73}
@@ -808,12 +805,19 @@
 \end{note}
 
 \begin{note}{0fc84832f2b548cfa9a4ef9a51326b77}
-    Пусть \( f : V \to V \) --- линейный оператор, \begin{icloze}{3}\( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \),\end{icloze} \begin{icloze}{2}\( \forall j \: v_j \in V_f (\lambda_j) \).\end{icloze}
+    Пусть \( f : V \to V \) --- линейный оператор, \begin{icloze}{3}\( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \),\end{icloze} \begin{icloze}{2}
+        \[
+            \forall j \quad v_j \in V_f (\lambda_j).
+        \]
+    \end{icloze}
     Тогда \begin{icloze}{1}система векторов \( v_1, \ldots, v_n \) линейно независима.\end{icloze}
 \end{note}
 
 \begin{note}{2a1e5294e5c34d889ca747ab0b44fa0a}
-    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \), \( \forall j \: v_j \in V_f (\lambda_j) \).
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_n \) --- различные собственные значения оператора \( f \),
+    \[
+        \forall j \quad v_j \in V_f (\lambda_j).
+    \]
     Тогда система векторов \( v_1, \ldots, v_n \) линейно независима.
 
     В чем основная идея доказательства?
@@ -863,7 +867,7 @@
 \end{note}
 
 \begin{note}{b7cd455d24424dd0879b90d7cad89a6b}
-    \begin{icloze}{3}Пусть пространство \( V = V_1 \oplus V_2 \).\end{icloze}
+    Пусть \begin{icloze}{3}пространство \( V = V_1 \oplus V_2 \).\end{icloze}
     \begin{icloze}{1}Оператор \( P : V \to V \), переводящий сумму \( v_1 + v_2 \) векторов из \( V_1 \) и \( V_2 \) соответственно в вектор \( v_1 \),\end{icloze} называется \begin{icloze}{2}оператором проектирования на \( V_1 \) параллельно \( V_2 \).\end{icloze}
 \end{note}
 
@@ -1027,8 +1031,8 @@
 \end{note}
 
 \begin{note}{5b16ae3e6ef643508aa2e1f086ffde51}
-    Пусть \( f : V \to V \) --- линейный оператор.
-    \begin{icloze}{1}Множество всех корневых векторов разных высот, отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} называется \begin{icloze}{2}корневым подпространством, отвечающим собственному значению \( \lambda \).\end{icloze}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    \begin{icloze}{1}Множество всех корневых векторов, отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} называется \begin{icloze}{2}корневым подпространством, отвечающим собственному значению \( \lambda \).\end{icloze}
 \end{note}
 
 \begin{note}{2779025573314db7aa326077599c90b3}
