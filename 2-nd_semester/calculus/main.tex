@@ -1348,4 +1348,117 @@
         \]
     \end{cloze}
 \end{note}
+
+\section{Лекция 18.03.22}
+\begin{note}{ae4062806eca4ddd9b9f4afa5197e8e5}
+    Любая рациональная функция имеет \begin{icloze}{1}элементарную первообразную.\end{icloze}
+\end{note}
+
+\begin{note}{e8574dd4be844dd3a30f41aa822525cb}
+    \[
+        \begin{icloze}{2}[a : b]\end{icloze} \overset{\text{def}}= \begin{icloze}{1}[a, b] \cap \mathbb Z.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c4e15a9924f5453cbaa5673cf84f62f5}
+    Пусть \begin{icloze}{3}\( [a, b] \) -- невырожденный отрезок.\end{icloze}
+    \begin{icloze}{1}Набор точек
+    \[
+        \left\{ x_k \right\}_{k = 0}^{n} : \quad a = x_0 < \cdots < x_n = b.
+    \]\end{icloze}
+    называется \begin{icloze}{2}разбиением отрезка \( [a, b] \).\end{icloze}
+\end{note}
+
+\begin{note}{6f5e8266e0b44eeebba980ac5d8c6112}
+    Пусть \begin{icloze}{3}\( \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\Delta x_k\end{icloze} \overset{\text{def}}= \begin{icloze}{1}x_{k + 1} - x_k.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{22701dee44544e9092fe48e0e077273a}
+    Пусть \( \tau = \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).
+    \begin{icloze}{1}Величина
+    \[
+        \max \left\{ \Delta x_k \right\}
+    \]\end{icloze}
+    называется \begin{icloze}{2}рангом разбиения \( \tau \).\end{icloze}
+\end{note}
+
+\begin{note}{7c1e8de0a92a44b897b789c2e84da964}
+    Пусть \( \tau = \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).
+    \begin{icloze}{2}Ранг разбиения \( \tau \)\end{icloze} обозначается \begin{icloze}{1}\( \lambda_\tau \).\end{icloze}
+\end{note}
+
+\begin{note}{47c24c1487804ce88e30a8dfb2519b37}
+    Пусть \( \tau = \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).
+    \begin{icloze}{1}Набор точек \( \left\{ \xi_k \right\}_{k = 0}^{n - 1} \) таких, что \( \xi_k \in [x_k, x_{k + 1}] \)\end{icloze} называется \begin{icloze}{2}оснащением разбиения \( \tau \).\end{icloze}
+\end{note}
+
+\begin{note}{5e83015672844d94a0a89355f7af372e}
+    Пусть \begin{icloze}{3}\( \tau \) --- некоторое разбиение отрезка \( [a, b] \), \( \xi \) --- оснащение разбиения \( \tau \).\end{icloze}
+    Тогда \begin{icloze}{1}пара \( (\tau, \xi) \)\end{icloze} называется \begin{icloze}{2}оснащённым разбиением отрезка \( [a, b] \).\end{icloze}
+\end{note}
+
+\begin{note}{ef2c57fbd464435c9896c8e8f24db8b5}
+    Пусть \begin{icloze}{3}\( f : [a, b] \to \mathbb R \), \: \( (\tau, \xi) = \left( \left\{ x_k \right\}, \left\{ \xi_k \right\} \right) \) --- оснащённое разбиение \( [a, b] \).\end{icloze}
+    \begin{icloze}{1}Сумма
+    \[
+        \sum_{k=0}^{n - 1} f(\xi_k) \Delta x_k
+    \]\end{icloze}
+    называется \begin{icloze}{2}интегральной суммой функции \( f \), отвечающей оснащённому разбиению \( (\tau, \xi) \).\end{icloze}
+\end{note}
+
+\begin{note}{f4adab8132d7489fb5594271853a86c7}
+    Интегральные суммы так же называют \begin{icloze}{1}суммами Римана.\end{icloze}
+\end{note}
+
+\begin{note}{c14685fee7ff492d9e5452c059f94fb6}
+    \begin{icloze}{2}Интегральная сумма функции \( f \), отвечающая оснащённому разбиению \( (\tau, \xi) \),\end{icloze} обозначается как
+    \begin{icloze}{1}
+        \[
+            \sigma_\tau (f, \xi).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f356a2fc28ae4487aae50ba5b3064cee}
+    Пусть \begin{icloze}{3}\( f : [a, b] \to \mathbb R \), \( I \in \mathbb R \).\end{icloze}
+    Число \( I \) называют \begin{icloze}{2}пределом интегральных сумм функции \( f \) при ранге разбиения, стремящемся к нулю,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall (\tau, \xi) : \lambda_\tau < \delta \quad \left| \sigma_\tau (f, \xi) - I \right| < \varepsilon,
+        \]
+        где \( (\tau, \xi) \) --- оснащённое разбиение отрезка \( [a, b] \).
+    \end{icloze}
+
+    \begin{center}
+        \tiny (определение в терминах \( (\varepsilon, \delta) \))
+    \end{center}
+\end{note}
+
+\begin{note}{ed766ec774814eba83502c9dd75a2e49}
+    \begin{icloze}{2}Предел интегральных сумм функции \( f \) при ранге разбиения стремящемся к нулю\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \lim_{\lambda_\tau \to 0} \sigma_\tau (f, \xi) \quad \text{или} \quad \lim_{\lambda \to 0} \sigma.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{46f5a6ad385a4386813c6f707bd08927}
+    Пусть \( f : [a, b] \to \mathbb R \), \( I \in \mathbb R \).
+    Число \( I \) называют пределом интегральных сумм функции \( f \) при ранге разбиения, стремящемся к нулю, если
+    \begin{icloze}{1}
+        для любой последовательности оснащённых разбиений \( \left\{ (\tau_j, \xi_j) \right\}_{j = 1}^{\infty} \) такой, что \( \lambda_{\tau_j} \underset{j \to \infty}\longrightarrow 0 \),
+    \[
+        \sigma_{\tau_j} (f, \xi_j) \underset{j \to \infty}\longrightarrow I.
+    \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny (определение в терминах последовательностей)
+    \end{center}
+\end{note}
 \end{document}
