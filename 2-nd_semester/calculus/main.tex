@@ -303,7 +303,7 @@
 \end{note}
 
 \begin{note}{b8f3f99b66794d59b6fa546eb06d7fb3}
-    Какое неявное условие позволяет применить теорему коши к функциям \( F(t) \) и \( \varphi(t) \) с точках \( a \) и \( x \)?
+    Какое неявное условие позволяет применить теорему коши к функциям \( F(t) \) и \( \varphi(t) \) с точках \( a \) и \( x \) в доказательстве истинности формулы Тейлора-Лагранжа?
 
     \begin{cloze}{1}
         \[
@@ -412,6 +412,12 @@
     \]
 \end{note}
 
+\begin{note}{edb57ab590834e5db5946311b9910393}
+    \[
+        \int \frac{1}{\sqrt{\begin{icloze}{1}x^2 \pm 1\end{icloze}} } \: dx = \ln |x + \sqrt{\begin{icloze}{1}x^2 \pm 1\end{icloze}}| + C.
+    \]
+\end{note}
+
 \begin{note}{709b5fa5f404426ea7b67b17dc16f830}
     \[
         \int a^{x} \: dx = \begin{icloze}{1}\frac{a^{x} }{\ln a} + C\end{icloze}.
@@ -491,8 +497,8 @@
 \end{note}
 
 \begin{note}{e2c4b9fb4f4147a3bf25e2ab97a3e24f}
-    Пусть \begin{icloze}{3}\( f, g \in C \langle A, B] \) и дифференцируемы на \( (A,  B) \).\end{icloze} Тогда
-    Если \begin{icloze}{2}\( f(B) = g(B) \) и
+    Пусть \begin{icloze}{3}\( f, g \in C \langle A, B] \) и дифференцируемы на \( (A,  B) \).\end{icloze}
+    Тогда если \begin{icloze}{2}\( f(B) = g(B) \) и
         \[
             f'(x) < g'(x) \quad \forall x \in (A, B),
         \]
@@ -789,8 +795,8 @@
 
     Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда \begin{icloze}{3}равносильны\end{icloze} следующие утверждения.
     \begin{itemize}
-        \item \begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
-        \item \begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливо неравенство
+        \item {}\begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
+        \item {}\begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливо неравенство
                 \[
                     \frac{f(c) - f(a)}{c - a} < \frac{f(b) - f(c)}{b - c}.
                 \]
@@ -931,7 +937,7 @@
     \subsubsection{<<Связь выпуклости функции с её касательными>>}
 
     Пусть \begin{icloze}{4}\( f : \langle A, B \rangle \to \mathbb R \), \( f \) дифференцируема на \( (A, B) \).\end{icloze}
-    Тогда \begin{icloze}{2}функция \( f \) выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда,\end{icloze} когда
+    Тогда \begin{icloze}{2}функция \( f \) выпукла на \( \langle A, B \rangle \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
     \begin{icloze}{1}
         \[
             \begin{gathered}
@@ -1088,7 +1094,7 @@
     \[
         \int \begin{icloze}{2}\frac{1}{x^2 + a^2}\end{icloze}\: dx
         = \begin{icloze}{1}\frac{1}{a} \arctan \frac{x}{a}\end{icloze} + C
-        \quad (\begin{icloze}{3}a > 0\end{icloze})
+        \quad (\begin{icloze}{3}a \neq 0\end{icloze})
     \]
 \end{note}
 
@@ -1110,7 +1116,7 @@
 \begin{note}{b7b778e748574ee8b52225ae5669cbe6}
     \[
         \int \begin{icloze}{2}\frac{A}{(x + a)^{k}}\end{icloze}\: dx
-        = \begin{icloze}{1}\frac{A}{(1 - k)(x - a)^{k - 1}}\end{icloze} + C
+        = \begin{icloze}{1}\frac{A}{(1 - k)(x + a)^{k - 1}}\end{icloze} + C
         \quad (\begin{icloze}{3}k \neq 1\end{icloze})
     \]
 \end{note}
@@ -1122,7 +1128,7 @@
         + \begin{icloze}{2}\frac{2N - pM}{2a} \arctan \frac{2x + p}{2a}\end{icloze} \\
         + C,
     \end{multline*}
-    где \( \displaystyle a^2 := \begin{icloze}{3}\frac{4q - p^2}{4} > 0\end{icloze} \).
+    где \( \displaystyle a^2 := \begin{icloze}{3}\frac{4q - p^2}{4}\end{icloze} \), \quad \begin{icloze}{5}\({ p^2 - 4q < 0 }\).\end{icloze}
 \end{note}
 
 \begin{note}{c7fcc3d1ab9443d2855e310bfb0beee8}
@@ -1131,13 +1137,13 @@
         \int \begin{icloze}{1}\frac{N - M \frac{p}{2}}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt +
         \begin{icloze}{1}\int \frac{Mt}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt + C,
     \end{multline*}
-    где \( \displaystyle \quad t := \begin{icloze}{2}x + \frac{p}{2},\end{icloze} \quad a^2 := \begin{icloze}{2}\frac{4q - p^2}{4} > 0\end{icloze} \).
+    где \( \displaystyle \quad \begin{icloze}{4}t\end{icloze} := \begin{icloze}{2}x + \frac{p}{2},\end{icloze} \quad \begin{icloze}{4}a^2\end{icloze} := \begin{icloze}{2}\frac{4q - p^2}{4}\end{icloze} \), \quad \begin{icloze}{5}\({ p^2 - 4q < 0 }\).\end{icloze}
 \end{note}
 
 \begin{note}{a3d0cc7201b74c4c9fab9590e7a6c0b2}
     \begin{align*}
-        I_k &=: \int \begin{icloze}{3}\frac{1}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt \quad (\begin{icloze}{4}k > 1, a \neq 0\end{icloze}) \\
-        I_k &= \begin{icloze}{1}\frac{2k - 3}{2(k - 1)a^2} I_{k - 1}\end{icloze} + \begin{icloze}{2}\frac{t}{2(k - 1)a^2(t^2 + a^2)^{k - 1}}\end{icloze}
+        I_k &=: \int \begin{icloze}{4}\frac{1}{\left( t^2 + a^2 \right)^{k}}\end{icloze}\: dt \quad (\begin{icloze}{5}k > 1, a \neq 0\end{icloze}) \\
+        I_k &= \begin{icloze}{3}\frac{1}{2(k - 1)a^2}\end{icloze} \cdot \left( \begin{icloze}{1}(2k - 3) I_{k - 1}\end{icloze} + \begin{icloze}{2}\frac{t}{(t^2 + a^2)^{k - 1}}\end{icloze} \right)
     \end{align*}
 \end{note}
 
@@ -1248,7 +1254,7 @@
 \begin{note}{7d5f8b97d72747df93959cee3fb0bae9}
     Пусть \( f : \langle A, B \rangle \to \mathbb R \) и \( f \) имеет первообразную на \( \langle A, B \rangle \), \( \lambda \in \mathbb R \).
     \[
-        \int f(x)\: dx \overset{\text{def}}= \begin{icloze}{1}\Big\{ \lambda f(x) + C \mid C \in \mathbb R \Big\}.\end{icloze}
+        \lambda \int f(x)\: dx \overset{\text{def}}= \begin{icloze}{1}\Big\{ \lambda F(x) + C \mid C \in \mathbb R \Big\}.\end{icloze}
     \]
 \end{note}
 
@@ -1259,7 +1265,7 @@
 \end{note}
 
 \begin{note}{3c586c7317d247a3be4f7b50373a0d46}
-    Является ли непрерывность функции \( f \) необходимым условием для существования у неё первообразной?
+    Является ли непрерывность функции \( f \) на промежутке необходимым условием для существования у неё первообразной?
 
     \begin{cloze}{1}
         Нет, поскольку \( f \) может иметь точки разрыва второго рода.
@@ -1332,7 +1338,6 @@
         \]
     \end{icloze}
 \end{note}
-
 
 \begin{note}{e2df459e1699495f980cdddacc633f6f}
     В чем основная идея доказательства основной формулы интегрирования по частям?
