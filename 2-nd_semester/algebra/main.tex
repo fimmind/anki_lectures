@@ -1142,4 +1142,64 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{e23c324999e1436d8c6d50a246244d60}
+    \begin{icloze}{2}Жорданова клетка\end{icloze} --- это \begin{icloze}{1}квадратная матрица вида
+    \[
+        \begin{bmatrix}
+            \lambda & 1 & 0 & \cdots & 0 \\
+            0 & \lambda & 1 & \cdots & 0 \\
+            0 & 0 & \lambda & \cdots & 0 \\
+            \vdots & \vdots & \vdots & \ddots & \vdots \\
+            0 & 0 & 0 & \cdots & \lambda
+        \end{bmatrix}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{d354e3255a1a46e99261a422c4e41207}
+    Жорданова клетка высоты \( q \), соответствующая некоторому числу \( \lambda \), обозначается
+    \begin{icloze}{1}
+        \[
+            J_q (\lambda).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{49446743b36c41b2825ed009c2fe6cd6}
+    \begin{icloze}{2}Жорданова матрица\end{icloze} --- это \begin{icloze}{1}блочно диагональная матрица, составленная из жордановых клеток.\end{icloze}
+\end{note}
+
+\begin{note}{c2e8392343e8487288fc8b5d700aeafa}
+    Пусть \( f : V \to V \) --- линейный оператор.
+    Тогда, если \begin{icloze}{1}в некотором базисе в \( V \) матрица \( A \) оператора \( f \) имеет жорданов вид,\end{icloze} то \( A \) называют \begin{icloze}{2}жордановой нормальной формой оператора \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{4e0cce0726054534a2f4f1fa1beaffbb}
+    Пусть \( f : V \to V \) --- линейный оператор.
+    Тогда, если \begin{icloze}{1}в некотором базисе в \( V \) матрица оператора \( f \) имеет жорданов вид,\end{icloze} то этот базис называют \begin{icloze}{2}жордановым базисом оператора \( f \).\end{icloze}
+\end{note}
+
+\begin{note}{69c2cd2726274e088ffcee35ddfc37af}
+    Как называется основной алгоритм, который используется для построения жордановой нормальной формы линейного оператора?
+
+    \begin{cloze}{1}
+        Жорданова лестница.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d8f181b2d5004a47bd308a35849cddec}
+    Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    Как для \( k > 0 \) соотносятся \( N_{f,k} (\lambda) \) и \( N_{f, k+1} (\lambda) \)?
+
+    \begin{cloze}{1}
+        Для всех \( k \) меньше некоторого \( q \)
+        \[
+            N_{f, k} (\lambda) \subsetneqq N_{f, k+1} (\lambda),
+        \]
+        а для всех \( k \geqslant q \):
+        \[
+            N_{f, k} (\lambda) = N_{f, k+1} (\lambda)
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
