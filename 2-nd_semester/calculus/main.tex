@@ -1461,4 +1461,48 @@
         \tiny (определение в терминах последовательностей)
     \end{center}
 \end{note}
+
+\section{Семинар 17.03.22}
+\begin{note}{e25a48aad5c048c3b2d3b7e2d9af0b98}
+    Алгоритм взятия интеграла вида
+    \[
+        \displaystyle \int \frac{Mx + N}{\sqrt{ax^2 + bx + c}}\: dx.
+    \]
+
+    \begin{cloze}{1}
+        Выделить полный квадрат под радикалом и почленно поделить числитель на знаменатель.
+    \end{cloze}
+\end{note}
+
+\begin{note}{79c04c292b2a4aeb8fb583ccc7916c2a}
+    Алгоритм взятия интеграла вида
+    \[
+        \displaystyle \int (Mx + N)\left( \sqrt{ax^2 + bx + c} \right)\: dx.
+    \]
+
+    \begin{cloze}{1}
+        Выделить полный квадрат под радикалом и затем внести его в скобки.
+    \end{cloze}
+\end{note}
+
+\begin{note}{30fa84062ed64fdabc405fa09e0c6148}
+    Алгоритм взятия интеграла вида
+    \[
+        \int \frac{P_n(x)}{\sqrt{ax^2 + bx + c}}\: dx, \quad \text{где \( P_n \in \mathbb R[x]_n \).}
+    \]
+
+    \begin{cloze}{1}
+        Представить ответ в виде
+        \[
+            Q_{n - 1}(x) \sqrt{ax^2 + bx + c} + \lambda \int \frac{1}{\sqrt{ax^2 + bx + c}}\: dx,
+        \]
+        продифференцировать левую и правую часть равенства и найти неизвестные коэффициенты в \( Q_{n - 1}(x) \) и \( \lambda \) из полученного соотношения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{15f51247a7d04b4fb445ea745f418ca4}
+    \[
+        \int \begin{icloze}{2}\frac{1}{\sqrt{x^2 + px + q}}\end{icloze}\: dx = \begin{icloze}{1}\ln\left| x + \frac{p}{2} + \sqrt{x^2 + px + q} \right|\end{icloze} + C.
+    \]
+\end{note}
 \end{document}
