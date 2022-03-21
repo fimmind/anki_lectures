@@ -1178,14 +1178,6 @@
     Тогда, если \begin{icloze}{1}в некотором базисе в \( V \) матрица оператора \( f \) имеет жорданов вид,\end{icloze} то этот базис называют \begin{icloze}{2}жордановым базисом оператора \( f \).\end{icloze}
 \end{note}
 
-\begin{note}{69c2cd2726274e088ffcee35ddfc37af}
-    Как называется основной алгоритм, который используется для построения жордановой нормальной формы линейного оператора?
-
-    \begin{cloze}{1}
-        Жорданова лестница.
-    \end{cloze}
-\end{note}
-
 \begin{note}{d8f181b2d5004a47bd308a35849cddec}
     Пусть \( f : V \to V \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
     Как для \( k > 0 \) соотносятся \( N_{f,k} (\lambda) \) и \( N_{f, k+1} (\lambda) \)?
@@ -1200,6 +1192,100 @@
             N_{f, k} (\lambda) = N_{f, k+1} (\lambda)
         \]
     \end{cloze}
+\end{note}
+
+\begin{note}{414400f8f69b41b58c7d5b2930735317}
+    Каков первый шаг в построении жордановой нормальной формы оператора \( f : V \to V \)?
+
+    \begin{cloze}{1}
+        Найти все собственные значения оператора \( f \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a79be36515f64439b4db0f075099cbc3}
+    Каков второй шаг в построении жордановой нормальной формы оператора \( f : V \to V \)?
+
+    \begin{cloze}{1}
+        Для каждого собственного значения \( \lambda \) найти все подпространства \( N_{f, k} (\lambda) \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{adf2c488db4640a1aba232fba8286d63}
+    Каков третий шаг в построении жордановой нормальной формы оператора \( f : V \to V \)?
+
+    \begin{cloze}{1}
+        Построить жорданову лестницу в каждом из корневых подпространств \( f \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2fe8afa7a09b49a1a7219ce868aaf67e}
+    Каков заключительный шаг в построении жордановой нормальной формы оператора \( f : V \to V \)?
+
+    \begin{cloze}{1}
+        Объединить все построенные базисы в одну систему и построить матрицу \( f \) в полученном базисе.
+    \end{cloze}
+\end{note}
+
+\section{Лекция 21.03.22}
+\begin{note}{61582b48320a46c3ad047eec84da3eb3}
+    Пусть \( A, A' \in \mathbb C^{\begin{icloze}{3}n \times n\end{icloze}} \). Тогда матрицы \( A \) и \( A' \) называются \begin{icloze}{2}подобными,\end{icloze} если \begin{icloze}{1}существует невырожденная матрица \( T \) такая, что
+    \[
+        A = T \: A' \: T^{-1}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{6366e6bbaa1149eb8bba346a3cc38654}
+    Отношение подобия матриц обозначается символом
+    \begin{icloze}{1}
+        \[
+            \sim
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{1ae63106d8d0480b82ef6f9e9b3d62bb}
+    Подобие матриц является отношением \begin{icloze}{1}эквивалентности.\end{icloze}
+\end{note}
+
+\begin{note}{de743729325e43f79f35a7b8c22d5bb2}
+    Любая \begin{icloze}{2}квадратная матрица\end{icloze} подобна \begin{icloze}{1}своей жордановой нормальной форме.\end{icloze}
+
+    \begin{center}
+        \tiny (следствие из \begin{icloze}{3}теоремы о жордановой форме\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{82aa01fcbfb7476d84662ca5802dae5b}
+    \begin{icloze}{2}Две квадратные матрицы подобны\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}их жордановы формы совпадают с точностью до перестановки клеток.\end{icloze}
+
+    \begin{center}
+        \tiny (следствие из \begin{icloze}{4}теоремы о жордановой форме\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{198e1f3eef67411c89f83a35ade066d2}
+    Пусть \( A, \Lambda, T \in \mathbb C^{n \times n} \),\: \( A = T^{-1} \Lambda T \),\: \( k \in \mathbb N \). Тогда
+    \[
+        A^{k} = \begin{icloze}{1}T^{-1} \Lambda^{k} T.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c1cf4048c475426683c811de00771765}
+    Пусть \({ A \in \mathbb C^{n \times n} }\),\: \({ p \in \mathbb C[x] }\),\: \( \displaystyle p(x) = \sum_{k=0}^{n} a_k x^{k}. \)
+    Тогда
+    \[
+        p(A) \overset{\text{def}}= \begin{icloze}{1}\sum_{k=0}^{n} a_k A^{k}, \quad \text{где \({ A^{0} \overset{\text{def}}= E }\)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3450a4591ff748cb856f4578b3cda3c2}
+    Пусть \({ p \in \mathbb C[x] }\),\: \({ A \in \mathbb C^{n \times n} }\). \begin{icloze}{1}Многочлен \( p \)\end{icloze} называется \begin{icloze}{2}аннулирующим многочленом для матрицы \( A \),\end{icloze} если \begin{icloze}{1}\( p(A) = 0 \).\end{icloze}
+\end{note}
+
+\begin{note}{34b1edb015384033870e10717e8bbdb2}
+    \subsubsection{<<\begin{icloze}{2}Теорема Гамильтона-Кэли\end{icloze}>>}
+
+    \begin{icloze}{1}Характеристический многочлен квадратной матрицы является для неё аннулирующим.\end{icloze}
 \end{note}
 
 \end{document}
