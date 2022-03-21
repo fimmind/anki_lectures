@@ -1512,4 +1512,133 @@
     \]
     где \( a := \begin{icloze}{2}\sqrt{\frac{4q + p^2}{4}}\end{icloze} \).
 \end{note}
+
+\section{Лекция 21.03.22}
+\begin{note}{679c0a0615d44749bc685cda9a47b233}
+    Пусть \begin{icloze}{3}\( f : [a, b] \to \mathbb R \).\end{icloze} \( f \) называется \begin{icloze}{2}интегрируемой по Риману на \( [a, b] \),\end{icloze} если \begin{icloze}{1}существует \( \displaystyle \lim_{\lambda_\tau \to 0} \sigma_\tau(f, \xi) \).\end{icloze}
+\end{note}
+
+\begin{note}{d6b62c8f08a842b2829447ab45a27e8c}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\) интегрируема по Риману на \( [a, b] \).\end{icloze} Тогда
+    \begin{icloze}{2}
+        \[
+            \lim_{\lambda_\tau \to 0} \sigma_\tau(f, \xi)
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}определённым интегралом Римана от функции \( f \) по отрезку \( [a, b] \).\end{icloze}
+\end{note}
+
+\begin{note}{7dc12d32c0ce407f87be1d7c51d0b1b3}
+    \begin{icloze}{2}Интеграл Римана от функции \( f \) по отрезку \( [a, b] \)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \int_{a}^{b} f \quad \text{или} \quad \int_{a}^{b} f(x)\: dx.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{e5e082ef6db649858cc60a662cb312b1}
+    В выражении
+    \[
+        \int_{a}^{b} f
+    \]
+    \begin{icloze}{2}числа \( a, b \)\end{icloze} называют \begin{icloze}{1}пределами интегрирования.\end{icloze}
+\end{note}
+
+\begin{note}{44bd096f622b475f908006fcf8e88426}
+    В выражении
+    \[
+        \int_{a}^{b} f
+    \]
+    \begin{icloze}{2}функцию \( f \)\end{icloze} называют \begin{icloze}{1}подынтегральной функцией.\end{icloze}
+\end{note}
+
+\begin{note}{4e8ab8723a9e485abea045a4aa0c79f0}
+    \begin{icloze}{1}Множество всех функций интегрируемых на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( R[a, b] \).\end{icloze}
+\end{note}
+
+\begin{note}{1294b085870d432eae003c1159bbcb60}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\),\: \({ \tau = \left\{ x_k \right\}_{k = 0}^{n} }\) --- разбиение отрезка \({ [a, b] }\).\end{icloze}
+    Тогда \begin{icloze}{1}сумма
+    \[
+        \begin{gathered}
+            \displaystyle \sum_{k=0}^{n - 1} M_k \Delta x_k, \quad \text{где \({ M_k := \sup f([x_k, x_{k + 1}]) }\)},
+        \end{gathered}
+    \]\end{icloze}
+    называется \begin{icloze}{2}верхней интегральной суммой Дарбу, отвечающей разбиению \({ \tau }\).\end{icloze}
+\end{note}
+
+\begin{note}{8807ccc652554a53aa9f97a7ee09ad99}
+    \begin{icloze}{1}Верхняя интегральная сумма Дарбу функции \({ f }\), отвечающая разбиению \({ \tau }\),\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            S_\tau (f).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{220907a5d6e248b78f987af0d058e64c}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\), \({ \tau = \left\{ x_k \right\}_{k = 0}^{n} }\) --- разбиение отрезка \({ [a, b] }\).\end{icloze}
+    Тогда \begin{icloze}{1}сумма
+    \[
+        \begin{gathered}
+            \displaystyle \sum_{k=0}^{n - 1} m_k \Delta x_k, \quad \text{где \({ m_k := \inf f([x_k, x_{k + 1}]) }\)},
+        \end{gathered}
+    \]\end{icloze}
+    называется \begin{icloze}{2}нижней интегральной суммой Дарбу, отвечающей разбиению \({ \tau }\).\end{icloze}
+\end{note}
+
+\begin{note}{2bbefff21b2c4c8fba866cd8eea6b02c}
+    \begin{icloze}{1}Нижняя интегральная сумма Дарбу функции \({ f }\), отвечающая разбиению \({ \tau }\),\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            s_\tau (f).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{189f37e44f0a45048e5cb16973582e14}
+    Пусть \begin{icloze}{4}\({ f : [a, b] \to \mathbb R }\), \({ \tau }\) --- разбиение \({ [a, b] }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) ограничена сверху\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}сумма \({ S_\tau (f) }\) конечна.\end{icloze}
+\end{note}
+
+\begin{note}{083512018d304036a80002a9df45af7e}
+    Пусть \begin{icloze}{4}\({ f : [a, b] \to \mathbb R }\), \({ \tau }\) --- разбиение \({ [a, b] }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) ограничена снизу\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}сумма \({ s_\tau (f) }\) конечна.\end{icloze}
+\end{note}
+
+\begin{note}{1c8af1c02f864877bddd4971a256a30e}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ \tau }\) --- разбиение \({ [a, b] }\).
+    Как \({ S_\tau (f) }\) выражается через суммы Римана?
+
+    \begin{cloze}{1}
+        \[
+            S_\tau (f) = \sup \left\{ \sigma_\tau (f, \xi) \mid \forall \xi \right\}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{7958d85410954f6280755a33f7bff6fb}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ \tau }\) --- разбиение \({ [a, b] }\).
+    Как \({ s_\tau (f) }\) выражается через суммы Римана?
+
+    \begin{cloze}{1}
+        \[
+            s_\tau (f) = \inf \left\{ \sigma_\tau (f, \xi) \mid \forall \xi \right\}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{453749996f00487b9b845f66318e9f7c}
+    Пусть \begin{icloze}{2}\({ f : [a, b] \to \mathbb R }\),\: \({ \tau, \tilde \tau }\) --- два разбиения \({ [a, b] }\),\: \({ \tau \subset \tilde \tau }\).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \begin{gathered}
+                S_{\tilde \tau} (f) \leqslant S_\tau (f), \\
+                s_{\tilde \tau} (f) \geqslant s_\tau (f).
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
 \end{document}
