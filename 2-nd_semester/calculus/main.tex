@@ -1554,7 +1554,7 @@
 \end{note}
 
 \begin{note}{4e8ab8723a9e485abea045a4aa0c79f0}
-    \begin{icloze}{1}Множество всех функций интегрируемых на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( R[a, b] \).\end{icloze}
+    \begin{icloze}{1}Множество всех функций интегрируемых на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( \mathcal R[a, b] \).\end{icloze}
 \end{note}
 
 \begin{note}{1294b085870d432eae003c1159bbcb60}
@@ -1639,6 +1639,181 @@
             \end{gathered}
         \]
     \end{icloze}
+\end{note}
+
+\section{Лекция 25.03.22}
+\begin{note}{a23a2495841f4894a31b489127b41054}
+    Пусть \({ f : [a, b] \to \mathbb R }\). Как связаны \({ s_{\tau_1}(f) }\) и \({ S_{\tau_2} (f) }\) для произвольных разбиений \({ \tau_1, \tau_2 }\) отрезка \({ [a, b] }\)?
+
+    \begin{cloze}{1}
+        \[
+            s_{\tau_1} (f) \leqslant S_{\tau_2} (f)
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{84c295b304a64dd3a80a791f82958c91}
+    Верно ли, что каждая нижняя сумма Дарбу функции \({ f }\) не превосходит каждой верхней суммы Дарбу этой же функции даже для разных разбиений отрезка?
+
+    \begin{cloze}{1}
+        Да. \({ s_{\tau_1} (f) \leqslant S_{\tau_2} (f) }\) для любых \({ \tau_1, \tau_2 }\)
+    \end{cloze}
+\end{note}
+
+\begin{note}{b7fac4e6a3324160adefc29c06d73479}
+    Каждая нижняя сумма Дарбу не превосходит каждой верхней суммы Дарбу.
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Для \({ \tau_1 = \tau_2 }\) утверждение тривиально. В ином случае рассмотреть суммы Дарбу для разбиения \({ \tau = \tau_1 \cup \tau_2 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{be394bd9e8e2456284b7c108e7e973f8}
+    Существует ли ограниченная на отрезке функция, неинтегрируемая на нём?
+
+    \begin{cloze}{1}
+        Да. Ограниченность является лишь необходимым, но не достаточным условием интегрируемости.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3b28a2ca07d44ea38f8d2df0ce9f396f}
+    Существует ли интегрируемая на отрезке функция, неограниченная на нём?
+
+    \begin{cloze}{1}
+        Нет. Любая интегрируемая на отрезке функция ограничена на нём.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e5921a1f2caa4ed583198b136ce6b34c}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). Величина
+    \begin{icloze}{1}
+        \[
+            \inf \left\{ S_{\tau} (f) \mid \forall \tau \right\}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}верхним интегралом Дарбу функции \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{fcfb0f775cac40c9a18563576c086827}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). \begin{icloze}{1}Верхний интеграл Дарбу функции \({ f }\)\end{icloze} обычно обозначатся \begin{icloze}{2}\( I^{*} \).\end{icloze}
+\end{note}
+
+\begin{note}{304c0f4c87fe44cb922eeaf557997d02}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). Величина
+    \begin{icloze}{1}
+        \[
+            \sup \left\{ s_{\tau} (f) \mid \forall \tau \right\}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}нижним интегралом Дарбу функции \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{bd7f75d9e429454599a993144985b2dc}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). \begin{icloze}{1}Нижний интеграл Дарбу функции \({ f }\)\end{icloze} обычно обозначатся \begin{icloze}{2}\( I_{*} \).\end{icloze}
+\end{note}
+
+\begin{note}{83287fd934bc4878a99a742db1668220}
+    Пусть \begin{icloze}{5}\({ f : \left[ a, b \right] \to \mathbb R }\).\end{icloze} Тогда \begin{icloze}{3}\({ f \in\mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{4}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            S_\tau(f) - s_\tau(f) \underset{\lambda_t \to 0}\longrightarrow 0,
+        \]
+    \end{icloze}
+    то есть
+    \begin{icloze}{2}
+        \[
+            \begin{gathered}
+                \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall \tau : \lambda_\tau < \delta \\
+                S_\tau(f) - s_\tau(f) < \varepsilon.
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f274e2ec8d6648a383184e816782dedf}
+    Пусть \begin{icloze}{3}\({ f : D \subset \mathbb R \to \mathbb R }\).\end{icloze}
+    \begin{icloze}{1}
+        Величина
+        \[
+            \sup \Big\{ f(x) - f(\hat{x}) \mid x, \hat{x} \in D \Big\}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}колебанием функции \({ f  }\) на множестве \({ D }\).\end{icloze}
+\end{note}
+
+\begin{note}{073304f993f94da7ab2f56d20b074752}
+    Пусть \({ f : D \subset \mathbb R \to \mathbb R }\). \begin{icloze}{1}Колебание функции \({ f }\) на множестве \({ D }\)\end{icloze} обозначается \begin{icloze}{2}\( \omega(f) \).\end{icloze}
+\end{note}
+
+\begin{note}{0a7ceb7d5f804209a506b41349ce11c9}
+    Пусть \({ f : D \subset \mathbb R \to \mathbb R }\). Тогда
+    \[
+        \begin{icloze}{2}\omega(f)\end{icloze} = \begin{icloze}{1}\sup f(D) - \inf f(D).\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах \({ \sup f, \inf f }\))
+    \end{center}
+\end{note}
+
+\begin{note}{82a86f84ecc44f89aac1396d471738d1}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). Тогда
+    \[
+        \begin{icloze}{2}\lim_{\lambda_\tau \to 0} S_\tau (f)\end{icloze} = \begin{icloze}{1}I^{*}\end{icloze}.
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах предела при \({ \lambda_\tau \to 0 }\))
+    \end{center}
+\end{note}
+
+\begin{note}{79915436f5b44d41a053bf8c0bf9e3ac}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). Тогда
+    \[
+        \begin{icloze}{2}\lim_{\lambda_\tau \to 0} s_\tau (f)\end{icloze} = \begin{icloze}{1}I_{*}\end{icloze}.
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах предела при \({ \lambda_\tau \to 0 }\))
+    \end{center}
+\end{note}
+
+\begin{note}{180307492ee647ac8b1bb30c91dcfb0d}
+    \subsubsection{\begin{icloze}{3}Критерий\end{icloze} \begin{icloze}{4}Дарбу\end{icloze} \begin{icloze}{2}интегрируемости функции\end{icloze}}
+
+    Пусть \({ f : \left[ a, b \right]  \to \mathbb R }\). Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ f \in \mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ f }\) ограничена \({ \left[ a, b \right] }\) и \({ I_* = I^* }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{4fec9ca16e3d4d6a8ee9ac0f388eb31c}
+    \subsubsection{\begin{icloze}{3}Критерий\end{icloze} \begin{icloze}{4}Римана\end{icloze} \begin{icloze}{2}интегрируемости функции\end{icloze}}
+
+    Пусть \({ f : \left[ a, b \right]  \to \mathbb R }\). Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ f \in \mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ \forall \varepsilon > 0 \quad \exists \tau \quad S_\tau (f) - s_\tau (f) < \varepsilon }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{8ba2a0bdc9754111b4f3eae4493a895d}
+    Существует ли непрерывная на отрезке функция, неинтегрируемая на этом отрезке?
+
+    \begin{cloze}{1}
+        Нет. Любая непрерывная на отрезке функция интегрируема на этом отрезке.
+    \end{cloze}
+\end{note}
+
+\begin{note}{cb2eb65d72554cea90a47503d1d97474}
+    Существует ли монотонная на отрезке функция, неинтегрируемая на этом отрезке?
+
+    \begin{cloze}{1}
+        Нет. Любая монотонная на отрезке функция интегрируема на этом отрезке.
+    \end{cloze}
 \end{note}
 
 \end{document}
