@@ -1816,4 +1816,71 @@
     \end{cloze}
 \end{note}
 
+\section{Семинар 24.03.22}
+\begin{note}{e2a6745c55e2452bb18cc67eb3b51eb9}
+    Интегалы вида
+    \[
+        \int \begin{icloze}{2}\frac{Mx + N}{(x - \alpha)^{k} \sqrt{ax^2 + bx + c}}\end{icloze}\: dx
+    \]
+    берутся с помощью
+    \begin{icloze}{1}замены
+        \[
+            t := \frac{1}{x - \alpha}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{76f25092a99044e7b985eeafa85ca9ca}
+    Интегралы вида
+    \begin{icloze}{2}
+        \[
+            \int R(x, \sqrt{ax^2 + bx + c})\: dx, \quad \text{где \({ R \in \mathbb R(x) }\)},
+        \]
+    \end{icloze}
+    берутся с помощью \begin{icloze}{1}подстановок Эйлера.\end{icloze}
+\end{note}
+
+\begin{note}{f341e2ce094542f98b0a97abf09c7254}
+    Каковы условия для применения каждой из подстановок Эйлера?
+
+    \begin{cloze}{1}
+        \begin{enumerate}
+            \item \({ a > 0 }\);
+            \item \({ c > 0 }\);
+            \item \({ ax^2 + bx + c }\) приводим над \({ \mathbb R }\).
+        \end{enumerate}
+    \end{cloze}
+\end{note}
+
+\begin{note}{f0d585d86f5542a088764032d1d2eef8}
+    Замена переменной в подстановке Эйлера для \({ a > 0 }\).
+
+    \begin{cloze}{1}
+        \[
+            \sqrt{ax^2 + bx + c} = \pm x \sqrt{a} \pm t
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{3eb88f39c10241c1a11c805b799d8ae2}
+    Замена переменной в подстановке Эйлера для \({ c > 0 }\).
+
+    \begin{cloze}{1}
+        \[
+            \sqrt{ax^2 + bx + c} = \pm \sqrt{c} \pm xt
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{9df1ed5f198d4793bc9ff466bc983224}
+    Замена переменной в подстановке Эйлера для приводимого \({ ax^2 + bx + c }\).
+
+    \begin{cloze}{1}
+        \[
+            \sqrt{ax^2 + bx + c} = \pm t (x - x_1),
+        \]
+        где \({ x_1 }\) --- корень \({ ax^2 + bx + c }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
