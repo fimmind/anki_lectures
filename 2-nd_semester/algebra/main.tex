@@ -1288,4 +1288,225 @@
     \begin{icloze}{1}Характеристический многочлен квадратной матрицы является для неё аннулирующим.\end{icloze}
 \end{note}
 
+\section{Лекция 28.03.22}
+\begin{note}{c4787ae5340942d2a27db89ea5f9d4df}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb R }\).
+    Билинейная форма \({ f }\) в \({ V }\) называется \begin{icloze}{2}положительно определённой,\end{icloze} если \begin{icloze}{1}для любого \({ v \in V }\)
+    \[
+        \begin{gathered}
+            f(v, v) \geqslant 0; \quad f(v, v) = 0 \iff v = 0.
+        \end{gathered}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{18f442014f0e4614a642e429958b8931}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb R }\).
+    \begin{icloze}{2}Скалярным произведением в \({ V }\)\end{icloze} называется \begin{icloze}{1}симметричная положительно определённая билинейная форма в \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{cea78871e8124a29945d3540057c0c68}
+    \begin{icloze}{1}Линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{2}евклидовым пространством.\end{icloze}
+\end{note}
+
+\begin{note}{79a607edba4945a4a562d9b1fd8f2ce9}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\).
+    Скалярное произведение векторов \({ v, w \in V }\) обозначается
+    \begin{icloze}{1}
+        \[
+            (v, w).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{717ab493f110448bb867a49b37d29d83}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v \in V }\).
+    \begin{icloze}{2}Длиной вектора \({ v }\)\end{icloze} называется \begin{icloze}{1}величина \( \sqrt{(v, v)} \).\end{icloze}
+\end{note}
+
+\begin{note}{7bc89a880fb244a78c3e204575ac9005}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v \in V }\).
+    \begin{icloze}{2}Длина вектора \({ v }\)\end{icloze} обозначается \begin{icloze}{1}\( \left\lvert v \right\rvert \) или \({ \left\lVert v \right\rVert }\).\end{icloze}
+\end{note}
+
+\begin{note}{de4db3a6688f4b198b8238b0e07dfce7}
+    Длину вектора в еклидовом пространства так же ещё называют \begin{icloze}{1}нормой этого вектора.\end{icloze} В таком случае чаще используется обозначение \begin{icloze}{2}\( \left\lVert v \right\rVert \).\end{icloze}
+\end{note}
+
+\begin{note}{c0b109c4be9e4749ad794e9e38fffb2d}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R\end{icloze} }\).
+    \begin{icloze}{2}Сферой радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} называют \begin{icloze}{1}множество
+    \[
+        \left\{ v \in V \mid \left\lVert v - v_0 \right\rVert = r \right\}.
+    \]
+\end{icloze}\end{note}
+
+\begin{note}{09b61a41cf5f45109c79e7cc61f63740}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R }\).
+    \begin{icloze}{2}Сфера радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            S_r (v_0).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{e63df21bb26d42269a7a5d45c6b828b8}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R\end{icloze} }\).
+    \begin{icloze}{2}Шаром радиуса \({ r }\) с ценстром в точке  \({ v_0 }\)\end{icloze} называют \begin{icloze}{1}множество
+        \[
+            \left\{ v \in V | \left\lVert v - v_0 \right\rVert \leqslant r \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d0d10cbbdb664b428b1f3284ff5321f9}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R }\).
+    \begin{icloze}{2}Шар радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            B_r (v_0).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a7021008185a411e99300286ac245d14}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v, w \in V \setminus \left\{ 0 \right\} }\).\end{icloze}
+    Векторы \({ v }\) и \({ w }\) называются \begin{icloze}{2}сонаправленными,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \exists \lambda > 0 \quad v = \lambda w.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{0cfd3b2d9f17418eb0b8fd2dd36ef1d4}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v, w \in V \setminus \left\{ 0 \right\} }\).\end{icloze}
+    \begin{icloze}{2}Углом между векторами \({ v, w }\)\end{icloze} называется \begin{icloze}{1}угол \({ \varphi \in \left[ 0, \pi \right] }\) такой, что
+    \[
+        \cos \varphi = \frac{(v, w)}{\left\lVert v \right\rVert \cdot \left\lVert w \right\rVert}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{097fc51b1eab4a699e7110a38f0bd670}
+    \subsubsection{<<\begin{icloze}{2}Неравенство Коши-Буниковского\end{icloze}>>}
+
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v, w \in V }\).\end{icloze}
+    Тогда всегда \begin{icloze}{1}\({ \left\lvert (v, w) \right\rvert \leqslant \left\lVert v \right\rVert \cdot \left\lVert w \right\rVert }\).\end{icloze}
+\end{note}
+
+\begin{note}{570b086e7e1b48e3b3012778f4841d1e}
+    В чем основная идея доказательства неравенства Коши-Буниковского?
+
+    \begin{cloze}{1}
+        Рассмотреть скалярное произведение
+        \[
+            (v - \lambda w, v - \lambda w) \geqslant 0.
+        \]
+        И показать, что дискриминант соответствующего квадратного уравнения \({ \leqslant 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{96bb9d37dba3499d8890f7b3eb1f04d4}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v, w \in V }\).
+    Тогда
+    \begin{center}
+        \({ \left\lvert (v, w) \right\rvert = \left\lVert v \right\rVert \cdot \left\lVert w \right\rVert }\)
+        \begin{icloze}{2}\({ \iff }\)\end{icloze}
+        \begin{icloze}{1}\({ v }\) и \({ w }\) пропорциональны.\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{d1941ac59ee44c82b045d6d1e954e0d8}
+    \subsubsection{<<\begin{icloze}{2}Неравенство треугольника\end{icloze}>>}
+
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v, w \in V }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \left\lVert v + w \right\rVert \leqslant \left\lVert v \right\rVert + \left\lVert w \right\rVert.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{4759501bf4b84cf0acf58f945229396c}
+    В чем основная идея доказательства неравенства треугольника?
+
+    \begin{cloze}{1}
+    Рассмотреть скалярное произведение
+    \[
+        (v + w, v + w) = \left\lVert v + w \right\rVert^2.
+    \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{5378eb0c9d81404c9cd8ca40925b9ce8}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v, w \in V }\).
+    Тогда
+    \begin{center}
+        \({ \left\lVert v + w \right\rVert = \left\lVert v \right\rVert + \left\lVert w \right\rVert }\)
+        \begin{icloze}{2}\({ \iff }\) \end{icloze}
+        \begin{icloze}{1}\({ v \operatorname{\uparrow\uparrow} w }\)\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{8238aebbcc724e708990b61d8a0e3603}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v, w \in V }\).
+    Векторы \({ v }\) и \({ w }\) называются \begin{icloze}{2}ортогональными,\end{icloze} если \begin{icloze}{1}\({ (v, w) = 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{ce138d9eefe6445bbe72ecb3cafe43e8}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\).
+    Система векторов в \({ V }\) называется \begin{icloze}{2}ортогональной,\end{icloze} если её \begin{icloze}{1}векторы попарно ортогональны.\end{icloze}
+\end{note}
+
+\begin{note}{2dbaa8c8157c42e08de67ebd6cc42e47}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{4}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- ортогональная система векторов в \({ V }\).\end{icloze}
+    Тогда \begin{icloze}{3}система \({ \left\{ e_j \right\} }\) линейно независима\end{icloze} \begin{icloze}{2}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ e_j \neq 0 }\) для всех \({ j }\).\end{icloze}
+\end{note}
+
+\begin{note}{d20a32cfc1c3440a9e22f5d28c36b9d5}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- ортогональная система ненулевых векторов в \({ V }\).
+    Как показать, что система \({ \left\{ e_j \right\} }\) линейно независима?
+
+    \begin{cloze}{1}
+        Умножить линейную комбинацию векторов \({ \left\{ e_j \right\} }\), равную нулю, на \({ e_i }\) для произвольного \({ i }\) и показать равентсво нулю \({ i }\)-ого коэффициента.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b9cf4cdf374445c4bc8412c8ca72847c}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v \in V }\),\: \({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- ортогональный базис в \({ V }\).\end{icloze}
+    Тогда \begin{icloze}{2}координаты вектора \({ v }\) в базисе \({ \left\{ e_j \right\} }\)\end{icloze} имеют вид
+    \[
+        v_j = \begin{icloze}{1}\frac{(v, e_j)}{\left\lVert e_j \right\rVert^2}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5a4e71f923b84eb5b5f3e2b66ea26470}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v \in V }\),\: \({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- ортогональный базис в \({ V }\).
+    Как показать, что координаты вектора \({ v }\) в базисе \({ \left\{ e_j \right\} }\) имеют вид
+    \[
+        v_j = \frac{(v, e_j)}{\left\lVert e_j \right\rVert^2}?
+    \]
+
+    \begin{cloze}{1}
+        Вычислить \({ (v, e_j) }\), разложив \({ v }\) по базису \({ \left\{ e_j \right\} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7ede17a5d2d049c690090d4850f4ef60}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v \in V }\),\: \({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- ортогональная система в \({ V }\).\end{icloze}
+    Тогда \begin{icloze}{1}числа
+    \[
+        \frac{(v, e_j)}{\left\lVert e_j \right\rVert^2}
+    \]\end{icloze}
+    называют \begin{icloze}{2}коэффициентами Фурье вектора \({ v }\) в системе \({ \left\{ e_j \right\} }\).\end{icloze}
+\end{note}
+
+\begin{note}{04027e25ae114e76a8cf6f9500e1ae28}
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\).
+    Система векторов \({ \left\{ e_j \right\}_{j = 1}^{n} }\) в \({ V }\) называется \begin{icloze}{2}ортонормированной,\end{icloze} если \begin{icloze}{1}её векторы попарно ортогональны и \({ \left\lVert e_j \right\rVert = 1 }\) для всех \({ j }\).\end{icloze}
+\end{note}
+
 \end{document}
+
+% vim: spelllang=ru_yo,en
