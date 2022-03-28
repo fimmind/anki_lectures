@@ -1697,6 +1697,17 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{c6120328fd3e40a48f6d7e69fce29c9d}
+    Как показать, что любая интегрируемая на отрезке функция ограничена на нём?
+
+    \begin{cloze}{1}
+        Если допустить, что \({ f }\) не ограниченна, то \({ \forall \tau }\) имеем \({ S_\tau (f) = \sup \left\{ \sigma_\tau (f, \xi) \right\} = +\infty }\), а значит
+        \[
+            \nexists \lim_{\lambda_\tau \to 0} \sigma_\tau (f, \xi).
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{e5921a1f2caa4ed583198b136ce6b34c}
     Пусть \({ f : \left[ a, b \right] \to \mathbb R }\). Величина
     \begin{icloze}{1}
@@ -1726,21 +1737,107 @@
 \end{note}
 
 \begin{note}{83287fd934bc4878a99a742db1668220}
-    Пусть \begin{icloze}{5}\({ f : \left[ a, b \right] \to \mathbb R }\).\end{icloze} Тогда \begin{icloze}{3}\({ f \in\mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{4}тогда и только тогда, когда\end{icloze}
+    \subsubsection{<<\begin{icloze}{3}Критерий\end{icloze} \begin{icloze}{2}интегрируемости функции\end{icloze}>>}
+    Пусть \begin{icloze}{4}\({ f : \left[ a, b \right] \to \mathbb R }\).\end{icloze} Тогда \begin{icloze}{2}\({ f \in\mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
     \begin{icloze}{1}
         \[
-            S_\tau(f) - s_\tau(f) \underset{\lambda_t \to 0}\longrightarrow 0,
+            S_\tau(f) - s_\tau(f) \underset{\lambda_t \to 0}\longrightarrow 0.
         \]
     \end{icloze}
-    то есть
-    \begin{icloze}{2}
-        \[
+\end{note}
+
+\begin{note}{68b782b8c09040dfa994ede932b748bc}
+    \begin{multline*}
+        \begin{icloze}{2}S_\tau(f) - s_\tau(f) \underset{\lambda_t \to 0}\longrightarrow 0\end{icloze}
+        \overset{\hspace{-1pt}\text{\tiny def}}\iff \\
+        \begin{icloze}{1}
             \begin{gathered}
                 \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall \tau : \lambda_\tau < \delta \\
                 S_\tau(f) - s_\tau(f) < \varepsilon.
             \end{gathered}
+        \end{icloze}
+    \end{multline*}
+
+    \begin{center}
+        \tiny
+        (в терминах \({ \varepsilon, \delta }\))
+    \end{center}
+\end{note}
+
+\begin{note}{6a94745f7ac74ef7a5be1b0a6128e303}
+    В чем ключевая идея доказательства критерия интегрируемости функции (необходимость)?
+
+    \begin{cloze}{1}
+        Показать, что по определению супремума
+        \[
+            S_\tau(f), s_\tau(f) \in \dot V_{\varepsilon}(I)
         \]
-    \end{icloze}
+        для \({ \tau, \varepsilon, I }\) из определения предела интегральных сумм.
+    \end{cloze}
+\end{note}
+
+\begin{note}{53f49c34063149d892ad1eb1015abebd}
+    В чем ключевая идея доказательства критерия интегрируемости функции (достаточность)?
+
+    \begin{cloze}{1}
+        Показать, что
+        \[
+            \begin{gathered}
+                s_\tau (f) \leqslant I_* \leqslant I^* \leqslant S_\tau (f), \\
+                s_\tau (f) \leqslant \sigma_\tau (f, \xi) \leqslant S_\tau (f).
+            \end{gathered}
+        \]
+        для любого оснащённого разбиения \({ (\tau, \xi) }\) отрезка \({ \left[ a, b \right] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f200bb84909d45898f1313f053135d3a}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ f \in \mathcal R[a, b] }\). Как соотносятся \({ I^* }\), \({ I_* }\) и \({ \int_{a}^{b} f }\)?
+
+    \begin{cloze}{1}
+        \[
+            I_* = I^* = \int_{a}^{b} f.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{1e7ec80a8e8f4caf87b70493394d837a}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    Как для произвольного разбиения \({ \tau }\) соотносятся \({ s_\tau (f) }\), \({ S_\tau (f) }\) и \({ \int_{a}^{b} f }\)?
+
+    \begin{cloze}{1}
+        \[
+            s_\tau (f) \leqslant \int_{a}^{b} f \leqslant S_\tau (f).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{c1ca9a97a9a948e685e22801cc7e1ee5}
+    Если \({ f \in \mathcal R\left[ a, b \right] }\), то
+    \[
+        \lim_{\lambda_\tau \to 0} S_\tau (f) = \begin{icloze}{1}\int_{a}^{b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6a890ec9b5384ed2944133d968407712}
+    Как показать, что
+    \[
+        f \in \mathcal R[a, b] \implies \lim_{\lambda_\tau \to 0} S_\tau (f) = \int_{a}^{b} f?
+    \]
+
+    \begin{cloze}{1}
+        Тривиально следует из критерия интегрируемости и неравенства
+        \[
+            s_\tau (f) \leqslant \int_{a}^{b} f \leqslant S_\tau (f).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{1a704d6d276749bdaa56a88c05622b02}
+    Если \({ f \in \mathcal R\left[ a, b \right] }\), то
+    \[
+        \lim_{\lambda_\tau \to 0} s_\tau (f) = \begin{icloze}{1}\int_{a}^{b} f.\end{icloze}
+    \]
 \end{note}
 
 \begin{note}{f274e2ec8d6648a383184e816782dedf}
@@ -1767,6 +1864,27 @@
     \begin{center}
         \tiny
         (в терминах \({ \sup f, \inf f }\))
+    \end{center}
+\end{note}
+
+\begin{note}{ec97e108f2394602934c87c2f28f2a39}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\),\: \({ \tau = \left\{ x_k \right\}_{k = 0}^{n} }\) --- разбиение \({ \left[ a, b \right] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\omega_k (f)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\omega (f | _{[x_k, x_{k + 1}]}).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{649783b3a0c14571bdbbb8caba0d07a3}
+    Пусть \({ f : \left[ a, b \right] \to \mathbb R }\),\: \({ \tau = \left\{ x_k \right\}_{k = 0}^{n} }\) --- разбиение \({ \left[ a, b \right] }\).
+    Тогда
+    \[
+        S_\tau (f) - s_\tau (f) = \begin{icloze}{1}\sum_{k=0}^{n - 1} \omega_k (f) \Delta x_k.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах \({ \omega_k (f) }\))
     \end{center}
 \end{note}
 
@@ -1820,11 +1938,31 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{da9a4e99c01a42a4a8c5bccf8e3d24f7}
+    Как, в общих чертах, доказать, что любая интегрируемая на отрезке функция ограничена на нём?
+
+    \begin{cloze}{1}
+        Из теоремы Кантора получить равномерную непрерывность и далее по теореме Вейерштрасса оценить для \({ \lambda_\tau < \delta }\) величину \({ \omega(f|_{[x_k, x_{k + 1}]}) }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{cb2eb65d72554cea90a47503d1d97474}
     Существует ли монотонная на отрезке функция, неинтегрируемая на этом отрезке?
 
     \begin{cloze}{1}
         Нет. Любая монотонная на отрезке функция интегрируема на этом отрезке.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7a4501cbb6414feaaf12589452716ae3}
+    Как, в общих чертах, доказать, что любая монотонная на отрезке функция интегрируема на этом отрезке?
+
+    \begin{cloze}{1}
+        Для определённости \({ f \!\!\nearrow }\). Для произвольного \({ \varepsilon }\) взять
+        \[
+            \delta = \frac{\varepsilon}{f(b) - f(a)}.
+        \]
+        Далее по критерию интегрируемости.
     \end{cloze}
 \end{note}
 
