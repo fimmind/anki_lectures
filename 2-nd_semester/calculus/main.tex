@@ -1369,6 +1369,11 @@
     называется \begin{icloze}{2}разбиением отрезка \( [a, b] \).\end{icloze}
 \end{note}
 
+\begin{note}{e301682aa933430591e748e6973a1843}
+    Пусть \({ [a, b] }\) --- невырожденный отрезок.
+    \begin{icloze}{1}Множество всех разбиений отрезка \({ [a, b] }\)\end{icloze} обозначается \begin{icloze}{2}\({ T[a, b] }\).\end{icloze}
+\end{note}
+
 \begin{note}{6f5e8266e0b44eeebba980ac5d8c6112}
     Пусть \begin{icloze}{3}\( \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).\end{icloze}
     Тогда
@@ -1399,6 +1404,11 @@
 \begin{note}{5e83015672844d94a0a89355f7af372e}
     Пусть \begin{icloze}{3}\( \tau \) --- некоторое разбиение отрезка \( [a, b] \), \( \xi \) --- оснащение разбиения \( \tau \).\end{icloze}
     Тогда \begin{icloze}{1}пара \( (\tau, \xi) \)\end{icloze} называется \begin{icloze}{2}оснащённым разбиением отрезка \( [a, b] \).\end{icloze}
+\end{note}
+
+\begin{note}{974eeb7d70c24d318e71abd3d9a95f3f}
+    Пусть \({ [a, b] }\) --- невырожденный отрезок.
+    \begin{icloze}{1}Множество всех оснащённых разбиений отрезка \({ [a,  b] }\)\end{icloze} обозначается \begin{icloze}{2}\({ T'[a, b] }\).\end{icloze}
 \end{note}
 
 \begin{note}{ef2c57fbd464435c9896c8e8f24db8b5}
@@ -2031,6 +2041,171 @@
         \]
         где \({ x_1 }\) --- корень \({ ax^2 + bx + c }\).
     \end{cloze}
+\end{note}
+
+\section{Лекция 01.04.22}
+\begin{note}{60ff32d5ed7347ae8036518373a5bc61}
+    Пусть \begin{icloze}{3}\({ f, \tilde f : [a, b] \to \mathbb R }\),\: \({ f \in  \mathcal R[a, b] }\),\: \({ T \subset [a, b] }\),\: \({ \left\lvert T \right\rvert < \aleph_0 }\).\end{icloze} Если
+    \begin{icloze}{1}
+        \[
+            \forall x \in [a, b] \setminus T \quad f(x) = \tilde f(x),
+        \]
+    \end{icloze}
+    то \begin{icloze}{2}\({ \tilde f \in \mathcal R[a, b] }\) и \({ \int_{a}^{b} f = \int_{a}^{b} \tilde f }\).\end{icloze}
+\end{note}
+
+\begin{note}{30e9c514b2a7470bb6370c764380a14b}
+    Каков первый шаг доказательства того, что изменение значений функции \({ f \in\mathcal R[a, b] }\) в конечном числе точек не влияет на интегрируемость?
+
+    \begin{cloze}{1}
+        Показать, что \({ f }\) и \({ \tilde f }\) ограничены по модулю некоторыми значениями \({ A }\) и \({ \tilde A \in \mathbb R }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{9f281cfda3464766a189207f5029d7ed}
+    В чем ключевая идея доказательства того, что изменение значений функции \({ f \in\mathcal R[a, b] }\) в конечном числе точек не влияет на интегрируемость?
+
+    \begin{cloze}{1}
+        Разность интегральных сумм \({ f }\) и \({ \tilde f }\) ограничена по модулю значением
+        \( 2m (A + \tilde A) \lambda_\tau \underset{\lambda_\tau \to 0}\longrightarrow 0 \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{94c3dcad5bc247568a21704cb1d05f72}
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\), \({ [\alpha, \beta] \subset [a, b] }\).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            f |_{[\alpha, \beta]} \in \mathcal R[\alpha, \beta].
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{385f602d08114dd39630009f76dbb7e0}
+    Пусть \({ f \in \mathcal R[a, b] }\), \({ [\alpha,  \beta]   \subset [a, b] }\). Тогда \({ f|_{[\alpha, \beta]} \in \mathcal R[\alpha, \beta] }\).
+
+    В чем ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Если \({ \tau_0 \in T[\alpha, \beta], \tau \in T[a, b], \tau_0 \subset \tau }\), то
+        \[
+            S_{\tau_0} - s_{\tau_0} \leqslant S_{\tau} - s_{\tau}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee426e669ae545b8ad6d128a5870373e}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\), \({ c \in (a, b) }\).\end{icloze} Тогда если
+    \begin{icloze}{1}
+        \[
+            f|_{[a, c]} \in \mathcal R[a, c] \quad \land \quad f|_{[c, b]} \in \mathcal R[c, b],
+        \]
+    \end{icloze}
+    то \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{c8c134e6d7c442c3a7214585d20c41ac}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ c \in (a, b) }\). Тогда если
+    \[
+        f|_{[a, c]} \in \mathcal R[a, c] \quad \land \quad f|_{[c, b]} \in \mathcal R[c, b],
+    \]
+    то \({ f \in \mathcal R[a, b] }\).
+
+    В чем ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            \begin{gathered}
+                S_\tau - s_\tau \leqslant S_{\tau_1} - s_{\tau_1} + S_{\tau_2} - s_{\tau_2} + \omega(f) \cdot \lambda_\tau, \\
+                \tau \in T[a, b], \quad \tau' = \tau \cup \left\{ c \right\}, \\
+                \tau_1 = \tau' \cap [a, c], \quad \tau_2 = \tau' \cap [c, a].
+            \end{gathered}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{ccba27d6a29c468f8a60fbd0f106fec4}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\).\end{icloze} Функция \({ f }\) называется \begin{icloze}{2}кусочно непрерывной,\end{icloze} если \begin{icloze}{1}множество её точек разрыва пусто или конечно, и все её разрывы суть разрывы второго рода.\end{icloze}
+\end{note}
+
+\begin{note}{86f712cafa53498fa3b282915340635c}
+    Пусть \({ f : [a, b] \to \mathbb R }\). Если \({ f }\) кусочно непрерывна на \({ [a, b] }\), то \begin{icloze}{1}\({ f \in \mathcal R[a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{78e23f5a381e4d01b4c4467b16955dcb}
+    Как показать, что кусочно непрерывная функция \({ f : [a, b] \to \mathbb R }\) интегрируема на \({ [a, b] }\)?
+
+    \begin{cloze}{1}
+        Показать, что она интегрируема на каждом из непрерывных <<кусков>>.
+    \end{cloze}
+\end{note}
+
+\begin{note}{682bfc21e35a489ebc7df5514e1d4690}
+    Пусть \({ E \subset \mathbb R }\). Говорят, что \begin{icloze}{2}множество \({ E }\) имеет нулевую меру,\end{icloze} если \begin{icloze}{1}для любого \({ \varepsilon > 0 }\) множество \({ E }\) можно заключить  в не более чем счётное объединение интервалов, суммарная длина которых меньше \({ \varepsilon }\).\end{icloze}
+\end{note}
+
+\begin{note}{3be97c537ee44236bfc5f8bae48390e3}
+    \subsubsection{<<\begin{icloze}{3}Критерий\end{icloze} \begin{icloze}{4}Лебега\end{icloze} \begin{icloze}{2}интегрируемости функции\end{icloze}>>}
+
+    Пусть \begin{icloze}{5}\({ f : [a, b]  \to \mathbb R }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}\({ f }\) ограничена на \({ [a, b] }\) и множество точек  разрыва \({ f }\) имеет нулевую меру.\end{icloze}
+\end{note}
+
+\begin{note}{1b3f6df593ba44b6b9558ee83720dd7e}
+    Пусть \({ f, g \in \mathcal R[a, b], \alpha \in \mathbb R }\). Тогда
+    \[
+        \begin{icloze}{1}f + g\end{icloze},\: \begin{icloze}{1}fg,\end{icloze}\: \begin{icloze}{1}\alpha f\end{icloze},\: \begin{icloze}{1}\left\lvert f \right\rvert\end{icloze} \in \mathcal R[a, b].
+    \]
+\end{note}
+
+\begin{note}{275d09f8b4c9445992ecc4f02cd9f6ba}
+    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда
+    \[
+        \begin{icloze}{2}\underset{x \in [a, b]}{\inf} \left\lvert g(x) \right\rvert > 0\end{icloze}
+        \implies
+        \begin{icloze}{1}
+                \frac{f}{g} \in \mathcal R[a, b].
+        \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{20347e63d70945cdbe073a675dbcb23a}
+    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда \({ f + g \in \mathcal R[a, b] }\).
+
+    В чем основная идея доказательства?
+
+    TODO
+\end{note}
+
+\begin{note}{909d22f843c9421598278c307e29edb5}
+    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда \({ fg \in \mathcal R[a, b] }\).
+
+    В чем основная идея доказательства?
+
+    TODO
+\end{note}
+
+\begin{note}{aad31d4599b94b8f8ee128bfbfec8251}
+    Пусть \({ f \in \mathcal R[a, b], \alpha \in \mathbb R }\). Тогда \({ \alpha f \in \mathcal R[a, b] }\).
+
+    В чем основная идея доказательства?
+
+    TODO
+\end{note}
+
+\begin{note}{76538508e5574126a26e4dbf06fe4160}
+    Пусть \({ f \in \mathcal R[a, b] }\). Тогда \({ \left\lvert f \right\rvert \in \mathcal R[a, b] }\).
+
+    В чем основная идея доказательства?
+
+    TODO
+\end{note}
+
+\begin{note}{6bb4953a2e6d41fb86cf8a801779a97f}
+    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда если \({ \underset{x \in [a, b]}{\inf} \left\lvert g(x) \right\rvert > 0 }\), то \({ \frac{f}{g} \in \mathcal R[a, b] }\).
+
+    В чем основная идея доказательства?
+
+    TODO
 \end{note}
 
 \end{document}
