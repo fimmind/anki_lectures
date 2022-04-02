@@ -809,8 +809,8 @@
 
     Пусть \( f : \langle A, B \rangle \to \mathbb R  \). Тогда \begin{icloze}{3}равносильны\end{icloze} следующие утверждения.
     \begin{itemize}
-        \item \begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
-        \item \begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливы неравенства
+        \item {}\begin{icloze}{1}\( f \) строго выпукла на \( \langle A, B \rangle  \).\end{icloze}
+        \item {}\begin{icloze}{2}\( \forall a, b, c \in \langle A, B \rangle, a < c < b \) справедливы неравенства
                 \[
                     \frac{f(c) - f(a)}{c - a} < \frac{f(b) - f(a)}{b - a}  < \frac{f(b) - f(c)}{b - c}.
                 \]
@@ -1375,7 +1375,7 @@
 \end{note}
 
 \begin{note}{6f5e8266e0b44eeebba980ac5d8c6112}
-    Пусть \begin{icloze}{3}\( \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).\end{icloze}
+    Пусть \( \left\{ x_k \right\}_{k = 0}^{n} \) --- некоторое разбиение отрезка \( [a, b] \).
     Тогда
     \[
         \begin{icloze}{2}\Delta x_k\end{icloze} \overset{\text{def}}= \begin{icloze}{1}x_{k + 1} - x_k.\end{icloze}
@@ -1518,7 +1518,7 @@
 
 \begin{note}{9b1156318f464dc79a658d6e94fe214d}
     \[
-        \int \begin{icloze}{3}\frac{1}{\sqrt{-x^2 + px + q}}\end{icloze}\: dx = \begin{icloze}{1}\arcsin \frac{2x + p}{2a}\end{icloze} + C,
+        \int \begin{icloze}{3}\frac{1}{\sqrt{-x^2 + px + q}}\end{icloze}\: dx = \begin{icloze}{1}\arcsin \frac{2x - p}{2a}\end{icloze} + C,
     \]
     где \( a := \begin{icloze}{2}\sqrt{\frac{4q + p^2}{4}}\end{icloze} \).
 \end{note}
@@ -1564,6 +1564,7 @@
 \end{note}
 
 \begin{note}{4e8ab8723a9e485abea045a4aa0c79f0}
+    Пусть \({ [a, b] }\) --- невырожденный отрезок.
     \begin{icloze}{1}Множество всех функций интегрируемых на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( \mathcal R[a, b] \).\end{icloze}
 \end{note}
 
@@ -1579,6 +1580,7 @@
 \end{note}
 
 \begin{note}{8807ccc652554a53aa9f97a7ee09ad99}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ \tau \in T[a, b] }\).
     \begin{icloze}{1}Верхняя интегральная сумма Дарбу функции \({ f }\), отвечающая разбиению \({ \tau }\),\end{icloze} обозначается
     \begin{icloze}{2}
         \[
@@ -1599,6 +1601,7 @@
 \end{note}
 
 \begin{note}{2bbefff21b2c4c8fba866cd8eea6b02c}
+    Пусть \({ f : [a, b] \to \mathbb R }\), \({ \tau \in T[a, b] }\).
     \begin{icloze}{1}Нижняя интегральная сумма Дарбу функции \({ f }\), отвечающая разбиению \({ \tau }\),\end{icloze} обозначается
     \begin{icloze}{2}
         \[
@@ -1927,7 +1930,7 @@
 
     Пусть \({ f : \left[ a, b \right]  \to \mathbb R }\). Тогда
     \begin{center}
-        \begin{icloze}{2}\({ f \in \mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ f }\) ограничена \({ \left[ a, b \right] }\) и \({ I_* = I^* }\).\end{icloze}
+        \begin{icloze}{2}\({ f \in \mathcal R\left[ a, b \right] }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ f }\) ограничена на \({ \left[ a, b \right] }\) и \({ I_* = I^* }\).\end{icloze}
     \end{center}
 \end{note}
 
@@ -1972,7 +1975,7 @@
         \[
             \delta = \frac{\varepsilon}{f(b) - f(a)}.
         \]
-        Далее по критерию интегрируемости.
+        Далее по критерию интегрируемости в терминах колебаний.
     \end{cloze}
 \end{note}
 
@@ -1991,13 +1994,11 @@
 \end{note}
 
 \begin{note}{76f25092a99044e7b985eeafa85ca9ca}
-    Интегралы вида
-    \begin{icloze}{2}
-        \[
-            \int R(x, \sqrt{ax^2 + bx + c})\: dx, \quad \text{где \({ R \in \mathbb R(x) }\)},
-        \]
-    \end{icloze}
-    берутся с помощью \begin{icloze}{1}подстановок Эйлера.\end{icloze}
+    Интегралы вида \begin{icloze}{2}
+    \[
+        \int R(x, \sqrt{ax^2 + bx + c})\: dx,
+    \]
+    где \({ R }\) --- рациональная функция,\end{icloze} берутся с помощью \begin{icloze}{1}подстановок Эйлера.\end{icloze}
 \end{note}
 
 \begin{note}{f341e2ce094542f98b0a97abf09c7254}
@@ -2124,7 +2125,7 @@
 \end{note}
 
 \begin{note}{ccba27d6a29c468f8a60fbd0f106fec4}
-    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\).\end{icloze} Функция \({ f }\) называется \begin{icloze}{2}кусочно непрерывной,\end{icloze} если \begin{icloze}{1}множество её точек разрыва пусто или конечно, и все её разрывы суть разрывы второго рода.\end{icloze}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\).\end{icloze} Функция \({ f }\) называется \begin{icloze}{2}кусочно непрерывной,\end{icloze} если \begin{icloze}{1}множество её точек разрыва пусто или конечно, и все её разрывы суть разрывы первого рода.\end{icloze}
 \end{note}
 
 \begin{note}{86f712cafa53498fa3b282915340635c}
