@@ -2174,7 +2174,9 @@
 
     В чем основная идея доказательства?
 
-    TODO
+    \begin{cloze}{1}
+        Тривиально следует из определения предела интегральных сумм в терминах последовательностей.
+    \end{cloze}
 \end{note}
 
 \begin{note}{909d22f843c9421598278c307e29edb5}
@@ -2182,7 +2184,9 @@
 
     В чем основная идея доказательства?
 
-    TODO
+    \begin{cloze}{1}
+        Показать ограниченность \({ f }\) и \({ g }\) и дать верхнюю оценку для \({ \omega_k(f \cdot g) }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{aad31d4599b94b8f8ee128bfbfec8251}
@@ -2190,7 +2194,9 @@
 
     В чем основная идея доказательства?
 
-    TODO
+    \begin{cloze}{1}
+        Частный случай произведения двух функций.
+    \end{cloze}
 \end{note}
 
 \begin{note}{76538508e5574126a26e4dbf06fe4160}
@@ -2198,15 +2204,45 @@
 
     В чем основная идея доказательства?
 
-    TODO
+    \begin{cloze}{1}
+        \[
+            \left\lvert f \right\rvert = f \cdot \operatorname{sgn} f \in \mathcal R[a, b].
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{dea0bdf999ae4306b554167c63eeb231}
+    Как показать, что \({ \operatorname{sgn} }\) интегрируем?
+
+    \begin{cloze}{1}
+        Показать, что \({ \operatorname{sng} }\) кусочно непрерывен.
+    \end{cloze}
 \end{note}
 
 \begin{note}{6bb4953a2e6d41fb86cf8a801779a97f}
-    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда если \({ \underset{x \in [a, b]}{\inf} \left\lvert g(x) \right\rvert > 0 }\), то \({ \frac{f}{g} \in \mathcal R[a, b] }\).
+    Пусть \({ f, g \in \mathcal R[a, b] }\). Тогда
+    \[
+        \underset{x \in [a, b]}{\inf} \left\lvert g(x) \right\rvert > 0 \implies \frac{f}{g} \in \mathcal R[a, b].
+    \]
 
     В чем основная идея доказательства?
 
-    TODO
+    \begin{cloze}{1}
+        Представить \({ \frac{f}{g} }\) как произведение функций \({ f \cdot \frac{1}{g} \in \mathcal R[a, b] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8dcb53c3642547a5bec77126b490908d}
+    Пусть \({ f \in \mathcal R[a, b] }\). Тогда
+    \[
+        \underset{x \in [a, b]}{\inf} \left\lvert f(x) \right\rvert > 0 \implies \frac{1}{f} \in \mathcal R[a, b].
+    \]
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Оценить \({ \omega_k( 1 / g ) }\) сверху через \({ \omega_k(g) }\) и \({ m }\).
+    \end{cloze}
 \end{note}
 
 \end{document}
