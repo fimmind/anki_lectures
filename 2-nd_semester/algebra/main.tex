@@ -1512,7 +1512,7 @@
     \subsubsection{<<\begin{icloze}{3}Ортогонализация Грама-Шмидта\end{icloze}>>}
 
     Пусть \begin{icloze}{2}\({ V }\) --- евклидово пространство, \({ e_1, \ldots, e_n }\) --- базис в пространстве \({ V }\).\end{icloze}
-    Тогда \begin{icloze}{1}всегда существует ортогональный базис \({ a_1, \ldots, e_n }\) в \({ V }\) такой, что
+    Тогда \begin{icloze}{1}всегда существует ортогональный базис \({ a_1, \ldots, a_n }\) в \({ V }\) такой, что
     \[
         a_j \in \mathscr L (e_1, \ldots, e_j) \quad \forall j.
     \]\end{icloze}
@@ -1573,20 +1573,9 @@
     \]
 \end{note}
 
-\begin{note}{5e835ce387524f96b1feabc435dccbdc}
-    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
-    Как показать, что \({ V + V^{\perp} }\) --- прямая сумма?
-
-    \begin{cloze}{1}
-        \[
-            V \cap V^{\perp} = \left\{ 0 \right\}.
-        \]
-    \end{cloze}
-\end{note}
-
 \begin{note}{eee9a5f3a40047629e2192983ab08770}
     Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
-    Как показать, что \({ W = V + V^{\perp} }\)?
+    Как показать, что \({ W = V \oplus V^{\perp} }\)?
 
     \begin{cloze}{1}
         Выбрать ортогональный базис в \({ V }\), дополнить его до ортогонального базиса в \({ W }\) и показать, что дополнение --- базис в \({ V^{\perp} }\).
@@ -1599,7 +1588,7 @@
     Как показать, что \({ e_{k + 1}, \ldots, e_n }\) --- базис в \({ V^{\perp} }\)?
 
     \begin{cloze}{1}
-        Показать, что \({ \mathscr L (e_{k + 1}, \ldots, e_n) = V^{\perp} }\) по определению.
+        Показать, что \({ \mathscr L (e_{k + 1}, \ldots, e_n) = V^{\perp} }\).
     \end{cloze}
 \end{note}
 
