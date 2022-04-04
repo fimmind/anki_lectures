@@ -2245,4 +2245,151 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 04.04.22}
+\begin{note}{40ffb14c933540e0a82a0f491c2ea946}
+    Интегрируема ли функция Дирихле \({ \chi }\) на произвольном невырожденном отрезке?
+
+    \begin{cloze}{1}
+        Нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{488460418bc246fe90907796c4db58be}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \chi }\) --- функция Дирихле.
+    Как показать, что \({ \chi \not\in \mathcal R[0, 1] }\)?
+
+    \begin{cloze}{1}
+        \({ \omega(\chi|_{[\alpha, \beta]}) = 1 }\) для любого отрезка \({ [\alpha, \beta] \subset [a, b] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{fdad8aea720d4949805e6d411e4d9cd0}
+    Интегрируема ли функция Римана \({ \psi }\) на произвольном промежутке \({ [a, b] }\)?
+
+    \begin{cloze}{1}
+        Да.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c7099fd03a894c53b8c80146045e9127}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \psi }\) --- функция Римана.
+    \[
+        \int_{a}^{b} \psi = \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ac79fc72aeb440e9a666f8dc2433dcc8}
+    Пусть \begin{icloze}{3}\({ f : [a, b] \to \mathbb R }\), \({ g : [c, d] \to [a, b] }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}f \in C[a, b],\:  g \in \mathcal R[c, d]\end{icloze} \implies \begin{icloze}{1}f \circ g \in \mathcal R[a, b].\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{bc11b9f7a4304f74b4bb3118d30cea22}
+    Пусть \begin{icloze}{3}\({ a > b }\), \({ f \in \mathcal R[a, b] }\).\end{icloze} Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{b} f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}-\int_{b}^{a} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2be98235b82942f7bf08141dd983fe07}
+    \[
+        \int_{a}^{a} f \overset{\text{def}}= \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{649acec0ca304bd5bc72134401215095}
+    Пусть \({ f : [a, a] \to \mathbb R }\). Тогда
+    \[
+        f \in \mathcal R[a, a] \overset{\hspace{-1pt}\text{\tiny def}}\iff \begin{icloze}{1}\top.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cc427e206f4d435889e87acd827bc5b4}
+    Пусть \({ f \in \mathcal R[a, b] }\),  \({ c \in (a, b) }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{b} f\end{icloze} = \begin{icloze}{1}\int_{a}^{c} f + \int_{c}^{b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f57dd9f306a5429bb89c68b128c0e01f}
+    Пусть \({ f \in \mathcal R[a, b] }\), \({ \alpha \in \mathbb R }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{b} \alpha f\end{icloze} = \begin{icloze}{1}\alpha \int_{a}^{b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5aaf74ed1c3e414cb5b7c501e5970206}
+    Пусть \({ f, g \in \mathcal R[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{b} (f \pm g)\end{icloze} = \begin{icloze}{1}\int_{a}^{b} f \pm \int_{a}^{b} g.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8db1f43273d041d6b3fbc674270d4f5b}
+    Пусть \({ f \in \mathcal R[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}f \geqslant 0\end{icloze} \implies \begin{icloze}{1}\int_{a}^{b} f \geqslant 0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9778c1f4a58e4df9a9a25064935a647f}
+    Пусть \({ f, g \in \mathcal R[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}f \leqslant g\end{icloze} \implies \begin{icloze}{1}\int_{a}^{b} f \leqslant \int_{a}^{b} g.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9ba16cbdf8fb4b65bd032cb56c483a1b}
+    Пусть \({ f \in \mathcal R[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lvert \int_{a}^{b} f \right\rvert\end{icloze} \begin{icloze}{1}\leqslant \int_{a}^{b} \left\lvert f \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{275d3bae3cfa48e9882d2d2a90ed21b8}
+    Пусть \({ f \in \mathcal R[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lvert f \right\rvert \leqslant M \in \mathbb R\end{icloze} \implies \begin{icloze}{1}\int_{a}^{b} f \leqslant M(b - a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{84dfee5723b34bec8f05c42879c3e85f}
+    Пусть \({ f \in C[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}f \geqslant 0\end{icloze} \land \int_{a}^{b} f = 0 \implies \begin{icloze}{1}f \equiv 0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{03b2fb7149444b2db71b150b49f267a9}
+    \subsubsection{<<\begin{icloze}{4}Теорема Барроу\end{icloze}>>}
+
+    Пусть \begin{icloze}{3}\({ f \in \mathcal R[a, b] }\) непрерывна в точке \({ x_0 }\),\end{icloze}
+    \[
+        \varphi(x) = \begin{icloze}{2}\int_{a}^{x} f.\end{icloze}
+    \]
+    Тогда \begin{icloze}{1}\({ \varphi }\) дифференцируема в точке \({ x_0 }\) и \({ \varphi'(x_0) = f(x_0) }\).\end{icloze}
+\end{note}
+
+\begin{note}{1109a435ae7543cf8263f72942677e95}
+    \subsubsection{<<\begin{icloze}{3}Первая теорема о среднем \\\phantom{<<}интегрального исчисления\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f, g \in \mathcal R[a, b] }\), \({ g \geqslant 0 }\) (или \({ g \leqslant 0 }\)), \({ m \leqslant f \leqslant M }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \exists \mu \in [m, M] \quad \int_{a}^{b} fg = \mu \int_{a}^{b} g
+        \]
+    \end{icloze}
+\end{note}
+
 \end{document}
