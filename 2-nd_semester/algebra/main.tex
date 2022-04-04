@@ -1507,6 +1507,150 @@
     Система векторов \({ \left\{ e_j \right\}_{j = 1}^{n} }\) в \({ V }\) называется \begin{icloze}{2}ортонормированной,\end{icloze} если \begin{icloze}{1}её векторы попарно ортогональны и \({ \left\lVert e_j \right\rVert = 1 }\) для всех \({ j }\).\end{icloze}
 \end{note}
 
+\section{Лекция 04.04.22}
+\begin{note}{25230410b91d47619feafd9dd1e3909e}
+    \subsubsection{<<\begin{icloze}{3}Ортогонализация Грама-Шмидта\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ V }\) --- евклидово пространство, \({ e_1, \ldots, e_n }\) --- базис в пространстве \({ V }\).\end{icloze}
+    Тогда \begin{icloze}{1}всегда существует ортогональный базис \({ a_1, \ldots, e_n }\) в \({ V }\) такой, что
+    \[
+        a_j \in \mathscr L (e_1, \ldots, e_j) \quad \forall j.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{89394003d65441209a81ec6be5c7f2df}
+    В чем основная идея доказательства истинности теоремы об ортогонализации Грама-Шмидта?
+
+    \begin{cloze}{1}
+        Положить
+        \begin{align*}
+            a_1 &= e_1, \\
+            a_2 &= e_2 + \alpha_1 a_1, \\
+            a_3 &= e_3 + \beta_1 a_1 + \beta_2 a_2 \\
+                &\ldots
+        \end{align*}
+    \end{cloze}
+\end{note}
+
+\begin{note}{067af76850ea49929f538a99ef2fb445}
+    Пусть \begin{icloze}{3}\({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).\end{icloze}
+    \begin{icloze}{1}
+        Множество
+        \[
+            \Big\{ w \in W \mid (v, w) = 0 \quad \forall v \in V \Big\}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}ортогональным дополнением к \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{dc34194cc9a642aeb10ad2ba1cbab7ad}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    \begin{icloze}{1}Ортогональное дополнение к пространству \({ V }\)\end{icloze} обозначается \begin{icloze}{2}\({ V^{\perp} }\).\end{icloze}
+\end{note}
+
+\begin{note}{800460fc49ee4f3b915a92addaba5141}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    Всегда ли \({ V^{\perp} \triangleleft W }\)?
+
+    \begin{cloze}{1}
+        Да, всегда.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ab8d62b25a294edebe7a3735b84dab19}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    Тогда
+    \[
+        \dim V^{\perp} = \begin{icloze}{1}\dim W - \dim V.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{70166548d05745278d7a8f9de584d211}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    Тогда
+    \[
+        V + V^{\perp} = \begin{icloze}{1}V \oplus V^{\perp} = W.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5e835ce387524f96b1feabc435dccbdc}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    Как показать, что \({ V + V^{\perp} }\) --- прямая сумма?
+
+    \begin{cloze}{1}
+        \[
+            V \cap V^{\perp} = \left\{ 0 \right\}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{eee9a5f3a40047629e2192983ab08770}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\).
+    Как показать, что \({ W = V + V^{\perp} }\)?
+
+    \begin{cloze}{1}
+        Выбрать ортогональный базис в \({ V }\), дополнить его до ортогонального базиса в \({ W }\) и показать, что дополнение --- базис в \({ V^{\perp} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{53d600a53a4f48a7b4d1e3a3822918fe}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\),
+    \({ e_1, \ldots, e_k }\) --- ортогональный базис в \({ V }\), \({ e_1, \ldots, e_n }\) --- ортогональный базис в \({ W }\).
+    Как показать, что \({ e_{k + 1}, \ldots, e_n }\) --- базис в \({ V^{\perp} }\)?
+
+    \begin{cloze}{1}
+        Показать, что \({ \mathscr L (e_{k + 1}, \ldots, e_n) = V^{\perp} }\) по определению.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a9fc50cec2cc442d87f7f6a551043a18}
+    Пусть \({ W }\) --- евклидово пространство, \begin{icloze}{3}\({ V \triangleleft W }\), \({ w \in W }\).\end{icloze}
+    Тогда \begin{icloze}{1}проекция \({ w }\) на \({ V }\) параллельно \({ V^{\perp} }\)\end{icloze} называется \begin{icloze}{2}проекцией вектора \({ w }\) на \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{bcb91b5b6d4048febe0fd4e8da7302e9}
+    Пусть \({ W }\) --- евклидово пространство, \begin{icloze}{3}\({ V \triangleleft W }\), \({ w \in W }\).\end{icloze}
+    Тогда \begin{icloze}{1}проекция \({ w }\) на \({ V^{\perp} }\) параллельно \({ V }\)\end{icloze} называется \begin{icloze}{2}перпендикуляром, опущенным из \({ w }\) на \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{4e448e8833f94547ad7848fd34666613}
+    Пусть \({ e_1, \ldots, e_k }\) --- система векторов в евклидовом пространстве.
+    \begin{icloze}{2}Матрицей Грема системы \({ e_1, \ldots, e_k }\)\end{icloze} называют \begin{icloze}{1}матрицу
+    \[
+        \Big[ \left( e_i, e_j \right) \Big] \sim k \times k.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{3bff6be501ed49109d5041f018ecab96}
+    Пусть \({ e_1, \ldots, e_k }\) --- система векторов в евклидовом пространстве.
+    \begin{icloze}{2}Матрица Грема системы \({ e_1, \ldots, e_k }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            G(e_1, \ldots, e_k).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f45df626ca1d4db1866e3f7aae0c6f2a}
+    Пусть \({ W }\) --- евклидово пространство, \({ w \in W }\), \({ e_1, \ldots, e_k }\) --- базис в \({ V \triangleleft W }\).
+    Как найти проекцию \({ w_0 }\) вектора \({ w }\) на \({ V }\)?
+
+    \begin{cloze}{1}
+        \[
+            \begin{gathered}
+                G(e_1, \ldots, e_n) \cdot \begin{bmatrix}
+                    \alpha_1 \\ \vdots \\ \alpha_k
+                \end{bmatrix}
+                =
+                \begin{bmatrix}
+                    (w, e_1) \\ \vdots \\ (w, e_k)
+                \end{bmatrix}, \\
+                w_0 = e\alpha.
+            \end{gathered}
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
 
 % vim: spelllang=ru_yo,en
