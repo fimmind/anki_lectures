@@ -2256,7 +2256,7 @@
 
 \begin{note}{488460418bc246fe90907796c4db58be}
     Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \chi }\) --- функция Дирихле.
-    Как показать, что \({ \chi \not\in \mathcal R[0, 1] }\)?
+    Как показать, что \({ \chi \not\in \mathcal R[a, b] }\)?
 
     \begin{cloze}{1}
         \({ \omega(\chi|_{[\alpha, \beta]}) = 1 }\) для любого отрезка \({ [\alpha, \beta] \subset [a, b] }\).
@@ -2276,6 +2276,48 @@
     \[
         \int_{a}^{b} \psi = \begin{icloze}{1}0.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{6350173ae50b44d8ac481bc4e58df52a}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \psi }\) --- функция Римана.
+    В чём ключевая идея доказательства того, что \({ \psi \in \mathcal R[a, b] }\)?
+
+    \begin{cloze}{1}
+        Показать, что множество
+        \[
+            A = \left\{ \frac{p}{q} \in \mathbb Q \cap [a, b] \mid q \leqslant N \right\}
+        \]
+        конечно.
+    \end{cloze}
+\end{note}
+
+\begin{note}{83b18cc44cff41fc8f13f721bb95887f}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \psi }\) --- функция Римана.
+    Как выбирается \({ N }\) в доказательстве того, что \({ \psi \in \mathcal R[a, b] }\)?
+
+    \begin{cloze}{1}
+        Так, что \({ \frac{1}{N} < \varepsilon }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e897ef9db02f489f8f78e18c71f5ee40}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \psi }\) --- функция Римана.
+    Как выбирается \({ \delta }\) в доказательстве того, что \({ \psi \in \mathcal R[a, b] }\)?
+
+    \begin{cloze}{1}
+        \[
+            \delta = \frac{\varepsilon}{\left\lvert A \right\rvert}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{aa4eaee1713d444292a6cdb20f5d2bed}
+    Пусть \({ [a, b]  }\) --- невырожденный отрезок, \({ \psi }\) --- функция Римана.
+    Какой критерий интегрируемости используется в доказательстве того, что \({ \psi \in \mathcal R[a, b] }\)?
+
+    \begin{cloze}{1}
+        Критерий в терминах \({ S_\tau - s_\tau }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{ac79fc72aeb440e9a666f8dc2433dcc8}
