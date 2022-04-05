@@ -2372,6 +2372,14 @@
     \]
 \end{note}
 
+\begin{note}{d43171cbe636478098887433ff64ea61}
+    Откуда следует линейность интеграла Римана?
+
+    \begin{cloze}{1}
+        Из определения в терминах последовательностей.
+    \end{cloze}
+\end{note}
+
 \begin{note}{8db1f43273d041d6b3fbc674270d4f5b}
     Пусть \({ f \in \mathcal R[a, b] }\).
     Тогда
@@ -2412,6 +2420,20 @@
     \]
 \end{note}
 
+\begin{note}{2f438df6b5304cd7acbd273214875635}
+    Пусть \({ f \in C[a, b] }\).
+    Тогда
+    \[
+        f \geqslant 0 \land \int_{a}^{b} f = 0 \implies f \equiv 0.
+    \]
+
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        От противного: допустить, что \({ \exists x_0 : f(x_0) > 0 }\) и использовать то, что \({ \exists \delta : f|_{V_{\delta}(x_0)} > 0 }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{03b2fb7149444b2db71b150b49f267a9}
     \subsubsection{<<\begin{icloze}{4}Теорема Барроу\end{icloze}>>}
 
@@ -2432,6 +2454,35 @@
             \exists \mu \in [m, M] \quad \int_{a}^{b} fg = \mu \int_{a}^{b} g
         \]
     \end{icloze}
+\end{note}
+
+\begin{note}{2e6a92e370ed4445a1cd67bd8d0241f9}
+    Вчем основная идея доказательства первой теоремы о среднем интегрального исчисления?
+
+    \begin{cloze}{1}
+        Показать, что
+        \[
+            m \int_{a}^{b} g \leqslant \int_{a}^{b} fg \leqslant M \int_{a}^{b} g
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{bede3b8a7d14462fbd5fcb32d222eb2d}
+    Чему равно \({ \mu }\) из первой теоремы о среднем интегрального исчисления (\({ \int_{a}^{b} g = 0 }\))?
+
+    \begin{cloze}{1}
+        \({ \mu }\) --- произвольное значение из \({ [m, M] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{9137b877b68a4313b09fc0b2e748f6a4}
+    Чему равно \({ \mu }\) из первой теоремы о среднем интегрального исчисления (\({ \int_{a}^{b} g \neq 0 }\))?
+
+    \begin{cloze}{1}
+        \[
+            \mu = \frac{\int_{a}^{b} fg}{\int_{a}^{b} g}.
+        \]
+    \end{cloze}
 \end{note}
 
 \end{document}
