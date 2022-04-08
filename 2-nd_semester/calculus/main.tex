@@ -2509,4 +2509,192 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 08.03.22}
+\begin{note}{156407f3795145ac967eccf82e541fe0}
+    Пусть \begin{icloze}{2}\({ f \in C[a, b] }\), \({ g \in \mathbb R[a, b] }\), \({ g \geqslant 0 }\) (или \({ g \leqslant 0 }\)).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \exists c \in [a, b] \quad \int_{a}^{b} fg = f(c) \int_{a}^{b} g.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (следствие из \begin{icloze}{3}первой теоремы о среднем\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{ba06ad7c7c3c453fa47427d955b922bb}
+    Пусть \begin{icloze}{2}\({ f \in R[a, b] }\), \({ m \leqslant f \leqslant M }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \exists \mu \in [m, M] \quad \int_{a}^{b} f = \mu(b - a)
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (следствие из \begin{icloze}{3}первой теоремы о среднем\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{ba06ad7c7c3c453fa47427d955b922bb}
+    Пусть \begin{icloze}{2}\({ f \in C[a, b] }\), \({ m \leqslant f \leqslant M }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \exists c \in [a, b] \quad \int_{a}^{b} f = f(c) \cdot (b - a)
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (следствие из \begin{icloze}{3}первой теоремы о среднем\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{df108f6ef527491996f1a2b6672c17fc}
+    \subsubsection{<<\begin{icloze}{3}Формула Ньютона-Лейбница\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\), \({ F \in \mathscr P_f ([a, b]) }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \int_{a}^{b} f = F(b) - F(a).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{bddc676c2daa42f0b218c91eac244ace}
+    В чем основная идея доказательства формулы Ньютона-Лейбница?
+
+    \begin{cloze}{1}
+        По теореме Лагранжа \({ \forall \tau \in T[a, b] }\) существует оснащение \({ \left\{ \xi_k \right\} }\) такое, что
+        \[
+            F(x_{k + 1}) - F(x_k) = F'(\xi_k) \Delta x_k.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{882e212c55614bb78548d3b6b7f2fbf2}
+    Пусть \({ f : [a, b] \to \mathbb R }\). Тогда
+    \begin{icloze}{1}
+        разность
+        \[
+            f(b) - f(a)
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}двойной подстановкой функции \({ f }\)  на \({ [a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{b7e1b154b8de47bfbc3d2afdf73ef75c}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    \begin{icloze}{1}Двойная постановка функции \({ f }\) на \({ [a, b] }\)\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            f \big|_{a}^{b},\: f(x) \big|_{a}^{b},\: f(x) \big|_{x = a}^{b}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{1146663e8ded4d63ba85b1b1ed35cb14}
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\),\: \({ F \in \mathscr P_f ([a, b] \setminus T) }\),\: \({ |T| < \aleph_0 }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \int_{a}^{b} f = F(b) - F(a).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (обобщение формулы Ньютона-Лейбница)
+    \end{center}
+\end{note}
+
+\begin{note}{496225bfd55a484fa6f61e7174af39f4}
+    В чём основная идея доказательства обобщения формулы Ньютона-Лейбница для \({ F \in \mathscr P_f ([a, b] \setminus T) }\),\: \({ |T| < \aleph_0 }\).
+
+    TODO
+\end{note}
+
+\begin{note}{6e131dfc6d004e86a827f88367981953}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    Какова, в общем случае, зависимость между интегрируемостью \({ f }\) и существованием у неё первообразной?
+
+    \begin{cloze}{1}
+        В общем случае прямой зависимости нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{dcb24ef22e6c4921924ad580a30722c6}
+    \subsubsection{<<\begin{icloze}{3}Интегрирование по частям \\\phantom{<<}для определённого интеграла\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f, g }\) дифференцируемы на \({ [a, b] }\),\: \({ f', g' \in \mathcal R[a,  b] }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \int_{a}^{b} fg' = fg \big|_{a}^{b} - \int_{a}^{b} f'g.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a938ca4e00ae4fffaf1db99f384e1785}
+    В чем основная идея доказательства формулы интегрирования по частям для определённого интеграла?
+
+    \begin{cloze}{1}
+        \[
+            \begin{gathered}
+                (fg)' = f g' + f' g \in \mathcal R[a, b], \\
+                \int_{a}^{b} (fg)' = fg \big|_{a}^{b}.
+            \end{gathered}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{46828f8f846b4de1a73aed39d5b9d7a0}
+    \subsubsection{<<\begin{icloze}{3}Замена переменной в определённом интеграле\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ \varphi : [\alpha, \beta] \to [a, b] }\), \({ \varphi }\) дифференцируема на \({ [\alpha, \beta] }\), \({ \varphi' \in \mathcal R[\alpha, \beta] }\), \({ f \in C[a, b] }\).\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \int_{\alpha}^{\beta} (f \circ \varphi) \varphi' = \int_{\varphi(\alpha)}^{\varphi(\beta)} f
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7d8af4366130490fbb87408d659837e7}
+    В чем основная идея доказательства теоремы о замене переменной в определённом интеграле?
+
+    \begin{cloze}{1}
+        Если \({ F \in \mathscr P_f ([a, b]) }\), то \({ F \circ \varphi }\) --- первообразная функции
+        \[
+            (f \circ \varphi) \cdot \varphi'.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b6aa7eee0f404285b693fb392e8ea744}
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[-a, a] }\), \({ f }\) --- чётна.\end{icloze}
+    Тогда
+    \[
+        \begin{gathered}
+            \int_{-a}^{a} f = \begin{icloze}{1}2\int_{0}^{a} f.\end{icloze}
+        \end{gathered}
+    \]
+\end{note}
+
+\begin{note}{53ccd4a61cc742818562b58b9bdce5b4}
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[-a, a] }\), \({ f }\) --- нечётна.\end{icloze}
+    Тогда
+    \[
+        \begin{gathered}
+            \int_{-a}^{a} f = \begin{icloze}{1}0.\end{icloze}
+        \end{gathered}
+    \]
+\end{note}
+
 \end{document}
