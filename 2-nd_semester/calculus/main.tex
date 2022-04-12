@@ -2459,11 +2459,66 @@
 \begin{note}{03b2fb7149444b2db71b150b49f267a9}
     \subsubsection{<<\begin{icloze}{4}Теорема Барроу\end{icloze}>>}
 
-    Пусть \begin{icloze}{3}\({ f \in \mathcal R[a, b] }\) непрерывна в точке \({ x_0 }\),\end{icloze}
+    Пусть \begin{icloze}{3}\({ f \in \mathcal R[a, b] }\) непрерывна в точке \({ x_0 \in [a, b] }\),\end{icloze}
     \[
         \varphi(x) = \begin{icloze}{2}\int_{a}^{x} f.\end{icloze}
     \]
     Тогда \begin{icloze}{1}\({ \varphi }\) дифференцируема в точке \({ x_0 }\) и \({ \varphi'(x_0) = f(x_0) }\).\end{icloze}
+\end{note}
+
+\begin{note}{2255bf6318be43ee834d6071ed740c89}
+    В чем основная идея доказательстве теоремы Барроу?
+
+    \begin{cloze}{1}
+        Используя непрерывность \({ f }\) представить \({ f(x) }\) как сумму \({ f(x_0) + \Delta x }\) и отсюда оценить \({ \varphi(x_0 + h) - \varphi(x_0) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{d26fa11d0b1e4d83bb4f4b224b9359a4}
+    Почему в доказательстве теоремы Барроу
+    \[
+        \Delta  x \underset{x \to x_0}\longrightarrow 0?
+    \]
+
+    \begin{cloze}{1}
+        \[
+            \Delta x = f(x) - f(x_0) \to 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{cdc6a92b44fd4d488ca3b30c5e2b4232}
+    В доказательстве теоремы Барроу
+    \[
+        \varphi(x_0 - h) - \varphi(x_0) = \begin{icloze}{1}\int_{x_0}^{x_0 + h} f(x)\: dx.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c5dc36411f3a45598a70c9522a651022}
+    В доказательстве теоремы Барроу
+    \[
+        \int_{x_0}^{x_0 + h} f(x_0)\: dx = \begin{icloze}{1}f(x_0) h.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1cea51f7fd9b4b438856a6ec7f4c1a48}
+    В доказательстве  теоремы  Барроу
+    \[
+        \int_{x_0}^{x_0 + h} \Delta x\: dx = \begin{icloze}{1}o(h).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{455761e28fe94191b0bebcfa38fc5b89}
+    Откуда в доказательстве теоремы Барроу следует, что
+    \[
+        \int_{x_0}^{x_0 + h} \Delta x\: dx = o(h)?
+    \]
+
+    \begin{cloze}{1}
+        \[
+            \Delta x \underset{x \to x_0}\longrightarrow 0 \overset{\hspace{-1pt}\text{\tiny def}}\iff \dots \ \left\lvert \Delta x \right\rvert <  \varepsilon.
+        \]
+    \end{cloze}
 \end{note}
 
 \begin{note}{1109a435ae7543cf8263f72942677e95}
