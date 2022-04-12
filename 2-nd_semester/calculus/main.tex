@@ -842,6 +842,41 @@
     \end{itemize}
 \end{note}
 
+\begin{note}{c8e0bc0478654a5bbabdf38890b5f942}
+    Каким образом доказываются критерий строгой выпуклости и лемма о трёх хордах?
+
+    \begin{cloze}{1}
+        Строится цепочка импликаций
+        \[
+            (1) \implies (2) \implies (3) \implies (1).
+        \]
+        \begin{itemize}
+            \item \({ (1) }\) --- строгая выпуклость \({ f }\),
+            \item \({ (2) }\) --- неравенство из леммы о трёх хордах.
+            \item \({ (3) }\) --- неравенство из критерия выпуклости,
+        \end{itemize}
+    \end{cloze}
+\end{note}
+
+\begin{note}{11c8d7341f374a2e8d7d5c8df97eaba8}
+    В чём основная идея доказательства критерия строгой выпуклости (достаточность)?
+
+    \begin{cloze}{1}
+        Положить \({ c = \lambda a + (1 - \lambda) b }\) и отсюда выразить \({ c - a }\) и \({ b - c }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1338324da4ea4cb7a93a5a15718852b5}
+    В чем основная идея доказательства леммы о трёх хордах (необходимость)?
+
+    \begin{cloze}{1}
+        Положить в определении выпуклости
+        \[
+            \lambda = \frac{b - c}{b - a}.
+        \]
+    \end{cloze}
+\end{note}
+
 \section{Лекция 25.02.22}
 \begin{note}{0abcc31a29c74496883c555de61b5af7}
     Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in \langle A, B \rangle  \)
@@ -871,6 +906,15 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{d547aa237c104089813102cd73487563}
+    Пусть  \({ f : \langle A, B \rangle \to \mathbb R }\), \({ a \in \langle A, B \rangle }\), \({ f }\) выпукла на \({ \langle A, B \rangle }\).
+    Откуда следует возрастание функции \({ F(x) = \frac{f(x) - f(a)}{x - a} }\)?
+
+    \begin{cloze}{1}
+        Из леммы о трёх хордах.
+    \end{cloze}
+\end{note}
+
 \begin{note}{0bb5876454d448878db0853372d90fe7}
     Пусть \begin{icloze}{3}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} \begin{icloze}{2}\( a \in \langle A, B )  \).\end{icloze} Тогда
     \begin{icloze}{1}
@@ -889,12 +933,41 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{1ea150313caa4817b9f27c00d5c8e6d8}
+    Откуда следует существование односторонних производных у выпуклой фукнции?
+
+    \begin{cloze}{1}
+        Из теоремы о пределе монотонной функции для
+        \[
+            F(x) = \frac{f(x) - f(a)}{x - a}.
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{2e664465fdc5410ca8b72059cfe627bc}
     Пусть \begin{icloze}{3}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} \begin{icloze}{2}\( a \in (A, B) \).\end{icloze} Тогда \begin{icloze}{1}\( f'_+ (a) \) и \( f'_- (a) \) конечны и \( f'_- (a) \leqslant f'_+ (a) \).\end{icloze}
 \end{note}
 
+
+\begin{note}{82fe965871ac446facad207a4f246b18}
+    Пусть \( f \) выпукла на \( \langle A, B \rangle  \), \( a \in (A, B) \).
+    Откуда следует, что \( f'_- (a) \leqslant f'_+ (a) \)?
+
+    \begin{cloze}{1}
+        Из теоремы о предельном переходе в неравенстве.
+    \end{cloze}
+\end{note}
+
 \begin{note}{eb64f07db3d3434197d40b0980a78e66}
     Если функция \( f \) выпукла на \( \langle A, B \rangle  \), то она \begin{icloze}{1}непрерывна на \( (A, B) \).\end{icloze}
+\end{note}
+
+\begin{note}{9390116052df401f8413ffb225259a9d}
+    Пусть \( f \) выпукла на \( \langle A, B \rangle  \). Откуда следует, что она непрерывна на \({ (A, B) }\)?
+
+    \begin{cloze}{1}
+        Из существования односторонних производных \({ f }\) в любой точке \({ (A, B) }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{9f16939e7619449e9fe1d75a7aae2e87}
@@ -946,6 +1019,43 @@
     \]
 
     Тогда прямая \( \ell  \) является \begin{icloze}{1}строго опорной для функции \( f \) в точке \( a \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{2}\( k \in [f'_-(a), f'_+(a)]\).\end{icloze}
+\end{note}
+
+\begin{note}{1da04fcb23dc406eba98567735e9e6dc}
+    Пусть \({ f : \langle A, B \rangle \to \mathbb R }\), \({ f }\) выпукла на \({ \langle A, B \rangle }\), \({ a \in (A, B) }\).
+    Как показать, что прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\) \({ \implies }\) \({ k \in [f'_-(a), f'_+(a)] }\)?
+
+    \begin{cloze}{1}
+        Представить \({ f(x) - f(a) }\) как
+        \[
+             f'_{\pm}(a) (x - a) + o(x - a), \quad x \to a^{\pm}
+        \]
+        и вычесть из обоих частей равенства \({ k(x - a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{9ab922ea4b1f422c855c9dc14925580a}
+    Пусть \({ f : \langle A, B \rangle \to \mathbb R }\), \({ f }\) выпукла на \({ \langle A, B \rangle }\), \({ a \in (A, B) }\).
+    Как показать, что прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\) \({ \impliedby }\) \({ k \in [f'_-(a), f'_+(a)] }\)?
+
+    \begin{cloze}{1}
+        Для \({ x \in (a, B \rangle }\) имеем \( F(x) (x - a) > f'_+(a) (x - a) \), где
+        \[
+            F(x) = \frac{f(x) - f(a)}{x - a}.
+        \]
+
+        Аналогично для \({ x \in \langle A, a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f8f5608de51344b89b749bf6fb673e89}
+    Пусть \({ f : \langle A, B \rangle \to \mathbb R }\).
+    Если в каждой точке \({ \langle A, B \rangle }\) функция \({ f }\) имеет опорную прямую, то \begin{icloze}{1}она выпукла на \({ \langle A, B \rangle }\).\end{icloze}
+\end{note}
+
+\begin{note}{0a5cbb4429524954af423e27fe0c32bc}
+    Пусть \({ f : \langle A, B \rangle \to \mathbb R }\).
+    Если в каждой точке \({ \langle A, B \rangle }\) функция \({ f }\) имеет строго опорную прямую, то \begin{icloze}{1}она строго выпукла на \({ \langle A, B \rangle }\).\end{icloze}
 \end{note}
 
 \section{04.03.22}
