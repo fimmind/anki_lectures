@@ -1017,7 +1017,7 @@
 
 \begin{note}{1da04fcb23dc406eba98567735e9e6dc}
     Пусть \({ f : \langle A, B \rangle \to \mathbb R }\), \({ f }\) выпукла на \({ \langle A, B \rangle }\), \({ a \in (A, B) }\).
-    Как показать, что прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\) \({ \implies }\) \({ k \in [f'_-(a), f'_+(a)] }\)?
+    Как показать, что если прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\), то \({ k \in [f'_-(a), f'_+(a)] }\)?
 
     \begin{cloze}{1}
         Представить \({ f(x) - f(a) }\) как
@@ -1030,7 +1030,7 @@
 
 \begin{note}{9ab922ea4b1f422c855c9dc14925580a}
     Пусть \({ f : \langle A, B \rangle \to \mathbb R }\), \({ f }\) выпукла на \({ \langle A, B \rangle }\), \({ a \in (A, B) }\).
-    Как показать, что прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\) \({ \impliedby }\) \({ k \in [f'_-(a), f'_+(a)] }\)?
+    Как показать, что прямая \( y = f(a) + k(x - a) \) является опорной для \({ f }\), если \({ k \in [f'_-(a), f'_+(a)] }\)?
 
     \begin{cloze}{1}
         Для \({ x \in (a, B \rangle }\) имеем \( F(x) (x - a) \geqslant f'_+(a) (x - a) \), где
@@ -1773,7 +1773,7 @@
 
 \begin{note}{4e8ab8723a9e485abea045a4aa0c79f0}
     Пусть \({ [a, b] }\) --- невырожденный отрезок.
-    \begin{icloze}{1}Множество всех функций интегрируемых на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( \mathcal R[a, b] \).\end{icloze}
+    \begin{icloze}{1}Множество всех функций интегрируемых по Риману на \( [a, b] \)\end{icloze} обозначается \begin{icloze}{2}\( \mathcal R[a, b] \).\end{icloze}
 \end{note}
 
 \begin{note}{1294b085870d432eae003c1159bbcb60}
@@ -1969,7 +1969,7 @@
 
 \begin{note}{68b782b8c09040dfa994ede932b748bc}
     \begin{multline*}
-        \begin{icloze}{2}S_\tau(f) - s_\tau(f) \underset{\lambda_t \to 0}\longrightarrow 0\end{icloze}
+        \begin{icloze}{2}S_\tau(f) - s_\tau(f) \underset{\lambda_\tau \to 0}\longrightarrow 0\end{icloze}
         \overset{\hspace{-1pt}\text{\tiny def}}\iff \\
         \begin{icloze}{1}
             \begin{gathered}
@@ -2636,7 +2636,7 @@
     В чем основная идея доказательства?
 
     \begin{cloze}{1}
-        От противного: допустить, что \({ \exists x_0 : f(x_0) > 0 }\) и использовать то, что \({ \exists \delta : f|_{V_{\delta}(x_0)} > 0 }\).
+        От противного; допустить, что \({ \exists x_0 : f(x_0) > 0 }\) и использовать то, что \({ \exists \delta : f|_{V_{\delta}(x_0)} > \frac{f(x_0)}{2} }\).
     \end{cloze}
 \end{note}
 
