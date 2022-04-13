@@ -1112,10 +1112,18 @@
 \end{note}
 
 \begin{note}{76ff105d143e49dea8fe8db2b74ee9ff}
-    В чем основная идея доказательства теоремы о связи выпуклости функции с её касательными?
+    В чем основная идея доказательства теоремы о связи выпуклости функции с её касательными (необходимость)?
 
     \begin{cloze}{1}
         \( f \) дифференцируема в любой точке \( (A, B) \) \( \implies \) касательная совпадает с опорной прямой.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a71b501cf8434876a0ff83fdc763c8d3}
+    В чем основная идея доказательства теоремы о связи выпуклости функции с её касательными (достаточность)?
+
+    \begin{cloze}{1}
+        Из условия \({ f }\) имеет опорную прямую в каждой точке \({ (A, B) }\).
     \end{cloze}
 \end{note}
 
@@ -1137,6 +1145,31 @@
             f(x) > kx + b \quad \forall x \in (A, +\infty).
         \]
     \end{icloze}
+\end{note}
+
+\begin{note}{7046fd62e87e44c7a6dc18f4e94f7bd8}
+    Пусть \( f : (A, +\infty) \to \mathbb R \) имеет при \( x \to +\infty \) асимптоту \( y = kx + b \).
+    Тогда если \( f \) строго выпукла на \( (A, +\infty) \), то
+    \[
+        f(x) > kx + b \quad \forall x \in (A, +\infty).
+    \]
+    В чем основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что \({ f(x) - kx \ \!\!\searrow\!\searrow }\). Далее по теореме о пределе монотонной функции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f0e5b2b8f6a74445a42cf0b35e854f39}
+    Пусть \( f : (A, +\infty) \to \mathbb R \) имеет при \( x \to +\infty \) асимптоту \( y = kx + b \) и \( f \) строго выпукла на \( (A, +\infty) \).
+    Как показать, что \({ f(x) - kx \ \!\!\searrow\!\searrow }\)?
+
+    \begin{cloze}{1}
+        По теореме о пределе монотонной функции для
+        \[
+            F(t) = \frac{f(t) - f(x)}{t - x}.
+        \]
+    \end{cloze}
 \end{note}
 
 \begin{note}{94e7cdb6145142c3bb7cc8115035e5ad}
@@ -1162,6 +1195,25 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{8b55ad03aaca4dfcb1ec7ce171dee0ce}
+    В чем основная идея доказательства теоремы о связи выпуклости функции с \({ f' }\) (необходимость)?
+
+    \begin{cloze}{1}
+        Показать, что для \({ x < y }\)
+        \[
+            f'(x) \leqslant \frac{f(y) - f(x)}{y - x} \leqslant f'(y)
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b1782e215a3d4a948b9fbddfbaed55d3}
+    В чем основная идея доказательства теоремы о связи выпуклости функции с \({ f' }\) (достаточность)?
+
+    \begin{cloze}{1}
+        Выбрать произвольные \({ a < c < b }\) и применить теорему Лагранжа к \({ [a, c] }\) и \({ [c, b] }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{1db6c044058c49e68328ad272c648da8}
     \subsubsection{<<Связь \begin{icloze}{2}выпуклости функции\end{icloze} с \( f'' \)>>}
     Пусть \begin{icloze}{4}\( f \in C\langle A, B \rangle \), \( f \) дважды дифференцируема на \( (A, B) \).\end{icloze}
@@ -1182,6 +1234,14 @@
             f''(x) > 0 \quad \forall x \in (A, B).
         \]
     \end{icloze}
+\end{note}
+
+\begin{note}{d912e4ab9b6a4459b2f104fabfc198f8}
+    В чем основная идея доказательства теоремы о связи выпуклости функции с \({ f'' }\)?
+
+    \begin{cloze}{1}
+        Применить критерий возрастания функции к \({ f' }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{399c82ffb7094f2e8e4a74da8023fc60}
