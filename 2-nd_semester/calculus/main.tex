@@ -1162,7 +1162,7 @@
     \begin{cloze}{1}
         По теореме о пределе монотонной функции для
         \[
-            F(t) = \frac{f(t) - f(x)}{t - x}.
+            t \mapsto \frac{f(t) - f(x)}{t - x}.
         \]
     \end{cloze}
 \end{note}
@@ -2602,7 +2602,7 @@
     Пусть \({ f \in \mathcal R[a, b] }\).
     Тогда
     \[
-        \begin{icloze}{2}\left\lvert f \right\rvert \leqslant M \in \mathbb R\end{icloze} \implies \begin{icloze}{1}\int_{a}^{b} f \leqslant M(b - a).\end{icloze}
+        \begin{icloze}{2}\left\lvert f \right\rvert \leqslant M \in \mathbb R\end{icloze} \implies \begin{icloze}{1}\left\lvert \int_{a}^{b} f \right\rvert \leqslant M(b - a).\end{icloze}
     \]
 \end{note}
 
@@ -2709,9 +2709,9 @@
     В чем основная идея доказательства первой теоремы о среднем интегрального исчисления?
 
     \begin{cloze}{1}
-        Показать, что
+        Проинтегрировать все части неравенства
         \[
-            m \int_{a}^{b} g \leqslant \int_{a}^{b} fg \leqslant M \int_{a}^{b} g
+            mg \leqslant fg \leqslant Mg \quad \text{(для \({ g \geqslant 0 }\))}.
         \]
     \end{cloze}
 \end{note}
