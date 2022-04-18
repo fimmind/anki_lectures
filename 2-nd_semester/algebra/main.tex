@@ -1727,6 +1727,182 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 18.04.22}
+\begin{note}{b04c0920040847d0a5d99e72e1d5f32f}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    \begin{icloze}{2}Расстоянием от точки \({ f }\) по пространство \({ V }\)\end{icloze} называется \begin{icloze}{1}величина
+    \[
+        \min \left\{ \left\lVert f - g \right\rVert \mid g \in V \right\}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{3c3b40b9167c47199457c3614706c26e}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    \begin{icloze}{1}Расстояние от точки \({ f }\) до подпространства \({ V }\)\end{icloze} обозначается
+    \begin{icloze}{2}
+        \[
+            d(f, V).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{3e4d6f8b3aae4e73806dfc7764e669e3}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\),
+    \begin{icloze}{3}
+        \[
+            f = \underset{\in V}{f_0} + \underset{\in V^{\perp}}{f^{\perp}}.
+        \]
+    \end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}d(f, V)\end{icloze} = \begin{icloze}{1}\left\lVert f^{\perp} \right\rVert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d34143b5a6f347ebbd35b66500be29d0}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    В чем  основная идея доказательства равенства \({ d(f, V) = \left\lVert f^{\perp} \right\rVert }\)?
+
+    \begin{cloze}{1}
+        Представить \({ f }\) как \({ f^{\perp} + f_0 }\) и явно вычислить \({ \left\lVert f - g \right\rVert }\) для \({ g \in V }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c3802fe76b8740e28ef0bb2ce4d4aca0}
+    Пусть \({ W }\) --- евклидово пространство, \({ f, g \in W }\).
+    Угол между векторами \({ f }\) и \({ g }\) обозначается
+    \[
+        (\widehat{f, g}).
+    \]
+\end{note}
+
+\begin{note}{d84678ac809d4c229902770a60fb6c11}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    \begin{icloze}{2}Углом между вектором \({ f }\) и подпространством \({ V }\)\end{icloze} называется \begin{icloze}{1}величина
+    \[
+        \min \left\{ (\widehat{f, g}) \mid  g \in V \right\}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{75d1e7b4a26f4f578bdaf51afa099e06}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    \begin{icloze}{2}Угол между вектором \({ f }\) и подпространством \({ V }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            (\widehat{f, V}).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{19d3715d268b4c07a6ec6013b8a60e50}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\),
+    \begin{icloze}{3}
+        \[
+            f = \underset{\in V}{f_0} + \underset{\in V^{\perp}}{f^{\perp}}.
+        \]
+    \end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}(\widehat{f, V})\end{icloze} = \begin{icloze}{1}(\widehat{f, f_0}).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{24059676faa84badb5f0199c24f6f28b}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    В чем основная идея доказательства равенства \({ (\widehat{f, V}) = (\widehat{f, f_0}) }\)?
+
+    \begin{cloze}{1}
+        Сравнить для \({ g \in V }\) величины \({ \cos (\widehat{f, g}) }\)  и \({ \cos (\widehat{f_0, g}) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1b70f983a1ad42c5919ee83b15a479c3}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    \begin{icloze}{2}Параллелепипедом, натянутым на систему векторов \({ \left\{ a_j \right\} }\)\end{icloze} называется \begin{icloze}{1}множество
+    \[
+        \left\{ \sum_{i=1}^{n} k_j a_j \mid k_j \in [0, 1] \quad \forall j \in [1 : n] \right\}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{3fa74674fa86420ab3f78529ea808264}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    \begin{icloze}{2}Параллелепипед, натянутый на систему векторов \({ \left\{ a_j \right\} }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \Pi (a_1, \ldots, a_n).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{b967d3e120fc46c7b7b7bd6a4ffe07a8}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    \begin{icloze}{2}\({ n }\)-мерный объём параллелепипеда \({ \Pi (a_1, \ldots, a_n) }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a7e0867fc1bc4ede8b8c8baf077decb8}
+    Пусть \({ V }\) --- евклидово пространство, \begin{icloze}{3}\({ a_1 \in V }\).\end{icloze}
+    \[
+        \begin{icloze}{2}\operatorname{vol}_{n} \Pi(a_1)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\lVert a_1 \right\rVert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{27fc106d10454b36acb1d4fdb4d5ebc6}
+    Пусть \({ V }\) --- евклидово пространство, \begin{icloze}{3}\({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\), \({ n > 1 }\).\end{icloze}
+    \begin{multline*}
+        \begin{icloze}{2}\operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \end{icloze}
+        \overset{\text{def}}= \\
+        \begin{icloze}{1}\operatorname{vol}_{n - 1} \Pi(a_1, \ldots, a_n) \cdot d(a_n, \mathscr L (a_1, \ldots, a_{n - 1})).\end{icloze}
+    \end{multline*}
+\end{note}
+
+\begin{note}{62dd58a35b6e41618c5f4c14ba96d7df}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \right)^2\end{icloze} = \begin{icloze}{1}\det G(a_1, \ldots, a_n).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8803537671b2486285e407e1661e183c}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_{n - 1}) \right)^2 =  \det G(a_1, \ldots, a_n).
+    \]
+    На каком методе основано  доказательство?
+
+    \begin{cloze}{1}
+        Индукция по \({ n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{4644b404d3cf48b3aa477e6cf6346d8a}
+    Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_{n - 1}) \right)^2 =  \det G(a_1, \ldots, a_n).
+    \]
+    В чём основная идея доказательства (индукционный переход)?
+
+    TODO
+\end{note}
+
+\begin{note}{5825ffe0a68e4a83a7e469b67b266431}
+    Откуда следует корректность определения величины
+    \[
+        \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n)?
+    \]
+
+    \begin{cloze}{1}
+        Из теоремы о связи \({ \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) }\) с матрицей Грама.
+    \end{cloze}
+\end{note}
+
 \end{document}
 
 % vim: spelllang=ru_yo,en
