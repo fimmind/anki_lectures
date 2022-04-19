@@ -1392,7 +1392,7 @@
 \end{note}
 
 \begin{note}{cea78871e8124a29945d3540057c0c68}
-    \begin{icloze}{1}Линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{2}евклидовым пространством.\end{icloze}
+    \begin{icloze}{1}Вещественное линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{2}евклидовым пространством.\end{icloze}
 \end{note}
 
 \begin{note}{79a607edba4945a4a562d9b1fd8f2ce9}
@@ -1475,14 +1475,14 @@
 \end{note}
 
 \begin{note}{097fc51b1eab4a699e7110a38f0bd670}
-    \subsubsection{<<\begin{icloze}{2}Неравенство Коши-Буниковского\end{icloze}>>}
+    \subsubsection{<<\begin{icloze}{2}Неравенство Коши-Буняковского\end{icloze}>>}
 
     Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \begin{icloze}{3}\({ v, w \in V }\).\end{icloze}
     Тогда всегда \begin{icloze}{1}\({ \left\lvert (v, w) \right\rvert \leqslant \left\lVert v \right\rVert \cdot \left\lVert w \right\rVert }\).\end{icloze}
 \end{note}
 
 \begin{note}{570b086e7e1b48e3b3012778f4841d1e}
-    В чем основная идея доказательства неравенства Коши-Буниковского?
+    В чем основная идея доказательства неравенства Коши-Буняковского?
 
     \begin{cloze}{1}
         Рассмотреть скалярное произведение
@@ -1872,7 +1872,7 @@
     Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
     Тогда
     \[
-        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_{n - 1}) \right)^2 =  \det G(a_1, \ldots, a_n).
+        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \right)^2 =  \det G(a_1, \ldots, a_n).
     \]
     На каком методе основано  доказательство?
 
@@ -1885,11 +1885,17 @@
     Пусть \({ V }\) --- евклидово пространство, \({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\).
     Тогда
     \[
-        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_{n - 1}) \right)^2 =  \det G(a_1, \ldots, a_n).
+        \left( \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \right)^2 =  \det G(a_1, \ldots, a_n).
     \]
     В чём основная идея доказательства (индукционный переход)?
 
-    TODO
+    \begin{cloze}{1}
+        Представить \({ a_n }\) как
+        \[
+            \sum_{k=1}^{n - 1} \lambda_k a_k + a^{\perp},
+        \]
+        где \({ a^{\perp} }\) --- перпендикуляр из \({ a_n }\) на \({ \mathscr L (a_1, \ldots, a_{n - 1}) }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{5825ffe0a68e4a83a7e469b67b266431}
@@ -1900,6 +1906,49 @@
 
     \begin{cloze}{1}
         Из теоремы о связи \({ \operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) }\) с матрицей Грама.
+    \end{cloze}
+\end{note}
+
+\begin{note}{8167d79d15c5496986c4ed42e064fa03}
+    Пусть \({ V }\) --- векторное пространство над \({ \mathbb C }\).
+    Чем определение скалярного произведения для векторных пространств над \({ \mathbb C }\) отличается от определения для пространств над \({ \mathbb R }\)?
+
+    \begin{cloze}{1}
+        Линейность только по первому аргументу и
+        \[
+            (v, w) = \overline{(w, v)}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b2db7b3282094eea8733437c52bba06d}
+    \begin{icloze}{2}Комплексное линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{1}унитарным или эрмитовым пространством.\end{icloze}
+\end{note}
+
+\begin{note}{dee379a767e44b7fbc29a556ce456b02}
+    Пусть \({ V }\) --- унитарное пространство, \({ v \in V }\).
+    Откуда следует, что \({ (v, v) \in \mathbb R }\)?
+
+    \begin{cloze}{1}
+        Из аксиом линейного пространства \({ (v, v) = \overline{(v, v)} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5d93df02453b469989ec31cb02334953}
+    Пусть \({ V }\) --- унитарное пространство, \({ u, v \in V }\),\: \({ \lambda \in \mathbb C }\).
+    Тогда
+    \[
+        \begin{icloze}{2}(u, \lambda v)\end{icloze} = \begin{icloze}{1}\overline{\lambda} (u, v).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3c66004b6eb3476f85bb3505bdce5da3}
+    Пример определения скалярного произведения для \({ \mathbb C^{n} }\).
+
+    \begin{cloze}{1}
+        \[
+            (z, w) = \sum_{j} z_j \overline{w_j}.
+        \]
     \end{cloze}
 \end{note}
 
