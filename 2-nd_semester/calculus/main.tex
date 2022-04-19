@@ -2245,6 +2245,17 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{5defd336f3aa4b4aa26b239431f04d17}
+    \[
+        \begin{gathered}
+            \int \begin{icloze}{2}\sqrt{x^2 \pm a^2}\end{icloze}\: dx =
+            \begin{icloze}{1}\frac{x}{2} \sqrt{a^2 - x^2} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert\end{icloze}
+            + C \\
+            (a > 0)
+        \end{gathered}
+    \]
+\end{note}
+
 \section{Лекция 01.04.22}
 \begin{note}{60ff32d5ed7347ae8036518373a5bc61}
     Пусть \begin{icloze}{3}\({ f, \tilde f : [a, b] \to \mathbb R }\),\: \({ f \in  \mathcal R[a, b] }\),\: \({ T \subset [a, b] }\),\: \({ \left\lvert T \right\rvert < \aleph_0 }\).\end{icloze} Если
@@ -2964,6 +2975,62 @@
             \int_{-a}^{a} f = \begin{icloze}{1}0.\end{icloze}
         \end{gathered}
     \]
+\end{note}
+
+\section{Семинар 31.03.22}
+\begin{note}{f6c10d5634604b8785e6d50a3b4179bb}
+    Пусть \({ y = \dfrac{ax + b}{cx + d} \in \mathbb R(x) }\),\: \({ p_1, p_2, \ldots, p_n \in \mathbb Q }\).
+    Тогда интеграл
+    \[
+        \int R(x, y^{p_1}, y^{p_2}, \ldots, y^{p_n})\: dx
+    \]
+    берётся заменой \({ t^{N} = y }\), где \({ N }\) --- общий знаменатель дробей \({ p_1, \ldots, p_n }\).
+\end{note}
+
+\begin{note}{f28ac103f505434d9a7caa2eb9756579}
+    \begin{icloze}{2}Дифференциальным биномом\end{icloze} называется \begin{icloze}{1}дифференциал вида
+    \[
+        \begin{gathered}
+            x^{m} (a + b x^{n})^{p}\: dx, \\
+            a, b \in \mathbb R, \quad m, n, p \in \mathbb Q.
+        \end{gathered}
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{6d980687cd794cb2b67482197892cb24}
+    Каковы условия для применения каждой из подстановок применяемых для взятия интеграла от дифференциального бинома?
+
+    \begin{cloze}{1}
+        \[
+            p \in \mathbb N; \quad
+            \frac{m + 1}{n} \in \mathbb N; \quad
+            \frac{m + 1}{n} + p \in \mathbb N.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{be2650fc8a6c4b88b1f39cd872a556b1}
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ p \in \mathbb N }\))?
+
+    \begin{cloze}{1}
+        \({ t^{N} = x }\), где \({ N }\) --- общий знаменатель \({ m }\) и \({ n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{bcc008ea2e804fcc8d3df70bfe88cdc1}
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} \in \mathbb N }\))?
+
+    \begin{cloze}{1}
+        \({ t^{k} = a + bx^{n} }\), где \({ k }\) --- знаменатель \({ p }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{90e931c9722e44219fe1e08170da8e53}
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} + p \in \mathbb N }\))?
+
+    \begin{cloze}{1}
+        \({ t^{k} = ax^{-n} + b }\), где \({ k }\) --- знаменатель \({ p }\).
+    \end{cloze}
 \end{note}
 
 \end{document}
