@@ -1391,7 +1391,7 @@
     В чем основная идея доказательства?
 
     \begin{cloze}{1}
-        \( (F(x) - G(x))' \equiv 0 \) на \( \langle A, B \rangle \) \( \implies \) \( F(x) - G(x) \) постоянна на \( \langle A, B \rangle \).
+        \( (F - G)' \equiv 0 \implies F - G = const \).
     \end{cloze}
 \end{note}
 
@@ -2006,7 +2006,7 @@
 \end{note}
 
 \begin{note}{f200bb84909d45898f1313f053135d3a}
-    Пусть \({ f : [a, b] \to \mathbb R }\), \({ f \in \mathcal R[a, b] }\). Как соотносятся \({ I^* }\), \({ I_* }\) и \({ \int_{a}^{b} f }\)?
+    Пусть \({ f \in \mathcal R[a, b] }\). Как соотносятся \({ I^* }\), \({ I_* }\) и \({ \int_{a}^{b} f }\)?
 
     \begin{cloze}{1}
         \[
@@ -2156,7 +2156,7 @@
     Как, в общих чертах, доказать, что любая непрерывная на отрезке функция интегрируема на нём?
 
     \begin{cloze}{1}
-        Из теоремы Кантора получить равномерную непрерывность и далее по теореме Вейерштрасса оценить для \({ \lambda_\tau < \delta }\) величину \({ \omega(f|_{[x_k, x_{k + 1}]}) }\).
+        Из теоремы Кантора получить равномерную непрерывность и по теореме Вейерштрасса оценить для \({ \lambda_\tau < \delta }\) величину \({ \omega_k(f) }\).
     \end{cloze}
 \end{note}
 
@@ -2249,7 +2249,7 @@
     \[
         \begin{gathered}
             \int \begin{icloze}{2}\sqrt{x^2 \pm a^2}\end{icloze}\: dx =
-            \begin{icloze}{1}\frac{x}{2} \sqrt{a^2 - x^2} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert\end{icloze}
+            \begin{icloze}{1}\frac{x}{2} \sqrt{a^2 \pm x^2} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert\end{icloze}
             + C \\
             (a > 0)
         \end{gathered}
@@ -2650,10 +2650,18 @@
 \end{note}
 
 \begin{note}{2255bf6318be43ee834d6071ed740c89}
-    В чем основная идея доказательстве теоремы Барроу?
+    В чем основная идея доказательства теоремы Барроу?
 
     \begin{cloze}{1}
-        Используя непрерывность \({ f }\) представить \({ f(x) }\) как сумму \({ f(x_0) + \Delta x }\) и отсюда оценить \({ \varphi(x_0 + h) - \varphi(x_0) }\).
+        Оценить разность \({ \varphi(x_0 + h) - \varphi(x_0) }\) и получить дифференцируемость \({ \varphi }\) по определению.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ec57d94464cc4ecf8920954c5d4cbf76}
+    Как в доказательстве теоремы Барроу непосредственно используется непрерывность \({ f }\)?
+
+    \begin{cloze}{1}
+        Для представления \({ f(x) }\) как \({ f(x_0) + \Delta x }\), где \({ \Delta x \underset{x \to x_0}\longrightarrow 0 }\).
     \end{cloze}
 \end{note}
 
@@ -2673,7 +2681,7 @@
 \begin{note}{cdc6a92b44fd4d488ca3b30c5e2b4232}
     В доказательстве теоремы Барроу
     \[
-        \varphi(x_0 - h) - \varphi(x_0) = \begin{icloze}{1}\int_{x_0}^{x_0 + h} f(x)\: dx.\end{icloze}
+        \varphi(x_0 + h) - \varphi(x_0) = \begin{icloze}{1}\int_{x_0}^{x_0 + h} f(x)\: dx.\end{icloze}
     \]
 \end{note}
 
@@ -2807,10 +2815,7 @@
     В чем основная идея доказательства формулы Ньютона-Лейбница?
 
     \begin{cloze}{1}
-        По теореме Лагранжа \({ \forall \tau \in T[a, b] }\) существует оснащение \({ \left\{ \xi_k \right\} }\) такое, что
-        \[
-            F(x_{k + 1}) - F(x_k) = F'(\xi_k) \Delta x_k.
-        \]
+        Выбрать нужное оснащение используя формулу конечных приращений.
     \end{cloze}
 \end{note}
 
@@ -3002,15 +3007,15 @@
 
     \begin{cloze}{1}
         \[
-            p \in \mathbb N; \quad
-            \frac{m + 1}{n} \in \mathbb N; \quad
-            \frac{m + 1}{n} + p \in \mathbb N.
+            p \in \mathbb Z; \quad
+            \frac{m + 1}{n} \in \mathbb Z; \quad
+            \frac{m + 1}{n} + p \in \mathbb Z.
         \]
     \end{cloze}
 \end{note}
 
 \begin{note}{be2650fc8a6c4b88b1f39cd872a556b1}
-    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ p \in \mathbb N }\))?
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ p \in \mathbb Z }\))?
 
     \begin{cloze}{1}
         \({ t^{N} = x }\), где \({ N }\) --- общий знаменатель \({ m }\) и \({ n }\).
@@ -3018,7 +3023,7 @@
 \end{note}
 
 \begin{note}{bcc008ea2e804fcc8d3df70bfe88cdc1}
-    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} \in \mathbb N }\))?
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} \in \mathbb Z }\))?
 
     \begin{cloze}{1}
         \({ t^{k} = a + bx^{n} }\), где \({ k }\) --- знаменатель \({ p }\).
@@ -3026,7 +3031,7 @@
 \end{note}
 
 \begin{note}{90e931c9722e44219fe1e08170da8e53}
-    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} + p \in \mathbb N }\))?
+    Какая подстановка используется для взятия интеграла от дифференциального бинома (случай \({ \frac{m + 1}{n} + p \in \mathbb Z }\))?
 
     \begin{cloze}{1}
         \({ t^{k} = ax^{-n} + b }\), где \({ k }\) --- знаменатель \({ p }\).
