@@ -147,36 +147,37 @@
 
 \begin{note}{01ac0beb84404bed8a9f676002a2804c}
     Пусть
-    \begin{itemize}
-        \item \( e_1,e_2,\ldots e_k \) --- базис в \( V_1 \cap V_2 \),
-        \item \( e_1,e_2,\ldots e_k, f_1,\ldots f_p \) --- базис в \( V_1 \),
-        \item \( e_1,e_2,\ldots, e_k, g_1,\ldots g_q \) --- базис в \( V_2 \).
-    \end{itemize}
+        \({ \left\{ e_i \right\} }\) --- базис в \({ V_1 \cap V_2 }\),\:
+        \({ \left\{ e_i, f_j \right\} }\) --- базис в \({ V_1 }\),\:
+        \({ \left\{ e_i, g_k \right\} }\) --- базис в \({ V_2 }\).
     Как можно построить базис в \( V_1 + V_2 \)?
 
     \begin{cloze}{1}
-        \( e_1,\ldots e_k, f_1,\ldots f_p, g_1,\ldots, g_q \) --- базис в \( V_1 + V_2 \).
+        Объединить их в одну систему \({ \left\{ e_i, f_j, g_k \right\} }\).
     \end{cloze}
 \end{note}
 
 \begin{note}{d6aa3baccb104c5d857dad61f06b75e7}
     Пусть
-    \begin{itemize}
-        \item \( e_1,e_2,\ldots e_k \) --- базис в \( V_1 \cap V_2 \),
-        \item \( e_1,e_2,\ldots e_k, f_1,\ldots f_p \) --- базис в \( V_1 \),
-        \item \( e_1,e_2,\ldots, e_k, g_1,\ldots g_q \) --- базис в \( V_2 \).
-    \end{itemize}
-    Как доказать, что
-    \[
-        e_1,\ldots e_k, f_1,\ldots f_p, g_1,\ldots, g_q
-    \]
-    --- базис в \( V_1 + V_2 \)?
+        \({ \left\{ e_i \right\} }\) --- базис в \({ V_1 \cap V_2 }\),\:
+        \({ \left\{ e_i, f_j \right\} }\) --- базис в \({ V_1 }\),\:
+        \({ \left\{ e_i, g_k \right\} }\) --- базис в \({ V_2 }\).
+    Как показать, что \({ \left\{ e_i, f_j, g_k \right\} }\) --- базис в \({ V_1 + V_2 }\)?
 
     \begin{cloze}{1}
-        Показать, что \( \forall i \quad g_i \not\in V_1 \), а значит
-        \[
-            V_1 + V_2 = V_1 \oplus \mathscr L (g_1, \ldots, g_q).
-        \]
+        Показать, что \( \mathscr L (\left\{ g_k \right\}) \cap V_1 = \left\{  0 \right\} \).
+    \end{cloze}
+\end{note}
+
+\begin{note}{28934bf74ae1452191c8e81b8cef0cf5}
+    Пусть
+        \({ \left\{ e_i \right\} }\) --- базис в \({ V_1 \cap V_2 }\),\:
+        \({ \left\{ e_i, f_j \right\} }\) --- базис в \({ V_1 }\),\:
+        \({ \left\{ e_i, g_k \right\} }\) --- базис в \({ V_2 }\).
+    Как показать, что \( \mathscr L (\left\{ g_k \right\}) \cap V_1 = \left\{  0 \right\} \)?
+
+    \begin{cloze}{1}
+        Если \({ \sum_{k}^{} \lambda_k g_k }\) принадлежит \({ \mathscr L (\left\{ g_k \right\}) \cap V_1 }\), то она  принадлежит и \({ V_1 \cap V_2 =  \mathscr L (\left\{ e_i \right\}) }\).
     \end{cloze}
 \end{note}
 
@@ -688,7 +689,7 @@
 
 \begin{note}{cdb0a7bde4e044e48a5a798a8052f163}
     Пусть \begin{icloze}{3}\( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).\end{icloze}
-    \begin{icloze}{1}Множество всех собственных векторов \( f \) с собственным значением \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
+    \begin{icloze}{1}Множество всех собственных векторов \( f \), отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
 \end{note}
 
 \begin{note}{785c107694984499a5fd89afd052841c}
@@ -1302,7 +1303,7 @@
 \begin{note}{59cb3566c41d4eca89ef63e626740c4e}
     Пусть \({ A, T \in \mathbb C^{n \times n} }\),\: \({ \det T \neq 0 }\),\: \({ p \in \mathbb C[x] }\). Тогда
     \[
-        p(T A T^{-1}) = \begin{icloze}{1}T \: p(a) \: T^{-1}.\end{icloze}
+        p(T A T^{-1}) = \begin{icloze}{1}T \: p(A) \: T^{-1}.\end{icloze}
     \]
 \end{note}
 
@@ -1345,7 +1346,7 @@
 
 \begin{note}{c435657fd33d4705ae2de65b4bf5c682}
     Пусть \({ f : D \subset \mathbb C \to \mathbb C }\), \({ \lambda \in D }\).
-    Для каких \({ k }\) и \({ \lambda }\) определено значение \({ J_k (\lambda) }\)?
+    Для каких \({ k }\) и \({ \lambda }\) определено значение \({ f(J_k (\lambda)) }\)?
 
     \begin{cloze}{1}
         Должен существовать многочлен \({ T_{\lambda, k} f }\).
@@ -1675,7 +1676,7 @@
     Как показать, что \({ e_{k + 1}, \ldots, e_n }\) --- базис в \({ V^{\perp} }\)?
 
     \begin{cloze}{1}
-        Показать, что \({ \mathscr L (e_{k + 1}, \ldots, e_n) = V^{\perp} }\).
+        Показать, что \({ \mathscr L (e_{k + 1}, \ldots, e_n) }\) и \({ V^{\perp} }\) равны как множества.
     \end{cloze}
 \end{note}
 
@@ -1814,7 +1815,7 @@
     В чем основная идея доказательства равенства \({ (\widehat{f, V}) = (\widehat{f, f_0}) }\)?
 
     \begin{cloze}{1}
-        Сравнить для \({ g \in V }\) величины \({ \cos (\widehat{f, g}) }\)  и \({ \cos (\widehat{f_0, g}) }\).
+        Сравнить для \({ g \in V }\) величины \({ \cos (\widehat{f, g}) }\)  и \({ \cos (\widehat{f, f_0}) }\).
     \end{cloze}
 \end{note}
 
@@ -1849,7 +1850,7 @@
 \begin{note}{a7e0867fc1bc4ede8b8c8baf077decb8}
     Пусть \({ V }\) --- евклидово пространство, \begin{icloze}{3}\({ a_1 \in V }\).\end{icloze}
     \[
-        \begin{icloze}{2}\operatorname{vol}_{n} \Pi(a_1)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\lVert a_1 \right\rVert.\end{icloze}
+        \begin{icloze}{2}\operatorname{vol}_{1} \Pi(a_1)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\lVert a_1 \right\rVert.\end{icloze}
     \]
 \end{note}
 
