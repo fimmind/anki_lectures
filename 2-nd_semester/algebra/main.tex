@@ -174,10 +174,13 @@
         \({ \left\{ e_i \right\} }\) --- базис в \({ V_1 \cap V_2 }\),\:
         \({ \left\{ e_i, f_j \right\} }\) --- базис в \({ V_1 }\),\:
         \({ \left\{ e_i, g_k \right\} }\) --- базис в \({ V_2 }\).
-    Как показать, что \( \mathscr L (\left\{ g_k \right\}) \cap V_1 = \left\{  0 \right\} \)?
+    В чём ключевая идея доказательства того, что
+    \[
+        \mathscr L (\left\{ g_k \right\}) \cap V_1 = \left\{  0 \right\}?
+    \]
 
     \begin{cloze}{1}
-        Если \({ \sum_{k}^{} \lambda_k g_k }\) принадлежит \({ \mathscr L (\left\{ g_k \right\}) \cap V_1 }\), то она  принадлежит и \({ V_1 \cap V_2 =  \mathscr L (\left\{ e_i \right\}) }\).
+        Если \({ \sum_{k}^{} \lambda_k g_k \in V_1 }\), то она принадлежит и \({ V_1 \cap V_2 }\).
     \end{cloze}
 \end{note}
 
@@ -315,14 +318,12 @@
 \begin{note}{d8ecf4d0e7a546668528944588ba6060}
     \subsubsection{<<\begin{icloze}{2}Теорема о матрице линейного оператора\end{icloze}>>}
     Пусть \( f : V \to W \) --- линейный оператор,
-    \begin{itemize}
-        \item {}\begin{icloze}{3}\( e_1, e_2, \ldots, e_n  \)\end{icloze} --- базис в \( V \),
-        \item {}\begin{icloze}{3}\( \tilde e_1, \tilde e_2, \ldots, \tilde e_m  \)\end{icloze} --- базис в \( W \).
-    \end{itemize}
+    \begin{icloze}{3}\( \left\{ e_i \right\}_{i = 1}^{n} \)\end{icloze} --- базис в \( V \),
+    \begin{icloze}{3}\( \left\{ \tilde e_j \right\}_{j = 1}^{m} \)\end{icloze} --- базис в \( W \).
     Как в явном виде задать матрицу оператора \( f \) в этих базисах?
 
     \begin{cloze}{1}
-        \( j \)-ый столбец --- это координаты вектора \( f(e_j) \) в базисе \( \tilde e_1, \tilde e_2, \ldots, \tilde e_m \).
+        \( i \)-ый столбец --- это координаты \( f(e_i) \) в базисе \( \left\{ \tilde e_j \right\} \).
     \end{cloze}
 \end{note}
 
@@ -884,7 +885,11 @@
 
 \begin{note}{b7cd455d24424dd0879b90d7cad89a6b}
     Пусть \begin{icloze}{3}пространство \( V = V_1 \oplus V_2 \).\end{icloze}
-    \begin{icloze}{1}Оператор \( P : V \to V \), переводящий сумму \( v_1 + v_2 \) векторов из \( V_1 \) и \( V_2 \) соответственно в вектор \( v_1 \),\end{icloze} называется \begin{icloze}{2}оператором проектирования на \( V_1 \) параллельно \( V_2 \).\end{icloze}
+    \begin{icloze}{1}Оператор
+    \[
+        P : \underset{\in V_1}{v_1} + \underset{\in V_2}{v_2} \mapsto v_1, \quad V \to V
+    \]
+    \end{icloze} называется \begin{icloze}{2}оператором проектирования на \( V_1 \) параллельно \( V_2 \).\end{icloze}
 \end{note}
 
 \begin{note}{522c1911d5d04c898b070c53537026b2}
@@ -1002,7 +1007,7 @@
 \end{note}
 
 \begin{note}{187218f20c2b46ab9309b3385f2012f4}
-    Пусть \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).\end{icloze}
+    Пусть \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \) оператора \( f \).\end{icloze}
     Тогда система
     \begin{icloze}{2}
         \[
@@ -1013,7 +1018,7 @@
 \end{note}
 
 \begin{note}{f77f36f44a0a4dbfb7fe6d8a6b58db75}
-    Пусть \( v \) --- корневой вектор высоты \( k \geqslant 2 \) оператора \( f \).
+    Пусть \( v \) --- корневой вектор высоты \( k \) оператора \( f \).
     Тогда система
     \[
         v,\: (f - \lambda E) v,\: (f - \lambda E)^{2} v,\: \ldots,\: (f - \lambda E)^{k - 1} v
@@ -1486,11 +1491,7 @@
     В чем основная идея доказательства неравенства Коши-Буняковского?
 
     \begin{cloze}{1}
-        Рассмотреть скалярное произведение
-        \[
-            (v - \lambda w, v - \lambda w) \geqslant 0.
-        \]
-        И показать, что дискриминант соответствующего квадратного уравнения \({ \leqslant 0 }\).
+        Оценить дискриминант квадратного уравнения \({ \left\lVert v - \lambda w \right\rVert^2 = 0 }\) относительно неизвестной \({ \lambda }\).
     \end{cloze}
 \end{note}
 
@@ -1880,7 +1881,7 @@
 \end{note}
 
 \begin{note}{27fc106d10454b36acb1d4fdb4d5ebc6}
-    Пусть \({ V }\) --- евклидово пространство, \begin{icloze}{3}\({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\), \({ n > 1 }\).\end{icloze}
+    Пусть \({ V }\) --- евклидово пространство, \begin{icloze}{3}\({ \left\{ a_j \right\}_{j = 1}^{n} \subset V }\), \({ n \geqslant 2 }\).\end{icloze}
     \begin{multline*}
         \begin{icloze}{2}\operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \end{icloze}
         \overset{\text{def}}= \\
