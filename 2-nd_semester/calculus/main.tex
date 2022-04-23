@@ -1690,11 +1690,11 @@
 \begin{note}{79c04c292b2a4aeb8fb583ccc7916c2a}
     Алгоритм взятия интеграла вида
     \[
-        \displaystyle \int (Mx + N)\left( \sqrt{ax^2 + bx + c} \right)\: dx.
+        \displaystyle \int (Mx + N) \sqrt{ax^2 + bx + c}\: dx.
     \]
 
     \begin{cloze}{1}
-        Выделить полный квадрат под радикалом и затем внести его в скобки.
+        Выделить полный квадрат под радикалом и раскрыть скобки.
     \end{cloze}
 \end{note}
 
@@ -3036,6 +3036,218 @@
     \begin{cloze}{1}
         \({ t^{k} = ax^{-n} + b }\), где \({ k }\) --- знаменатель \({ p }\).
     \end{cloze}
+\end{note}
+
+\section{Лекции 23.04.22}
+\begin{note}{57c65a69d4ce4beca2a4ef3d19482330}
+    Пусть \begin{icloze}{3}\({ n \in \mathbb Z_+ }\),   \({ f \in C^{n + 1}\langle A, B \rangle }\), \({ a, x \in \langle A, B \rangle }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}R_{a,n}f(x)\end{icloze} = \begin{icloze}{1}\frac{1}{n!} \int_{a}^{x} f^{(n + 1)}(t)(x + t)^{n}\: dt.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в интегральной форме)
+    \end{center}
+\end{note}
+
+\begin{note}{0a72287655664b3e99f6388731f26bfe}
+    Какой метод используется в доказательстве формулы Тейлора с остатком в интегральной форме?
+
+    \begin{cloze}{1}
+        Индукция по \({ n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{82254691571e452294750327ef22eb89}
+    В чём основная в доказательстве формулы Тейлора с остатком в интегральной форме (базовый случай)?
+
+    \begin{cloze}{1}
+        При \({ n = 0 }\) получаем формулу Ньютона-Лейбница.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4a33a11f8ade46f08ce296db479a9007}
+    В чём основная в доказательстве формулы Тейлора с остатком в интегральной форме (индукционный переход)?
+
+    \begin{cloze}{1}
+        Применить к остатку формулу интегрирования по частям.
+    \end{cloze}
+\end{note}
+
+\begin{note}{aad636315afd4ee5a6744160d4b3e42d}
+    \begin{icloze}{2}Интегральную форму\end{icloze} остатка \({ R_{a,n}f(x) }\) иногда называют \begin{icloze}{1}формой Якоби.\end{icloze}
+\end{note}
+
+\begin{note}{397b0796dce04587adb64efce1dd1140}
+    \[
+        0!! \overset{\text{def}}= \begin{icloze}{1}1.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cac7fe0bc23d40a59bc9dd6812577d01}
+    \[
+        (-1)!! \overset{\text{def}}= \begin{icloze}{1}1.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7da7dd0bd19944abbe2d01d155086010}
+    \subsubsection{<<\begin{icloze}{2}Формула Валлиса\end{icloze}>>}
+
+    \begin{icloze}{1}
+        \[
+            \pi = \lim_{n \to \infty} \frac{1}{n} \left( \frac{(2n)!!}{(2n - 1)!!} \right)^2
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f54929de1ece44289c241d6590700ab5}
+    В чём  основная идея доказательства формулы Валлиса?
+
+    \begin{cloze}{1}
+        Проинтегрировать на \({ [0, \frac{\pi}{2}] }\) неравенство
+        \[
+            \sin^{2n + 1} <  \sin^{2n} < \sin^{2n - 1}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b5c778232bc94244b23a8e4a617ed0e6}
+    Пусть \begin{icloze}{3}\({ m \in \mathbb Z_+ }\).\end{icloze}
+    \[
+        \begin{icloze}{2}\int_{0}^{\frac{\pi}{2}} \sin^{m} x\: dx\end{icloze}
+        =
+        \begin{icloze}{1}
+            \frac{(m - 1)!!}{m!!} \cdot \begin{cases}
+                \frac{\pi}{2}, & \text{\({ m }\) чётно}, \\
+                1, & \text{\({ m }\) нечётно}.
+            \end{cases}
+        \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{715b1cec8b8041949185220e4e40a41b}
+    В чём основная идея в доказательстве явной формулы для
+    \[
+        \int_{0}^{\frac{\pi}{2}} \sin^{m} x\: dx?
+    \]
+
+    \begin{cloze}{1}
+        Индукция по \({ m }\) и формула интегрирования по частям.
+    \end{cloze}
+\end{note}
+
+\begin{note}{38d390969b2741acbfc82267d2fe35fd}
+    \subsubsection{<<\begin{icloze}{5}Вторая  теорема о среднем \\ \phantom{<<}интегрального исчисления\end{icloze}>>}
+
+    Пусть \begin{icloze}{4}\({ f \in C[a, b] }\), \({ g \in C^{1}[a, b] }\), \({ g }\) монотонна на \({ [a, b] }\).\end{icloze} Тогда
+    \[
+        \begin{icloze}{3} \exists c \in [a,  b]\end{icloze} \quad \begin{icloze}{2}\int_{a}^{b} fg\end{icloze} = \begin{icloze}{1}g(a) \int_{a}^{c} f + g(b) \int_{c}^{b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{69afab3fc5004157a7f35af02f3e3d12}
+    \begin{icloze}{2}Вторую теорему о среднем интегрального исчисления\end{icloze} так же называют \begin{icloze}{1}теоремой Бонне.\end{icloze}
+\end{note}
+
+\begin{note}{882ef3d613b947198a7bea4ad32d5160}
+    Теорема Бонне \begin{icloze}{2}так же будет выполняться,\end{icloze} если ослабить предположение до:
+    \begin{icloze}{1}
+        \begin{center}
+            \({ f \in \mathcal R[a, b] }\),\: \({ g }\) монотонна.
+        \end{center}
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (без доказательства)
+    \end{center}
+\end{note}
+
+\begin{note}{8b2c86d7991e4a2b91921581b1ef4490}
+    \subsubsection{<<\begin{icloze}{4}Неравенство Йенсена для интеграла\end{icloze}>>}
+
+    Пусть \begin{icloze}{3}\({ f }\) непрерывна на \({ \langle A, B \rangle }\), \({ \varphi : [a, b] \to \langle A, B \rangle }\) непрерывна и \({ \lambda : [a, b] \to [0, +\infty) }\).\end{icloze}
+    Тогда \begin{icloze}{2}если \({ f }\) выпукла на \({ \langle A, B \rangle }\) и \({ \int_{a}^{b} \lambda = 1 }\),\end{icloze} то
+    \begin{icloze}{1}
+        \[
+            f\left( \int_{a}^{b} \lambda\varphi \right) \leqslant \int_{a}^{b} \lambda \cdot (f \circ \varphi).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{3584b635c4dc44e7b9b1624c4019860f}
+    Если в неравенстве Йенсена для интеграла \begin{icloze}{2}\({ \varphi \neq const }\), а \({ f }\) строго выпукла,\end{icloze} то \begin{icloze}{1}имеет место строгое неравенство.\end{icloze}
+\end{note}
+
+\begin{note}{83892edbede849aeb7d89f4abc718e41}
+    Пусть \begin{icloze}{3}\({ p, q \in (1, +\infty) }\).\end{icloze}
+    \begin{icloze}{1}Числа \({ p }\) и \({ q }\)\end{icloze} называются \begin{icloze}{2}сопряжёнными показателями,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \frac{1}{q} + \frac{1}{q} = 1.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{97e460d86c3c4db6b2267d79218280cd}
+    \subsubsection{<<\begin{icloze}{3}Неравенство Гёльдера для интегралов\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f, g \in C[a, b] }\),\: \({ p }\) и \({ q }\) --- сопряжённые показатели.\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \left\lvert \int_{a}^{b} fg \right\rvert \leqslant \left( \int_{a}^{b} \left\lvert f \right\rvert^{p} \right)^{\frac{1}{p}} \left( \int_{a}^{b} \left\lvert g \right\rvert^{q} \right)^{\frac{1}{q}}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{19e57ef490ac48889603d288b4d8edd5}
+    \subsubsection{<<\begin{icloze}{3}Неравенство Минковского для интегралов\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f, g \in  C[a, b] }\), \({ p \geqslant  1 }\).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \left( \int_{a}^{b} \left\lvert f + g \right\rvert^{p} \right)^{\frac{1}{p}} \leqslant \left( \int_{a}^{b} \left\lvert f \right\rvert^{p} \right)^{\frac{1}{p}} + \left( \int_{a}^{b} \left\lvert g \right\rvert^{p} \right)^{\frac{1}{p}}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{000b6517531b4ecc9a052a60b3a741a4}
+    Функция \({ f : \langle A, B \rangle \to \mathbb R }\) называется \begin{icloze}{2}локально интегрируемой на \({ \langle A, B \rangle }\),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \forall [a, b] \subset \langle A, B \rangle \quad f|_{[a, b]} \in \mathcal R[a, b].
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{6b661945d0ee47a7a04ba92793c704f2}
+    \begin{icloze}{1}Множество функций, локально интегрируемых на \({ \langle A, B \rangle }\),\end{icloze} обозначается \begin{icloze}{2}\({ \mathcal R_{loc}(\langle A, B \rangle) }\) или \({ \mathcal R_{loc}\langle A, B \rangle }\).\end{icloze}
+\end{note}
+
+\begin{note}{435bbbcd954b4c8bb3be63c6b63acc2a}
+    Пусть \({ -\infty < a < b \leqslant +\infty }\), \({ f \in \mathcal R_{loc}[a, b) }\).
+    \[
+        \int_{a}^{\to b} f \overset{\text{def}}= \begin{icloze}{1}\lim_{c \to b^{-}} \int_{a}^{c} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{51919a133fa34a6b8ed5ed7ad5b76bac}
+    Пусть \({ -\infty \leqslant a < b < +\infty }\), \({ f \in \mathcal R_{loc}(a, b] }\).
+    \[
+        \int_{\to a}^{b} f \overset{\text{def}}= \lim_{c \to a^{+}} \int_{c}^{b} f.
+    \]
+\end{note}
+
+\begin{note}{ce5726096a9e4dfab405c99e8f84c09d}
+    \begin{icloze}{1}
+        Выражения
+        \[
+            \int_{a}^{\to b} f,\: \int_{\to  a}^{b} f
+        \]
+    \end{icloze}
+    называются \begin{icloze}{2}несобственными интегралами.\end{icloze}
 \end{note}
 
 \end{document}
