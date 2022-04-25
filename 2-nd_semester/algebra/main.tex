@@ -315,6 +315,16 @@
     Пусть \( f : V \to W \) --- линейный оператор. Тогда \begin{icloze}{2}матрицей линейного оператора \( f \) в паре базисов в \( V \) и \( W \) со\-от\-вет\-ствен\-но\end{icloze} называют \begin{icloze}{1}матрицу \( A \), переводящую координаты любого вектора \( v \in V \) в координаты вектора \( f(v) \in W \) в соответствующих базисах.\end{icloze}
 \end{note}
 
+\begin{note}{74ef91d29ce940f8b894341a5836c812}
+    Пусть \( f : V \to W \) --- линейный оператор.
+    \begin{icloze}{2}Матрица оператора \({ f }\) в паре базисов \({ e, \tilde e }\) в пространствах \({ V }\) и \({ W }\) соответственно\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            M_{e,\tilde e} (f).
+        \]
+    \end{icloze}
+\end{note}
+
 \begin{note}{d8ecf4d0e7a546668528944588ba6060}
     \subsubsection{<<\begin{icloze}{2}Теорема о матрице линейного оператора\end{icloze}>>}
     Пусть \( f : V \to W \) --- линейный оператор,
@@ -1992,6 +2002,177 @@
             (z, w) = \sum_{j} z_j \overline{w_j}.
         \]
     \end{cloze}
+\end{note}
+
+\section{Лекция 25.04.22}
+\begin{note}{dd4a52e4947c482987ee915067979415}
+    Пусть \begin{icloze}{3}\({ V }\) --- линейное пространство над \({ \mathbb C }\).\end{icloze}
+    \begin{icloze}{1}Рассмотрение \({ V }\), как векторного пространства над \({ \mathbb R }\),\end{icloze} называется \begin{icloze}{2}овеществлением \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{fce4b5036a48493086a124057e1f048d}
+    Пусть \begin{icloze}{3}\({ V }\) --- линейное пространство над \({ \mathbb C }\).\end{icloze}
+    \begin{icloze}{1}Овеществление  \({ V }\)\end{icloze} обозначается \begin{icloze}{2}\({ V_{\mathbb R} }\).\end{icloze}
+\end{note}
+
+\begin{note}{76444b467049412d855fd6a8bb955fef}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb C }\),\: \begin{icloze}{3}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\).\end{icloze}
+    Тогда \begin{icloze}{1}\({ \left\{ e_j \right\} \cup \left\{ ie_j \right\} }\)\end{icloze} --- \begin{icloze}{2}базис в \({ V_{\mathbb R} }\).\end{icloze}
+\end{note}
+
+\begin{note}{8b1e99362cbc41f9ad58dce068e5a358}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb C }\). Тогда
+    \[
+        \dim V_{\mathbb R} = \begin{icloze}{1}2 \cdot \dim V.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cc3fd18a829c481eb6a18fd4944621b2}
+    Пусть \({ f : V  \to V }\) --- линейный оператор в комплексном пространстве,\: \begin{icloze}{4}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\),\: \({ A = M_e(f) }\).\end{icloze}
+    Тогда в базисе \begin{icloze}{3}\({ \left\{ \tilde e_j \right\}_{j = 1}^{2n} = \left\{ e_1, \ldots, e_n, ie_1, \ldots, ie_n \right\} }\)\end{icloze} имеем
+    \[
+        \begin{icloze}{2}M_{\tilde e} (f)\end{icloze} = \begin{icloze}{1}\begin{bmatrix}
+            B & -C \\
+            C & B
+        \end{bmatrix}, \quad
+        \text{где \({ B + iC = A }\)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cc938e458f944909a9c35a4d1dc9cea0}
+    Пусть \begin{icloze}{3}\({ V }\) --- линейное пространство над \({ \mathbb R }\).\end{icloze}
+    \[
+        \begin{icloze}{2}V_{\mathbb C}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ (u, v) \mid u, v \in V \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{117bb526f78d4eceace2fdea3f410d63}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb R }\),\: \({ (u, v) \in V_{\mathbb C} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}i(u, v)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(-v, u).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f3dbbf009e9b4e94972dfdbf0af435f6}
+    Как запомнить правило умножения в пространстве \({ V_{\mathbb C} }\)?
+
+    \begin{cloze}{1}
+        ``Представить'' элемент \({ (u, v) \in V_{\mathbb C} }\) как \({ u + iv }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{389f838bfe634a94bbac20ddbd28d838}
+    \begin{icloze}{2}Пространство \({ V_{\mathbb C} }\)\end{icloze} называется \begin{icloze}{1}комплексификацией пространства \({ V }\).\end{icloze}
+\end{note}
+
+\begin{note}{d7b4cacadaa641759cab38db5ae47b15}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
+    \begin{icloze}{1}Оператор \({ g : W \to V }\)\end{icloze} называется \begin{icloze}{2}сопряжённым оператором к оператору \({ f }\),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            (f(v), w) = (v, g(w)) \quad \forall v \in V, w \in W.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{e40069d511a1495fb9dd3107a6d11084}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
+    \begin{icloze}{2}Сопряжённый оператор к оператору \({ f }\)\end{icloze} обозначается \begin{icloze}{1}\({ f^{*} }\).\end{icloze}
+\end{note}
+
+\begin{note}{5b47c38358684d31a1d171bdc613fa5f}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
+    Как показать, что \({ f^* }\) линеен?
+
+    \begin{cloze}{1}
+        Показать, что \({ f^*(\lambda w) - \lambda f^* (w) }\) ортогонален всем векторам в \({ V }\). Аналогично для суммы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d9bfeeafc3314b3582a8263231d7301b}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
+    Как показать существование \({ f^* }\)?
+
+    \begin{cloze}{1}
+        Явным образом найти его матрицу.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d532583798ec4eafb0bcec5c1a718f50}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
+    Однозначно ли определён оператор \({ f^* }\)?
+
+    \begin{cloze}{1}
+        Да, однозначно.
+    \end{cloze}
+\end{note}
+
+\begin{note}{49ba268bb22b4db9858de680fb15c62b}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах, \begin{icloze}{3}\({ \left\{ e_i \right\} }\) и \({ \left\{ \tilde e_j \right\} }\) --- ортонормированные базисы в \({ V }\) и \({ W }\), соответственно.\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}M_{\tilde e, e} (f^*)\end{icloze} = \begin{icloze}{1}(M_{e, \tilde e} (f))^{T}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{bb4d8ef0dcd644128b6a2e296af6f5d2}
+    Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах, \({ \left\{ e_i \right\} }\) --- ортогональный базис в \({ V }\), \({ \left\{ \tilde e_j \right\} }\) --- ортогональный базис в \({ W }\).
+    Как показать, что
+    \[
+        M_{\tilde e, e} (f) = (M_{e, \tilde e} (f))^{T}?
+    \]
+
+    \begin{cloze}{1}
+        Вычислить коэффициенты Фурье \({ (e_i, f^*(\tilde e_j)) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{fa653accdda24b31ab20506ac8538332}
+    Пусть \({ f: V \to W }\) линейный оператор в эрмитовых пространствах.
+    Тогда
+    \[
+        (f^*)^* = \begin{icloze}{1}f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cbcfd9ad889c446d8de6ca2776680205}
+    Пусть \({ f_1, f_2 : V \to W }\) линейные операторы в эрмитовых пространствах,\: \({ \lambda, \mu  \in \mathbb R }\).
+    Тогда
+    \[
+        (\lambda f_1 + \mu f_2)^* = \begin{icloze}{1}\overline{\lambda} f_1^* + \overline{\mu} f_2^*.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6e9f045a1c4e4808bfcbd69523e55ac3}
+    Пусть \({ f_1, f_2 : V \to W }\) линейные операторы в эрмитовых пространствах.
+    Тогда
+    \[
+        (fg)^* = \begin{icloze}{1}g^* f^*.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1520bcac46ee4b76aefe766faef8769e}
+    Пусть \({ f : V \to V }\) линейный оператор в эрмитовом пространстве, \({ v }\) --- собственный вектор операторов \begin{icloze}{2}\({ f }\) и \({ f^* }\),\end{icloze} отвечающий \begin{icloze}{3}собственным значениям \({ \lambda }\) и \({ \mu }\)\end{icloze} соответственно.
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \mu = \overline{\lambda}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{398d95972a0746bb8ca3fe90ee7fafe6}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовых пространстве.
+    Тогда
+    \[
+        f^* = f \implies \operatorname{spec} f \begin{icloze}{1}\subset \mathbb R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9cd8e8889d15407b9c8bc0d715fc7b96}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда если \begin{icloze}{2}\({ f^* = f }\),\end{icloze} то в пространстве \({ V }\) существует \begin{icloze}{1}ортонормированный базис из собственных векторов оператора \({ f }\).\end{icloze}
 \end{note}
 
 \end{document}
