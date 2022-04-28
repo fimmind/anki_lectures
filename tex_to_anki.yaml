@@ -34,11 +34,11 @@ model:
       \usepackage[utf8]{inputenc}
       \usepackage[english,russian]{babel}
       \usepackage{libertine}
-
-      \usepackage{amsmath}
+\usepackage{amsmath}
       \usepackage{amssymb}
       \usepackage{amsthm}
       \usepackage{mathrsfs}
+      \usepackage{mathtools}
       \usepackage{framed}
 
       \setlength{\parindent}{0pt}
@@ -49,12 +49,13 @@ model:
       \renewcommand{\theparagraph}{}
 
       \newenvironment{cloze}[2][\ldots]{\begin{leftbar}}{\end{leftbar}}
-      \newenvironment{icloze}[2][\ldots]{\ignorespaces}{\unskip}
+      \newenvironment{icloze}[2][\ldots]{\hspace{0pt}\ignorespaces}{\unskip\hspace{0pt}}
 
       \begin{document}
       \pagestyle{empty}
     post: |
-      \unskip\phantom{}\hfill\rule{0.01mm}{0.01mm}
+      %
+      \rule{0.01mm}{0.01mm}\hfill\rule{0.01mm}{0.01mm}
       \end{document}
   template:
     front: |
