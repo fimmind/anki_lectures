@@ -3155,7 +3155,7 @@
     Каков первый шаг в доказательстве теоремы Бонне?
 
     \begin{cloze}{1}
-        Представить \({ \int_{a}^{b} fg }\) как \({ \int_{a}^{b} F'g }\), где \({ F(x) = \int_{a}^{x} f }\).
+        Представить \({ \int_{a}^{b} fg }\) как \({ \int_{a}^{b} F'g }\), где \({ F(x) \coloneqq \int_{a}^{x} f }\).
     \end{cloze}
 \end{note}
 
@@ -3201,13 +3201,58 @@
 \begin{note}{8b2c86d7991e4a2b91921581b1ef4490}
     \subsubsection{<<\begin{icloze}{4}Неравенство Йенсена для интеграла\end{icloze}>>}
 
-    Пусть \begin{icloze}{3}\({ f }\) непрерывна на \({ \langle A, B \rangle }\), \({ \varphi : [a, b] \to \langle A, B \rangle }\) непрерывна и \({ \lambda : [a, b] \to [0, +\infty) }\).\end{icloze}
+    Пусть \begin{icloze}{3}\({ f \in C\langle A, B \rangle }\), \({ \varphi, \lambda \in C[a, b] }\), \({ \varphi : [a, b] \to \langle A, B \rangle }\), \({ \lambda \geqslant 0 }\).\end{icloze}
     Тогда \begin{icloze}{2}если \({ f }\) выпукла на \({ \langle A, B \rangle }\) и \({ \int_{a}^{b} \lambda = 1 }\),\end{icloze} то
     \begin{icloze}{1}
         \[
             f\left( \int_{a}^{b} \lambda\varphi \right) \leqslant \int_{a}^{b} \lambda \cdot (f \circ \varphi).
         \]
     \end{icloze}
+\end{note}
+
+\begin{note}{b1fef24356cb40989e268892f941d2bc}
+    Какие два случая рассматриваются в доказательстве неравенства Йенсена для интеграла?
+
+    \begin{cloze}{1}
+        \begin{center}
+            1.\: \({ \varphi =  const }\), \quad 2.\: \({ \varphi \neq const }\).
+        \end{center}
+    \end{cloze}
+\end{note}
+
+\begin{note}{0135fda5379a4582960532ada8cb52a9}
+    В чём основная идея в доказательстве неравенства Йенсена (случай \({ \varphi = const }\))?
+
+    \begin{cloze}{1}
+       Доказываемое неравенство тривиальным образом обращается в равенство.
+    \end{cloze}
+\end{note}
+
+\begin{note}{77790770b54541099c9e486f28074f26}
+    В чём основная идея в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\))?
+
+    \begin{cloze}{1}
+        \({ \int_{a}^{b} \lambda\varphi \in (A, B) }\), а значит \({ f }\) имеет в этой точке опорную прямую.
+    \end{cloze}
+\end{note}
+
+\begin{note}{402dc5f48e084c56acdbac1d8691cd46}
+    Как в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\)) показать, что \({ \int_{a}^{b} \lambda \varphi \in (A, B) }\)?
+
+    \begin{cloze}{1}
+        \({ \int_{a}^{b} \lambda \varphi \in (\inf \varphi, \sup \varphi) }\), а по теорема Вейерштрасса
+        \[
+            \inf \varphi, \sup \varphi \in \langle A, B \rangle.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{69bcf26030d34b71839c245e2f0b80ca}
+    Как в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\)) показать, что \({ \int_{a}^{b} \lambda \varphi \in (\inf \varphi, \sup \varphi) }\)?
+
+    \begin{cloze}{1}
+        От противного.
+    \end{cloze}
 \end{note}
 
 \begin{note}{3584b635c4dc44e7b9b1624c4019860f}
@@ -3224,6 +3269,18 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{40347c04583b4c95b7cac9a0158ee490}
+    \subsubsection{<<\begin{icloze}{3}Неравенство Гёльдера для сумм\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ \left\{ a_i \right\}, \left\{ b_i \right\}_{i = 1}^{n} \subset \mathbb R_+ }\),\: \({ p }\) и \({ q }\) --- сопряжённые показатели.\end{icloze}
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \sum_{i=1}^{n} a_i b_i \leqslant \left( \sum_{i=1}^{n} a_i^{p} \right)^{\frac{1}{p}} \left( \sum_{i=1}^{n} b_i^{q} \right)^{\frac{1}{q}}.
+        \]
+    \end{icloze}
+\end{note}
+
 \begin{note}{97e460d86c3c4db6b2267d79218280cd}
     \subsubsection{<<\begin{icloze}{3}Неравенство Гёльдера для интегралов\end{icloze}>>}
 
@@ -3231,6 +3288,35 @@
     \begin{icloze}{1}
         \[
             \left\lvert \int_{a}^{b} fg \right\rvert \leqslant \left( \int_{a}^{b} \left\lvert f \right\rvert^{p} \right)^{\frac{1}{p}} \left( \int_{a}^{b} \left\lvert g \right\rvert^{q} \right)^{\frac{1}{q}}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{fc914f6a007e42fc8512d6d3d277c03d}
+    В чём основная идея в доказательстве неравенства Гёльдера для интегралов?
+
+    \begin{cloze}{1}
+        Применить неравенство Гёльдера для сумм к интегральным суммам.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e3416ff410fb47098739b40e48782ab7}
+    Как представляется  \({ \Delta x_k }\) в доказательстве неравенства Гёльдера для интегралов?
+
+    \begin{cloze}{1}
+        \[
+            \Delta x_k = (\Delta x_k)^{\frac{1}{p}} \cdot (\Delta x_k)^{\frac{1}{q}}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{89fc34798a62448d9c6bd5173c1ac247}
+    \subsubsection{<<\begin{icloze}{3}Неравенство Коши-Буняковского для интегралов\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ f, g \in C[a, b] }\).\end{icloze} Тогда
+    \begin{icloze}{1}
+        \[
+            \left\lvert \int_{a}^{b} fg \right\rvert \leqslant \sqrt{\int_{a}^{b} f^2} \cdot \sqrt{\int_{a}^{b} g^2}.
         \]
     \end{icloze}
 \end{note}
