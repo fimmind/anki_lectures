@@ -3366,27 +3366,154 @@
 \end{note}
 
 \begin{note}{435bbbcd954b4c8bb3be63c6b63acc2a}
-    Пусть \({ -\infty < a < b \leqslant +\infty }\), \({ f \in \mathcal R_{loc}[a, b) }\).
+    Пусть \begin{icloze}{3}\({ -\infty < a < b \leqslant +\infty }\), \({ f \in \mathcal R_{loc}[a, b) }\).\end{icloze}
     \[
-        \int_{a}^{\to b} f \overset{\text{def}}= \begin{icloze}{1}\lim_{c \to b^{-}} \int_{a}^{c} f.\end{icloze}
+        \begin{icloze}{2}\int_{a}^{\to b} f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\lim_{c \to b^{-}} \int_{a}^{c} f.\end{icloze}
     \]
 \end{note}
 
 \begin{note}{51919a133fa34a6b8ed5ed7ad5b76bac}
-    Пусть \({ -\infty \leqslant a < b < +\infty }\), \({ f \in \mathcal R_{loc}(a, b] }\).
+    Пусть \begin{icloze}{3}\({ -\infty \leqslant a < b < +\infty }\), \({ f \in \mathcal R_{loc}(a, b] }\).\end{icloze}
     \[
-        \int_{\to a}^{b} f \overset{\text{def}}= \lim_{c \to a^{+}} \int_{c}^{b} f.
+        \begin{icloze}{2}\int_{\to a}^{b} f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\lim_{c \to a^{+}} \int_{c}^{b} f.\end{icloze}
     \]
 \end{note}
 
-\begin{note}{ce5726096a9e4dfab405c99e8f84c09d}
+\begin{note}{27d9a13709de4fa5ab8baff3cd9fbaa0}
+    Выражение
+    \[
+        { \int_{a}^{\to b} f }
+    \]
+    называют \begin{icloze}{1}несобственным интегралом \({ f }\) по промежутку \({ [a, b) }\).\end{icloze}
+\end{note}
+
+\begin{note}{bb25f0567eef47e7b707c500e9674f65}
+    Выражение
+    \[
+        { \int_{\to a}^{b} f }
+    \]
+    называют \begin{icloze}{1}несобственным интегралом \({ f }\) по промежутку \({ (a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{f741cd46bba044cfa110acd5e82b1af1}
+    Несобственный интеграл называют \begin{icloze}{2}сходящимся,\end{icloze} если \begin{icloze}{1}он определён и конечен.\end{icloze}
+\end{note}
+
+\begin{note}{db034e9065e54430baecac9bfd0a644f}
+    Несобственный интеграл называют \begin{icloze}{2}расходящимся,\end{icloze} если \begin{icloze}{1}он имеет бесконечное значение или не существует.\end{icloze}
+\end{note}
+
+\begin{note}{b0514d3cbba648c8a6e3b58d057869cd}
+    Пусть \begin{icloze}{2}\({ f \in \mathcal R[a, b] }\).\end{icloze}
+    Тогда
+    \[
+        \int_{a}^{\to b} f = \begin{icloze}{1}\int_{a}^{b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c8d35c7d4dfa4a8ab001d84f09a382bd}
+    Пусть \({ f \in \mathcal R[a, b] }\). Как показать, что \({ \int_{a}^{\to b} f = \int_{a}^{b} f }\)?
+
+    \begin{cloze}{1}
+        Непосредственно следует из непрерывности функции \({ x \mapsto \int_{a}^{x} f }\) (теорема Барроу).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ad8461ebb11542bead198798c15c6a91}
+    Пусть \begin{icloze}{3}\({ f \in \mathcal R_{loc}[a, b) }\), \({ c \in (a, b) }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} f\end{icloze} = \begin{icloze}{1}\int_{a}^{c} f + \int_{c}^{\to b} f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{4873742f993743639632296fcb9c3fda}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\), \({ c \in (a, b) }\).
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ \displaystyle \int_{a}^{\to b} f }\) сходится\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ \displaystyle \int_{c}^{\to b} f }\) сходится.\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{7f5c166670d24acc8348a74343d875cc}
+    Пусть \begin{icloze}{3}\({ f \in \mathcal R_{loc} [a, b) }\),\: \({ A \in (a, b) }\).\end{icloze}
+    \begin{icloze}{1}Несобственный интеграл \({ \int_{A}^{\to b} }\)\end{icloze} называется \begin{icloze}{2}остатком интеграла \({ \int_{a}^{\to b} f }\).\end{icloze}
+\end{note}
+
+\begin{note}{3e68bd52c99f47b59cb0f6c550c12420}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} f \in \mathbb R\end{icloze}
+        \begin{icloze}{3}\implies\end{icloze}
+        \begin{icloze}{1}\int_{A}^{\to b} \underset{A \to b^{-}}\longrightarrow 0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6f388abbe0394963abf8ebd7c8090616}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Как показать, что
+    \[
+        \int_{a}^{\to b} f \in \mathbb R \implies \int_{A}^{\to b} \underset{A \to b^{-}}\longrightarrow 0?
+    \]
+
+    \begin{cloze}{1}
+        Представить \({ \int_{A}^{\to b} f }\) как \({ \int_{a}^{\to b} - \int_{a}^{A} f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{eed850367bd24674b9fa0cdbd5af00f5}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \({ \alpha, \beta \in \mathbb R }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} (\alpha f + \beta g)\end{icloze} = \begin{icloze}{1}\alpha \int_{a}^{\to b} f + \beta \int_{a}^{\to b} g.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1dcd21125ff841338d9ddad83b33302d}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \({ \alpha, \beta \in \mathbb R }\).
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ \displaystyle \int_{a}^{\to b} (\alpha f + \beta g) }\) сходится \end{icloze}
+        \begin{icloze}{3}\({ \iff }\) \end{icloze}
+        \begin{icloze}{1}\({ \displaystyle \int_{a}^{\to b} f, \int_{a}^{\to b} g }\) сходятся.\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{5ca16eceb7f145959f15bd1feb33442e}
+    \subsubsection{<<\begin{icloze}{3}Замена переменной в несобственном интеграле\end{icloze}>>}
+
+    Пусть \begin{icloze}{2}\({ \varphi \in C^{1}[\alpha, \beta) }\) монотонна,\: \({ f \in C[\varphi(\alpha), \varphi(\beta^{-})) }\).\end{icloze}
+    Тогда
     \begin{icloze}{1}
-        Выражения
         \[
-            \int_{a}^{\to b} f,\: \int_{\to  a}^{b} f
+            \int_{\alpha}^{\to \beta} (f \circ \varphi) \varphi' = \int_{\varphi(\alpha)}^{\to \varphi(\beta^{-})} f.
         \]
     \end{icloze}
-    называются \begin{icloze}{2}несобственными интегралами.\end{icloze}
+\end{note}
+
+\begin{note}{e96879968f0f4e3f8bcf844f10abfcc0}
+    Пусть \({ f : [a, b) \to \mathbb R }\).
+    \[
+        \begin{icloze}{2}f \big|_{a}^{\to b}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}f(b^{-}) - f(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a4c1c50607984cd88be2763ea1bce888}
+    Пусть \({ f : (a, b] \to \mathbb R }\).
+    \[
+        \begin{icloze}{2}f \big|_{\to a}^{b}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}f(b) - f(a^{+}).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ceae3033619d408da982f6affab84e5b}
+    Пусть \begin{icloze}{3}\({ f, g \in C^{1} [a, b) }\) и \({ \exists \lim_{x \to b^{-}} (f \cdot g)(x) }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} f g'\end{icloze}
+        =
+        \begin{icloze}{1}fg \Big|_{a}^{\to b} - \int_{a}^{\to b} f' g.\end{icloze}
+    \]
 \end{note}
 
 \section{Семинар 21.04.22}
