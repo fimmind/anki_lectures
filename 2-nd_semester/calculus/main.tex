@@ -3645,4 +3645,300 @@
     для определённости полагают \begin{icloze}{1}\({ x \in  [-\frac{\pi}{2}, \frac{\pi}{2}] }\).\end{icloze}
 \end{note}
 
+\section{Лекция 30.04.22 (1)}
+\begin{note}{c145ba4d6dca4a06a50cec14e1551b20}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\),\begin{icloze}{4} \({ f \geqslant 0 }\).\end{icloze}
+    Тогда \({ \int_{a}^{\to b} f }\) \begin{icloze}{2}сходится\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} функция \begin{icloze}{1}\({ x \mapsto \int_{a}^{x} f }\)\end{icloze} ограничена сверху на \({ [a, b) }\).
+\end{note}
+
+\begin{note}{0be99a47ac0e428faad6ea9879f39822}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\), \({ f \geqslant 0 }\).
+    Тогда \({ \int_{a}^{\to b} f }\) сходится \({ \iff }\) функция \({ x \mapsto \int_{a}^{x} f }\) ограничена сверху на \({ [a, b) }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ \int_{a}^{x} f \!\!\nearrow }\) и теорема о пределе монотонной функции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e94553827bfa462995cb7abf3f169453}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\), \begin{icloze}{2}\({ f \geqslant 0 }\).\end{icloze}
+    Тогда \({ \int_{a}^{\to b} f }\) либо \begin{icloze}{1}сходится,\end{icloze} либо \begin{icloze}{1}расходится к \({ +\infty }\).\end{icloze}
+\end{note}
+
+\begin{note}{2613f68b7e7b444ea053850e9887a1e8}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\), \begin{icloze}{2}\({ f \geqslant 0 }\).\end{icloze}
+    Тогда \({ \int_{a}^{\to b} f = \begin{icloze}{1}\underset{x \in [a, b)}{\sup} \int_{a}^{x} f\end{icloze} }\).
+\end{note}
+
+\begin{note}{05b94ccacfa246db99eb2dcbfc408f2a}
+    Пусть \({ f, g \in \mathcal R_{loc} [a, b) }\),\: \begin{icloze}{5}\({ f, g \geqslant 0 }\),\end{icloze}
+    \[
+        f(x) = \begin{icloze}{4}O(g(x)), \quad x \to b^{-}.\end{icloze}
+    \]
+    Тогда \({ \begin{icloze}{2}\int_{a}^{\to b} g \in \mathbb R\end{icloze} \begin{icloze}{3}\implies\end{icloze} \begin{icloze}{1}\int_{a}^{\to b} f \in \mathbb R\end{icloze} }\)
+\end{note}
+
+\begin{note}{635015d74b6c4594817b074aa5417e29}
+    Пусть \({ f, g \in \mathcal R_{loc} [a, b) }\),\: \begin{icloze}{5}\({ f, g \geqslant 0 }\),\end{icloze}
+    \[
+        f(x) = \begin{icloze}{4}O(g(x)), \quad x \to b^{-}.\end{icloze}
+    \]
+    Тогда \({ \begin{icloze}{2}\int_{a}^{\to b} f \not\in \mathbb R\end{icloze} \begin{icloze}{3}\implies\end{icloze} \begin{icloze}{1}\int_{a}^{\to b} g \not\in \mathbb R\end{icloze} }\)
+\end{note}
+
+\begin{note}{95f69b2a23484af79ddfafb4fda8cf09}
+    Пусть \({ f, g \in \mathcal R_{loc} [a, b) }\),\: \({ f, g \geqslant 0 }\),
+    \[
+        f(x) = O(g(x)), \quad x \to b^{-}.
+    \]
+    Тогда, если \({ \int_{a}^{\to b} g }\) сходится, то и \({ \int_{a}^{\to b} f }\) сходится.
+
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Из определения \({ O }\)-большого сравнить остатки \({ \int_{\varepsilon}^{\to b} f }\) и \({ \int_{\varepsilon}^{\to b} g }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{88104faac5ad425e8ad1e9d194e82fcf}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \begin{icloze}{5}\({ f \geqslant 0 }\), \({ g > 0 }\)\end{icloze} и \begin{icloze}{4}\({ \displaystyle \frac{f}{g}(b^{-}) \in [0, +\infty) }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{3}\int_{a}^{\to b} g \in \mathbb R\end{icloze}
+        \begin{icloze}{2}\implies\end{icloze}
+        \begin{icloze}{1}\int_{a}^{\to b} f \in \mathbb R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1c33032b82c74c258d783b6f03d0ec39}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \({ f \geqslant 0 }\), \({ g > 0 }\) и \({ \displaystyle \frac{f}{g}(b^{-}) \in [0, +\infty) }\).
+    Тогда
+    \[
+        \int_{a}^{\to b} g \in \mathbb R \implies \int_{a}^{\to b} f \in \mathbb R.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ \displaystyle \frac{f}{g} }\) ограничена в окрестности \({ b }\) \({ \implies }\) \({ f(x) = O(g(x)) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cec6bac50bc74bf1b743dc23079418dc}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \begin{icloze}{5}\({ f \geqslant 0 }\), \({ g > 0 }\)\end{icloze} и \begin{icloze}{4}\({ \displaystyle \frac{f}{g}(b^{-}) \in (0, +\infty] }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} f \in \mathbb R\end{icloze}
+        \begin{icloze}{3}\implies\end{icloze}
+        \begin{icloze}{1}\int_{a}^{\to b} g \in \mathbb R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{156267ccd8034eca99dbb3d574fbf25e}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \({ f \geqslant 0 }\), \({ g > 0 }\) и \({ \displaystyle \frac{f}{g}(b^{-}) \in (0, +\infty] }\).
+    Тогда
+    \[
+        \int_{a}^{\to b} f \in \mathbb R \implies \int_{a}^{\to b} g \in \mathbb R.
+    \]
+
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Поменять местами \({ f }\) и \({ g }\), рассмотрев \({ \displaystyle \frac{g}{f}(b^{-}) \in [0, +\infty) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1139c594c8b941fc9a945b4ca914a566}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \begin{icloze}{5}\({ f \geqslant 0 }\), \({ g > 0 }\)\end{icloze} и \begin{icloze}{4}\({ \displaystyle \frac{f}{g}(b^{-}) \in (0, +\infty) }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{\to b} f \in \mathbb R\end{icloze}
+        \begin{icloze}{3}\iff \end{icloze}
+        \begin{icloze}{1}\int_{a}^{\to b} g \in \mathbb R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1588fad5b7a94fb7a874e07813b56e6a}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \begin{icloze}{5}\({ f, g \geqslant 0 }\),\end{icloze}
+    \begin{icloze}{4}
+        \[
+            f(x) \sim g(x), \quad x \to b^{-}.
+        \]
+    \end{icloze}
+    Тогда \({ \begin{icloze}{2}\int_{a}^{\to b} f \in \mathbb R\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}\int_{a}^{\to b} g \in \mathbb R\end{icloze} }\).
+\end{note}
+
+\begin{note}{3804d89199d040dea2d1a4ab5975760d}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\),\: \({ f, g \geqslant 0 }\),
+    \[
+        f(x) \sim g(x), \quad x \to b^{-}.
+    \]
+    Тогда \({ \int_{a}^{\to b} f \in \mathbb R \iff \int_{a}^{\to b} g \in \mathbb R }\).
+
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что \({ f }\) и \({ g }\) ограничены по сравнению друг с другом.
+    \end{cloze}
+\end{note}
+
+\begin{note}{03152527c42d4e8bb83dd25771b6c907}
+    Пусть \({ f \in C[a, +\infty) }\),\: \({ f \geqslant 0 }\).
+    Тогда
+    \[
+        \int_{a}^{+\infty} f
+        \begin{icloze}{1}\:\not\!\!\!\implies\end{icloze}
+        f(x) \underset{x \to +\infty}\longrightarrow 0.
+    \]
+\end{note}
+
+\begin{note}{35508c22afea4d38a551fe82569f4791}
+    \begin{center}
+        \({ \displaystyle \int_{a}^{+\infty} \frac{1}{x^{p}}\: dx }\) \begin{icloze}{2}сходится,\end{icloze} если \begin{icloze}{1}\({ p < 1 }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{a6b66475e9184a11a3b8e564bb2c03a5}
+    \begin{center}
+        \({ \displaystyle \int_{a}^{+\infty} \frac{1}{x^{p}}\: dx }\) \begin{icloze}{2}расходится,\end{icloze} если \begin{icloze}{1}\({ p \leqslant 1 }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{3b29658e766c4cd28321fc274785321b}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Является ограниченность функции
+    \[
+        x \mapsto \int_{a}^{x} f
+    \]
+    необходимым условием для сходимости \({ \int_{a}^{+\infty} f }\)?
+
+    \begin{cloze}{1}
+        Да, является.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d8d5ca8f054b4f198c844c2fa4947b52}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Является ограниченность функции
+    \[
+        x \mapsto \int_{a}^{x} f
+    \]
+    достаточным условием для сходимости \({ \int_{a}^{+\infty} f }\)?
+
+    \begin{cloze}{1}
+        Нет, она является только необходимым условием.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0293c1fbae2c45939b37aee500e2e937}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Интеграл \({ \int_{a}^{\to b} f }\) называют \begin{icloze}{2}сходящимся абсолютно,\end{icloze} если \begin{icloze}{1}\({ \int_{a}^{\to b} \left\lvert f \right\rvert }\) сходится.\end{icloze}
+\end{note}
+
+\begin{note}{9f03ada404444f7b806ae914e3c10af8}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\), \({ \alpha, \beta \in \mathbb R }\).
+    Если \({ \int_{a}^{\to b} f }\) и \({ \int_{a}^{\to b} g }\) \begin{icloze}{2}сходятся абсолютно,\end{icloze} то \begin{icloze}{3}\({ \int_{a}^{\to b} (\alpha f + \beta g) }\)\end{icloze} \begin{icloze}{1}сходится абсолютно.\end{icloze}
+\end{note}
+
+\begin{note}{877bbbaf0aad47f18e73982ecb61a25c}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Если \({ \int_{a}^{\to b} f }\) сходится абсолютно, то он \begin{icloze}{1}сходится.\end{icloze}
+\end{note}
+
+\begin{note}{1e256a23b0234f618630bb0ecd81a5c1}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Если \({ \int_{a}^{\to b} f }\) сходится абсолютно, то он сходится.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            \left\lvert \int_{c}^{\to b} f \right\rvert \leqslant \int_{c}^{\to b} \left\lvert f \right\rvert \underset{c \to b^{-}}\longrightarrow 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{90872b464e394488bd0388fbf5e5fe3e}
+    Может ли несобственный интеграл сходиться, не сходясь при этом абсолютно?
+
+    \begin{cloze}{1}
+        Да, может.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0268c46e88c24c1d9a2339d7f0d3ee01}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\).
+    Если \({ \int_{a}^{\to b} f }\) \begin{icloze}{2}сходится, но не абсолютно,\end{icloze} то говорят, что \begin{icloze}{1}он сходится условно или неабсолютно.\end{icloze}
+\end{note}
+
+\begin{note}{8cf6a70282a945a2ba0dc4b0a63abad8}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\).
+    Если интеграл \({ \int_{a}^{\to b} f }\) \begin{icloze}{2}сходится условно,\end{icloze} а \({ \int_{a}^{\to b} g }\) \begin{icloze}{2}сходится абсолютно,\end{icloze} то \({ \int_{a}^{\to b} (f + g) }\) \begin{icloze}{1}сходится условно.\end{icloze}
+\end{note}
+
+\begin{note}{710cc42101c14046a49743d5070986c1}
+    Пусть \({ f, g \in \mathcal R_{loc}[a, b) }\).
+    Если интеграл \({ \int_{a}^{\to b} f }\) сходится условно, а \({ \int_{a}^{\to b} g }\) сходится абсолютно, то \({ \int_{a}^{\to b} (f + g) }\) сходится условно.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Представить \({ f }\) как сумму \({ (f + g) - g }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{4ff4773b59de42daa0a880e4a8a170e7}
+    \subsubsection{<<Признак \begin{icloze}{5}Дирихле\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>}
+
+    Пусть \begin{icloze}{4}\({ f \in C[a, b) }\),\end{icloze} \begin{icloze}{3}\({ g \in C^{1}[a, b) }\),\: \({ g }\) --- монотонна.\end{icloze} Если
+    \begin{icloze}{1}
+        \({ g }\) бесконечно мала в точке \({ b }\), a
+        \({ x \mapsto \int_{a}^{x} f }\) ограничена на \({ (a, b) }\),
+    \end{icloze}
+    то \begin{icloze}{2}\({ \int_{a}^{\to b} (f \cdot g) }\) сходится.\end{icloze}
+\end{note}
+
+\begin{note}{ae6efc013b634d36a35078f6d529988d}
+    В чём основная идея доказательства признака Дирихле сходимости несобственного интеграла?
+
+    \begin{cloze}{1}
+        Применить формулу интегрирования по частям и показать абсолютную сходимость \({ \int_{a}^{\to b} Fg' }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2f08599a01e3436a9f48422e767ba763}
+    Как в доказательстве признака Дирихле сходимости несобственного интеграла показать, что \({ \int_{a}^{\to b} Fg' }\) сходится абсолютно?
+
+    \begin{cloze}{1}
+        Оценить сверху значение \({ \int_{a}^{\to b} \left\lvert F g' \right\rvert }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{599be6e31a83462881df0f2734d270d5}
+    Почему в доказательстве признака Дирихле сходимости несобственного интеграла интеграл \({ \int_{a}^{\to b} \left\lvert Fg' \right\rvert }\) не может не существовать?
+
+    \begin{cloze}{1}
+        Потому что \({ \left\lvert F g' \right\rvert \geqslant 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{fdf163be427a40e1a02bdfb1d3392f46}
+    \subsubsection{<<Признак \begin{icloze}{5}Абеля\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>}
+
+    Пусть \begin{icloze}{4}\({ f \in C[a, b) }\),\end{icloze} \begin{icloze}{3}\({ g \in C^{1}[a, b) }\),\: \({ g }\) --- монотонна.\end{icloze} Если
+    \begin{icloze}{1}
+        \({ g }\) --- ограничена, а \({ \int_{a}^{\to b} f }\) сходится,
+    \end{icloze}
+    то \begin{icloze}{2}\({ \int_{a}^{\to b} (f \cdot g) }\) сходится.\end{icloze}
+\end{note}
+
+\begin{note}{5714e2e7542d4b4aa0316cb086c35aac}
+    В чём основная идея доказательства признака Абеля сходимости несобственного интеграла?
+
+    \begin{cloze}{1}
+        Признак Дирихле для функций \({ f }\) и
+        \[
+            x \mapsto g(x) - g(b^{-}).
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
