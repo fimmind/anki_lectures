@@ -21,11 +21,17 @@
     В чём ключевая идея доказательства единственности многочлена Тейлора?
 
     \begin{cloze}{1}
-        Пусть коэффициент \( r_m  \) при \( (x - a)^{m} \) --- первый ненулевой коэффициент в многочлене \( p - q \).
-        Тогда \[
-            \frac{p - q}{(x - a)^{m} } \underset{x \to a}\longrightarrow r_m,
-        \] но при этом \[
-            \frac{p - q}{(x - a)^{m} } = o((x - a)^{n - m}) \underset{x \to a}\longrightarrow 0 \implies r_m = 0.
+        Младший ненулевой коэффициент при \({ (x - a)^{m} }\) в \({ p - q }\) равен нулю \({ \implies \bot }\). (Доказательство от противного.)
+    \end{cloze}
+\end{note}
+
+\begin{note}{91af14a03bea4b9fadee06859cbab64d}
+    Пусть \({ p }\) и \({ q }\) --- два многочлена Тейлора функции \({ f }\),\: коэффициент \({ r_m }\) перед \({ (x - a)^{m} }\) --- младший ненулевой коэффициент в \({ p - q }\). Как показать, что \({ r_m = 0 }\)?
+
+    \begin{cloze}{1}
+        Рассмотреть многочлен
+        \[
+            \frac{p(x) - q(x)}{(x - a)^{m}}.
         \]
     \end{cloze}
 \end{note}
@@ -1194,10 +1200,7 @@
     В чем основная идея доказательства теоремы о связи выпуклости функции с \({ f' }\) (необходимость)?
 
     \begin{cloze}{1}
-        Показать, что для \({ x < y }\)
-        \[
-            f'(x) \leqslant \frac{f(y) - f(x)}{y - x} \leqslant f'(y)
-        \]
+        Для \({ x < y }\) сравнить значения \({ f'(x), f'(y) }\) с \({ \frac{f(y) - f(x)}{y - x} }\).
     \end{cloze}
 \end{note}
 
@@ -1543,7 +1546,7 @@
 \end{note}
 
 \begin{note}{e2df459e1699495f980cdddacc633f6f}
-    В чем основная идея доказательства основной формулы интегрирования по частям?
+    В чем основная идея доказательства формулы интегрирования по частям для неопределённого интеграла?
 
     \begin{cloze}{1}
         \[
@@ -2249,7 +2252,7 @@
     \[
         \begin{gathered}
             \int \begin{icloze}{2}\sqrt{x^2 \pm a^2}\end{icloze}\: dx =
-            \begin{icloze}{1}\frac{x}{2} \sqrt{a^2 \pm x^2} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert\end{icloze}
+            \begin{icloze}{1}\frac{x}{2} \sqrt{x^2 \pm a^2} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert\end{icloze}
             + C \\
             (a > 0)
         \end{gathered}
@@ -2446,7 +2449,7 @@
     В чем основная идея доказательства?
 
     \begin{cloze}{1}
-        Оценить \({ \omega_k( 1 / g ) }\) сверху через \({ \omega_k(g) }\) и \({ \underset{x \in [a, b]}{\inf} \left\lvert f(x) \right\rvert     }\).
+        Оценить \({ \omega_k( 1 / f ) }\) сверху через \({ \omega_k(f) }\) и \({ \underset{x \in [a, b]}{\inf} \left\lvert f(x) \right\rvert     }\).
     \end{cloze}
 \end{note}
 
@@ -2984,7 +2987,7 @@
 
 \section{Семинар 31.03.22}
 \begin{note}{f6c10d5634604b8785e6d50a3b4179bb}
-    Пусть \begin{icloze}{3}\({ y = \dfrac{ax + b}{cx + d} \in \mathbb R(x) }\),\: \({ p_1, p_2, \ldots, p_n \in \mathbb Q }\).\end{icloze}
+    Пусть \begin{icloze}{3}\({ y = \frac{ax + b}{cx + d} \in \mathbb R(x) \setminus \mathbb R }\),\: \({ p_1, p_2, \ldots, p_n \in \mathbb Q }\).\end{icloze}
     Тогда интеграл вида
     \[
         \int \begin{icloze}{2}R(x, y^{p_1}, y^{p_2}, \ldots, y^{p_n})\end{icloze}\: dx
@@ -3240,15 +3243,14 @@
     Как в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\)) показать, что \({ \int_{a}^{b} \lambda \varphi \in (A, B) }\)?
 
     \begin{cloze}{1}
-        \({ \int_{a}^{b} \lambda \varphi \in (\inf \varphi, \sup \varphi) }\), а по теорема Вейерштрасса
-        \[
-            \inf \varphi, \sup \varphi \in \langle A, B \rangle.
-        \]
+        \begin{center}
+            \({ \int_{a}^{b} \lambda \varphi \in (\inf \varphi, \sup \varphi) \subset [A, B] }\).
+        \end{center}
     \end{cloze}
 \end{note}
 
 \begin{note}{69bcf26030d34b71839c245e2f0b80ca}
-    Как в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\)) показать, что \({ \int_{a}^{b} \lambda \varphi \in (\inf \varphi, \sup \varphi) }\)?
+    Как в доказательстве неравенства Йенсена (случай \({ \varphi \neq const }\)) показать, что \({ \int_{a}^{b} \lambda \varphi \neq \sup \varphi }\)?
 
     \begin{cloze}{1}
         От противного.
@@ -3264,7 +3266,7 @@
     \begin{icloze}{1}Числа \({ p }\) и \({ q }\)\end{icloze} называются \begin{icloze}{2}сопряжёнными показателями,\end{icloze} если
     \begin{icloze}{1}
         \[
-            \frac{1}{q} + \frac{1}{q} = 1.
+            \frac{1}{p} + \frac{1}{q} = 1.
         \]
     \end{icloze}
 \end{note}
@@ -3272,7 +3274,7 @@
 \begin{note}{40347c04583b4c95b7cac9a0158ee490}
     \subsubsection{<<\begin{icloze}{3}Неравенство Гёльдера для сумм\end{icloze}>>}
 
-    Пусть \begin{icloze}{2}\({ \left\{ a_i \right\}, \left\{ b_i \right\}_{i = 1}^{n} \subset \mathbb R_+ }\),\: \({ p }\) и \({ q }\) --- сопряжённые показатели.\end{icloze}
+    Пусть \begin{icloze}{4}\({ \left\{ a_i \right\}, \left\{ b_i \right\}_{i = 1}^{n} \subset \mathbb R_+ }\),\:\end{icloze} \begin{icloze}{2}\({ p }\) и \({ q }\) --- сопряжённые показатели.\end{icloze}
     Тогда
     \begin{icloze}{1}
         \[
@@ -3531,7 +3533,7 @@
     \[
         \int \begin{icloze}{2}R(x, \sqrt{a^2 - x^2})\end{icloze}\: dx
     \]
-    берутся \begin{icloze}{1}подстановкой \({ a \sin t = x }\) для \({ t \in [-\frac{\pi}{2}, \frac{\pi}{2}] }\).\end{icloze}
+    берутся \begin{icloze}{1}подстановкой \({ a \sin t = x }\)\end{icloze} для \({ t \in \begin{icloze}{3}[-\frac{\pi}{2}, \frac{\pi}{2}]\end{icloze} }\).
 \end{note}
 
 \begin{note}{9c734267d24143218a9ed85452b8fb67}
@@ -3539,7 +3541,7 @@
     \[
         \int \begin{icloze}{2}R(x, \sqrt{a^2  + x^2})\end{icloze}\: dx
     \]
-    берутся \begin{icloze}{1}заменой \({ a \operatorname{sh} t = x }\) для \({ t \in \mathbb R }\).\end{icloze}
+    берутся \begin{icloze}{1}заменой \({ a \operatorname{sh} t = x }\)\end{icloze} для \({ t \in \begin{icloze}{3}\mathbb R\end{icloze} }\).
 \end{note}
 
 \begin{note}{8c5f51e8a73d4e3fbf734d43dd62b423}
@@ -3547,7 +3549,7 @@
     \[
         \int \begin{icloze}{2}R(x, \sqrt{x^2 - a^2})\end{icloze}\: dx
     \]
-    берутся \begin{icloze}{1}заменой \({ a \operatorname{ch} t = x }\) для \({ t \in \mathbb R_+ }\).\end{icloze}
+    берутся \begin{icloze}{1}заменой \({ a \operatorname{ch} t = x }\)\end{icloze} для \({ t \in \begin{icloze}{3}\mathbb R_+\end{icloze} }\).
 \end{note}
 
 \begin{note}{56604ede765d4039b4eba27776ff61d0}
@@ -3555,7 +3557,7 @@
     \[
         \int \begin{icloze}{2}R(\sin x, \cos x)\end{icloze}\: dx
     \]
-    берутся заменой \({ t = \tan \frac{x}{2} }\).
+    берутся заменой \begin{icloze}{1}\({ t = \tan \frac{x}{2} }\).\end{icloze}
 \end{note}
 
 \begin{note}{a709df92e9fe4310a7c2687c5de50054}
@@ -3563,11 +3565,7 @@
 \end{note}
 
 \begin{note}{a6d2e564dd8246af81224496b8f276b0}
-    При взятии интегралов вида
-    \[
-        \int R(\sin x, \cos x)\: dx
-    \]
-    для определённости полагают, что \begin{icloze}{1}\({ x \in (-\pi, \pi) }\).\end{icloze}
+    При взятии интегралов с помощью универсальной тригонометрической подстановки для определённости полагают, что \begin{icloze}{1}\({ x \in (-\pi, \pi) }\).\end{icloze}
 \end{note}
 
 \begin{note}{4baa637b1c464ab9b9b94bf7ef71fcc8}
@@ -3634,15 +3632,7 @@
     \[
         \int \begin{icloze}{2}\sin^{m} x \cdot \cos^{m} x\end{icloze}\: dx, \quad n, m \in \mathbb Q
     \]
-    берётся \begin{icloze}{1}заменой \({ t = \sin x }\)\end{icloze}
-\end{note}
-
-\begin{note}{bf05e9b25c6048dfa9423efbf5f38cad}
-    При взятии интегралов вида
-    \[
-        \int \sin^{m} x \cdot \cos^{m} x\: dx, \quad n, m \in \mathbb Q
-    \]
-    для определённости полагают \begin{icloze}{1}\({ x \in  [-\frac{\pi}{2}, \frac{\pi}{2}] }\).\end{icloze}
+    берутся \begin{icloze}{1}заменой \({ t = \sin x }\)\end{icloze}
 \end{note}
 
 \section{Лекция 30.04.22 (1)}
