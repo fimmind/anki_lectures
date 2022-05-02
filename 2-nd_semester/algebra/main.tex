@@ -1102,7 +1102,7 @@
 
     \begin{cloze}{1}
         \[
-            K_f(\lambda) = \bigcup_{k \geqslant 1}^{} N_{f,k}(\lambda)
+            K_f(\lambda) = \bigcup_{k}^{} N_{f,k}(\lambda)
         \]
     \end{cloze}
 \end{note}
@@ -1908,7 +1908,7 @@
     \begin{multline*}
         \begin{icloze}{2}\operatorname{vol}_{n} \Pi(a_1, \ldots, a_n) \end{icloze}
         \overset{\text{def}}= \\
-        \begin{icloze}{1}\operatorname{vol}_{n - 1} \Pi(a_1, \ldots, a_n) \cdot d(a_n, \mathscr L (a_1, \ldots, a_{n - 1})).\end{icloze}
+        \begin{icloze}{1}\operatorname{vol}_{n - 1} \Pi(a_1, \ldots, a_{n - 1}) \cdot d(a_n, \mathscr L (a_1, \ldots, a_{n - 1})).\end{icloze}
     \end{multline*}
 \end{note}
 
@@ -2015,6 +2015,16 @@
     \begin{icloze}{1}Овеществление  \({ V }\)\end{icloze} обозначается \begin{icloze}{2}\({ V_{\mathbb R} }\).\end{icloze}
 \end{note}
 
+\begin{note}{1502c0b949d740cc9b70927038d34e79}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb C }\),\: \({ f \in \operatorname{End} V }\).
+    \begin{icloze}{1}Рассмотрение \({ f }\) как оператора \({ V_{\mathbb R} \to V_{\mathbb R} }\)\end{icloze} называется \begin{icloze}{2}овеществлением \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{8fd578e0ac514b2c826528aa165fb19a}
+    Пусть \({ V }\) --- линейное пространство над \({ \mathbb C }\),\: \({ f \in \operatorname{End} V }\).
+    \begin{icloze}{2}Овеществление \({ f }\)\end{icloze} обозначается \begin{icloze}{1}\({ f_{\mathbb R} }\).\end{icloze}
+\end{note}
+
 \begin{note}{76444b467049412d855fd6a8bb955fef}
     Пусть \({ V }\) --- линейное пространство над \({ \mathbb C }\),\: \begin{icloze}{3}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\).\end{icloze}
     Тогда \begin{icloze}{1}\({ \left\{ e_j \right\} \cup \left\{ ie_j \right\} }\)\end{icloze} --- \begin{icloze}{2}базис в \({ V_{\mathbb R} }\).\end{icloze}
@@ -2028,14 +2038,20 @@
 \end{note}
 
 \begin{note}{cc3fd18a829c481eb6a18fd4944621b2}
-    Пусть \({ f : V  \to V }\) --- линейный оператор в комплексном пространстве,\: \begin{icloze}{4}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\),\: \({ A = M_e(f) }\).\end{icloze}
-    Тогда в базисе \begin{icloze}{3}\({ \left\{ \tilde e_j \right\}_{j = 1}^{2n} = \left\{ e_1, \ldots, e_n, ie_1, \ldots, ie_n \right\} }\)\end{icloze} имеем
+    Пусть \({ f : V  \to V }\) --- линейный оператор в комплексном пространстве,\: \begin{icloze}{4}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\).\end{icloze}
+    Тогда в базисе
+    \begin{icloze}{3}
+        \[
+            \left\{ \tilde e_j \right\}_{j = 1}^{2n} = \left\{ e_1, \ldots, e_n, ie_1, \ldots, ie_n \right\}
+        \]
+    \end{icloze}
+    имеем
     \[
-        \begin{icloze}{2}M_{\tilde e} (f)\end{icloze} = \begin{icloze}{1}\begin{bmatrix}
+        \begin{icloze}{2}M_{\tilde e} (f_{\mathbb R})\end{icloze} = \begin{icloze}{1}\begin{bmatrix}
             B & -C \\
             C & B
         \end{bmatrix}, \quad
-        \text{где \({ B + iC = A }\)}.\end{icloze}
+        \text{где \({ B + iC = M_{e}(f) }\)}.\end{icloze}
     \]
 \end{note}
 
