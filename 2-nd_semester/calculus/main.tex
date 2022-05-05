@@ -3959,4 +3959,320 @@
     \end{center}
 \end{note}
 
+\section{Лекция 30.04.22 (2)}
+\begin{note}{519087b524d64a7db308cfc813fb90f7}
+    Отображение \({ U : \mathbb R^{n} \to \mathbb R^{n} }\) называется \begin{icloze}{2}движением пространства \({ \mathbb R^{n} }\),\end{icloze} если \begin{icloze}{1}оно сохраняет расстояние между точками.\end{icloze}
+\end{note}
+
+\begin{note}{b1453ceeeece4b72b798234b7da1813d}
+    \begin{icloze}{3}Площадью\end{icloze} называется \begin{icloze}{1}отображение \({ S : \left\{ P \right\} \to [0, +\infty) }\), заданное на некотором классе \({ \left\{ P \right\} }\) подмножеств плоскости,\end{icloze} которое при этом
+    \begin{icloze}{2}
+        \begin{itemize}
+            \item аддитивно;
+            \item нормируемо на прямоугольниках;
+            \item и инвариантно относительно движений.
+        \end{itemize}
+    \end{icloze}
+\end{note}
+
+\begin{note}{47470cb51b9e4e21bb69da097aba5d2b}
+    \begin{icloze}{2}Фигуры из класса подмножеств плоскости, на которых задано отображение площади,\end{icloze} называются \begin{icloze}{1}квадрируемыми фигурами.\end{icloze}
+\end{note}
+
+\begin{note}{18345644cb79468f9ec377bda0dc0a8b}
+    Пусть \begin{icloze}{3}\({ P_1 }\) и \({ P_2 }\) --- квадрируемые фигуры и \({ P_1 \cap P_2 = \emptyset }\).\end{icloze}
+    Тогда \begin{icloze}{1}\({ P_1 \cup P_2 }\) --- квадрируемая фигура\end{icloze} и
+    \begin{icloze}{2}
+        \[
+            S(P_1 \cup P_2) = S(P_1) + S(P_2).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (свойство \begin{icloze}{4}\textbf{аддитивности}\end{icloze} из определения площади)
+    \end{center}
+\end{note}
+
+\begin{note}{76c9c3e2743049ffa9cc6d12f6dc926d}
+    \begin{icloze}{1}Площадь прямоугольника со сторонами \({ a }\) и \({ b }\) равна \({ a b }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (свойство \begin{icloze}{2}\textbf{нормируемости на прямоугольниках}\end{icloze} из определения площади)
+    \end{center}
+\end{note}
+
+\begin{note}{21333bd49d034ec7af62abe5e5b689e7}
+    Пусть \begin{icloze}{3}\({ P }\) --- нормируемая фигура и \({ U }\) --- движение плоскости.\end{icloze}
+    Тогда \begin{icloze}{1}\({ U(P) }\) --- квадрируемая фигура\end{icloze} и
+    \begin{icloze}{2}
+        \[
+            S(U(P)) = S(P).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (свойство \begin{icloze}{4}\textbf{инвариантности относительно движений}\end{icloze} из определения площади)
+    \end{center}
+\end{note}
+
+\begin{note}{b8107a1dd5d24f29a317e003bc6c9181}
+    Пусть \({ P, P_1 }\) --- квадрируемые фигуры, \begin{icloze}{2}\({ P_1 \subset P }\)\end{icloze}.
+    Тогда
+    \begin{icloze}{1}
+        \[
+            S(P_1) \leqslant S(P).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (\begin{icloze}{3}\textbf{монотонность}\end{icloze} площади)
+    \end{center}
+\end{note}
+
+\begin{note}{c493291ddbb94c7682c53a108ac7fce4}
+    В чём ключевая идея в доказательстве монотонности площади?
+
+    \begin{cloze}{1}
+        Представить \({ P }\) как \({ P \cup (P \setminus P_1) }\).
+   \end{cloze}
+\end{note}
+
+\begin{note}{d66f7a47310e439da162bfb5d766daa8}
+    Если квадрируемая фигура \({ P }\) \begin{icloze}{2}содержится в некотором отрезке,\end{icloze} то \begin{icloze}{1}\({ S(P) = 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{4f73cf95243c4ae1a203f5a5cce2a024}
+    Если квадрируемая фигура \({ P }\) содержится в некотором отрезке, то \({ S(P) = 0 }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ P }\) можно заключить в прямоугольник сколь угодно малой площади.
+    \end{cloze}
+\end{note}
+
+\begin{note}{eea6ca09c1c445469a7fafb3cdf7c5c6}
+    Пусть \begin{icloze}{1}\({ P_1, P_2 }\) --- квадрируемые фигуры, \({ S(P_1 \cap P_2) = 0 }\).\end{icloze}
+    Тогда
+    \begin{icloze}{2}
+        \[
+            S(P_1 \cup P_2) = S(P_1) + S(P_2).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (\begin{icloze}{3}\textbf{усиленная аддитивность}\end{icloze} площади)
+    \end{center}
+\end{note}
+
+\begin{note}{430f2d5b1ff841c29c7b3b184b5cd509}
+    В чём основная идея доказательства усиленной аддитивности площади?
+
+    \begin{cloze}{1}
+        Представить \({ P_1 \cup P_2 }\) как \({ (P_1 \setminus P_2) \cup P_2 }\).
+    \end{cloze}
+\end{note}
+
+
+\begin{note}{a8841fa849b54fccb1d646f27b165f0d}
+    \begin{icloze}{3}Объёмом\end{icloze} называется \begin{icloze}{1}отображение \({ V : \left\{ T \right\} \to [0, +\infty) }\), заданное на некотором классе \({ \left\{ T \right\} }\) подмножеств \({ \mathbb R^3 }\),\end{icloze} которое при этом
+    \begin{icloze}{2}
+        \begin{itemize}
+            \item аддитивно;
+            \item нормируемо на прямоугольных параллелепипедах;
+            \item и инвариантно относительно движений.
+        \end{itemize}
+    \end{icloze}
+\end{note}
+
+\begin{note}{7cfda5f9df304d888f1d18b59b9c2805}
+    \begin{icloze}{2}Элементы из класса подмножеств \({ \mathbb R^3 }\), на которых задано отображение площади,\end{icloze} называются \begin{icloze}{1}кубируемыми телами.\end{icloze}
+\end{note}
+
+\begin{note}{0857e7d4cb3949fa8150811b0b482d43}
+    \begin{icloze}{1}Площадь прямоугольного параллелепипеда с рёбрами \({ a, b }\) и \({ c }\) равна \({ a b c }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (свойство \begin{icloze}{2}\textbf{нормируемости на прямоугольных параллелепипедах}\end{icloze} из определения площади)
+    \end{center}
+\end{note}
+
+\begin{note}{5718ba5a41374083b6fcc1508f440aa6}
+    Если кубируемое тело \({ T }\) \begin{icloze}{2}содержится в некотором прямоугольнике,\end{icloze} то \begin{icloze}{1}\({ V(T) = 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{429679b187e449738c280e35b1c167ba}
+    Пусть \begin{icloze}{3}\({ P \subset \mathbb R^2 }\), \({ h \geqslant 0 }\).\end{icloze}
+    \begin{icloze}{1}Множество \({ P \times [0, h] }\), а так же всякий его образ при движении,\end{icloze} называется \begin{icloze}{2}прямым цилиндром с основанием \({ P }\) и высотой \({ h }\).\end{icloze}
+\end{note}
+
+\begin{note}{910d0a9f9f5342c18ec7291c3bcf5a75}
+    Пусть \begin{icloze}{3}\({ P }\) --- квадрируемая фигура, \({ h \geqslant 0 }\).\end{icloze}
+    Тогда \begin{icloze}{1}цилиндр \({ P  \times [0, h] }\) кубируем\end{icloze} и
+    \begin{icloze}{2}
+        \[
+            V(P \times [0, h]) = S(P)h.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{09254f53532b46f2a53c623d390ebb80}
+    Пусть \({ T \subset \mathbb R^3 }\), \begin{icloze}{3}\({ x \in \mathbb R }\).\end{icloze}
+    \begin{icloze}{1}
+        Множество
+        \[
+            \Big\{ (y, z) \in \mathbb R^2 \mid (x, y, z) \in T \Big\}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}сечением множества \({ Т }\) первой координатой \({ x }\).\end{icloze}
+\end{note}
+
+\begin{note}{364174b8e50c41769a37bd8c66b37c2f}
+    Пусть \({ T \subset \mathbb R^3 }\), \({ x \in \mathbb R }\).
+    \begin{icloze}{2}Сечение множества \({ T }\) первой  координатой \({ x }\)\end{icloze} обозначается \begin{icloze}{1}\({ T(x) }\).\end{icloze}
+\end{note}
+
+\begin{note}{897caf9d2c9e4338bb71941389908a3c}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\), \({ t \in [a, b] }\).
+    \begin{icloze}{2}\({ i }\)-я координата вектора \({ \gamma(t) }\)\end{icloze} обозначается \begin{icloze}{1}\({ \gamma_i(t) }\).\end{icloze}
+\end{note}
+
+\begin{note}{bfb45d16ad184797a2996ad01ffcef3e}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\).
+    \begin{icloze}{2}Функция \({ \gamma_i : t \mapsto \gamma_i(t) }\)\end{icloze} называется \begin{icloze}{1}\({ i }\)-й координатной функцией отображения \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{dd1a71a2fed04fe9afe31c7632361372}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\).
+    Отображение \({ \gamma }\) называется \begin{icloze}{2}непрерывным на \({ [a, b] }\),\end{icloze} если \begin{icloze}{1}каждая его координатная функция непрерывна на \({ [a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{b547615a5824427faef3dd11a3b25d6d}
+    \begin{icloze}{2}Путём в \({ \mathbb R^{m} }\)\end{icloze} называется
+    \begin{icloze}{1}
+        непрерывное отображение
+        \[
+            [a, b] \to \mathbb R^{m}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{22935aef61d54e6ca59da2c35faa2d07}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{2}Точка \({ \gamma(a) }\)\end{icloze} называется \begin{icloze}{1}началом пути \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{306f29e0450e438d99bc99ecf7bfc7f6}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{2}Точка \({ \gamma(b) }\)\end{icloze} называется \begin{icloze}{1}концом пути \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{8dd5f0f6a866470697eebadc0467f96f}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{1}Множество \({ \gamma([a, b]) }\)\end{icloze} называется \begin{icloze}{2}носителем пути \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{7d4bcf2b08264eb9ab15db7043690c48}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь \({ \gamma }\) называется \begin{icloze}{2}замкнутым,\end{icloze} если \begin{icloze}{1}\({ \gamma(a) = \gamma(b) }\).\end{icloze}
+\end{note}
+
+\begin{note}{5093bb30b14c48e3b3fadaef0c12afb8}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь \({ \gamma }\) называется \begin{icloze}{2}простым или несамопересекающимся,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \gamma(t_1) = \gamma(t_2) \implies t_1 = t_2 \text{ или } t_1, t_2 \in \left\{ a, b \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d8f2c782ae694dd988da84bcb859ff74}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь \({ \gamma }\) называется \begin{icloze}{2}\({ k }\) раз непрерывно дифференцируемым или \({ k }\)-гладким,\end{icloze} если \begin{icloze}{1}все \({ \gamma_i \in C^{k}[a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{05da85b7f0a84b368ee3c6bef725c8da}
+    Множество всех \({ k }\)-гладких путей \({ [a, b] \to \mathbb R^{m} }\) обозначается
+    \begin{icloze}{1}
+        \[
+            C^{k}[a, b].
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{2915b1df3b9e42158ec7ffe997e98a04}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь \({ \gamma }\) называется \begin{icloze}{2}ку\-соч\-но-гладким,\end{icloze} если \begin{icloze}{1}существует такое разбиение отрезка \({ [a, b] }\), что
+    сужение \({ \gamma }\) на любой из отрезков разбиения --- гладкий путь.\end{icloze}
+\end{note}
+
+\begin{note}{9c342e15007543ee80fa38b9df7f3251}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь, задаваемый формулой
+    \begin{icloze}{1}
+        \[
+            t \mapsto \gamma(a + b - t), \qquad t \in [a, b],
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}противоположным пути \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{f069a263f684409d8ff3e26967cba803}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{2}Путь, противоположный пути \({ \gamma }\),\end{icloze} обозначается \begin{icloze}{1}\({ \gamma^{-} }\).\end{icloze}
+\end{note}
+
+\begin{note}{591160f41fd4454bafe7bb81051e9799}
+    Два пути \({ \gamma_1 : [a, b] \to \mathbb R^{m},\: \gamma_2 : [\alpha, \beta] \to \mathbb R^{m} }\) называются \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}существует строго возрастающая функция \({ u : [a, b] \to [\alpha, \beta] }\) такая, что \({ \gamma_1 = \gamma_2 \circ u }\).\end{icloze}
+\end{note}
+
+\begin{note}{fe470bb82a2b4926851a2edfc7a0e8bb}
+    \begin{icloze}{2}Каждый класс эквивалентности путей в \({ \mathbb R^{m} }\)\end{icloze} называется \begin{icloze}{1}кривой.\end{icloze}
+\end{note}
+
+\begin{note}{cbc0b68e357849a2ad4608976c677898}
+    \begin{icloze}{2}Каждый из представителей класса эквивалентности, составляющего данную кривую,\end{icloze} называется \begin{icloze}{1}параметризацией этой кривой.\end{icloze}
+\end{note}
+
+\begin{note}{466347f360424036ba201c4d9083bb8b}
+    Кривую в пространстве \({ \mathbb R^{m} }\) обозначают \begin{icloze}{1}\({ \left\{ \gamma \right\} }\), где \({ \gamma }\) --- некоторая её параметризация.\end{icloze}
+\end{note}
+
+\begin{note}{1faf6fe6c5d7403c89e416216d3e9699}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{1}Семейство отрезков, соединяющих точки \({ \gamma(\tau_k) }\) и \({ \gamma(\tau_{k + 1}) }\) для \({ \left\{ \tau_k \right\} \in T[a, b] }\),\end{icloze} называют \begin{icloze}{2}ломаной, вписанной в путь \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{4be9559c1fbc4e42804714ea29cdf641}
+    \begin{icloze}{2}Длиной\end{icloze} ломаной называют \begin{icloze}{1}сумму длин составляющих её отрезков.\end{icloze}
+\end{note}
+
+\begin{note}{2da98f4689254999b9cebf8a314d0ea1}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{2}Длиной\end{icloze} пути \({ \gamma }\) называется
+    \begin{icloze}{1}
+        величина
+        \[
+            \underset{\tau \in T[a, b]}{\sup} \ell_\tau,
+        \]
+        где \({ \ell_\tau }\) --- длина ломаной, отвечающей разбиению \({ \tau }\).
+    \end{icloze}
+\end{note}
+
+\begin{note}{60df0982954545929b0ff63a854ca1d8}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    \begin{icloze}{2}Длина пути \({ \gamma }\)\end{icloze} обозначается \begin{icloze}{1}\({ s_\gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{38b6d13987e84d16b683136f8cbc95af}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Путь \({ \gamma }\) называется \begin{icloze}{2}спрямляемым,\end{icloze} если \begin{icloze}{1}\({ s_\gamma < +\infty }\).\end{icloze}
+\end{note}
+
 \end{document}
