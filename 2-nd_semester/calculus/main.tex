@@ -4218,7 +4218,7 @@
 \end{note}
 
 \begin{note}{591160f41fd4454bafe7bb81051e9799}
-    Два пути \({ \gamma_1 : [a, b] \to \mathbb R^{m},\: \gamma_2 : [\alpha, \beta] \to \mathbb R^{m} }\) называются \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}существует строго возрастающая функция \({ u : [a, b] \to [\alpha, \beta] }\) такая, что \({ \gamma_1 = \gamma_2 \circ u }\).\end{icloze}
+    Два пути \({ \gamma_1 : [a, b] \to \mathbb R^{m},\: \gamma_2 : [\alpha, \beta] \to \mathbb R^{m} }\) называются \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}существует строго возрастающая сюръекция \({ u : [a, b] \to [\alpha, \beta] }\) такая, что \({ \gamma_1 = \gamma_2 \circ u }\).\end{icloze}
 \end{note}
 
 \begin{note}{fe470bb82a2b4926851a2edfc7a0e8bb}
@@ -4230,7 +4230,7 @@
 \end{note}
 
 \begin{note}{466347f360424036ba201c4d9083bb8b}
-    Кривую в пространстве \({ \mathbb R^{m} }\) обозначают \begin{icloze}{1}\({ \left\{ \gamma \right\} }\), где \({ \gamma }\) --- некоторая её параметризация.\end{icloze}
+    Кривую в пространстве \({ \mathbb R^{m} }\) обозначают как \begin{icloze}{1}\({ \left\{ \gamma \right\} }\), где \({ \gamma }\) --- некоторая её параметризация.\end{icloze}
 \end{note}
 
 \begin{note}{1faf6fe6c5d7403c89e416216d3e9699}
@@ -4262,6 +4262,195 @@
 \begin{note}{38b6d13987e84d16b683136f8cbc95af}
     Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
     Путь \({ \gamma }\) называется \begin{icloze}{2}спрямляемым,\end{icloze} если \begin{icloze}{1}\({ s_\gamma < +\infty }\).\end{icloze}
+\end{note}
+
+\section{Лекция 07.05.22 (1)}
+\begin{note}{a086c7c565474cc28e5e635aa58fbc68}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    Множество
+    \[
+        \Big\{ \begin{icloze}{2}(x, y)\end{icloze} \mid \begin{icloze}{1}x \in [a, b],\: y \in \Delta_{0, f(x)}\end{icloze} \Big\}
+    \]
+    называется \begin{icloze}{3}подграфиком функции \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{ce2924abf7304cfb861aa52962241aa0}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    \begin{icloze}{1}Подграфик функции \({ f }\)\end{icloze} обозначается \begin{icloze}{2}\({ Q_{f} }\).\end{icloze}
+\end{note}
+
+\begin{note}{938420b690a6454bb2d2f1eea1281a1b}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    Подграфик функции \({ f }\) называется \begin{icloze}{2}криволинейной трапецией,\end{icloze} если \begin{icloze}{1}\({ f \geqslant 0,\: f \in C[a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{8454114fa9b446d495fd999f8d6522b6}
+    Как показать, что подграфик криволинейной трапеции является квадрируемой фигурой?
+
+    \begin{cloze}{1}
+        Принять на веру. (В нашем курсе это не доказывается.)
+    \end{cloze}
+\end{note}
+
+\begin{note}{1bbedb3d7edc4466be39badd75fe893f}
+    Пусть \({ f \in \mathcal R[a, b] }\),\: \begin{icloze}{3}\({ f \geqslant 0 }\).\end{icloze}
+    Тогда \({ \begin{icloze}{2}S(Q_f)\end{icloze} = \begin{icloze}{1}\int_{a}^{b} f\end{icloze} }\).
+\end{note}
+
+\begin{note}{913f7f98ebc549638163e89e85c4e29b}
+    Пусть \({ f \in C[a, b] }\),\: \({ f \geqslant 0 }\).
+    Тогда \({ S(Q_f) = \int_{a}^{b} f }\).
+
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Ограничить значение \({ S(Q_f) }\) через интегральные суммы Дарбу для произвольного разбиения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ce632e26e2cf4cb19eea3f0a4ab3c709}
+    Пусть \({ f \in \mathcal R[a, b] }\).
+    Тогда \({ \begin{icloze}{2}S(Q_f)\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \left\lvert f \right\rvert\end{icloze} }\).
+\end{note}
+
+\begin{note}{b6e7714d201749cd9fd4e7b0bd716384}
+    Пусть \begin{icloze}{2}\({ f, g \in \mathcal R[a, b] }\),\: \({ f \leqslant g }\).\end{icloze}
+    Фигура, заключённая между графиками \({ f }\) и \({ g }\) тоже называется \begin{icloze}{1}криволинейной трапецией.\end{icloze}
+\end{note}
+
+\begin{note}{bc1564f4497f46e687c00d29b41fdb88}
+    Пусть \({ f, g \in \mathcal R[a, b] }\),\: \({ f \leqslant g }\).
+    \begin{icloze}{2}Площадь криволинейной трапеции, заключённой между графиками \({ f }\) и \({ g }\)\end{icloze} равна
+    \begin{icloze}{1}
+        \[
+            \int_{a}^{b} (g - f).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7b57ff51f8f74d7a9e4b6bc05043f32c}
+    Пусть \begin{icloze}{5}\({ 0 < \beta - \alpha \leqslant 2\pi }\),\end{icloze}\: \begin{icloze}{4}\({ f \in C[\alpha, \beta] }\),\: \({ f \geqslant 0 }\).\end{icloze}
+    Множество
+    \[
+        \Big\{ \begin{icloze}{1}(r \cos \varphi, r \sin \varphi)\end{icloze} \mid \begin{icloze}{2}\varphi \in [\alpha, \beta],\: r \in [0, f(\varphi)]\end{icloze} \Big\}
+    \]
+    называется \begin{icloze}{3}криволинейным сектором.\end{icloze}
+\end{note}
+
+\begin{note}{92d60a9a490b49c2af35b60f685c4b05}
+    Пусть \({ 0 < \beta - \alpha \leqslant 2\pi,\: f \in C[\alpha, \beta] }\),\: \({ f \geqslant 0 }\).
+    \begin{icloze}{2}Криволинейный сектор, ограниченный функцией \({ f }\),\end{icloze} обозначается \begin{icloze}{1}\({ \widetilde Q_f }\).\end{icloze}
+\end{note}
+
+\begin{note}{45120420e85a4503b25a5dd34b000e9f}
+    Пусть \({ 0 < \beta - \alpha \leqslant 2\pi,\: f \in C[\alpha, \beta] }\),\: \({ f \geqslant 0 }\).
+    Тогда
+    \[
+        \begin{icloze}{2}S(\widetilde Q_f)\end{icloze} = \begin{icloze}{1}\frac{1}{2} \int_{\alpha}^{\beta} f^2.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{896e566b8a2a4fe7817b2f52377d7fbd}
+    Пусть \({ 0 < \beta - \alpha \leqslant 2\pi,\: f \in C[\alpha, \beta] }\),\: \({ f \geqslant 0 }\).
+    Тогда
+    \[
+        S(\widetilde Q_f) = \frac{1}{2} \int_{\alpha}^{\beta} f^2.
+    \]
+
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Составить суммы, аналогичные суммам Дарбу, но составленные из площадей секторов, а не прямоугольников.
+    \end{cloze}
+\end{note}
+
+\begin{note}{8e9b6c0f033b44bc81a2f3d4bf467a83}
+    При вычислении объёмов с помощью интеграла на фигуру \({ T \subset \mathbb R^3 }\) накладываются следующие ограничения:
+    \begin{itemize}
+        \item{} \begin{icloze}{1}\({ \exists [a, b] \subset \mathbb R \quad \forall x \not\in [a, b] \quad T(x) = \emptyset }\);\end{icloze}
+        \item{} \begin{icloze}{2}\({ \forall x \in [a, b] }\) \quad \({ T(x) }\) --- квадрируемая фигура с площадью \({ S(x) }\), причём \({ S \in C[a, b] }\);\end{icloze}
+        \item{}
+            \begin{icloze}{3}
+                \({ \forall }\) отрезка \({ \Delta \subset [a, b] }\) \quad \({ \exists \xi_\Delta^*, \xi_\Delta^{**} \in \Delta \quad \forall x \in \Delta }\)
+                \[
+                    T(\xi_\Delta^*) \subset T(x) \subset T(\xi_\Delta^{**}).
+                \]
+            \end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{a7e13633747d4baaad4c2c6b3fa89048}
+    Пусть \({ T \subset \mathbb R^3 }\) удовлетворяет условиям для вычисления объёма с помощью интеграла.
+    Тогда
+    \[
+        \begin{icloze}{2}V(T)\end{icloze} = \begin{icloze}{1}\int_{a}^{b} S.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{bd53f21dcde04ea0b85cb5af9f3591a3}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    \begin{icloze}{2}Тело вращения подграфика \({ f }\) вокруг оси \({ Ox }\)\end{icloze} обозначается \begin{icloze}{1}\({ T_f }\).\end{icloze}
+\end{note}
+
+\begin{note}{ba286a05719545d7989f5b131598cf49}
+    Пусть \begin{icloze}{3}\({ f : C[a, b] }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}V(T_f)\end{icloze} = \begin{icloze}{1}\pi \int_{a}^{b} f^2.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{081bd87639824313a4c4b6ea6161ff62}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\),\: \begin{icloze}{3}все \({ \gamma_i }\) --- дифференцируемые функции.\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\gamma'\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(\gamma'_m, \ldots, \gamma'_m).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{78afc1de7241408b95a68a8f5ed2006a}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lVert \gamma \right\rVert\end{icloze} = \begin{icloze}{1}\sqrt{\sum_{i}^{} \gamma_i^2}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0fa2547514204ecfb3eac95208adab8e}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- путь в \({ \mathbb R^{m} }\).
+    Тогда, если \begin{icloze}{4}\({ \gamma \in C^{1}[a, b] }\),\end{icloze} то \begin{icloze}{2}\({ \gamma }\) спрямляем\end{icloze} и
+    \({ \begin{icloze}{3}s_\gamma\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \left\lVert \gamma' \right\rVert\end{icloze} }\).
+\end{note}
+
+\section{Лекция 07.05.22 (2)}
+\begin{note}{ddc3406fefdc4dccb10eeb102957c8ce}
+    Пусть \begin{icloze}{2}\({ f \in C[a, b] }\).\end{icloze}
+    При рассмотрении \({ \Gamma_f }\) как пути, полагают
+    \[
+        \Gamma_f (t) = \begin{icloze}{1}(t, f(t)), \quad t \in [a, b].\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c2ae0466ac724aa8b74a18651e9b01b8}
+    Пусть \begin{icloze}{3}\({ f \in C^{1}[a, b] }\).\end{icloze} Тогда путь \begin{icloze}{4}\({ \Gamma_f }\) спрямляем\end{icloze} и
+    \[
+        \begin{icloze}{2}s_{\Gamma_f}\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \sqrt{1 + f^2}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d7845b70c0774392b73e28626dab39f8}
+    Пусть \begin{icloze}{3}\({ f \in C^{1}[\alpha, \beta] }\), \({ f \geqslant 0 }\).\end{icloze}
+    Выражение ``\begin{icloze}{2}путь \({ \gamma }\) задаётся в полярных координатах равенством \({ r = f(\theta) }\),\: \({ \theta \in [\alpha, \beta] }\)\end{icloze}'' означает, что
+    \[
+        \gamma(\theta) = \begin{icloze}{1}(f(\theta) \cos \theta, f(\theta) \sin \theta), \quad \theta \in [\alpha, \beta].\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{58dcc2f7e9c04a209117dce56a3fdacb}
+    Пусть \({ f \in C^{1}[\alpha, \beta] }\), \({ f \geqslant 0 }\), путь \({ \gamma }\) задаётся \begin{icloze}{2}в полярных координатах неравенством \({ r = f(\theta) }\),\: \({ \theta \in [\alpha, \beta] }\).\end{icloze} Тогда
+    \[
+        \begin{icloze}{3}s_\gamma\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \sqrt{f^2 + (f')^2}.\end{icloze}
+    \]
 \end{note}
 
 \end{document}
