@@ -4509,7 +4509,7 @@
 \begin{note}{c2ae0466ac724aa8b74a18651e9b01b8}
     Пусть \begin{icloze}{3}\({ f \in C^{1}[a, b] }\).\end{icloze} Тогда путь \begin{icloze}{4}\({ \Gamma_f }\) спрямляем\end{icloze} и
     \[
-        \begin{icloze}{2}s_{\Gamma_f}\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \sqrt{1 + f^2}.\end{icloze}
+        \begin{icloze}{2}s_{\Gamma_f}\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \sqrt{1 + (f')^2}.\end{icloze}
     \]
 \end{note}
 
@@ -4526,6 +4526,18 @@
     \[
         \begin{icloze}{3}s_\gamma\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \sqrt{f^2 + (f')^2}.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{25add1ae8161404b8e2dbf2e360cb9b2}
+    Пусть \({ f \in C^{1}[\alpha, \beta] }\), \({ f \geqslant 0 }\), путь \({ \gamma }\) задаётся в полярных координатах неравенством \({ r = f(\theta) }\),\: \({ \theta \in [\alpha, \beta] }\). Тогда
+    \[
+        s_\gamma = \int_{a}^{b} \sqrt{f^2 + (f')^2}.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Явным образом показать, что \({ \left\lVert \gamma' \right\rVert = \sqrt{f^2 + (f')^2} }\).
+    \end{cloze}
 \end{note}
 
 \end{document}
