@@ -4281,7 +4281,7 @@
 
 \begin{note}{938420b690a6454bb2d2f1eea1281a1b}
     Пусть \({ f : [a, b] \to \mathbb R }\).
-    Подграфик функции \({ f }\) называется \begin{icloze}{2}криволинейной трапецией,\end{icloze} если \begin{icloze}{1}\({ f \geqslant 0,\: f \in C[a, b] }\).\end{icloze}
+    \begin{icloze}{3}Подграфик\end{icloze} функции \({ f }\) называется \begin{icloze}{2}криволинейной трапецией,\end{icloze} если \begin{icloze}{1}\({ f \geqslant 0,\: f \in C[a, b] }\).\end{icloze}
 \end{note}
 
 \begin{note}{8454114fa9b446d495fd999f8d6522b6}
@@ -4311,6 +4311,27 @@
 \begin{note}{ce632e26e2cf4cb19eea3f0a4ab3c709}
     Пусть \({ f \in \mathcal R[a, b] }\).
     Тогда \({ \begin{icloze}{2}S(Q_f)\end{icloze} = \begin{icloze}{1}\int_{a}^{b} \left\lvert f \right\rvert\end{icloze} }\).
+\end{note}
+
+\begin{note}{381eae56ef164e66acf7fefebf662c4a}
+    Пусть \({ f \in C[a, b] }\),\: \({ f \geqslant 0 }\).
+    Как соотносятся величины \({ S(Q_f) }\) и \({ S(Q_f \setminus \Gamma_f) }\)?
+
+    \begin{cloze}{1}
+        Они равны.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4cde7099bf1543dabb6d8f15b462ae9e}
+    Пусть \({ f \in C[a, b] }\),\: \({ f \geqslant 0 }\).
+    Откуда следует, что
+    \[
+        S(Q_f) = S(Q_f \setminus \Gamma_f)?
+    \]
+
+    \begin{cloze}{1}
+        \({ S(\Gamma_f) = 0 }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{b6e7714d201749cd9fd4e7b0bd716384}
@@ -4367,7 +4388,7 @@
 \begin{note}{8e9b6c0f033b44bc81a2f3d4bf467a83}
     При вычислении объёмов с помощью интеграла на фигуру \({ T \subset \mathbb R^3 }\) накладываются следующие ограничения:
     \begin{itemize}
-        \item{} \begin{icloze}{1}\({ \exists [a, b] \subset \mathbb R \quad \forall x \not\in [a, b] \quad T(x) = \emptyset }\);\end{icloze}
+        \item{} \begin{icloze}{1}\({ \exists a, b \in \mathbb R \quad T \subset [a, b] \times \mathbb R^2 }\)\end{icloze}
         \item{} \begin{icloze}{2}\({ \forall x \in [a, b] }\) \quad \({ T(x) }\) --- квадрируемая фигура с площадью \({ S(x) }\), причём \({ S \in C[a, b] }\);\end{icloze}
         \item{}
             \begin{icloze}{3}
@@ -4387,6 +4408,16 @@
     \]
 \end{note}
 
+\begin{note}{1470b2fb4bbc4e3f8bc341fee4c90bc8}
+    Пусть \({ T \subset \mathbb R^3 }\) удовлетворяет условиям для вычисления объёма с помощью интеграла.
+    Тогда \({ V(T) = \int_{a}^{b} S }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Составить суммы Дарбу из объёмов цилиндров.
+    \end{cloze}
+\end{note}
+
 \begin{note}{bd53f21dcde04ea0b85cb5af9f3591a3}
     Пусть \({ f : [a, b] \to \mathbb R }\).
     \begin{icloze}{2}Тело вращения подграфика \({ f }\) вокруг оси \({ Ox }\)\end{icloze} обозначается \begin{icloze}{1}\({ T_f }\).\end{icloze}
@@ -4398,6 +4429,50 @@
     \[
         \begin{icloze}{2}V(T_f)\end{icloze} = \begin{icloze}{1}\pi \int_{a}^{b} f^2.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{0a669c3f221f45deb163b883985df4d8}
+    Пусть \({ f : [a, b] \to \mathbb R }\).
+    \begin{icloze}{2}Тело вращения подграфика \({ f }\) вокруг оси \({ Oy }\)\end{icloze} обозначается \begin{icloze}{1}\({ T'_f }\).\end{icloze}
+\end{note}
+
+\begin{note}{f584d6707a1844349499bd55a4a9ea9c}
+    Пусть \({ f \in C[a, b] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}V(T'_f)\end{icloze} = \begin{icloze}{1}2\pi \int_{a}^{b} x f(x)\: dx.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{28b42e81a08c4032a3b4ba6c93022f1f}
+    Пусть \({ f \in C[a, b] }\).
+    Тогда \({ V(T'_f) = 2\pi \int_{a}^{b} x f(x)\: dx. }\)
+    В чём основная идея доказательства (на интуитивном уровне)?
+
+    \begin{cloze}{1}
+        Интегрировать по ``площадям'' сечений цилиндрами, построенными на окружностях радиуса \({ x }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{37ce05b3e5534f20b8ea802974f37e7d}
+    Пусть \begin{icloze}{4}\({ f : [\alpha, \beta] \to \mathbb R_+ }\),\end{icloze}\: \begin{icloze}{3}\({ -\frac{\pi}{2} \leqslant \alpha < \beta \leqslant \frac{\pi}{2} }\).\end{icloze}
+    \begin{icloze}{2}Тело вращения криволинейного сектора, ограниченного функцией \({ f }\), вокруг оси \({ Oy }\)\end{icloze} обозначается \begin{icloze}{1}\({ \widetilde T_f }\).\end{icloze}
+\end{note}
+
+\begin{note}{f3588c46da91488b9544a0278ca24931}
+    Пусть \({ f : [\alpha, \beta] \to \mathbb R_+ }\) непрерывна,\: \({ -\frac{\pi}{2} \leqslant \alpha < \beta \leqslant \frac{\pi}{2} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}V(\widetilde T_f)\end{icloze} = \begin{icloze}{1}\frac{2\pi}{3} \int_{\alpha}^{\beta} f^3(\theta) \cos \theta\: d\theta.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{752d8f77f5274d05967dca413b1c9472}
+    Будут ли верны интегральные формулы площадей и объёмов для неограниченных множеств?
+
+    \begin{cloze}{1}
+        Да, но выражающие их интегралы будут несобственными.
+    \end{cloze}
 \end{note}
 
 \begin{note}{081bd87639824313a4c4b6ea6161ff62}
