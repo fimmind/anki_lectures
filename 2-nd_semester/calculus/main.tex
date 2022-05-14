@@ -4540,4 +4540,511 @@
     \end{cloze}
 \end{note}
 
+\section{14.05.22 (1)}
+\begin{note}{db30293ae2e34ccaad4737c4f196a676}
+    \begin{icloze}{2}Отображение \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\)\end{icloze} называется \begin{icloze}{1}отображением \({ n }\) вещественных переменных.\end{icloze}
+\end{note}
+
+\begin{note}{09a496c79f5646e49e9cbe8c39bc708e}
+    \begin{icloze}{2}Отображение \({ E \subset \mathbb R^{n} \to \mathbb R }\)\end{icloze} называется \begin{icloze}{1}функцией \({ n }\) вещественных переменных.\end{icloze}
+\end{note}
+
+\begin{note}{50d467eacead432fb753be92cd3e3d5b}
+    Пусть \({ x \in \mathbb R^{n} }\). \begin{icloze}{2}\({ k }\)-я координата точки \({ x }\)\end{icloze} обозначается \begin{icloze}{1}\({ x_k }\).\end{icloze}
+\end{note}
+
+\begin{note}{82049479525249098f11edd6b86662f5}
+    \begin{icloze}{2}Евклидовой нормой в \({ \mathbb R^{n} }\)\end{icloze} называется \begin{icloze}{1}функция
+    \[
+        \mathbb R^{n} \to \mathbb R_+, \quad x \mapsto \sqrt{\sum_{i=1}^{n} x_i^2}.
+    \]\end{icloze}
+\end{note}
+
+\begin{note}{0820d783bfc7483c983f2acd41905870}
+    Пусть \({ x \in \mathbb R^{n} }\). \begin{icloze}{2}Евклидова норма вектора \({ x }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \left\lVert x \right\rVert.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f7962d62d97a4e45966cfbd5258d7be7}
+    Пусть \({ x \in \mathbb R^{n},\: \lambda \in \mathbb R }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lVert \lambda x \right\rVert\end{icloze} = \begin{icloze}{1}\left\lvert \lambda \right\rvert \cdot \left\lVert x \right\rVert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{963d46ce6e6740c2ada2ae1586e864c8}
+    Пусть \({ x, y \in \mathbb R^{n} }\). Тогда
+    \begin{icloze}{1}\({
+        \left\lVert x - y \right\rVert \geqslant \big\lvert \lVert x \rVert - \lVert y \rVert \big\rvert
+    }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (обратное неравенство треугольника для норм)
+    \end{center}
+\end{note}
+
+\begin{note}{197c20e358c34941810836f09234bb95}
+    Пусть \({ x \in \mathbb R^{n},\: k \in [1 : n] }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lvert x_k \right\rvert\end{icloze} \begin{icloze}{4}\leqslant\end{icloze} \begin{icloze}{1}\left\lVert x \right\rVert\end{icloze} \begin{icloze}{4}\leqslant\end{icloze} \begin{icloze}{3}\sqrt{n} \cdot \underset{i \in [1 : n]}{\max} \left\lvert x_i \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{56e8be63cc924fadaa65ad1a43d24b40}
+    \[
+        \begin{icloze}{2}\overline{\mathbb R^{n}}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\mathbb R^{n} \cup \left\{ \infty \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2d0130af589f4bc8be65d79c610c9313}
+    Пусть \({ \begin{icloze}{3}\delta > 0,\end{icloze}\: a \in \mathbb R^{n} }\). Тогда
+    \[
+        \begin{icloze}{2}V_{\delta}(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ x \in \mathbb R^{n} \mid \left\lVert x - a \right\rVert < \delta \right\}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3bdf65ade40048daae6226ad13c91370}
+    Пусть \({ \begin{icloze}{3}\delta > 0,\end{icloze}\: a \in \mathbb R^{n} }\). Тогда
+    \[
+        \begin{icloze}{2}\dot V_{\delta}(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}V_{\delta}(a) \setminus \left\{ a \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a872bc2223d54bab976847e9cf14cc91}
+    Пусть \begin{icloze}{3}\({ \delta > 0 }\).\end{icloze} Тогда \begin{icloze}{1}множество \({ \left\{ x \in \mathbb R^{n} \mid \left\lVert x \right\rVert > \delta \right\} }\)\end{icloze} называется \begin{icloze}{2}\({ \delta }\)-окрестностью бесконечно удалённой точки в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{2a6f33f0df8d4fd78ba6c02bccbc4f26}
+    Пусть \({ \delta > 0 }\). Тогда \begin{icloze}{2}\({ \delta }\)-окрестность бесконечно удалённой точки в \({ \mathbb R^{n} }\)\end{icloze} обозначается \begin{icloze}{1}\({ V_{\delta}(\infty) }\).\end{icloze}
+\end{note}
+
+\begin{note}{4180d71589654850ba33a99a79e3a0d0}
+    Пусть \({ \delta > 0 }\). Тогда в \begin{icloze}{2}\({ \mathbb R^{n} }\)\end{icloze} полагаем \({ \dot V_{\delta}(\infty) \overset{\text{def}}= \begin{icloze}{1}V_{\delta}(\infty)\end{icloze} }\).
+\end{note}
+
+\begin{note}{cf41f3caf0a74d8392d85139c9968c07}
+    В общем случае окрестности точек в \({ \mathbb R^{n} }\) так же ещё называют \begin{icloze}{1}открытыми \({ n }\)-мерными шарами.\end{icloze}
+\end{note}
+
+\begin{note}{bd99061f38de4188b72bb2a2fe1f68e8}
+    Пусть \({ \delta >  0 }\). Тогда множество \begin{icloze}{1}\({ V_{\delta}(\infty) \cup \left\{ \infty \right\} }\)\end{icloze} называется \begin{icloze}{2}окрестностью бесконечно  удалённой точки в \({ \overline{\mathbb R^{n}} }\).\end{icloze}
+\end{note}
+
+\begin{note}{40f1bd82241c4c7d8c8f327f0fd4f80e}
+    Пусть \({ a \in \mathbb \overline{\mathbb R^{n}} }\),\: \({ \delta_1, \delta_2 > 0 }\).
+    Тогда
+    \[
+        V_{\delta_1}(a) \cap V_{\delta_2}(a) = \begin{icloze}{1}V_{\min \left\{ \delta_1, \delta_2 \right\}}(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c295589ac6fd4a91b7607784a4f6b94b}
+    Пусть \({ \delta_1, \delta_2 > 0 }\).
+    Тогда в пространстве \({ \mathbb R^{n} }\)
+    \[
+        V_{\delta_1}(\infty) \cap V_{\delta_2}(\infty) = \begin{icloze}{1}V_{\max \left\{ \delta_1, \delta_2 \right\}}(\infty).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{be9be70ce56541a69bfeec3663baa83f}
+    Пересечение двух окрестностей одной и той же точки из \({ \overline{\mathbb R^{n}} }\) --- тоже \begin{icloze}{1}окрестность этой точки.\end{icloze}
+\end{note}
+
+\begin{note}{1eab3119b89e42c7bb0b893175654a5b}
+    Пусть \({ a, b \in \overline{\mathbb R^{n}},\: \begin{icloze}{2}a \neq b\end{icloze} }\).
+    Тогда существуют \begin{icloze}{1}такие окрестности \({ V_{\delta_1}(a), V_{\delta_2}(b) }\), что \({ V_{\delta_1}(a) \cap V_{\delta_2}(b) = \emptyset }\).\end{icloze}
+\end{note}
+
+\begin{note}{91077edbd0ea4f8b85dd14c5a192ff70}
+    Пусть \({ a, b \in \overline{\mathbb R^{n}},\: a \neq b }\).
+    Тогда существуют такие окрестности \({ V_{\delta_1}(a), V_{\delta_2}(b) }\), что \({ V_{\delta_1}(a) \cap V_{\delta_2}(b) = \emptyset }\).
+    Какие два случая рассматриваются в доказательстве?
+
+    \begin{cloze}{1}
+        1. \({ a, b \neq \infty }\),\: 2. \({ a }\) или \({ b = \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8409f167cccb4e7988de4cebf04f3fc9}
+    Пусть \({ a, b \in \overline{\mathbb R^{n}},\: a \neq b }\).
+    Тогда существуют такие окрестности \({ V_{\delta_1}(a), V_{\delta_2}(b) }\), что \({ V_{\delta_1}(a) \cap V_{\delta_2}(b) = \emptyset }\).
+    В чём основная идея доказательства для \({ a, b \neq \infty }\)?
+
+    \begin{cloze}{1}
+        Взять \({ \delta_1 = \delta_2 = \frac{\left\lVert a - b \right\rVert}{2} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7eb5b28213054f63a30990a588f653c9}
+    Пусть \({ a, b \in \overline{\mathbb R^{n}},\: a \neq b }\).
+    Тогда существуют такие окрестности \({ V_{\delta_1}(a), V_{\delta_2}(b) }\), что \({ V_{\delta_1}(a) \cap V_{\delta_2}(b) = \emptyset }\).
+    В чём основная идея доказательства для \({ b = \infty }\)?
+
+    \begin{cloze}{1}
+        Для произвольного \({ \delta_1 > 0 }\) положить \({ \delta_2 = \left\lVert a \right\rVert + \delta_1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{6298966bfb9a436cafb65c0ac1f3b462}
+    Пусть \({ x, y \in \mathbb R^{n} }\).
+    Тогда \({ \displaystyle \begin{icloze}{2}x \cdot y\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sum_{i=1}^{n} x_i y_i\end{icloze} }\).
+\end{note}
+
+\begin{note}{6a3a01e6983e4a8cb972e4752f7aaa36}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to  \mathbb R^{m} }\).
+    Тогда
+    \[
+        (f + g)(x) \overset{\text{def}}= \begin{icloze}{1}f(x) + g(x).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{431a63ea7a8f400f997c1789317d2efc}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{2}\({ \lambda : E \to \mathbb R }\).\end{icloze}
+    Тогда
+    \[
+        (\lambda f)(x) \overset{\text{def}}= \begin{icloze}{1}\lambda(x) f(x).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{fe02a3d518ad41bcaa8eab77a41edcd0}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to  \mathbb R^{m} }\).
+    Тогда
+    \[
+        (f \cdot g)(x) \overset{\text{def}}= \begin{icloze}{1}f(x) \cdot g(x).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{06ea693e03bf49faa4cea59e4de68b73}
+    Чем определения предела последовательности в \({ \mathbb R^{n} }\) отличается от такового для \({ \mathbb R }\)?
+
+    \begin{cloze}{1}
+        Вместо модулей используется евклидова норма.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e7496a01680c4188ab2b77d49a956769}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\lim_{k \to \infty} x^{k} = a\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}\lim_{k \to \infty} \lVert x^{k} - a \rVert = 0.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах вещественных последовательностей)
+    \end{center}
+\end{note}
+
+\begin{note}{346e3e4f67cb4742a0a8c03f522ac66d}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\lim_{k \to \infty} x^{k} = \infty\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}\lim_{k \to \infty} \lVert x^{k} \rVert = +\infty.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах вещественных последовательностей)
+    \end{center}
+\end{note}
+
+\begin{note}{181e5459680740b4b4bb06e2b4204fba}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ a, b \in \begin{icloze}{2}\overline{\mathbb R^{n}}\end{icloze} }\).
+    Тогда
+    \[
+        x^{k} \underset{k \to \infty}\longrightarrow a \: \land \: x^{k} \underset{k \to \infty}\longrightarrow b \implies \begin{icloze}{1}a = b.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a1f21b775a3b4ee5b487baccd44d3d6e}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ a, b \in \overline{\mathbb R^{n}} }\).
+    Тогда
+    \[
+        x^{k} \underset{k \to \infty}\longrightarrow a \: \land \: x^{k} \underset{k \to \infty}\longrightarrow b \implies a = b.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        От обратного и использовать существование непересекающихся окрестностей \({ V(a) }\) и \({ V(b) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a2015de5744c4595a00a42a327399672}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \begin{icloze}{3}\({ x^{k} \to a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \[
+        \lim_{k \to \infty} \begin{icloze}{2}\lVert x^{k} \rVert\end{icloze} = \begin{icloze}{1}\lVert a \rVert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{635954ced2b945f795fa2415739e634c}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ x^{k} \to a \in \mathbb R^{n} }\).
+    Тогда \({ \displaystyle \lim_{k \to \infty} \lVert x^{k} \rVert = \lVert a \rVert }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Обратное неравенство треугольника для \({ \big\lvert \lVert x^{k} \rVert - \lVert a \rVert \big\rvert }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{398fb78214164adf83ccec280065c505}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ i \in [1 : n] }\).
+    \begin{icloze}{1}Последовательность \({ \left\{ x_i^{k} \right\} }\)\end{icloze} называется \begin{icloze}{2}\({ i }\)-й координатной последовательностью последовательности \({ \left\{ x^{k} \right\} }\).\end{icloze}
+\end{note}
+
+\begin{note}{435eee779e914a3b8c6aaa95f6a763e7}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ \displaystyle \lim_{k \to \infty} x^{k} = a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда\end{icloze} \({ \forall i \in [1 : n] }\) имеем
+    \begin{icloze}{1}
+        \[
+            \displaystyle \lim_{k \to \infty} x_i^{k} = a_i.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{3fa906784d584b6e8ffd965de8a6322d}
+    В чём основная идея в доказательстве теоремы о покоординатной сходимости последовательности в \({ \mathbb R^{n} }\) (необходимость)?
+
+    \begin{cloze}{1}
+        Использовать неравенство \({ \left\lvert y_k \right\rvert \leqslant \left\lVert y \right\rVert }\) для вектора
+        \[
+            y = x^{k} - a.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{40c5520ef19c4bb39e271e243477ccd9}
+    В чём основная идея в доказательстве теоремы о покоординатной сходимости последовательности в \({ \mathbb R^{n} }\) (достаточность)?
+
+    \begin{cloze}{1}
+        Показать, что \({ \left\lVert x^{k} - a \right\rVert \to 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3fd0844b01144973a767e49a2c96e78e}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Если \({ \displaystyle \lim_{k \to \infty} x^{k} = \infty }\), то координатные последовательности \({ \left\{ x_i^{k} \right\} }\) могут \begin{icloze}{1}не иметь предела.\end{icloze}
+\end{note}
+
+\begin{note}{33857f75ca574dc4808d8d21766be6fe}
+    Пусть \({ \left\{ x^{k} \right\}, \left\{ y^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),
+    \[
+        x^{k} \to a \in \begin{icloze}{2}\mathbb R^{n},\end{icloze}\: y^{k} \to b \in \begin{icloze}{2}\mathbb R^{n}.\end{icloze}
+    \]
+    Тогда
+    \[
+        (x^{k} +  y^{k}) \to \begin{icloze}{1}a + b.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0d43a16117a1444dba74a29d0ca712b4}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\), \({ \left\{ \lambda_k \right\}_{k = 1}^{\infty} \subset \mathbb R }\),
+    \[
+        x^{k} \to a \in \begin{icloze}{2}\mathbb R^{n},\end{icloze}\: \lambda_k \to \lambda \in \begin{icloze}{2}\mathbb R.\end{icloze}
+    \]
+    Тогда
+    \[
+        \lambda_k x^{k} \to \begin{icloze}{1}\lambda a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{daf93a77a6d5452c882b4ec1bc279fc6}
+    Пусть \({ \left\{ x^{k} \right\}, \left\{ y^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),
+    \[
+        x^{k} \to a \in \begin{icloze}{2}\mathbb R^{n},\end{icloze}\: y^{k} \to b \in \begin{icloze}{2}\mathbb R^{n}.\end{icloze}
+    \]
+    Тогда
+    \[
+        x^{k} \cdot y^{k} = \begin{icloze}{1}a \cdot b.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{abf40faf2fc04bae88f96f229e5991d1}
+    В чём основная идея в доказательстве теоремы об арифметических операциях над пределами последовательностей в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Использовать покоординатную сходимость.
+    \end{cloze}
+\end{note}
+
+\begin{note}{84e580fe871e4a9099a8b893a7f7ff11}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ \left\{ x^{k_i} \right\} }\) --- подпоследовательность \({ \left\{ x^{k} \right\} }\),\: \begin{icloze}{2}\({ a \in \overline{\mathbb R^{n}} }\).\end{icloze}
+    Тогда
+    \[
+        \lim_{k \to \infty} x^{k} = a \implies \begin{icloze}{1}\lim_{i \to \infty} x^{k_i} = a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b3b121ad972c4c2eb01797117a795d2b}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \({ \left\{ x^{k_i} \right\} }\) --- подпоследовательность \({ \left\{ x^{k} \right\} }\),\: \begin{icloze}{2}\({ a \in \overline{\mathbb R^{n}} }\).\end{icloze}
+    Тогда
+    \[
+        \lim_{k \to \infty} x^{k} = a \implies \begin{icloze}{1}\lim_{i \to \infty} x^{k_i} = a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f3fc5ed889ed42c3ab9b94ad0dc2c4b6}
+    В чём основная идея доказательства теоремы о пределе подпоследовательности в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Свести к пределу подпоследовательности числовой последовательности.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2cc6bf0ec4b744219216b8f7b9131c13}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Множество \({ E }\) называется \begin{icloze}{2}ограниченным,\end{icloze} если \begin{icloze}{1}\({ E \subset V_{\delta}(0) }\) для некоторого конечного \({ \delta > 0 }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах окрестностей)
+    \end{center}
+\end{note}
+
+\begin{note}{3fdaf39b9f6849d3a7c1c0b77e0b2100}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Множество \({ E }\) называется \begin{icloze}{2}ограниченным,\end{icloze} если \begin{icloze}{1}множество \({ \left\{ \left\lVert x \right\rVert \mid x \in E \right\} }\) ограничено.\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах норм)
+    \end{center}
+\end{note}
+
+\begin{note}{ef35bf7807bf49a4953be0fa863fa66a}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\). Отображение \({ f }\) называется \begin{icloze}{2}ограниченным,\end{icloze} если \begin{icloze}{1}множество его значений ограничено.\end{icloze}
+\end{note}
+
+\begin{note}{c361e11e60c0426c9096ce58059852fe}
+    Пусть \({ E \subset \mathbb R^{n} }\). Тогда \begin{icloze}{2}\({ E }\) ограничено\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ \underset{x \in E}{\sup} \left\lVert x \right\rVert < +\infty }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах \({ \sup }\))
+    \end{center}
+\end{note}
+
+\begin{note}{55039713f61943458ec789dbb6b145d8}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ j \in [1 : n] }\).
+    \begin{icloze}{1}Множество \({ \left\{ x_j \mid x \in E \right\} }\)\end{icloze} называется \begin{icloze}{2}проекцией \({ E }\) на \({ j }\)-ю ось.\end{icloze}
+\end{note}
+
+\begin{note}{558a15d4b2d8461a85f9900f08c2c24e}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ j \in [1 : n] }\).
+    \begin{icloze}{1}Проекция \({ E }\) на \({ j }\)-ю ось\end{icloze} обозначается \begin{icloze}{2}\({ E_j }\).\end{icloze}
+\end{note}
+
+\begin{note}{5f2ada96a96d40f288abf00365fd2a8f}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Как ограниченность \({ E }\) связана с проекциями \({ E }\) на координатные оси?
+
+    \begin{cloze}{1}
+        Ограниченность \({ E }\) эквивалентна ограниченности каждой из его проекций \({ E_j }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f854719bde1446feb7b76aecad168192}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда ограниченность \({ E }\) эквивалентна ограниченности каждой из его проекций \({ E_j }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Непосредственно следует из оценки
+        \[
+            \left\lvert x_j \right\rvert \leqslant \left\lVert x \right\rVert \leqslant \sqrt{n} \cdot \underset{i}{\max} \left\lvert x_i \right\rvert.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{3869f37cb0f24c2184567f8561a31e1f}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\).
+    Тогда \({ f }\) ограничено тогда и только тогда, когда \begin{icloze}{1}каждая из его координатных функций ограничена\end{icloze}.
+
+    \begin{center}
+        \tiny
+        (в терминах координатных функций)
+    \end{center}
+\end{note}
+
+\begin{note}{b7487016c4894d77a55418ebce7c8fc2}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\).
+    Тогда \({ f }\) ограничено тогда и только тогда, когда каждая из его координатных функций ограничена.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Множество \({ f(E) }\) ограничено \({ \iff }\) каждая из его проекций \({ f(E)_j }\) ограничена, но \({ f(E)_j = f_j(E) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{229fec40da6c48ceac33727eebf79e42}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда
+    \begin{center}
+        \({ \left\{ x^{k} \right\} }\) ограничена \({ \iff }\) \begin{icloze}{1}\({ \left\{ x_i^{k} \right\} }\) ограничена \({ \forall i }\).\end{icloze}
+    \end{center}
+
+    \begin{center}
+        \tiny
+        (в терминах координатных функций)
+    \end{center}
+\end{note}
+
+\begin{note}{8166d65b01864fd88374f97ce75c3eda}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда
+    \begin{center}
+        \({ \left\{ x^{k} \right\} }\) ограничена \({ \iff }\) \begin{icloze}{1}\({ \left\{ x_i^{k} \right\} }\) ограничена \({ \forall i }\).\end{icloze}
+    \end{center}
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Частный случай аналогичной теоремы для произвольных отображений.
+    \end{cloze}
+\end{note}
+
+\begin{note}{fec8d0a7bf5b47ecb36926b61a1818fb}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда если \({ \left\{ x^{k} \right\} }\) сходится, то она \begin{icloze}{1}ограничена\end{icloze}.
+\end{note}
+
+\begin{note}{7ac0f2188c6d4b72996dba94ed321553}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда если \({ \left\{ x^{k} \right\} }\) сходится, то она ограничена.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать ограниченность координатных последовательностей \({ \left\{ x_i^{k} \right\} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5f6e1b3d2fac4b1d8da33e308f6c785b}
+    В чём основная идея доказательства принципа выбора Боль\-ца\-но-Вейерштрасса для последовательностей в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Последовательно выбирать подпоследовательности, поочерёдно получая сходимость координатных последовательностей.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3e127d0b24f142e9beec4653c5ae676b}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда если \({ \left\{ x^{k} \right\} }\) \begin{icloze}{2}не ограничена,\end{icloze} то у неё есть подпоследовательность, стремящаяся к \begin{icloze}{1}\({ \infty }\).\end{icloze}
+\end{note}
+
+\begin{note}{f4a0b38770684084b9485851c73d7764}
+    Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
+    Тогда если \({ \left\{ x^{k} \right\} }\) не ограничена, то у неё есть подпоследовательность, стремящаяся к \({ \infty }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать неограниченность вещественной последовательности \({ \left\{ \lVert x^{k} \rVert \right\} }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
