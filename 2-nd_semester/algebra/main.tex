@@ -2178,17 +2178,282 @@
     \end{icloze}
 \end{note}
 
+\section{Лекция 16.05.22}
+\begin{note}{3954a1f946d54d49843bb75beba5c6a2}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда
+    \[
+        \begin{icloze}{2}\ker f^*\end{icloze} = \begin{icloze}{1}(\operatorname{im}f)^{\perp}\end{icloze}.
+    \]
+\end{note}
+
+\begin{note}{2b5bf9cde3b944f3829f6df51e0a5d46}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда
+    \[
+        \begin{icloze}{2}\operatorname{im}f^*\end{icloze} = \begin{icloze}{1}(\ker f)^{\perp}\end{icloze}.
+    \]
+\end{note}
+
+\begin{note}{82658444368d432c84797667377faa14}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда \({ \ker f^* = (\operatorname{im}f)^{\perp} }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ v \in \ker f^* \iff (v, f(w)) = 0 \quad \forall w }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ac28c64b9e0843ee85ea8d67e40ff6d1}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда \(\operatorname{im}f^* = (\ker f)^{\perp}\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Следует из равенства \({ \ker (f^*)^* = (\operatorname{im} f^*)^{\perp} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{0b903e3801544d2a9284c6c06caa3e11}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \({ V \triangleleft W }\).
+    Тогда, если \begin{icloze}{4}\({ V }\) инвариантно относительно \({ f }\),\end{icloze} то \begin{icloze}{1}\({ V^{\perp} }\)\end{icloze} \begin{icloze}{3}инвариантно\end{icloze} относительно \begin{icloze}{2}\({ f^* }\).\end{icloze}
+\end{note}
+
+\begin{note}{6a68e47fbd554019b4f16972953073da}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \({ V \triangleleft W }\).
+    Тогда, если \({ V }\) инвариантно относительно \({ f }\), то \({ V^{\perp} }\) инвариантно относительно \({ f^* }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ (v, f^*(w)) = (f(v), w) = 0 \quad \forall w \in V^{\perp} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cb0fd56398174603b26c14a08091c430}
+    Пусть \({ a, \lambda, \mu \in \mathbb C }\),\: \({ \lambda \neq \mu }\). Как из равенства \({ \lambda a = \mu a }\) следует, что \({ a = 0 }\)?
+
+    \begin{cloze}{1}
+        \[
+            \underbrace{(\lambda - \mu)}_{\neq 0} a = 0.
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{398d95972a0746bb8ca3fe90ee7fafe6}
-    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовых пространстве.
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
     Тогда
     \[
         f^* = f \implies \operatorname{spec} f \begin{icloze}{1}\subset \mathbb R.\end{icloze}
     \]
 \end{note}
 
+\begin{note}{6eec0c089bb9471397a72db6e6ea7c4b}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
+    Тогда \({ f^* = f \implies \operatorname{spec} f \subset \mathbb R }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ \forall \lambda \in \operatorname{spec} f \quad \lambda = \overline{\lambda} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{01f37aa032dc4ae184b41741f1009cba}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \begin{icloze}{3}\({ f = f^* }\),\end{icloze}\: \({ x, y \in V }\).
+    Тогда, если \({ x }\) и \({ y }\) --- \begin{icloze}{1}собственные векторы оператора \({ f }\), отвечающие разным собственным значениям,\end{icloze} то \begin{icloze}{2}\({ x \perp y }\).\end{icloze}
+\end{note}
+
+\begin{note}{9aab3b15d5bd4c1db803f7d44757e9f2}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \({ f = f^* }\),\: \({ x, y \in V }\).
+    Тогда если \({ x }\) и \({ y }\) --- собственные векторы оператора \({ f }\), отвечающие разным собственным значениям, то \({ x \perp y }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Рассмотреть скалярное произведение
+        \[
+            (f(x), y) = (x, f(y)).
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{9cd8e8889d15407b9c8bc0d715fc7b96}
+    \subsubsection{<<\begin{icloze}{3}Спектральная теорема для \\\phantom{<<}самосопряжённых операторов\end{icloze}>>}
+
     Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве.
     Тогда если \begin{icloze}{2}\({ f^* = f }\),\end{icloze} то в пространстве \({ V }\) существует \begin{icloze}{1}ортонормированный базис из собственных векторов оператора \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{7e1c25eb54d844309b458da40780c8f1}
+    В чём основная идея доказательства спектральной теоремы для самосопряжённых операторов?
+
+    \begin{cloze}{1}
+        Для \({ \lambda \in \operatorname{spec} f }\) имеем \({ V = V_f(\lambda) \oplus V_f(\lambda)^{\perp} }\), но оба этих пространства инвариантны относительно \({ f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{4884039a91ca44c2a72e903879e0cb15}
+    Почему в доказательстве спектральной теоремы для самосопряжённых операторов нам важно, что оба пространства в прямой сумме \({ V_f(\lambda) \oplus V_f(\lambda)^{\perp} = V }\) инвариантны относительно \({ f }\)?
+
+    \begin{cloze}{1}
+        Из этого следует, что \({ f }\) представляется соответствующей квазитреугольной матрицей.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b4ac85781d214b28a62641aa58b35dac}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \({ f = f^* }\),\: \({ \lambda \in \operatorname{spec} f }\).
+    Почему пространство \({ V_f(\lambda)^{\perp} }\) инвариантно относительно \({ f }\)?
+
+    \begin{cloze}{1}
+        \({ V_f(\lambda) }\) инвариантно относительно \({ f }\) \({ \implies }\) \({ V_f(\lambda)^{\perp} }\) инвариантно относительно \({ f^* = f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{6a3db890388d426ba9b6f47900bb8d01}
+    Пусть \({ f : V \to V }\) --- линейный оператор в эрмитовом пространстве, \({ f = f^* }\).
+    Почему \({ f }\) не может не иметь действительных собственных значений?
+
+    \begin{cloze}{1}
+        Любой оператор имеет комплексные собственные значения, но из самосопряжённости следует, что они действительны.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ca9ea18afa5c40f8873a302849e8b0b3}
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}эрмитовом пространстве.\end{icloze}
+    Оператор \({ f }\) называется \begin{icloze}{2}унитарным,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            (f(v), f(w)) = (v, w)  \quad \forall v, w \in V.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7ba81b35301b4520996b24d87bc4fd09}
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}евклидовом пространстве.\end{icloze}
+    Оператор \({ f }\) называется \begin{icloze}{2}ортогональным,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            (f(v), f(w)) = (v, w)  \quad \forall v, w \in V.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{c7ddf42a012945c888c4d5178b28f2f0}
+    Пусть \({ f : V \to V }\) --- унитарный оператор.
+    Тогда помимо скалярного произведения \({ f }\) сохраняет \begin{icloze}{1}длины и углы.\end{icloze}
+\end{note}
+
+\begin{note}{7671b924a9f647578fd2fe26e4253413}
+    Пусть \({ f : V \to V }\) --- унитарный оператор.
+    Тогда помимо скалярного произведения \({ f }\) сохраняет длины и углы.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Длины и углы выражаются через скалярное произведение.
+    \end{cloze}
+\end{note}
+
+\begin{note}{89e9f8ff95e74665b47de711b04ebf2e}
+    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
+    Тогда и только тогда \begin{icloze}{1}\({ f^* = f^{-1} }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах \({ f^* }\))
+    \end{center}
+\end{note}
+
+\begin{note}{41a4909e68244e2e9fd1312185a42e07}
+    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
+    Тогда и только тогда
+    \begin{icloze}{1}
+        \[
+            \left\lVert v \right\rVert = \left\lVert f(v) \right\rVert \quad \forall v \in V.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах норм)
+    \end{center}
+\end{note}
+
+\begin{note}{2ecb4d7e7be047b887fa8953465857cb}
+    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
+    Тогда и только тогда \begin{icloze}{1}\({ f }\) переводит любой ортонормированный базис в ортонормированный базис.\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах базисов)
+    \end{center}
+\end{note}
+
+\begin{note}{55a699f79e064eb7bcbad7d49660f64b}
+    Пусть \({ A \in \mathbb C^{\begin{icloze}{3}n \times n\end{icloze}} }\).
+    Матрица \({ A }\) называется \begin{icloze}{2}унитарной\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \overline{A}^{\perp} = A^{-1}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{3ddc6bb6b47d44c6900bc4593cea65ba}
+    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
+    Тогда и только тогда \begin{icloze}{1}матрица \({ f }\) в ортонормированном базисе унитарна.\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах матриц оператора)
+    \end{center}
+\end{note}
+
+\begin{note}{a749d29f6a92475aa3bac79533cb3dfe}
+    Пусть \({ f : V \to V }\) --- унитарный оператор.
+    Тогда \({ \forall \lambda \in \operatorname{spec} f }\) имеем \begin{icloze}{1}\({ \lvert \lambda \rvert = 1 }\).\end{icloze}
+\end{note}
+
+\begin{note}{1977a9b870034e868dc7565fb5174779}
+    Пусть \({ f : V \to V }\) --- унитарный оператор.
+    Тогда \({ \forall \lambda \in \operatorname{spec} f }\) имеем \({ \lvert \lambda \rvert = 1 }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Для \({ v \in V_f(\lambda) \setminus \left\{ 0 \right\} }\) рассмотреть \({ (f(v), f(v)) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f3a34c6f96f24f3c91b5b5cb5b85386d}
+    Пусть \({ f : W \to W }\) --- унитарный оператор, \({ V \triangleleft W }\).
+    Тогда если \begin{icloze}{4}\({ V }\) инвариантно относительно \({ f }\),\end{icloze} то \begin{icloze}{1}\({ V^{\perp} }\)\end{icloze} \begin{icloze}{3}инвариантно\end{icloze} относительно \begin{icloze}{2}\({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{fd57ae2625734c759ffb57bc00f69d8f}
+    Пусть \({ f : W \to W }\) --- унитарный оператор, \({ V \triangleleft W }\).
+    Тогда если \({ V }\) инвариантно относительно \({ f }\),  то и \({ V^{\perp} }\) инвариантно относительно \({ f }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ V^{\perp} }\) инвариантно относительно \({ f^* = f^{-1} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{05351f096d4a47cc90c2f500fbe4fe16}
+    \subsubsection{<<\begin{icloze}{3}Спектральная теорема для \\\phantom{<<}унитарных операторов\end{icloze}>>}
+
+    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
+    Тогда в пространстве \({ V }\) существует \begin{icloze}{1}ортонормированный базис из собственных векторов оператора \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{5469fe81bf8641b2bca4525ca9e6599f}
+    В чём основная идея доказательства спектральной теоремы для унитарных операторов?
+
+    \begin{cloze}{1}
+        Для \({ \lambda \in \operatorname{spec} f }\) имеем \({ V = V_f(\lambda) \oplus V_f(\lambda)^{\perp} }\), но оба этих пространства инвариантны относительно \({ f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1e6b5642085f4ef7a716fb7a5422b363}
+    В \({ \mathbb R^2 }\) любое ортогональное преобразование --- есть либо \begin{icloze}{1}поворот,\end{icloze} либо \begin{icloze}{2}отражение относительно прямой.\end{icloze}
 \end{note}
 
 \end{document}
