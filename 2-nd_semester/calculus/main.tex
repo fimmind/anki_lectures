@@ -268,7 +268,7 @@
     В чем основная идея доказательства истинности формулы Тейлора-Лагранжа?
 
     \begin{cloze}{1}
-        Вычислить производную функции \( F(t) = R_{t, n} f(x) \) и найти точку \( c \) по теореме Коши.
+        Вычислить производную функции \( F(t) = R_{t, n} f(x) \) и далее по теореме Коши.
     \end{cloze}
 \end{note}
 
@@ -414,13 +414,15 @@
 
 \begin{note}{8939b90686dc43ae81c37c01fa728294}
     \[
-        \int \begin{icloze}{2}\frac{1}{\sqrt{x^2 \pm 1} }\end{icloze} \: dx = \begin{icloze}{1}\ln |x + \sqrt{x^2 \pm 1}| + C\end{icloze}.
+        \begin{gathered}
+            \int \begin{icloze}{2}\frac{1}{\sqrt{x^2 \pm a^2} }\end{icloze} \: dx = \begin{icloze}{1}\ln |x + \sqrt{x^2 \pm a^2}| + C\end{icloze}.
+        \end{gathered}
     \]
 \end{note}
 
 \begin{note}{edb57ab590834e5db5946311b9910393}
     \[
-        \int \frac{1}{\sqrt{\begin{icloze}{1}x^2 \pm 1\end{icloze}} } \: dx = \ln |x + \sqrt{\begin{icloze}{1}x^2 \pm 1\end{icloze}}| + C.
+        \int \frac{1}{\sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}} } \: dx = \ln |x + \sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}}| + C.
     \]
 \end{note}
 
@@ -590,7 +592,7 @@
 \end{note}
 
 \begin{note}{909932c22cec4a5fb5d8cfb506e7dbfb}
-    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in (A, B)  \), \( f \) непрерывна в точке \( a \) и дифференцируема на \( \dot V_{\delta} (a) \), \( \delta > 0 \).\end{icloze}
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \), \begin{icloze}{3}\( a \in (A, B)  \), \( f \) непрерывна в точке \( a \) и дифференцируема на \( \dot V_{\delta} (a) \), \( \delta > 0 \).\end{icloze}
     Если
     \begin{icloze}{1}\[
         \operatorname{sgn} f'(x) = \operatorname{sgn} (a - x) \quad \forall x \in \dot V_{\delta} (a),
@@ -1638,8 +1640,8 @@
 \end{note}
 
 \begin{note}{f356a2fc28ae4487aae50ba5b3064cee}
-    Пусть \begin{icloze}{3}\( f : [a, b] \to \mathbb R \), \( I \in \mathbb R \).\end{icloze}
-    Число \( I \) называют \begin{icloze}{2}пределом интегральных сумм функции \( f \) при ранге разбиения, стремящемся к нулю,\end{icloze} если
+    Пусть \begin{icloze}{3}\( f : [a, b] \to \mathbb R \).\end{icloze}
+    \begin{icloze}{4}Число \( I \in \mathbb R \)\end{icloze} называют \begin{icloze}{2}пределом интегральных сумм функции \( f \) при ранге разбиения, стремящемся к нулю,\end{icloze} если
     \begin{icloze}{1}
         \[
             \forall \varepsilon > 0 \quad \exists \delta > 0 \quad \forall (\tau, \xi) : \lambda_\tau < \delta \quad \left| \sigma_\tau (f, \xi) - I \right| < \varepsilon,
@@ -3357,7 +3359,7 @@
 \begin{note}{72d317fe9af54aa4b717962551ba6ea0}
     \subsubsection{<<\begin{icloze}{3}Неравенство Минковского для сумм\end{icloze}>>}
 
-    Пусть \begin{icloze}{2}\({ \left\{ a_i \right\}, \left\{ b_i \right\}_{i = 1}^{n} \subset \mathbb R }\),\end{icloze}\: \begin{icloze}{4}\({ p \in (1, +\infty) }\).\end{icloze}
+    Пусть \begin{icloze}{2}\({ \left\{ a_i \right\}, \left\{ b_i \right\}_{i = 1}^{n} \subset \mathbb R }\),\end{icloze}\: \begin{icloze}{4}\({ p \geqslant 1 }\).\end{icloze}
     Тогда
     \begin{icloze}{1}
         \[
@@ -3898,14 +3900,17 @@
 \end{note}
 
 \begin{note}{4ff4773b59de42daa0a880e4a8a170e7}
-    \subsubsection{<<Признак \begin{icloze}{5}Дирихле\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>}
-
     Пусть \begin{icloze}{4}\({ f \in C[a, b) }\),\end{icloze} \begin{icloze}{3}\({ g \in C^{1}[a, b) }\),\: \({ g }\) --- монотонна.\end{icloze} Если
     \begin{icloze}{1}
-        \({ g }\) бесконечно мала в точке \({ b }\), a
+        \({ g }\) бесконечно мала в точке \({ b^{-} }\), a
         \({ x \mapsto \int_{a}^{x} f }\) ограничена на \({ (a, b) }\),
     \end{icloze}
     то \begin{icloze}{2}\({ \int_{a}^{\to b} (f \cdot g) }\) сходится.\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<Признак \begin{icloze}{5}Дирихле\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>
+    \end{center}
 \end{note}
 
 \begin{note}{ae6efc013b634d36a35078f6d529988d}
@@ -3933,13 +3938,17 @@
 \end{note}
 
 \begin{note}{fdf163be427a40e1a02bdfb1d3392f46}
-    \subsubsection{<<Признак \begin{icloze}{5}Абеля\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>}
 
     Пусть \begin{icloze}{4}\({ f \in C[a, b) }\),\end{icloze} \begin{icloze}{3}\({ g \in C^{1}[a, b) }\),\: \({ g }\) --- монотонна.\end{icloze} Если
     \begin{icloze}{1}
         \({ g }\) --- ограничена, а \({ \int_{a}^{\to b} f }\) сходится,
     \end{icloze}
     то \begin{icloze}{2}\({ \int_{a}^{\to b} (f \cdot g) }\) сходится.\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<Признак \begin{icloze}{5}Абеля\end{icloze} \begin{icloze}{2}сходимости \\\phantom{<<}несобственного интеграла\end{icloze}>>
+    \end{center}
 \end{note}
 
 \begin{note}{5714e2e7542d4b4aa0316cb086c35aac}
@@ -4120,7 +4129,7 @@
 
     \begin{center}
         \tiny
-        (свойство \begin{icloze}{2}\textbf{нормируемости на прямоугольных параллелепипедах}\end{icloze} из определения площади)
+        (свойство \begin{icloze}{2}\textbf{нормируемости на прямоугольных параллелепипедах}\end{icloze} из определения объёма)
     \end{center}
 \end{note}
 
@@ -4165,8 +4174,13 @@
 \end{note}
 
 \begin{note}{bfb45d16ad184797a2996ad01ffcef3e}
-    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\).
-    \begin{icloze}{2}Функция \({ \gamma_i : t \mapsto \gamma_i(t) }\)\end{icloze} называется \begin{icloze}{1}\({ i }\)-й координатной функцией отображения \({ \gamma }\).\end{icloze}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\), \({ i \in [1 : m] }\).
+    \begin{icloze}{2}Функция \({ t \mapsto \gamma_i(t) }\)\end{icloze} называется \begin{icloze}{1}\({ i }\)-й координатной функцией отображения \({ \gamma }\).\end{icloze}
+\end{note}
+
+\begin{note}{b14417cf3a944cb4a66a5e8e9d998e8e}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\), \({ i \in [1 : m] }\).
+    \begin{icloze}{2}\({ i }\)-я координатная функция \({ \gamma }\)\end{icloze} обозначается \begin{icloze}{1}\({ \gamma_i }\).\end{icloze}
 \end{note}
 
 \begin{note}{dd1a71a2fed04fe9afe31c7632361372}
@@ -4251,7 +4265,11 @@
 \end{note}
 
 \begin{note}{591160f41fd4454bafe7bb81051e9799}
-    Два пути \({ \gamma_1 : [a, b] \to \mathbb R^{m},\: \gamma_2 : [\alpha, \beta] \to \mathbb R^{m} }\) называются \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}существует строго возрастающая сюръекция \({ u : [a, b] \to [\alpha, \beta] }\) такая, что \({ \gamma_1 = \gamma_2 \circ u }\).\end{icloze}
+    Два пути \({ \gamma_1 : [a, b] \to \mathbb R^{m},\: \gamma_2 : [\alpha, \beta] \to \mathbb R^{m} }\) называются \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}существует строго возрастающая сюръекция
+    \[
+        u : [a, b] \to [\alpha, \beta]
+    \]
+    такая, что \({ \gamma_1 = \gamma_2 \circ u }\).\end{icloze}
 \end{note}
 
 \begin{note}{fe470bb82a2b4926851a2edfc7a0e8bb}
@@ -4512,7 +4530,7 @@
     Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\),\: \begin{icloze}{3}все \({ \gamma_i }\) --- дифференцируемые функции.\end{icloze}
     Тогда
     \[
-        \begin{icloze}{2}\gamma'\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(\gamma'_m, \ldots, \gamma'_m).\end{icloze}
+        \begin{icloze}{2}\gamma'\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(\gamma'_1, \ldots, \gamma'_m).\end{icloze}
     \]
 \end{note}
 
@@ -4550,7 +4568,7 @@
     Пусть \begin{icloze}{3}\({ f \in C[\alpha, \beta] }\), \({ f \geqslant 0 }\).\end{icloze}
     Выражение ``\begin{icloze}{2}путь \({ \gamma }\) задаётся в полярных координатах равенством \({ r = f(\theta) }\),\: \({ \theta \in [\alpha, \beta] }\)\end{icloze}'' означает, что
     \[
-        \gamma(\theta) = \begin{icloze}{1}(f(\theta) \cos \theta, f(\theta) \sin \theta), \quad \theta \in [\alpha, \beta].\end{icloze}
+        \gamma(\theta) = \begin{icloze}{1}f(\theta) \cdot (\cos \theta, \sin \theta), \quad \theta \in [\alpha, \beta].\end{icloze}
     \]
 \end{note}
 
@@ -4586,10 +4604,15 @@
     Пусть \({ x \in \mathbb R^{n} }\). \begin{icloze}{2}\({ k }\)-я координата точки \({ x }\)\end{icloze} обозначается \begin{icloze}{1}\({ x_k }\).\end{icloze}
 \end{note}
 
+\begin{note}{6298966bfb9a436cafb65c0ac1f3b462}
+    Пусть \({ x, y \in \mathbb R^{n} }\).
+    Тогда \({ \displaystyle \begin{icloze}{2}x \cdot y\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sum_{i=1}^{n} x_i y_i\end{icloze} }\).
+\end{note}
+
 \begin{note}{82049479525249098f11edd6b86662f5}
     \begin{icloze}{2}Евклидовой нормой в \({ \mathbb R^{n} }\)\end{icloze} называется \begin{icloze}{1}функция
     \[
-        \mathbb R^{n} \to \mathbb R_+, \quad x \mapsto \sqrt{\sum_{i=1}^{n} x_i^2}.
+        \mathbb R^{n} \to \mathbb R_+, \quad x \mapsto \sqrt{x \cdot x}.
     \]\end{icloze}
 \end{note}
 
@@ -4725,11 +4748,6 @@
     \end{cloze}
 \end{note}
 
-\begin{note}{6298966bfb9a436cafb65c0ac1f3b462}
-    Пусть \({ x, y \in \mathbb R^{n} }\).
-    Тогда \({ \displaystyle \begin{icloze}{2}x \cdot y\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sum_{i=1}^{n} x_i y_i\end{icloze} }\).
-\end{note}
-
 \begin{note}{6a3a01e6983e4a8cb972e4752f7aaa36}
     Пусть \({ f, g : E \subset \mathbb R^{n} \to  \mathbb R^{m} }\).
     Тогда
@@ -4834,7 +4852,7 @@
 
 \begin{note}{435eee779e914a3b8c6aaa95f6a763e7}
     Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \mathbb R^{n} }\).\end{icloze}
-    Тогда \begin{icloze}{2}\({ \displaystyle \lim_{k \to \infty} x^{k} = a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда\end{icloze} \({ \forall i \in [1 : n] }\) имеем
+    Тогда \begin{icloze}{2}\({ \displaystyle \lim_{k \to \infty} x^{k} = a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \({ \forall i \in [1 : n] }\)
     \begin{icloze}{1}
         \[
             \displaystyle \lim_{k \to \infty} x_i^{k} = a_i.
@@ -4846,9 +4864,8 @@
     В чём основная идея в доказательстве теоремы о покоординатной сходимости последовательности в \({ \mathbb R^{n} }\) (необходимость)?
 
     \begin{cloze}{1}
-        Использовать неравенство \({ \left\lvert y_k \right\rvert \leqslant \left\lVert y \right\rVert }\) для вектора
         \[
-            y = x^{k} - a.
+            \left\lvert (x^{k} -  a)_i \right\rvert \leqslant \left\lVert x^{k} - a \right\rVert \to 0.
         \]
     \end{cloze}
 \end{note}
@@ -5076,7 +5093,7 @@
     В чём основная идея доказательства?
 
     \begin{cloze}{1}
-        Использовать неограниченность вещественной последовательности \({ \left\{ \lVert x^{k} \rVert \right\} }\).
+        Последовательность \({ \left\{ \left\lVert x^{k} \right\rVert \right\} }\) неограниченна.
     \end{cloze}
 \end{note}
 
