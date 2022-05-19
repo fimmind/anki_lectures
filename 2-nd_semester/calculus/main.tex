@@ -79,9 +79,12 @@
 \begin{note}{7597b782ce5f4e92998cc6445ce6f40e}
     \subsubsection{<<\begin{icloze}{3}Свойство n раз дифференцируемой функции\end{icloze}>>}
 
-    Пусть \begin{icloze}{2}\( f : D \subset \mathbb R \to \mathbb R, a \in D \) и \[
-        f(a) = f'(a) = \cdots = f^{(n)} (a) = 0.
-    \]\end{icloze}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D \) и
+    \begin{icloze}{2}
+        \[
+            f(a) = f'(a) = \cdots = f^{(n)} (a) = 0.
+        \]
+    \end{icloze}
     Тогда \begin{icloze}{1}\( f(x) = o((x - a)^{n} ),  x \to a \).\end{icloze}
 \end{note}
 
@@ -161,10 +164,12 @@
 \end{note}
 
 \begin{note}{957fd9747bd84545bd6b1cca723d72ba}
-    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N \), \begin{icloze}{2}\(f(a) = 0, \)
-    \[
-        f'(x) = o((x - a)^{n} ), \quad x \to a.
-    \]\end{icloze}
+    Пусть \( f : D \subset \mathbb R \to \mathbb R, a \in D, n \in \mathbb N \), \begin{icloze}{3}\( f(a) = 0 \),\end{icloze}
+    \begin{icloze}{2}
+        \[
+            f'(x) = o((x - a)^{n} ), \quad x \to a.
+        \]
+    \end{icloze}
 
     Тогда \( f(x) = \begin{icloze}{1}o((x - a)^{n + 1}), \quad x \to a.\end{icloze} \)
 \end{note}
@@ -559,7 +564,7 @@
     Каков основной шаг в доказательстве необходимого условия экстремума?
 
     \begin{cloze}{1}
-        Применить теорему Ферма к \( f|_{[a - \delta, a + \delta]}  \) для \( \delta \) из определения экстремума.
+        Применить теорему Ферма к сужению \({ f }\) на отрезок, включённый в окрестность \({ V_\delta(a) }\) из определения экстремума.
     \end{cloze}
 \end{note}
 
@@ -881,11 +886,10 @@
 
 \section{Лекция 25.02.22}
 \begin{note}{0abcc31a29c74496883c555de61b5af7}
-    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in \langle A, B \rangle  \)
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \), \( a \in \begin{icloze}{3}\langle A, B \rangle\end{icloze} \),
     \[
-        F(x) := \frac{f(x) - f(a)}{x - a}.
-    \]\end{icloze}
-
+        F(x) \coloneqq \begin{icloze}{4}\frac{f(x) - f(a)}{x - a}.\end{icloze}
+    \]
     Тогда если \begin{icloze}{2}\( f \) выпукла на \( \langle A, B \rangle  \),\end{icloze} то
     \begin{icloze}{1}
         \begin{center}
@@ -895,11 +899,10 @@
 \end{note}
 
 \begin{note}{6658c8d28bde461584886f85aacf4977}
-    Пусть \begin{icloze}{3}\( f : \langle A, B \rangle \to \mathbb R \), \( a \in \langle A, B \rangle  \)
+    Пусть \( f : \langle A, B \rangle \to \mathbb R \), \( a \in \begin{icloze}{3}\langle A, B \rangle\end{icloze} \),
     \[
-        F(x) := \frac{f(x) - f(a)}{x - a}.
-    \]\end{icloze}
-
+        F(x) \coloneqq \begin{icloze}{4}\frac{f(x) - f(a)}{x - a}.\end{icloze}
+    \]
     Тогда если \begin{icloze}{2}\( f \) строго выпукла на \( \langle A, B \rangle  \),\end{icloze} то
     \begin{icloze}{1}
         \begin{center}
@@ -1006,7 +1009,7 @@
             y = f(a) + k(x - a).
         \]
     \end{icloze}
-    Тогда прямая \( \ell  \) является \begin{icloze}{1}опорной для функции \( f \)
+    Тогда прямая \( \ell \) является \begin{icloze}{1}опорной для функции \( f \)
     в точке \( a \)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
     \begin{icloze}{2}
         \( k \in [f'_-(a), f'_+(a)] \).
@@ -2263,7 +2266,7 @@
     \[
         \begin{gathered}
             \int \sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}}\: dx =
-            \frac{x}{2} \sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{x^2 \pm a^2} \right\rvert
+            \frac{x}{2} \sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}} \pm \frac{a^2}{2} \ln\left\lvert x + \sqrt{\begin{icloze}{1}x^2 \pm a^2\end{icloze}} \right\rvert
             + C \\
             (a > 0)
         \end{gathered}
@@ -2294,7 +2297,7 @@
 
 \section{Лекция 01.04.22}
 \begin{note}{60ff32d5ed7347ae8036518373a5bc61}
-    Пусть \begin{icloze}{3}\({ f, \tilde f : [a, b] \to \mathbb R }\),\: \({ f \in  \mathcal R[a, b] }\),\: \({ T \subset [a, b] }\),\: \({ \left\lvert T \right\rvert < \aleph_0 }\).\end{icloze} Если
+    Пусть \begin{icloze}{3}\({ f, \tilde f : [a, b] \to \mathbb R }\),\: \({ f \in  \mathcal R[a, b] }\),\end{icloze}\: \begin{icloze}{4}\({ T \subset [a, b] }\),\: \({ \left\lvert T \right\rvert < \aleph_0 }\).\end{icloze} Если
     \begin{icloze}{1}
         \[
             \forall x \in [a, b] \setminus T \quad f(x) = \tilde f(x),
@@ -2676,13 +2679,16 @@
 \end{note}
 
 \begin{note}{03b2fb7149444b2db71b150b49f267a9}
-    \subsubsection{<<\begin{icloze}{4}Теорема Барроу\end{icloze}>>}
-
     Пусть \begin{icloze}{3}\({ f \in \mathcal R[a, b] }\) непрерывна в точке \({ x_0 \in [a, b] }\),\end{icloze}
     \[
         \varphi(x) = \begin{icloze}{2}\int_{a}^{x} f.\end{icloze}
     \]
     Тогда \begin{icloze}{1}\({ \varphi }\) дифференцируема в точке \({ x_0 }\) и \({ \varphi'(x_0) = f(x_0) }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Теорема Барроу\end{icloze}>>
+    \end{center}
 \end{note}
 
 \begin{note}{2255bf6318be43ee834d6071ed740c89}
@@ -2749,15 +2755,16 @@
 \end{note}
 
 \begin{note}{1109a435ae7543cf8263f72942677e95}
-    \subsubsection{<<\begin{icloze}{3}Первая теорема о среднем \\\phantom{<<}интегрального исчисления\end{icloze}>>}
-
     Пусть \begin{icloze}{2}\({ f, g \in \mathcal R[a, b] }\), \({ g \geqslant 0 }\) (или \({ g \leqslant 0 }\)), \({ m \leqslant f \leqslant M }\).\end{icloze}
     Тогда
-    \begin{icloze}{1}
-        \[
-            \exists \mu \in [m, M] \quad \int_{a}^{b} fg = \mu \int_{a}^{b} g
-        \]
-    \end{icloze}
+    \[
+        \begin{icloze}{4}\exists \mu \in [m, M]\end{icloze} \quad \begin{icloze}{1}\int_{a}^{b} fg = \mu \int_{a}^{b} g\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{3}Первая теорема о среднем \\\phantom{<<}интегрального исчисления\end{icloze}>>
+    \end{center}
 \end{note}
 
 \begin{note}{2e6a92e370ed4445a1cd67bd8d0241f9}
@@ -2991,9 +2998,16 @@
     В чем основная идея доказательства теоремы о замене переменной в определённом интеграле?
 
     \begin{cloze}{1}
-        Если \({ F \in \mathscr P_f ([a, b]) }\), то \({ F \circ \varphi }\) --- первообразная функции
+        Формула Ньютона-Лейбница для \({ \int_{\alpha}^{\beta} (f \circ \varphi) \varphi' }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{89c18701291a4123afd5111e00b0e9c8}
+    Как преобразуется \({ F \circ \varphi \big|_{\alpha}^{\beta} }\) в доказательстве теоремы о замене переменной в определённом интеграле?
+
+    \begin{cloze}{1}
         \[
-            (f \circ \varphi) \cdot \varphi'.
+            F \circ \varphi \big|_{\alpha}^{\beta} = F \big|_{\varphi(\alpha)}^{\varphi(\beta)}
         \]
     \end{cloze}
 \end{note}
@@ -3076,7 +3090,7 @@
 
 \section{Лекция 23.04.22 (1)}
 \begin{note}{57c65a69d4ce4beca2a4ef3d19482330}
-    Пусть \begin{icloze}{3}\({ n \in \mathbb Z_+ }\),   \({ f \in C^{n + 1}\langle A, B \rangle }\), \({ a, x \in \langle A, B \rangle }\).\end{icloze}
+    Пусть \begin{icloze}{3}\({ f \in C^{n + 1}\langle A, B \rangle }\), \({ a, x \in \langle A, B \rangle }\),\end{icloze}\: \({ n \in \begin{icloze}{4}\mathbb Z_+\end{icloze} }\).
     Тогда
     \[
         \begin{icloze}{2}R_{a,n}f(x)\end{icloze} = \begin{icloze}{1}\frac{1}{n!} \int_{a}^{x} f^{(n + 1)}(t)(x - t)^{n}\: dt.\end{icloze}
@@ -3238,7 +3252,7 @@
     \subsubsection{<<\begin{icloze}{4}Неравенство Йенсена для интеграла\end{icloze}>>}
 
     Пусть \begin{icloze}{3}\({ f \in C\langle A, B \rangle }\), \({ \varphi, \lambda \in C[a, b] }\), \({ \varphi : [a, b] \to \langle A, B \rangle }\), \({ \lambda \geqslant 0 }\).\end{icloze}
-    Тогда \begin{icloze}{2}если \({ f }\) выпукла на \({ \langle A, B \rangle }\) и \({ \int_{a}^{b} \lambda = 1 }\),\end{icloze} то
+    Тогда если \begin{icloze}{2}\({ f }\) выпукла на \({ \langle A, B \rangle }\) и \({ \int_{a}^{b} \lambda = 1 }\),\end{icloze} то
     \begin{icloze}{1}
         \[
             f\left( \int_{a}^{b} \lambda\varphi \right) \leqslant \int_{a}^{b} \lambda \cdot (f \circ \varphi).
@@ -3670,7 +3684,7 @@
 
 \section{Лекция 30.04.22 (1)}
 \begin{note}{c145ba4d6dca4a06a50cec14e1551b20}
-    Пусть \({ f \in \mathcal R_{loc}[a, b) }\),\begin{icloze}{4} \({ f \geqslant 0 }\).\end{icloze}
+    Пусть \({ f \in \mathcal R_{loc}[a, b) }\), \begin{icloze}{4}\({ f \geqslant 0 }\).\end{icloze}
     Тогда \({ \int_{a}^{\to b} f }\) \begin{icloze}{2}сходится\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} функция \begin{icloze}{1}\({ x \mapsto \int_{a}^{x} f }\)\end{icloze} ограничена сверху на \({ [a, b) }\).
 \end{note}
 
@@ -3823,7 +3837,7 @@
     \[
         x \mapsto \int_{a}^{x} f
     \]
-    необходимым условием для сходимости \({ \int_{a}^{+\infty} f }\)?
+    необходимым условием для сходимости \({ \int_{a}^{\to b} f }\)?
 
     \begin{cloze}{1}
         Да, является.
@@ -3836,7 +3850,7 @@
     \[
         x \mapsto \int_{a}^{x} f
     \]
-    достаточным условием для сходимости \({ \int_{a}^{+\infty} f }\)?
+    достаточным условием для сходимости \({ \int_{a}^{\to b} f }\)?
 
     \begin{cloze}{1}
         Нет, она является только необходимым условием.
@@ -3864,10 +3878,7 @@
     В чём ключевая идея доказательства?
 
     \begin{cloze}{1}
-        Критерий Больцано-Коши сходимости функции для
-        \[
-            x \mapsto \int_{a}^{x} \left\lvert f \right\rvert.
-        \]
+        Критерий Больцано-Коши сходимости функции для соответствующих интегралов с переменным верхним пределом.
     \end{cloze}
 \end{note}
 
@@ -3996,7 +4007,7 @@
 \end{note}
 
 \begin{note}{b1453ceeeece4b72b798234b7da1813d}
-    \begin{icloze}{3}Площадью\end{icloze} называется \begin{icloze}{1}отображение \({ S : \left\{ P \right\} \to [0, +\infty) }\), заданное на некотором классе \({ \left\{ P \right\} }\) подмножеств плоскости,\end{icloze} которое при этом
+    \begin{icloze}{3}Площадью\end{icloze} называется отображение \({ S : \begin{icloze}{1}\left\{ P \right\} \to \mathbb R_+\end{icloze} }\), заданное на \begin{icloze}{4}некотором классе \({ \left\{ P \right\} }\) подмножеств плоскости,\end{icloze} которое при этом
     \begin{icloze}{2}
         \begin{itemize}
             \item аддитивно;
@@ -4108,9 +4119,18 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{14e7b163e187481dbd050b6109d9c55a}
+    Чему равна \({ S(P_1 \setminus P_2) }\) в доказательства усиленной аддитивности площади?
+
+    \begin{cloze}{1}
+        \[
+            S(P_1 \setminus P_2) = S(P_1).
+        \]
+    \end{cloze}
+\end{note}
 
 \begin{note}{a8841fa849b54fccb1d646f27b165f0d}
-    \begin{icloze}{3}Объёмом\end{icloze} называется \begin{icloze}{1}отображение \({ V : \left\{ T \right\} \to [0, +\infty) }\), заданное на некотором классе \({ \left\{ T \right\} }\) подмножеств \({ \mathbb R^3 }\),\end{icloze} которое при этом
+    \begin{icloze}{3}Объёмом\end{icloze} называется отображение \({ V : \begin{icloze}{1}\left\{ T \right\} \to \mathbb R_+\end{icloze} }\), заданное на \begin{icloze}{4}некотором классе \({ \left\{ T \right\} }\) подмножеств \({ \mathbb R^3 }\),\end{icloze} которое при этом
     \begin{icloze}{2}
         \begin{itemize}
             \item аддитивно;
@@ -4402,11 +4422,11 @@
 
 \begin{note}{7b57ff51f8f74d7a9e4b6bc05043f32c}
     Пусть \begin{icloze}{5}\({ 0 < \beta - \alpha \leqslant 2\pi }\),\end{icloze}\: \begin{icloze}{4}\({ f \in C[\alpha, \beta] }\),\: \({ f \geqslant 0 }\).\end{icloze}
-    Множество
+    Множество точек
     \[
-        \Big\{ \begin{icloze}{1}(r \cos \varphi, r \sin \varphi)\end{icloze} \mid \begin{icloze}{2}\varphi \in [\alpha, \beta],\: r \in [0, f(\varphi)]\end{icloze} \Big\}
+        \Big\{ \begin{icloze}{1} r \cdot (\cos \varphi, \sin \varphi)\end{icloze} \mid \begin{icloze}{2}\varphi \in [\alpha, \beta],\: r \in [0, f(\varphi)]\end{icloze} \Big\}
     \]
-    называется \begin{icloze}{3}криволинейным сектором.\end{icloze}
+    называется \begin{icloze}{3}криволинейным сектором, ограниченным функцией \({ f }\).\end{icloze}
 \end{note}
 
 \begin{note}{92d60a9a490b49c2af35b60f685c4b05}
@@ -4506,7 +4526,7 @@
 \end{note}
 
 \begin{note}{37ce05b3e5534f20b8ea802974f37e7d}
-    Пусть \begin{icloze}{4}\({ f : [\alpha, \beta] \to \mathbb R_+ }\),\end{icloze}\: \begin{icloze}{3}\({ -\frac{\pi}{2} \leqslant \alpha < \beta \leqslant \frac{\pi}{2} }\).\end{icloze}
+    Пусть \begin{icloze}{4}\({ f : [\alpha, \beta] \to \mathbb R_+ }\),\end{icloze}\: \begin{icloze}{3}\({ \alpha, \beta \in [-\frac{\pi}{2}, \frac{\pi}{2}] }\).\end{icloze}
     \begin{icloze}{2}Тело вращения криволинейного сектора, ограниченного функцией \({ f }\), вокруг оси \({ Oy }\)\end{icloze} обозначается \begin{icloze}{1}\({ \widetilde T_f }\).\end{icloze}
 \end{note}
 
@@ -4565,10 +4585,13 @@
 \end{note}
 
 \begin{note}{d7845b70c0774392b73e28626dab39f8}
-    Пусть \begin{icloze}{3}\({ f \in C[\alpha, \beta] }\), \({ f \geqslant 0 }\).\end{icloze}
+    Пусть \begin{icloze}{3}\({ f \in C[\alpha, \beta] }\),\end{icloze} \begin{icloze}{4}\({ f \geqslant 0 }\).\end{icloze}
     Выражение ``\begin{icloze}{2}путь \({ \gamma }\) задаётся в полярных координатах равенством \({ r = f(\theta) }\),\: \({ \theta \in [\alpha, \beta] }\)\end{icloze}'' означает, что
     \[
-        \gamma(\theta) = \begin{icloze}{1}f(\theta) \cdot (\cos \theta, \sin \theta), \quad \theta \in [\alpha, \beta].\end{icloze}
+        \begin{gathered}
+            \gamma(\theta) = \begin{icloze}{1}f(\theta) \cdot (\cos \theta, \sin \theta),\end{icloze} \\
+            \gamma : \begin{icloze}{5}[\alpha, \beta] \to \mathbb R^2.\end{icloze}
+        \end{gathered}
     \]
 \end{note}
 
@@ -5050,7 +5073,7 @@
     Пусть \({ \left\{ x^{k} \right\}_{k = 1}^{\infty} \subset \mathbb R^{n} }\).
     Тогда
     \begin{center}
-        \({ \left\{ x^{k} \right\} }\) ограничена \({ \iff }\) \begin{icloze}{1}\({ \left\{ x_i^{k} \right\} }\) ограничена \({ \forall i }\).\end{icloze}
+        \({ \left\{ x^{k} \right\} }\) ограничена \({ \iff }\) \({ \left\{ x_i^{k} \right\} }\) ограничена \({ \forall i }\).
     \end{center}
     В чём основная идея доказательства?
 
