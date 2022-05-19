@@ -248,7 +248,7 @@
     В чем основная идея доказательства того, что если для любого \( a \in V_1 + V_2 \) разложение разложение \( a \) в сумму \( v_1 + v_2 \), где \( v_1 \in V_1, v_2 \in V_2 \), единственно, то \( V_1 + V_2 \) --- прямая сумма?
 
     \begin{cloze}{1}
-        Показать, что если \( a = v_1 + v_2 \in V_1 \cap V_2 \), то \( v_1 = v_2 = 0 \).
+        Показать, что если \( a = \underset{\in V_1}{v_1} + \underset{\in V_2}{v_2} \in V_1 \cap V_2 \), то \( v_1 = v_2 = 0 \).
     \end{cloze}
 \end{note}
 
@@ -507,14 +507,18 @@
 \begin{note}{8a962591377f49c1a6b297a1efe008e9}
     Пусть \( f : W \to W \) --- линейный оператор. Тогда
     \[
-        \dim \operatorname{im} f = \begin{icloze}{1}\operatorname{rk} f.\end{icloze}
+        \begin{icloze}{2}\operatorname{rk} f\end{icloze} = \begin{icloze}{1}\dim \operatorname{im} f.\end{icloze}
     \]
+
+    \begin{center}
+        \tiny (в терминах размерностей)
+    \end{center}
 \end{note}
 
 \begin{note}{2acbea4466f54360bc19e2065a44fc95}
     Пусть \( f : W \to W \) --- линейный оператор. Как показать, что
     \[
-        \dim \operatorname{im} f = \operatorname{rk} f?
+        \operatorname{rk} f = \dim \operatorname{im} f.
     \]
 
     \begin{cloze}{1}
@@ -540,7 +544,7 @@
 \end{note}
 
 \begin{note}{e64a247c0efb47f8be38d4ab4ef17b05}
-    Пусть \( f : W \to W \) --- линейный оператор,  \( e_1,e_2, \ldots, e_n  \) --- \begin{icloze}{4}дополнение до базиса в \( W \) базиса \( e_1,e_2, \ldots, e_k  \) в инвариантном подпространстве \( V \triangleleft W \).\end{icloze} Тогда \begin{icloze}{3}матрица оператора \( f \) в базисе \( e_1,e_2, \ldots, e_n  \)\end{icloze} примет вид
+    Пусть \( f : W \to W \) --- линейный оператор,  \( e_1, \ldots, e_n  \) --- \begin{icloze}{4}такой базис в \({ W }\), что \({ e_1, \ldots, e_k }\) (где \({ k \leqslant n }\)) --- базис в инвариантном подпространстве \({ V \triangleleft W }\).\end{icloze} Тогда \begin{icloze}{3}матрица оператора \( f \) в базисе \( e_1, \ldots, e_n  \)\end{icloze} примет вид
     \[
         A = \begin{icloze}{1}
             \begin{bmatrix}
@@ -549,7 +553,7 @@
             \end{bmatrix},
         \end{icloze}
     \]
-    где \( T_{11}  \) --- это \begin{icloze}{2}матрица \( f |_{V}  \) в базисе \( e_1,e_2, \ldots, e_k  \).\end{icloze}
+    где \( T_{11}  \) --- это \begin{icloze}{2}матрица \( f |_{V}  \) в базисе \( e_1, \ldots, e_k \).\end{icloze}
 \end{note}
 
 \section{Лекция 28.02.22}
@@ -698,14 +702,14 @@
     \end{cloze}
 \end{note}
 
-\begin{note}{cdb0a7bde4e044e48a5a798a8052f163}
-    Пусть \begin{icloze}{3}\( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).\end{icloze}
-    \begin{icloze}{1}Множество всех собственных векторов \( f \), отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
-\end{note}
-
 \begin{note}{785c107694984499a5fd89afd052841c}
     Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
-    Тогда \begin{icloze}{2}\( V_f(\lambda) \)\end{icloze} называется \begin{icloze}{1}собственным подпространством оператора \( f \).\end{icloze}
+    Тогда \begin{icloze}{2}множество всех собственных векторов \( f \), отвечающих собственному значению \( \lambda \), объединённое с нулём,\end{icloze} называется \begin{icloze}{1}собственным подпространством оператора \( f \), отвечающим собственному значению \({ \lambda }\).\end{icloze}
+\end{note}
+
+\begin{note}{cdb0a7bde4e044e48a5a798a8052f163}
+    Пусть \( f : W \to W \) --- линейный оператор, \( \lambda \in \operatorname{spec} f \).
+    \begin{icloze}{1}Собственное подпространство \({ f }\), отвечающее собственному значению \({ \lambda }\),\end{icloze} обозначается \begin{icloze}{2}\( V_{f} (\lambda) \).\end{icloze}
 \end{note}
 
 \begin{note}{545e4fc3988d45fdafc099f74fe38f36}
@@ -760,8 +764,8 @@
     В чем основная идея доказательства?
 
     \begin{cloze}{1}
-        Показать, что \( V_f (\lambda) \) инвариантно относительно \( f \) \\
-        \phantom{} \hfill \( \implies \) \( \chi_f \) делится на \( \chi_{\tilde f} \), где \( \tilde f = f|_{V_f(\lambda)} \).
+        \( V_f (\lambda) \) инвариантно относительно \( f \) \\
+        \phantom{} \hfill \( \implies \) \( \chi_f \) делится на \( \chi_{f|_{V_f(\lambda)}} \).
     \end{cloze}
 \end{note}
 
@@ -1134,7 +1138,7 @@
     \[
         V = K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).
     \]
-    В чем основная идея доказательства?
+    Какова общая структура доказательства?
 
     \begin{cloze}{1}
         Показать, что сумма \( K_f(\lambda_j) \)
@@ -1408,7 +1412,7 @@
 \end{note}
 
 \begin{note}{cea78871e8124a29945d3540057c0c68}
-    \begin{icloze}{1}Вещественное линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{2}евклидовым пространством.\end{icloze}
+    \begin{icloze}{2}Евклидовым пространством\end{icloze} называется \begin{icloze}{1}вещественное линейное пространство с заданным на нём скалярным произведением\end{icloze}.
 \end{note}
 
 \begin{note}{79a607edba4945a4a562d9b1fd8f2ce9}
@@ -1436,7 +1440,7 @@
 \end{note}
 
 \begin{note}{c0b109c4be9e4749ad794e9e38fffb2d}
-    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R\end{icloze} }\).
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R_+\end{icloze} }\).
     \begin{icloze}{2}Сферой радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} называют \begin{icloze}{1}множество
     \[
         \left\{ v \in V \mid \left\lVert v - v_0 \right\rVert = r \right\}.
@@ -1444,7 +1448,7 @@
 \end{icloze}\end{note}
 
 \begin{note}{09b61a41cf5f45109c79e7cc61f63740}
-    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R }\).
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R_+ }\).
     \begin{icloze}{2}Сфера радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} обозначается
     \begin{icloze}{1}
         \[
@@ -1454,8 +1458,8 @@
 \end{note}
 
 \begin{note}{e63df21bb26d42269a7a5d45c6b828b8}
-    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R\end{icloze} }\).
-    \begin{icloze}{2}Шаром радиуса \({ r }\) с ценстром в точке  \({ v_0 }\)\end{icloze} называют \begin{icloze}{1}множество
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ \begin{icloze}{3}r \in \mathbb R_+\end{icloze} }\).
+    \begin{icloze}{2}Шаром радиуса \({ r }\) с центром в точке  \({ v_0 }\)\end{icloze} называют \begin{icloze}{1}множество
         \[
             \left\{ v \in V | \left\lVert v - v_0 \right\rVert \leqslant r \right\}.
         \]
@@ -1463,7 +1467,7 @@
 \end{note}
 
 \begin{note}{d0d10cbbdb664b428b1f3284ff5321f9}
-    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R }\).
+    Пусть \({ V }\) --- евклидово пространство над \({ \mathbb R }\),\: \({ v_0 \in V }\),\: \({ r \in \mathbb R_+ }\).
     \begin{icloze}{2}Шар радиуса \({ r }\) с центром в точке \({ v_0 }\)\end{icloze} обозначается
     \begin{icloze}{1}
         \[
@@ -1974,7 +1978,7 @@
 \end{note}
 
 \begin{note}{b2db7b3282094eea8733437c52bba06d}
-    \begin{icloze}{2}Комплексное линейное пространство с заданным на нём скалярным произведением\end{icloze} называется \begin{icloze}{1}унитарным или эрмитовым пространством.\end{icloze}
+    \begin{icloze}{1}Унитарным/эрмитовым пространством\end{icloze} называется \begin{icloze}{2}комплексное линейное пространство с заданным на нём скалярным произведением.\end{icloze}
 \end{note}
 
 \begin{note}{dee379a767e44b7fbc29a556ce456b02}
@@ -2039,13 +2043,13 @@
 
 \begin{note}{cc3fd18a829c481eb6a18fd4944621b2}
     Пусть \({ f : V  \to V }\) --- линейный оператор в комплексном пространстве,\: \begin{icloze}{4}\({ \left\{ e_j \right\}_{j = 1}^{n} }\) --- базис в \({ V }\).\end{icloze}
-    Тогда в базисе
+    Тогда для базиса
     \begin{icloze}{3}
         \[
             \left\{ \tilde e_j \right\}_{j = 1}^{2n} = \left\{ e_1, \ldots, e_n, ie_1, \ldots, ie_n \right\}
         \]
     \end{icloze}
-    имеем
+    пространства \begin{icloze}{5}\({ V_{\mathbb R} }\)\end{icloze} имеем
     \[
         \begin{icloze}{2}M_{\tilde e} (f_{\mathbb R})\end{icloze} = \begin{icloze}{1}\begin{bmatrix}
             B & -C \\
@@ -2084,7 +2088,7 @@
 
 \begin{note}{d7b4cacadaa641759cab38db5ae47b15}
     Пусть \({ f: V \to W }\) линейный оператор в евклидовых пространствах.
-    \begin{icloze}{1}Оператор \({ g : W \to V }\)\end{icloze} называется \begin{icloze}{2}сопряжённым оператором к оператору \({ f }\),\end{icloze} если
+    Оператор \({ g : \begin{icloze}{3}W \to V\end{icloze} }\) называется \begin{icloze}{2}сопряжённым оператором к оператору \({ f }\),\end{icloze} если
     \begin{icloze}{1}
         \[
             (f(v), w) = (v, g(w)) \quad \forall v \in V, w \in W.
@@ -2295,7 +2299,7 @@
     Почему в доказательстве спектральной теоремы для самосопряжённых операторов нам важно, что оба пространства в прямой сумме \({ V_f(\lambda) \oplus V_f(\lambda)^{\perp} = V }\) инвариантны относительно \({ f }\)?
 
     \begin{cloze}{1}
-        Из этого следует, что \({ f }\) представляется соответствующей квазитреугольной матрицей.
+        Из этого следует, что \({ f }\) представляется соответствующей квазидиагональной матрицей.
     \end{cloze}
 \end{note}
 
@@ -2313,7 +2317,7 @@
     Почему \({ f }\) не может не иметь действительных собственных значений?
 
     \begin{cloze}{1}
-        Любой оператор имеет комплексные собственные значения, но из самосопряжённости следует, что они действительны.
+        Любой оператор имеет комплексные собственные значения, но из самосопряжённости следует, что эти значения действительны.
     \end{cloze}
 \end{note}
 
@@ -2353,8 +2357,13 @@
 \end{note}
 
 \begin{note}{89e9f8ff95e74665b47de711b04ebf2e}
-    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
-    Тогда и только тогда \begin{icloze}{1}\({ f^* = f^{-1} }\).\end{icloze}
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}эрмитовом пространстве.\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) унитарнен\end{icloze} тогда и только тогда, когда
+    \begin{icloze}{1}
+        \[
+            f^* = f^{-1}.
+        \]
+    \end{icloze}
 
     \begin{center}
         \tiny
@@ -2363,8 +2372,8 @@
 \end{note}
 
 \begin{note}{41a4909e68244e2e9fd1312185a42e07}
-    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
-    Тогда и только тогда
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}эрмитовом пространстве.\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) унитарнен\end{icloze} тогда и только тогда, когда
     \begin{icloze}{1}
         \[
             \left\lVert v \right\rVert = \left\lVert f(v) \right\rVert \quad \forall v \in V.
@@ -2378,8 +2387,9 @@
 \end{note}
 
 \begin{note}{2ecb4d7e7be047b887fa8953465857cb}
-    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
-    Тогда и только тогда \begin{icloze}{1}\({ f }\) переводит любой ортонормированный базис в ортонормированный базис.\end{icloze}
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}эрмитовом пространстве.\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) унитарнен\end{icloze} тогда и только тогда, когда
+    \begin{icloze}{1}\({ f }\) переводит любой ортонормированный базис в ортонормированный базис.\end{icloze}
 
     \begin{center}
         \tiny
@@ -2398,8 +2408,9 @@
 \end{note}
 
 \begin{note}{3ddc6bb6b47d44c6900bc4593cea65ba}
-    Пусть \({ f : V \to V }\) --- \begin{icloze}{2}унитарный оператор.\end{icloze}
-    Тогда и только тогда \begin{icloze}{1}матрица \({ f }\) в ортонормированном базисе унитарна.\end{icloze}
+    Пусть \({ f : V \to V }\) --- линейный оператор в \begin{icloze}{3}эрмитовом пространстве.\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) унитарнен\end{icloze} тогда и только тогда, когда
+    \begin{icloze}{1}матрица \({ f }\) в ортонормированном базисе унитарна.\end{icloze}
 
     \begin{center}
         \tiny
@@ -2458,14 +2469,14 @@
 
 \section{Семинар 20.04.22}
 \begin{note}{4af2a0956e564d7a8dcff91122d2862c}
-    В процессе ортогонализации определитель Грама-Шмидта Грама \begin{icloze}{1}не меняется.\end{icloze}
+    В процессе ортогонализации Грама-Шмидта определитель Грама \begin{icloze}{1}не меняется.\end{icloze}
 \end{note}
 
 \begin{note}{dd5abffedea24431af7beee39693bcb2}
     Пусть \({ V }\) --- эрмитово пространство, \begin{icloze}{2}\({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).\end{icloze}
     Тогда
     \[
-        \operatorname{sgn} \left\lvert G(e_1, \ldots, e_n) \right\rvert = \begin{icloze}{1}\text{\({ 0 }\) или \({ 1 }\)}.\end{icloze}
+        \operatorname{sgn} \left\lvert G(e_1, \ldots, e_n) \right\rvert \in \begin{icloze}{1}\left\{ 0, 1 \right\}.\end{icloze}
     \]
 \end{note}
 
