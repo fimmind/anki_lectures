@@ -61,6 +61,10 @@ model:
   template:
     front: |
       {{cloze:Text}}
+
+      <div class="deck">
+        {{Deck}}
+      </div>
     back: |
       {{cloze:Text}}
 
@@ -68,6 +72,10 @@ model:
       <br><br><br>
       {{Back Extra}}
       {{/Back Extra}}
+
+      <div class="deck">
+        {{Deck}}
+      </div>
     css: |
       .card {
         text-align: center;
@@ -77,4 +85,9 @@ model:
         margin: 0 auto;
         text-align: center;
         max-width: 650px;
+      }
+
+      .deck {
+        color: gray;
+        padding-top: 20px;
       }
