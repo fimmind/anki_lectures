@@ -5120,4 +5120,276 @@
     \end{cloze}
 \end{note}
 
+\section{14.05.22 (2)}
+\begin{note}{8f1408b5072a4c4db503662e57f44fae}
+    Чем определение последовательности Коши в \({ \mathbb R^{n} }\) отличается от такового для последовательностей в  \({ \mathbb R }\)?
+
+    \begin{cloze}{1}
+        Вместо модуля используются евклидова норма.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a55fb30e99b8448bbf4daad28b535da6}
+    Выполняется ли критерий сходимости Больцано-Коши для последовательностей в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Да, выполняется.
+    \end{cloze}
+\end{note}
+
+\begin{note}{15ca58d336a843058f80b5e7f575bcd0}
+    В чём основная идея доказательства критерия сходимости Больцано-Коши для последовательностей в \({ \mathbb R^{n} }\) (необходимость)?
+
+    \begin{cloze}{1}
+        Критерий Больцано-Коши для координатных последовательностей и неравенство
+        \[
+            \left\lvert x_k \right\rvert \leqslant \left\lVert x \right\rVert \leqslant \sqrt{n} \cdot \underset{i}{\max} \left\lvert x_i \right\rvert.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{48fb62af875d46c5b05b401c40d098c4}
+    Чем определение предельных точек для подмножеств \({ \mathbb R^{n} }\) отличается от такового для подмножеств \({ \mathbb R }\)?
+
+    \begin{cloze}{1}
+        Ничем.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a669a63c0542458f9252161374cec7f3}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \overline{\mathbb R^{n}} }\).\end{icloze} \begin{icloze}{2}Точка \({ a }\) является предельной для \({ E }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \exists \{ x^{k} \}_{k = 1}^{\infty} \subset E \setminus \left\{ a \right\} \quad x^{k} \to a.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny (в терминах последовательностей)
+    \end{center}
+\end{note}
+
+\begin{note}{15109511ff924c4baaf5512ee750e154}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ a \in \overline{\mathbb R^{n}} }\). Точка \({ a }\) является предельной для \({ E }\) тогда и только тогда, когда
+    \[
+        \exists \{ x^{k} \}_{k = 1}^{\infty} \subset E \setminus \left\{ a \right\} \quad x^{k} \to a.
+    \]
+    Какие два случая рассматриваются в доказательстве?
+
+    \begin{cloze}{1}
+        1. \({ a \neq \infty }\); \quad 2.  \({ a = \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{75f06294c4514596b330d9f62883ed49}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ a \in \overline{\mathbb R^{n}} }\). Точка \({ a }\) является предельной для \({ E }\) тогда и только тогда, когда
+    \[
+        \exists \{ x^{k} \}_{k = 1}^{\infty} \subset E \setminus \left\{ a \right\} \quad x^{k} \to a.
+    \]
+    В чём основная идея доказательства для \({ a \neq \infty }\) (необходимость)?
+
+    \begin{cloze}{1}
+        Выбирать \({ x^{k} }\) по \({ \varepsilon = \frac{1}{k} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c78fe01a6f214aa38a3343be15a6543f}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ a \in \overline{\mathbb R^{n}} }\). Точка \({ a }\) является предельной для \({ E }\) тогда и только тогда, когда
+    \[
+        \exists \{ x^{k} \}_{k = 1}^{\infty} \subset E \setminus \left\{ a \right\} \quad x^{k} \to a.
+    \]
+    В чём основная идея доказательства для \({ a \neq \infty }\) (достаточность)?
+
+    \begin{cloze}{1}
+        Из определения предела \({ \forall \varepsilon \quad \exists k \quad x^{k} \in \dot V_{\varepsilon}(a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{22db3f3ad0394102a1d98af06cc40fbd}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \begin{icloze}{3}\({ a \in E }\).\end{icloze}
+    Точка \({ a }\) называется \begin{icloze}{2}внутренней для \({ E }\),\end{icloze} если \begin{icloze}{1}у неё есть окрестность, содержащаяся в \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{18e311d437f341e9a873d377706cf0cb}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Множество \({ E }\) называется \begin{icloze}{2}открытым в \({ \mathbb R^{n} }\),\end{icloze} если \begin{icloze}{1}любая его точка является внутренней для \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{b8e86e0736db4159a59c29fffcb30ac8}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Множество \({ E }\) называется \begin{icloze}{2}замкнутым в \({ \mathbb R^{n} }\),\end{icloze} если \begin{icloze}{1}его дополнение \({ \mathbb R^{n} \setminus E }\) открыто в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{6c14a78f8f304062aa09cf96ee030f48}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ E }\) замкнуто в \({ \mathbb R^{n} }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}\({ E }\) содержит все свои предельные точки в \({ \mathbb R^{n} }\).\end{icloze}
+
+    \begin{center}
+        \tiny (в терминах предельных точек)
+    \end{center}
+\end{note}
+
+\begin{note}{4313f6dffa4d4be288c13720b79f5e31}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \({ E }\) замкнуто в \({ \mathbb R^{n} }\) тогда и только тогда, когда \({ E }\) содержит все свои предельные точки в \({ \mathbb R^{n} }\).
+    В чём основная идея доказательства (необходимость)?
+
+    \begin{cloze}{1}
+        От обратного и противоречие с открытостью \({ \mathbb R^{n} \setminus E }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{338d88f6cd9b49a5b6e1fc14c46c07af}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \({ E }\) замкнуто в \({ \mathbb R^{n} }\) тогда и только тогда, когда \({ E }\) содержит все свои предельные точки в \({ \mathbb R^{n} }\).
+    В чём основная идея доказательства (достаточность)?
+
+    \begin{cloze}{1}
+        В \({ \mathbb R^{n} \setminus E }\) нет предельных точек \({ E }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{78034d8289654f2d989fd7d3cde60d2b}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ E }\) замкнуто в \({ \mathbb R^{n} }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \lim_{k \to \infty} x^{k} \in E
+        \]
+        для любой сходящейся последовательности \({ \{ x^{k} \}_{k = 1}^{\infty} \subset E }\).
+    \end{icloze}
+
+    \begin{center}
+        \tiny (в терминах последовательностей)
+    \end{center}
+\end{note}
+
+\begin{note}{c4a98576816047bd8e45761c09ffdc70}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \({ E }\) замкнуто в \({ \mathbb R^{n} }\) тогда и только тогда, когда
+    \[
+        \lim_{k \to \infty} x^{k} \in E
+    \]
+    для любой сходящейся последовательности \({ \{ x^{k} \}_{k = 1}^{\infty} \subset E }\).
+    В чём основная идея доказательства (необходимость)?
+
+    \begin{cloze}{1}
+        От обратного и противоречие с открытостью \({ \mathbb R^{n} \setminus E }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2ad826deaebf4422a6d0864598a81e82}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда \({ E }\) замкнуто в \({ \mathbb R^{n} }\) тогда и только тогда, когда
+    \[
+        \lim_{k \to \infty} x^{k} \in E
+    \]
+    для любой сходящейся последовательности \({ \{ x^{k} \}_{k = 1}^{\infty} \subset E }\).
+    В чём основная идея доказательства (достаточность)?
+
+    \begin{cloze}{1}
+        \({ E }\) содержит любую свою предельную точку.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0f1ca1a114fe4768af83b2987f80c626}
+    Пусть \begin{icloze}{3}\({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство открытых подмножеств \({ \mathbb R^{n} }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ \displaystyle \bigcup_{\alpha \in A}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}открыто в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{3592d4aa6f1d49a088ea09f8f4850695}
+    Пусть \begin{icloze}{4}\({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство открытых подмножеств \({ \mathbb R^{n} }\).\end{icloze}
+    Тогда если \begin{icloze}{3}\({ \left\lvert A \right\rvert < \aleph_0 }\),\end{icloze} то \begin{icloze}{2}\({ \displaystyle \bigcap_{\alpha \in A}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}открыто в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{d5e0544892f344dcbd519b58b207d8b6}
+    Пусть \begin{icloze}{3}\({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство закрытых подмножеств \({ \mathbb R^{n} }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ \displaystyle \bigcap_{\alpha \in A}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}замкнуто в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{203fb961ea984b4195210820a687183d}
+    Пусть \begin{icloze}{4}\({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство закрытых подмножеств \({ \mathbb R^{n} }\).\end{icloze}
+    Тогда если \begin{icloze}{3}\({ \left\lvert A \right\rvert < \aleph_0 }\),\end{icloze} то \begin{icloze}{2}\({ \displaystyle \bigcup_{\alpha \in A}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}замкнуто в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{cdbfd70790af41228a9ac6941706aed5}
+    Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \begin{icloze}{4}\({ E }\)\end{icloze} \begin{icloze}{3}открыто\end{icloze}, а \begin{icloze}{4}\({ F }\)\end{icloze} \begin{icloze}{3}замкнуто\end{icloze}, то \begin{icloze}{2}\({ E \setminus F }\)\end{icloze} \begin{icloze}{1}открыто.\end{icloze}
+\end{note}
+
+\begin{note}{11768bb518f845028aa77d77032444bf}
+    Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \begin{icloze}{4}\({ E }\)\end{icloze} \begin{icloze}{3}замкнуто\end{icloze}, а \begin{icloze}{4}\({ F }\)\end{icloze} \begin{icloze}{3}открыто\end{icloze}, то \begin{icloze}{2}\({ E \setminus F }\)\end{icloze} \begin{icloze}{1}замкнуто.\end{icloze}
+\end{note}
+
+\begin{note}{db6839cb255845099043c9415f55b4af}
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        И открыто, и замкнуто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7f1672e6cd054b6ea16112670e15fe3d}
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ \emptyset }\)?
+
+    \begin{cloze}{1}
+        И открыто, и замкнуто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d23104a8197346939669f31522a74633}
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) произвольное конечное подмножество \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Замкнуто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{685cbdd3894a49c79e96e14be1a73996}
+    Пусть \begin{icloze}{4}\({ a \in \mathbb R^{n} }\),\end{icloze}\: \begin{icloze}{3}\({ \delta > 0 }\).\end{icloze}
+    \[
+        \begin{icloze}{2}B_\delta(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ a \in \mathbb R^{n} \mid \left\lVert x - a \right\rVert < \delta \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{dc873817f70d4d40b1f3c824ad89ad17}
+    Пусть \begin{icloze}{4}\({ a \in \mathbb R^{n} }\),\end{icloze}\: \begin{icloze}{3}\({ \delta > 0 }\).\end{icloze}
+    \[
+        \begin{icloze}{2}\overline{B_\delta(a)}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ a \in \mathbb R^{n} \mid \left\lVert x - a \right\rVert \leqslant \delta \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e9a3af0fa0004802a9b0d082df09338e}
+    Пусть \begin{icloze}{4}\({ a \in \mathbb R^{n} }\),\end{icloze}\: \begin{icloze}{3}\({ \delta > 0 }\).\end{icloze}
+    \[
+        \begin{icloze}{2}S_\delta(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ x \in \mathbb R^{n} \mid \left\lVert x - a \right\rVert = \delta \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f8f71a74217449c29d5e66761ce0fcb8}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ B_\delta(a) }\)?
+
+    \begin{cloze}{1}
+        Открыто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{537577c3bdfa4bde831b90a8d0f0615f}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ \overline{B_\delta(a)} }\)?
+
+    \begin{cloze}{1}
+        Закрыто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3230aeffdb12417ca0fdf94fb913dd39}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ S_\delta(a) }\)?
+
+    \begin{cloze}{1}
+        Замкнуто.
+    \end{cloze}
+\end{note}
+
 \end{document}
