@@ -5392,4 +5392,264 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 21.05.22 (1)}
+\begin{note}{59c721ad4aeb41949fb3434169a89aeb}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{2}Замыканием множества \({ E }\)\end{icloze} называется \begin{icloze}{1}наименьшее по включению замкнутое множество, содержащее \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{a94d9d6d06b6493c81f3b1e768b81375}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{1}Замыкание множества \({ E }\)\end{icloze} обозначается
+    \begin{icloze}{2}
+        \begin{center}
+            \({ \overline{E} }\) или \({ \operatorname{Cl} E }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{31d05cf282b9466e8a9a000950fede4b}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\overline{E}\end{icloze} = \begin{icloze}{1}\bigcap \big\{ F \subset \mathbb R^{n} \mid \text{\({ F }\) --- замкнуто},\: E \subset F \big\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{69f36de3475242618fbb0eb4ae74b6dd}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ a \in \overline{E} }\) \end{icloze}
+        \begin{icloze}{3}\({ \iff }\)\end{icloze}
+        \begin{icloze}{1}\({ a \in E }\) или \({ a }\) --- предельная точка \({ E }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{4bdd2826972c4b32bc4fdfbfcf85e6d3}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \begin{icloze}{4}\({ a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ a \in \overline{E} }\) \end{icloze}
+        \begin{icloze}{3}\({ \iff }\)\end{icloze}
+        \begin{icloze}{1}\({ \exists \{ x^{k} \}_{k = 1}^{\infty} \subset E \quad x^{k} \to a }\).\end{icloze}
+    \end{center}
+
+    \begin{center}
+        \tiny (в терминах последовательностей)
+    \end{center}
+\end{note}
+
+\begin{note}{61bd6874e98f44a0882b56e7a750b9a0}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{2}Внутренностью \({ E }\)\end{icloze} называется \begin{icloze}{1}множество всех внутренних точек \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{139034b5d2bc422097d150cb9da30c33}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{2}Внутренность \({ E }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \begin{center}
+            \({ \operatorname{Int} E }\) или \({ \mathring{E} }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{b8de5908fb8d44bf92fcd25520547f67}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Открыто или закрыто в \({ \mathbb R^{n} }\) множество \({ \operatorname{Int} E }\)?
+
+    \begin{cloze}{1}
+        Открыто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{799638c4bc6f4c50bb965b8803d41eab}
+    Пусть \({ E, G \subset \mathbb R^{n} }\).
+    Тогда если \({ G }\) открыто в \({ \mathbb R^{n} }\) и \({ G \subset E }\), то \({ G \subset \operatorname{Int} E }\).
+\end{note}
+
+\begin{note}{cd90c5fff5534fb981914ccc37bd7ae9}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{2}Внутренность \({ E }\)\end{icloze} --- это \begin{icloze}{1}наибольшее по включению открытое множество, содержащееся в \({ E }\).\end{icloze}
+
+    \begin{center}
+        \tiny (в терминах включения)
+    \end{center}
+\end{note}
+
+\begin{note}{a1e8aa28d96d49799f0c4a4040f2dead}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\mathbb R^{n} \setminus \overline{E}\end{icloze} = \begin{icloze}{1}\operatorname{Int} (R^{n} \setminus E).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{fb2a725e8e4b4c2fb0fa050078699cf5}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\mathbb R^{n} \setminus \operatorname{Int} E\end{icloze} = \begin{icloze}{1}\overline{(\mathbb R^{n} \setminus E)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{fe2c858bf3c04acfa21126cdd9904aef}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{2}Границей \({ E }\)\end{icloze} называется \begin{icloze}{1}
+        множество
+        \[
+            \overline{E} \setminus \operatorname{Int} E.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{0a35e47f857f43ec9bbff01116e04eb0}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{1}Граница множества \({ E }\)\end{icloze} обозначается \begin{icloze}{2}\({ \partial E }\).\end{icloze}
+\end{note}
+
+\begin{note}{88b2a73094fb4a239e5b513a46f3a622}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Открыто или замкнуто множество \({ \partial E }\)?
+
+    \begin{cloze}{1}
+        Замкнуто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e5f44e996a0c40ec85bea1411325179d}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ \operatorname{Int} B_\delta (a) = \begin{icloze}{1}B_\delta (a)\end{icloze} }\).
+\end{note}
+
+\begin{note}{351b99e8bd1248d0b7d36a78fbdd1807}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ \operatorname{Int} \overline{B_\delta (a)} = \begin{icloze}{1}B_\delta(a)\end{icloze} }\).
+\end{note}
+
+\begin{note}{5134e609e6a542f895fa5477372047a1}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ \partial B_\delta(a) = \begin{icloze}{1}S_\delta(a)\end{icloze} }\).
+\end{note}
+
+\begin{note}{6d51fdba058545838e2402ff10db74ea}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ \partial(\overline{B_\delta(a)}) = \begin{icloze}{1}S_\delta(a)\end{icloze} }\).
+\end{note}
+
+\begin{note}{6091740d09a14c4da2f8435a9157b10d}
+    Пусть \begin{icloze}{5}\({ E \subset \mathbb R^{n} }\),\end{icloze} \begin{icloze}{3}\({ F \subset E }\).\end{icloze}
+    Точка \({ a \in \begin{icloze}{4}F\end{icloze} }\) называется \begin{icloze}{2}внутренней для \({ F }\) в \({ E }\),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \exists \delta > 0 \quad (V_{\delta}(a) \cap E) \subset F.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d9c779744732420dbf907539811051e7}
+    Пусть \({ E \subset \mathbb R^{n} }\), \begin{icloze}{3}\({ F \subset E }\).\end{icloze}
+    Множество \({ F }\) называется \begin{icloze}{2}открытым в \({ E }\),\end{icloze} если \begin{icloze}{1}любая его точка является внутренней для \({ F }\) в \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{a6191d3dd3e94990aa8ee40f4b7e6d53}
+    Пусть \({ E \subset \mathbb R^{n} }\), \begin{icloze}{3}\({ F \subset E }\).\end{icloze}
+    Множество \({ F }\) называется \begin{icloze}{2}замкнутым в \({ E }\),\end{icloze} если \begin{icloze}{1}\({ E \setminus F }\) открыто в \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{d0303c87476a424c80b3fb7522768304}
+    Пусть \({ F \subset E \subset \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ F }\) открыто в \({ E }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze}
+    \begin{icloze}{1}
+        существует открытое множество \({ G \subset \mathbb R^{n} }\), для которого
+        \[
+            F = E \cap G.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny (в терминах открытости/замкнутости в \({ \mathbb R^{n} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{33888ff338f94ea59f1f245c0f5ae61b}
+    Пусть \({ F \subset E \subset \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ F }\) замкнуто в \({ E }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} существует
+    \begin{icloze}{1}
+        замкнутое множество \({ G \subset \mathbb R^{n} }\), для которого
+        \[
+            F = E \cap G.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny (в терминах открытости/замкнутости в \({ \mathbb R^{n} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{c75d8ade85014bf2a2e7c13cc3299418}
+    Пусть \({ F \subset E \subset \mathbb R^{n} }\).
+    Если \begin{icloze}{4}\({ E }\) открыто в \({ \mathbb R^{n} }\),\end{icloze} то
+    \begin{center}
+        \begin{icloze}{2}\({ F }\) открыто в \({ E }\)\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ F }\) открыто в \({ \mathbb R^{n} }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{8607c43c4d9145ce8b739f277bc467f5}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    \begin{icloze}{1}Семейство \({ \Omega }\) подмножеств \({ \mathbb R^{n} }\) такое, что \({ E \subset \bigcup_{A \in \Omega}^{} A }\),\end{icloze} называется \begin{icloze}{2}покрытием множества \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{89d8d5966eba46478e132c99f8a87207}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Если \({ \Omega }\) --- это покрытие \({ E }\), то говорят, что \({ \Omega }\) \begin{icloze}{1}покрывает \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{69ac5bea935247e8ba609ec7be95b65f}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ \Omega }\) --- покрытие \({ E }\).
+    \begin{icloze}{1}Подсемейство \({ \Omega }\), которое также покрывает \({ E }\),\end{icloze} называется \begin{icloze}{2}подпокрытием \({ \Omega }\).\end{icloze}
+\end{note}
+
+\begin{note}{8e8ddb4f754b447b863761db2945f748}
+    Пусть \({ E \subset \mathbb R^{n} }\),\: \({ \Omega }\) --- покрытие \({ E }\).
+    Покрытие \({ \Omega }\) называется \begin{icloze}{2}открытым,\end{icloze} если \begin{icloze}{1}любое множество \({ A \in \Omega }\) открыто.\end{icloze}
+\end{note}
+
+\begin{note}{33da2e11009a4fe9a561efdb024b9f9e}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Множество \({ E }\) называется \begin{icloze}{2}компактным (или компактом),\end{icloze} если \begin{icloze}{1}из любого открытого покрытия \({ E }\) можно выбрать конечное подпокрытие.\end{icloze}
+\end{note}
+
+\begin{note}{cdb5bd07b1d340dd9b11c009a8d0fa29}
+    Пусть \begin{icloze}{3}\({ E \subset \mathbb R^{n} }\) компактно.\end{icloze}
+    Тогда любое \begin{icloze}{1}замкнутое\end{icloze} подмножество \({ E }\) \begin{icloze}{2}также компактно.\end{icloze}
+\end{note}
+
+\begin{note}{6efd282fcad744ba898c1ed2ad57dcb2}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ E }\) компактно\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ E }\) замкнуто и ограничено.\end{icloze}
+    \end{center}
+
+    \begin{center}
+        \tiny <<Теорема \begin{icloze}{4}Гейне-Бореля\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{d8a0467fa82d4e8db762642af19e20b2}
+    Пусть \({ E \subset \mathbb R^{n} }\).
+    Тогда
+    \begin{center}
+        \begin{icloze}{2}\({ E }\) компактно \end{icloze}
+        \begin{icloze}{3}\({ \iff }\)\end{icloze}
+        \begin{icloze}{1}\({ \displaystyle \forall \{ x^{k} \}_{k = 1}^{\infty} \subset E \quad \exists \{ x^{k_i} \} \quad \lim_{i \to \infty} x^{k_i} \in E }\).\end{icloze}
+    \end{center}
+
+    \begin{center}
+        \tiny (в терминах последовательностей)
+    \end{center}
+\end{note}
+
 \end{document}
