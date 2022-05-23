@@ -2582,6 +2582,178 @@
     Тогда если \begin{icloze}{2}\({ \overline{\lambda} = -\lambda }\),\end{icloze} то оператор \begin{icloze}{3}\({ \lambda(fg - gf) }\)\end{icloze} \begin{icloze}{1}самосопряжён.\end{icloze}
 \end{note}
 
+\section{Лекция 23.05.22}
+\begin{note}{5a8ab0eed63d4e1cb7f6f69e11c2aabd}
+    В \({ \mathbb R^2 }\) любое ортогональное преобразование \({ f }\) --- есть либо поворот, либо отражение относительно прямой.
+    Какие  два случая рассматриваются в доказательстве?
+
+    \begin{cloze}{1}
+        1. \({ \operatorname{spec} f \subset  \mathbb R }\),\:  2. \({ \operatorname{spec} f \cap \mathbb R = \emptyset }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{20fe0d9d75484cf1858bc7ea943f9e34}
+    В \({ \mathbb R^2 }\) любое ортогональное преобразование \({ f }\) --- есть либо поворот, либо отражение относительно прямой.
+    В чём основная идея доказательства (случай \({ \operatorname{spec} f \subset \mathbb R }\))?
+
+    \begin{cloze}{1}
+        \({ \operatorname{spec} f = \left\{ \pm 1, \pm 1 \right\} }\), и во всех случаях получаем нужное преобразование.
+    \end{cloze}
+\end{note}
+
+\begin{note}{231ac7e677014b5c906070674ee0e438}
+    В \({ \mathbb R^2 }\) любое ортогональное преобразование \({ f }\) --- есть либо поворот, либо отражение относительно прямой.
+    В чём основная идея доказательства (случай \({ \operatorname{spec} f \cap \mathbb R = \emptyset }\))?
+
+    \begin{cloze}{1}
+        Для \({ \lambda = \cos \varphi - i \sin \varphi \in \operatorname{spec} f }\) и \({ e = a + bi \in V_f(\lambda) }\) расписать
+        \[
+            f(e) = \lambda e.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{678857a6b6514b7e87cade6a771f4c53}
+    \begin{icloze}{2}Матрица поворота на угол \({ \varphi }\)\end{icloze} имеет вид:
+    \begin{icloze}{1}
+        \[
+            \begin{bmatrix}
+                \cos \varphi & -\sin \varphi \\
+                \sin \varphi & \cos \varphi
+            \end{bmatrix}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{398eb33a3cd34a718118f2be8f7095a2}
+    Пусть \({ \varphi \in \mathbb R }\) --- произвольный угол.
+    \begin{icloze}{1}Матрица поворота на угол \({ \varphi }\)\end{icloze} обозначается \begin{icloze}{2}\({ R_{\varphi} }\).\end{icloze}
+\end{note}
+
+\begin{note}{87e8bdb8fccb4fd9ac6ce183b1724513}
+    \begin{icloze}{1}
+        Матрица вида
+        \[
+            \operatorname{diag}(R_{\varphi_1}, \ldots, R_{\varphi_k}, \pm 1, \ldots, \pm 1).
+        \]
+    (с точностью до порядка клеток)
+    \end{icloze}
+    называется \begin{icloze}{2}каноническим видом матрицы ортогонального оператора.\end{icloze}
+\end{note}
+
+\begin{note}{951f954d7fc94632bfd90e091d13396e}
+    В \({ \mathbb R^{n} }\) для любого ортогонального оператора существует \begin{icloze}{1}ортонормированный базис, в котором матрица оператора имеет канонический вид.\end{icloze}
+\end{note}
+
+\begin{note}{91344cb034d9420b9a63807b59bc1cbf}
+    Отображение \({ q : \begin{icloze}{1}\mathbb R^{n} \to \mathbb R\end{icloze} }\) вида
+    \[
+        q(x) = \begin{icloze}{2}\sum_{i,j}^{} a_{ij} \cdot x_i x_j, \quad a_{ij} \in \mathbb R.\end{icloze}
+    \]
+    называется \begin{icloze}{3}квадратичной формой в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{9f5070390cb64df59f3c3a3edb21964d}
+    Пусть \({ q : x \mapsto  \sum_{}^{} a_{ij} \cdot x_i x_j }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Для удобства полагают, что \begin{icloze}{1}\({ a_{ij} = a_{ji} }\).\end{icloze}
+\end{note}
+
+\begin{note}{f3a4dfc29aec43e4be378badd310835b}
+    Матрицей квадратичной формы \({ x \mapsto  \sum_{}^{} a_{ij} \cdot x_i x_j }\) в \({ \mathbb R^{n} }\) называется
+    \begin{icloze}{1}
+        матрица
+        \[
+            \begin{bmatrix}
+                a_{ij}
+            \end{bmatrix}
+            \sim n \times n.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{c20dec1b0cdf4cfb824cfb96603e87c6}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\), \({ A }\) --- матрица \({ q }\).
+    Тогда
+    \[
+        A^{T} = \begin{icloze}{1}A.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f47b5351d6cc4c4792454ba3ae253b45}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\), \({ A }\) --- матрица \({ q }\).
+    Как \({ q(x) }\) выражается через произведение матриц?
+
+    \begin{cloze}{1}
+        \[
+            q(x) = x^{T}Ax.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{80787c73077441aa88a40c590206c15e}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\), \({ A }\) --- матрица \({ q }\).
+    Как \({ q(x) }\) выражается через евклидово скалярное произведение в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        \[
+            q(x) = (Ax, x)
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{78fd5f73a8bd4fe2bd9715e0dfc63f3e}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Форма \({ q }\) называется \begin{icloze}{2}положительно определённой,\end{icloze} если
+    \begin{icloze}{1}
+        \({ \forall x }\)
+        \begin{center}
+            \({ q(x) \geqslant 0 }\) \quad и \quad \({ q(x) = 0 \iff x = 0 }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{e2a3814c661f4081a60e07f3ae077705}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда всегда \begin{icloze}{3}существует\end{icloze} такая \begin{icloze}{2}замена переменных \({ x = By }\),\end{icloze} что
+    \begin{icloze}{1}
+        \[
+            q(By) = \sum_{i=1}^{\operatorname{rk} A} \mu_i y_i^2.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{97b6d8cfbb8e499e8552699c8f4d0bf8}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    \[
+        \begin{icloze}{2}\Delta_i\end{icloze} \coloneqq \begin{icloze}{1}M^{1, \ldots, i}_{1, \ldots, i}(A).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{70b0c89b87844a56bfbafcab882e879b}
+    Пусть \({ q : x \mapsto  \sum_{}^{} a_{ij} \cdot x_i x_j }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ q }\) положительно определена\end{icloze} \begin{icloze}{3}\({ \iff }\)\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \forall j \quad \Delta_j > 0.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny (\begin{icloze}{3}критерий\end{icloze} \begin{icloze}{4}Сильвестра\end{icloze})
+    \end{center}
+\end{note}
+
+\begin{note}{75e17707e4e446ed9ca2db4710251d36}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда всегда \begin{icloze}{4}существует\end{icloze} такая \begin{icloze}{3}ортогональная замена \({ x = By }\),\end{icloze} что
+    \begin{icloze}{1}
+        \[
+            q(By) = \sum_{i}^{} \lambda_i y_i^2,
+        \]
+    \end{icloze}
+    где \({ \left\{ \lambda_j \right\} \begin{icloze}{2}= \operatorname{spec} A\end{icloze} }\).
+\end{note}
+
 \end{document}
 
 % vim: spelllang=ru_yo,en
