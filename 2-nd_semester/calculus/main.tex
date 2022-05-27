@@ -5658,7 +5658,7 @@
 \end{note}
 
 \begin{note}{ff7b125dc2ee4647b62cf48f1c0edc4c}
-    Чем определение предела отображения \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) по Коши принципиально отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
+    Чем определение предела \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) по Коши принципиально отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
 
     \begin{cloze}{1}
         Ничем.
@@ -5666,7 +5666,7 @@
 \end{note}
 
 \begin{note}{21646334c02042498ac8c3104a6f0b24}
-    Чем определение предела отображения \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) по Гейне принципиально отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
+    Чем определение предела отображения \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) по Гейне отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
 
     \begin{cloze}{1}
         Ничем.
@@ -5693,6 +5693,65 @@
     \begin{center}
         \tiny (в терминах координатных функций)
     \end{center}
+\end{note}
+
+\begin{note}{897f1778b44c472ea1484dc061603ea0}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a }\) --- предельная точка \({ E }\),
+    \[
+        f(x) \underset{x \to a}\longrightarrow A \in \mathbb R^{m}, \quad g(x) \underset{x \to a}\longrightarrow B \in \mathbb R^{m}.
+    \]
+    Тогда если \begin{icloze}{1}\({ \top }\),\end{icloze} то
+    \[
+        (f(x) + g(x)) \underset{x \to a}\longrightarrow A + B.
+    \]
+\end{note}
+
+\begin{note}{339c716c8963455ba9dc06fb9cac6365}
+    Пусть \({ f : E \subset  \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ \lambda : E \to \mathbb R }\),\: \({ a }\) --- предельная точка \({ E }\),
+    \[
+        f(x) \underset{x \to a}\longrightarrow A \in \mathbb R^{n}, \quad \lambda(x) \underset{x \to a}\longrightarrow \alpha \in \mathbb R.
+    \]
+    Тогда если \begin{icloze}{1}\({ \top }\),\end{icloze} то
+    \[
+        \lambda(x) f(x) \underset{x \to a}\longrightarrow \alpha A.
+    \]
+\end{note}
+
+\begin{note}{61daf1572b2540f3809ed6f770b68fe2}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a }\) --- предельная точка \({ E }\),
+    \[
+        f(x) \underset{x \to a}\longrightarrow A \in \mathbb R^{m}, \quad g(x) \underset{x \to a}\longrightarrow B \in \mathbb R^{m}.
+    \]
+    Тогда если \begin{icloze}{1}\({ \top }\),\end{icloze} то
+    \[
+        f(x) \cdot g(x) \underset{x \to a}\longrightarrow A \cdot B.
+    \]
+\end{note}
+
+\begin{note}{a80a77deaa7f4a91a4c9e4898c2d54a9}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a }\) --- предельная точка \({ E }\),
+    \[
+        f(x) \underset{x \to a}\longrightarrow A \in \mathbb R^{m}, \quad g(x) \underset{x \to a}\longrightarrow B \in \mathbb R^{m}.
+    \]
+    Тогда если \begin{icloze}{1}\({ m = 1 }\) и \({ B \neq 0 }\),\end{icloze} то
+    \[
+        \frac{f}{g}(x) \underset{x \to a}\longrightarrow \frac{A}{B}.
+    \]
+\end{note}
+
+\begin{note}{d5a6f58c526346a3868af995d0553564}
+    Пусть \begin{icloze}{4}\({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\),\end{icloze}\: \begin{icloze}{3}\({ a \in \overline{\mathbb R^{n}} }\) и \({ b \in F }\) --- предельные точки \({ E }\) и \({ F }\) соответственно.\end{icloze} Тогда если
+    \begin{icloze}{2}
+        \[
+            f(x) \underset{x \to a}\longrightarrow b, \quad g(x) \underset{x \to b}\longrightarrow g(b),
+        \]
+    \end{icloze}
+    то
+    \begin{icloze}{1}
+        \[
+            (g \circ f)(x) \underset{x \to a}\longrightarrow g(b)
+        \]
+    \end{icloze}
 \end{note}
 
 \begin{note}{1fe3bd0f7cca46f3926bbb096e417e7c}
