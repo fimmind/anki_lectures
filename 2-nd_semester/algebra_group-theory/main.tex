@@ -1,0 +1,184 @@
+\input{../../prelude.tex}
+
+\begin{document}
+\section{30.05.22}
+\begin{note}{6fdd3ac4b4f644cea3704bcc79918836}
+    \begin{icloze}{2}Группой \({ (G, \circ) }\)\end{icloze} называется \begin{icloze}{1}непустое множество \({ G }\) с заданной на нём бинарной операцией \({ \circ : G \times G \to G }\), удовлетворяющей аксиомам группы.\end{icloze}
+\end{note}
+
+\begin{note}{827b57c3950c42b28e381d37a49ddf39}
+    Сколько утверждений представлено в наборе аксиом из определения группы \({ (G, \circ) }\)?
+
+    \begin{cloze}{1}
+        Три.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f526d0257921478ca77a37b97abb9d06}
+    Какова первая аксиома в наборе аксиом из определения группы \({ (G, \circ) }\)?
+
+    \begin{cloze}{1}
+        Операция \({ \circ }\) ассоциативна.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ce2298302937453e87e0cf850f17af90}
+    Какова вторая аксиома в наборе аксиом из определения группы \({ (G, \circ) }\)?
+
+    \begin{cloze}{1}
+        Для операции \({ \circ }\) существует нейтральный элемент.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9f917456f2bf4fe6bf4e35f8042c9499}
+    \begin{icloze}{2}Нейтральный элемент\end{icloze} из определения группы \({ (G, \circ) }\) обычно обозначают \begin{icloze}{1}\({ e }\).\end{icloze}
+\end{note}
+
+\begin{note}{3a8f693c011348fd9e88038d036a5b42}
+    Пусть \({ (G, \circ) }\) --- группа,\: \begin{icloze}{4}\({ a \in G }\).\end{icloze} \begin{icloze}{2}Элемент \({ \tilde a \in G }\)\end{icloze} называется \begin{icloze}{3}обратным к \({ a }\),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            a \circ \tilde a = \tilde a \circ a = e.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{13c9853893a445d9a33db6823c3a5146}
+    Какова третья аксиома в наборе аксиом из определения группы \({ (G, \circ) }\)?
+
+    \begin{cloze}{1}
+        \({ \forall a \in G }\) существует обратный к \({ a }\) элемент.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5ba5e27ac8a9481eac4302c3159a6596}
+    Пусть \({ (G, \circ) }\) --- группа, \({ a \in G }\). \begin{icloze}{2}Обратный элемент к \({ a }\)\end{icloze} обычно обозначают \begin{icloze}{1}\({ a^{-1} }\).\end{icloze}
+\end{note}
+
+\begin{note}{9f4da30e71b1403a998b7c3fdf192252}
+    \begin{icloze}{2}Множество всех невырожденных \({ n \times n }\) матриц над полем \({ F }\)\end{icloze} вместе с \begin{icloze}{3}операцией умножения\end{icloze} \begin{icloze}{1}называется общей линейной группой.\end{icloze}
+\end{note}
+
+\begin{note}{27a09e6a00d14e859d7ad1d78a4f74a3}
+    \begin{icloze}{2}Общая линейная группа из \({ n \times n }\) матриц над полем \({ F }\)\end{icloze} обозначается \begin{icloze}{1}\({ \operatorname{GL}(n, F) }\).\end{icloze}
+\end{note}
+
+\begin{note}{809c8a8f790e4a2a998a4a8038c03971}
+    Группа \({ (G, \circ) }\) называется \begin{icloze}{2}абелевой,\end{icloze} если \begin{icloze}{1}операция \({ \circ }\) коммутативна.\end{icloze}
+\end{note}
+
+\begin{note}{e59ac970ec54461083354dae9eeb4047}
+    Может ли группа иметь несколько нейтральных элементов?
+
+    \begin{cloze}{1}
+        Нет, нейтральный элемент единственен.
+    \end{cloze}
+\end{note}
+
+\begin{note}{13fee55238844118889a790b6e0c7e37}
+    Пусть \({ (G, \circ) }\) --- группа.
+    Тогда если \({ e }\) и \({ e' }\) --- нейтральные элементы для \({ \circ }\), то \({ e = e' }\). В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Рассмотреть \({ e \circ e' }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{afa616033db44cee8d39131bb90173bd}
+    Пусть \({ (G, \circ) }\) --- группа, \({ a \in G }\).
+    Может ли в \({ G }\) существовать несколько элементов, обратных к \({ a }\)?
+
+    \begin{cloze}{1}
+        Нет, обратный элемент единственен.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9f4dcde939af46639169bda602d721c5}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
+    Тогда если \({ a^{-1} }\) и \({ \tilde a }\) --- обратные элементы к \({ a }\), то \({ \tilde a = a^{-1} }\). В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Представить \({ \tilde a }\) как \({ \tilde a \circ \left( a \circ a^{-1} \right) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3db3d03590c84407bfb64b2a80b0e1c5}
+    Пусть \({ (G, \circ) }\) --- группа, \begin{icloze}{2}\({ a, b \in G }\).\end{icloze} Тогда
+    \[
+        (a \circ b)^{-1} =  \begin{icloze}{1}b^{-1} \circ a^{-1}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{10144a83e52a4f5cbf0f96c818e229a5}
+    Пусть \({ (G, \circ) }\) --- группа, \begin{icloze}{3}\({ H \subset G }\).\end{icloze}
+    Тогда \begin{icloze}{4}\({ (H, \circ) }\)\end{icloze} называется \begin{icloze}{2}подгруппой группы \({ (G, \circ) }\),\end{icloze} если \begin{icloze}{1}\({ (H, \circ) }\) является группой.\end{icloze}
+\end{note}
+
+\begin{note}{9de4580c8d2545bcad2c525fe42930ec}
+    Пусть \({ (G, \circ) }\) --- группа, \({ H \subset G }\).
+    Выражение ``\({ (H, \circ) }\) является подгруппой \({ (G, \circ) }\)'' обозначается
+    \[
+        (H, \circ) \leqslant (G, \circ).
+    \]
+\end{note}
+
+\begin{note}{bd4835b2c522436fac41030bf6b13a66}
+    Пусть \({ (G, \circ)}\) --- группа, \begin{icloze}{4}\({ a \in G }\),\end{icloze}\: \begin{icloze}{3}\({ n \in \mathbb N }\).\end{icloze}
+    \[
+        \begin{icloze}{2}a^{n}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\underbrace{a \circ \cdots \circ a}_{\text{\({ n }\) раз}}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2e41bce96a5249ca9d372d04f772b9b4}
+    Пусть \({ (G, \circ)}\) --- группа, \begin{icloze}{2}\({ a \in G }\).\end{icloze}
+    \[
+        a^{0} \overset{\text{def}}= \begin{icloze}{1}e.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2cfa92bf39b847d4aa21d381a0d2c428}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\),\: \({ n \in \mathbb N }\).
+    \[
+        \begin{icloze}{2}a^{-n}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left( a^{-1} \right)^{n}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3994ad9b38154ec081e7042011939b50}
+    Пусть \({ (G, \circ)}\) --- группа, \begin{icloze}{3}\({ a \in G }\).\end{icloze}
+    \begin{icloze}{2}Порядком элемента \({ a }\)\end{icloze} называется \begin{icloze}{1}либо \({ \min \left\{ n \in \mathbb N \mid a^{n} = e \right\} }\), либо \({ \infty }\), если таких \({ n }\) не существует.\end{icloze}
+\end{note}
+
+\begin{note}{78e264e39e824819ace538828da51d7c}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
+    \begin{icloze}{2}Порядок элемента \({ a }\)\end{icloze} обозначается \begin{icloze}{1}\({ \operatorname{ord} a }\).\end{icloze}
+\end{note}
+
+\begin{note}{2e3b057efc1e40b1843700b41b2052b9}
+    Пусть \({ (G, \circ)}\) --- группа, \begin{icloze}{3}\({ a \in G }\).\end{icloze}
+    \begin{icloze}{1}Множество \({ \{ a^{k} \mid k \in \mathbb Z \} }\) с операций \({ \circ }\)\end{icloze} называется \begin{icloze}{2}подгруппой \({ (G, \circ) }\), порождённой элементом \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{fd96a89fdb1b45559782a7213101e400}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
+    \begin{icloze}{2}Подгруппа \({ (G, \circ) }\), порождённая элементом \({ a }\),\end{icloze} обозначается \begin{icloze}{1}\({ \langle a \rangle }\).\end{icloze}
+\end{note}
+
+\begin{note}{54a6a6775d1940b09be51518008fabdc}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
+    Тогда если \begin{icloze}{2}\({ \operatorname{ord} a < \infty }\),\end{icloze} то
+    \[
+        \begin{icloze}{3}\langle a \rangle\end{icloze} \simeq \begin{icloze}{1}\mathbb Z_{\operatorname{ord} a}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d83fe9abbfca4fc99b99e08866cc83a9}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
+    Тогда если \begin{icloze}{2}\({ \operatorname{ord} a = \infty }\),\end{icloze} то
+    \[
+        \begin{icloze}{3}\langle a \rangle\end{icloze} \simeq \begin{icloze}{1}\mathbb Z.\end{icloze}
+    \]
+\end{note}
+
+\end{document}
+
+% vim: spelllang=ru_yo,en

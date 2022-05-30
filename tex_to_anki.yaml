@@ -7,6 +7,10 @@ decks:
     name: University::2-nd Semester::Algebra
     source_files:
       - 2-nd_semester/algebra/main.tex
+  1840991414:
+    name: University::2-nd Semester::Algebra (Group theory)
+    source_files:
+      - 2-nd_semester/algebra_group-theory/main.tex
   1225322298:
     name: University::2-nd Semester::Calculus
     source_files:
