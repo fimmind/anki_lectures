@@ -5306,6 +5306,16 @@
     Тогда \begin{icloze}{2}\({ \bigcup_{}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}открыто в \({ \mathbb R^{n} }\).\end{icloze}
 \end{note}
 
+\begin{note}{cced37c873934048bb8d05555dcb66cd}
+    Пусть \({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство открытых подмножеств \({ \mathbb R^{n} }\).
+    Тогда \({ \bigcup_{}^{} E_\alpha }\) открыто в \({ \mathbb R^{n} }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Любая точка \({ \bigcup_{}^{} E_\alpha }\) принадлежит открытому подмножеству \({ \bigcup_{}^{} E_\alpha }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{3592d4aa6f1d49a088ea09f8f4850695}
     Пусть \begin{icloze}{4}\({ \left\{ E_\alpha \right\}_{\alpha \in A} }\) --- семейство открытых подмножеств \({ \mathbb R^{n} }\).\end{icloze}
     Тогда если \begin{icloze}{3}\({ \left\lvert A \right\rvert < \aleph_0 }\),\end{icloze} то \begin{icloze}{2}\({ \bigcap_{}^{} E_\alpha }\)\end{icloze} \begin{icloze}{1}открыто в \({ \mathbb R^{n} }\).\end{icloze}
@@ -5337,8 +5347,30 @@
     Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \begin{icloze}{4}\({ E }\)\end{icloze} \begin{icloze}{3}открыто\end{icloze}, а \begin{icloze}{4}\({ F }\)\end{icloze} \begin{icloze}{3}замкнуто\end{icloze}, то \begin{icloze}{2}\({ E \setminus F }\)\end{icloze} \begin{icloze}{1}открыто.\end{icloze}
 \end{note}
 
+\begin{note}{96551e5b3eda4e56a9e84b9c87023f35}
+    Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \({ E }\) открыто, а \({ F }\) замкнуто, то \({ E \setminus F }\) открыто.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            E \setminus F = E \cap (\mathbb R^{n} \setminus F).
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{11768bb518f845028aa77d77032444bf}
     Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \begin{icloze}{4}\({ E }\)\end{icloze} \begin{icloze}{3}замкнуто\end{icloze}, а \begin{icloze}{4}\({ F }\)\end{icloze} \begin{icloze}{3}открыто\end{icloze}, то \begin{icloze}{2}\({ E \setminus F }\)\end{icloze} \begin{icloze}{1}замкнуто.\end{icloze}
+\end{note}
+
+\begin{note}{a3e832b1aa1548b5a03d89eff807b690}
+    Пусть \({ E, F \subset \mathbb R^{n} }\). Тогда если \({ E }\) замкнуто, а \({ F }\) открыто, то \({ E \setminus F }\) замкнуто.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            E \setminus F = E \cap (\mathbb R^{n} \setminus F).
+        \]
+    \end{cloze}
 \end{note}
 
 \begin{note}{db6839cb255845099043c9415f55b4af}
@@ -5355,6 +5387,13 @@
     \begin{cloze}{1}
         И открыто, и замкнуто.
     \end{cloze}
+\end{note}
+
+\begin{note}{866fb541bf1c4d37adc09e0e70ac8bd8}
+    Пусть \({ E \subset \mathbb R^{n} }\) открыто и замкнуто. Тогда
+    \[
+        E = \begin{icloze}{1}\text{\({ \mathbb R^{n} }\) или \({ \emptyset }\)}.\end{icloze}
+    \]
 \end{note}
 
 \begin{note}{d23104a8197346939669f31522a74633}
@@ -5395,6 +5434,16 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{39bd0c988fe2432690c57debf909ba66}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ B_\delta(a) }\) открыто.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Для произвольной точки из \({ B_{\delta}(a) }\) выбрать достаточно маленькую о окрестность и далее по неравенству треугольника.
+    \end{cloze}
+\end{note}
+
 \begin{note}{537577c3bdfa4bde831b90a8d0f0615f}
     Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
     Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ \overline{B_\delta(a)} }\)?
@@ -5404,12 +5453,34 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{b9e15e7ee78842ed93fd8fcd816e9ffc}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ \overline{B_\delta(a)} }\) замкнуто.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать определение в терминах последовательностей.
+    \end{cloze}
+\end{note}
+
 \begin{note}{3230aeffdb12417ca0fdf94fb913dd39}
     Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
     Открыто или замкнуто в \({ \mathbb R^{n} }\) множество \({ S_\delta(a) }\)?
 
     \begin{cloze}{1}
         Замкнуто.
+    \end{cloze}
+\end{note}
+
+\begin{note}{fdbfcb0397854628aace32977649b069}
+    Пусть \({ a \in \mathbb R^{n} }\),\: \({ \delta > 0 }\).
+    Тогда \({ S_\delta(a) }\) замкнуто.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            S_\delta(a) = \overline{B_\delta(a)} \setminus B_\delta(a).
+        \]
     \end{cloze}
 \end{note}
 
