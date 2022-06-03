@@ -6134,6 +6134,341 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 28.05.22 (2)}
+\begin{note}{f04423d3d7074770b762b08e5f0a2a70}
+    \({ O }\)-большое и \({ o }\)-малое называют ещё \begin{icloze}{1}символами Ландау.\end{icloze}
+\end{note}
+
+\begin{note}{8e927c671db34917a4a5e1ab3dc1e06e}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{3}\({ a }\) --- предельная точка \({ E }\),\end{icloze}\: \begin{icloze}{4}\({ N \in \mathbb N }\).\end{icloze}
+    Тогда если \begin{icloze}{2}отображение \({ x \mapsto \frac{f(x)}{\left\lVert x - a \right\rVert^{N}} }\) локально ограничено в точке \({ a }\),\end{icloze} то говорят, что
+    \begin{icloze}{1}
+        \[
+            f(x) = O(\left\lVert x - a \right\rVert^{N}), \quad  x \to a.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{fad7e0a388954612964803b360fe5d3d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{3}\({ a }\) --- предельная точка \({ E }\),\end{icloze}\: \begin{icloze}{4}\({ N \in \mathbb N }\).\end{icloze}
+    Тогда если \begin{icloze}{2}отображение \({ x \mapsto \frac{f(x)}{\left\lVert x - a \right\rVert^{N}} }\) бесконечно мало в точке \({ a }\),\end{icloze} то говорят, что
+    \begin{icloze}{1}
+        \[
+            f(x) = o(\left\lVert x - a \right\rVert^{N}), \quad x \to a.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{ba6241aee88d4dea97d9f884f9d7ff3f}
+    В определении \({ o }\)-малого для удобства полагают, что функция
+    \[
+        x \mapsto \frac{f(x)}{\left\lVert x - a \right\rVert^{N}}
+    \]
+    \begin{icloze}{1}непрерывна в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{d719dcdb5af849639ad736cd806340de}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a }\) --- предельная точка \({ E }\).
+    Утверждение
+    \begin{icloze}{2}
+        \[
+            f(x) = o(\left\lVert x - a \right\rVert), \quad x \to a
+        \]
+    \end{icloze}
+    так же записывают как
+    \begin{icloze}{1}
+        \[
+            f(x) = o(x - a), \quad x \to a.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f602028d4e834727b205a0610a0c96ea}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a }\) --- предельная точка \({ E }\).
+    Утверждение
+    \begin{icloze}{2}
+        \[
+            f(x) = O(\left\lVert x - a \right\rVert), \quad x \to a
+        \]
+    \end{icloze}
+    так же записывают как
+    \begin{icloze}{1}
+        \[
+            f(x) = O(x - a), \quad x \to a.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{6562de55c997431e8367a2848528370d}
+    Пусть \({ V, W }\) --- линейные пространства.
+    Множество всех линейных операторов \({ V \to W }\) обозначается \begin{icloze}{1}\({ \mathcal L(V, W) }\).\end{icloze}
+\end{note}
+
+\begin{note}{f77214b5ea714137a9cfb0073362925d}
+    Пусть \({ f : E  \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{4}\({ a \in \operatorname{Int} E }\).\end{icloze}
+    \begin{icloze}{3}Оператор
+        \[
+            T \in \mathcal L(\mathbb R^{n}, \mathbb R^{m})
+        \]
+    \end{icloze} такой, что
+    \begin{icloze}{2}
+        \[
+            f(x) = f(a) + T(x - a) + o(x - a), \quad x \to a.
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}дифференциалом \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{b36cf2416f8e4eed89f72e08a1e6e9a0}
+    Пусть \({ f : E  \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\).
+    \begin{icloze}{2}Дифференциал \({ f }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{1}\({ d_a f }\).\end{icloze}
+\end{note}
+
+\begin{note}{cfce7e6a8d7f46ebac0428174d9baf01}
+    Пусть \({ f : E  \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{3}\({ a \in \operatorname{Int} E }\).\end{icloze}
+    Отображение \({ f }\) называется \begin{icloze}{2}дифференцируемым в точке \({ a }\),\end{icloze} если \begin{icloze}{1}существует \({ d_a f }\)\end{icloze}
+\end{note}
+
+\begin{note}{f46eb042f44a4dca88af3d73eae0ca1d}
+    Пусть \({ f : E \subset \mathbb R \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \begin{icloze}{2}\({ d_{a} f }\)\end{icloze} представляет из себя
+    \begin{icloze}{1}линейную вектор функцию вида
+        \[
+            h \mapsto h \cdot k, \quad \text{где \({ k \in \mathbb R^{m} }\)}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{34df7b7787e14e8595498cebf029d764}
+    Пусть \({ f : E \subset \mathbb R \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    \begin{icloze}{2}
+        Значение
+        \[
+            d_{a}f(1)
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}производной \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{eb3aa6e0d4614b7ebef27ca5a3adb894}
+    Пусть \({ f : E \subset \mathbb R \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    \begin{icloze}{2}Производная \({ f }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{1}\({ f'(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{b2cec8ccbc6d4f3881bef37926780f68}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) \begin{icloze}{1}непрерывно в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{882c243a18134406ba4e9bc78361ab97}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) непрерывно в точке \({ a }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            f(a + h) - f(a) \underset{h \to 0}\longrightarrow 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{ae6dcf68dac241c09aedc204bbb0c45a}
+    Пусть \({ f : \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ f(x) = const }\),\: \({ a \in \mathbb R^{n} }\).
+    Тогда
+    \[
+        d_{a} f(h) = \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6356837026ce46d0b56246cdf63f5b64}
+    Пусть \({ f \in \mathcal L(\mathbb R^{n}, \mathbb R^{m}) }\),\: \({ a \in \mathbb R^{n} }\).
+    Тогда
+    \[
+        d_{a} f(h) = \begin{icloze}{1}f(h).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{aa19836f543d4d52b55111db827459a3}
+    Пусть \({ f \in \mathcal L(\mathbb R^{n}, \mathbb R^{m}) }\),\: \({ a \in \mathbb R^{n} }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\), если \begin{icloze}{1}\({ \top }\).\end{icloze}
+\end{note}
+
+\begin{note}{c5bde8eb01764970b5cf1e7da80b8aee}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).\end{icloze}
+    \begin{icloze}{1}
+        Значение
+        \[
+            \lim_{h \to 0} \frac{f(a + he) - f(a)}{h}
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}производной \({ f }\) по вектору \({ e }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{02f6ea926ce44e0798ce4c5a7069f787}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).
+    \begin{icloze}{2}Производная \({ f }\) по вектору \({ e }\) в точке \({ a }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            \frac{\partial f}{\partial e}(a).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{fb3482c4672c476c80753762335f0899}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{3}\({ e \in S_1(0) }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ \frac{\partial f}{\partial e}(a) }\)\end{icloze} называется \begin{icloze}{1}производной \({ f }\) по направлению \({ e }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{eeba1ebe383d4749bd35920c721fe1d3}
+    Может ли производная по вектору быть бесконечной?
+
+    \begin{cloze}{1}
+        Строго говоря, может, но в большинстве случаев предполагают, что она принимает только конечные значения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{76e3d0829d93417a9e2feaf78d34126b}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{3}\({ e \in S_1(0) }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\frac{\partial f}{\partial e}(a)\end{icloze} = \begin{icloze}{1}(f(a + te))' \big|_{t = 0}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах вектор функций)
+    \end{center}
+\end{note}
+
+\begin{note}{44cd6d8c12554833bb8afa0753b0910b}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{3}\({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\frac{\partial f}{\partial e}\end{icloze} = \begin{icloze}{1}\left( \frac{\partial f_1}{\partial e}, \ldots, \frac{\partial f_m}{\partial e} \right).\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах координат)
+    \end{center}
+\end{note}
+
+\begin{note}{eaedf212617f4428bef386d4b81e2eed}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ \exists d_{a}f }\),\end{icloze}\: \begin{icloze}{3}\({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\frac{\partial f}{\partial e}(a)\end{icloze} = \begin{icloze}{1}d_{a}f(e).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{89f7b5294b944a95b75abdab905dbc98}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ \exists d_{a}f }\),\: \({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).
+    Тогда
+    \[
+        \frac{\partial f}{\partial e}(a) = d_{a}f(e).
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        В определении \({ \frac{\partial f}{\partial e}(a) }\) выразить числитель через определение \({ d_{a}f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{67db980b491949d785fed96f33803237}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ d_{a}f }\) \begin{icloze}{1}определён однозначно.\end{icloze}
+\end{note}
+
+\begin{note}{25f117cbf76f46f19ca4230ce0116654}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ d_{a}f }\) определён однозначно.
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Значение дифференциала определяется для любого вектора однозначно чрез связь с \({ \frac{\partial f}{\partial e}(a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cf8143dde492494295964135369ed967}
+    В контексте \({ \mathbb R^{n} }\) через \begin{icloze}{2}\({ e^{i} }\)\end{icloze} обозначают \begin{icloze}{1}\({ i }\)-й вектор канонического базиса в \({ \mathbb R^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{54153c0a672c4b90934ba69d7d0644f9}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ k \in [1 : n] }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ \frac{\partial f}{\partial e^{i}}(a) }\)\end{icloze} называется \begin{icloze}{1}частной производной \({ f }\) по \({ k }\)-й переменной в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{e1e682d22e3742e3948f24a25e2d2b56}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ k \in [1 : n] }\).
+    \begin{icloze}{2}Частная производная \({ f }\) по \({ k }\)-й переменной в точке \({ a }\)\end{icloze} обозначается
+    \begin{center}
+        \begin{icloze}{1}\({ \frac{\partial f}{\partial x_k}(a) }\)\end{icloze},\: \begin{icloze}{1}\({ D_k f(a) }\)\end{icloze},\: \begin{icloze}{1}\({ \partial_k f(a) }\)\end{icloze} или \begin{icloze}{1}\({ f'_{x_k}(a) }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{267a17a4b2ac411699cab9e254ebf19a}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ k \in [1 : n] }\).
+    Тогда
+    \[
+        \begin{icloze}{3}\frac{\partial f}{\partial x_k}(a)\end{icloze} = \begin{icloze}{2}\varphi_k'(a_k),\end{icloze}
+    \]
+    где \({ \varphi_k(t) \coloneqq \begin{icloze}{1}f(a_1, \ldots, a_{k - 1}, t, a_{k + 1}, \ldots, a_n)\end{icloze} }\).
+\end{note}
+
+\begin{note}{3a23259d797c45e6b298385e04016223}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        \begin{icloze}{2}d_{a}f(h)\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{n} \frac{\partial f}{\partial x_k} (a) \cdot h_k.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах частных производных)
+    \end{center}
+\end{note}
+
+\begin{note}{7f59884a7bf14df4939f4af780bc6989}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        d_{a}f(h) = \sum_{k=1}^{n} \frac{\partial f}{\partial x_k} (a) \cdot h_k.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Разложить \({ h }\) по каноническому базису и использовать линейность \({ d_{a}f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8f7aab5736454f5795f482c88b918b01}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\),\: \begin{icloze}{3}\({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}\frac{\partial f}{\partial e}(a)\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{n} \frac{\partial f}{\partial x_k}(a) \cdot e_k.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах частных производных)
+    \end{center}
+\end{note}
+
+\begin{note}{83de62d2dfa84469a6fbbb50b5934f72}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\),\: \({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).
+    Тогда
+    \[
+        \frac{\partial f}{\partial e}(a) = \sum_{k=1}^{n} \frac{\partial f}{\partial x_k}(a) \cdot e_k.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            \frac{\partial f}{\partial e}(a) = d_{a}f(e) = \ldots
+        \]
+    \end{cloze}
+\end{note}
+
 \section{Семинар 26.05.22}
 \begin{note}{2bbeb2bd5e114d1e844f0e6871141386}
     Пусть \begin{icloze}{3}\({ f \in C^{1}[a, b] }\).\end{icloze} \begin{icloze}{2}Площадь поверхности вращения графика функции \({ f }\) вокруг оси \({ Ox }\)\end{icloze} равна
