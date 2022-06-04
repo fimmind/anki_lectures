@@ -6479,4 +6479,80 @@
     \end{icloze}
 \end{note}
 
+\section{Лекция 04.06.22 (1)}
+\begin{note}{3158d37d03514cf6a48e5f1e50943280}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\).\end{icloze}
+    Тогда \begin{icloze}{2}\({ f }\) дифференцируемо в точке \({ a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}все координатные функции \({ f_k }\) дифференцируемы в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{a31575ebc07f469ab443c54489a0f052}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда \begin{icloze}{1}матрица \({ d_{a}f }\)\end{icloze} называется \begin{icloze}{2}матрицей Якоби \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{475dd78374494ef48e52b268a9e7d737}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    \begin{icloze}{2}Матрица Якоби \({ f }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{1}\({ f'(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{6e2acb045c654dce899895bfd332d261}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда \begin{icloze}{1}если \({ m = 1 }\), то \({ f'(a) }\)\end{icloze} называют \begin{icloze}{2}градиентом отображения \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{8224bbff688b41bf8effa9d4e231ce37}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    \begin{icloze}{2}Градиент \({ f }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{1}\({ \operatorname{grad} f(a) }\)\end{icloze} или \begin{icloze}{1}\({ \nabla f(a) }\)\end{icloze}
+\end{note}
+
+\begin{note}{7fd19c7b8d4840b1b246ef7284641b60}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        \begin{icloze}{3}f'(a)\end{icloze} = \left[ \begin{icloze}{1}\frac{\partial f_i}{\partial x_j}(a)\end{icloze} \right] \sim \begin{icloze}{2}m \times n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{44b005f1da294a33b0146fb00ef1e53f}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \begin{icloze}{2}\({ i }\)-я строка\end{icloze} \begin{icloze}{3}\({ f'(a) }\)\end{icloze} --- это \begin{icloze}{1}\({ \nabla f_i(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{3820288f2e574fcf9121ea4a55c73afa}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \begin{icloze}{2}\({ j }\)-й столбец\end{icloze} \begin{icloze}{3}\({ f'(a) }\)\end{icloze} --- это \begin{icloze}{1}\({ \frac{\partial f}{\partial x_j}(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{eda3b1356526444eb23d37159f97cf0e}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{5}дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда множество
+    \[
+        \Big\{ \begin{icloze}{4}(x, y)\end{icloze} \mid \begin{icloze}{3}x \in \mathbb R^{n},\end{icloze}\: \begin{icloze}{2}y = f(a) + \nabla f(a) \cdot (x - a)\end{icloze} \Big\}.
+    \]
+    задаёт \begin{icloze}{1}касательную \({ n }\)-мерную гиперплоскость к графику \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{c3d92f858259477dbb835857dcc70ca9}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда если \begin{icloze}{3}\({ \nabla f(a) \neq 0 }\),\end{icloze} то \begin{icloze}{2}\({ \forall e \in S_1(0) }\)\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \left\lvert \frac{\partial f}{\partial e}(a) \right\rvert \leqslant \left\lVert \nabla f(a) \right\rVert.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a670a788fedf4625aaeeeb9ab231df7f}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\),\:
+    \[
+        e \in S_1(0), \quad \nabla f(a) \neq 0.
+    \]
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lvert \frac{\partial f}{\partial e}(a) \right\rvert = \left\lVert \nabla f(a) \right\rVert\end{icloze}
+        \begin{icloze}{1}\iff\end{icloze}
+        \begin{icloze}{1}\text{\({ e }\) и \({ \nabla f(a) }\) коллинеарны}.\end{icloze}
+    \]
+\end{note}
+
 \end{document}
