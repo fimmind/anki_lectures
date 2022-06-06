@@ -183,7 +183,7 @@
     Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
     Тогда если \begin{icloze}{2}\({ \operatorname{ord} a < \infty }\),\end{icloze} то
     \[
-        \begin{icloze}{3}\langle a \rangle\end{icloze} \simeq \begin{icloze}{1}\mathbb Z_{\operatorname{ord} a}.\end{icloze}
+        \begin{icloze}{3}(\langle a \rangle, \circ)\end{icloze} \simeq \begin{icloze}{1}(\mathbb Z_{\operatorname{ord} a}, +).\end{icloze}
     \]
 \end{note}
 
@@ -191,8 +191,306 @@
     Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\).
     Тогда если \begin{icloze}{2}\({ \operatorname{ord} a = \infty }\),\end{icloze} то
     \[
-        \begin{icloze}{3}\langle a \rangle\end{icloze} \simeq \begin{icloze}{1}\mathbb Z.\end{icloze}
+        \begin{icloze}{3}(\langle a \rangle, \circ)\end{icloze} \simeq \begin{icloze}{1}(\mathbb Z, +).\end{icloze}
     \]
+\end{note}
+
+\section{06.06.22}
+\begin{note}{053e51258ecd4ca588d279e34a89a3d3}
+    Пусть \({ (G, \circ), (H, *) }\) --- группы,\: \begin{icloze}{3}\({ f : G \to H }\).\end{icloze}
+    Отображение \({ f }\) называется \begin{icloze}{2}гомоморфизмом групп,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \forall a, b \in G \quad f(a \circ b) = f(a) * f(b).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{5266d124dc1d4300b1204c6286b3e25e}
+    Пусть \({ (G, \circ), (H, *) }\) --- группы,\: \({ f : G \to H }\) --- гомоморфизм.
+    Тогда
+    \[
+        f(e) = \begin{icloze}{1}e.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6fa9d3c343dc4c9dbd8cee9c37bbac42}
+    Пусть \({ (G, \circ), (H, *) }\) --- группы,\: \({ f : G \to H }\) --- гомоморфизм.
+    Тогда
+    \[
+        f(a^{-1}) = \begin{icloze}{1}f(a)^{-1}\end{icloze} \quad \forall a \in G.
+    \]
+\end{note}
+
+\begin{note}{181a648ef262451fb18b4237c6c7f429}
+    Пусть \({ (G, \circ), (H, *) }\) --- группы,\: \({ f : G \to H }\).
+    Отображение \({ f }\) называется \begin{icloze}{2}изоморфизмом групп,\end{icloze} если \begin{icloze}{1}оно является гомоморфизмом и биективно.\end{icloze}
+\end{note}
+
+\begin{note}{743a7ef3a0c045548f43006f58969493}
+    \[
+        \begin{icloze}{2}\mathbb R_+\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ x \in \mathbb R \mid x > 0 \right\}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (не как в матане!)
+    \end{center}
+\end{note}
+
+\begin{note}{7618af52019f4c6bb8a64f426a797e41}
+    \[
+        \begin{icloze}{2}\overline{\mathbb R}_+\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ x \in \mathbb R \mid x \geqslant 0 \right\}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (не как в матане!)
+    \end{center}
+\end{note}
+
+\begin{note}{7dd1206881114b28bc9ef9c14a7fd882}
+    Пример изоморфизма групп \({ (\mathbb R_+, \cdot) }\) и \({ (\mathbb R, +) }\).
+
+    \begin{cloze}{1}
+        \[
+            f : x \mapsto \ln x.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{2ec8dcb4e81d40eebde4db2b2702daa4}
+    Пусть \({ n \in \mathbb N }\).
+    \[
+        \mathbb Z_{n} \overset{\text{def}}= \begin{icloze}{1}[0 : n - 1].\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ae71026122c54154a213e03843c8abcb}
+    Пусть \({ a, b \in Z_n }\).
+    \[
+        a + b \overset{\text{def}}= \begin{icloze}{1}(a + b) \bmod n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8e7c4384053947bc8f40faae3d3bc34f}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a < \infty }\).
+    Тогда
+    \[
+        (\langle a \rangle, \circ) \simeq (\mathbb Z_{\operatorname{ord} a}, +).
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Построить изоморфизм \({ \mathbb Z_{\operatorname{ord} a} \to \langle a \rangle, \quad k \mapsto a^{k} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{129a1bab504e409cb12b31bb2da9c1ff}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a < \infty }\).
+    Как показать, что \({ f : k \mapsto a^{k},\: \mathbb Z_{\operatorname{ord} a} \to G }\) --- гомоморфизм?
+
+    \begin{cloze}{1}
+        Представить \({ f(k_1 + k_2) }\) как \({ g^{k_1 + k_2 - l \cdot n},\: l \in \left\{ 0, 1 \right\} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{69b8b587049647ca85d7cdc871bebb05}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a < \infty }\).
+    Как показать, что \({ f : k \mapsto a^{k},\: \mathbb Z_{\operatorname{ord} a} \to G }\) --- сюръекция?
+
+    \begin{cloze}{1}
+        Представить \({ a^{p} \in \langle a \rangle }\) как \({ a^{l \cdot n + k_0} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{86c7386b47444f4cab166aecea358d5b}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a < \infty }\).
+    Как показать, что \({ f : k \mapsto a^{k},\: \mathbb Z_{\operatorname{ord} a} \to G }\) --- инъекция?
+
+    \begin{cloze}{1}
+        \[
+            k \neq l \implies a^{k - l} \neq e.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{326a83d344554cb38aab476534b6f5e8}
+    Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a = \infty }\).
+    Тогда
+    \[
+        (\langle a \rangle, \circ) \simeq (\mathbb Z, +).
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Построить изоморфизм \({ \mathbb Z \to \langle a \rangle, \quad k \mapsto a^{k} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{31fd624715c244b2ba453e6ffe19dd74}
+    Пусть \({ (G, \circ) }\) --- группа, \begin{icloze}{3}\({ (H, \circ) }\) --- подгруппа,\: \({ g \in G }\).\end{icloze}
+    \[
+        \begin{icloze}{2}g \circ H\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ g \circ h \mid h \in H \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ac542c349e5b43e886540f1f0e62bacc}
+    Пусть \({ (G, \circ) }\) --- группа, \begin{icloze}{3}\({ (H, \circ) }\) --- подгруппа,\: \({ g \in G }\).\end{icloze}
+    \[
+        \begin{icloze}{2}H \circ g\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ h \circ g \mid h \in H \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{20affff668b04e9e80ea15dc66eab2c2}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \({ g \in G }\).
+    \begin{icloze}{2}Множество \({ g \circ H }\)\end{icloze} называется \begin{icloze}{1}левым классом смежности элемента \({ g }\) по подгруппе \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{ca40d5b36a764e62924dfd73ea9ebc66}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \({ g \in G }\).
+    \begin{icloze}{2}Множество \({ H \circ g }\)\end{icloze} называется \begin{icloze}{1}правым классом смежности элемента \({ g }\) по подгруппе \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{810cc5be7cb2498280729b27d347be4f}
+    Пусть \({ (G, \circ) }\) --- группа, \begin{icloze}{3}\({ (H, \circ) }\) --- подгруппа,\end{icloze}\: \begin{icloze}{4}\({ a, b \in G }\).\end{icloze}
+    \[
+        \begin{icloze}{2}a \equiv b \pmod{H}\end{icloze} \overset{\hspace{-1pt}\text{\tiny def}}\iff \begin{icloze}{1}a \circ b^{-1} \in H.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ff25dee3ae6f4b1ab34700578cceaed5}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \({ a, b \in G }\).
+    Тогда
+    \[
+        \begin{icloze}{2}a \equiv b \pmod H\end{icloze} \iff \begin{icloze}{1}a \circ H = b \circ H.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах классов смежности)
+    \end{center}
+\end{note}
+
+\begin{note}{489a77d7bd2a4523886a65a220d953f4}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
+    Отношение
+    \[
+        \cdot \equiv \cdot \pmod{H}
+    \]
+    является отношением \begin{icloze}{1}эквивалентности.\end{icloze}
+\end{note}
+
+\begin{note}{a07284200e0b4649bb1357b2aeaf3cc0}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
+    Как показать, что отношение \({ \cdot \equiv \cdot \pmod{H} }\) является симметричным?
+
+    \begin{cloze}{1}
+        \[
+            a \circ b^{-1} \in H \implies (a \circ b^{-1})^{-1} \in H.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{745cc90590ef4d0784af24f93c539a9f}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \begin{icloze}{2}\({ g_1, g_2 \in G }\).\end{icloze}
+    Тогда всегда \({ g_1 \circ H }\) и \({ g_2 \circ H }\) либо \begin{icloze}{1}не пересекаются,\end{icloze} либо \begin{icloze}{1}совпадают.\end{icloze}
+\end{note}
+
+\begin{note}{2bafb8136a75400481ba0f463cb2dc9c}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \begin{icloze}{3}\({ g \in G }\).\end{icloze}
+    \begin{icloze}{2}Тогда количество элементов в \({ g \circ H }\)\end{icloze} равно \begin{icloze}{1}количеству элементов в \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{45bd2c9c51fd4a398ac4adaf9172dfc6}
+    Пусть \({ (G, \circ) }\) --- группа.
+    \begin{icloze}{1}Количество элементов в \({ G }\)\end{icloze} называется \begin{icloze}{2}порядком группы \({ (G, \circ) }\).\end{icloze}
+\end{note}
+
+\begin{note}{0590e16f8b204e27a704de1a4d810d76}
+    Пусть \({ (G, \circ) }\) --- \begin{icloze}{3}конечная группа,\end{icloze} \begin{icloze}{2}\({ (H, \circ) }\) --- подгруппа.\end{icloze}
+    Тогда \begin{icloze}{1}порядок группы \({ G }\) делится на порядок группы \({ H }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Теорема Лагранжа\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{6bbf33cf39f34f34afa5cf2be59fd219}
+    В чём основная идея доказательства теоремы Лагранжа для конечных групп?
+
+    \begin{cloze}{1}
+        Представить \({ G }\) как конечное объединение непересекающихся классов смежности \({ g_i \circ H }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7fa9d6859025408f868211197328bf30}
+    Пусть \({ (G, \circ) }\) ---  группа, \({ (H, \circ) }\) --- подгруппа,\: \({ a, b \in G }\).
+    Тогда
+    \[
+        \begin{icloze}{2}(a \circ H) \cdot (b \circ H)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(a \circ b) \circ H\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{daf66fd18e1b4e50b007b6a820bfc2b7}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
+    Подгруппа \({ (H, \circ) }\) называется \begin{icloze}{2}нормальной,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \forall g \in G  \quad g \circ H = H \circ g.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{94d010d0ee6748df9997775ed206113d}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
+    Тогда если \begin{icloze}{3}\({ (H, \circ) }\) --- нормальная подгруппа,\end{icloze} то
+    \begin{center}
+        \begin{icloze}{2}\({ \big(\left\{ g \circ H \mid g \in G \right\}, \:\cdot\:\big) }\)\end{icloze} --- \begin{icloze}{1}группа.\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{f8a3768ad050440ab84f132b57ff2665}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
+    Тогда если \({ (H, \circ) }\) --- нормальная подгруппа, то
+    \begin{center}
+        \({ \big(\left\{ g \circ H \mid g \in G \right\}, \:\cdot\:\big) }\) --- группа.
+    \end{center}
+    Почему важно, что \({ (H, \circ) }\) --- нормальная подгруппа?
+
+    \begin{cloze}{1}
+        В противном случае операция умножения может не быть корректно определённой.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6df4f13013d04e2d81bc271465e769b9}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- нормальная подгруппа.
+    \begin{icloze}{2}Группа классов смежности по подгруппе \({ H }\)\end{icloze} называется \begin{icloze}{1}фактор группой группы \({ (G, \circ) }\) по подгруппе \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{30b68180adac4dab81ea034157975d43}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- нормальная подгруппа.
+    \begin{icloze}{2}Фактор группа \({ (G, \circ) }\) по подгруппе \({ H }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            G / H.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{ce44f6c96679478284d511f7a3be6f0e}
+    \[
+        \begin{icloze}{2}\mathbb Z_n\end{icloze} \simeq \begin{icloze}{1}\mathbb Z / n \mathbb Z.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9f1bb49a26844d51a59a5c4aac626fa9}
+    Как показать, что \({ f : k \mapsto k + n \mathbb Z, \: \mathbb Z_n \to \mathbb Z / n \mathbb Z }\) --- биекция?
+
+    \begin{cloze}{1}
+        Из теоремы о делении с остатком определить \({ f^{-1} }\).
+    \end{cloze}
 \end{note}
 
 \end{document}
