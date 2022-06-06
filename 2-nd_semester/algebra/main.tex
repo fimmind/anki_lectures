@@ -1021,7 +1021,7 @@
 \end{note}
 
 \begin{note}{187218f20c2b46ab9309b3385f2012f4}
-    Пусть \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \) оператора \( f \).\end{icloze}
+    Пусть \({ f : V \to V }\) --- линейный оператор,\: \begin{icloze}{3}\( v \) --- корневой вектор высоты \( k \) оператора \( f \).\end{icloze}
     Тогда система
     \begin{icloze}{2}
         \[
@@ -1125,7 +1125,7 @@
 \end{note}
 
 \begin{note}{d928d6cded3a434a9c3f615c48190ff0}
-    Пусть \begin{icloze}{3}\( f : V \to V \) --- линейный оператор, \( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).\end{icloze}
+    Пусть \( f : V \to V \) --- линейный оператор, \begin{icloze}{3}\( \lambda_1, \ldots, \lambda_l \) --- все различные собственные значения \( f \).\end{icloze}
     Тогда
     \[
         \begin{icloze}{2}V\end{icloze} = \begin{icloze}{1}K_f (\lambda_1) \oplus \cdots \oplus K_f (\lambda_l).\end{icloze}
@@ -1811,7 +1811,7 @@
     Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
     \begin{icloze}{2}Углом между вектором \({ f }\) и подпространством \({ V }\)\end{icloze} называется \begin{icloze}{1}величина
     \[
-        \min \left\{ (\widehat{f, g}) \mid  g \in V \right\}.
+        \min_{g \in V} (\widehat{f, g}).
     \]\end{icloze}
 \end{note}
 
@@ -2735,7 +2735,7 @@
 
 \begin{note}{d28a23b8889943d4b3ffc14e52cb4e21}
     Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
-    \begin{icloze}{1}Число положительных индексов в каноническом виде \({ q }\)\end{icloze} называется \begin{icloze}{2}положительным индексом инерции \({ q }\).\end{icloze}
+    \begin{icloze}{1}Число положительных коэффициентов в каноническом виде \({ q }\)\end{icloze} называется \begin{icloze}{2}положительным индексом инерции \({ q }\).\end{icloze}
 \end{note}
 
 \begin{note}{e3c4dedc4bea411e996ba571573fe4ab}
@@ -2745,12 +2745,12 @@
 
 \begin{note}{45d2e04c6dc0495c8c53da1a9a52fa03}
     Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
-    \begin{icloze}{2}Отрицательный индекс инерции \({ q }\)\end{icloze} обычно обозначается \begin{icloze}{1}\({ \mu }\).\end{icloze}
+    \begin{icloze}{2}Отрицательный индекс инерции \({ q }\)\end{icloze} обычно обозначается \begin{icloze}{1}\({ \nu }\).\end{icloze}
 \end{note}
 
 \begin{note}{ccfa3006b8dd4d76a4d29b6bd06efa0e}
     Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
-    \begin{icloze}{1}Число отрицательных индексов в каноническом виде \({ q }\)\end{icloze} называется \begin{icloze}{2}отрицательным индексом инерции \({ q }\).\end{icloze}
+    \begin{icloze}{1}Число отрицательных коэффициентов в каноническом виде \({ q }\)\end{icloze} называется \begin{icloze}{2}отрицательным индексом инерции \({ q }\).\end{icloze}
 \end{note}
 
 \begin{note}{e0192c4d7f9b4c8da63ea34e5b91d7b5}
@@ -2759,9 +2759,9 @@
 \end{note}
 
 \begin{note}{97b6d8cfbb8e499e8552699c8f4d0bf8}
-    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\),\: \({ i \in [1 : n] }\).
     \[
-        \begin{icloze}{2}\Delta_i\end{icloze} \coloneqq \begin{icloze}{1}M^{1 \ldots i}_{1 \ldots i}(A).\end{icloze}
+        \begin{icloze}{2}\Delta_i\end{icloze} \overset{\text{def}}= \begin{icloze}{1}M^{1 \ldots i}_{1 \ldots i}(A).\end{icloze}
     \]
 \end{note}
 
@@ -2775,7 +2775,7 @@
     \end{icloze}
 
     \begin{center}
-        \tiny <<\begin{icloze}{3}критерий\end{icloze} \begin{icloze}{4}Сильвестра\end{icloze}>>
+        \tiny <<\begin{icloze}{3}Критерий\end{icloze} \begin{icloze}{4}Сильвестра\end{icloze}>>
     \end{center}
 \end{note}
 
@@ -2784,7 +2784,7 @@
     Тогда всегда \begin{icloze}{4}существует\end{icloze} такая \begin{icloze}{3}ортогональная замена \({ x = By }\),\end{icloze} что
     \begin{icloze}{1}
         \[
-            q(By) = \sum_{i}^{} \lambda_i y_i^2,
+            q(By) = \sum_{i=1}^{\operatorname{rk} A} \lambda_i y_i^2,
         \]
     \end{icloze}
     где \({ \left\{ \lambda_j \right\} \begin{icloze}{2}= \operatorname{spec} A\end{icloze} }\).
@@ -2830,7 +2830,7 @@
 \end{note}
 
 \begin{note}{377d2404fa034f7c938eb2f12061ab6f}
-    \begin{icloze}{2}Группа обратных элементов\end{icloze} кольца \({ K }\) обозначается \begin{icloze}{1}\({ K^* }\).\end{icloze}
+    \begin{icloze}{2}Группа обратимых элементов\end{icloze} кольца \({ K }\) обозначается \begin{icloze}{1}\({ K^* }\).\end{icloze}
 \end{note}
 
 \end{document}
