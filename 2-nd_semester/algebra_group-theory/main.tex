@@ -493,6 +493,75 @@
     \end{cloze}
 \end{note}
 
+\section{Семинар 01.06.22}
+\begin{note}{36d221e9357e4a0cb1335c1926abeca7}
+    Множество \({ \sqrt[n]{1} }\) образует \begin{icloze}{2}группу\end{icloze} относительно \begin{icloze}{1}умножения.\end{icloze}
+\end{note}
+
+\begin{note}{451622b7a7564fc4aa814dd526055fe6}
+    Множество \({ \displaystyle \bigcup_{n}^{} \sqrt[n]{1} }\) образует \begin{icloze}{2}группу\end{icloze} относительно \begin{icloze}{1}умножения.\end{icloze}
+\end{note}
+
+\begin{note}{6c7fab41a91e4d339555af9508593e91}
+    Пусть \({ (G, \circ) }\) --- группа,\: \({ a \in G }\).
+    Тогда количество элементов в \begin{icloze}{2}\({ \langle a \rangle }\)\end{icloze} равно \begin{icloze}{1}\({ \operatorname{ord} a }\).\end{icloze}
+\end{note}
+
+\begin{note}{f0e23db5db674658b20e95a3c304e1c7}
+    Пусть \({ (G, \circ) }\) --- группа,\: \({ a \in G }\).
+    Тогда
+    \[
+        \operatorname{ord} (a^{-1}) = \begin{icloze}{1}\operatorname{ord} a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{95b9c2ecea204819ba17ec6952a3cafd}
+    Пусть \({ (G, \circ) }\) --- группа,\: \({ a \in G }\).
+    Тогда
+    \[
+        a^{-n} = e \begin{icloze}{2}\iff\end{icloze} \begin{icloze}{1}a^{n} = e.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b9e7bf38ba554ac89a7dbe249ac1a0ca}
+    Пусть \({ (G, \circ) }\) --- группа,\: \({ a \in G }\),\: \begin{icloze}{3}\({ \operatorname{ord} a = n }\),\end{icloze}\: \({ k \in \mathbb N }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\operatorname{ord} (x^{k})\end{icloze} = \begin{icloze}{1}\frac{n}{\gcd(n, k)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{897a73a19e0545d5a480f6d1da8c3584}
+    Пусть \({ (G, \circ) }\) --- группа,\: \({ a \in G }\),\: \({ \operatorname{ord} a = n }\),\: \({ k \in \mathbb N }\).
+    Тогда
+    \[
+        \operatorname{ord} (x^{k}) = \frac{n}{\gcd(n, k)}.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            a^{kp} = a^{\alpha n} \implies p = \frac{\alpha n}{k}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{50e7ebab24cf4ba7b56cba450b2ee6ed}
+    Пусть \({ (\langle a \rangle, \circ) }\) --- циклическая группа порядка \({ n }\),\: \begin{icloze}{4}\({ k \mid n }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{3}\left\{ g \in \langle a \rangle \mid g^{k} = e \right\}\end{icloze} = \left\{ \begin{icloze}{1}a^{\frac{pn}{k}}\end{icloze} \mid p \in \begin{icloze}{2}[0 : k - 1]\end{icloze} \right\}.
+    \]
+\end{note}
+
+\begin{note}{a2f886f5a18747b3be104ae46fbce7bf}
+    Пусть \({ (\langle a \rangle, \circ) }\) --- циклическая группа порядка \({ n }\),\: \begin{icloze}{4}\({ k \mid n }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{3}\operatorname{ord} (a^{\frac{pn}{k}}) = k\end{icloze} \begin{icloze}{2}\iff\end{icloze} \begin{icloze}{1}\gcd(p, k) = 1.\end{icloze}
+    \]
+\end{note}
+
 \end{document}
 
 % vim: spelllang=ru_yo,en
