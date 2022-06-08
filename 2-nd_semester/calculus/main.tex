@@ -6026,6 +6026,39 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{64df3a837c784e0795b58c971d418039}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m},\: a \in \overline{\mathbb R^{n}}, A \in \overline{\mathbb R^{m}} }\).
+    Тогда
+    \begin{center}
+        \({ f(x) \underset{x \to a}\longrightarrow A }\) по Коши
+        \({ \implies }\)
+        \({ f(x) \underset{x \to a}\longrightarrow A }\) по Гейне.
+    \end{center}
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Если \({ x^{k} \to a }\), то \({ \forall k > N \quad x^{k} \in \dot V_{\delta}(a) \cap E }\) для \({ \delta }\) из определения предела по Коши.
+    \end{cloze}
+\end{note}
+
+\begin{note}{03ae6948b798427ca2cb62e910651e87}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m},\: a \in \overline{\mathbb R^{n}}, A \in \overline{\mathbb R^{m}} }\).
+    Тогда
+    \begin{center}
+        \({ f(x) \underset{x \to a}\longrightarrow A }\) по Гейне
+        \({ \implies }\)
+        \({ f(x) \underset{x \to a}\longrightarrow A }\) по Коши.
+    \end{center}
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        От противного и выбрать такую \({ \left\{ x^{k} \right\} }\), что
+        \begin{center}
+            \({ x^{k} \to a }\) \quad и \quad \({ f(x^{k}) \not\in V_{\varepsilon}(a) }\) для всех \({ k }\).
+        \end{center}
+    \end{cloze}
+\end{note}
+
 \begin{note}{911558d747cb439f8cd881a764ff8700}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{3}\({ a \in \overline{\mathbb R^{n}} }\),\end{icloze}\: \begin{icloze}{2}\({ A, B \in \overline{\mathbb R^{m}} }\).\end{icloze}
     Тогда
@@ -6107,11 +6140,44 @@
     \end{icloze}
 \end{note}
 
-\begin{note}{1fe3bd0f7cca46f3926bbb096e417e7c}
-    Чем критерий Больцано-Коши для отображений \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
+\begin{note}{52e75393bace4aab93e0b2355fab03ed}
+    Пусть \({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\),\: \({ a \in \overline{\mathbb R^{n}} }\) и \({ b \in F }\) --- предельные точки \({ E }\) и \({ F }\) соответственно. Тогда если
+    \[
+        f(x) \underset{x \to a}\longrightarrow b, \quad g(x) \underset{x \to b}\longrightarrow g(b),
+    \]
+    то \({ (g \circ f)(x) \underset{x \to a}\longrightarrow g(b) }\).
+    В чём основная идея доказательства?
 
     \begin{cloze}{1}
-        Ничем.
+        Использовать определение в терминах последовательностей и непрерывность \({ g }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1fe3bd0f7cca46f3926bbb096e417e7c}
+    Чем критерий Больцано-Коши для отображений
+    \[
+        E \subset \mathbb R^{n} \to \mathbb R^{m}
+    \]
+    отличается от такового для функций \({ E \subset \mathbb R \to \mathbb R }\)?
+
+    \begin{cloze}{1}
+        В место модулей используются евклидовы нормы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{8d5f34996faf4cf3a85fbda1c16594d9}
+    В чём основная идея доказательства критерия Больцано-Коши отображений вида \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) (необходимость)?
+
+    \begin{cloze}{1}
+        Определение предела по коши и неравенство треугольника.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c832fecebd814e72a6c8940737e9278a}
+    В чём основная идея доказательства критерия Больцано-Коши отображений вида \({ E \subset \mathbb R^{n} \to \mathbb R^{m} }\) (достаточность)?
+
+    \begin{cloze}{1}
+        Использовать определение по Гейне и критерий Больцано-Коши для последовательностей.
     \end{cloze}
 \end{note}
 
