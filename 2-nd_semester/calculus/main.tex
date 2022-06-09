@@ -6812,6 +6812,47 @@
     Тогда \begin{icloze}{2}\({ f }\) дифференцируемо в точке \({ a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}все координатные функции \({ f_k }\) дифференцируемы в точке \({ a }\).\end{icloze}
 \end{note}
 
+\begin{note}{b03c50a5177e45d3af6168e742ff08e5}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\) тогда и только тогда, когда все координатные функции \({ f_k }\) дифференцируемы в точке \({ a }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Следует из теоремы о связи предела отображения с пределами координатных функций.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3793d7bd0eb2413486ca9b2d557a8bfe}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\) тогда и только тогда, когда все координатные функции \({ f_k }\) дифференцируемы в точке \({ a }\).
+    Какой предел рассматривается в доказательстве?
+
+    \begin{cloze}{1}
+        Предел выражения \({ o }\)-малого из определения дифференцируемости в точке \({ a }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{efafa6dd07b64b1e96f53a5412ca48c4}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        \begin{icloze}{2}d_{a} (f_k)\end{icloze} = \begin{icloze}{1}(d_{a} f)_k\end{icloze} \quad \forall k.
+    \]
+\end{note}
+
+\begin{note}{b32f253473ed4e01ad2548075513a68c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        d_{a} (f_k) = (d_{a} f)_k \quad \forall k.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        Выразить \({ o }\)-малое из определения дифференцируемости и использовать связь предела с пределами координатных функций.
+    \end{cloze}
+\end{note}
+
 \begin{note}{a31575ebc07f469ab443c54489a0f052}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}дифференцируемо в точке \({ a }\).\end{icloze}
     Тогда \begin{icloze}{1}матрица \({ d_{a}f }\)\end{icloze} называется \begin{icloze}{2}матрицей Якоби \({ f }\) в точке \({ a }\).\end{icloze}
@@ -6824,7 +6865,7 @@
 
 \begin{note}{6e2acb045c654dce899895bfd332d261}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}дифференцируемо в точке \({ a }\).\end{icloze}
-    Тогда \begin{icloze}{1}если \({ m = 1 }\), то \({ f'(a) }\)\end{icloze} называют \begin{icloze}{2}градиентом отображения \({ f }\) в точке \({ a }\).\end{icloze}
+    Тогда \begin{icloze}{1}если \({ m = 1 }\), то вектор \({ f'(a) }\)\end{icloze} называют \begin{icloze}{2}градиентом отображения \({ f }\) в точке \({ a }\).\end{icloze}
 \end{note}
 
 \begin{note}{8224bbff688b41bf8effa9d4e231ce37}
@@ -6845,9 +6886,46 @@
     Тогда \begin{icloze}{2}\({ i }\)-я строка\end{icloze} \begin{icloze}{3}\({ f'(a) }\)\end{icloze} --- это \begin{icloze}{1}\({ \nabla f_i(a) }\).\end{icloze}
 \end{note}
 
+\begin{note}{d25499d991a74f439b7466323fbe46c3}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ i }\)-я строка \({ f'(a) }\) --- это \({ \nabla f_i(a) }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            (d_{a}f)_i = d_{a}(f_i) = \nabla f_i(a).
+        \]
+    \end{cloze}
+\end{note}
+
 \begin{note}{3820288f2e574fcf9121ea4a55c73afa}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
     Тогда \begin{icloze}{2}\({ j }\)-й столбец\end{icloze} \begin{icloze}{3}\({ f'(a) }\)\end{icloze} --- это \begin{icloze}{1}\({ \frac{\partial f}{\partial x_j}(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{d8575a15a00844589a8967ae38314f49}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда \({ j }\)-й столбец \({ f'(a) }\) --- это \({ \frac{\partial f}{\partial x_j}(a) }\).
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            d_{a}f(h) = \sum_{k}^{} \frac{\partial f}{\partial x_k}(a) \cdot h_k.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{36f0f4f310d841a880520daa7da8194d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        \begin{icloze}{2}f(a + h)\end{icloze} = \begin{icloze}{1}f(a) + f'(a) \cdot h + o(h), \quad h \to 0.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах матрицы Якоби)
+    \end{center}
 \end{note}
 
 \begin{note}{eda3b1356526444eb23d37159f97cf0e}
@@ -6880,6 +6958,24 @@
         \begin{icloze}{3}\iff\end{icloze}
         \begin{icloze}{1}\text{\({ e }\) и \({ \nabla f(a) }\) коллинеарны}.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{0566ef79af74469da7f15612aac5a762}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда если \({ \nabla f(a) \neq 0 }\), то \({ \forall e \in S_1(0) }\)
+    \[
+        \left\lvert \frac{\partial f}{\partial e}(a) \right\rvert \leqslant \left\lVert \nabla f(a) \right\rVert.
+    \]
+    В чём основная идея доказательства?
+
+    \begin{cloze}{1}
+        \({ \frac{\partial f}{\partial e}(a) = \nabla f(a) \cdot e }\) и неравенство Коши-Буняковского.
+    \end{cloze}
+\end{note}
+
+\begin{note}{41741682c49847e886b1a89746562a02}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда геометрически \({ \nabla f(a) }\) указывает \begin{icloze}{1}направление скорейшего изменения \({ f }\) в точке \({ a }\).\end{icloze}
 \end{note}
 
 \end{document}
