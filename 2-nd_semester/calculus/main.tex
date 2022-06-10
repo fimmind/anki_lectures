@@ -4587,6 +4587,101 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{4c3ec5ff5e45427bb896b92c52c88403}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В доказательстве полагают
+    \[
+        \begin{icloze}{2}M^{(i)}_{\Delta}\end{icloze} \coloneqq \begin{icloze}{1}\max_{t \in \Delta} \left\lvert \gamma'_i(t) \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7f5b1dc3d77a415491d313007f0ee108}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В доказательстве полагают
+    \[
+        \begin{icloze}{2}m^{(i)}_{\Delta}\end{icloze} \coloneqq \begin{icloze}{1}\min_{t \in \Delta} \left\lvert \gamma'_i(t) \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0c89ac8fb1834dcea867bf5186155c73}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    Почему в доказательстве \({ \displaystyle \min_{t \in \Delta} \left\lvert \gamma'_i(t) \right\rvert }\) корректно определён?
+
+    \begin{cloze}{1}
+        По теореме Вейерштрасса.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6cad9c7bb8554770b6c7376b8917e607}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В доказательстве полагают
+    \[
+        \begin{icloze}{2}M_{\Delta}\end{icloze} \coloneqq \begin{icloze}{1}\sqrt{\sum_{i}^{} \left( M_{\Delta}^{(i)} \right)^2}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3009bc4c7b7f42c4a8a7709423d5fea7}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В доказательстве полагают
+    \[
+        \begin{icloze}{2}m_{\Delta}\end{icloze} \coloneqq \begin{icloze}{1}\sqrt{\sum_{i}^{} \left( m_{\Delta}^{(i)} \right)^2}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{be5f472eef994b36b5098bd5198aeb5a}
+    Пусть \({ \tau = \left\{ x_k \right\} \in T[a, b] }\).
+    Тогда \begin{icloze}{1}отрезок \({ [x_k, x_{k + 1}] }\)\end{icloze} называют \begin{icloze}{2}\({ k }\)-м отрезком разбиения \({ \tau }\).\end{icloze}
+\end{note}
+
+\begin{note}{1a3f989dffdd437daf833cc70d90b6a1}
+    Пусть \({ \tau = \left\{ x_k \right\} \in T[a, b] }\).
+    \begin{icloze}{1}\({ k }\)-й отрезок разбиения \({ \tau }\)\end{icloze} часто обозначается \begin{icloze}{2}\({ \Delta_k }\).\end{icloze}
+\end{note}
+
+\begin{note}{a1a12e6c06014e1b99f62f277a0c28c8}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В чём первая ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Для \({ \left\{ t_k \right\} \in T[a, b] }\) оценить \({ s_{\gamma|_{\Delta_k}} }\) и \({ \int_{t_k}^{t_{k + 1}} \left\lVert \gamma' \right\rVert }\) через
+        \begin{center}
+            \({ m_{\Delta_k} \cdot \Delta t_k }\) и \({ M_{\Delta_k} \cdot \Delta t_k }\).
+        \end{center}
+    \end{cloze}
+\end{note}
+
+\begin{note}{42d735dd7d56418d8e5183c6c0447207}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    В чём вторая ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Используя равномерную непрерывность \({ \gamma'_i }\) показать, что для любого \({ \varepsilon > 0 }\) найдётся такое разбиение, что
+        \[
+            \sum_{k}^{} (M_{\Delta_k} - m_{\Delta_k}) \Delta t_k < \varepsilon.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{a157e6a52b0e4e22a04e35a2b9981058}
+    Пусть \({ \gamma : [a, b] \to \mathbb R^{m} }\) --- гладкий путь.
+    Тогда \({ s_\gamma = \int_{a}^{b} \left\lVert \gamma' \right\rVert }\).
+    Как в доказательстве оценить значение \({ M_{\Delta} - m_{\Delta} }\) через
+    \[
+        M^{(i)}_{\Delta} - M^{(i)}_{\Delta}?
+    \]
+
+    \begin{cloze}{1}
+        Неравнество треугольника и оценка \({ \left\lVert \:\cdot\: \right\rVert }\) через \({ \displaystyle \max_i \left\lvert {\:\cdot\:}_i \right\rvert }\).
+    \end{cloze}
+\end{note}
+
 \section{Лекция 07.05.22 (2)}
 \begin{note}{ddc3406fefdc4dccb10eeb102957c8ce}
     Пусть \begin{icloze}{2}\({ f \in C[a, b] }\).\end{icloze}
