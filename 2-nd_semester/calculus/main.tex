@@ -7095,4 +7095,64 @@
     Тогда геометрически \({ \nabla f(a) }\) указывает \begin{icloze}{1}направление скорейшего изменения \({ f }\) в точке \({ a }\).\end{icloze}
 \end{note}
 
+\begin{note}{2f208a0d1343496b987eb7b7424e71ae}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда даже если
+    \[
+        \begin{icloze}{3}\forall e \in \mathbb R^{n} \setminus \left\{ 0 \right\}\end{icloze} \quad \begin{icloze}{2}\exists \frac{\partial f}{\partial e}(a),\end{icloze}
+    \]
+    \begin{icloze}{1}\({ f }\) может быть не дифференцируемо и даже разрывно в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{f17c92a006814a4e8b8073f811ffdd0d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда даже если
+    \[
+        \forall e \in \mathbb R^{n} \setminus \left\{ 0 \right\} \quad \exists \frac{\partial f}{\partial e}(a),
+    \]
+    \({ f }\) может быть не дифференцируемо и даже разрывно в точке \({ a }\).
+    Какой пример можно привести?
+
+    \begin{cloze}{1}
+        \[
+            f(x, y) = \begin{cases}
+                1, & \text{если \({ x > 0,\: y = x^2 }\)}, \\
+                0, & \text{иначе}.
+            \end{cases}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{ab17b49628fc4264800bf3a6321f77c5}
+    \[
+        \exp x \overset{\text{def}}= \begin{icloze}{1}e^{x},\end{icloze} \quad x \in \begin{icloze}{2}\mathbb R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ae604bd77b1a4ff1abdb99848da38930}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда даже если
+    \[
+        \begin{icloze}{3}\forall k \in [1 : n]\end{icloze} \quad \begin{icloze}{2}\exists \frac{\partial f}{\partial x_k}(a),\end{icloze}
+    \]
+    \begin{icloze}{1}\({ f }\) может не иметь производных по всем направлениям в этой точке.\end{icloze}
+\end{note}
+
+\begin{note}{98313332866e48c39a1d416e672b28fd}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда даже если
+    \[
+        \forall k \in [1 : n] \quad \exists \frac{\partial f}{\partial x_k}(a),
+    \]
+    \({ f }\)  может не иметь производных по всем направлениям в этой точке.
+    Какой можно привести пример?
+
+    \begin{cloze}{1}
+        \[
+            (x, y) \mapsto xy \exp \frac{1}{x^2 + y^2},
+        \]
+        доопределённая в нуле нулём.
+    \end{cloze}
+\end{note}
+
 \end{document}
