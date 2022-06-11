@@ -7155,4 +7155,205 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 04.06.22 (2)}
+\begin{note}{948a8a8e219d4a3ab57e65ab5d1289c5}
+    Пусть \({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\).
+    Тогда если \begin{icloze}{3}\({ f }\) и \({ g }\) дифференцируемы соответственно в точках \({ a }\) и \({ f(a) }\),\end{icloze} то
+    \begin{icloze}{2}\({ g \circ f }\) дифференцируемо в точке \({ a }\)\end{icloze} и
+    \[
+        \begin{icloze}{4}d_{a}(g \circ f)\end{icloze} = \begin{icloze}{1}d_{f(a)}g \circ d_{a}f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1b52ae2889854ee2b0dfa687eb753ed4}
+    Пусть \({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\).
+    Тогда если \({ f }\) и \({ g }\) дифференцируемы соответственно в точках \({ a }\) и \({ f(a) }\), то
+    \[
+        \begin{icloze}{2}(g \circ f)'(a)\end{icloze} = \begin{icloze}{1}g'(f(a)) \cdot f'(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{43e06625aeec4391b7cef8a2bd9203ee}
+    Пусть \({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\).
+    Тогда если \begin{icloze}{3}\({ f }\) и \({ g }\) дифференцируемы соответственно в точках \({ a }\) и \({ f(a) }\),\end{icloze} то
+    \[
+        \begin{icloze}{2}\frac{\partial (g \circ f)_i}{\partial x_j}\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{m} \frac{\partial g_i}{\partial x_k}(f(a)) \cdot \frac{\partial f_k}{\partial x_j}(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7b0f43736c8845b5b283526e3e8f7a05}
+    Пусть \({ g : F \subset \mathbb R^{m} \to \mathbb R^{l} }\),\: \({ f : E \subset \mathbb R^{n} \to F }\).
+    Тогда если \begin{icloze}{3}\({ f }\) и \({ g }\) дифференцируемы соответственно в точках \({ a }\) и \({ f(a) }\),\end{icloze} то
+    \[
+        \begin{icloze}{2}\frac{\partial (g \circ f)_i}{\partial x_j}\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{m} \frac{\partial g_i}{\partial x_k}(f(a)) \cdot \frac{\partial f_k}{\partial x_j}(a).\end{icloze}
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Из определения произведения матриц.
+    \end{cloze}
+\end{note}
+
+\begin{note}{35d2b5e589a74b12b8fbcbc65e61f035}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемы в точке \({ a }\).
+    Тогда \({ \forall \lambda, \mu \in \mathbb R }\)
+    \[
+        \begin{icloze}{2}d_{a}(\lambda f + \lambda g)\end{icloze} = \begin{icloze}{1}\lambda \cdot d_{a}f + \mu \cdot d_{a}g.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0cbaa96d8bbc45b4a4363bcfd2566a25}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда если \({ \lambda : E \to \mathbb R }\) дифференцируемо в точка \({ a }\), то
+    \[
+        \begin{icloze}{2}d_{a}(\lambda f)\end{icloze} = \begin{icloze}{1}f(a) \cdot d_{a} \lambda + \lambda(a) \cdot d_{a}f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{43c10798f11f4fa081e62f1041795fb0}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемы в точке \({ a }\).
+    Тогда
+    \[
+        \begin{icloze}{2}d_{a}(f \cdot g)\end{icloze} = \begin{icloze}{1}g(a) \cdot d_{a}f + f(a) \cdot d_{a}g.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c57f072ea6534d6cb7a5c6bcdd9c4192}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемы в точке \({ a }\).
+    Тогда если \begin{icloze}{3}\({ m = 1 }\) и \({ g(a) \neq 0 }\),\end{icloze} то
+    \[
+        \begin{icloze}{2}d_{a}\left( \frac{f}{g} \right)\end{icloze} = \begin{icloze}{1}\frac{g(a) \cdot d_{a}f - f(a) \cdot d_{a}g}{g^2(a)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{54db552f4a6c4b648657e5b444dc1f39}
+    Пусть \begin{icloze}{5}\({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда если \begin{icloze}{3}\({ d_{a}f }\) обратим, \({ f }\) инъективно,\end{icloze} \begin{icloze}{2}\({ f(a) \in \operatorname{Int} f(E) }\) и \({ f^{-1} }\) непрерывно в точке \({ f(a) }\),\end{icloze} то
+    \[
+        \begin{icloze}{4}d_{f(a)}(f^{-1})\end{icloze} = \begin{icloze}{1}(d_{a}f)^{-1}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{71284fb4f90c4dc38af502ae45c52047}
+    Пусть \({ f : E \to \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ E }\) открыто.
+    Тогда \({ f }\) называется \begin{icloze}{2}дифференцируемым на \({ E }\),\end{icloze} если \begin{icloze}{1}оно дифференцируемо в любой точке множества \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{f4e9d2f7d86342e6a46f0fd1f7d51a05}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{2}\({ a \in E }\).\end{icloze}
+    Если \begin{icloze}{2}все частные производные \({ f }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\),\end{icloze} то отображение \({ f }\) называется \begin{icloze}{1}непрерывно дифференцируемым в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{8471f80ad2b94d91955723821de9e7eb}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{3}\({ E }\) открыто.\end{icloze}
+    Тогда если \begin{icloze}{2}\({ f }\) непрерывно дифференцируемо в любой точке \({ E }\),\end{icloze} то оно называется \begin{icloze}{1}непрерывно дифференцируемым на \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{45433e308f364161b5821365d29ce90c}
+    Пусть \({ f : \begin{icloze}{6}E \subset \mathbb R^{n} \to \mathbb R\end{icloze} }\),\: \begin{icloze}{5}\({ V_{\delta}(a) \subset E }\),\: \({ h \in V_{\delta}(0) }\).\end{icloze}
+    Тогда если \begin{icloze}{4}все частные производные \({ f }\) определены на \({ V_{\delta}(a) }\),\end{icloze} то
+    \begin{icloze}{3}\({ \exists \left\{ c^{k} \right\} \subset V_{\delta}(a) }\) такие,\end{icloze} что
+    \[
+        \begin{icloze}{2}f(a + h) - f(a)\end{icloze} = \begin{icloze}{1}\sum_{k=1}^{n} \frac{\partial f}{\partial x_k}(c^{k}) h_k.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<Обобщение \begin{icloze}{2}формулы конечных приращений\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{6846624cabef4f08afca4c090e76322e}
+    Пусть \begin{icloze}{3}\({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\)\end{icloze} \begin{icloze}{2}непрерывно дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда \begin{icloze}{1}\({ f }\) непрерывно на некоторой \({ V_{\delta}(a) }\) и дифференцируемо в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{b5517c26c32142f486c6acc4f296b172}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) непрерывно на некоторой \({ V_{\delta}(a) }\).
+    Каков первый шаг в доказательстве?
+
+    \begin{cloze}{1}
+        Рассмотреть случаи \({ m = 1 }\) и \({ m \neq 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2d35c52f1a0b43c99f53cb539b9b22d2}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) непрерывно на некоторой \({ V_{\delta}(a) }\).
+    В чём ключевая идея доказательства (случай \({ m \neq 1 }\))?
+
+    \begin{cloze}{1}
+        Следует из случая \({ m = 1 }\) для координатных функций.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f52141dfaa7041a38ae0b120a0b3dccd}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) непрерывно на некоторой \({ V_{\delta}(a) }\).
+    В чём ключевая идея доказательства (случай \({ m = 1 }\))?
+
+    \begin{cloze}{1}
+        Локальная ограниченность \({ \frac{\partial f}{\partial x_k} }\), формула конечных приращений и неравенство Коши-Буняковского.
+    \end{cloze}
+\end{note}
+
+\begin{note}{44c54b436fe646ff811ada560cee320f}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) непрерывно на некоторой \({ V_{\delta}(a) }\).
+    К каким точкам в доказательстве применяется формула конечных приращений (случай \({ m = 1 }\))?
+
+    \begin{cloze}{1}
+        \({ x \in V_{\delta}(a),\: h \in \mathbb R^{n} }\), причём \({ \overline{V_{\left\lVert h \right\rVert}(x)} \subset V_{\delta}(a) }\).
+        Тогда
+        \[
+            f(x + h) - (x) = \cdots.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{5ed042452b254c4da61c0900b89de5b5}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\).
+    Каков первый шаг в доказательстве?
+
+    \begin{cloze}{1}
+        Рассмотреть случаи \({ m = 1 }\) и \({ m \neq 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{483478141906430eb0aebd84115e60e0}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\).
+    В чём ключевая идея доказательства (случай \({ m \neq 1 }\))?
+
+    \begin{cloze}{1}
+        Следует из случая \({ m = 1 }\) для координатных функций.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7be084f196c54a349a0dab9b57f0354f}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\).
+    В чём ключевая идея доказательства (случай \({ m = 1 }\))?
+
+    \begin{cloze}{1}
+        Непрерывность \({ \frac{\partial f}{\partial x_k} }\) в терминах \({ (\varepsilon, \delta) }\), формула конечных приращений и неравенство Коши.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e15dab279d654705a50123f72f8693dc}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) непрерывно дифференцируемо в точке \({ a }\).
+    Тогда \({ f }\) дифференцируемо в точке \({ a }\).
+    К каким точка в доказательстве применяется формула конечных приращений (случай \({ m = 1 }\))?
+
+    \begin{cloze}{1}
+        \({ h \in V_{\delta}(0) }\) для \({ \delta }\) из определения непрерывности.
+        Тогда
+        \[
+            f(a + h) - f(a) = \cdots.
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
