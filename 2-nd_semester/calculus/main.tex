@@ -7226,12 +7226,96 @@
     \]
 \end{note}
 
+\begin{note}{149d3a16b0664567883c8c004040bf67}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда если \({ f(a) \neq 0 }\), то
+    \[
+        \begin{icloze}{2}d_{a}\left( \frac{1}{f} \right)\end{icloze} = \begin{icloze}{1}-\frac{d_{a}f}{f^2(a)}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ade1a1301b7744559977e410fa10343d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда если \({ f(a) \neq 0 }\), то
+    \[
+        d_{a}\left( \frac{1}{f} \right) = -\frac{d_{a}f}{f^2(a)}.
+    \]
+    Какова интуитивная мотивация для этой формулы?
+
+    \begin{cloze}{1}
+        \[
+            d_{a} \left( f \cdot \frac{1}{f} \right) = 0
+        \]
+        и правило дифференцирования произведения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{40e9c61d8cad4a68a4f9de5b4a43969c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо в точке \({ a }\).
+    Тогда если \({ f(a) \neq 0 }\), то
+    \[
+        d_{a}\left( \frac{1}{f} \right) = -\frac{d_{a}f}{f^2(a)}.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        По определению дифференциала.
+    \end{cloze}
+\end{note}
+
 \begin{note}{54db552f4a6c4b648657e5b444dc1f39}
     Пусть \begin{icloze}{5}\({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).\end{icloze}
     Тогда если \begin{icloze}{3}\({ d_{a}f }\) обратим, \({ f }\) инъективно,\end{icloze} \begin{icloze}{2}\({ f(a) \in \operatorname{Int} f(E) }\) и \({ f^{-1} }\) непрерывно в точке \({ f(a) }\),\end{icloze} то
     \[
         \begin{icloze}{4}d_{f(a)}(f^{-1})\end{icloze} = \begin{icloze}{1}(d_{a}f)^{-1}.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{720cedcc5ee04aaeb2578d94159a5dc5}
+    В чём ключевая идея доказательства равенства
+    \[
+        d_{f(a)}(f^{-1}) = (d_{a}f)^{-1}?
+    \]
+
+    \begin{cloze}{1}
+        В \({ f^{-1}(f(a) + y) }\) положить \({ y = f(a + h) - f(a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8c3bdb6f7ea34c7a8c19240baad3f89f}
+    Зачем в условиях для выполнения равенства
+    \[
+        d_{f(a)}(f^{-1}) = (d_{a}f)^{-1}
+    \]
+    требуют непрерывность \({ f^{-1} }\) в точке \({ f(a) }\)?
+
+    \begin{cloze}{1}
+        Чтобы при \({ y \to 0 }\) иметь \({ h \to 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{15e61ca44e4f430a9cbed9259236bd81}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемы в точке \({ a }\).
+    Тогда
+    \[
+        (d_{a}f \cdot d_{a}g)(h) = \begin{icloze}{1}o(h), \quad h \to 0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cc1b2c69a7bd44f898587a705da60962}
+    Пусть \({ f, g : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемы в точке \({ a }\).
+    Тогда
+    \[
+        d_{a}f(h) \cdot d_{a}g(h) = o(h), \quad h \to 0.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        \begin{multline*}
+            d_{a}f(h) \cdot d_{a}g(h) = \left\lVert h \right\rVert \cdot \frac{d_{a}f(h) \cdot d_{a}g(h)}{\left\lVert h \right\rVert} \\
+            = \left\lVert h \right\rVert \cdot \underbrace{d_{a}f(h)}_{\text{б.м.}} \cdot \underbrace{d_{a}g\left(\frac{h}{\lVert h \rVert}\right)}_{\text{огр.}}.
+        \end{multline*}
+    \end{cloze}
 \end{note}
 
 \begin{note}{71284fb4f90c4dc38af502ae45c52047}
