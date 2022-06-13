@@ -7336,7 +7336,7 @@
 \end{note}
 
 \begin{note}{f4e9d2f7d86342e6a46f0fd1f7d51a05}
-    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{2}\({ a \in E }\).\end{icloze}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{2}\({ a \in \operatorname{Int} E }\).\end{icloze}
     Если \begin{icloze}{2}все частные производные \({ f }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\),\end{icloze} то отображение \({ f }\) называется \begin{icloze}{1}непрерывно дифференцируемым в точке \({ a }\).\end{icloze}
 \end{note}
 
@@ -7484,6 +7484,142 @@
             f(a + h) - f(a) = \cdots.
         \]
     \end{cloze}
+\end{note}
+
+\begin{note}{11ed142e7cee42bca4f4f14ccaa6d0a0}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{5}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{4}\({ s \in \mathbb N }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{1}\frac{\partial^{s} f}{\partial x_{i_1} \cdots \partial x_{i_s}}(a),\end{icloze} \quad \text{где \begin{icloze}{2}\({ \left\{ i_k \right\}_{k \in [s]} \subset [n] }\),\end{icloze}}
+    \]
+    называется \begin{icloze}{3}частной производной порядка \({ s }\) по переменным \({ x_{i_1}, \ldots, x_{i_s} }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{afce6f40275041b0895a8d367bbe4b4a}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Частная производная
+    \[
+        \frac{\partial^{s} f}{\partial x_{i_1} \cdots \partial x_{i_s}}(a)
+    \]
+    называется \begin{icloze}{1}чистой,\end{icloze} если \begin{icloze}{2}\({ i_1 = \cdots = i_s }\).\end{icloze}
+\end{note}
+
+\begin{note}{b4b880f53dec41ec913658ebe48a3fe3}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Частная производная
+    \[
+        \frac{\partial^{s} f}{\partial x_{i_1} \cdots \partial x_{i_s}}(a)
+    \]
+    называется \begin{icloze}{1}смешанной,\end{icloze} если \begin{icloze}{2}она не является чистой.\end{icloze}
+\end{note}
+
+\begin{note}{c58810ade99a4dd5b80a942765480841}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ s \in \mathbb N }\).
+    Частная производная \({ f }\) порядка \({ 0 }\) в точке \({ a }\) --- это \begin{icloze}{1}само отображение \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{2ea71ead58d64c54a969292826923965}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ s \in \mathbb N }\).\end{icloze}
+    Отображение \({ f }\) называется \begin{icloze}{3}\({ s }\) раз дифференцируемым в точке \({ a }\),\end{icloze} если
+    \begin{itemize}
+        \item \begin{icloze}{1}все частные производные \({ f }\) порядков \({ 0, \ldots, s - 2 }\) дифференцируемы в некоторой окрестности точки \({ a }\);\end{icloze}
+        \item \begin{icloze}{2}все частные производные \({ f }\) порядка \({ s - 1 }\) дифференцируемы в точке \({ a }\).\end{icloze}
+    \end{itemize}
+\end{note}
+
+\begin{note}{87676ec127284cac91461e7ac6a5e765}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{3}\({ E }\) открыто,\end{icloze}\: \({ s \in \mathbb N }\).
+    Тогда если \begin{icloze}{2}\({ f }\) \({ s }\) раз дифференцируемо в любой точке \({ E }\),\end{icloze} то оно называется \begin{icloze}{1}\({ s }\) раз дифференцируемым на \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{d52181b80ca94e93b448e509b9d2c450}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Отображение \({ f }\) называется \begin{icloze}{2}бесконечно дифференцируемым в точке \({ a }\),\end{icloze} если \begin{icloze}{1}оно дифференцируемо в \({ a }\) любое число раз.\end{icloze}
+\end{note}
+
+\begin{note}{2edea04aa7ec4340b2fd3a723ce14f87}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    Отображение \({ f }\) является  \({ 1 }\)-раз дифференцируемым в точке \({ a }\) \begin{icloze}{1}\({ \iff }\) \({ f }\) дифференцируемо в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{ae5f107e91ec42bea69e60ce694dd1fd}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ s \in \mathbb Z_+ }\).\end{icloze}
+    Тогда если \begin{icloze}{2}все частные производные \({ f }\) порядка \({ s }\) дифференцируемы на \({ V_\delta(a) }\),\end{icloze} то
+    \begin{icloze}{1}
+        и все частные производные \({ f }\) порядков \({ 0, \ldots, s - 1 }\) дифференцируемы на \({ V_\delta(a) }\).
+    \end{icloze}
+\end{note}
+
+\begin{note}{58ffebe22a904741ad453a58fa1f677e}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ s \in \mathbb Z_+ }\).
+    Тогда если все частные производные \({ f }\) порядка \({ s }\) дифференцируемы на \({ V_\delta(a) }\), то
+    и все частные производные \({ f }\) порядков \({ 0, \ldots, s - 1 }\) дифференцируемы на \({ V_\delta(a) }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Индукция по \({ s - k }\) и непрерывная дифференцируемость на \({ V_\delta(a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{82fd4f2ae58342ca89a0dfb4facd307b}
+    Пусть \({  f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ s \in \mathbb Z_+ }\).\end{icloze}
+    Отображение \({ f }\) называется \begin{icloze}{2}\({ s }\) раз непрерывно дифференцируемым в точке \({ a }\),\end{icloze} если
+    \begin{icloze}{1}
+        все частные производные \({ f }\) прядка \({ s }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\).
+    \end{icloze}
+\end{note}
+
+\begin{note}{24d909cfebe34d9dbea5020004954fde}
+    Пусть \({  f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ E }\) открыто,\: \({ s \in \mathbb Z_+ }\).
+    Отображение \({ f }\) называется \begin{icloze}{2}\({ s }\) раз непрерывно дифференцируемым на \({ E }\),\end{icloze} если \begin{icloze}{1}оно \({ s }\) раз непрерывно дифференцируемо в любой точке \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{9aee7045f51244c6a28205fdffac2516}
+    Пусть \begin{icloze}{3}\({ E \subset \mathbb R^{n} }\) открыто,\: \({ F \subset \mathbb R^{m} }\),\end{icloze}\: \begin{icloze}{3}\({ s \in \mathbb Z_+ }\).\end{icloze} \begin{icloze}{2}Класс \({ s }\) раз непрерывно дифференцируемых отображений \({ E \to F }\)\end{icloze} обозначается
+    \begin{center}
+        \begin{icloze}{1}\({ C^{s}(E, F) }\)\end{icloze} или \begin{icloze}{1}\({ C^{s}(E \to F) }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{f48c229fde1146c59261a9e58ea055b2}
+    Пусть \({ E \subset \mathbb R^{n} }\) открыто,\: \({ F \subset \mathbb R^{m} }\).
+    \[
+        \begin{icloze}{2}C^{\infty}(E, F)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\bigcap_{s = 0}^{\infty} C^{s}(E, F).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5f4d9ca691dd43dfabeed53211993f43}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ k, s \in \mathbb N }\),\: \({ k < s }\).\end{icloze}
+    Тогда
+    \begin{icloze}{2}
+        \[
+            f \in C^{s}(E, \mathbb R^{m})
+        \]
+    \end{icloze}
+    \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}все частные производные порядка \({ k }\) принадлежать классу \({ C^{s - k}(E, \mathbb R^{m}) }\).\end{icloze}
+\end{note}
+
+\begin{note}{91dfb67ce1114f4c869663609fbe77f9}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ s \in \mathbb Z_+ }\).
+    Тогда \begin{icloze}{2}\({ f }\) является \({ s }\) раз непрерывно дифференцируемым в точке \({ a }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}все \({ f_k }\) \({ s }\) раз непрерывно дифференцируемы в точке \({ a }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах координатных функций)
+    \end{center}
+\end{note}
+
+\begin{note}{0bbd5137012945c0a2837d3cfdcb4dbf}
+    Пусть \({ E \subset \mathbb R^{n} }\) открыто.
+    Тогда \({ \forall k,  s \in \mathbb Z_+ \cup \left\{ \infty \right\} }\),\: \({ k \leqslant s }\)
+    \[
+        C^{s}(E, \mathbb R^{m}) \begin{icloze}{1}\subset\end{icloze} C^{k}(E, \mathbb R^{m}).
+    \]
+\end{note}
+
+\begin{note}{287c74396b324eb6b124d84b8ad8a2d6}
+    Пусть \({ E \subset \mathbb R^{n} }\) открыто, \({ f \in C^{s}(E, \mathbb R^{m}) }\).
+    Тогда отображение \({ f }\) \begin{icloze}{1}\({ s }\) раз дифференцируемо на \({ E }\).\end{icloze}
 \end{note}
 
 \end{document}
