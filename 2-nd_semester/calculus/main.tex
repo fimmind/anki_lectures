@@ -7539,7 +7539,7 @@
 
 \begin{note}{2edea04aa7ec4340b2fd3a723ce14f87}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
-    Отображение \({ f }\) является  \({ 1 }\)-раз дифференцируемым в точке \({ a }\) \begin{icloze}{1}\({ \iff }\) \({ f }\) дифференцируемо в точке \({ a }\).\end{icloze}
+    Отображение \({ f }\) является  \({ 1 }\)-раз дифференцируемым в точке \({ a }\) \({ \iff }\) \begin{icloze}{1}\({ f }\) дифференцируемо в точке \({ a }\).\end{icloze}
 \end{note}
 
 \begin{note}{ae5f107e91ec42bea69e60ce694dd1fd}
@@ -7620,6 +7620,246 @@
 \begin{note}{287c74396b324eb6b124d84b8ad8a2d6}
     Пусть \({ E \subset \mathbb R^{n} }\) открыто, \({ f \in C^{s}(E, \mathbb R^{m}) }\).
     Тогда отображение \({ f }\) \begin{icloze}{1}\({ s }\) раз дифференцируемо на \({ E }\).\end{icloze}
+\end{note}
+
+\begin{note}{8f24687099874445962dd67011e97e5b}
+    Пусть \begin{icloze}{4}\({ f : E \subset \mathbb R^2 \to \mathbb R }\),\end{icloze}\: \begin{icloze}{3}\({ (x^{0}, y^{0}) \in \operatorname{Int} E }\).\end{icloze}
+    \begin{icloze}{1}
+        Число
+        \begin{multline*}
+            f(x^0 + u, y^0 + v) - f(x^0 + u, y^0) \\
+            - f(x^0, y^0 + v) + f(x^0, y^0)
+        \end{multline*}
+    \end{icloze}
+    называется \begin{icloze}{2}двойным приращением \({ f }\) в точке \({ (x^{0}, y^{0}) }\).\end{icloze}
+\end{note}
+
+\begin{note}{256ffb8d304549a4bd2c41e4b6cf4061}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    \begin{icloze}{1}Двойное приращение \({ f }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{2}\({ \Delta_{a}^{2}f(u, v) }\).\end{icloze}
+\end{note}
+
+\begin{note}{afc0c869f9c44eba9547c031b5f7d44f}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a = (x^{0}, y^{0}) \in \operatorname{Int} E }\).
+    Тогда если \begin{icloze}{4}частные производные первого порядка определены на \({ V_\delta(a) }\) и \({ (u, v) \in V_\delta(0) }\),\end{icloze} то \begin{icloze}{3}существует такое \({ \theta \in (0, 1) }\),\end{icloze} что
+    \begin{multline*}
+        \begin{icloze}{2}\Delta_{a}^2  f(u, v)\end{icloze} = \\
+        \begin{icloze}{1}
+            \left( \frac{\partial f}{\partial x}(x^{0} + \theta u, y^{0} + v) - \frac{\partial f}{\partial x}(x^{0} + \theta u, y^{0}) \right) \cdot u.
+        \end{icloze}
+    \end{multline*}
+
+    \begin{center}
+        \tiny
+        (выражение через \({ \frac{\partial f}{\partial x} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{22809958f317481b83c1107321bccc81}
+    В чём ключевая идея доказательства теоремы о связи двойного приращения с \({ \frac{\partial f}{\partial x} }\)?
+
+    \begin{cloze}{1}
+        Представить \({ \Delta_{a}^2 f(u, v) }\) как разность значений некоторой функции от одного аргумента и далее по теореме Лагранжа.
+    \end{cloze}
+\end{note}
+
+\begin{note}{bf1b436ef0954a00a1f2b9285b49fba7}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a = (x^{0}, y^{0}) \in \operatorname{Int} E }\).
+    Тогда если \begin{icloze}{4}смешанные производные \({ f }\) второго порядка определены на \({ V_\delta(a) }\),\end{icloze} то \begin{icloze}{3}найдутся такие \({ \theta_{x}, \theta_{y} \in (0, 1) }\),\end{icloze} что
+    \[
+        \begin{icloze}{2}\Delta_{a}^2 f(u, v)\end{icloze} = \begin{icloze}{1}\frac{\partial^{2} f}{\partial x \partial y}(x^{0} + \theta_{x}u, y^{0} + \theta_{y}v) \cdot uv.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (выражение через \({ \frac{\partial^2 f}{\partial x \partial y} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{7a3d5695229048b2b11750777afb8d1f}
+    В чём основная и идея доказательства теоремы о связи двойного приращения с \({ \frac{\partial^2 f}{\partial x \partial y} }\)?
+
+    \begin{cloze}{1}
+        Представить выражение \({ \Delta_{a}^2 f(u, v) }\) через \({ \frac{\partial f}{\partial x} }\) как разность значений некоторой функции одного аргумента и далее по теореме Лагранжа.
+    \end{cloze}
+\end{note}
+
+\begin{note}{99e7a9e11a1e48689ac060bd62dad6af}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a = (x^{0}, y^{0}) \in \operatorname{Int} E }\).
+    Тогда если частные производные первого порядка определены на \({ V_\delta(a) }\) и \({ (u, v) \in V_\delta(0) }\), то существует такое \({ \theta \in (0, 1) }\), что
+    \begin{multline*}
+        \begin{icloze}{2}\Delta_{a}^2  f(u, v)\end{icloze} = \\
+        \begin{icloze}{1}
+            \left( \frac{\partial f}{\partial y}(x^{0} + u, y^{0} + \theta v) - \frac{\partial f}{\partial y}(x^{0}, y^{0} + \theta v) \right) \cdot v.
+        \end{icloze}
+    \end{multline*}
+
+    \begin{center}
+        \tiny
+        (выражение через \({ \frac{\partial f}{\partial y} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{405cbcf8023e4de283e5cc014671049c}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a = (x^{0}, y^{0}) \in \operatorname{Int} E }\).
+    Тогда если смешанные производные \({ f }\) второго порядка определены на \({ V_\delta(a) }\), то найдутся такие \({ \theta_{x}, \theta_{y} \in (0, 1) }\), что
+    \[
+        \begin{icloze}{2}\Delta_{a}^2 f(u, v)\end{icloze} =
+        \begin{icloze}{1}
+            \frac{\partial^{2} f}{\partial y \partial x}(x^{0} + \theta_{x}u, y^{0} + \theta_{y}v) \cdot uv.
+        \end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (выражение через \({ \frac{\partial^2 f}{\partial y \partial x} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{044db708f2c54c219e270170f907a1ea}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\) и \begin{icloze}{4}функция \({ f }\) имеет в \({ a }\) смешанные производные второго порядка.\end{icloze}
+    Тогда если
+    \begin{align*}
+        \begin{icloze}{3}\Delta_{a}^2 f(u, v)\end{icloze}
+        &= \begin{icloze}{1}\frac{\partial^2 f}{\partial x \partial y} (a) \cdot uv + o(u^2 + v^2)\end{icloze} \\
+        &= \begin{icloze}{1}\frac{\partial^2 f}{\partial y \partial x} (a) \cdot uv + o(u^2 + v^2), \quad (u, v) \to 0,\end{icloze}
+    \end{align*}
+    то \begin{icloze}{2}\({ \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{f51c2b307a5e4fc48ff6739d2fb12792}
+    В чём ключевая идея доказательства теоремы о достаточном условии совпадения значений смешанных производных второго порядка функции \({ E \subset \mathbb R^2 \to \mathbb R }\) в терминах двойного приращения?
+
+    \begin{cloze}{1}
+        Взять равные \({ u, v }\) и показать, что разность значений смешанных производных в точке \({ a }\) стремится к нулю.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e47e22d176ab4771a327c6f034b1e6de}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если \begin{icloze}{1}\({ \frac{\partial^2  f}{\partial x \partial y} }\) и \({ \frac{\partial^2 f}{\partial y \partial x} }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\),\end{icloze}
+    то
+    \begin{icloze}{2}
+        \[
+            \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах непрерывности)
+    \end{center}
+\end{note}
+
+\begin{note}{c13c9bab93754013b91eb0b90f2c35cc}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если \({ \frac{\partial^2  f}{\partial x \partial y} }\) и \({ \frac{\partial^2 f}{\partial y \partial x} }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\),
+    то \({ \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a) }\).
+    К какой лемме сводится доказательство?
+\end{note}
+
+\begin{note}{718656f6f9fc4232b139a9a17b868186}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если \({ \frac{\partial^2  f}{\partial x \partial y} }\) и \({ \frac{\partial^2 f}{\partial y \partial x} }\) определены в некоторой окрестности \({ a }\) и непрерывны в точке \({ a }\),
+    то \({ \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a) }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выразить \({ \Delta_{a}^2 f(u, v) }\) через смешанные частные производные второго порядка и далее методом ``купи козу, продай козу''.
+    \end{cloze}
+\end{note}
+
+\begin{note}{934e8a2cf7004a77969eccaa66a09507}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если \begin{icloze}{1}функция \({ f }\) дважды дифференцируема в точке \({ a }\),\end{icloze}
+    то
+    \begin{icloze}{2}
+        \[
+            \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах дифференцируемости)
+    \end{center}
+\end{note}
+
+\begin{note}{9a501fcc2f664e44a8da4c2e3a07cc26}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если функция \({ f }\) дважды дифференцируема в точке \({ a }\),
+    то \({ \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a) }\).
+    К какой лемме сводится доказательство?
+
+    \begin{cloze}{1}
+        Критерию равенства смешанных производных в терминах двойного приращения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c05c985bb5c7464abbacefb8a7df65a7}
+    Пусть \({ f : E \subset \mathbb R^2 \to \mathbb R }\),\: \({ a \in \operatorname{Int} E }\).
+    Тогда если функция \({ f }\) дважды дифференцируема в точке \({ a }\),
+    то \({ \frac{\partial^2 f}{\partial x \partial y}(a) = \frac{\partial^2 f}{\partial y \partial x}(a) }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выразить \({ \Delta_{a}^2 f(u, v) }\) через \({ \frac{\partial f}{\partial x} }\) и преобразовать по определению дифференцируемости \({ \frac{\partial f}{\partial x} }\) в точке \({ a }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2040e12c02dd4e5a802c3e3699139436}
+    Как связаны достаточные условия равенства вторых смешанных производных вещественной функции двух переменных в терминах
+    непрерывности производных и в терминах дифференцируемости функции?
+
+    \begin{cloze}{1}
+        Они независимы: ни одно из них не вытекает из другого.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e5d0840e014f416182a467e841612be7}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze}\: \begin{icloze}{3}\({ s \in \mathbb Z_+ }\).\end{icloze}
+    \begin{icloze}{1}Дифференциал \({ f }\) порядка \({ s }\) в точке \({ a }\)\end{icloze} обозначается \begin{icloze}{2}\({ d_{a}^{s}f }\).\end{icloze}
+\end{note}
+
+\begin{note}{4a0eb2624a0b417c971d2809d916d439}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ s \in \mathbb Z_+ }\),\: \begin{icloze}{3}\({ h \in \mathbb R^{n} }\).\end{icloze}
+    \begin{icloze}{1}Отображение \({ x \mapsto d_{x}^{s}f(h) }\)\end{icloze} называется \begin{icloze}{2}дифференциалом \({ f }\) порядка \({ s }\) на приращении \({ h }\).\end{icloze}
+\end{note}
+
+\begin{note}{678b9037ec5546139752d16739190f43}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ s \in \mathbb Z_+ }\),\: \({ h \in \mathbb R^{n} }\).
+    \begin{icloze}{1}Дифференциал \({ f }\) порядка \({ s }\) на приращении \({ h }\)\end{icloze} обозначается \begin{icloze}{2}\({ d^{s}f(h) }\).\end{icloze}
+\end{note}
+
+\begin{note}{3f6f7599179f4bfc9ff68b783fa854fe}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\).
+    \[
+        d_{a}^{0}f(h) \overset{\text{def}}= \begin{icloze}{1}f(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d50ddda5fe2e45b8ae3e6dd574301801}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{2}\({ h \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \[
+        d^{0}f(h) = \begin{icloze}{1}f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b26ea1c33db448d78e2370a9b8da1714}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{5}\({ s \in \mathbb N }\),\end{icloze}\: \begin{icloze}{4}\({ h \in \mathbb R^{n} }\).\end{icloze}
+    Тогда если \begin{icloze}{2}\({ d^{s - 1}f(h) }\) дифференцируемо в точке \({ a }\),\end{icloze} то
+    \[
+        \begin{icloze}{3}d_{a}^{s}f(h)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}d_{a}\left( d^{s - 1}f(h) \right)(h).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{074bc517d3154bf99256c62ff0ccc825}
+    По какому принципу определяются дифференциалы высших порядков для отображений \({ n }\) вещественных переменных?
+
+    \begin{cloze}{1}
+        Сначала определяют дифференциалы нулевого порядка и далее по индукции.
+    \end{cloze}
 \end{note}
 
 \end{document}
