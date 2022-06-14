@@ -6852,6 +6852,19 @@
     \end{center}
 \end{note}
 
+\begin{note}{8a9b1ceb6c6844959b543e1e104d5e89}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \({ e \in S_1(0) }\).
+    Тогда
+    \[
+        \frac{\partial f}{\partial e}(a) = (f(a + te))' \big|_{t = 0}.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        В определении производной выразить числитель через \({ g(t) = f(a + te) }\) и затем через \({ d_{a}g(t) }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{44cd6d8c12554833bb8afa0753b0910b}
     Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\),\: \begin{icloze}{3}\({ e \in \mathbb R^{n} \setminus \left\{ 0 \right\} }\).\end{icloze}
     Тогда
@@ -6925,6 +6938,20 @@
         \begin{icloze}{3}\frac{\partial f}{\partial x_k}(a)\end{icloze} = \begin{icloze}{2}\varphi_k'(a_k),\end{icloze}
     \]
     где \({ \varphi_k(t) \coloneqq \begin{icloze}{1}f(a_1, \ldots, a_{k - 1}, t, a_{k + 1}, \ldots, a_n)\end{icloze} }\).
+\end{note}
+
+\begin{note}{6c71c8d7de9b44a1bd8a8327486543fd}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ a \in \operatorname{Int} E }\),\: \({ k \in [1 : n] }\).
+    Тогда
+    \[
+        \frac{\partial f}{\partial x_k}(a) = \varphi_k'(a_k),
+    \]
+    где \({ \varphi_k(t) \coloneqq f(a_1, \ldots, a_{k - 1}, t, a_{k + 1}, \ldots, a_n) }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Представить \({ \varphi_k(t) }\) как \({ f(a + (t - a_k)e^{k}) }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{3a23259d797c45e6b298385e04016223}
