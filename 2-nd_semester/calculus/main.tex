@@ -6741,6 +6741,10 @@
     Отображение \({ f }\) называется \begin{icloze}{2}дифференцируемым в точке \({ a }\),\end{icloze} если \begin{icloze}{1}существует \({ d_a f }\)\end{icloze}
 \end{note}
 
+\begin{note}{237f78f7b4834503aeb6a88373cdc14d}
+    Здесь и далее подразумевается, что если \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\), то \({ a }\) --- \begin{icloze}{1}внутренняя точка множества \({ E }\).\end{icloze}
+\end{note}
+
 \begin{note}{f46eb042f44a4dca88af3d73eae0ca1d}
     Пусть \({ f : E \subset \mathbb R \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
     Тогда \begin{icloze}{2}\({ d_{a} f }\)\end{icloze} представляет из себя
@@ -7705,6 +7709,14 @@
     Тогда отображение \({ f }\) \begin{icloze}{1}\({ s }\) раз дифференцируемо на \({ E }\).\end{icloze}
 \end{note}
 
+\begin{note}{3cce08514b7048e8a02dd5eac699d108}
+    Пример функции \({ f : \mathbb R^2 \to \mathbb R }\), для которой \({ \frac{\partial^2 f}{\partial x \partial y} \neq \frac{\partial^2 f}{\partial y \partial x} }\).
+
+    \begin{cloze}{1}
+        \({ f(x, y) = xy \cdot \frac{x^2 - y^2}{x^2 + y^2} }\), доопределённая нулём в нуле.
+    \end{cloze}
+\end{note}
+
 \begin{note}{8f24687099874445962dd67011e97e5b}
     Пусть \begin{icloze}{4}\({ f : E \subset \mathbb R^2 \to \mathbb R }\),\end{icloze}\: \begin{icloze}{3}\({ (x^{0}, y^{0}) \in \operatorname{Int} E }\).\end{icloze}
     \begin{icloze}{1}
@@ -7941,8 +7953,108 @@
     По какому принципу определяются дифференциалы высших порядков для отображений \({ n }\) вещественных переменных?
 
     \begin{cloze}{1}
-        Сначала определяют дифференциалы нулевого порядка и далее по индукции.
+        Индуктивно, начиная с дифференциалов нулевого порядка.
     \end{cloze}
+\end{note}
+
+\begin{note}{db8b3646a02e48c0822f0cb0bf888011}
+    \begin{icloze}{1}Любой вектор из \({ \mathbb Z_+^{n} }\)\end{icloze} называется \begin{icloze}{2}\({ n }\)-мерным мультииндексом.\end{icloze}
+\end{note}
+
+\begin{note}{36b41fdf60b04dc3990df80419df63d4}
+    Пусть \({ \alpha \in \mathbb Z_+^{n} }\) --- мультииндекс.
+    Тогда
+    \begin{icloze}{1}
+        \[
+            \sum_{i=1}^{n} \alpha_i
+        \]
+    \end{icloze}
+    называется \begin{icloze}{2}абсолютным значением \({ \alpha }\).\end{icloze}
+\end{note}
+
+\begin{note}{a64074374f28419bb6aa71df69d8347b}
+    Пусть \({ \alpha \in \mathbb Z_+^{n} }\) --- мультииндекс.
+    Тогда
+    \[
+        \begin{icloze}{2}\alpha!\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\prod_{i = 1}^{n} \alpha_i!.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7147cddaa4d449d2a180ad68b906cebc}
+    Пусть \({ \alpha \in \mathbb Z_+^{n} }\) --- мультииндекс,\: \({ x \in \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}x^{\alpha}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\prod_{i = 1}^{n} x_{i}^{\alpha_i}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ca2b48bd2a18414ab51a9417e7dd87e3}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ \alpha \in \mathbb Z_+^{n} }\) --- мультииндекс.
+    Тогда
+    \[
+        \begin{icloze}{2}\partial^{\alpha}f(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\frac{\partial^{\left\lvert \alpha \right\rvert}f}{\partial x_1^{\alpha_1} \cdots \partial x_{n}^{\alpha_n}}(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c2871cb49fe94563a86528754b6c569c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{2}\({ s }\) раз дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда \({ d^{s}_{a}f }\) \begin{icloze}{1}существует.\end{icloze}
+\end{note}
+
+\begin{note}{38ec4052d4b84d6c8f0e1c8a8cdd1d22}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{4}\({ s }\) раз дифференцируемо в точке \({ a }\),\end{icloze}\: \begin{icloze}{5}\({ h \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{gathered}
+            \begin{icloze}{3}d_{a}^{s}f(h)\end{icloze} = \begin{icloze}{1}\sum_{\left\lvert \alpha \right\rvert = s} \frac{s!}{\alpha!} \cdot \partial^{\alpha}f(a) \cdot h^{\alpha},\end{icloze} \\
+            \text{(\begin{icloze}{2}\({ \alpha \in \mathbb Z_+^{n} }\)\end{icloze})}.
+        \end{gathered}
+    \]
+\end{note}
+
+\begin{note}{4765cc75b79245358f6ca57e91719c78}
+    Пусть \begin{icloze}{3}\({ s \in \mathbb Z_+ }\).\end{icloze}
+    Тогда в контексте \({ \mathbb R^{n} }\) полагают
+    \[
+        \begin{icloze}{2}I_{s}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\Big\{ \left\{ i_k \right\}_{k \in [s]} \mid \left\{ i_k \right\} \subset [n] \Big\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ae1134e6b1a448cba9d4685cef8c9cdb}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\),\: \({ i \in I_{s} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\partial_{i}f(a)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\frac{\partial^{s} f}{\partial x_{i_1} \cdots \partial x_{i_s}}(a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d808baf356294ea7a0300e5a4402d4ec}
+    Пусть \({ h \in \mathbb R^{n} }\),\: \({ i \in I_{s} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}h_i\end{icloze} \overset{\text{def}}= \begin{icloze}{1}h_{i_1} \cdots h_{i_s}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f96bce47b70048669ed978eb870ce0df}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}\({ s }\) раз дифференцируемо в точке \({ a }\),\end{icloze}\: \begin{icloze}{4}\({ h \in \mathbb R^{n} }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}d_{a}^{s}f(h)\end{icloze} = \begin{icloze}{1}\sum_{i \in I_{s}}^{} \partial_i f(a) h_i.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах \({ I_{s} }\))
+    \end{center}
+\end{note}
+
+\begin{note}{31de20b20a4f49e1bcc0998f098e2b0c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ 2 }\) раза дифференцируемо в точке \({ a }\),\: \({ h \in \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}d_{a}^{2}f(h)\end{icloze} = \begin{icloze}{1}\sum_{i=1}^{n} \sum_{j=1}^{n} \frac{\partial^2 f}{\partial x_i \partial x_j}(a) \cdot h_i h_j.\end{icloze}
+    \]
 \end{note}
 
 \end{document}
