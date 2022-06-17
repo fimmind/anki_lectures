@@ -2653,6 +2653,21 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{31d69048b8654670a45bed290ffb4052}
+    Пусть \({ f : \begin{icloze}{4}\mathbb R^{n} \to \mathbb R^{n}\end{icloze} }\) --- линейный оператор,\: \({ \lambda \in \begin{icloze}{5}\operatorname{spec} f \setminus \mathbb R\end{icloze} }\).
+    Тогда если \begin{icloze}{2}\({ a + ib \in V_{f_{\mathbb C}}(\lambda) \setminus \left\{ 0 \right\} }\)\end{icloze} (где \begin{icloze}{3}\({ a, b \in \mathbb R^{n} }\)\end{icloze}), то \begin{icloze}{1}\({ a }\) и \({ b }\) линейно независимы.\end{icloze}
+\end{note}
+
+\begin{note}{a8555ff624e746ceae88a1597c9ebcf4}
+    Пусть \({ f : \mathbb R^{n} \to \mathbb R^{n} }\) --- линейный оператор,\: \({ \lambda \in \operatorname{spec} f \setminus \mathbb R }\).
+    Тогда если \({ a + ib \in V_{f_{\mathbb C}}(\lambda) \setminus \left\{ 0 \right\} }\) (где \({ a, b \in \mathbb R^{n} }\)), то \({ a }\) и \({ b }\) линейно независимы.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        От обратного и тогда \({ f(a) = \lambda a }\), что невозможно, поскольку \({ a, f(a) \in \mathbb R^{n} }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{678857a6b6514b7e87cade6a771f4c53}
     \begin{icloze}{2}Матрица поворота на угол \({ \varphi }\)\end{icloze} имеет вид:
     \begin{icloze}{1}
@@ -2683,6 +2698,40 @@
 
 \begin{note}{951f954d7fc94632bfd90e091d13396e}
     В \({ \mathbb R^{n} }\) для любого ортогонального оператора существует \begin{icloze}{1}ортонормированный базис, в котором матрица оператора имеет канонический вид.\end{icloze}
+\end{note}
+
+\begin{note}{e8a3805f9a3f4bae8dd14745c6603d37}
+    В \({ \mathbb R^{n} }\) для любого ортогонального оператора существует ортонормированный базис, в котором матрица оператора имеет канонический вид.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выбрать собственное значение, построить отвечающий ему блок и далее ``по индукции'' для сужения на ортогональное дополнение.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3dbcabf7585c41e590b7515d2294cb74}
+    Пусть \({ f }\) --- ортогональный оператор,\: \({ a + bi }\) --- его собственный вектор.
+    Тогда \({ a }\) и \({ b }\) \begin{icloze}{1}ортогональны и имеют равную длину.\end{icloze}
+\end{note}
+
+\begin{note}{5b4055b476de4754a0eab034334b564d}
+    Пусть \({ f }\) --- ортогональный оператор,\: \({ a + bi }\) --- его собственный вектор.
+    Тогда \({ a }\) и \({ b }\) ортогональны и имеют равную длину.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выразить \({ (a, b) }\) и \({ (a, a) }\) через значения \({ f(a) }\) и \({ f(b) }\) и составить СЛАУ.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ebbc584e56104a56ab20c37cb3f76036}
+    Пусть \({ f }\) --- ортогональный оператор,\: \({ a + bi }\) --- его собственный вектор.
+    Тогда \({ a }\) и \({ b }\) ортогональны и имеют равную длину.
+    Относительно каких переменных составляется СЛАУ в доказательстве?
+
+    \begin{cloze}{1}
+         Относительно \({ (a, b) }\) и \({ (a, a) - (b, b) }\)
+    \end{cloze}
 \end{note}
 
 \begin{note}{91344cb034d9420b9a63807b59bc1cbf}
