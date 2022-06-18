@@ -2821,6 +2821,19 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{5efae3fe5ee64edabaa2a50d91d8714f}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда всегда существует такая замена переменных \({ x = By }\), что
+    \[
+        q(By) = \sum_{i=1}^{\operatorname{rk} A} \mu_i y_i^2.
+    \]
+    В чём ключевая идея доказательства (без использования спектральной теоремы)?
+
+    \begin{cloze}{1}
+        Элементарными преобразованиями строк и столбцов привести матрицу \({ q }\) к диагональному виду.
+    \end{cloze}
+\end{note}
+
 \begin{note}{2b6bd1f239a0448cb62e2d9e6ba8e5a7}
     Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
     \begin{icloze}{1}
@@ -2853,8 +2866,141 @@
 \end{note}
 
 \begin{note}{e0192c4d7f9b4c8da63ea34e5b91d7b5}
-    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\),\:
-    \begin{icloze}{3}Положительные и отрицательные индексы инерции \({ q }\)\end{icloze} \begin{icloze}{2}не зависят\end{icloze} от \begin{icloze}{1}замены переменных, приводящих \({ q }\) к каноническому виду.\end{icloze}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    \begin{icloze}{3}Положительные и отрицательные индексы инерции \({ q }\)\end{icloze} \begin{icloze}{2}не зависят\end{icloze} от \begin{icloze}{1}замены переменных, приводящей \({ q }\) к каноническому виду.\end{icloze}
+\end{note}
+
+\begin{note}{7c4f4a41668546169076f4a02bb73f41}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ \pi }\)\end{icloze} --- это \begin{icloze}{1}максимальная размерность подпространства, на котором форма \({ q }\) положительно определена.\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах положительной определённости)
+    \end{center}
+\end{note}
+
+\begin{note}{24dea29600d54b75b2530902cfa4a5af}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда \begin{icloze}{2}\({ \nu }\)\end{icloze} --- это \begin{icloze}{1}максимальная размерность подпространства, на котором форма \({ q }\) отрицательно определена.\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах положительной определённости)
+    \end{center}
+\end{note}
+
+\begin{note}{2efa1a15074a49d19d8568cb77fd70d7}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда \({ \pi }\) --- это максимальная размерность подпространства, на котором форма \({ q }\) положительно определена.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выбрать базис \({ e }\), в котором
+        \[
+            q(e\lambda) = \lambda^{T} \begin{bmatrix}
+                E_{\pi}   \\
+                & -E_{\nu} \\
+                && 0      \\
+            \end{bmatrix}
+            \lambda.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{7a2d2be95e6543ff9f5642410cda1fc7}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Почему мы знаем, что существует базис \({ e }\), в котором
+    \[
+        q(e\lambda) = \lambda^{T} \begin{bmatrix}
+            E_{\pi}   \\
+            & -E_{\nu} \\
+            && 0      \\
+        \end{bmatrix}
+        \lambda.
+    \]
+
+    \begin{cloze}{1}
+        Диагональный вид существует из спектральной теоремы. Остаётся нормировать и переставить базисные векторы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2002e141fa3345999d474a7c75a27b69}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\),
+    \({ e }\) --- базис такой, что
+    \[
+        q(e\lambda) = \lambda^{T} \begin{bmatrix}
+            E_{\pi}   \\
+            & -E_{\nu} \\
+            && 0      \\
+        \end{bmatrix}
+        \lambda.
+    \]
+    Что можно сказать про \({ L = \mathscr L (e_1, \ldots, e_{\pi}) }\)?
+
+    \begin{cloze}{1}
+        \({ q }\) положительно определена на \({ L }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a5149aa8efff4d5ba3531d0dc96ec6ba}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\),
+    \({ e }\) --- базис такой, что
+    \[
+        q(e\lambda) = \lambda^{T} \begin{bmatrix}
+            E_{\pi}   \\
+            & -E_{\nu} \\
+            && 0      \\
+        \end{bmatrix}
+        \lambda.
+    \]
+    Что можно сказать про \({ L = \mathscr L (e_{\pi + 1}, \ldots, e_{\pi + \nu}) }\)?
+
+    \begin{cloze}{1}
+        \({ q }\) отрицательно определена на \({ L }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{456d6973756f4ab9bfbfd28f53e7a060}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\),
+    \({ e }\) --- базис такой, что
+    \[
+        q(e\lambda) = \lambda^{T} \begin{bmatrix}
+            E_{\pi}   \\
+            & -E_{\nu} \\
+            && 0      \\
+        \end{bmatrix}
+        \lambda.
+    \]
+    Тогда если \begin{icloze}{2}\({ q }\) положительно определена на \({ G }\),\end{icloze} то \begin{icloze}{1}\({ \dim G \leqslant \pi }\).\end{icloze}
+\end{note}
+
+\begin{note}{93b97c5f8fa2484e9cd48faeac9b577e}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\),
+    \({ e }\) --- базис такой, что
+    \[
+        q(e\lambda) = \lambda^{T} \begin{bmatrix}
+            E_{\pi}   \\
+            & -E_{\nu} \\
+            && 0      \\
+        \end{bmatrix}
+        \lambda.
+    \]
+    Тогда если \({ q }\) положительно определена на \({ G }\), то \({ \dim G \leqslant \pi }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        В \({ G }\) не может лежать векторов из \({ \mathscr L (e_{\pi + 1}, \ldots, e_n) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5fc4db6c932e4c5bac06afaafb2e8a68}
+    Пусть \({ q }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Почему \({ \pi }\) и \({ \nu }\) корректно определены?
+
+    \begin{cloze}{1}
+        Следует из связи значений \({ \pi }\) и \({ \nu }\) с размерностями подпространств, на которых \({ q }\) положительно/отрицательно определена.
+    \end{cloze}
 \end{note}
 
 \begin{note}{97b6d8cfbb8e499e8552699c8f4d0bf8}
@@ -2878,6 +3024,46 @@
     \end{center}
 \end{note}
 
+\begin{note}{6fc3ef1864d246d2a2ee658a1f0902fc}
+    В чём основная идея доказательства критерия Сильвестра для квадратичных форм?
+
+    \begin{cloze}{1}
+        Элементарными преобразованиями, не меняющими значений угловых миноров, привести матрицу формы к диагональному виду.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b67b00fb8e7741c2bde46724543c741d}
+    К чему применяются элементарные преобразования в доказательстве критерия Сильвестра для квадратичных форм: к строкам или к столбцам?
+
+    \begin{cloze}{1}
+        И к строкам, и к столбцам одновременно.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5673368bd606421b82198acfa11aa4d1}
+    Какие элементарные преобразования применяются к матрице квадратичной формы в доказательстве критерия Сильвестра?
+
+    \begin{cloze}{1}
+        Прибавление к одной строке другой строки, умноженной на число. Для столбцов то же, но зеркально.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee57ba62b118492b8faabc390f478fce}
+    Почему в доказательства критерия Сильвестра для квадратичных форм (необходимость) можно считать, что все \({ \lambda_i }\) в полученном диагональном виде отличны от нуля?
+
+    \begin{cloze}{1}
+        Первое \({ \lambda_i = 0 \iff \Delta_i = 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8629aff0d2a945f2bb5ae5fbb13440e6}
+    Почему в доказательства критерия Сильвестра для квадратичных форм (достаточность) можно считать, что все \({ \lambda_i }\) в полученном диагональном виде отличны от нуля?
+
+    \begin{cloze}{1}
+        От обратного и тогда \({ \exists x \neq 0 : q(x) = 0 }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{75e17707e4e446ed9ca2db4710251d36}
     Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
     Тогда всегда \begin{icloze}{4}существует\end{icloze} такая \begin{icloze}{3}ортогональная замена \({ x = By }\),\end{icloze} что
@@ -2887,6 +3073,80 @@
         \]
     \end{icloze}
     где \({ \left\{ \lambda_j \right\} \begin{icloze}{2}= \operatorname{spec} A\end{icloze} }\).
+\end{note}
+
+\begin{note}{2cbc861e5ee44f50a82f862ca8317fbf}
+    Пусть \({ q : x \mapsto x^{T}Ax }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    Тогда всегда существует такая ортогональная замена \({ x = By }\), что
+    \[
+        q(By) = \sum_{i=1}^{\operatorname{rk} A} \lambda_i y_i^2,
+    \]
+    где \({ \left\{ \lambda_j \right\} = \operatorname{spec} A }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Спектральная теорема для самосопряжённых операторов.
+    \end{cloze}
+\end{note}
+
+\begin{note}{27069c1e2308471e94c9d33659f5c2c0}
+    Пусть \({ A \in \mathbb R^{n \times n} }\) \begin{icloze}{2}симметрична.\end{icloze}
+    Тогда по \begin{icloze}{3}спектральной теореме для самосопряжённых операторов\end{icloze} \({ A }\) \begin{icloze}{1}диагонализуема.\end{icloze}
+\end{note}
+
+\begin{note}{092c2617bcad4d609ecc2818ad32ac07}
+    Пусть \({ A \in \mathbb R^{n \times n} }\) симметрична.
+    Почему \({ A }\) самосопряжена?
+
+    \begin{cloze}{1}
+        \[
+            A^* = \overline{A^{T}}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{31b3b048ada040338acc82b240da632e}
+    Пусть \({ A \in \mathbb R^{n \times n} }\) симметрична.
+    Тогда по спектральной теореме для самосопряжённых операторов
+    \[
+        A = C \Lambda C^{-1}.
+    \]
+    Что можно сказать про матрицу \({ C }\)?
+
+    \begin{cloze}{1}
+        Она ортогональна.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e9126cafe6c945e795c28f3684b96f54}
+    Пусть \({ A \in \mathbb R^{n \times n} }\) симметрична.
+    Тогда по спектральной теореме для самосопряжённых операторов
+    \[
+        A = C \Lambda C^{-1}.
+    \]
+    Почему матрица \({ C }\) ортогональна?
+
+    \begin{cloze}{1}
+        \({ C }\) --- матрица перехода от ортогонального базиса к ортогональному.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c71cb32466464fd1b45a573370778a8a}
+    Пусть \({ A \in \begin{icloze}{4}\mathbb R^{n \times n}\end{icloze} }\) \begin{icloze}{3}ортогональна\end{icloze}.
+    Тогда \({ \begin{icloze}{2}A^{-1}\end{icloze} = \begin{icloze}{1}A^{T}\end{icloze} }\).
+\end{note}
+
+\begin{note}{b68e5c8fd9d34bb59b547f8004aabf07}
+    Пусть \({ A \in \mathbb R^{n \times n} }\) симметрична.
+    Тогда по спектральной теореме для самосопряжённых операторов
+    \[
+        A = C \Lambda C^{-1}.
+    \]
+    Почему \({ \Lambda }\) не может иметь комплексных значений на диагонали?
+
+    \begin{cloze}{1}
+        \({ A }\) самосопряжена \({ \implies }\) \({ \operatorname{spec} A \subset \mathbb R }\).
+    \end{cloze}
 \end{note}
 
 \section{Семинар 18.05.22}
@@ -2907,6 +3167,14 @@
     \begin{center}
         \tiny <<\begin{icloze}{3}формула Якоби\end{icloze}>>
     \end{center}
+\end{note}
+
+\begin{note}{4f977e40188141d2a3865d203cba08d5}
+    В чём основная идея доказательства формулы Якоби для квадратичных форм?
+
+    \begin{cloze}{1}
+        Элементарными преобразованиями, не меняющими значений угловых миноров, привести матрицу формы к диагональному виду.
+    \end{cloze}
 \end{note}
 
 \begin{note}{52494560052c4c2ca0b504c059601cdd}
