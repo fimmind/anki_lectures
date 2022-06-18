@@ -323,6 +323,19 @@
     \]
 \end{note}
 
+\begin{note}{e13a32abbb104cd09a57e8b5d9724d85}
+    Пусть \({ n \in \mathbb N }\).
+    Тогда \begin{icloze}{2}\({ (\mathbb Z_{n}, +) }\)\end{icloze} называется \begin{icloze}{1}группой вычетов по модулю \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{59141e88226b4a72937b611774af1733}
+    Пусть \({ a \in \mathbb Z_{n} }\).
+    Тогда
+    \[
+        a^{-1} = \begin{icloze}{1}(n - a) \bmod n.\end{icloze}
+    \]
+\end{note}
+
 \begin{note}{8e7c4384053947bc8f40faae3d3bc34f}
     Пусть \({ (G, \circ)}\) --- группа, \({ a \in G }\), \({ \operatorname{ord} a < \infty }\).
     Тогда
@@ -447,9 +460,29 @@
     Тогда всегда \({ g_1 \circ H }\) и \({ g_2 \circ H }\) либо \begin{icloze}{1}не пересекаются,\end{icloze} либо \begin{icloze}{1}совпадают.\end{icloze}
 \end{note}
 
+\begin{note}{020ff9f58e534258a0a8999bff4003f6}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \({ g_1, g_2 \in G }\).
+    Тогда всегда \({ g_1 \circ H }\) и \({ g_2 \circ H }\) либо не пересекаются, либо совпадают.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что если \({ g_1 \circ H }\) и \({ g_2 \circ H }\) пересекаются, то они совпадают как множества.
+    \end{cloze}
+\end{note}
+
 \begin{note}{2bafb8136a75400481ba0f463cb2dc9c}
     Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \begin{icloze}{3}\({ g \in G }\).\end{icloze}
     \begin{icloze}{2}Тогда количество элементов в \({ g \circ H }\)\end{icloze} равно \begin{icloze}{1}количеству элементов в \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{7d8237766a784691b937e2a028a32f28}
+    Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа,\: \({ g \in G }\).
+    Тогда количество элементов в \({ g \circ H }\) равно количеству элементов в \({ H }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Показать, что \({ g \circ h \mapsto h }\) --- биекция.
+    \end{cloze}
 \end{note}
 
 \begin{note}{45bd2c9c51fd4a398ac4adaf9172dfc6}
@@ -475,14 +508,6 @@
     \end{cloze}
 \end{note}
 
-\begin{note}{7fa9d6859025408f868211197328bf30}
-    Пусть \({ (G, \circ) }\) ---  группа, \({ (H, \circ) }\) --- подгруппа,\: \({ a, b \in G }\).
-    Тогда
-    \[
-        \begin{icloze}{2}(a \circ H) \cdot (b \circ H)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(a \circ b) \circ H\end{icloze}
-    \]
-\end{note}
-
 \begin{note}{daf66fd18e1b4e50b007b6a820bfc2b7}
     Пусть \({ (G, \circ) }\) --- группа, \({ (H, \circ) }\) --- подгруппа.
     Подгруппа \({ (H, \circ) }\) называется \begin{icloze}{2}нормальной,\end{icloze} если
@@ -491,6 +516,14 @@
             \forall g \in G  \quad g \circ H = H \circ g.
         \]
     \end{icloze}
+\end{note}
+
+\begin{note}{7fa9d6859025408f868211197328bf30}
+    Пусть \({ (G, \circ) }\) ---  группа, \begin{icloze}{3}\({ (H, \circ) }\) --- нормальная подгруппа,\end{icloze}\: \({ a, b \in G }\).
+    Тогда
+    \[
+        \begin{icloze}{2}(a \circ H) \cdot (b \circ H)\end{icloze} \overset{\text{def}}= \begin{icloze}{1}(a \circ b) \circ H\end{icloze}
+    \]
 \end{note}
 
 \begin{note}{94d010d0ee6748df9997775ed206113d}
@@ -540,6 +573,27 @@
 
     \begin{cloze}{1}
         Из теоремы о делении с остатком определить \({ f^{-1} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{723eb2544eda4ac2837ba4d68c85f327}
+    \[
+        \mathbb S^1 \overset{\text{def}}= \begin{icloze}{1}\left\{ z \in \mathbb C \mid \left\lvert z \right\rvert = 1 \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{51f563718c3046b49cc18008a09f772e}
+    \[
+        (\mathbb R / \mathbb Z, +) \simeq \begin{icloze}{1}(\mathbb S^1, \:\cdot\:).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{54c093c580df4acab83f28d38696caf0}
+    \({ (\mathbb R / \mathbb Z, +) \simeq (\mathbb S^1, \:\cdot\:) }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        \({ x + \mathbb Z \mapsto e^{i \cdot 2\pi x} }\) --- изоморфизм с тривиальным обратным отображением.
     \end{cloze}
 \end{note}
 
