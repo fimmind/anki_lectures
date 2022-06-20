@@ -1736,6 +1736,21 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{90d9812ff67d48d78cc56919ecac7303}
+    Пусть \({ e_1, \ldots, e_k }\) --- система векторов в евклидовом пространстве.
+    Тогда \({ \det G(e_1, \ldots, e_k) }\) \begin{icloze}{2}не зависит\end{icloze} от \begin{icloze}{1}порядка, в котором берутся вектора в системе.\end{icloze}
+\end{note}
+
+\begin{note}{99ad93f5f3e846aca763fb36d81d3df0}
+    Пусть \({ e_1, \ldots, e_k }\) --- система векторов в евклидовом пространстве.
+    Тогда \({ \det G(e_1, \ldots, e_k) }\) не зависит от порядка, в котором берутся вектора в системе.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Перестановка пары векторов в \({ \left\{ e_j \right\} }\) соответствует перестановке пары строк и пары столбцов в \({ G(e_1, \ldots, e_k) }\).
+    \end{cloze}
+\end{note}
+
 \begin{note}{f45df626ca1d4db1866e3f7aae0c6f2a}
     Пусть \({ W }\) --- евклидово пространство, \({ w \in W }\), \({ e_1, \ldots, e_k }\) --- базис в \({ V \triangleleft W }\).
     Как найти проекцию \({ w_0 }\) вектора \({ w }\) на \({ V }\)?
@@ -1784,16 +1799,37 @@
     \end{icloze}
     Тогда
     \[
-        \begin{icloze}{2}d(f, V)\end{icloze} = \begin{icloze}{1}\left\lVert f^{\perp} \right\rVert.\end{icloze}
+        \begin{icloze}{2}d(f, V)\end{icloze} = \begin{icloze}{1}\lVert f^{\perp} \rVert.\end{icloze}
     \]
 \end{note}
 
 \begin{note}{d34143b5a6f347ebbd35b66500be29d0}
     Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
-    В чем  основная идея доказательства равенства \({ d(f, V) = \left\lVert f^{\perp} \right\rVert }\)?
+    В чем  основная идея доказательства равенства \({ d(f, V) = \lVert f^{\perp} \rVert }\)?
 
     \begin{cloze}{1}
         Представить \({ f }\) как \({ f^{\perp} + f_0 }\) и явно вычислить \({ \left\lVert f - g \right\rVert }\) для \({ g \in V }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{093b736f8d264f6d81ad0aee60603024}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    Тогда
+    \[
+        \begin{icloze}{2}d(f, V) = 0\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}f \in V.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d7b770f1d6df4aa787e73eb19f14b1ac}
+    Пусть \({ W }\) --- евклидово пространство, \({ V \triangleleft W }\), \({ f \in W }\).
+    Тогда
+    \[
+        d(f, V) = 0 \iff f \in V.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Перпендикуляр равен нулю \({ \iff }\) проекция равна \({ f }\).
     \end{cloze}
 \end{note}
 
@@ -2514,12 +2550,34 @@
     В процессе ортогонализации Грама-Шмидта определитель Грама \begin{icloze}{1}не меняется.\end{icloze}
 \end{note}
 
+\begin{note}{5cedf320bb5941209a88b04057e3dbff}
+    В процессе ортогонализации Грама-Шмидта определитель Грама не меняется.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Ортогонализация соответствует ЭПМ, не меняющим значение определителя.
+    \end{cloze}
+\end{note}
+
 \begin{note}{dd5abffedea24431af7beee39693bcb2}
     Пусть \({ V }\) --- эрмитово пространство, \begin{icloze}{2}\({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).\end{icloze}
     Тогда
     \[
         \operatorname{sgn} \left\lvert G(e_1, \ldots, e_n) \right\rvert \in \begin{icloze}{1}\left\{ 0, 1 \right\}.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{db24bbf9fd7b489abaf22b6d4dc0998b}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \operatorname{sgn} \left\lvert G(e_1, \ldots, e_n) \right\rvert \in \left\{ 0, 1 \right\}.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать связь с \({ n }\)-мерным объёмом.
+    \end{cloze}
 \end{note}
 
 \begin{note}{550eea6aa0654fe1bcff80057656cabf}
@@ -2531,12 +2589,60 @@
     \end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}система \({ \left\{ e_j \right\} }\) линейно зависима.\end{icloze}
 \end{note}
 
+\begin{note}{a335c5a6e17b498f8d3ee9caa93d6b9f}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left\lvert G(e_1, \ldots, e_n) \right\rvert = 0
+    \]
+    тогда и только тогда, когда система \({ \left\{ e_j \right\} }\) линейно зависима.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать связь определителя Грама с \({ n }\)-мерным объёмом.
+    \end{cloze}
+\end{note}
+
+\begin{note}{00720dec33a24976930d32a68b35db90}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \begin{center}
+        \({ \operatorname{vol}_{n} \Pi(e_1, \ldots, e_n) \begin{icloze}{2}= 0\end{icloze} }\) \begin{icloze}{3}\({ \iff }\)\end{icloze} \begin{icloze}{1}\({ \left\{ e_j \right\} }\) линейно зависима.\end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{52d0e0ee37124ceeb134e6261126d6b9}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \begin{center}
+        \({ \operatorname{vol}_{n} \Pi(e_1, \ldots, e_n) = 0 }\) \({ \iff }\) \({ \left\{ e_j \right\} }\) линейно зависима.
+    \end{center}
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Какое-то из \({ d(e_j, \mathscr L (\ldots)) }\) из определения объёма равно нулю.
+    \end{cloze}
+\end{note}
+
 \begin{note}{c01adb60f10f465ea82f0eb8c910472c}
     Пусть \({ V }\) --- эрмитово пространство, \begin{icloze}{3}\({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).\end{icloze}
     Тогда
     \[
         \left\lvert G(e_1, \ldots, e_n) \right\rvert \begin{icloze}{2}\leqslant\end{icloze} \begin{icloze}{1}\prod_{j = 1}^{n} \left\lVert e_j \right\rVert^2.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{8ab6bf94daa540feb140ea8b73482041}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left\lvert G(e_1, \ldots, e_n) \right\rvert \leqslant \prod_{j = 1}^{n} \left\lVert e_j \right\rVert^2.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Использовать связь с \({ n }\)-мерным объёмом.
+    \end{cloze}
 \end{note}
 
 \begin{note}{e3a8ea052f1b41b48d35050e054c8f59}
@@ -2553,6 +2659,44 @@
             } \right.
         \end{icloze}
     \]
+\end{note}
+
+\begin{note}{cc78cd0e52934eaf89bbd0be8dd6df0c}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left\lvert G(e_1, \ldots, e_n) \right\rvert = \prod_{j = 1}^{n} \left\lVert e_j \right\rVert^2 \implies
+        \left[ {
+            \begin{array}{@{}l@{\quad}l@{}}
+                \text{\({ \left\{ e_j \right\} }\) ортогональна}, \\
+                \exists j \quad e_j = 0.
+            \end{array}
+        } \right.
+    \]
+    Какие два случая расстраиваются в доказательстве?
+
+    \begin{cloze}{1}
+        1. Все \({ e_j \neq 0 }\); \quad 2. Существует \({ e_j = 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{d2d2bc3022e14cf0b41d9881403f47be}
+    Пусть \({ V }\) --- эрмитово пространство, \({ \left\{ e_j \right\}_{j = 1}^{n} \subset V }\).
+    Тогда
+    \[
+        \left\lvert G(e_1, \ldots, e_n) \right\rvert = \prod_{j = 1}^{n} \left\lVert e_j \right\rVert^2 \implies
+        \left[ {
+            \begin{array}{@{}l@{\quad}l@{}}
+                \text{\({ \left\{ e_j \right\} }\) ортогональна}, \\
+                \exists j \quad e_j = 0.
+            \end{array}
+        } \right.
+    \]
+    В чём ключевая идея доказательства (все \({ e_j \neq 0 }\))?
+
+    \begin{cloze}{1}
+        Использовать связь с \({ n }\)-мерным объёмом.
+    \end{cloze}
 \end{note}
 
 \section{Семинар 27.04.22}
@@ -3052,7 +3196,7 @@
     Почему в доказательства критерия Сильвестра для квадратичных форм (необходимость) можно считать, что все \({ \lambda_i }\) в полученном диагональном виде отличны от нуля?
 
     \begin{cloze}{1}
-        Первое \({ \lambda_i = 0 \iff \Delta_i = 0 }\).
+        Первое \({ \lambda_i = 0 \implies \Delta_i = 0 }\).
     \end{cloze}
 \end{note}
 
