@@ -23,6 +23,10 @@ decks:
       </div>
     source_files:
       - lie_algebras/main.tex
+  2131484477:
+    name: Maths Self-Study::Understanding Analysis::1 The Real Numbers
+    source_files:
+      - understanding_analysis/1_the_real_numbers/main.tex
 
 
 model:

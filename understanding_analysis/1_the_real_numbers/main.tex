@@ -1,0 +1,156 @@
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Sets}
+\begin{note}{097312afe75d4a3d9eaa0c1f4c63748a}
+    Intuitively speaking, \begin{icloze}{2}a set\end{icloze} is \begin{icloze}{1}a collection of objects.\end{icloze}
+\end{note}
+
+\begin{note}{85e21cf985524b80a8c00eb4608f34be}
+    Intuitively speaking, a set is a collection of objects.
+    \begin{icloze}{2}Those objects\end{icloze} are referred to as \begin{icloze}{1}the elements of the set.\end{icloze}
+\end{note}
+
+\begin{note}{12b96daebbc04070b74e2a6f74e5b268}
+    Given a set \({ A }\), we write \begin{icloze}{2}\({ x \in A }\)\end{icloze} if \begin{icloze}{1}\({ x }\) is an element of \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{b25d749749a64c5b90880253d9839da8}
+    Given  a set \({ A }\), we write \begin{icloze}{2}\({ x \not\in A }\)\end{icloze} if \begin{icloze}{1}\({ x }\) is not an element of \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{39565306ec4e40e18136e7eb88fc817a}
+    Given two sets \({ A }\) and \({ B }\), \begin{icloze}{1}the union\end{icloze} is written \begin{icloze}{2}\({ A \cup B }\).\end{icloze}
+\end{note}
+
+\begin{note}{73bf0eb1d16c4c5da368e326b4739d5b}
+    Given two sets \({ A }\), and \({ B }\), \begin{icloze}{2}the union\end{icloze} is \begin{icloze}{3}defined\end{icloze} by the rule
+    \begin{center}
+        \begin{icloze}{1}
+            \({ x \in A \cup B }\) provided that \({ x \in A }\) or \({ x \in B }\).
+        \end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{8ce7db157931494bbfb6eee706e15efc}
+    Given two sets \({ A }\) and \({ B }\), \begin{icloze}{2}the intersection\end{icloze} is written \begin{icloze}{2}\({ A \cap B }\).\end{icloze}
+\end{note}
+
+\begin{note}{6a277df52de2409a98e48429d69b6d05}
+    Given two sets \({ A }\) and \({ B }\), \begin{icloze}{2}the intersection\end{icloze} is \begin{icloze}{3}defined\end{icloze} by the rule
+    \begin{center}
+        \begin{icloze}{1}
+            \({ x \in A \cap B }\) provided that \({ x \in A }\) and \({ x \in B }\).
+        \end{icloze}
+    \end{center}
+\end{note}
+
+\begin{note}{684951afc378458aa7bd27e67cdc499b}
+    \begin{icloze}{2}The set of natural numbers\end{icloze} is denoted \begin{icloze}{1}\({ \mathbf{N} }\).\end{icloze}
+\end{note}
+
+\begin{note}{49d36a026d4b4678ab86fb6103571cce}
+    \[
+        \begin{icloze}{2}\mathbf{N}\end{icloze} \overset{\text{def}}= \left\{ \begin{icloze}{1}1, 2, 3, \ldots\end{icloze} \right\}.
+    \]
+\end{note}
+
+\begin{note}{797c81e5adb543e1a5d4cc67e64c5e09}
+    \begin{icloze}{2}The set of integers\end{icloze} is denoted \begin{icloze}{1}\({ \mathbf{Z} }\).\end{icloze}
+\end{note}
+
+\begin{note}{d3c61bf891744c58b73cef543c6e100d}
+    \[
+        \begin{icloze}{2}\mathbf{Z}\end{icloze} \overset{\text{def}}= \left\{ \begin{icloze}{1}\ldots, -2, -1, 0, 1, 2, \ldots\end{icloze} \right\}.
+    \]
+\end{note}
+
+\begin{note}{57f085776972449f8bc14daf5cff6603}
+    \begin{icloze}{2}The set of rational numbers\end{icloze} is denoted \begin{icloze}{1}\({ \mathbf{Q} }\).\end{icloze}
+\end{note}
+
+\begin{note}{f7e3370650134607853b41b2b1ecf54b}
+    \[
+        \begin{icloze}{3}\mathbf{Q}\end{icloze} \overset{\text{def}}= \left\{ \text{all \begin{icloze}{1}fractions \({ \frac{p}{q} }\)\end{icloze} where \begin{icloze}{1}\({ p, q \in \mathbf{Z} }\) and \({ q \neq 0 }\)\end{icloze}} \right\}.
+    \]
+\end{note}
+
+\begin{note}{faeac83cb5b740b6964551c85ad3e35b}
+    \begin{icloze}{2}The set of real numbers\end{icloze} is denoted \begin{icloze}{1}\({ \mathbf{R} }\).\end{icloze}
+\end{note}
+
+\begin{note}{6e5da98964d645d09ad6989e85679c74}
+    \begin{icloze}{2}The empty\end{icloze} set is \begin{icloze}{1}the set that contains no elements.\end{icloze}
+\end{note}
+
+\begin{note}{206db0a0f3d042e49a9ca532e222201f}
+    \begin{icloze}{2}The empty set\end{icloze} is denoted \begin{icloze}{1}\({ \emptyset }\).\end{icloze}
+\end{note}
+
+\begin{note}{2f0448d226db4b71b150acaed349a73b}
+    Two sets \({ A }\) and \({ B }\) are said to be \begin{icloze}{2}disjoint\end{icloze} if \begin{icloze}{1}\({ A \cap B = \emptyset }\).\end{icloze}
+\end{note}
+
+\begin{note}{e5d9d365e86640319ca5460ef8c4f05c}
+    Given two sets \({ A }\) and \({ B }\), we say \begin{icloze}{2}\({ A }\) is a subset of \({ B }\),\end{icloze} or \begin{icloze}{2}\({ B }\) contains \({ A }\)\end{icloze} if \begin{icloze}{1}every element of \({ A }\) is also an element of \({ B }\).\end{icloze}
+\end{note}
+
+\begin{note}{c2bd27f1fc0d40e296dceef9c9789556}
+    Given two sets \({ A }\) and \({ B }\), the \begin{icloze}{3}inclusion\end{icloze} relationship \begin{icloze}{2}\({ A \subseteq B }\) or \({ B \supseteq A }\)\end{icloze} is used to indicate that \begin{icloze}{1}\({ A }\) is a subset of \({ B }\).\end{icloze}
+\end{note}
+
+\begin{note}{333e7c6716af48b7b9962ad803f0732f}
+    Given two sets \({ A }\) and \({ B }\), \begin{icloze}{2}\({ A = B }\)\end{icloze} means that \begin{icloze}{1}\({ A \subseteq B }\) and \({ B \subseteq A }\).\end{icloze}
+\end{note}
+
+\begin{note}{74e93b42d46746dc9ec2b54f8366c435}
+    Let \({ A_1, A_2, A_3, \ldots }\) be an infinite collection of sets.
+    Notationally,
+    \[
+        \bigcup_{n = 1}^{\infty} A_n, \quad \bigcup_{n \in \mathbf{N}}^{} A_n, \quad \text{or} \quad A_1 \cup A_2 \cup A_3 \cup \cdots
+    \]
+    are all equivalent ways to indicate \begin{icloze}{1}the set whose elements consist of any element that appears in at least on particular \({ A_n }\).\end{icloze}
+\end{note}
+
+\begin{note}{69e4627a3e7149ef8be05479a2587b41}
+    Let \({ A_1, A_2, A_3, \ldots }\) be an infinite collection of sets.
+    Notationally,
+    \[
+        \bigcap_{n = 1}^{\infty} A_n, \quad \bigcap_{n \in \mathbf{N}}^{} A_n, \quad \text{or} \quad A_1 \cap A_2 \cap A_3 \cap \cdots
+    \]
+    are all equivalent ways to indicate \begin{icloze}{1}the set whose elements consist of any element that appears in every \({ A_n }\).\end{icloze}
+\end{note}
+
+\begin{note}{11a987e10fce4ceea69672f366597729}
+    Given \({ A \subseteq \mathbf{R} }\), \begin{icloze}{2}the complement of \({ A }\)\end{icloze} refers to \begin{icloze}{1}the set of all elements of \({ \mathbf{R} }\) not in \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{8b379552450b4672af82c17476c0ff13}
+    Given \({ A \subseteq \mathbf{R} }\), \begin{icloze}{2}the complement of \({ A }\)\end{icloze} is written \begin{icloze}{1}\({ A^{c} }\).\end{icloze}
+\end{note}
+
+\begin{note}{a3459afa53264a7c82d9abd760a0c93e}
+    Given \({ A, B \subseteq \mathbf{R} }\),
+    \[
+        \begin{icloze}{2}(A \cap B)^{c}\end{icloze} = \begin{icloze}{1}A^{c} \cup B^{c}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{3}De Morgan's Law\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{c983927aa0304e51949e2f90a2ec2614}
+    Given \({ A, B \subseteq \mathbf{R} }\),
+    \[
+        \begin{icloze}{2}(A \cup B)^{c}\end{icloze} = \begin{icloze}{1}A^{c} \cap B^{c}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{3}De Morgan's Law\end{icloze}>>
+    \end{center}
+\end{note}
+
+\end{document}
