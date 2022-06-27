@@ -153,6 +153,14 @@
     \end{center}
 \end{note}
 
+\begin{note}{09322548137b46529467f2946a4952d4}
+    What is the key idea in the proof of De Morgan's Laws?
+
+    \begin{cloze}{1}
+        Demonstrate inclusion both ways.
+    \end{cloze}
+\end{note}
+
 \section{Functions}
 \begin{note}{18930cfe4e4445779bcec8a2fb53f23c}
     Given \begin{icloze}{3}two sets \({ A }\) and \({ B }\),\end{icloze} \begin{icloze}{2}a function from \({ A }\) to \({ B }\)\end{icloze} is \begin{icloze}{1}a rule or mapping that takes each element \({ x \in A }\) and associates with it a single element of \({ B }\).\end{icloze}
@@ -175,6 +183,116 @@
 \begin{note}{7870a310786142fa938bcc843ca8e1ae}
     Let \({ f : A \to B }\).
     \begin{icloze}{2}The set \({ \left\{ f(x) \mid x \in A \right\} }\)\end{icloze} is called \begin{icloze}{1}the range of \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{716c208c9ae849b89ec722aa17f20882}
+    Given a function \({ f }\) and \begin{icloze}{3}a subset \({ A }\) of its domain,\end{icloze}
+    \begin{icloze}{2}
+        the set
+        \[
+            \left\{ f(x) : x \in A \right\}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}the range of \({ f }\) over the set \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{24aae21652754fcda1267ac61036a3ea}
+    Given a function \({ f }\) and a subset \({ A }\) of its domain, \begin{icloze}{2}the range of \({ f }\) over \({ A }\)\end{icloze} is written \begin{icloze}{2}\({ f(A) }\).\end{icloze}
+\end{note}
+
+\begin{note}{6ed2fb1006634dcf81707a3c4d514857}
+    Let \({ f : D \to \mathbf{R} }\),\: \({ A, B \subseteq D }\).
+    Is always true that
+    \[
+        f(A \cup B) = f(A) \cup f(B)?
+    \]
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee665e77ac9a45cf9a15d42549e6f382}
+    Let \({ f : D \to \mathbf{R} }\),\: \({ A, B \subseteq D }\).
+    Is always true that
+    \[
+        f(A \cap B) = f(A) \cap f(B)?
+    \]
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5d2e9d4e1e094e06b37bd87e2c9edff8}
+    Given \begin{icloze}{4}\({ a, b \in \mathbf{R} }\)\end{icloze} and \begin{icloze}{3}\({ a \leq b }\)\end{icloze},
+    \begin{icloze}{2}
+        the set
+        \[
+            \left\{ x \in \mathbf{R} : a \leq x \leq b \right\}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}a closed interval.\end{icloze}
+\end{note}
+
+\begin{note}{9f383a22fc724f8fa43af5cb65e0cd5a}
+    Given \({ a, b \in \mathbf{R} }\) and \begin{icloze}{3}\({ a < b }\)\end{icloze},
+    \begin{icloze}{2}
+        the set
+        \[
+            \left\{ x \in \mathbf{R} : a < x < b \right\}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}an open interval.\end{icloze}
+\end{note}
+
+\begin{note}{3143096eb895471bac4b2d5840d18758}
+    Given \({ a, b \in \mathbf{R} }\) and \({ a \leq b }\),
+    \begin{icloze}{1}
+        the closed interval
+        \[
+            \left\{ x \in \mathbf{R} : a \leq x \leq b \right\}
+        \]
+    \end{icloze}
+    is written \begin{icloze}{2}\({ [a, b] }\).\end{icloze}
+\end{note}
+
+\begin{note}{604897f024bd4de78723fe8247290371}
+    Given \({ a, b \in \mathbf{R} }\) and \({ a \leq b }\),
+    \begin{icloze}{1}
+        the open interval
+        \[
+            \left\{ x \in \mathbf{R} : a < x < b \right\}
+        \]
+    \end{icloze}
+    is written \begin{icloze}{2}\({ (a, b) }\).\end{icloze}
+\end{note}
+
+\begin{note}{a77dc72d26be45c185900ba7ff132b05}
+    Let \({ f(x) = x^2 }\). Find two sets \({ A }\) and \({ B }\) for which
+    \[
+        f(A \cap B) \neq f(A) \cap f(B).
+    \]
+
+    \begin{cloze}{1}
+        \({ [-1, 0] }\) and \({ [0, 1] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{6ed2fb1006634dcf81707a3c4d514857}
+    Let \({ f : D \to \mathbf{R} }\),\: \({ A, B \subseteq D }\).
+    Then
+    \[
+        \begin{icloze}{3}f(A \cup B)\end{icloze} \begin{icloze}{1}=\end{icloze} \begin{icloze}{2}f(A) \cup f(B).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e088ae5ae1f24425a81dac09317978fd}
+    Let \({ f : D \to \mathbf{R} }\),\: \({ A, B \subseteq D }\).
+    Then
+    \[
+        \begin{icloze}{3}f(A \cap B)\end{icloze} \begin{icloze}{1}\subseteq\end{icloze} \begin{icloze}{2}f(A) \cap f(B).\end{icloze}
+    \]
 \end{note}
 
 \begin{note}{f951f5a5136248dcb413f59b3271d389}
