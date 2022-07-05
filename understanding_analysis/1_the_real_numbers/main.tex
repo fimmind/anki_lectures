@@ -590,4 +590,110 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{74b4cfb8b91d47b7afc1ae11a4b94ccb}
+    Let \({ A_1, \ldots, A_n \subseteq \mathbf{R} }\) be nonempty and bounded above.
+    Then
+    \[
+        \begin{icloze}{2}\sup\left( \bigcup_{k=1}^{n} A_k \right)\end{icloze} = \begin{icloze}{1}\max_{k} \sup A_k.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c4f28c7f86554b8d83da1931799f4181}
+    Let \({ \:A_1, A_2, \ldots\: }\) be a collection of nonempty sets, each of which is bounded above.
+    If \begin{icloze}{3}\({ \bigcup_{k=1}^{\infty} A_k }\) is bounded above,\end{icloze} then
+    \[
+        \begin{icloze}{2}\sup\left( \bigcup_{k=1}^{\infty} A_k \right)\end{icloze} = \begin{icloze}{1}\sup_{k} \sup A_k.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{4c14ddc5fe394879915897bbb199442d}
+    Let \({ A \subseteq \mathbf{R} }\) and \({ c \in \mathbf{R} }\).
+    Then \({ \begin{icloze}{2}cA\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ c \cdot a : a \in A \right\}\end{icloze} }\).
+\end{note}
+
+\begin{note}{8bdedbcb920f442787c9d475958a65dd}
+    Let \({ A \subseteq \mathbf{R} }\) be nonempty and bounded above, and let \({ c \in \mathbf{R} }\).
+    If \begin{icloze}{2}\({ c \geq 0 }\),\end{icloze} it follows that
+    \[
+        \sup (cA) = \begin{icloze}{1}c \cdot \sup A.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c96971d0b0eb40c39d1773c4f89a5588}
+    Let \({ A \subseteq \mathbf{R} }\) be nonempty and bounded above, and let \({ c \in \mathbf{R} }\).
+    If \begin{icloze}{2}\({ c < 0 }\),\end{icloze} it follows that
+    \[
+        \sup (cA) = \begin{icloze}{1}c \cdot \inf A.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{fded05f0fad74578a073f5a838a3a081}
+    Let \({ A, B \subseteq \mathbf{R} }\).
+    Then \({ \begin{icloze}{2}A + B\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ a + b : a \in A \: \text{and} \: b \in B \right\}\end{icloze} }\).
+\end{note}
+
+\begin{note}{12d0a51ec08c4d2094ce3e4c6c8b506a}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded above.
+    Then
+    \[
+        \begin{icloze}{2}\sup (A + B)\end{icloze} = \begin{icloze}{1}\sup A + \sup B.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{75698bb156aa40799fc85b1e2419efa2}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded above.
+    Then
+    \[
+        \sup (A + B) = \underbrace{\sup A}_{s} + \underbrace{\sup B}_{t}.
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        For \({ \epsilon > 0 }\), choose \({ a > s - \frac{\epsilon}{2} }\) and \({ b > t - \frac{\epsilon}{2} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a6281cfff0a84b578d8cacdc6ea4779d}
+    If \begin{icloze}{3}\({ a }\) is an upper bound for A\end{icloze} and \begin{icloze}{2}\({ a \in A }\),\end{icloze} then
+    \begin{icloze}{1}
+        \[
+            a = \sup A.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{eb0969a772e442dd8c3f57ed4f8ee1be}
+    Let \({ A, B \subseteq \mathbf{R} }\) and \begin{icloze}{3}\({ \sup A < \sup B }\).\end{icloze} Then there exists \begin{icloze}{2}\({ b \in B }\)\end{icloze} that is \begin{icloze}{1}an upper bound for \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{6b667686c9644d8b9849c735110dac20}
+    If \({ A }\) and \({ B }\) are \begin{icloze}{3}nonempty, disjoint sets with \({ A \cup B = \mathbf{R} }\)\end{icloze} and \begin{icloze}{2}\({ a < b  }\) for all \({ a \in A }\) and \({ b \in B }\),\end{icloze} then \begin{icloze}{1}there exists \({ c \in \mathbf{R} }\) that is an upper bound for \({ A }\) and a lower bound for \({ B }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Cut Property\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{545cb11592164c31badc3f21a1e29981}
+    What is the key idea in the proof of the Cut Property?
+
+    \begin{cloze}{1}
+        Use the Axiom of Completeness.
+    \end{cloze}
+\end{note}
+
+\begin{note}{39aa54de461b426fbe225601c0663097}
+    The Cut Property implies \begin{icloze}{1}the Axiom of Completeness.\end{icloze}
+\end{note}
+
+\begin{note}{3a64720500f14d66a66401dd3f133a10}
+    The Cut Property implies the Axiom of Completeness.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Consider the set of the upper bounds and its complement.
+    \end{cloze}
+\end{note}
+
 \end{document}
