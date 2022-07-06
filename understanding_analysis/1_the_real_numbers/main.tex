@@ -532,7 +532,7 @@
     What is the key idea in the proof of uniqueness of the least upper bound?
 
     \begin{cloze}{1}
-        \({ s_1 \leqslant s_2 }\) and \({ s_2 \leqslant s_1 }\).
+        \({ s_1 \leq s_2 }\) and \({ s_2 \leq s_1 }\).
     \end{cloze}
 \end{note}
 
@@ -693,6 +693,61 @@
 
     \begin{cloze}{1}
         Consider the set of the upper bounds and its complement.
+    \end{cloze}
+\end{note}
+
+\begin{note}{70244652872f4c1fb020d95cfaf88365}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty, bounded above, and satisfy \({ A \subseteq B }\).
+    How do \({ \sup A }\) and \({ \sup B }\) relate?
+
+    \begin{cloze}{1}
+        \[
+            \sup A \leqslant \sup B.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{12dc792f7f78436ea2156c1cc15355de}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded, and let \begin{icloze}{2}\({ \sup A < \inf B }\).\end{icloze}
+    Then \begin{icloze}{3}there exists a \({ c \in \mathbf{R} }\)\end{icloze} satisfying
+    \begin{icloze}{1}
+        \[
+            a < c < b
+        \]
+        for all \({ a \in A }\) and \({ b \in B }\).
+    \end{icloze}
+\end{note}
+
+\begin{note}{b21502823c8b4f59b97c454a58895487}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded, and let \({ \sup A < \inf B }\).
+    Then there exists a \({ c \in \mathbf{R} }\) satisfying \({ a < c < b }\) for all \({ a \in A }\) and \({ b \in B }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Let \({ c = \frac{1}{2}(\sup A + \inf B) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{12e16f85a81743be8fd6073089decbea}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded.
+    If \begin{icloze}{3}there exists a \({ c \in \mathbf{R} }\)\end{icloze} satisfying \begin{icloze}{2}\({ a \leq c \leq b }\) for all \({ a \in A }\) and \({ b \in B }\),\end{icloze} then
+    \begin{icloze}{1}
+        \[
+            \sup A \leq \inf B.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7bf4ff436d8047b382ad38a9fdbc1c88}
+    Let \({ A, B \subseteq \mathbf{R} }\) be nonempty and bounded.
+    If there exists a \({ c \in \mathbf{R} }\) satisfying \({ a \leq c \leq b }\) for all \({ a \in A }\) and \({ b \in B }\), then
+    \[
+        \sup A \leq \inf B.
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        \({ c }\) is an upper bound for \({ A }\) and a lower bound for \({ B }\).
     \end{cloze}
 \end{note}
 
