@@ -344,7 +344,7 @@
             \left\{ x \in D : f(x) = B \right\}
         \]
     \end{icloze}
-    is called \begin{icloze}{1}the preimage of \({ B }\) under the function \({ f }\).\end{icloze}
+    is called \begin{icloze}{1}the preimage of \({ B }\)\end{icloze} \begin{icloze}{5}under\end{icloze} the function \({ f }\).
 \end{note}
 
 \begin{note}{b72f131ae6734bf694fd8f987bb2323d}
@@ -422,7 +422,7 @@
 \end{note}
 
 \begin{note}{df9aa3b9e0c74da78d7e2a0a65276fcd}
-    How De Morgan's rules for an infinite collection of sets defer from that for a finite collection?
+    How Do De Morgan's rules for an infinite collection of sets defer from that for a finite collection?
 
     \begin{cloze}{1}
         They are essentially the same.
@@ -480,11 +480,11 @@
 \end{note}
 
 \begin{note}{5369939ee0f94abcaf65896355258f0d}
-    \begin{icloze}{2}The least upper bound\end{icloze} of a set \({ A \subseteq \mathbf{R} }\) is also frequently called \begin{icloze}{1}the supremum of \({ A }\).\end{icloze}
+    \begin{icloze}{2}The least upper bound\end{icloze} for a set \({ A \subseteq \mathbf{R} }\) is also frequently called \begin{icloze}{1}the supremum for \({ A }\).\end{icloze}
 \end{note}
 
 \begin{note}{04884b60726641c6b8d7c2c3479f8b05}
-    \begin{icloze}{2}The least upper bound\end{icloze} of a set \({ A \subseteq \mathbf{R} }\) is denoted \begin{icloze}{1}\({ \sup A }\).\end{icloze}
+    \begin{icloze}{2}The least upper bound\end{icloze} for a set \({ A \subseteq \mathbf{R} }\) is denoted \begin{icloze}{1}\({ \sup A }\).\end{icloze}
 \end{note}
 
 \begin{note}{afca84537fdd409e97254e6d36d736c3}
@@ -496,11 +496,11 @@
 \end{note}
 
 \begin{note}{41c9913ebc524f85be951737dc3e33e8}
-    \begin{icloze}{2}The greatest lower bound\end{icloze} of a set \({ A \subseteq \mathbf{R} }\) is also frequently called \begin{icloze}{1}the infimum of \({ A }\).\end{icloze}
+    \begin{icloze}{2}The greatest lower bound\end{icloze} for a set \({ A \subseteq \mathbf{R} }\) is also frequently called \begin{icloze}{1}the infimum for \({ A }\).\end{icloze}
 \end{note}
 
 \begin{note}{7230c3d5f7ef4b62bc1fd6c5b94841f0}
-    \begin{icloze}{2}The greatest lower bound\end{icloze} of a set \({ A \subseteq \mathbf{R} }\) is denoted \begin{icloze}{1}\({ \inf A }\).\end{icloze}
+    \begin{icloze}{2}The greatest lower bound\end{icloze} for a set \({ A \subseteq \mathbf{R} }\) is denoted \begin{icloze}{1}\({ \inf A }\).\end{icloze}
 \end{note}
 
 \begin{note}{51abcbb89d7d486c9177cfc51b6e8721}
@@ -941,10 +941,16 @@
     How do you eliminate the possibility that \({ \alpha^2 < x }\)?
 
     \begin{cloze}{1}
-        By contradiction, and choose \({ n }\) such that
-        \[
-            \left( \alpha + \frac{1}{n} \right)^2 < x.
-        \]
+        By contradiction, and show that \({ \alpha }\) is not an upper bound.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5d03bd0a824d4fb1ad88448d8d530518}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    Assuming \({ \alpha^2 < x }\), how do you show that \({ \alpha }\) is not an upper bound?
+
+    \begin{cloze}{1}
+        Choose \({ n }\) such that \({ \left( \alpha + 1/n \right)^2 < x }\).
     \end{cloze}
 \end{note}
 
@@ -965,10 +971,16 @@
     How do you eliminate the possibility that \({ \alpha^2 > x }\)?
 
     \begin{cloze}{1}
-        By contradiction, and choose \({ n }\) such that
-        \[
-            \left( \alpha - \frac{1}{n} \right)^2 > x.
-        \]
+        By contradiction, and show that \({ \alpha }\) is not the \textbf{least} upper bound.
+    \end{cloze}
+\end{note}
+
+\begin{note}{80676249b5f94de9a51427ddf550a858}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    Assuming \({ \alpha^2 > x }\), how do you show that \({ \alpha }\) is not the \textbf{least} upper bound?
+
+    \begin{cloze}{1}
+        Choose \({ n }\) such that \({ \left( \alpha - 1/n \right)^2 > x }\).
     \end{cloze}
 \end{note}
 
