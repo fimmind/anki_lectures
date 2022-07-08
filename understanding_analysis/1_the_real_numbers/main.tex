@@ -751,4 +751,233 @@
     \end{cloze}
 \end{note}
 
+\section{Consequences of Completeness}
+\begin{note}{379096944c2c44f89a8f8438cb155346}
+    Let \({ a, b \in \mathbf{R} }\) and \({ a \leqslant b }\).
+    Then, \({ a }\) is called the \begin{icloze}{1}left-hand endpoint\end{icloze} of \({ [a, b] }\).
+\end{note}
+
+\begin{note}{8f63313b30ce4a789cfc42d207c26d84}
+    Let \({ a, b \in \mathbf{R} }\) and \({ a \leqslant b }\).
+    Then, \({ b }\) is called the \begin{icloze}{1}right-hand endpoint\end{icloze} of \({ [a, b] }\).
+\end{note}
+
+\begin{note}{c92f2518ce984069b8bee160141746f6}
+    Let \({ I_1, I_2, I_3, \ldots }\) be \begin{icloze}{2}a collection of closed intervals\end{icloze} such that
+    \begin{icloze}{1}
+        \[
+            I_n \supseteq I_{n + 1} \quad \forall n \in \mathbf{N}.
+        \]
+    \end{icloze}
+    Then, \begin{icloze}{3}\({ \bigcap_{n = 1}^{\infty} I_n \neq \emptyset }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Nested Interval Property\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{2d3a37b00fb54f299e2cc7a467f070c2}
+    What is the key idea in the proof of the Nested Interval Property?
+
+    \begin{cloze}{1}
+        Consider the least upper bound for the set of left-hand endpoints of the intervals.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ffceba6cf93e418388528a047155adbe}
+    Given \begin{icloze}{3}any number \({ x \in \mathbf{R} }\),\end{icloze} \begin{icloze}{2}there exists an \({ n \in \mathbf{N} }\)\end{icloze} satisfying
+    \begin{icloze}{1}
+        \[
+            n > x.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Archimedean Property\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{94598450d3494fed8e15214bc0f27e63}
+    Given \begin{icloze}{3}any real number \({ y > 0 }\),\end{icloze} \begin{icloze}{2}there exists an \({ n \in \mathbf{N} }\)\end{icloze} satisfying
+    \begin{icloze}{1}
+        \[
+            \frac{1}{n} < y.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{ec854594e00246c7a0bcb81abd56999d}
+    What is the key idea in the proof of the Archimedean Property?
+
+    \begin{cloze}{1}
+        Show that \({ \mathbf{N} }\) is not bounded above.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1cc2452b17744237a7e50a513b7a3d43}
+    What is the key idea in proving that \({ \mathbf{N} }\) is not bounded above?
+
+    \begin{cloze}{1}
+        By contradiction + the Axiom of Completeness.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f038c4a25eff4227b348bee12cf2d5a6}
+    What makes a contradiction in proving that \({ \mathbf{N} }\) is not bounded above?
+
+    \begin{cloze}{1}
+        Choose \({ n > \sup \mathbf{N} - 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e625796365ee4200bdf4797f7b2648f2}
+    Given \({ a \in \mathbf{R} }\), \begin{icloze}{1}the smallest integer \({ \geq a }\)\end{icloze} is written \begin{icloze}{2}\({ \left\lceil a \right\rceil }\).\end{icloze}
+\end{note}
+
+\begin{note}{e0aee99c343c4404877954f75d91407b}
+    Given \({ a \in \mathbf{R} }\), \begin{icloze}{1}the greatest integer \({ \leq a }\)\end{icloze} is written \begin{icloze}{2}\({ \left\lfloor a \right\rfloor }\).\end{icloze}
+\end{note}
+
+\begin{note}{7d5c2fcf277a492f98b95ef314b9feff}
+    For every \({ a }\) in \({ \mathbf{R} }\),\: \({ \left\lfloor a \right\rfloor + 1 \begin{icloze}{1}>\end{icloze} \begin{icloze}{2}a\end{icloze} }\).
+\end{note}
+
+\begin{note}{0e4bf87c94b44a01981cec995bc97cdd}
+    For every \({ a }\) in \({ \mathbf{R} }\),\: \({ \left\lfloor a \right\rfloor + 1 > a }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Any number greater than \({ \left\lfloor a \right\rfloor }\) is not \({ \leq a }\) by definition of \({ \left\lfloor a \right\rfloor }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{453c930dc7f1405fbd9ae6bd7546b396}
+    For every \begin{icloze}{3}two real numbers \({ a }\) and \({ b }\) with \({ a < b }\),\end{icloze} \begin{icloze}{2}there exists a rational number \({ r }\)\end{icloze} satisfying
+    \begin{icloze}{1}
+        \[
+            a < r < b.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Density of \({ \mathbf{Q} }\) in \({ \mathbf{R} }\)\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{ee8f91b90eed4a04b7649cce6ed643ed}
+    What is the key idea in the proof of the density of \({ \mathbf{Q} }\) in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        Choose \({ 1/n < b - a }\) and consider \({ \dfrac{\left\lfloor na \right\rfloor + 1}{n} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3d1287674bbd40aba451b188049186b7}
+    \begin{icloze}{2}The set of irrational number\end{icloze} is denoted \begin{icloze}{1}\({ \mathbf{I} }\).\end{icloze}
+\end{note}
+
+\begin{note}{06f50f67b6ad4f5fb6e27378c5e15d8c}
+    Is \({ \mathbf{N} }\) dense in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{433f404cebfb4e6086fca5eead6644ec}
+    Is \({ \mathbf{Z} }\) dense in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0d63ae8648dd4d2bae2004b138a20321}
+    Is \({ \mathbf{Q} }\) dense in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{16c7710136254657b348bacbd4a6c2e6}
+    Is \({ \mathbf{I} }\) dense in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{bd63e13dc03f4b1fa02450e1aee4d306}
+    What is the key idea in the proof of the existence of square roots in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
+        \[
+            \sqrt{x} = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{515e4a4736ae4a039f574ba78bf824fe}
+    Given a real number \({ x \geq 0 }\), how do you show that
+    \[
+        \sqrt{x} = \underbrace{\sup \left\{ t \in \mathbf{R} : t^2 < x \right\}}_{\alpha}?
+    \]
+
+    \begin{cloze}{1}
+        Eliminate the possibilities that \({ \alpha^2 < x }\) and \({ \alpha^2 > x }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e9bcf04b9032477ebf9e359f1b05b57d}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    How do you eliminate the possibility that \({ \alpha^2 < x }\)?
+
+    \begin{cloze}{1}
+        By contradiction, and choose \({ n }\) such that
+        \[
+            \left( \alpha + \frac{1}{n} \right)^2 < x.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{97cde662927848ed91f93ff91c7881e2}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    Assuming \({ \alpha^2 < x }\), how do you chose \({ n }\) such that
+    \[
+            \left( \alpha + \frac{1}{n} \right)^2 < x?
+    \]
+
+    \begin{cloze}{1}
+        Expand \({ \left( \alpha + 1/n \right)^2 }\) and notice that \({ \frac{1}{n^2} < \frac{1}{n} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{58056112e69c4c63ab3084525e5ba3b8}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    How do you eliminate the possibility that \({ \alpha^2 > x }\)?
+
+    \begin{cloze}{1}
+        By contradiction, and choose \({ n }\) such that
+        \[
+            \left( \alpha - \frac{1}{n} \right)^2 > x.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{a2e8ec2f07fe45a089d1a36fa2db2076}
+    Let \({ x \geq 0 }\) be a real number, and let \({ \alpha = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\} }\).
+    Assuming \({ \alpha^2 > x }\), how do you chose \({ n }\) such that
+    \[
+            \left( \alpha - \frac{1}{n} \right)^2 > x?
+    \]
+
+    \begin{cloze}{1}
+        Expand \({ \left( \alpha - 1/n \right)^2 }\) and notice that \({ \frac{1}{n^2} > 0 }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
