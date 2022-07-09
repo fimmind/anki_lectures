@@ -327,6 +327,10 @@
     \end{icloze}
 \end{note}
 
+\begin{note}{8616006c8ab04495ad6996ba77fe1b74}
+    \begin{icloze}{2}\textit{One-to-one}\end{icloze} is shortened as \begin{icloze}{1}1-1.\end{icloze}
+\end{note}
+
 \begin{note}{56b2bf81daaf419ab1207c6693c981e6}
     Let \({ f : A \to B }\). The function \({ f }\) is \begin{icloze}{2}onto\end{icloze} if
     \begin{icloze}{1}
@@ -1092,6 +1096,135 @@
 
     \begin{cloze}{1}
         The sequence of \({ \bigcap_{n = 1}^{N} I_n }\) for \({ N \in \mathbf{N} }\) is a sequence of nested closed intervals.
+    \end{cloze}
+\end{note}
+
+\section{Cardinality}
+\begin{note}{c5e9507eadd3494386ca568a39626c59}
+    \begin{icloze}{2}The set \({ A }\) has the same cardinality as \({ B }\)\end{icloze} if \begin{icloze}{1}there exists \({ f : A \to B }\) that is 1-1 and onto.\end{icloze}
+\end{note}
+
+\begin{note}{d4ab5f6d316748bb89d719f88ef325f1}
+    Given two sets \({ A }\) and \({ B }\), if \begin{icloze}{2}the set \({ A }\) has the same cardinality as \({ B }\),\end{icloze} we write
+    \begin{icloze}{1}
+        \[
+            A \sim B.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{a1e546a198024d36a46b0b9ae054781b}
+    A set \({ A }\) is \begin{icloze}{2}countable\end{icloze} if \begin{icloze}{1}\({ \mathbf{N} \sim A }\).\end{icloze}
+\end{note}
+
+\begin{note}{1a81ca2429304e448ffcfa1af2800cf8}
+    A set \({ A }\) is \begin{icloze}{2}uncountable\end{icloze} if \begin{icloze}{1}it is infinite and not countable.\end{icloze}
+\end{note}
+
+\begin{note}{a12fca23278d404d8d0f1264ba393ba8}
+    Is \({ \mathbf{Q} }\) countable?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b534268ef8724eeeab96b7b79ad59c76}
+    Is \({ \mathbf{R} }\) countable?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{96665a3169ac4f4e9f3993be9e62a2d5}
+    What is the key idea in the proof that \({ \mathbf{Q} }\) is countable?
+
+    \begin{cloze}{1}
+        Consider sets of fractions \({ \frac{p}{q} }\) that are in lowest terms and satisfy
+        \[
+            \left\lvert p \right\rvert + \left\lvert q \right\rvert = n.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{2fa0660a601245579bf9a542518c4539}
+    What is the key idea in the proof that \({ \mathbf{R} }\) is uncountable?
+
+    \begin{cloze}{1}
+        By contradiction + the Nested Interval Property.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5deb81ae460e414694bc20774379bff3}
+    How do you choose a sequence of nested closed intervals in the proof that \({ \mathbf{R} }\) is uncountable?
+    (The proof is by contradiction.)
+
+    \begin{cloze}{1}
+        So that \({ x_{n + 1} \not\in I_{n + 1} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{332b116bbc7b4a3c89d2bff540caf379}
+    Is \({ \mathbf{I} }\) countable?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c16044c879634950a78626257511ee0f}
+    \begin{icloze}{2}The union\end{icloze} of two \begin{icloze}{3}countable\end{icloze} sets \begin{icloze}{1}must be countable.\end{icloze}
+\end{note}
+
+\begin{note}{e07afd17349641668e6f14c926635d3e}
+    What is the key idea in the proof that \({ \mathbf{I} }\) is uncountable?
+
+    \begin{cloze}{1}
+        By contradiction and \({ \mathbf{R} = \mathbf{I} \cup \mathbf{Q} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5bda3078241a4fe3bc1a1ac24d06bf5a}
+    If \begin{icloze}{3}\({ A \subseteq B }\)\end{icloze} and \begin{icloze}{2}\({ B }\) is countable,\end{icloze} then \begin{icloze}{1}\({ A }\) is either countable or finite.\end{icloze}
+\end{note}
+
+\begin{note}{6b552d0da71143549a35108597074df9}
+    If \({ A \subseteq B }\) and \({ B }\) is countable, then \({ A }\) is either countable or finite.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Arrange the elements of \({ A }\) in the order of their appearance in an enumeration of \({ B }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{4f079706552a417c953a9ff8a89459fe}
+    The union of a finite number of countable sets \begin{icloze}{1}must be countable.\end{icloze}
+\end{note}
+
+\begin{note}{f797a0a54e9046f780dec06fa2b08745}
+    The union of an infinite number of countable sets \begin{icloze}{1}may not be countable.\end{icloze}
+\end{note}
+
+\begin{note}{b9c328e78c044cb28eb9a6f178e009f7}
+    The union of a finite number of countable sets must be countable.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        By induction.
+    \end{cloze}
+\end{note}
+
+\begin{note}{21d32436609f4b9a923d48d13626bb7a}
+    If \({ A_n }\) is a \begin{icloze}{2}countable\end{icloze} set for each \({ n \in \mathbf{N} }\), then \begin{icloze}{1}\({ \bigcup_{n=1}^{\infty}A_n }\) is countable.\end{icloze}
+\end{note}
+
+\begin{note}{94a84d1a14eb4212bfd68660babfc2c0}
+    If \({ A_n }\) is a countable set for each \({ n \in \mathbf{N} }\), then \({ \bigcup_{n=1}^{\infty}A_n }\) is countable.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Build the table and go over the diagonals.
     \end{cloze}
 \end{note}
 
