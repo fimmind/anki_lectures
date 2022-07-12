@@ -1460,4 +1460,39 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{590fcbe354a54b2592824c025c02c701}
+    If there exist functions \({ f : X \to Y }\) and \({ g : Y \to X }\) that are both 1-1, then \({ X \sim Y }\).
+    In the proof, we have defined
+    \[
+        A = \bigcup_{n=1}^{\infty} A_n, \quad B = \bigcup_{n=1}^{\infty} f(A_n).
+    \]
+    How do you show that \({ g }\) maps \({ Y \setminus A }\) onto \({ X \setminus B }\)?
+
+    \begin{cloze}{1}
+        Show that \({ g(Y \setminus B) = X \setminus A }\) by the definition of set equality.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0fdcbb1f320743f3bef0b9ea1fc12dc4}
+    If there exist functions \({ f : X \to Y }\) and \({ g : Y \to X }\) that are both 1-1, then \({ X \sim Y }\).
+    In the proof, we have defined
+    \[
+        A = \bigcup_{n=1}^{\infty} A_n, \quad B = \bigcup_{n=1}^{\infty} f(A_n).
+    \]
+    What's the ``tricky'' part in showing that \({ g(Y \setminus B) = X \setminus A }\)?
+
+    \begin{cloze}{1}
+        ``Shift'' \({ A_n }\)'s in \({ Y \setminus A }\) by definition of \({ A_n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{272e809745ef4b90b8e96a218f48ca4e}
+    How can you visualise the proof of the Schröder-Bernstein Theorem?
+
+    \begin{cloze}{1}
+        Consider the chains, formed by repeated altering applications of \({ f }\) and \({ g }\).
+        For elements in a chain, starting in \({ X }\), use \({ f }\). For any other use \({ g^{-1} }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
