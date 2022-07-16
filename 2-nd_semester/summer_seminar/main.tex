@@ -1,0 +1,160 @@
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Семинар 16.07.22}
+\begin{note}{2523419404034ae8b9f8cccc3ba532e2}
+    \begin{icloze}{2}Алгебра над полем\end{icloze} --- это \begin{icloze}{1}векторное пространство, снабжённое билинейным произведением.\end{icloze}
+\end{note}
+
+\begin{note}{2dbf3b8106f34daead1805a80b0fb28a}
+    Пусть \({ X }\) --- топологическое пространство.
+    \begin{icloze}{2}Алгебра всех комплексных функций, непрерывных на \({ X }\)\end{icloze} обозначается \begin{icloze}{2}\({ C(X) }\).\end{icloze}
+\end{note}
+
+\begin{note}{13d6e19dd257402ab78d8b26cf54203d}
+    Пусть \({ G }\) --- группа, \({ X }\) --- топологическое пространство.
+    \begin{icloze}{3}Действием группы \({ G }\) на пространство \({ X }\)\end{icloze} называется
+    \begin{icloze}{1}
+        отображение
+        \[
+            G \times X \to X, \quad (g, x) \mapsto g(x),
+        \]
+    \end{icloze}
+    такое, что
+    \begin{icloze}{2}
+        \({ \forall x \in X }\)
+        \[
+            \begin{gathered}
+                gh(x) = g(h(x)) \quad \forall g, h \in G, \\
+                e(x) = x.
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{fa2504287a174d5eb5063ef21d0e2191}
+    Пусть \({ G }\) --- группа, \({ X }\) --- топологическое пространство.
+    Если \begin{icloze}{2}задано действие \({ G }\) на \({ X }\),\end{icloze} то \({ G }\) называется \begin{icloze}{1}группой, действующей на \({ X }\).\end{icloze}
+\end{note}
+
+\begin{note}{f1bfa6fbf90b4a28a445080a7d8d954c}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    \begin{icloze}{3}Скрещенным произведением алгебры \({ C(X) }\) и группы \({ G }\)\end{icloze} называется алгебра сумм
+    \begin{icloze}{1}
+        \[
+            a = \sum_{g \in G}^{} a_{g}(x) T_{g},
+        \]
+    \end{icloze}
+    где
+    \begin{icloze}{2}
+        для всех \({ g }\)
+        \begin{center}
+            \({ a_{g} \in C(X) }\), \quad \({ T_{g} }\) --- формальный символ.
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{19d452193f4649e48c0c687527934e5e}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    \begin{icloze}{2}Скрещенное произведение \({ C(X) }\) и \({ G }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            C(X) \rtimes G.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{c4f3819a786b4827a2d83e150447f344}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда для \({ a, b \in C(X) \rtimes G }\)
+    \[
+        \begin{icloze}{3}ab\end{icloze} \overset{\text{def}}= \begin{icloze}{2}\sum_{g \in G}^{} c_g(x) T_g,\end{icloze}
+    \]
+    где
+    \[
+        c_g(x) = \begin{icloze}{1}\sum_{g_1g_2=g}^{} a_{g_1}(x) \cdot b_{g_2}(g_1^{-1}(x)).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d74629e9c365489a886707b75712917f}
+    Пусть \({ X }\) --- топологическое пространство.
+    Для удобства, любой элемент \({ f \in C(X) }\) \begin{icloze}{2}отождествляется\end{icloze} с оператором
+    \begin{icloze}{1}
+        \[
+            \begin{gathered}
+                u(x) \mapsto f(x) u(x), \\
+                C(X) \to C(X).
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{0060adf86b04424ca2977e10cf57149b}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\),\: \begin{icloze}{3}\({ g \in G }\).\end{icloze}
+    \begin{icloze}{2}
+        Отображение вида
+        \[
+            u(x) \mapsto u(g^{-1}(x))
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}оператором сдвига по элементу \({ g }\).\end{icloze}
+\end{note}
+
+\begin{note}{c1649977ba8340c9adc2dbb8096586c6}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\),\: \begin{icloze}{3}\({ g \in G }\).\end{icloze}
+    \begin{icloze}{2}Оператор сдвига по элементу \({ g }\)\end{icloze} обозначается \begin{icloze}{1}\({ T_{g} }\).\end{icloze}
+\end{note}
+
+\begin{note}{f297c8bf8e714c45b1849042d8856179}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\),\: \({ g, h \in G }\).
+    Тогда
+    \[
+        T_{g}T_{h} = \begin{icloze}{1}T_{gh}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{300bb47328c6444bb9b5075d0838b28c}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда \begin{icloze}{3}\({ C(X) \rtimes G }\)\end{icloze} --- это подалгебра в \begin{icloze}{2}алгебре \({ \mathcal L(C(X), C(X)) }\),\end{icloze} порождённая \begin{icloze}{1}\({ C(X) }\) и всеми \({ T_{g} }\).\end{icloze}
+\end{note}
+
+\begin{note}{91b2aedf157843449d78550095cf2a5a}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда если \({ a, b \in C(X) }\) и \({ g, h \in G }\), то
+    \[
+        a(x)T_{g} \cdot b(x) T_{h} = \begin{icloze}{1}a(x) \cdot b(g^{-1}(x)) \cdot T_{gh}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{530881c476554c1298eec9c9922e8976}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда если \({ a, b \in C(X) }\) и \({ g, h \in G }\), то
+    \[
+        a(x)T_{g} \cdot b(x) T_{h} = a(x) \cdot b(g^{-1}(x)) \cdot T_{gh}
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            T_{g} b(x) = T_{g} b(x) T_{g}^{-1} \cdot T_{g}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{8cc6c193acf84003aae8cb34420dd671}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда если \({ a \in C(X) }\) и \({ g \in G }\), то
+    \[
+        T_{g} a(x) T_{g}^{-1} = \begin{icloze}{1}a(g^{-1}(x))\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{283c514e338044a1b7080d65431ea8a9}
+    Пусть \({ X }\) --- топологическое пространство, \({ G }\) --- группа, действующая на \({ X }\).
+    Тогда если \({ g \in G }\), то
+    \[
+        T_{g}^{-1} : u(x) \mapsto \begin{icloze}{1}u(g(x)).\end{icloze}
+    \]
+\end{note}
+
+\end{document}
