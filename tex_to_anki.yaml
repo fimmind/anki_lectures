@@ -31,6 +31,10 @@ decks:
     name: University::2-nd Semester::Summer Seminar
     source_files:
       - 2-nd_semester/summer_seminar/main.tex
+  1973205421:
+    name: Maths Self-Study::Abstract Algebra::0 Preliminaries
+    source_files:
+      - abstract_algebra/preliminaries/main.tex
 
 
 model:

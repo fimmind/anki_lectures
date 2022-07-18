@@ -1,0 +1,197 @@
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Basics}
+\begin{note}{21e64c2f0430467f8a36481045e172b3}
+    \begin{icloze}{2}\({ \mathbb Z^{+} }\), \({ \mathbb Q^{+} }\) and \({ \mathbb R^{+} }\)\end{icloze} denote \begin{icloze}{1}the positive (nonzero) elements in \({ \mathbb Z }\), \({ \mathbb Q }\) and \({ \mathbb R }\), respectively.\end{icloze}
+\end{note}
+
+\begin{note}{ad32571de5d04cafb2a7d6a27aee4b14}
+    Given a function \({ f : A \to B }\), \begin{icloze}{1}the set \({ B }\)\end{icloze} is called the codomain of \({ f }\).
+\end{note}
+
+\begin{note}{0cd492ad876a4dfbbb22c9210039fcc1}
+    Given a function \({ f : A \to B }\) and \begin{icloze}{3}a \({ b \in B }\),\end{icloze} \begin{icloze}{2}the preimage of \({ \left\{ b \right\} }\) under \({ f }\)\end{icloze} is called \begin{icloze}{1}the fiber of \({ f }\) over \({ b }\).\end{icloze}
+\end{note}
+
+\begin{note}{b2a02c66209140a591b43dede69ffbf1}
+    If \({ f : A \to B }\) and \({ g : B \to C }\), then the \begin{icloze}{1}composite map\end{icloze}
+    \[
+        g \circ f : A \to C
+    \]
+    is defined by
+    \[
+        (g \circ f)(a) = g(f(a)).
+    \]
+\end{note}
+
+\begin{note}{1b2bf2fe79dc4063a151a960f45698d9}
+    A function \({ f : A \to B }\) \begin{icloze}{3}has a left inverse\end{icloze} if there is a function \({ g : \begin{icloze}{2}B \to A\end{icloze} }\), such that
+    \begin{icloze}{1}
+        \[
+            g \circ f = id_A.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d9a63bd7866e44ab83172cf9189e9b9a}
+    A function \({ f : A \to B }\) \begin{icloze}{3}has a right inverse\end{icloze} if there is a function \({ g : \begin{icloze}{2}B \to A\end{icloze} }\), such that
+    \begin{icloze}{1}
+        \[
+            f \circ g = id_B.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{8098015b57774529a721663e39eabb18}
+    A map \({ f }\) is \begin{icloze}{1}injective\end{icloze} if and only if \({ f }\) has a \begin{icloze}{2}left\end{icloze} inverse.
+\end{note}
+
+\begin{note}{205100b0fd6447a9bcc94e4d7711a606}
+    A map \({ f }\) is \begin{icloze}{1}surjective\end{icloze} if and only if \({ f }\) has a \begin{icloze}{2}right\end{icloze} inverse.
+\end{note}
+
+\begin{note}{8e4ddf27550f4aa9a1daf0b67cd2f7e4}
+    A \begin{icloze}{2}permutation\end{icloze} of a set \({ A }\) is \begin{icloze}{1}a bijection from \({ A }\) to itself.\end{icloze}
+\end{note}
+
+\begin{note}{1feef80fbcdd48618084ce93c88df83b}
+    If \({ A \subseteq B  }\) and \({ f : B \to C }\), \begin{icloze}{1}the restriction of \({ f }\) to \({ A }\)\end{icloze} is denoted \begin{icloze}{1}\({ f|_{A} }\).\end{icloze}
+\end{note}
+
+\begin{note}{01a5a3b0e5f24f6782e689090b17c437}
+    If \({ A \subseteq B }\) and \({ g : A \to C }\) and there is a function \({ f : B \to C }\) such that \begin{icloze}{2}\({ f|_{A} = g }\),\end{icloze} we shall say \({ f }\) is \begin{icloze}{1}an extension of \({ g }\) to \({ B }\).\end{icloze}
+\end{note}
+
+\begin{note}{6ca7e478954c4c898718ce116219822f}
+    \begin{icloze}{2}A binary relation on a set \({ A }\)\end{icloze} is \begin{icloze}{1}a subset \({ R }\) of \({ A \times A }\).\end{icloze}
+\end{note}
+
+\begin{note}{50bb82cd97cb40bf8621065845545d18}
+    Let \({ R }\) be a binary relation on a set \({ A }\).
+    We write \begin{icloze}{2}\({ A \sim B }\)\end{icloze} if \begin{icloze}{1}\({ (a, b) \in R }\).\end{icloze}
+\end{note}
+
+\begin{note}{65287096376a47f399a0048c0d8092d0}
+    A binary relation \({ R }\) on \({ A }\) is said to be \begin{icloze}{2}reflexive\end{icloze} if
+    \begin{icloze}{1}
+        \begin{center}
+            \({ a \sim a }\), for all \({ a \in A }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{71b961a1f8f347dcbf7b9c7c8dee303c}
+    A binary relation \({ R }\) on \({ A }\) is said to be \begin{icloze}{2}symmetric\end{icloze} if
+    \begin{icloze}{1}
+        \begin{center}
+            \({ a \sim b }\) implies \({ b \sim a }\) for all \({ a, b \in A }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{40964931d9594b2997437cc9e3e150cc}
+    A binary relation \({ R }\) on \({ A }\) is said to be \begin{icloze}{2}transitive\end{icloze} if
+    \begin{icloze}{1}
+        \begin{center}
+            \({ a \sim b }\) and \({ b \sim c }\) implies \({ a \sim c }\) for all \({ a, b c \in A }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{54a959a8e36045c1aea2d838ce8998b8}
+    A binary relation is \begin{icloze}{2}an equivalence relation\end{icloze} if \begin{icloze}{1}it is reflexive, symmetric and transitive.\end{icloze}
+\end{note}
+
+\begin{note}{7c28d643ddd74509b88cfe2f75e6d743}
+    If \({ \sim }\) defines an \begin{icloze}{3}equivalence\end{icloze} relation on \({ A }\), then \begin{icloze}{2}the equivalence class\end{icloze} of \({ a \in A }\) is defined to be
+    \begin{icloze}{1}
+        \[
+            \left\{ x \in A \mid x \sim a \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{323fae73cd4b47ddb8c19cb515ffd4cf}
+    If \({ C }\) is an equivalence class, \begin{icloze}{2}any element of \({ C }\)\end{icloze} is called \begin{icloze}{1}a representative of the class \({ C }\).\end{icloze}
+\end{note}
+
+\begin{note}{3a597e1d5c48420490d792b972a38fe6}
+    \begin{icloze}{2}A partition of \({ A }\)\end{icloze} is \begin{icloze}{3}any collection \({ \left\{ A_i \mid i \in I \right\} }\) of nonempty subsets of \({ A }\)\end{icloze} such that \begin{icloze}{1}\({ A }\) is the disjoint union of all \({ A_i }\).\end{icloze}
+\end{note}
+
+\begin{note}{c2216701429649b7a262afdd5c85a72d}
+    If \({ \sim }\) defines an equivalence relation on \({ A }\) then \begin{icloze}{2}the set of equivalence classes of \({ \sim }\)\end{icloze} form \begin{icloze}{1}a partition of \({ A }\).\end{icloze}
+\end{note}
+
+\section{Properties of the Integers}
+\begin{note}{f535d29c343f494fa35bccefce9d6988}
+    Let \({ a, b \in \mathbb Z }\).
+    We write \begin{icloze}{2}\({ a \mid b }\)\end{icloze} if \begin{icloze}{1}\({ a }\) divides \({ b }\).\end{icloze}
+\end{note}
+
+\begin{note}{96293ae3b76348d8ba9f0b02c8b49a94}
+    Let \({ a, b \in \mathbb Z }\) with \({ a \neq 0 }\).
+    We write \begin{icloze}{2}\({ a \nmid b }\)\end{icloze} if \begin{icloze}{1}\({ a }\) does not divide \({ b }\).\end{icloze}
+\end{note}
+
+\begin{note}{533403fe830341a39cee216314b861e8}
+    Let \({ a, b \in \begin{icloze}{3}\mathbb Z - \left\{ 0 \right\}\end{icloze} }\).
+    \begin{icloze}{2}The greatest common divisor of \({ a }\) and \({ b }\)\end{icloze} is denoted by \begin{icloze}{1}\({ (a, b) }\).\end{icloze}
+\end{note}
+
+\begin{note}{20b204b896884b6b9d07ca3023b7cf4a}
+    Let \({ a, b \in \begin{icloze}{3}\mathbb Z - \left\{ 0 \right\}\end{icloze} }\).
+    If \begin{icloze}{2}\({ (a, b) = 1 }\),\end{icloze} we say that \({ a }\) and \({ b }\) are \begin{icloze}{1}relatively prime.\end{icloze}
+\end{note}
+
+\begin{note}{69adfe8820204997a5aa44c50b353a40}
+    If \({ a, b \in \mathbb Z - \left\{ 0 \right\} }\), then there exists unique \({ q, r \in \mathbb Z }\) such that
+    \begin{center}
+        \({ a = q b + r }\) and \({ 0 \leqslant r < \left\lvert b \right\rvert }\),
+    \end{center}
+    where \({ q }\) is \begin{icloze}{1}the quotient\end{icloze} and \({ r }\) \begin{icloze}{1}the remainder.\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{2}Division Algorithm\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{6267be99c4884a09b1282d041ac05e18}
+    If \({ a, b \in \mathbb Z - \left\{ 0 \right\} }\), then there exist \({ x, y \in \begin{icloze}{3}\mathbb Z\end{icloze} }\) such that
+    \[
+        \begin{icloze}{2}(a, b)\end{icloze} = \begin{icloze}{1}xa + yb.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e30ea564f2ce479391e71512867aea51}
+    If \({ p }\) is prime and \({ p \mid ab }\), for some \({ a, b \in \mathbb Z }\), then
+    \begin{icloze}{1}
+        \begin{center}
+            either \({ p \mid a }\) or \({ p \mid b }\).
+        \end{center}
+    \end{icloze}
+\end{note}
+
+\begin{note}{3cc931ead0ec4cddae21114d84f1de0c}
+    \begin{icloze}{3}The Euler \({ \varphi }\)-function\end{icloze} is defined as follows: for \({ n \in \begin{icloze}{2}\mathbb Z^{+}\end{icloze} }\) let \({ \varphi(n) }\) be \begin{icloze}{1}the number of positive integers \({ a \leq n }\) with \({ a }\) relatively prime to \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{03f37e11eb9d40d29ca92031ac27d9ed}
+    Let \({ \varphi }\) stand for the Euler \({ \varphi }\)-function.
+    If \({ p }\) is \begin{icloze}{3}prime\end{icloze} and \({ a \geq 1 }\), then
+    \[
+        \begin{icloze}{2}\varphi(p^{a})\end{icloze} = \begin{icloze}{1}p^{a} - p^{a - 1}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7dc766a783c04a309951678711bd8317}
+    Let \({ \varphi }\) stand for the Euler \({ \varphi }\)-function.
+    Then
+    \begin{center}
+        \begin{icloze}{1}\({ \varphi(ab) = \varphi(a) \varphi(b) }\)\end{icloze} \quad if \begin{icloze}{2}\({ (a, b) = 1 }\).\end{icloze}
+    \end{center}
+\end{note}
+
+\end{document}
