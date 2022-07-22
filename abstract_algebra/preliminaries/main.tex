@@ -194,4 +194,119 @@
     \end{center}
 \end{note}
 
+\section{The Integers Modulo \({ \mathbf{n} }\)}
+\begin{note}{76ca1b2698d942d599ad48365f1f326d}
+    Let \begin{icloze}{3}\({ n \in \mathbb Z^{+} }\).\end{icloze}
+    Then \begin{icloze}{2}\({ a }\) is congruent to \({ b }\) mod \({ n }\)\end{icloze} if
+    \begin{icloze}{1}
+        \[
+            n \mid (b - a).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{b9af5bdff0c74d4caef2f944b60a0e0f}
+    Let \({ n \in \mathbb Z^{+} }\).
+    If \begin{icloze}{2}\({ a }\) is congruent to \({ b }\) mod \({ n }\),\end{icloze} we write
+    \begin{icloze}{1}
+        \[
+            a \equiv b \pmod n.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{621ea0d4d5b34a1dba53213679217108}
+    Let \({ n \in \mathbb Z^{+} }\) and \({ a \in \mathbb Z }\).
+    \begin{icloze}{1}The equivalence class of \({ a }\) with respect to congruence mod \({ n }\)\end{icloze} is \begin{icloze}{2}called the congruence class or residue class of \({ a }\) mod \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{ae25b5393fbf40e0b4cf815ff226d2c2}
+    Let \({ n \in \mathbb Z^{+} }\) and \({ a \in \mathbb Z }\).
+    \begin{icloze}{2}The congruence class of \({ a }\) mod \({ n }\)\end{icloze} is denoted \begin{icloze}{1}\({ \bar a }\).\end{icloze}
+\end{note}
+
+\begin{note}{b8d65811b13a46b9b3053adfd435278a}
+    Let \({ n \in \mathbb Z^{+} }\).
+    There are \begin{icloze}{1}precisely \({ n }\)\end{icloze} distinct equivalence classes mod \({ n }\).
+\end{note}
+
+\begin{note}{2d8fe349d9fd4243a25995a4854b9678}
+    Let \({ n \in \mathbb Z^{+} }\).
+    \begin{icloze}{1}The set of equivalence classes under the relation of congruence mod \({ n }\)\end{icloze} is denoted by
+    \begin{icloze}{2}
+        \[
+            \mathbb Z / n\mathbb Z.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f35ce536d04d4ac881f916866b6cec8f}
+    Let \({ n \in \mathbb Z^{+} }\).
+    The set \({ \mathbb Z / n\mathbb Z }\) is called \begin{icloze}{1}the integers modulo \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{42a30108f0414522b336bfb5ed2d767a}
+    Let \({ n \in \mathbb Z^{+} }\).
+    The process of \begin{icloze}{2}finding the equivalence class mod \({ n }\) of some integer \({ a }\)\end{icloze} is often referred to as \begin{icloze}{1}reducing \({ a }\) mod \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{f6a8649b8e80420baaa019f8fbf718f4}
+    Let \({ n \in \mathbb Z^{+} }\).
+    \begin{icloze}{1}The smallest non-negative integer congruent to \({ a }\) mod \({ n }\)\end{icloze} is called \begin{icloze}{2}the least residue of \({ a }\) mod \({ n }\).\end{icloze}
+\end{note}
+
+\begin{note}{ae2d3fee4b4e492f9c5c9f0f81bad35c}
+    Let \({ n \in \mathbb Z^{+} }\) and \({ \bar a, \bar b \in \mathbb Z / n\mathbb Z }\).
+    Then
+    \[
+        \begin{icloze}{2}\bar a + \bar b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\overline{a + b}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5952ca056a4b483c8f5bb5cb3b196378}
+    Let \({ n \in \mathbb Z^{+} }\) and \({ \bar a, \bar b \in \mathbb Z / n\mathbb Z }\).
+    Then
+    \[
+        \begin{icloze}{2}\bar a \cdot \bar b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\overline{ab}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ebb13f63a9be46ff9ab758d279644ae8}
+    Let \({ n \in \mathbb Z^{+} }\).
+    \({ \begin{icloze}{2}(\mathbb Z / n\mathbb Z)^{\times}\end{icloze} \overset{\text{def}}= \left\{ \bar a \mid \begin{icloze}{1}\text{there exists}\ \bar c\ \text{with}\ \bar a \cdot \bar c = \overline{1}\end{icloze} \right\} }\).
+\end{note}
+
+\begin{note}{866ff8df0c6d4a589ee1a49fb58fb15e}
+    Let \({ n \in \mathbb Z^{+} }\).
+    Then
+    \[
+        \begin{icloze}{2}(\mathbb Z / n\mathbb Z)^{\times}\end{icloze} = \left\{ \bar a \mid \begin{icloze}{1}(a, n) = 1\end{icloze} \right\}.
+    \]
+\end{note}
+
+\begin{note}{aeffe5fd9f8f4f658853ad5cf6dada0a}
+    Let \({ n \in \mathbb Z^{+} }\).
+    Then \({ (a, n) = 1 }\) implies \({ a \in (\mathbb Z / n\mathbb Z)^{\times} }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Represent \({ (a, n) }\) as a \({ \mathbb Z }\)-linear combination of \({ a }\) and \({ n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c238e2ff17e84fd98c1adec56082e6c4}
+    Let \({ n \in \mathbb Z^{+} }\).
+    Then \({ a \in (\mathbb Z / n\mathbb Z)^{\times} }\) implies \({ (a, n) = 1 }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        By contradiction and multiply \({ ac \equiv 1 }\) by \({ \frac{n}{(a, n)} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{31261830ed6b43549a4f35afc29785a9}
+    Let \({ n \in \mathbb Z^{+} }\).
+    The number of elements in \({ (\mathbb Z / n\mathbb Z)^{\times} }\) is \begin{icloze}{1}\({ \varphi(n) }\) where \({ \varphi }\) denotes the Euler \({ \varphi }\)-function.\end{icloze}
+\end{note}
+
 \end{document}
