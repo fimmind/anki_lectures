@@ -345,7 +345,7 @@
     \begin{icloze}{2}
         The set
         \[
-            \left\{ x \in D : f(x) = B \right\}
+            \left\{ x \in D : f(x) \in B \right\}
         \]
     \end{icloze}
     is called \begin{icloze}{1}the preimage of \({ B }\)\end{icloze} \begin{icloze}{5}under\end{icloze} the function \({ f }\).
@@ -516,7 +516,7 @@
 \end{note}
 
 \begin{note}{1c9d5ad3f35a47b0b12f27639fe4a409}
-    Is it possible for a set \({ A \subseteq \mathbf{R} }\) for have multiple least upper bounds?
+    Is it possible for a set \({ A \subseteq \mathbf{R} }\) to have multiple least upper bounds?
 
     \begin{cloze}{1}
         No.
@@ -671,7 +671,7 @@
 \end{note}
 
 \begin{note}{6b667686c9644d8b9849c735110dac20}
-    If \({ A }\) and \({ B }\) are \begin{icloze}{3}nonempty, disjoint sets with \({ A \cup B = \mathbf{R} }\)\end{icloze} and \begin{icloze}{2}\({ a < b  }\) for all \({ a \in A }\) and \({ b \in B }\),\end{icloze} then \begin{icloze}{1}there exists \({ c \in \mathbf{R} }\) that is an upper bound for \({ A }\) and a lower bound for \({ B }\).\end{icloze}
+    If \({ A }\) and \({ B }\) are \begin{icloze}{5}nonempty, disjoint\end{icloze} sets with \begin{icloze}{3}\({ A \cup B = \mathbf{R} }\)\end{icloze} and \begin{icloze}{2}\({ a < b  }\) for all \({ a \in A }\) and \({ b \in B }\),\end{icloze} then \begin{icloze}{1}there exists \({ c \in \mathbf{R} }\) that is an upper bound for \({ A }\) and a lower bound for \({ B }\).\end{icloze}
 
     \begin{center}
         \tiny
@@ -923,8 +923,16 @@
     What is the key idea in the proof of the existence of square roots in \({ \mathbf{R} }\)?
 
     \begin{cloze}{1}
+        Show that \({ \sqrt{x} }\) is the least upper bound of a specific set.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e88579445d684c0b812e7eac4d3f87e4}
+    Which set is considered in the proof of the existence of square roots in \({ \mathbf{R} }\)?
+
+    \begin{cloze}{1}
         \[
-            \sqrt{x} = \sup \left\{ t \in \mathbf{R} : t^2 < x \right\}.
+            \left\{ t \in \mathbf{R} : t^2 < x \right\}.
         \]
     \end{cloze}
 \end{note}
@@ -1151,6 +1159,11 @@
 \begin{note}{2fa0660a601245579bf9a542518c4539}
     What is the key idea in the proof that \({ \mathbf{R} }\) is uncountable?
 
+    \begin{center}
+        \tiny
+        (not using the diagonalization method)
+    \end{center}
+
     \begin{cloze}{1}
         By contradiction + the Nested Interval Property.
     \end{cloze}
@@ -1161,7 +1174,7 @@
     (The proof is by contradiction.)
 
     \begin{cloze}{1}
-        So that \({ x_{n + 1} \not\in I_{n + 1} }\).
+        So that \({ x_{n} \not\in I_{n} }\).
     \end{cloze}
 \end{note}
 
@@ -1466,7 +1479,7 @@
     \[
         A = \bigcup_{n=1}^{\infty} A_n, \quad B = \bigcup_{n=1}^{\infty} f(A_n).
     \]
-    How do you show that \({ g }\) maps \({ Y \setminus A }\) onto \({ X \setminus B }\)?
+    How do you show that \({ g }\) maps \({ Y \setminus B }\) onto \({ X \setminus A }\)?
 
     \begin{cloze}{1}
         Show that \({ g(Y \setminus B) = X \setminus A }\) by the definition of set equality.
@@ -1482,7 +1495,7 @@
     What's the ``tricky'' part in showing that \({ g(Y \setminus B) = X \setminus A }\)?
 
     \begin{cloze}{1}
-        ``Shift'' \({ A_n }\)'s in \({ Y \setminus A }\) by definition of \({ A_n }\).
+        ``Shift'' \({ A_n }\)s in \({ X \setminus A }\) by definition of \({ A_n }\).
     \end{cloze}
 \end{note}
 
