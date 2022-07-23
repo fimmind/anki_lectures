@@ -35,6 +35,10 @@ decks:
     name: Maths Self-Study::Abstract Algebra::0 Preliminaries
     source_files:
       - abstract_algebra/preliminaries/main.tex
+  1439356338:
+    name: Maths Self-Study::Abstract Algebra::1 Introduction to Groups
+    source_files:
+      - ./abstract_algebra/introduction_to_groups/main.tex
 
 
 model:
