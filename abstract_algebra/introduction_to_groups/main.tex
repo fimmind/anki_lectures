@@ -485,4 +485,161 @@
     \begin{icloze}{1}are distinct.\end{icloze}
 \end{note}
 
+\section{Dihedral Groups}
+\begin{note}{c895ff9d20ae4a2286bb783680b3cee8}
+    \begin{icloze}{1}A symmetry\end{icloze} of a regular \({ n }\)-gon is \begin{icloze}{1}any rigid motion of the \({ n }\)-gon\end{icloze} which can be effected by \begin{icloze}{3}taking a copy of the \({ n }\)-gon, moving this copy in any fashion in \({ 3 }\)-space\end{icloze} and then \begin{icloze}{4}placing the copy back on the original \({ n }\)-gon so it exactly covers it.\end{icloze}
+\end{note}
+
+\begin{note}{3a08bb223d9241bbb5cd4dae15a4a23d}
+    Each symmetry of a regular \({ n }\)-gon can be described uniquely by \begin{icloze}{1}the corresponding permutation of \({ \left\{ 1, 2, \ldots, n \right\} }\),\end{icloze} representing \begin{icloze}{2}the permutation of the vertices.\end{icloze}
+\end{note}
+
+\begin{note}{7a77331a22e144ceaf6ca7c1b475a99a}
+    Given \begin{icloze}{3}\({ n \in \mathbb Z^{+} }\) and \({ n \geq 3 }\),\end{icloze} let \begin{icloze}{2}\({ D_{2n} }\)\end{icloze} be \begin{icloze}{1}the set of symmetries of a regular \({ n }\)-gon.\end{icloze}
+\end{note}
+
+\begin{note}{a81873dbe4e6432f93bb1d8c3c5978f1}
+   Given \({ n \in \mathbb Z^{+} }\), \({ n \geq 3 }\) and \({ s, t \in D_{2n} }\), \begin{icloze}{2}the product \({ st }\)\end{icloze} is defined to be \begin{icloze}{1}the symmetry obtained by first applying \({ t }\) then \({ s }\) to the \({ n }\)-gon.\end{icloze}
+\end{note}
+
+\begin{note}{c0d6e6d3d60b45058b7957002e045102}
+   Given \({ n \in \mathbb Z^{+} }\) and \({ n \geq 3 }\),
+   \begin{icloze}{2}the group \({ D_{2n} }\)\end{icloze} is called \begin{icloze}{1}the dihedral group of order \({ 2n }\).\end{icloze}
+\end{note}
+
+\begin{note}{1457d2279c1d432a9d371d8797d9b621}
+   Given \({ n \in \mathbb Z^{+} }\) and \({ n \geq 3 }\),
+   \[
+       \lvert D_{2n} \rvert = \begin{icloze}{1}2n.\end{icloze}
+   \]
+\end{note}
+
+\begin{note}{af77787eb9d94bae94d7df59b0415212}
+   Given \({ n \in \mathbb Z^{+} }\) and \({ n \geq 3 }\), \({ \lvert D_{2n} \rvert = 2n. }\)
+   What is the key idea in the proof?
+
+   \begin{cloze}{1}
+       Every symmetry is uniquely determined by how it affects some two adjacent vertices.
+   \end{cloze}
+\end{note}
+
+\begin{note}{1a3443407b8641c5adc691e47eef2f1e}
+    For convenience, the regular \({ n }\)-gon viewed in \({ D_{2n} }\) is fixed \begin{icloze}{1}centered at the origin.\end{icloze}
+\end{note}
+
+\begin{note}{b85d695a3fff47fbafbff07b7a341cd0}
+    For convenience, the vertices of the regular \({ n }\)-gon viewed in \({ D_{2n} }\) are labeled \begin{icloze}{1}consecutively from \({ 1 }\) to \({ n }\) in a clockwise manner.\end{icloze}
+\end{note}
+
+\begin{note}{8005824717e34f4a8e154dfa84d25f17}
+    In the context of the \({ D_{2n} }\) group, let \begin{icloze}{2}\({ r }\)\end{icloze} be \begin{icloze}{1}the rotation clockwise about the origin through \({ 2\pi / n }\) radian.\end{icloze}
+\end{note}
+
+\begin{note}{8439aae412044be9bf8f6c59334cd570}
+    In the context of the \({ D_{2n} }\) group, let \begin{icloze}{2}\({ s }\)\end{icloze} be \begin{icloze}{1}the reflection about the line of symmetry through vertex \({ 1 }\) and the origin.\end{icloze}
+\end{note}
+
+\begin{note}{d46303ae65e74f2e8f610b873f4e559b}
+    In the context of the \({ D_{2n} }\) group,
+    is it possible that \({ s = r^{i} }\) for some \({ i }\)?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5aaf131bef484c89b455ce9f5b4a2eae}
+    In the context of the \({ D_{2n} }\) group,
+    is it possible that \({ s r^{i} = s r ^{j} }\) for some \({ i \not \equiv j \pmod n }\)?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{79c14b3dba52416f934c9d820acb0be7}
+    Each element of \({ D_{2n} }\) can be written \begin{icloze}{2}uniquely\end{icloze} in the form \begin{icloze}{1}\({ s^{k}r^{i} }\) for some \({ k = 0 }\) or \({ 1 }\) and \({ 0 \leq i \leq n - 1 }\).\end{icloze}
+\end{note}
+
+\begin{note}{f3a7147f62d84c53b1eec4f7da081eba}
+    In the context of the \({ D_{2n} }\) group,
+    \[
+        r^{i}s = \begin{icloze}{1}s r^{-i},\end{icloze}\ \text{for \begin{icloze}{2}all \({ 0 \leq i \leq n }\)\end{icloze}}.
+    \]
+\end{note}
+
+\begin{note}{2600f25fd1ec408b8e47e341dc6cdb64}
+    In the context of the \({ D_{2n} }\) group,
+    \[
+        r^{i}s = s r^{-i},\ \text{for all \({ 0 \leq i \leq n }\)}.
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        \({ rs = s r^{-1} }\) and by induction.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f56559b6eae841cea409f8438221c1b2}
+    \begin{icloze}{3}A subset \({ S }\) of elements\end{icloze} of a group \({ G }\) with the property that \begin{icloze}{1}every element of \({ G }\) can be written as a (finite) product of elements of \({ S }\) and their inverses\end{icloze} is called \begin{icloze}{2}a set of generators of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{d72e348121f94214980378f08a5e45a3}
+    If \({ S }\) is \begin{icloze}{2}a set of generators\end{icloze} of a group \({ G }\), we shall write
+    \begin{icloze}{1}
+        \[
+            G = \langle S \rangle.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{7bc8f288fd5d45e0a89eb59abdc95810}
+    If \({ S }\) is \begin{icloze}{2}a set of generators\end{icloze} of a group \({ G }\), we shall say \({ G }\) is \begin{icloze}{1}generated by \({ S }\).\end{icloze}
+\end{note}
+
+\begin{note}{cb072c7b416e4fbf8e3cf95f496f4083}
+    In terms of generators, the group \({ D_{2n} = \begin{icloze}{1}\langle r, s \rangle\end{icloze} }\).
+\end{note}
+
+\begin{note}{4fd6980a252a486980db01306accceef}
+    In a \begin{icloze}{2}finite\end{icloze} group \({ G }\) a set \({ S }\) generates \({ G }\) if every element of \({ G }\) is \begin{icloze}{1}a finite product of elements of \({ S }\).\end{icloze}
+\end{note}
+
+\begin{note}{90b6154b7aaa48398ddeeb91083d71ac}
+    In the \({ D_{2n}  }\) group, the relations \({ r^{n} = 1 }\), \({ s^2 = 1 }\) and \({ rs = s r^{-1} }\) have the additional property that \begin{icloze}{1}any any other relation between elements of the group may be derived from these three.\end{icloze}
+\end{note}
+
+\begin{note}{4681975ee07c4032a3ced2de0ccfa631}
+    In the \({ D_{2n}  }\) group, the relations \({ r^{n} = 1 }\), \({ s^2 = 1 }\) and \({ rs = s r^{-1} }\) have the additional property that any any other relation between elements of the group may be derived from these three.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        We can determine exactly when two group elements are equal by using only these three relations.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b0bcc70704c64cccba8d832a4540749b}
+    \begin{icloze}{1}Any equations\end{icloze} in a general group \({ G }\) that \begin{icloze}{1}the generators satisfy\end{icloze} are called \begin{icloze}{2}relations in \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{b8f9a5669c634d39ac14a6115f6b142d}
+    Let \({ G }\) be a group. If \begin{icloze}{4}\({ G }\) is generated by a subset \({ S }\)\end{icloze} and \begin{icloze}{3}there is some collection of relations such that any relation among the elements of \({ S }\) can be deduced from these,\end{icloze} we shall call \begin{icloze}{2}these generators and relations\end{icloze} \begin{icloze}{1}a presentation of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{265ab5c6f292430c8ecc6ab97f25c8a8}
+    Let \({ G }\) be a group. If \begin{icloze}{4}a subset \({ S }\)\end{icloze} and \begin{icloze}{3}a collection of relations \({ R_1, \ldots, R_{m} }\)\end{icloze} form \begin{icloze}{2}a presentation of \({ G }\),\end{icloze} we shall write
+    \begin{icloze}{1}
+        \[
+            G = \langle S \mid R_1, \ldots, R_{m} \rangle.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{b8acfa74c7df4502a3b76c59342afbac}
+    One presentation for \begin{icloze}{3}the dihedral group \({ D_{2n} }\)\end{icloze} is
+    \[
+        \begin{icloze}{3}D_{2n}\end{icloze} = \langle \begin{icloze}{2}r, s\end{icloze} \mid \begin{icloze}{1}r^{n} = s^2 = 1,\: rs = s r^{-1}\end{icloze} \rangle.
+    \]
+\end{note}
+
 \end{document}
