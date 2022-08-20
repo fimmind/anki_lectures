@@ -753,4 +753,99 @@
     Let \({ p }\) be \begin{icloze}{3}a prime.\end{icloze} An element has order \begin{icloze}{2}\({ p }\)\end{icloze} in \({ S_n }\) if and only if \begin{icloze}{4}its cycle decomposition\end{icloze} is \begin{icloze}{1}a product of commuting \({ p }\)-cycles.\end{icloze}
 \end{note}
 
+\section{Matrix Groups}
+\begin{note}{d24745203ab949c39f465e4e32838554}
+    First, a field is \begin{icloze}{2}a set \({ F }\)\end{icloze} together with \begin{icloze}{1}two binary operations \({ + }\) and \({ \cdot }\) on \({ F }\).\end{icloze}
+\end{note}
+
+\begin{note}{f3c03aa477f94f80bb772b9ea31136f9}
+    How are the properties of \({ + }\) summarised in the definition of a field \({ F }\)?
+
+    \begin{cloze}{1}
+        \({ (F, +) }\) is an abelian group.
+    \end{cloze}
+\end{note}
+
+\begin{note}{dace43278a624b1a8496c81bfef9be5b}
+    How are the properties of \({ \cdot }\) summarised in the definition of a field \({ F }\)?
+
+    \begin{cloze}{1}
+        \({ (F - \left\{ 0 \right\}, \cdot) }\) is an abelian group.
+    \end{cloze}
+\end{note}
+
+\begin{note}{bc1d11a398434735a6129ece90078d0b}
+    In the definition of a field \({ F }\), what does \({ 0 }\) refer to?
+
+    \begin{cloze}{1}
+        The identity of \({ F }\) with respect to \({ + }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a12c4072b03f4f4385856eb63232dc6e}
+    What is the key property that relates \({ + }\) and \({ \cdot }\) in the definition of a field \({ F }\)?
+
+    \begin{cloze}{1}
+        The distributive law.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e20af7d49d0f467694122bf0aad50c59}
+    The distributive law from the definition of a field \({ F }\) states that
+    \begin{icloze}{1}
+        \[
+            a \cdot (b + c) = (a \cdot b) + (a \cdot c), \quad \text{for all}\ a, b, c \in F.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{34af1e3acbfe4b2e8485bd9ddf265c4a}
+    For any field \({ F }\) let \({ \begin{icloze}{2}F^{\times}\end{icloze} = \begin{icloze}{1}F - \left\{ 0 \right\}\end{icloze} }\).
+\end{note}
+
+\begin{note}{18535f79dcff4a67b32868a9f60b8f7e}
+    Given \begin{icloze}{3}a prime \({ p }\),\end{icloze} we shall denote \begin{icloze}{1}the field \({ \mathbb Z / p\mathbb Z }\)\end{icloze} as \begin{icloze}{2}\({ \mathbb F_{p} }\)\end{icloze} to emphasize that \begin{icloze}{4}it is a field.\end{icloze}
+\end{note}
+
+\begin{note}{53ab9021abdc4aab9077b752f52df492}
+    Given \begin{icloze}{3}\({ n \in \mathbb Z^{+} }\)\end{icloze} and \begin{icloze}{4}a field \({ F }\),\end{icloze} \begin{icloze}{1}the general linear group of degree \({ n }\)\end{icloze} is denoted
+    \begin{icloze}{2}
+        \[
+            GL_n(F).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{26483d8a0f29448db95af373c3315d8f}
+    What are the elements of \({ GL_n(F) }\)?
+
+    \begin{cloze}{1}
+        All \({ n \times n }\) matrices whose entries come from a field \({ F }\) and whose determinant is nonzero.
+    \end{cloze}
+\end{note}
+
+\begin{note}{62ea6e7bafed4c0fa4621e7fcb7a612d}
+    What is the operation of \({ GL_n(F) }\)?
+
+    \begin{cloze}{1}
+        Matrix multiplication.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ecd39cec434e4ca58d71efd99f59f652}
+    Let \({ F }\) be a field.
+    If \begin{icloze}{2}\({ \left\lvert F \right\rvert < \infty }\),\end{icloze} then
+    \[
+        \begin{icloze}{3}\left\lvert F \right\rvert\end{icloze} = \begin{icloze}{1}p^{m} \quad \text{for some prime}\ p\ \text{and an integer}\ m.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{4262c7c840fb4996904e2a18838f8766}
+    Let \({ F }\) be a field.
+    If \begin{icloze}{4}\({ \left\lvert F \right\rvert = q < \infty }\),\end{icloze} then
+    \[
+        \begin{icloze}{3}\left\lvert GL_n(F) \right\rvert\end{icloze} = \prod_{k = \begin{icloze}{2}0\end{icloze}}^{\begin{icloze}{2}n - 1\end{icloze}} \begin{icloze}{1}(q^{n} - q^{k}).\end{icloze}
+    \]
+\end{note}
+
 \end{document}
