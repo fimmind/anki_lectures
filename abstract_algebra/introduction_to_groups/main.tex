@@ -1454,4 +1454,136 @@
     where \({ n = \begin{icloze}{2}\left\lvert xy \right\rvert\end{icloze} }\).
 \end{note}
 
+\section{Group Actions}
+\begin{note}{47fb1f971a0e47ca900bca9d515b276f}
+    Let \({ G }\) be \begin{icloze}{4}a group\end{icloze} and \({ A }\) be \begin{icloze}{3}a set.\end{icloze}
+    First, \begin{icloze}{2}a group action of \({ G }\) on \({ A }\)\end{icloze} is \begin{icloze}{1}a map from \({ G \times A }\) to \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{0949588890c9477795b23452373695d9}
+    Let \({ G }\) be a group and \({ A }\) be a set.
+    \begin{icloze}{2}The group action of \({ G }\) on \({ A }\)\end{icloze} is written
+    \[
+        (g, a) \mapsto \begin{icloze}{1}g \cdot a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9f314e8d6fb04ba78bda7bde0c259aa5}
+    Let \({ G }\) be a group and \({ A }\) be a set.
+    How many properties are there in the definition of a group action of \({ G }\) on \({ A }\)?
+
+    \begin{cloze}{1}
+        Two.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2150fd542e2b4a4483ef8f54aafebf19}
+    Let \({ G }\) be a group and \({ A }\) be a set.
+    What is the first property from the definition of a group action of \({ G }\) on \({ A }\)?
+
+    \begin{cloze}{1}
+        \({ g \cdot (h \cdot a) = (gh) \cdot a }\) for all \({ g, h \in G }\), \({ a \in A }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c886b7ab9579413389c0a1a864a71f9b}
+    Let \({ G }\) be a group and \({ A }\) be a set.
+    What is the second property from the definition of a group action of \({ G }\) on \({ A }\)?
+
+    \begin{cloze}{1}
+        \({ 1 \cdot a = a }\) for all \({ a \in A }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{923e161350c04b37925f4d8a5ec7a48f}
+    Let \({ G }\) be a group. We shall say \({ G }\) \begin{icloze}{2}acts on a set \({ A }\)\end{icloze} if \begin{icloze}{1}a group action of \({ G }\) on \({ A }\) is given.\end{icloze}
+\end{note}
+
+\begin{note}{4a108c989e364bf1a4f08acf4b13afed}
+    Let a group \({ G }\) act on a set \({ A }\).
+    Given \({ g \in G }\) and \({ a \in A }\), the expression \begin{icloze}{2}\({ g \cdot a }\)\end{icloze} will usually be written \begin{icloze}{1}simply as \({ ga }\).\end{icloze}
+\end{note}
+
+\begin{note}{1e4797055dac4aaebaff4f3e7ca94dc9}
+    Let a group \({ G }\) act on a set \({ A }\).
+    Given \begin{icloze}{4}\({ g \in G }\),\end{icloze} the map \begin{icloze}{3}\({ \sigma_{g} }\)\end{icloze} is defined by
+    \[
+        \begin{icloze}{3}\sigma_{g}\end{icloze} : \begin{icloze}{2}A\end{icloze} \to \begin{icloze}{2}A\end{icloze}  \qquad a \mapsto \begin{icloze}{1}g \cdot a.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a7a8a2e8422c4eb1a55326e03fdfae3e}
+    Let a group \({ G }\) act on a set \({ A }\).
+    For each fixed \({ g \in G }\), \({ \sigma_{g} }\) is \begin{icloze}{1}a permutation\end{icloze} of \({ A }\).
+\end{note}
+
+\begin{note}{069a58b690ce40bcb6ac7e8b2bd10732}
+    Let a group \({ G }\) act on a set \({ A }\).
+    For each fixed \({ g \in G }\), \({ \sigma_{g} }\) is a permutation of \({ A }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Find the \({ 2 }\)-sided inverse of \({ \sigma }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3d3a86bc4244429da7757d00efca180a}
+    Let a group \({ G }\) act on a set \({ A }\).
+    Given \({ g \in G }\),
+    \[
+        \begin{icloze}{2}\sigma_{g}^{-1}\end{icloze} = \begin{icloze}{1}\sigma_{g^{-1}}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3c4e03fdddab413f84ca6812e5ffed8e}
+    Let a group \({ G }\) act on a set \({ A }\).
+    The map from \({ G }\) to \begin{icloze}{3}\({ S_{A} }\)\end{icloze} defined by
+    \[
+        g \mapsto \begin{icloze}{2}\sigma_{g}\end{icloze}
+    \]
+    is \begin{icloze}{1}a homomorphism.\end{icloze}
+\end{note}
+
+\begin{note}{a3383f0de3ab4bb48b322d1900ca9519}
+    Intuitively, \begin{icloze}{3}a group action of \({ G }\) on a set \({ A }\)\end{icloze} just means that every element \({ g }\) in \({ G }\) acts as \begin{icloze}{1}a permutation\end{icloze} on \({ A }\) in a manner \begin{icloze}{2}consistent with the group operations in \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{2bd735bbaeaf44a68e6820678cdfd0ef}
+    Let a group \({ G }\) act on a set \({ A }\).
+    \begin{icloze}{3}The homomorphism \({ g \mapsto \sigma_{g} }\)\end{icloze} from \begin{icloze}{4}\({ G }\)\end{icloze} to \begin{icloze}{4}\({ S_{A} }\)\end{icloze} is called \begin{icloze}{1}the permutation representation\end{icloze} \begin{icloze}{2}associated to the given action.\end{icloze}
+\end{note}
+
+\begin{note}{c1df0995320a40d2a6d9ee88309ffada}
+    Let \({ G }\) be a group and \begin{icloze}{5}\({ A }\) a set.\end{icloze}
+    Any \begin{icloze}{3}homomorphism\end{icloze}
+    \begin{icloze}{1}
+        \[
+            \varphi : G \to S_{A}
+        \]
+    \end{icloze}
+    corresponds to \begin{icloze}{2}a group action of \({ G }\) on \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{b74b0d2663b04de589ca4386ed7cfef4}
+    Let \({ G }\) be a group and \({ A }\) a set.
+    To which group action does a homomorphism \({ \varphi : G \to S_{A}  }\) correspond?
+
+    \begin{cloze}{1}
+        \[
+            g \cdot a = \varphi(g)(a).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{5974a55856e34f02b8ea7ea3aa308ede}
+    Let \({ G }\) be a group.
+    More precisely, a group action of the form
+    \begin{icloze}{2}
+        \[
+            G \times A \to A
+        \]
+    \end{icloze}
+    should be named \begin{icloze}{1}a left action.\end{icloze}
+\end{note}
+
 \end{document}
