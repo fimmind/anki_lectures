@@ -1812,7 +1812,112 @@
             g \cdot a = gag^{-1}, \quad \text{for all}\ g, a \in G
         \]
     \end{icloze}
-    is called \begin{icloze}{2}left conjugation.\end{icloze}
+    is called \begin{icloze}{2}left conjugation by \({ g }\).\end{icloze}
+\end{note}
+
+\begin{note}{2a661ecbd43640739905e3cdd87b1d0c}
+    Let \({ G }\) be a group and \({ g \in G }\).
+    Conjugation by \({ g }\) is \begin{icloze}{1}an automorphism\end{icloze} of \begin{icloze}{2}\({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{e7c43fbf0fce41629c685b5037106184}
+    Let \({ G }\) be a group and \({ g \in G }\).
+    How do you show that conjugation by \({ g }\) is a bijection?
+
+    \begin{cloze}{1}
+        Find the \({ 2 }\)-sided inverse.
+    \end{cloze}
+\end{note}
+
+\begin{note}{deb3c83d964e41ceb7cf97aad04ecc30}
+    Let \({ G }\) be a group and \({ g \in G }\) and \begin{icloze}{3}\({ A \subseteq G }\).\end{icloze}
+    \[
+        \begin{icloze}{2}gA\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ ga \mid a \in A \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{045b4413d1aa4eacb303dcbc6b2e2ae7}
+    Let \({ G }\) be a group and \({ g \in G }\) and \begin{icloze}{3}\({ A \subseteq G }\).\end{icloze}
+    \[
+        \begin{icloze}{2}Ag\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ ag \mid a \in A \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8b0d9b1f260c43d4861523f2d7621dda}
+    Let \({ G }\) be a group and \({ g \in G }\) and \begin{icloze}{2}\({ A \subseteq G }\).\end{icloze}
+    \[
+        \left\lvert gAg^{-1} \right\rvert = \begin{icloze}{1}\left\lvert A \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6b31b050ff2943eb88be9957877f008a}
+    Let \({ G }\) be a group and \({ g \in G }\) and \({ A \subseteq G }\).
+    \({ \left\lvert gAg^{-1} \right\rvert = \left\lvert A \right\rvert }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Conjugation by \({ g }\) is an automorphism and, thus, an injection.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ebb01bf770dd4afb8a2ebe1666e97128}
+    Let \({ H }\) be a group acting on a set \({ A }\).
+    The relation \({ \sim }\) defined by
+    \[
+        a \sim b \quad \iff \quad \begin{icloze}{2}a = h \cdot b\end{icloze} \quad \text{for}\ \begin{icloze}{3}h \in H.\end{icloze}
+    \]
+    is \begin{icloze}{1}an equivalence relation.\end{icloze}
+\end{note}
+
+\begin{note}{d02903a0f72944ec92fb741c94f25b33}
+    Let \({ H }\) be a group acting on a set \({ A }\) and \begin{icloze}{4}\({ x \in A }\).\end{icloze}
+    \begin{icloze}{3}The equivalence class of \({ x }\)\end{icloze} under the relation \({ \sim }\) defined by
+    \[
+        a \sim b \quad \iff \begin{icloze}{2}\quad a = h \cdot b \quad \text{for}\ h \in H.\end{icloze}
+    \]
+    is called \begin{icloze}{1}the orbit of \({ x }\) under the action of \({ H }\).\end{icloze}
+\end{note}
+
+\begin{note}{f4668a17736b4297bf9eb6b5d51b3504}
+    Let \({ H }\) be a group acting on a set \({ A }\).
+    The orbits under the action of \({ H }\) form \begin{icloze}{1}a partition of the set \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{fa085d4e6fd54c97806a352dc7d0b791}
+    Let \({ H }\) be \begin{icloze}{4}a subgroup of a finite group \({ G }\)\end{icloze} and let \({ H }\) act on \({ G }\) by \begin{icloze}{3}left multiplication.\end{icloze}
+    Let \begin{icloze}{5}\({ x \in G }\)\end{icloze} and let \({ \mathcal O }\) be \begin{icloze}{2}the orbit of \({ x }\) under the action of \({ H }\).\end{icloze}
+    Then
+    \[
+        \left\lvert \mathcal O \right\rvert = \begin{icloze}{1}\left\lvert H \right\rvert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ae8a449fc9704c54807b10f7f0d473dd}
+    Let \({ H }\) be a subgroup of a finite group \({ G }\) and let \({ H }\) act on \({ G }\) by left multiplication.
+    All orbits under the action of \({ H }\) have  cardinality \({ \left\lvert H \right\rvert }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The map \({ H \to \mathcal O,\: h \mapsto hx }\) is a bijection.
+    \end{cloze}
+\end{note}
+
+\begin{note}{aed4b7c3f17d4ace8f7a20f82e0020a6}
+    If \({ G }\) is a \begin{icloze}{3}finite\end{icloze} group and \({ H }\) is \begin{icloze}{2}a subgroup of \({ G }\)\end{icloze} then \begin{icloze}{1}\({ \left\lvert H \right\rvert }\) divides \({ \left\lvert G \right\rvert }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Lagrange's Theorem\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{d3bbb355ed9a4089ba2f0ba426b06df4}
+    If \({ G }\) is a finite group and \({ H }\) is a subgroup of \({ G }\) then \({ \left\lvert H \right\rvert }\) divides \({ \left\lvert G \right\rvert }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        All orbits under the action of \({ H }\) by left multiplication have the same cardinality.
+    \end{cloze}
 \end{note}
 
 \end{document}
