@@ -19,6 +19,10 @@ decks:
     name: University::3-rd Semester::Descrete Maths
     source_files:
       - 3-rd_semester/descrete_maths/main.tex
+  1252100592:
+    name: University::3-rd Semester::Calculus
+    source_files:
+      - 3-rd_semester/calculus/main.tex
   2005274619:
     name: University::Lie Algebras
     description: |

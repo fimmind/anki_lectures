@@ -1,0 +1,333 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Лекция 07.09.22}
+\begin{note}{1afcb80707524feb886d294c984a52dc}
+    \begin{icloze}{2}Абсолютное значение\end{icloze} мультииндекса \({ \alpha \in \mathbb Z_+^{n} }\) так же называют \begin{icloze}{1}порядком \({ \alpha }\).\end{icloze}
+\end{note}
+
+\begin{note}{18494d24db8b401ab85e8094eb880381}
+    \begin{icloze}{3}Многочленом \({ n }\) переменных со значениями в \({ \mathbb R^{m} }\)\end{icloze} называется \begin{icloze}{4}отображение\end{icloze} вида
+    \[
+        x \mapsto \begin{icloze}{1}\sum_{\alpha \in \mathbb Z_+^{n}} c_{\alpha} x^{\alpha},\end{icloze} \quad \text{где}\ \begin{icloze}{2}\text{все}\ c_{\alpha} \in \mathbb R^{m}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3ac8ca4a2feb446b91d36973c81be6c9}
+    Пусть \({ p : x \mapsto \sum c_{\alpha}x^{\alpha} }\) --- многочлен.
+    Если \begin{icloze}{2}\({ p \not\equiv 0 }\),\end{icloze} то \begin{icloze}{3}степенью\end{icloze} многочлена \({ p }\) называется
+    \begin{icloze}{1}
+        число
+        \[
+            \max \left\{ \left\lvert \alpha \right\rvert : c_{\alpha} \neq 0 \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{b531da86b4704f8a98fa60c7e92fed4f}
+    Пусть \({ p : x \mapsto \sum c_{\alpha}x^{\alpha} }\) --- многочлен.
+    Если \begin{icloze}{2}\({ p \equiv 0 }\),\end{icloze} то \begin{icloze}{3}степень\end{icloze} многочлена \({ p }\) полагают равной \begin{icloze}{1}\({ -\infty }\).\end{icloze}
+\end{note}
+
+\begin{note}{a810b4eb7a9c412e956ede41dfa9bf20}
+    Пусть \({ p : x \mapsto \sum c_{\alpha}x^{\alpha} }\) --- многочлен.
+    \begin{icloze}{2}Степень\end{icloze} многочлена \({ p }\) обозначается
+    \begin{icloze}{1}
+        \[
+            \deg p.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{208b23c3a625454aa756b911bec91ab0}
+    Пусть \({ p : x \mapsto \sum c_{\alpha}x^{\alpha} }\) --- многочлен.
+    Многочлен \({ p }\) называется \begin{icloze}{2}однородным,\end{icloze} если
+    \begin{icloze}{1}
+        для всех \({ c_{\alpha} \neq 0 }\)
+        \[
+            \left\lvert \alpha \right\rvert = \deg p.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{544930fdea1c4e5d80a0df01959e347d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \begin{icloze}{4}\({ a \in \operatorname{Int} E }\),\end{icloze} \begin{icloze}{5}\({ s \in \mathbb Z_+ }\).\end{icloze}
+    \begin{icloze}{2}Многочлен \({ p }\) степени не выше \({ s }\),\end{icloze} для которого
+    \begin{icloze}{1}
+        \[
+            p(a) = f(a) \quad \text{и} \quad f(x) = p(x) + o(\left\lVert x - a \right\rVert^{s}), \quad x \to a,
+        \]
+    \end{icloze}
+    называется \begin{icloze}{3}многочленом Тейлора \({ f }\) порядка \({ s }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{eb19d56da526470cb6e9080b543d4274}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\), \({ s \in \mathbb Z_+ }\).
+    \begin{icloze}{2}Многочлен Тейлора \({ f }\) порядка \({ s }\) в точке \({ a }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            T_{a,s}f.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{933573807d4c48759570240ceab80b99}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\), \({ s \in \mathbb Z_+ }\).
+    Если \({ T_{a,s}f }\) существует, то он \begin{icloze}{1}единственный.\end{icloze}
+\end{note}
+
+\begin{note}{58c9f6950530458f9675a1dbdf0ada74}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\), \({ s \in \mathbb Z_+ }\).
+    Если \({ T_{a,s}f }\) существует, то он единственный.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Разность двух многочленов есть \({ o(\left\lVert x - a \right\rVert^{s}) }\), \({ x \to a }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{279f256b32fa4f1597e48070542d1328}
+    Пусть \({ p }\) --- многочлен \begin{icloze}{2}степени не выше \({ s }\),\end{icloze} \begin{icloze}{3}\({ a \in \mathbb R^{n} }\).\end{icloze}
+    Тогда если
+    \[
+        p(x) = o(\left\lVert x - a \right\rVert^{s}), \quad x \to a,
+    \]
+    то \begin{icloze}{1}\({ p \equiv 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{f753051ba1584ae3809a7b03ecf311f7}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x - a \right\rVert^{s}) }\) при \({ x \to a }\), то \({ p \equiv 0 }\).
+    Каков первый шаг в доказательстве?
+
+    \begin{cloze}{1}
+        Рассмотреть два случая: \({ a = 0 }\) и \({ a \neq 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{dbbbdf10a7154a108f480966e50f47f4}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x \right\rVert^{s}) }\) при \({ x \to 0 }\), то \({ p \equiv 0 }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Разбить \({ p }\) на однородные компоненты и рассмотреть \({ p(tx) }\) как многочлен переменной \({ t }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f5bb46b7a1ed4834958c83c4ad14592b}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x \right\rVert^{s}) }\) при \({ x \to 0 }\), то \({ p \equiv 0 }\).
+    Как представляется многочлен \({ p(tx) }\) в доказательстве?
+
+    \begin{cloze}{1}
+        \[
+            p(tx) = \sum_{k} p_k(x) \cdot t^{k},
+        \]
+        где \({ p_{k} }\) --- однородный многочлен степени \({ k }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8d6ee9673c3342a08abd86f26262f4d4}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x \right\rVert^{s}) }\) при \({ x \to 0 }\), то \({ p \equiv 0 }\).
+    В доказательстве, что нужно показать про многочлен \({ p(tx) }\)?
+
+    \begin{cloze}{1}
+        \[
+            p(tx) = o(\lvert t \rvert^{s}) \quad \text{при}\ x \to 0.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{d1c7e28676534f9c9c27d38c3b300a28}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x \right\rVert^{s}) }\) при \({ x \to 0 }\), то \({ p \equiv 0 }\).
+    В доказательстве мы получили, что \({ \sum_{k} p_k(x) \cdot t^{k} = o(\lvert t \rvert^{s}) }\) при \({ t \to 0 }\).
+    Что дальше?
+
+    \begin{cloze}{1}
+        Применить аналогичную теорему к координатным функциям.
+    \end{cloze}
+\end{note}
+
+\begin{note}{833c8cc496364d6fa95263abe312262d}
+    Пусть \({ p }\) --- многочлен степени не выше \({ s }\), \({ a \in \mathbb R^{n} }\).
+    Тогда если \({ p(x) = o(\left\lVert x - a \right\rVert^{s}) }\) при \({ x \to a }\), то \({ p \equiv 0 }\).
+    В чём ключевая идея доказательства (случай \({ a \neq 0 }\))?
+
+    \begin{cloze}{1}
+        \({ p(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{6fd36ee18228464ca25e12817347ca1c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\).
+    \({ T_{a,0}f }\) существует \begin{icloze}{2}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}\({ f }\) непрерывна в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{803bd99b5a65458a8e290e6262c9de9d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\), \({ a \in \operatorname{Int} E }\).
+    \({ T_{a,1}f }\) существует \begin{icloze}{2}тогда и только тогда, когда\end{icloze} \begin{icloze}{1}\({ f }\) дифференцируемо в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{2f87c61fe7f54f968db50ac94e832bae}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}\({ s }\) раз дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда если \begin{icloze}{2}\({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),\end{icloze} то
+    \begin{icloze}{1}
+        \[
+            f(a + h) = o(\left\lVert h \right\rVert^{s}) \quad \text{при}\ h \to 0.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{1058f8e8aff94db385633d84438c4915}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда если \({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),
+    то \({ f(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    Каков первый шаг в доказательстве?
+
+    \begin{cloze}{1}
+        Рассмотреть два случая: \({ m = 1 }\) и \({ m > 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5c30a0ff84484046b766901eef5af420}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда если \({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),
+    то \({ f(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    В чём ключевая идея доказательства (случай \({ m > 1 }\))?
+
+    \begin{cloze}{1}
+        Следует из случая \({ m = 1 }\) для координатных функций.
+    \end{cloze}
+\end{note}
+
+\begin{note}{82636304ac3c484eb96726ccdc702d46}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда если \({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),
+    то \({ f(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    В чём ключевая идея доказательства (случай \({ m = 1 }\))?
+
+    \begin{cloze}{1}
+        Индукция по \({ s }\) начиная с \({ s = 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e2a21df035814a499b4289ae94f9ce3b}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда если \({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),
+    то \({ f(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    В чём ключевая идея доказательства (случай \({ m = 1 }\), база индукции)?
+
+    \begin{cloze}{1}
+        Выразить \({ f(a + h) }\) через дифференциал, а его через производные.
+    \end{cloze}
+\end{note}
+
+\begin{note}{8470c9b044c34960816bc23c9dacd863}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда если \({ f }\) и все его частные производные порядка не выше \({ s }\) равны \({ 0 }\) в точке \({ a }\),
+    то \({ f(a + h) = o(\left\lVert h \right\rVert^{s}) }\) при \({ h \to 0 }\).
+    В чём ключевая идея доказательства (случай \({ m = 1 }\), индукционный переход)?
+
+    \begin{cloze}{1}
+        Индукционное предположение для первых частных производных и формула конечных приращений.
+    \end{cloze}
+\end{note}
+
+\begin{note}{440fc6e6c8f44ad2a31f2846aff7b4a1}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}\({ s }\) раз дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}T_{a,s}f(x)\end{icloze} = \begin{icloze}{1}\sum_{\left\lvert \alpha \right\rvert \leqslant s} \frac{1}{\alpha!} \frac{\partial^{\alpha} f}{\partial x^{\alpha}}(a) (x - a)^{\alpha}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Формула Тейлора-Пеано\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{2aeb576d5fa547d7bda0b219d979ee26}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \({ s }\) раз дифференцируемо в точке \({ a }\).
+    Тогда
+    \[
+        T_{a,s}f(x) = \sum_{\left\lvert \alpha \right\rvert \leqslant s} \frac{1}{\alpha!} \frac{\partial^{\alpha} f}{\partial x^{\alpha}}(a) (x - a)^{\alpha}.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        \[
+            \frac{\partial^{\alpha} (f - p)}{\partial x^{\alpha}} (a) = 0 \quad \text{для}\ \left\lvert \alpha \right\rvert \leqslant s.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{e0459301f4f34ae58524dc3c38939440}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{3}\({ s }\) раз дифференцируемо в точке \({ a }\).\end{icloze}
+    Тогда
+    \[
+        \begin{icloze}{2}T_{a,s}f(x)\end{icloze} = \begin{icloze}{1}\sum_{k = 0}^{s} \frac{d_{a}^{k}f(x - a)}{k!}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах дифференциалов)
+    \end{center}
+\end{note}
+
+\begin{note}{caac2b23fb274c30b7cb6175b0f99c2f}
+    Пусть \({ p : \mathbb R^{n} \to \mathbb R^{m} }\) --- \begin{icloze}{2}многочлен степени не выше \({ s }\),\end{icloze} \({ a \in \mathbb R^{n} }\).
+    Тогда
+    \[
+        R_{a,s}p(x) = \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{4be29edc8e4d451e828ecd8e46049315}
+    Пусть \({ a, b \in \mathbb R^{n} }\).
+    \[
+        \begin{icloze}{2}\widetilde\Delta_{a,b}\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\Delta_{a,b} \setminus \left\{ a, b \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e167a0bd9f704b6c9c7939124e1af308}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \begin{icloze}{4}\mathbb R\end{icloze} }\) \begin{icloze}{6}дифференцируемо \({ s + 1 }\) раз на \({ E }\),\end{icloze} \begin{icloze}{5}\({ a \neq x }\) и \({ \Delta_{a,x} \subset E }\).\end{icloze}
+    Тогда \({ \exists c \in \begin{icloze}{2}\widetilde \Delta_{a,x}\end{icloze} }\) для которой
+    \[
+        \begin{icloze}{3}R_{a,s}f(x)\end{icloze} = \begin{icloze}{1}\frac{d_{c}^{s + 1}f(x - a)}{(s + 1)!}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{7}Формула Тейлора-Лагранжа\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{41ca37ac01bb45e0a61e5ef62d8970de}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо \({ s + 1 }\) раз на \({ E }\), \({ a \neq x }\) и \({ \Delta_{a,x} \subset E }\).
+    Тогда \({ \exists c \in \widetilde \Delta_{a,x} }\) для которой
+    \[
+        R_{a,s}f(x) = \frac{d_{c}^{s + 1}f(x - a)}{(s + 1)!}.
+    \]
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Одномерная формула Тейлора-Лагранжа для функции
+        \[
+            t \mapsto f(a + th).
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{f5319b0cf6d14e598448bc9db8842901}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируемо \({ s + 1 }\) раз на \({ E }\), \({ a \neq x }\) и \({ \Delta_{a,x} \subset E }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lvert R_{a,s}f(x) \right\rvert\end{icloze} \leqslant \begin{icloze}{1}\underset{c \in \widetilde\Delta_{a, x}}{\sup} \frac{\left\lvert d_{c}^{s + 1}f(x - a) \right\rvert}{(s + 1)!}.\end{icloze}
+    \]
+\end{note}
+
+\end{document}
