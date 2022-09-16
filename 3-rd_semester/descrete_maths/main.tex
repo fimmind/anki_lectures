@@ -51,6 +51,14 @@
     \begin{icloze}{2}Универсальное\end{icloze} множество обычно обозначается \begin{icloze}{1}\({ U }\) или \({ I }\).\end{icloze}
 \end{note}
 
+\begin{note}{6b9f3c8671f2472e9e3b9a20aeb66aa5}
+    Пусть \({ A }\) и \({ B }\) --- множества.
+    Для удобства часто используется сокращение
+    \[
+        \begin{icloze}{2}AB\end{icloze} \coloneqq \begin{icloze}{1}A \cap B.\end{icloze}
+    \]
+\end{note}
+
 \begin{note}{dc6fc558021f401696123dddc6c61abe}
     Пусть \({ A }\) и \({ B }\) --- множества.
     \begin{icloze}{2}Симметрической разностью\end{icloze} множеств \({ A }\) и \({ B }\) называется множество
@@ -209,6 +217,158 @@
     \[
         A \setminus B = \begin{icloze}{1}A \cap \overline{B}.\end{icloze}
     \]
+\end{note}
+
+\begin{note}{aed19cd8fa0d4ee3abf314b502af697d}
+    Пусть \({ A, B }\) и \({ X }\) --- множества.
+    \[
+        \begin{icloze}{2}X \cup A \subseteq B\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}X \subseteq B \text{ и } A \subseteq B.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{ec3c6b3684844799a206353c8668876c}
+    Пусть \({ A, B }\) и \({ X }\) --- множества.
+    \[
+        \begin{icloze}{2}A \subseteq X \cap B\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}A \subseteq X \text{ и } A \subseteq B.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{5f70eba8ee804221a8e31f858c0b43ec}
+    Пусть \({ A, B }\) и \({ X }\) --- множества.
+    \[
+        \begin{icloze}{2}X \cap A \subseteq B\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}X \subseteq \overline{A} \cup B.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{72ac0b5d9c1746c79264bb9bd3a0b5f2}
+    Пусть \({ A, B }\) и \({ X }\) --- множества.
+    \[
+        \begin{icloze}{2}A \subseteq X \cup B\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}A \cap \overline{B} \subseteq X.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{9d92e00aafb44695841b52ab137664da}
+    Пусть \({ A, B, C, D }\) и \({ X }\) --- множества.
+    \[
+        \begin{cases}
+            A \subseteq X \subseteq B \\
+            C \subseteq X \subseteq D
+        \end{cases}
+        \iff
+        \begin{icloze}{2}A \cup C\end{icloze} \subseteq X \subseteq \begin{icloze}{1}B \cap D.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{ee9afcd63b43416d954d357d1dc689bb}
+    В чём основная идея общего алгоритма для решения систем уравнений со множествами?
+
+    \begin{cloze}{1}
+        Привести систему к виду \({ A X \cup B \overline{X} = \emptyset }\), где \({ A }\) и \({ B }\) не зависят от \({ X }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f443d4e12a8745178ba97fdf0f1d8772}
+    Пусть \({ A }\) и \({ B }\) --- множества.
+    \[
+        \begin{icloze}{3}A = B\end{icloze} \begin{icloze}{4}\iff\end{icloze} \begin{icloze}{1}A \bigtriangleup B\end{icloze} = \begin{icloze}{2}\emptyset.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{06c3d3d8c5614af3b760a31c9b94fdc8}
+    Пусть \({ A }\) и \({ B }\) --- множества.
+    \[
+        A \cup B = \emptyset \begin{icloze}{2}\iff\end{icloze} \begin{icloze}{1}A = \emptyset \text{ и } B = \emptyset.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{73259212f85a4411b131299cc49d90dc}
+    Пусть \({ A }\) и \({ X }\) --- множества.
+    \[
+        AX = \emptyset \iff \begin{icloze}{1}X \subseteq \overline{A}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{c02302f80f0143d0bb7cdc18b8929288}
+    Пусть \({ B }\) и \({ X }\) --- множества.
+    \[
+        B \overline{X} = \emptyset \iff \begin{icloze}{1}B \subseteq X.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (при решений уравнений относительно \({ X }\))
+    \end{center}
+\end{note}
+
+\begin{note}{96e46cd4122448b3a6c8a8543d793a05}
+    Пусть \({ A }\) и \({ B }\) --- множества.
+    При каком условии система
+    \[
+        \begin{cases}
+            AX = \emptyset, \\
+            B \overline{X} = \emptyset
+        \end{cases}
+    \]
+    имеет решение?
+
+    \begin{cloze}{1}
+        \({ B \subseteq \overline{A} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5e8c77b24b74411e9c9d6769ee278443}
+    Пусть \({ A }\) и \({ B }\) --- множества.
+    Каково решение системы
+    \[
+        \begin{cases}
+            AX = \emptyset, \\
+            B \overline{X} = \emptyset.
+        \end{cases}
+    \]
+
+    \begin{cloze}{1}
+        \[
+            B \subseteq X \subseteq \overline{A}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{f1c5541c7c884dba936d4374ff51af88}
+    Пусть \({ A }\) и \({ B }\) --- множества. Как в уравнении \({ AX \cup B \overline{X} \cup C = \emptyset }\) избавиться от <<свободного>> множества \({ C }\)?
+
+    \begin{cloze}{1}
+        \({ C = \emptyset }\) --- условие совместности системы.
+    \end{cloze}
 \end{note}
 
 \begin{note}{86475fdea01944fba56365048d57b02d}
