@@ -398,6 +398,7 @@
     \]
 \end{note}
 
+\section{Бинарные отношения}
 \begin{note}{cfc293ce41644e75b3df5d21a2bf036d}
     Пусть \({ A }\) и \({ B }\) --- множества.
     \begin{icloze}{2}Бинарным отношением\end{icloze} на множествах \({ A }\) и \({ B }\) называется \begin{icloze}{1}некоторое подмножество \({ A \times B }\).\end{icloze}
@@ -409,6 +410,137 @@
     \begin{cloze}{1}
         Перечисление, правило, матрица, граф.
     \end{cloze}
+\end{note}
+
+\begin{note}{c0ee3ac94a454d748e625d9e8c854763}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \[
+        aRb \overset{\hspace{-1pt}\text{\tiny def}}\iff \begin{icloze}{1}(a, b) \in R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cef6486539a64268a1827f863aa7b9e1}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Обратным отношением к \({ R }\)\end{icloze} называется
+    \begin{icloze}{1}
+        множество
+        \[
+            \left\{ (b, a) \mid aRb \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{5e2c602b70a3473684a8ea79d93c7d68}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Обратное отношение к \({ R }\)\end{icloze} обозначается \begin{icloze}{1}\({ R^{-1} }\).\end{icloze}
+\end{note}
+
+\begin{note}{86c9a04a7ac14724b416780fec688449}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \[
+        (R^{-1})^{-1} = \begin{icloze}{1}R.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{e91e90545919488bb2c2ebe373b9e615}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Областью определения \({ R }\)\end{icloze} называется
+    \begin{icloze}{1}
+        множество
+        \[
+            \left\{ x \mid \exists y : xRy \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{08e952c62da84566a99743eb4c6c48a5}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Область определения \({ R }\)\end{icloze} обозначается \begin{icloze}{1}\({ D(R) }\),\end{icloze} \begin{icloze}{1}\({ \delta_{R} }\)\end{icloze} или \begin{icloze}{1}\({ \operatorname{dom} R }\).\end{icloze}
+\end{note}
+
+\begin{note}{13e35bd817d9438690104754dc4d016d}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Областью значений \({ R }\)\end{icloze} называется
+    \begin{icloze}{1}
+        множество
+        \[
+            \left\{ y \mid \exists x : xRy \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{051cc32e89b94beebd49875c952f6b5b}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    \begin{icloze}{2}Область значений \({ R }\)\end{icloze} обозначается \begin{icloze}{1}\({ E(R) }\),\end{icloze} \begin{icloze}{1}\({ \rho_{R} }\)\end{icloze} или \begin{icloze}{1}\({ \operatorname{im} R }\).\end{icloze}
+\end{note}
+
+\begin{note}{c0426f6bec33477e9bc759610c4d426b}
+    Пусть \({ R \subseteq A \times B }\) и \({ S \subseteq B \times C }\) --- бинарные отношения.
+    \begin{icloze}{2}Композицией \({ R }\) и \({ S }\)\end{icloze} называется
+    \begin{icloze}{1}
+        множество
+        \[
+            \left\{ (a, c) \mid \exists b : aRb \text{ и } bSc \right\}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{41418613a7934da4ab810abfcdf24e1a}
+    Пусть \({ R \subseteq A \times B }\) и \({ S \subseteq B \times C }\) --- бинарные отношения.
+    \begin{icloze}{2}композиция \({ R }\) и \({ S }\)\end{icloze} обозначается
+    \begin{icloze}{1}
+        \[
+            R \circ S.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{78bbe389ea094b0aad40c370c5092937}
+    Является ли операция композиции бинарных отношений коммутативной?
+
+    \begin{cloze}{1}
+        Нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{63f83037312e4f29a81de945fb387d06}
+    Является ли операция композиции бинарных отношений ассоциативной?
+
+    \begin{cloze}{1}
+        Да.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1530beb1e1c24540a8be6f534775cca0}
+    Пусть \({ R \subseteq A \times B }\) и \({ S \subseteq B \times C }\) --- бинарные отношения.
+    \[
+        (R \circ S)^{-1} = \begin{icloze}{1}S^{-1} \circ R^{-1}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8e02e778a9a5426fa89340cd47a6a0c5}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение.
+    Отношение \({ R }\) называется \begin{icloze}{2}интранзитивным,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            aRb \text{ и } bRc \implies \overline{aRc}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f3fcca348ef844da9d3cf01b1e27fe1f}
+    Матрица \({ A }\) называется \begin{icloze}{2}бинарной,\end{icloze} если \begin{icloze}{1}все её элементы принадлежат множеству \({ \left\{ 0, 1 \right\} }\).\end{icloze}
+\end{note}
+
+\begin{note}{25d02bbd94644780a0346254f22a07df}
+    Пусть \({ R \subseteq A \times B }\) --- бинарное отношение, \begin{icloze}{3}\({ A }\) и \({ B }\) конечны.\end{icloze}
+    \begin{icloze}{2}Матрицей отношения \({ R }\)\end{icloze} называется
+    \begin{icloze}{1}
+        бинарная матрица
+        \[
+            \Big( a_i R b_j \Big) \sim \left\lvert A \right\rvert \times \left\lvert B \right\rvert.
+        \]
+    \end{icloze}
 \end{note}
 
 \end{document}
