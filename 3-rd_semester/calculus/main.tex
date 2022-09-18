@@ -330,4 +330,74 @@
     \]
 \end{note}
 
+\section{Лекция 14.09.22}
+\begin{note}{5bfe3eea62cf4923be0b768ada48f104}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) \begin{icloze}{5}дифференцируема на \({ E }\),\end{icloze} \begin{icloze}{4}\({ a \neq b }\) и \({ \Delta_{a,b} \subset E }\).\end{icloze}
+    Тогда \({ \exists c \in \begin{icloze}{2}\widetilde\Delta_{a,b}\end{icloze} }\), для которой
+    \begin{icloze}{1}
+        \[
+            f(b) - f(a) = d_{c}f(b - a).
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{3}Теорема о среднем\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{43e52abb706d4b2490ad6248608ac691}
+    В чём ключевая идея доказательства теоремы о среднем для функций \({ n }\) вещественных переменных?
+
+    \begin{cloze}{1}
+        Формула Тейлора-Лагранжа для многочлена Тейлора степени \({ 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{4772fe28cbb6493b9863306e7b371ceb}
+    Верна ли формула Тейлора-Лагранжа для \textbf{отображений} нескольких переменных?
+
+    \begin{cloze}{1}
+        Нет, только для функций.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e3d62c0a50b24f098a41c202d267ca75}
+    Пример отображения \({ 2 }\)-х переменных, для которого не верна формула Тейлора-Лагранжа.
+
+    \begin{cloze}{1}
+        \({ x \mapsto (\cos x, \sin x) }\),\: \({ a = 0 }\),\: \({ b = 2\pi }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{26f3582d133f4c2894e1a02890184d65}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \begin{icloze}{5}\mathbb R^{m}\end{icloze} }\) дифференцируемо \({ s+1 }\) раз на \({ E }\), \({ a \neq x }\) и \({ \Delta_{a,x} \subset E }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\left\lVert R_{a,s}f(x) \right\rVert\end{icloze} \begin{icloze}{3}\leqslant\end{icloze} \begin{icloze}{1}\frac{1}{(s + 1)!} \cdot \sup_{c \in \widetilde \Delta_{a,x}} \left\lVert d_{c}^{s + 1}f(x - a) \right\rVert.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{4}Формула Тейлора-Лагранжа для отображений\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{a15c2119bc5c43b38389896cea1098b3}
+    Пусть \({ f : E \subset \begin{icloze}{5}\mathbb R^{n}\end{icloze} \to \begin{icloze}{5}\mathbb R^{m}\end{icloze} }\) \begin{icloze}{4}непрерывно дифференцируемо \({ s+1 }\) раз на \({ E }\),\end{icloze} \({ a \neq x }\) и \({ \Delta_{a, x} \subset E }\).
+    Тогда
+    \[
+        \begin{icloze}{3}\left\lVert R_{a,s}f(x) \right\rVert\end{icloze} \leqslant \begin{icloze}{2}\frac{M}{(s + 1)!}(\sqrt{n}\left\lVert x - a \right\rVert)^{s+1},\end{icloze}
+    \]
+    где
+    \[
+        M = \begin{icloze}{1}\max_{\left\lvert \alpha \right\rvert = s+1} \sup_{c \in \widetilde \Delta_{a,x}} \left\lVert \partial^{\alpha}f(c) \right\rVert < +\infty.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (\({ \alpha \in \mathbb Z_{+}^{n} }\))
+    \end{center}
+\end{note}
+
 \end{document}
