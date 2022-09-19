@@ -400,4 +400,94 @@
     \end{center}
 \end{note}
 
+\begin{note}{785a0606f4ba4f8982e917a94bd795a4}
+    Будем записывать элементы \({ \mathbb R^{n+m} }\) в виде \begin{icloze}{1}\({ (x, y) }\),\end{icloze} где \({ x \in \begin{icloze}{2}\mathbb R^{n}\end{icloze} }\), \({ y \in \begin{icloze}{2}\mathbb R^{m}\end{icloze} }\).
+\end{note}
+
+\begin{note}{0dc937ef2a384d4187a878487bec114b}
+    Пусть \({ f : E \subset \begin{icloze}{4}\mathbb R^{n+m}\end{icloze} \to \begin{icloze}{4}\mathbb R^{m}\end{icloze} }\) и существует \({ \psi : \begin{icloze}{3}\mathbb R^{n}\end{icloze} \to \begin{icloze}{3}\mathbb R^{m}\end{icloze} }\) такая, что
+    \begin{icloze}{2}
+        \[
+            f(x, y) = 0 \iff y = \psi(x),
+        \]
+    \end{icloze}
+    то \({ \psi }\) называют \begin{icloze}{1}неявным отображением, порождённым уравнением \({ f(x, y) = 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{142e9f4e8b2b46f2adbaafa498f6208b}
+    Пусть \({ f : E \subset \mathbb R^{n + m} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда в контексте теоремы о неявном отображении, порождённом уравнением \({ f(x, y) = 0 }\),
+    \[
+        f'_{x}(a) \coloneqq
+        \begin{icloze}{1}
+            \begin{bmatrix}
+                \frac{\partial f_i}{\partial x_j}(a)
+            \end{bmatrix}
+        \end{icloze}
+        \sim \begin{icloze}{2}m \times n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c673a237b83846babd512f854f96bb58}
+    Пусть \({ f : E \subset \mathbb R^{n + m} \to \mathbb R^{m} }\) дифференцируемо в точке \({ a }\).
+    Тогда в контексте теоремы о неявном отображении, порождённом уравнением \({ f(x, y) = 0 }\),
+    \[
+        f'_{y}(a) \coloneqq
+        \begin{icloze}{1}
+            \begin{bmatrix}
+                \frac{\partial f_i}{\partial y_j}(a)
+            \end{bmatrix}
+        \end{icloze}
+        \sim \begin{icloze}{2}m \times m.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0d54b2d03b084afebb7c5cc072280a39}
+    Пусть \({ f : E \subset \begin{icloze}{4}\mathbb R^{n+m}\end{icloze} \to \begin{icloze}{4}\mathbb R^{m}\end{icloze} }\), \begin{icloze}{5}\({ f \in C^{s}(E) }\).\end{icloze}
+    Тогда если
+    \begin{icloze}{1}
+        \[
+            f(x_{0}, y_{0}) = 0 \quad \text{и} \quad \det f'_{y}(x^{0}, y^{0}) \neq 0,
+        \]
+    \end{icloze}
+    то существуют такие \begin{icloze}{2}\({ \delta > 0 }\) и \({ \psi \in C^{s}(V_{\delta}(x^0)) }\),\end{icloze} что
+    \[
+        \begin{gathered}
+            \begin{icloze}{3}f(x, y) = 0 \iff y = \psi(x)\end{icloze} \\
+            \forall (x, y) \in \begin{icloze}{3}V_{\delta}(x_0, y_0).\end{icloze}
+        \end{gathered}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{6}Теорема о неявном отображении\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{5891b9dc6bf94339a65fafd5858d8186}
+    Отображение \({ \psi }\), введённое в теореме о неявном отображении называется \begin{icloze}{1}неявным отображением, порождённым уравнением \({ f(x, y) = 0 }\) в окрестности точки \({ (x^{0}, y^{0}) }\).\end{icloze}
+\end{note}
+
+\begin{note}{d2223a858b21419e921d5878682e3338}
+    В чём основная идея доказательства теоремы о неявном отображении (интуитивно)?
+
+    \begin{cloze}{1}
+        \({ d_{a}f(x - x^{0}, y - y^{0}) = o(\left\lVert h \right\rVert) \implies d_{a}f(\ldots) = 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{dd7bb23f22a042dab6dacf623aca0455}
+    Пусть \({ f : E \subset \mathbb R^{n+m} \to \mathbb R^{m} }\),\: \({ (x^{0}, y^{0}) \in E }\).
+    Если
+    \begin{icloze}{2}
+        в окрестности точки \({ (x^0, y^0) }\) уравнение \({ f(x, y) = 0 }\) порождает неявную функцию,
+    \end{icloze}
+    то \({ f }\) называется \begin{icloze}{1}локально разрешимым в точке \({ (x^0, y^0) }\).\end{icloze}
+\end{note}
+
+\begin{note}{0e4cd0362fdd4f31a10ea88deaf016fc}
+    Пусть \({ f : E \subset \mathbb R^{n+m} \to \mathbb R^{m} }\).
+    Если \begin{icloze}{2}\({ f }\) локально разрешимо в любой точке \({ E }\),\end{icloze} то \({ f }\) называется \begin{icloze}{1}локально разрешимым на \({ E }\).\end{icloze}
+\end{note}
+
 \end{document}
