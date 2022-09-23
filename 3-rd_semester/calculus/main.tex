@@ -491,4 +491,144 @@
     Если \begin{icloze}{2}\({ f }\) локально разрешимо в любой точке \({ E }\),\end{icloze} то \({ f }\) называется \begin{icloze}{1}локально разрешимым на \({ E }\).\end{icloze}
 \end{note}
 
+\section{Лекция 21.09.22}
+\begin{note}{434affe9da3e443d839f4a7d6af1b180}
+    Чем определение экстремума для функций \({ n }\) вещественных переменных отличается от такового для одномерных функций?
+
+    \begin{cloze}{1}
+        Ничем.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2efcc79ba51544848aacbd7da7dfa4b1}
+    В определении экстремума функции \({ n }\) вещественных переменных, для каких \({ x }\) требуется выполнение соответствующего неравенства?
+
+    \begin{cloze}{1}
+        \({ \forall x \in \dot V_{\delta}(a) \cap D(f) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{27a6b8777b9b4bb9919dcfa31d963432}
+    \begin{icloze}{2}Тождественно нулевой оператор\end{icloze} обозначается \begin{icloze}{1}\({ \mathbb O }\).\end{icloze}
+\end{note}
+
+\begin{note}{43fd5e0b1a8b410a887c991151fac7e0}
+    Пусть \({ f : E \subset \begin{icloze}{4}\mathbb R^{n}\end{icloze} \to \begin{icloze}{4}\mathbb R\end{icloze} }\) \begin{icloze}{3}дифференцируема в точке \({ a }\).\end{icloze}
+    Если \begin{icloze}{2}\({ a }\) является точкой экстремума,\end{icloze} то \begin{icloze}{1}\({ d_{a}f \equiv 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{834aecf3894642098d0ddc0256091117}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дифференцируема в точке \({ a }\).
+    Если \({ a }\) является точкой экстремума, то \({ d_{a}f \equiv 0 }\).
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Необходимое условие экстремума\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{e5cfde8512814dbbaed4676461636b0d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) \begin{icloze}{3}дифференцируема в точке \({ a }\).\end{icloze}
+    Точку \({ a }\) называют \begin{icloze}{2}стационарной для \({ f }\),\end{icloze} если \begin{icloze}{1}\({ d_{a}f \equiv 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{c658e89677264e7bb7317334e026304e}
+    В чём ключевая идея доказательства необходимого условия экстремума для функций \({ n }\) вещественных переменных?
+
+    \begin{cloze}{1}
+        Рассмотреть функции \({ t \mapsto f(a + te^{k}) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{02b9316ee1f84262ae08eebecbe71c2b}
+    В доказательстве необходимого условия экстремума для функций \({ n }\) вещественных переменных, мы положили
+    \[
+        F_k(t) = f(a + te^{k}).
+    \]
+    Что нужно показать про функцию \({ F_k }\)?
+
+    \begin{cloze}{1}
+        \({ 0 }\) --- точка экстремума \({ F_k }\) и рассмотреть \({ F_k'(0) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ec6b1873ffe44cc48c87520ef5bf2f10}
+    Какие случаи не охватываются необходимым условием экстремума?
+
+    \begin{cloze}{1}
+        Когда дифференциал сохраняет знак, но не является положительно или отрицательно определённым.
+    \end{cloze}
+\end{note}
+
+\begin{note}{091dad1735594dfa8923e46c5a461ab0}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) \begin{icloze}{4}дважды дифференцируема в точке \({ a }\),\end{icloze} \begin{icloze}{3}\({ d_{a}f \equiv 0 }\).\end{icloze}
+    Тогда если \begin{icloze}{2}\({ d_{a}^2f }\) положительно определён,\end{icloze} то \begin{icloze}{1}\({ a }\) --- точка строгого минимума \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{a87f168ae18d4f65b7595866b9407e8d}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дважды дифференцируема в точке \({ a }\), \({ d_{a}f \equiv 0 }\).
+    Тогда если \begin{icloze}{2}\({ d_{a}^2f }\) отрицательно определён,\end{icloze} то \begin{icloze}{1}\({ a }\) --- точка строгого максимума \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{4643a84f76b84c9bbc34e220ee2196c3}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дважды дифференцируема в точке \({ a }\), \({ d_{a}f \equiv 0 }\).
+    Тогда если \begin{icloze}{2}\({ d_{a}^2f }\) принимает как положительные, так и отрицательные значения,\end{icloze} то \begin{icloze}{1}\({ f }\) не имеет экстремума в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{41fccd97c432427e893b7c1e3b850374}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \begin{icloze}{4}\mathbb R\end{icloze} }\) \begin{icloze}{3}дважды дифференцируема в точке \({ a }\).\end{icloze}
+    \begin{icloze}{2}Матрица квадратичной формы \({ d_{a}^2f }\)\end{icloze} называется \begin{icloze}{1}матрицей Гессе \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{36db8ae7809a4dcbb6f350f51ca0a54c}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дважды дифференцируема в точке \({ a }\).
+    \begin{icloze}{2}Матрица Гессе \({ f }\) в точке \({ A }\)\end{icloze} обозначается \begin{icloze}{1}\({ H(f) }\).\end{icloze}
+\end{note}
+
+\begin{note}{5ffaf8568eaa4a8fbb3815c215d20c25}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\) дважды дифференцируема в точке \({ a }\).
+    \begin{icloze}{2}Матрица Гессе \({ f }\) в точке \({ a }\)\end{icloze} имеет вид
+    \[
+        \begin{bmatrix}
+            \begin{icloze}{1}\frac{\partial^2 f}{\partial x_i \partial x_j}\end{icloze}
+        \end{bmatrix}
+     \sim \begin{icloze}{1}n \times n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{56bf1e23f53c4cae8d62101295cb0a9b}
+    Пусть \({ f : E \subset \begin{icloze}{3}\mathbb R^{2}\end{icloze} \to \begin{icloze}{3}\mathbb R\end{icloze} }\) дважды дифференцируема в точке \({ a }\), \begin{icloze}{4}\({ d_{a}f \equiv 0 }\).\end{icloze}
+    Тогда если \begin{icloze}{2}\({ \det H(f) < 0 }\),\end{icloze} то \begin{icloze}{1}\({ f }\) не имеет экстремума в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{b78c95a2236a4edf964b8e2a29238dae}
+    Пусть \({ f : E \subset \mathbb R^{2} \to \mathbb R }\) дважды дифференцируема в точке \({ a }\), \({ d_{a}f \equiv 0 }\).
+    Тогда если \({ \det H(f) < 0 }\), то \({ f }\) не имеет экстремума в точке \({ a }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Зафиксировать одну компоненту приращения \({ d_{a}^2f }\) и показать, что он принимает как положительные, так и отрицательные значения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{535062161d6044bdb41631a3ae479223}
+    \begin{icloze}{2}Дополнительные равенства, которым должны удовлетворять точки из области определения \({ f }\)\end{icloze} в определении понятия условного экстремума называются \begin{icloze}{1}уравнениями связи.\end{icloze}
+\end{note}
+
+\begin{note}{7dc4fe4c435946a091efc32d6a120ec1}
+    Пусть \({ f : E \subset \mathbb R^{n} \to \mathbb R }\), \begin{icloze}{4}\({ \Phi : E \to \mathbb R^{m} }\),\end{icloze} \({ a \in E }\), \begin{icloze}{3}\({ m < n }\).\end{icloze}
+    Если
+    \begin{icloze}{1}
+        \({ a }\) является точкой экстремума сужения \({ f }\) на множество
+        \[
+            \left\{ x \in E \mid \Phi(x) = 0 \right\},
+        \]
+    \end{icloze}
+    то \({ a }\) называется \begin{icloze}{2}точкой условного экстремума \({ f }\), подчинённого уравнениям связи \({ \Phi(x) = 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{efdc5b1690a340499b26b776ada24e98}
+    Точку условного экстремума так же называют \begin{icloze}{1}точкой относительного экстремума.\end{icloze}
+\end{note}
+
 \end{document}
