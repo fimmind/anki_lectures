@@ -47,6 +47,16 @@ decks:
     name: Maths Self-Study::Abstract Algebra::1 Introduction to Groups
     source_files:
       - ./abstract_algebra/introduction_to_groups/main.tex
+  1736233271:
+    name: University::Logic and Algorithms
+    description: |
+      <div style="text-align: center">
+        Мои заметки для книги <br> <i>Лекции по математической логике и теории алгоритмов</i>
+      </div>
+  1367758702:
+    name: University::Logic and Algorithms::1 Introductory Set Theory
+    source_files:
+      - logic_and_algorithms/1_introductory_set_theory/main.tex
 
 
 model:

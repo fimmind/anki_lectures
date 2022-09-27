@@ -1,0 +1,130 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{2. Упорядоченные множества}
+\begin{note}{d8936dde76084fbfaa621700f57c7cd4}
+    Пусть \({ R \subseteq A \times A }\) --- отношение эквивалентности.
+    \begin{icloze}{2}Множество классов эквивалентности \({ R }\)\end{icloze} называется \begin{icloze}{1}фактор-множеством множества \({ A }\) по отношению \({ R }\).\end{icloze}
+\end{note}
+
+\begin{note}{e212c805b47c40c48f35bdbd5130db2b}
+    Бинарное отношение \({ R \subseteq \begin{icloze}{3}A \times A\end{icloze} }\) называется \begin{icloze}{2}называется отношением частичного порядка,\end{icloze} если \begin{icloze}{1}оно рефлексивно, антисимметрично и транзитивно.\end{icloze}
+\end{note}
+
+\begin{note}{2a3a6e89d50d41068b22bfd1c595b39a}
+    Отношение \begin{icloze}{2}частичного порядка\end{icloze} обычно обозначается символом \begin{icloze}{1}\({ \leqslant }\).\end{icloze}
+\end{note}
+
+\begin{note}{90faa1ffef764c7d808d6757d97dfa4b}
+    Множество \({ A }\) с \begin{icloze}{2}заданным на нём отношением частичного порядка\end{icloze} называется \begin{icloze}{1}частично упорядоченным множеством.\end{icloze}
+\end{note}
+
+\begin{note}{4157aa1725c244a58f3e32a92a0937bb}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Говорят, что \begin{icloze}{2}\({ x }\) и \({ y }\) сравнимы,\end{icloze} если \begin{icloze}{1}\({ x \leqslant y }\) или \({ y \leqslant x }\).\end{icloze}
+\end{note}
+
+\begin{note}{e75ca87d267f4673a53c15a0e7adcccb}
+    Бинарное отношение \({ R \subseteq \begin{icloze}{3}A \times A\end{icloze} }\) называется \begin{icloze}{2}отношением линейного порядка,\end{icloze} если \begin{icloze}{1}\({ R }\) --- отношение частного порядка и любые \({ x, y \in A }\) сравнимы.\end{icloze}
+\end{note}
+
+\begin{note}{79eba4d41c8b4aafa75c4a7c56268adb}
+    Множество \({ A }\) с \begin{icloze}{2}заданным на нём отношением линейного порядка\end{icloze} называется \begin{icloze}{1}линейно упорядоченным множеством.\end{icloze}
+\end{note}
+
+\begin{note}{e914e0e523ee44139c021af45c63a712}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Говорят, что \begin{icloze}{2}\({ x < y }\),\end{icloze} если \begin{icloze}{1}\({ x \leqslant y }\) и \({ x \neq y }\).\end{icloze}
+\end{note}
+
+\begin{note}{c264501d4458400e8b0073eac66b95fe}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Во избежание путаницы, отношение \begin{icloze}{2}\({ < }\)\end{icloze} называют отношением \begin{icloze}{1}строгого\end{icloze} порядка.
+\end{note}
+
+\begin{note}{ec44ba694d2541deaae260221aaafdc5}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Во избежание путаницы, отношение \begin{icloze}{2}\({ \leqslant }\)\end{icloze} называют отношением \begin{icloze}{1}нестрого\end{icloze} порядка.
+\end{note}
+
+\begin{note}{962a3744a3cc4153bd9317aab2cb46cb}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Мы читаем знак \({ < }\) как \begin{icloze}{1}<<меньше>>.\end{icloze}
+\end{note}
+
+\begin{note}{850b05ff29334d869b6a9c7e96eef9a9}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Мы читаем знак \({ \leqslant }\) как \begin{icloze}{1}<<меньше или равно>>.\end{icloze}
+\end{note}
+
+\begin{note}{0e5d3d3ef97541309f99f132d7d20073}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Тогда \begin{icloze}{2}\({ x \leqslant y }\)\end{icloze} \begin{icloze}{3}тогда и только тогда, когда\end{icloze} \begin{icloze}{2}\({ x < y }\)\end{icloze} или \begin{icloze}{1}\({ x = y }\).\end{icloze}
+\end{note}
+
+\begin{note}{9b75255301e143ba94b347847852b33f}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Является ли отношение \({ < }\) рефлексивным?
+
+    \begin{cloze}{1}
+        Нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{fcc7c32a4ca7455dbcd3260a478ecd97}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Является ли отношение \({ < }\) антирефлексивным?
+
+   \begin{cloze}{1}
+       Да.
+   \end{cloze}
+\end{note}
+
+\begin{note}{2d5bf110950f42b4bc343f143b82dfc8}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Является ли отношение \({ < }\) транзитивным?
+
+    \begin{cloze}{1}
+        Да.
+    \end{cloze}
+\end{note}
+
+\begin{note}{378780d3b9d74367a71bdf0fb3f67e9f}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество.
+    Является ли отношение \({ < }\) асимметричным?
+
+    \begin{cloze}{1}
+        Да.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f4e2e2fe9c8140a6b8fcda896dd5da35}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Тогда если \begin{icloze}{2}\({ x \leqslant y \leqslant x }\),\end{icloze} то \begin{icloze}{1}\({ x = y }\).\end{icloze}
+\end{note}
+
+\begin{note}{1ca369e310d2477782f82089ab512891}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Тогда если \({ x \leqslant y \leqslant x }\), то \({ x = y }\).
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Антисимметричность.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0af7ee8e9a5c4ad88db6ea371bee9527}
+    Пусть \({ (A, \leqslant) }\) --- частично упорядоченное множество, \({ x, y \in A }\).
+    Почему не стоит читать \({ x \leqslant y }\) как <<\({ x }\) не больше \({ y }\)>>?
+
+    \begin{cloze}{1}
+        \({ \overline{x \geqslant y} \:\:\not\!\!\!\implies x \leqslant y }\), если порядок не линеен.
+    \end{cloze}
+\end{note}
+
+\begin{note}{414d948920404634bec1fec01bd9b0b2}
+    Бинарное отношение \({ R \subseteq \begin{icloze}{3}A \times A\end{icloze} }\) называется \begin{icloze}{2}называется отношением предпорядка,\end{icloze} если \begin{icloze}{1}оно рефлексивно и транзитивно.\end{icloze}
+\end{note}
+
+\end{document}
