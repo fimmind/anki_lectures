@@ -643,4 +643,142 @@
     Точку условного экстремума так же называют \begin{icloze}{1}точкой относительного экстремума.\end{icloze}
 \end{note}
 
+\section{Лекция 28.09.22}
+\begin{note}{ffe18c64640a4c0c9009a7e054fc1af5}
+    Пусть \({ E \subset \mathbb R^{n} }\), \begin{icloze}{6}\({ m < n }\),\end{icloze} \({ f \in \begin{icloze}{4}C^{1}(E, \mathbb R)\end{icloze} }\), \({ \Phi \in \begin{icloze}{4}C^{1}(E, \mathbb R^{m})\end{icloze} }\), \({ a \in E }\), \begin{icloze}{5}\({ \operatorname{rk} \Phi'(a) = m }\).\end{icloze}
+    Тогда если \begin{icloze}{3}\({ a }\) --- условный экстремум \({ f }\), подчинённый \({ \Phi(x) = 0 }\),\end{icloze} то \begin{icloze}{2}\({ \exists \lambda_1, \ldots \lambda_m \in \mathbb R }\),\end{icloze} для которых
+    \begin{icloze}{1}
+        \[
+            \nabla f(a) = \sum_{k} \lambda_k \cdot \nabla \Phi_k(a).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{af9f952d67cd4db8a2bc302521d5f590}
+    Пусть \({ E \subset \mathbb R^{n} }\), \({ m < n }\), \({ f \in C^{1}(E, \mathbb R) }\), \({ \Phi \in C^{1}(E, \mathbb R^{m}) }\), \({ a \in E }\), \({ \operatorname{rk} \Phi'(a) = m }\).
+    Тогда если \({ a }\) --- условный экстремум \({ f }\), подчинённый \({ \Phi(x) = 0 }\), то \({ \exists \lambda_1, \ldots \lambda_m \in \mathbb R }\), для которых
+    \[
+        \nabla f(a) = \sum_{k} \lambda_k \cdot \nabla \Phi_k(a).
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Необходимое условие относительного экстремума\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{82213d3b2284465e9b85ecf7bcfe686b}
+    \begin{icloze}{2}Коэффициенты \({ \lambda_1, \ldots, \lambda_m }\)\end{icloze} из теоремы о \begin{icloze}{3}необходимом условии относительного экстремума\end{icloze} называются \begin{icloze}{1}множителями Лагранжа \({ f }\) в точке \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{832a0c560cf747c492a100c673d806cc}
+    В чём ключевая идея доказательства необходимого условия относительного экстремума?
+
+    \begin{cloze}{1}
+        Теорема о неявной функции для \({ \Phi(x, y) = 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{9434998277aa4d2d946b7fcdfecf36f8}
+    В доказательстве необходимого условия относительного экстремума мы построили неявную функцию \({ \psi }\) из уравнения \({ \Phi(x, y) = 0 }\).
+    Что дальше?
+
+    \begin{cloze}{1}
+        Рассмотреть \({ f(x, \psi(x)) - \lambda \Phi(x, \psi(x)) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{feb9eccc46494af296a7c929c6b4fd57}
+    В доказательстве необходимого условия относительного экстремума
+    \[
+        f(x, \psi(x))'_{x} \Big|_{\begin{icloze}{2}x^{0}\end{icloze}} = \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{038381f4bf64457da1a04c86b8ab0eb5}
+    Почему в доказательстве необходимого условия относительного экстремума
+    \[
+        f(x, \psi(x))'_{x} \Big|_{x^{0}} = 0 \quad \text{?}
+    \]
+
+    \begin{cloze}{1}
+        \({ x_{0} }\) --- т. экстремума \({ f(x, \psi(x)) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{63892565775440a9afc699c3c9ed5419}
+    В доказательстве необходимого условия относительного экстремума
+    \[
+        \Phi(x, \psi(x))'_{x} \Big|_{\begin{icloze}{2}x^{0}\end{icloze}} = \begin{icloze}{1}0.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b333ed4af4a44349b84e8aed99b46a18}
+    Почему в доказательстве необходимого условия относительного экстремума
+    \[
+        \Phi(x, \psi(x))'_{x} \Big|_{x^{0}} = 0 \quad \text{?}
+    \]
+
+    \begin{cloze}{1}
+        \({ \Phi(x, \psi(x)) = 0 }\) в окрестности \({ x^{0} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{082928b830ed48038502597330cc2d6b}
+    Чему равно \({ \lambda }\) из теоремы о необходимом условии относительного экстремума?
+
+    \begin{cloze}{1}
+        \({ \lambda^{T} = f'_{y}(a) \cdot \left( \Phi'_{y}(a) \right)^{-1} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c403eaa3be2d4d1dac52b422443e29b2}
+    В условиях теоремы о необходимом условии относительного экстремума отображение
+    \[
+        \begin{icloze}{3}(x, \lambda)\end{icloze} \mapsto \begin{icloze}{2}f(x) - \sum_{k=1}^{m} \lambda_k \Phi_k(x)\end{icloze}
+    \]
+    называется \begin{icloze}{1}функцией Лагранжа.\end{icloze}
+\end{note}
+
+\begin{note}{5568e5ccac324a0cb09e98b4ba65503b}
+    В условиях теоремы о необходимом условии относительного экстремума \begin{icloze}{2}функция Лагранжа\end{icloze} обозначается \begin{icloze}{1}\({ L(x, \lambda) }\).\end{icloze}
+\end{note}
+
+\begin{note}{113bd38c503e4af990386a637b1aa830}
+    Необходимое условие относительного экстремума в терминах функции Лагранжа примет вид
+    \begin{icloze}{1}
+        \[
+            \exists \lambda \in \mathbb R^{m} \quad \nabla L(a, \lambda) = 0.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{10647bd11e764a13b935dd15418841c6}
+    Пусть \({ N \triangleleft \mathbb R^{n} }\), \({ f }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    \({ f }\) называется \begin{icloze}{2}положительно определённой на \({ N }\),\end{icloze} если \begin{icloze}{1}\({ f|_{N} }\) положительна определена.\end{icloze}
+\end{note}
+
+\begin{note}{24a7c3a60b0144b78d3bdf59396178e9}
+    Пусть \({ N \triangleleft \mathbb R^{n} }\), \({ f }\) --- квадратичная форма в \({ \mathbb R^{n} }\).
+    \({ f }\) называется \begin{icloze}{2}отрицательно определённой на \({ N }\),\end{icloze} если \begin{icloze}{1}\({ f|_{N} }\) отрицательно определена.\end{icloze}
+\end{note}
+
+\begin{note}{6af1663b3c2f432eb8d779d75937d630}
+    Пусть в условиях теоремы \begin{icloze}{6}о необходимом условии относительного экстремума\end{icloze} \({ f \in \begin{icloze}{5}C^{2}(E)\end{icloze} }\) и \({ g \in \begin{icloze}{5}C^{2}(E)\end{icloze} }\)
+    Положим \({ L(x) = \begin{icloze}{4}L(x, \lambda)\end{icloze} }\), где \({ \lambda }\) --- \begin{icloze}{3}множители Лагранжа.\end{icloze}
+    Тогда если \begin{icloze}{1}\({ d_{a}^2L }\) положительно определён на \({ \ker d_{a}\Phi }\),\end{icloze} то \begin{icloze}{2}\({ a }\) --- точка условного минимума, подчинённая \({ \Phi(x) = \Phi(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{1abdb12e039f42bb991a4e08218e2bc0}
+    Пусть в условиях теоремы о необходимом условии относительного экстремума \({ f \in C^{2}(E) }\) и \({ g \in C^{2}(E) }\)
+    Положим \({ L(x) = L(x, \lambda) }\), где \({ \lambda }\) --- множители Лагранжа.
+    Тогда если \begin{icloze}{1}\({ d_{a}^2L }\) отрицательно определён на \({ \ker d_{a}\Phi }\),\end{icloze} то \begin{icloze}{2}\({ a }\) --- точка условного максимума, подчинённая \({ \Phi(x) = \Phi(a) }\).\end{icloze}
+\end{note}
+
+\begin{note}{18275ac96f4145228cd295901a3c4aeb}
+    Пусть в условиях теоремы о необходимом условии относительного экстремума \({ f \in C^{2}(E) }\) и \({ g \in C^{2}(E) }\)
+    Положим \({ L(x) = L(x, \lambda) }\), где \({ \lambda }\) --- множители Лагранжа.
+    Тогда если \begin{icloze}{1}\({ d_{a}^2 L }\) принимает на \({ \ker d_{a}\Phi }\) как положительные, так и отрицательные значения,\end{icloze} то \begin{icloze}{2}\({ f }\) не имеет в точке \({ a }\) условного экстремума, подчинённого \({ \Phi(x) = 0 }\).\end{icloze}
+\end{note}
+
 \end{document}
