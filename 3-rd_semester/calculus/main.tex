@@ -364,7 +364,7 @@
 \end{note}
 
 \begin{note}{e3d62c0a50b24f098a41c202d267ca75}
-    Пример отображения \({ 2 }\)-х переменных, для которого не верна формула Тейлора-Лагранжа.
+    Пример отображения \({ \mathbb R \to \mathbb R^2 }\), для которого не верна формула Тейлора-Лагранжа.
 
     \begin{cloze}{1}
         \({ x \mapsto (\cos x, \sin x) }\),\: \({ a = 0 }\),\: \({ b = 2\pi }\).
@@ -392,7 +392,7 @@
     \]
     где
     \[
-        M = \begin{icloze}{1}\max_{\left\lvert \alpha \right\rvert = s+1} \sup_{c \in \widetilde \Delta_{a,x}} \left\lVert \partial^{\alpha}f(c) \right\rVert < +\infty.\end{icloze}
+        M = \begin{icloze}{1}\max_{\left\lvert \alpha \right\rvert = s+1} \sup_{c \in \widetilde \Delta_{a,x}} \left\lVert \partial^{\alpha}f(c) \right\rVert\end{icloze} < \begin{icloze}{6}+\infty.\end{icloze}
     \]
 
     \begin{center}
@@ -455,7 +455,7 @@
     \[
         \begin{gathered}
             \begin{icloze}{3}f(x, y) = 0 \iff y = \psi(x)\end{icloze} \\
-            \forall (x, y) \in \begin{icloze}{3}V_{\delta}(x_0, y_0).\end{icloze}
+            \forall (x, y) \in \begin{icloze}{6}V_{\delta}(x_0, y_0).\end{icloze}
         \end{gathered}
     \]
 
@@ -596,7 +596,7 @@
     \[
         \begin{icloze}{1}
             \begin{bmatrix}
-                \frac{\partial^2 f}{\partial x_i \partial x_j}
+                \frac{\partial^2 f}{\partial x_i \partial x_j}(a)
             \end{bmatrix}
             \sim n \times n.
         \end{icloze}
@@ -606,6 +606,11 @@
 \begin{note}{56bf1e23f53c4cae8d62101295cb0a9b}
     Пусть \({ f : E \subset \begin{icloze}{3}\mathbb R^{2}\end{icloze} \to \begin{icloze}{3}\mathbb R\end{icloze} }\) дважды дифференцируема в точке \({ a }\), \begin{icloze}{4}\({ d_{a}f \equiv 0 }\).\end{icloze}
     Тогда если \begin{icloze}{2}\({ \det H(f) < 0 }\),\end{icloze} то \begin{icloze}{1}\({ f }\) не имеет экстремума в точке \({ a }\).\end{icloze}
+
+    \begin{center}
+        \tiny
+        (в терминах \({ H(f) }\))
+    \end{center}
 \end{note}
 
 \begin{note}{b78c95a2236a4edf964b8e2a29238dae}
