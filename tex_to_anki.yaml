@@ -16,9 +16,9 @@ decks:
     source_files:
       - 2-nd_semester/calculus/main.tex
   1664495799:
-    name: University::3-rd Semester::Descrete Maths
+    name: University::3-rd Semester::Discrete Maths
     source_files:
-      - 3-rd_semester/descrete_maths/main.tex
+      - 3-rd_semester/discrete_maths/main.tex
   1252100592:
     name: University::3-rd Semester::Calculus
     source_files:
