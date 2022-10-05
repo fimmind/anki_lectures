@@ -35,6 +35,10 @@ decks:
     name: Maths Self-Study::Understanding Analysis::1 The Real Numbers
     source_files:
       - understanding_analysis/1_the_real_numbers/main.tex
+  1294441403:
+    name: Maths Self-Study::Understanding Analysis::2 Sequences and Series
+    source_files:
+      - understanding_analysis/2_sequences_and_series/main.tex
   1309043917:
     name: University::2-nd Semester::Summer Seminar
     source_files:

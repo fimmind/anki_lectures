@@ -1,0 +1,130 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Properties of Infinite Series} % 2.7
+\begin{note}{51836e3c068e46888891ad60f449bd6}
+    Let \({ \sum_{k=1}^{\infty} a_k = A }\) and \({ c \in \mathbf{R} }\).
+    Under which condition does
+    \[
+        \sum_{k=1}^{\infty} ca_k
+    \]
+    converge?
+
+    \begin{cloze}{1}
+        Always.
+    \end{cloze}
+\end{note}
+
+\begin{note}{548101004aba462b8e81b2c4f7cbd1b9}
+    If \({ \sum_{k=1}^{\infty} a_k = A }\) and \({ c \in \mathbf{R} }\), then \({ \sum_{k=1}^{\infty} ca_k = \begin{icloze}{1}cA\end{icloze} }\).
+\end{note}
+
+\begin{note}{30607fca749d4ea9814ec7460a102865}
+    Let \({ \sum_{k=1}^{\infty} a_k = A }\) and \({ \sum_{k=1}^{\infty} b_k = B }\).
+    Under which condition does
+    \[
+        \sum_{k=1}^{\infty} a_k + b_k
+    \]
+    converge?
+
+    \begin{cloze}{1}
+        Always.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4f1064d2b18d4e889fa4e80010f532b1}
+    If \({ \sum_{k=1}^{\infty} a_k = A }\) and \({ \sum_{k=1}^{\infty} b_k = B }\), then
+    \[
+        \sum_{k=1}^{\infty} a_k + b_k = \begin{icloze}{1}A + B.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6795efea2a204bfb90bf19f3ac01f60a}
+    The series \({ \sum_{k=1}^{\infty} a_k }\) \begin{icloze}{5}converges\end{icloze} \begin{icloze}{4}if and only if,\end{icloze} given \begin{icloze}{3}\({ \epsilon > 0 }\),\end{icloze} there exists \begin{icloze}{2}an \({ N \in \mathbf{N} }\)\end{icloze} such that whenever \begin{icloze}{2}\({ n > m \geq N }\)\end{icloze} it follows that
+    \begin{icloze}{1}
+        \[
+            \left\lvert a_{m + 1} + \cdots + a_n \right\rvert < \epsilon.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f83e35fa266b4b71ae674a5ae53196aa}
+    The series \({ \sum_{k=1}^{\infty} a_k }\) converges if and only if, given \({ \epsilon > 0 }\), there exists an \({ N \in \mathbf{N} }\) such that whenever \({ n > m \geq N }\) it follows that
+    \[
+        \left\lvert a_{m + 1} + \cdots + a_n \right\rvert < \epsilon.
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Cauchy Criterion\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{255fd1a8d1ca40ddbe4706f396dcaad5}
+    What is the key idea in the proof of the Cauchy Criterion for Series?
+
+    \begin{cloze}{1}
+        Cauchy Criterion for the sequence of partial sums.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2ccccd666d0d4025a48baaa6ac297e88}
+    If the series \({ \sum_{k=1}^{\infty} a_k }\) \begin{icloze}{2}converges,\end{icloze} then \begin{icloze}{1}\({ (a_k) \to 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{e553a27c1b0240b4a08a2d2e1291a1c5}
+    If the series \({ \sum_{k=1}^{\infty} a_k }\) converges, then \({ (a_k) \to 0 }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Apply the Cauchy Criterion with \({ n = m + 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{0314d6d2761e4bd1b24b1b858e9c5086}
+    Assume \({ (a_k) }\) and \({ (b_k) }\) are sequences satisfying \begin{icloze}{3}\({ 0 \leq a_k \leq b_k }\) for all \({ k \in \mathbf{N} }\).\end{icloze}
+    If \({ \sum_{k=1}^{\infty} \begin{icloze}{1}b_k\end{icloze} }\) \begin{icloze}{2}converges,\end{icloze} then \({ \sum_{k=1}^{\infty} \begin{icloze}{1}a_k\end{icloze} }\) \begin{icloze}{2}converges.\end{icloze}
+\end{note}
+
+\begin{note}{03fddbcdb39340e0a421d24fe7298f2e}
+    Assume \({ (a_k) }\) and \({ (b_k) }\) are sequences satisfying \begin{icloze}{3}\({ 0 \leq a_k \leq b_k }\) for all \({ k \in \mathbf{N} }\).\end{icloze}
+    If \({ \sum_{k=1}^{\infty} \begin{icloze}{2}a_k\end{icloze} }\) \begin{icloze}{2}diverges,\end{icloze} then \({ \sum_{k=1}^{\infty} \begin{icloze}{1}b_k\end{icloze} }\) \begin{icloze}{2}diverges.\end{icloze}
+\end{note}
+
+\begin{note}{d6553b70220c4348a7c7692a58f91271}
+    Assume \({ (a_k) }\) and \({ (b_k) }\) are sequences satisfying \({ 0 \leq a_k \leq b_k }\) for all \({ k \in \mathbf{N} }\).
+    If \({ \sum_{k=1}^{\infty} b_k }\) converges, then \({ \sum_{k=1}^{\infty} a_k }\) converges.
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Comparison Test\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{7f40a1b03ff44e75af1465ca5e329e3e}
+    What is the key idea in the proof of the Comparison Test for Series?
+
+    \begin{cloze}{1}
+        Use the Cauchy Criterion explicitly.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f49c77a313a747e9b024dd5189511f35}
+    \[
+        \sum_{k=1}^{\infty} \frac{1}{k} = \begin{icloze}{1}\infty.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{184fe5e5e62b4c3f8a49c4ea6d26c240}
+    \[
+        \sum_{k=1}^{\infty} \frac{1}{k} = \begin{icloze}{1}\infty.\end{icloze}
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Observe \({ \frac{1}{k} \geqslant \frac{1}{2^{i}} }\) for every next \({ 2^{i - 1} }\) terms.
+    \end{cloze}
+\end{note}
+
+\end{document}
