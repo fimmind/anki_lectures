@@ -731,12 +731,46 @@
     Бинарную операцию \begin{icloze}{2}<<и>>\end{icloze} так же называют логистическим \begin{icloze}{1}умножением.\end{icloze}
 \end{note}
 
+\begin{note}{1c8c345204344de49b5b669a648c128d}
+    \begin{icloze}{2}Операция поэлементного умножения матриц\end{icloze} называется \begin{icloze}{1}произведением Адамара.\end{icloze}
+\end{note}
+
+\begin{note}{5510b762349a41cc87225739c6fe6dc0}
+    Пусть \({ A, B \in \mathbb R^{n \times m} }\).
+    \begin{icloze}{2}Произведение Адамара матриц \({ A }\) и \({ B }\)\end{icloze} обозначается \begin{icloze}{1}\({ A \circ B }\)\end{icloze} или \begin{icloze}{1}\({ A \odot B }\).\end{icloze}
+\end{note}
+
+\begin{note}{5054e224483f4cc28f2739f6fad9f517}
+    Пусть \({ R, S \subseteq A \times B }\) --- бинарные отношение.
+    \[
+        \begin{icloze}{2}\left\lVert R \cap S \right\rVert\end{icloze} = \begin{icloze}{1}\left\lVert R \right\rVert \circ \left\lVert S \right\rVert.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{93467a16ee87438cbc954b8b71d23aa4}
+    Пусть \({ R, S \subseteq A \times B }\) --- бинарные отношение.
+    \[
+        \begin{icloze}{2}\left\lVert R \cup S \right\rVert\end{icloze} = \begin{icloze}{1}\left\lVert R \right\rVert + \left\lVert S \right\rVert \quad \text{\tiny(с логистическим сложением).}\end{icloze}
+    \]
+\end{note}
+
 \begin{note}{1c75356f6fe44393ae1e2c195bed3c1e}
-    Пусть \({ R \subseteq A \times B }\) и \({ S \subseteq B \times C }\).
-    Тогда
+    Пусть \({ R \subseteq A \times B }\) и \({ S \subseteq B \times C }\) --- бинарные отношения.
     \[
         \begin{icloze}{2}\left\lVert R \circ S \right\rVert\end{icloze} = \begin{icloze}{1}\left\lVert R \right\rVert \cdot \left\lVert S \right\rVert \quad \text{\tiny(с логистическим сложением).}\end{icloze}
     \]
+\end{note}
+
+\begin{note}{525cce9b6e944f94911754eec1fc824b}
+    Пусть \({ R, S \subseteq A \times B }\) --- бинарные отношение.
+    \[
+        \begin{icloze}{2}R \subseteq S\end{icloze} \begin{icloze}{3}\iff\end{icloze} \begin{icloze}{1}\left\lVert R \right\rVert \leqslant \left\lVert S \right\rVert.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (в терминах матриц)
+    \end{center}
 \end{note}
 
 \begin{note}{1b250fddc61e44539e477e7d17458d9b}
@@ -744,9 +778,7 @@
     Тогда \({ R }\) \begin{icloze}{2}транзитивно\end{icloze} тогда и только тогда, когда
     \begin{icloze}{1}
         \[
-            \begin{gathered}
-                \left\lVert R \right\rVert^2 \leqslant \left\lVert R \right\rVert \quad \text{\tiny(с логистическим сложением).}
-            \end{gathered}
+            \left\lVert R \right\rVert^2 \leqslant \left\lVert R \right\rVert \quad \text{\tiny(с логистическим сложением).}
         \]
     \end{icloze}
 
@@ -769,6 +801,25 @@
 \begin{note}{b21c1b2e3c504807a89717a4205b3fdf}
     Пусть \({ A }\) --- множество.
     \begin{icloze}{2}Разбиение множества \({ A }\)\end{icloze} обозначается \begin{icloze}{1}\({ \langle A \rangle }\).\end{icloze}
+\end{note}
+
+\begin{note}{3d8bf9b65a4b4898be5460faaaecab86}
+    Пусть \({ R \subseteq A \times A }\) --- бинарное отношение.
+    \begin{icloze}{2}Транзитивным\end{icloze} замыканием \({ R }\) называют \begin{icloze}{1}наименьшее транзитивное отношение на \({ X }\), включающее \({ R }\).\end{icloze}
+\end{note}
+
+\begin{note}{08c79ddd7572454f9ecc2f3580a39674}
+    Пусть \({ R \subseteq A \times A }\) --- бинарное отношение.
+    Если \begin{icloze}{2}\({ R }\) транзитивно,\end{icloze} то транзитивное замыкание \({ R }\) есть \begin{icloze}{1}само \({ R }\).\end{icloze}
+\end{note}
+
+\begin{note}{e7b56866ed8e4192a45f157195f949e4}
+    Пусть \({ R \subseteq A \times A }\) --- бинарное отношение.
+    \begin{icloze}{3}Транзитивным сокращением \({ R }\)\end{icloze} называется \begin{icloze}{2}минимальное отношение \({ R' }\) на \({ X }\)\end{icloze} такое, что \begin{icloze}{1}транзитивное замыкание \({ R' }\) совпадает с транзитивным замыканием \({ R }\).\end{icloze}
+\end{note}
+
+\begin{note}{6de64f5b2a734fa0a32f7312d9f29346}
+    \begin{icloze}{3}Диаграмма Хáссе\end{icloze} --- это вид диаграмм, используемый для представления \begin{icloze}{1}конечного частично упорядоченного множества\end{icloze} в виде \begin{icloze}{2}графа его транзитивного сокращения.\end{icloze}
 \end{note}
 
 \end{document}
