@@ -2,7 +2,7 @@
 \input{../../prelude.tex}
 
 \begin{document}
-\section{2. Упорядоченные множества}
+\section{Эквивалентность и порядок}
 \begin{note}{f30a93a82cb7436dbf01a4f27b739d36}
     Каким одним требованием можно заменить симметричность и транзитивность в определении отношения эквивалентности?
 
@@ -320,6 +320,117 @@
 \begin{note}{e6a3453de9ae404f80ca583e6ea036c5}
     Пусть \({ X }\) --- частично упорядоченное множество и \begin{icloze}{2}\({ X }\) конечно.\end{icloze}
     Для любого \({ x \in X }\) найдётся максимальный элемент \begin{icloze}{1}\({ \geqslant x }\).\end{icloze}
+\end{note}
+
+\section{Изоморфизмы}
+\begin{note}{110d1d04fa2246daa69b785b7fd393fe}
+    Пусть \({ A, B }\) --- частично упорядоченные множества, \({ f : A \to B }\).
+    Отображение \({ f }\) называется \begin{icloze}{2}изоморфизмом,\end{icloze} если \begin{icloze}{1}оно сохраняет порядок.\end{icloze}
+\end{note}
+
+\begin{note}{13d514bd40fc4478a6ed3a4ab34ff195}
+    Пусть \({ A, B }\) --- частично упорядоченные множества.
+    Множества \({ A }\) и \({ B }\) называют \begin{icloze}{2}изоморфными,\end{icloze} если \begin{icloze}{1}существует изоморфизм \({ f : A \to B }\).\end{icloze}
+\end{note}
+
+\begin{note}{007687446bf044fb8b2643fb03f6dcd9}
+    Все частично упорядоченные множества разбиваются на классы изоморфных, называемых \begin{icloze}{1}порядковыми типами.\end{icloze}
+\end{note}
+
+\begin{note}{b680b5e72c204aad8c291c056457dc4d}
+    \begin{icloze}{1}Конечные линейно\end{icloze} упорядоченные множества \begin{icloze}{2}из одинакового числа элементов\end{icloze} \begin{icloze}{3}изоморфны.\end{icloze}
+\end{note}
+
+\begin{note}{5083f28c1c664d26a48aba53a9beae8c}
+    Конечные линейно упорядоченные множества из одинакового числа элементов изоморфны.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Построить изоморфизм в \({ \left\{ 1, 2, \ldots, n \right\} }\), начиная с наименьшего элемента.
+    \end{cloze}
+\end{note}
+
+\begin{note}{743cdca62182497686915562c74cf65d}
+    Вещественная последовательность называется \begin{icloze}{2}финитной,\end{icloze} если \begin{icloze}{1}все её члены, кроме конечного числа, равны \({ 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{fea26e4dd50b4a68ba7f6f90da06332b}
+    Множестве всех финитных последовательностей в \begin{icloze}{4}\({ \mathbb Z_+ }\)\end{icloze} с \begin{icloze}{3}заданным на нём покомпонентным порядком\end{icloze} изоморфно \begin{icloze}{2}\({ \mathbb N }\)\end{icloze} с отношением \begin{icloze}{1}<<быть делителем>>.\end{icloze}
+\end{note}
+
+\begin{note}{f5d322f891eb4f7797645163e5f45497}
+    Как изоморфизм частично упорядоченных множеств действует на наибольший элемент?
+
+    \begin{cloze}{1}
+        Переводит его в наибольший элемент.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2793f2d5da5d4b4397c20d874b1fc14e}
+    Пусть \({ A }\) --- частично упорядоченное множество.
+    \begin{icloze}{2}Изоморфизм \({ A \to A }\)\end{icloze} называется \begin{icloze}{1}автоморфизмом \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{5995cccf4e2848eebf953a18d27ff7cf}
+    Любой автоморфизм частично упорядоченного множества \({ \mathbb N }\) \begin{icloze}{1}является тождественным отображением.\end{icloze}
+\end{note}
+
+\begin{note}{9a1b8384b96b4c1b80082eaa74d708ad}
+    Любой автоморфизм частично упорядоченного множества \({ \mathbb N }\) является тождественным отображением.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        По индукции \({ f(n) = n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c0d051d05a0b4228902a6d0ea3506209}
+    Изоморфен ли \({ ([0, 1], \leqslant) }\) множеству \({ (\mathbb R, \leqslant) }\)?
+
+    \begin{cloze}{1}
+        Нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6e4e63c5d18f46dd9e164c78f193c40e}
+    Почему \({ ([0, 1], \leqslant) }\) не изоморфен \({ (\mathbb R, \leqslant) }\)?
+
+    \begin{cloze}{1}
+        В \({ \mathbb R }\) не максимального элемента.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9a8f1a6138c949ba91eee96998f166b7}
+    Изоморфно ли \({ (\mathbb Z, \leqslant) }\) множеству \({ (\mathbb Q, \leqslant) }\)?
+
+    \begin{cloze}{1}
+        Нет.
+    \end{cloze}
+\end{note}
+
+\begin{note}{87d5dfed83174bec88c290c54882ec3a}
+    Почему \({ (\mathbb Z, \leqslant) }\) не изоморфно \({ (\mathbb Q, \leqslant) }\)?
+
+    \begin{cloze}{1}
+        \({ \mathbb Q }\) плотно в \({ \mathbb R }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{38a9f34456fe49d897d1266a579abb34}
+    Изоморфны ли упорядоченные множества рациональных точек интервалов \({ (0, 1) }\) и \({ (0, \sqrt{2}) }\)?
+
+    \begin{cloze}{1}
+        Да.
+    \end{cloze}
+\end{note}
+
+\begin{note}{349e19c69cbf4e538962f2b5647c9ec8}
+    Упорядоченные множества рациональных точек интервалов \({ (0, 1) }\) и \({ (0, \sqrt{2}) }\) изоморфны.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Выбрать строго возрастающие последовательности, сходящиеся к \({ 1 }\) и к \({ \sqrt{2} }\), и построить кусочно-линейную функцию.
+    \end{cloze}
 \end{note}
 
 \end{document}
