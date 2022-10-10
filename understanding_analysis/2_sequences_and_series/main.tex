@@ -135,24 +135,24 @@
     A series is called \begin{icloze}{2}geometric\end{icloze} if it is of the form
     \begin{icloze}{1}
         \[
-            \sum_{k=1}^{\infty} ar^{k}.
+            \sum_{k=0}^{\infty} ar^{k}.
         \]
     \end{icloze}
 \end{note}
 
 \begin{note}{4d18a586f7754236bac47a23a54ede43}
-    The series \({ \sum_{k=1}^{\infty} ar^{k} }\) \begin{icloze}{2}converges\end{icloze} \begin{icloze}{3}if and only if\end{icloze} \begin{icloze}{1}\({ \left\lvert r \right\rvert < 1 }\).\end{icloze}
+    The series \({ \sum_{k=0}^{\infty} ar^{k} }\) \begin{icloze}{2}converges\end{icloze} \begin{icloze}{3}if and only if\end{icloze} \begin{icloze}{1}\({ \left\lvert r \right\rvert < 1 }\).\end{icloze}
 \end{note}
 
 \begin{note}{f7ab1e58f37b4580a558de06c51dc6f7}
     Given \({ \left\lvert r \right\rvert < 1 }\),
     \[
-        \sum_{k=1}^{\infty} ar^{k} = \begin{icloze}{1}\frac{a}{1 - r}.\end{icloze}
+        \sum_{k=0}^{\infty} ar^{k} = \begin{icloze}{1}\frac{a}{1 - r}.\end{icloze}
     \]
 \end{note}
 
 \begin{note}{c409ec230f6741b796ea4ef3e8813d9c}
-    Given \({ \left\lvert r \right\rvert < 1 }\), \({ \sum_{k=1}^{\infty} ar^{k} = \frac{a}{1 - r} }\).
+    Given \({ \left\lvert r \right\rvert < 1 }\), \({ \sum_{k=0}^{\infty} ar^{k} = \frac{a}{1 - r} }\).
     What is the key idea in the proof?
 
     \begin{cloze}{1}
@@ -161,7 +161,7 @@
 \end{note}
 
 \begin{note}{28dc84fd3d384adea7a15102e07c644a}
-    If \begin{icloze}{2}the series \({ \sum_{k=1}^{\infty} a_k }\) converges,\end{icloze} then \begin{icloze}{1}\({ \sum_{k=1}^{\infty} a_k }\) converges.\end{icloze}
+    If \begin{icloze}{2}the series \({ \sum_{k=1}^{\infty} \left\lvert a_k \right\rvert }\) converges,\end{icloze} then \begin{icloze}{1}\({ \sum_{k=1}^{\infty} a_k }\) converges.\end{icloze}
 
     \begin{center}
         \tiny
@@ -180,10 +180,22 @@
 \begin{note}{998d23f7cbbb49ed885b7ef2f62bb629}
     Let \({ (a_k) }\) be \begin{icloze}{4}a decreasing sequence\end{icloze} and \begin{icloze}{3}\({ (a_k) \to 0 }\).\end{icloze}
     Then
-    \[
-        \sum_{k=1}^{\infty} \begin{icloze}{2}(-1)^{n + 1}a_k\end{icloze}
-    \]
+    \begin{icloze}{2}
+        \[
+            \sum_{k=0}^{\infty} (-1)^{k}a_k
+        \]
+    \end{icloze}
     \begin{icloze}{1}converges.\end{icloze}
+\end{note}
+
+\begin{note}{5023b0a2f0ca4300bfa09b61e0ec0a9c}
+    \begin{icloze}{1}An alternating series\end{icloze} is a series of the form
+    \begin{icloze}{2}
+        \[
+            \sum_{k=0}^{\infty} (-1)^{k}a_k,
+        \]
+    \end{icloze}
+    where \begin{icloze}{3}all \({ a_k > 0 }\).\end{icloze}
 \end{note}
 
 \begin{note}{cb8249219a644a12b50a90701e47e548}
@@ -267,7 +279,16 @@
     In the proof, what do we show about \({ t_m - s_N }\)?
 
     \begin{cloze}{1}
-        \({ \left\lvert t_m - s_N \right\rvert < \varepsilon }\) due to the Cauchy Criterion.
+        \({ \left\lvert t_m - s_N \right\rvert < \varepsilon }\)
+    \end{cloze}
+\end{note}
+
+\begin{note}{6e8705bf5bd84118a85ac3eb8a1d5e28}
+    If a series converges absolutely, then any rearrangement of this series converges to the same limit.
+    In the proof, why is it that \({ \left\lvert t_m - s_N \right\rvert < \varepsilon }\)?
+
+    \begin{cloze}{1}
+        Due to the Cauchy Criterion.
     \end{cloze}
 \end{note}
 
@@ -276,7 +297,7 @@
     In the proof, how do you show \({ \left\lvert t_m - A \right\rvert < \varepsilon }\)?
 
     \begin{cloze}{1}
-        \({ \left\lvert t_m - s_N + s_N - A \right\rvert }\).
+        \({ \left\lvert t_m - s_N + s_N - A \right\rvert }\) and the triangle inequality.
     \end{cloze}
 \end{note}
 
