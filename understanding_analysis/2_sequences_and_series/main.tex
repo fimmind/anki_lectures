@@ -2,6 +2,160 @@
 \input{../../prelude.tex}
 
 \begin{document}
+\section{The Monotone Convergence Theorem and a First Look at Infinite Series} % 2.4
+\begin{note}{7f744b7eecb54041a6e188d2283abcff}
+    A sequence \({ (a_n) }\) is \begin{icloze}{2}increasing\end{icloze} if \begin{icloze}{1}\({ a_{n + 1} \geq a_n }\) for all \({ n \in \mathbf{N} }\).\end{icloze}
+\end{note}
+
+\begin{note}{cb73357863a14f808fcb79e9f2888e9d}
+    A sequence \({ (a_n) }\) is \begin{icloze}{2}decreasing\end{icloze} if \begin{icloze}{1}\({ a_{n + 1} \leq a_n }\) for all \({ n \in \mathbf{N} }\).\end{icloze}
+\end{note}
+
+\begin{note}{428c29af1f87467cba4605f856da5dc0}
+    A sequence \({ (a_n) }\) is \begin{icloze}{2}monotone\end{icloze} if \begin{icloze}{1}it is either increasing or decreasing.\end{icloze}
+\end{note}
+
+\begin{note}{f0effd26705b4fe2850675b4a8b69fa7}
+    If a sequence is \begin{icloze}{3}monotone\end{icloze} and \begin{icloze}{2}bounded,\end{icloze} then \begin{icloze}{1}it converges.\end{icloze}
+\end{note}
+
+\begin{note}{f04966660a1d453499de164d33c3efd9}
+    If a sequence is monotone and bounded, then it converges.
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Monotone Convergence Theorem\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{fe52926982cd479399d0e77cf6fbb8ae}
+    What is the key idea in the proof of the Monotone Convergence Theorem?
+
+    \begin{cloze}{1}
+        The limit equals to \({ \sup \left\{ a_n \mid n \in \mathbb N \right\} }\)
+    \end{cloze}
+\end{note}
+
+\begin{note}{b7b0d33916a74554bee0bb1e829b7a20}
+    Let \begin{icloze}{3}\({ (a_n) }\) be a sequence.\end{icloze}
+    \begin{icloze}{2}An infinite series\end{icloze} is
+    \begin{icloze}{1}
+        a formal expression of the form
+        \[
+            \sum_{n=1}^{\infty}  = b_1 + b_2 + b_3 + \cdots.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{024782c9319a441f91dfd2c8e8aac542}
+    Let \({ \sum_{n=1}^{\infty} a_n }\) be a series.
+    We define the corresponding \begin{icloze}{2}sequence of partial sums\end{icloze} by
+    \begin{icloze}{1}
+        \[
+            m \mapsto a_1 + a_2 + \cdots + a_m.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{56563c7563df42c0a111a49ad4ae24ae}
+    Let \({ \sum_{n=1}^{\infty} a_n }\) be a series.
+    \begin{icloze}{2}The sequence of partial sums\end{icloze} is usually denoted \begin{icloze}{1}\({ (s_m) }\).\end{icloze}
+\end{note}
+
+\begin{note}{dc59f9b31fff4dcb9113d42da885c946}
+    Let \({ \sum_{n=1}^{\infty} a_n }\) be a series.
+    We say that \begin{icloze}{2}\({ \sum_{n=1}^{\infty} a_n }\) converges to \({ A }\)\end{icloze} if \begin{icloze}{1}the sequence of partial sums converges to \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{356961ddcb85482c8155d43bd6d8061c}
+    Let \({ \sum_{n=1}^{\infty} a_n }\) be a series.
+    If \begin{icloze}{2}\({ \sum_{n=1}^{\infty} a_n }\) converges to \({ A }\),\end{icloze} we write
+    \begin{icloze}{1}
+        \[
+            \sum_{n=1}^{\infty} a_n = A.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{4819e0996d5d4eeb8ab8df01f58c8efe}
+    Does \({ \sum_{n=1}^{\infty} \frac{1}{n^2} }\) converge?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{64c293a1a2f74541ba8e3ffa23fb54b2}
+    \({ \sum_{n=1}^{\infty} \frac{1}{n^2} }\) converges.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        \({ \frac{1}{n^2} \leq \frac{1}{n(n - 1)} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cd5ca73daf014641b49c5445adcd69b5}
+    Does \({ \sum_{n=1}^{\infty} \frac{1}{n} }\) converge?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{184fe5e5e62b4c3f8a49c4ea6d26c240}
+    \({ \sum_{n=1}^{\infty} \frac{1}{n} }\) diverges.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Find a lower bound using powers of two.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4608dd8499934012aadc1209fb34ec1e}
+    \begin{icloze}{2}\({ \sum_{n=1}^{\infty} \frac{1}{n} }\)\end{icloze} is called \begin{icloze}{1}the harmonic series.\end{icloze}
+\end{note}
+
+\begin{note}{ccea4c33507e4d5f9387c996a8bb13ad}
+    Let \({ (a_n) }\) be \begin{icloze}{5}a decreasing sequence\end{icloze} and \begin{icloze}{4}\({ a_n \leq 0 }\).\end{icloze}
+    Then
+    \[
+        \begin{icloze}{2}\sum_{n=1}^{\infty} a_n \text{ converges}\end{icloze}
+        \begin{icloze}{3}\iff\end{icloze}
+        \begin{icloze}{1}\sum_{n=1}^{\infty} 2^{n} a_{2^{n}} \text{ converges.}\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{6}Cauchy Condensation Test\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{88287ba71bd545459ba16b4e2ca5cb69}
+    Let \({ (a_n) }\) be a decreasing sequence and \({ a_n \leq 0 }\).
+    Then
+    \[
+        \sum_{n=1}^{\infty} a_n \text{ converges} \iff \sum_{n=1}^{\infty} 2^{n} a_{2^{n}} \text{ converges.}
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Group the element of a partial sum in chunks of size \({ 2^{m} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7dfc9afff8a045caa6549458d3264c8d}
+    The series \({ \sum_{n=1}^{\infty} \frac{1}{n^{p}} }\) \begin{icloze}{2}converges\end{icloze} \begin{icloze}{3}if and only if\end{icloze} \begin{icloze}{1}\({ p > 1 }\).\end{icloze}
+\end{note}
+
+\begin{note}{66666197109243728959180963a362d4}
+    The series \({ \sum_{n=1}^{\infty} \frac{1}{n^{p}} }\) converges if and only if \({ p > 1 }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The Cauchy Condensation Test and the convergence of geometric series.
+    \end{cloze}
+\end{note}
+
 \section{Properties of Infinite Series} % 2.7
 \begin{note}{51836e3c068e46888891ad60f449bd6}
     Let \({ \sum_{k=1}^{\infty} a_k = A }\) and \({ c \in \mathbf{R} }\).
@@ -107,23 +261,6 @@
 
     \begin{cloze}{1}
         Use the Cauchy Criterion explicitly.
-    \end{cloze}
-\end{note}
-
-\begin{note}{f49c77a313a747e9b024dd5189511f35}
-    \[
-        \sum_{k=1}^{\infty} \frac{1}{k} = \begin{icloze}{1}\infty.\end{icloze}
-    \]
-\end{note}
-
-\begin{note}{184fe5e5e62b4c3f8a49c4ea6d26c240}
-    \[
-        \sum_{k=1}^{\infty} \frac{1}{k} = \infty.
-    \]
-    What is the key idea in the proof?
-
-    \begin{cloze}{1}
-        Observe \({ \frac{1}{k} \geqslant \frac{1}{2^{i}} }\) for every next \({ 2^{i - 1} }\) terms.
     \end{cloze}
 \end{note}
 
