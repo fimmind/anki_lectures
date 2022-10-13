@@ -61,6 +61,10 @@ decks:
     name: University::Logic and Algorithms::1 Introductory Set Theory
     source_files:
       - logic_and_algorithms/1_introductory_set_theory/main.tex
+  1529808785:
+    name: University::Logic and Algorithms::2 Languages and Caclulus
+    source_files:
+      - logic_and_algorithms/2_languages_and_calulus/main.tex
 
 
 model:

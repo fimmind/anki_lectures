@@ -1,0 +1,179 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Логика высказываний}
+\begin{note}{4105104fcc464b9f8c59bbd454c55018}
+    Высказывания могут быть \begin{icloze}{1}истинными\end{icloze} или \begin{icloze}{1}ложными.\end{icloze}
+\end{note}
+
+\begin{note}{de1b54d7432f42a488aa49e8895875f4}
+    Высказывания можно \begin{icloze}{2}соединять друг с другом\end{icloze} с помощью \begin{icloze}{1}<<логических связок>>.\end{icloze}
+\end{note}
+
+\begin{note}{efe0b8c83a7d42ba956a1aa0c2206d8b}
+    Логическая связка \begin{icloze}{2}<<\({ A }\) и \({ B }\)>>\end{icloze} называется \begin{icloze}{1}конъюнкцией.\end{icloze}
+\end{note}
+
+\begin{note}{f832b96c89b645348cd5bce12659be41}
+    Логическая связка \begin{icloze}{2}<<\({ A }\) и \({ B }\)>>\end{icloze} обозначается
+    \[
+        \begin{icloze}{1}A \& B\end{icloze} \qquad \begin{icloze}{1}A \land B.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{a974b0e29e724094ae11458fec237466}
+    Логическая связка \begin{icloze}{2}<<\({ A }\) или \({ B }\)>>\end{icloze} называется \begin{icloze}{1}дизъюнкцией.\end{icloze}
+\end{note}
+
+\begin{note}{6d584e09645042b781dbbfaac613fb5b}
+    Логическая связка \begin{icloze}{2}<<\({ A }\) или \({ B }\)>>\end{icloze} обозначается
+    \[
+        \begin{icloze}{1}A \lor B.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{71cf2d212d4e4515b861e0c05c459de9}
+    Логическая связка \begin{icloze}{2}<<не \({ A }\)>>\end{icloze} называется \begin{icloze}{1}отрицанием.\end{icloze}
+\end{note}
+
+\begin{note}{63977dd5c58c492eb2b405f32658fe6e}
+    Логическая связка \begin{icloze}{2}<<не \({ A }\)>>\end{icloze} обозначается
+    \[
+        \begin{icloze}{1}\lnot A\end{icloze} \qquad \begin{icloze}{1}\sim A\end{icloze} \qquad \begin{icloze}{1}\overline{A}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7974978120c7467e8052614ab9497071}
+    Логическая связка \begin{icloze}{2}<<из \({ A }\) следует \({ B }\)>>\end{icloze} называется \begin{icloze}{1}импликацией.\end{icloze}
+\end{note}
+
+\begin{note}{5332245f17ca45fc8a382edeafc3f5fd}
+    Логическая связка \begin{icloze}{2}<<из \({ A }\) следует \({ B }\)>>\end{icloze} обозначается
+    \[
+        \begin{icloze}{1}A \to B\end{icloze} \qquad \begin{icloze}{1}A \Rightarrow B\end{icloze} \qquad \begin{icloze}{1}A \supset B.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b3f6c41f719544a3836ef8c752c02311}
+    В импликации \({ A \to B }\) \begin{icloze}{2}высказывание \({ A }\)\end{icloze} называется \begin{icloze}{1}посылкой или антецедентом.\end{icloze}
+\end{note}
+
+\begin{note}{2f17f543a0fb4c1e872c5e894881a8d8}
+    В импликации \({ A \to B }\) \begin{icloze}{2}высказывание \({ B }\)\end{icloze} называется \begin{icloze}{1}заключением или консеквентом.\end{icloze}
+\end{note}
+
+\begin{note}{7ffade67cdfc4ba1916748d4d24eb205}
+    Значения \begin{icloze}{2}\textbf{И} (истина) и \textbf{Л} (ложь)\end{icloze} называют \begin{icloze}{1}истинностными значениями.\end{icloze}
+\end{note}
+
+\begin{note}{6104c0e89dc84b4082b7bf5b1034a41c}
+    Истинностное значение \textbf{И} так же обозначают \begin{icloze}{1}\textbf{T} или \({ 1 }\).\end{icloze}
+\end{note}
+
+\begin{note}{1ffd99464a964a2d802713627284de05}
+    Истинностное значение \textbf{Л} так же обозначают \begin{icloze}{1}\textbf{F} или \({ 0 }\).\end{icloze}
+\end{note}
+
+\begin{note}{3a7d57b46b5446cbb1879ca5a88f99f1}
+    Говорят, что высказывание имеет значение \begin{icloze}{2}\textbf{И},\end{icloze} если \begin{icloze}{1}оно истинно.\end{icloze}
+\end{note}
+
+\begin{note}{39190b33ebc64ffea127054a389ba2fe}
+    Говорят, что высказывание имеет значение \begin{icloze}{2}\textbf{Л},\end{icloze} если \begin{icloze}{1}оно ложно.\end{icloze}
+\end{note}
+
+\begin{note}{f195f78759bd493fabd6353285403ac6}
+    Высказывание \begin{icloze}{2}\({ A \land B }\)\end{icloze} истинно, если \begin{icloze}{1}оба высказывания \({ A }\) и \({ B }\) истинны.\end{icloze}
+\end{note}
+
+\begin{note}{4d34320fa4e049b3b9d25a44d54c51d6}
+    Высказывание \begin{icloze}{2}\({ A \lor B }\)\end{icloze} истинно, если \begin{icloze}{1}хотя бы одно из высказываний \({ A }\) и \({ B }\) истинно.\end{icloze}
+\end{note}
+
+\begin{note}{2dd24cf0c3d7432295ed7a72663db077}
+    Высказывание \begin{icloze}{2}\({ A \to B }\)\end{icloze} истинно, если \begin{icloze}{1}\({ A }\) ложно или \({ B }\) истинно.\end{icloze}
+\end{note}
+
+\begin{note}{a4c9e67aa6cd4603b5c54c110f4aa726}
+    Высказывание \begin{icloze}{2}\({ \lnot A }\)\end{icloze} истинно, если \begin{icloze}{1}\({ A }\) ложно.\end{icloze}
+\end{note}
+
+\begin{note}{62f4c5602b68482898cf2f25eee71998}
+    \begin{icloze}{2}Элементарные высказывания, из которых составляются более сложные высказывания,\end{icloze} называется \begin{icloze}{1}пропозициональными переменными.\end{icloze}
+\end{note}
+
+\begin{note}{50f80c87e0ce459fa19869447ca5cf1c}
+    \begin{icloze}{2}Пропозициональные переменные\end{icloze} будем обозначать \begin{icloze}{1}маленькими латинскими буквами.\end{icloze}
+\end{note}
+
+\begin{note}{e2ffb750b54545d9a36793717bd9f8c4}
+    \begin{icloze}{3}Множество пропозициональных формул\end{icloze} есть \begin{icloze}{2}минимальное надмножество множества пропозициональных переменных,\end{icloze} \begin{icloze}{1}замкнутое относительно логических связок.\end{icloze}
+\end{note}
+
+\begin{note}{652a82f3a2c04744b06854eb9802db27}
+    Замкнутость относительно каких связок требуется в определении множества пропозициональных формул?
+
+    \begin{cloze}{1}
+        <<не>>, <<и>>, <<или>> и импликация.
+    \end{cloze}
+\end{note}
+
+\begin{note}{49604013e544418bb20cd89b7548c5d4}
+    \[
+        \begin{icloze}{2}\mathbb B\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\left\{ 0, 1 \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{4ce7564004a54b05a70415e8feffcdb9}
+    \begin{icloze}{2}Отображения вида \({ \mathbb B^{n} \to \mathbb B }\)\end{icloze} называют \begin{icloze}{1}булевыми функциями \({ n }\) переменных.\end{icloze}
+\end{note}
+
+\begin{note}{366bad41e3824924af52e47078565094}
+    Пусть \({ \varphi }\) --- пропозициональная формула, \begin{icloze}{2}содержащая не более \({ n }\) пропозициональных переменных.\end{icloze}
+    Тогда \({ \varphi }\) задаёт \begin{icloze}{1}булеву функцию \({ n }\) переменных.\end{icloze}
+\end{note}
+
+\begin{note}{fcee92733caa4d679a755c4ee7b1d92d}
+    Пусть \({ \varphi }\) --- пропозициональная формула.
+    Как вычисляется значение соответствующей булевой функции?
+
+    \begin{cloze}{1}
+        Вместо пропозициональных переменных подставляются их истинностные значения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{fdf2b62e30ae48e2b0a0187aa9129100}
+    \begin{icloze}{2}Пропозициональные формулы, истинные при всех значениях их переменных,\end{icloze} называют \begin{icloze}{1}тавтологиями.\end{icloze}
+\end{note}
+
+\begin{note}{671a63ca209a42e49d5d782d1da8ff77}
+    Две пропозициональные формулы называют \begin{icloze}{2}эквивалентными,\end{icloze} если \begin{icloze}{1}они задают одну и ту же булеву функцию.\end{icloze}
+\end{note}
+
+\begin{note}{22583d6fdedc4b14b5ee74452624a641}
+    Обязана ли пропозициональная формула содержать все переменные, от которых зависит порождённая ей булева функция?
+
+    \begin{cloze}{1}
+        Не обязана.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3f428c34bf344a849efa7109edd09021}
+    Если пропозициональная формула содержит не все переменные, от которых зависит порождённая её булева функция, то \begin{icloze}{1}по некоторых аргументам эта функция постоянна.\end{icloze}
+\end{note}
+
+\begin{note}{0c628958376f4d8bb39bc8f93a28b81a}
+    Две формулы \({ \varphi }\) и \({ \psi }\) \begin{icloze}{2}эквивалентны\end{icloze} тогда и только тогда, когда
+    \begin{icloze}{1}
+        \[
+            (p \to q) \land (q \to p).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{1aedce40881448628c79eedd50b0e6cc}
+    \begin{icloze}{2}\({ (p \to q) \land (q \to p) }\)\end{icloze} сокращается как \begin{icloze}{1}\({ p \leftrightarrow q }\).\end{icloze}
+\end{note}
+
+\end{document}
