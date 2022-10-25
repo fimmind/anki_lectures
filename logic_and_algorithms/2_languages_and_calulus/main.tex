@@ -176,4 +176,140 @@
     \begin{icloze}{2}\({ (p \to q) \land (q \to p) }\)\end{icloze} сокращается как \begin{icloze}{1}\({ p \leftrightarrow q }\).\end{icloze}
 \end{note}
 
+\begin{note}{2e54de05c39b423989f92d177f66967d}
+    Используя сокращение \({ p \leftrightarrow q }\) можно записывать утверждения об эквивалентности в виде \begin{icloze}{1}тавтологий.\end{icloze}
+\end{note}
+
+\begin{note}{4f385dabf08045f9afc40ca97d97d8d1}
+    Первые три свойства конъюнкции и дизъюнкции.
+
+    \begin{cloze}{1}
+        Ассоциативность, коммутативность, дистрибутивность.
+    \end{cloze}
+\end{note}
+
+\begin{note}{142ee54823b14d4bad73e4e09dcfac3c}
+    Как утверждение о коммутативности конъюнкции записывается в виде тавтологии?
+
+    \begin{cloze}{1}
+        \({ (p \land q) \leftrightarrow (p \land p) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c93d5a120f0341749d62a3705aae96ab}
+    \[
+        \begin{icloze}{2}\lnot (p \land q)\end{icloze} \leftrightarrow \begin{icloze}{1}(\lnot p \lor \lnot q).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{577f39ecc78a42d498fd72413341bdeb}
+    \[
+        \begin{icloze}{2}\lnot (p \lor q)\end{icloze} \leftrightarrow \begin{icloze}{1}(\lnot p \land \lnot q).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{dc0dd2fdc0fe4e3d927f9c9938b1f4ed}
+    \[
+        \begin{gathered}
+            \lnot (p \land q) \leftrightarrow (\lnot p \lor \lnot q), \\
+            \lnot (p \lor q) \leftrightarrow (\lnot p \land \lnot q).
+        \end{gathered}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Законы Де Моргана\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{fc8341e166fb4ed3a69456e055f57d8c}
+    \[
+        (p \lor (p \land q)) \leftrightarrow \begin{icloze}{1}p.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{79971beeb5c749c0aa731ff75be7c184}
+    \[
+        (p \land (p \lor q)) \leftrightarrow \begin{icloze}{1}p.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{74277840f9f74c64a3570075bf441dd3}
+    \begin{gather*}
+        (p \lor (p \land q)) \leftrightarrow p,
+        (p \land (p \lor q)) \leftrightarrow p.
+    \end{gather*}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Законы поглощения\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{b0470e6ee152460e85f6765609b9d4ed}
+    \[
+        \begin{icloze}{2}(p \to q)\end{icloze} \leftrightarrow \begin{icloze}{1}(\lnot q \to \lnot p).\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{3}Правило контрапозиции\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{e7790b37774d4e06845510cd77932583}
+    \[
+        \lnot \lnot p \leftrightarrow \begin{icloze}{1}p.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cc36fc9a7d8945799fdc56d9124ce34b}
+    \[
+        \lnot \lnot p \leftrightarrow p.
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Снятие двойного отрицания\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{12216d5d3e55466898f2f6ea416667e2}
+    Пусть две пропозициональные формулы эквивалентны. Что произойдёт, если заменить все \({ \land }\) на \({ \lor }\) и наоборот.
+
+    \begin{cloze}{1}
+        Они останутся эквивалентными.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b89ed5bfb55a4cd190ae423d6659bb18}
+    Пусть две пропозициональные формулы эквивалентны. Если заменить все \({ \land }\) на \({ \lor }\) и наоборот, то формулы останутся эквивалентными.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Добавить везде отрицание через законы Де Моргана.
+    \end{cloze}
+\end{note}
+
+\begin{note}{95d2cc9c35bc48638505c9c8969657e9}
+    \begin{icloze}{2}Префиксная\end{icloze} форма записи пропозициональных формул называется \begin{icloze}{1}польской записью.\end{icloze}
+\end{note}
+
+\begin{note}{b83adc1541294949a122d22e679e1d56}
+    \begin{icloze}{2}Постфиксная\end{icloze} форма записи пропозициональных формул называется \begin{icloze}{1}обратной польской записью.\end{icloze}
+\end{note}
+
+\begin{note}{7d133f61d12048fd912eb4388951b4c0}
+    Порядок действий в польской нотации \begin{icloze}{1}восстанавливается однозначно.\end{icloze}
+\end{note}
+
+\begin{note}{06a383a050d64e979b6880df7567db76}
+    Порядок действий в польской нотации восстанавливается однозначно.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Показать однозначность разделения аргументов индукцией по построению.
+    \end{cloze}
+\end{note}
+
 \end{document}
