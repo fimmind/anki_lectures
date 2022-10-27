@@ -1,0 +1,125 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Uniform Convergence of a Sequence of Functions} % 6.2
+\begin{note}{1bf1a79b9eba47cf852e1a9c7468c5f7}
+    Let \({ (f_n) }\) be \begin{icloze}{1}a sequence of function on a set \({ A }\).\end{icloze}
+    We say \begin{icloze}{3}\({ \left( f_n \right) }\) converges pointwise on \({ A }\) to a function \({ f }\)\end{icloze} if
+    \begin{icloze}{2}
+        for all \({ x \in A }\)
+        \[
+            \Big(f_n(x)\Big) \underset{n \to \infty}{\longrightarrow} f(x).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f11dc20a5619424cafc97ab1b4d64b5f}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    If \begin{icloze}{2}\({ (f_n) }\) converges pointwise on \({ A }\) to \({ f }\),\end{icloze} we write
+    \[
+        \begin{icloze}{1}f_n \to f\end{icloze} \quad \text{or} \quad \begin{icloze}{1}\lim_{n \to \infty} f_n = f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{6f3f051b9e0741dcbd85037d47c4fd19}
+    Let \({ f_n(x) = \frac{x^2 + nx}{n} }\).
+    \[
+        \lim_{n \to \infty} f_n(x) = \begin{icloze}{1}x.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3c7731c6b70a4c28972a5ea2e88a1e5f}
+    Let \({ f_n(x) = x^{n} }\),\: \({ f_n : [0, 1] \to \mathbb R }\).
+    \[
+        \lim_{n \to \infty} f_n(x) =
+        \begin{icloze}{1}
+            \begin{cases}
+                0 & \text{for } 0 \leq x < 1, \\
+                1 & \text{for } x = 1.
+            \end{cases}
+        \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7218c9c8b0f04d4887dc2345da75c6c6}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    We say \begin{icloze}{2}\({ (f_n) }\) converges uniformly on \({ A }\) to a function \({ f }\)\end{icloze} if
+    \begin{icloze}{1}
+        \[
+            \begin{gathered}
+                \forall \epsilon > 0  \quad \exists N \in \mathbf{N} \quad \forall n \geq N \\
+                \left\lvert f_n - f \right\rvert < \epsilon.
+            \end{gathered}
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{77ef924775b2453cb303b726f3081917}
+    What is the key distinction between the definitions of pointwise and uniform convergences of a sequence of functions?
+
+    \begin{cloze}{1}
+        The dependence of \({ N }\) on \({ x }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{42d2e1017eac4382878c195aa5a4c54d}
+    What is the visual behind the uniform convergence of a sequence of functions?
+
+    \begin{cloze}{1}
+        Eventually every \({ f_n }\) is completely contained in the \({ \epsilon }\)-strip.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1b59f18d7ccb47829cf7b7ea7576318c}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    \begin{icloze}{3}\({ f_n \to f }\) uniformly\end{icloze} \begin{icloze}{4}if and only if\end{icloze}
+    \[
+        \begin{gathered}
+            \begin{icloze}{1}\forall \varepsilon > 0 \quad \exists N \in \mathbf{N} \quad \forall m, n \geq N\end{icloze}
+            \\
+            \begin{icloze}{2}\left\lvert f_n - f_m \right\rvert < \varepsilon.\end{icloze}
+        \end{gathered}
+    \]
+\end{note}
+
+\begin{note}{2b9e4671775a43e9aa4a6b4d581b1658}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    Then \({ f_n \to f }\) uniformly if and only if
+    \[
+        \begin{gathered}
+            \forall \varepsilon > 0 \quad \exists N \in \mathbf{N} \quad \forall m, n \geq N \\
+            \left\lvert f_n - f_m \right\rvert < \varepsilon.
+        \end{gathered}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Cauchy Criterion\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{baab958475694fc08316e2031a57fa58}
+    Let \({ f_n \to f }\) on a set \({ A }\) and \({ c \in A }\).
+    If \begin{icloze}{3}the convergence is uniform\end{icloze} and \begin{icloze}{2}all \({ f_n }\) are continuous at \({ c }\),\end{icloze} then \begin{icloze}{1}\({ f }\) is continuous at \({ c }\).\end{icloze}
+\end{note}
+
+\begin{note}{a026cf3ddb2f4d5b9a94b36b2bc20ef9}
+    Let \({ f_n \to f }\) on a set \({ A }\) and \({ c \in A }\).
+    If the convergence is uniform and all \({ f_n }\) are continuous at \({ c }\), then \({ f }\) is continuous at \({ c }\).
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{1}Continuous Limit Theorem\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{5fd08fca82504ff0af82d320da351ff7}
+    What is the key idea in the proof of the Continuous Limit Theorem for a series of functions?
+
+    \begin{cloze}{1}
+        Triple triangle inequality after adding and subtracting \({ f_N }\).
+    \end{cloze}
+\end{note}
+
+\end{document}

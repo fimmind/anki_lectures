@@ -39,6 +39,10 @@ decks:
     name: Maths Self-Study::Understanding Analysis::2 Sequences and Series
     source_files:
       - understanding_analysis/2_sequences_and_series/main.tex
+  1379575756:
+    name: Maths Self-Study::Understanding Analysis::6 Sequences and Series of Functions
+    source_files:
+      - understanding_analysis/6_sequences_and_series_of_functions/main.tex
   1309043917:
     name: University::2-nd Semester::Summer Seminar
     source_files:
