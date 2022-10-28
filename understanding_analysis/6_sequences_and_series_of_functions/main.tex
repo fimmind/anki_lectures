@@ -55,6 +55,18 @@
     \end{icloze}
 \end{note}
 
+% Lecture 26.10.22 {{{
+\begin{note}{c80f9e6c9feb486fb69c66c740b4fa7b}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    If \begin{icloze}{2}\({ (f_n) }\) converges uniformly on \({ A }\) to \({ f }\),\end{icloze} we write
+    \begin{icloze}{1}
+        \[
+            f_n \rightrightarrows f.
+        \]
+    \end{icloze}
+\end{note}
+% }}}
+
 \begin{note}{77ef924775b2453cb303b726f3081917}
     What is the key distinction between the definitions of pointwise and uniform convergences of a sequence of functions?
 
@@ -71,9 +83,35 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{0c853e2f4ed04acf9dae0b00c1a751f3}
+    Which is stronger, uniform or pointwise convergence?
+
+    \begin{cloze}{1}
+        Uniform convergence is stronger.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ed7804cf8d4d48d5b0efb426d130fb52}
+    Uniform convergence implies \begin{icloze}{1}pointwise convergence.\end{icloze}
+\end{note}
+
+\begin{note}{c9b4c187b4d54a78a9500289aa5899d0}
+    Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
+    \[
+        \begin{icloze}{2}f_n \rightrightarrows f\end{icloze}
+        \quad \begin{icloze}{3}\iff\end{icloze} \quad
+        \begin{icloze}{1}\sup |f_n - f| \underset{n \to \infty}{\longrightarrow} 0.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (in terms of \({ \sup }\))
+    \end{center}
+\end{note}
+
 \begin{note}{1b59f18d7ccb47829cf7b7ea7576318c}
     Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
-    \begin{icloze}{3}\({ f_n \to f }\) uniformly\end{icloze} \begin{icloze}{4}if and only if\end{icloze}
+    \begin{icloze}{3}Then \({ f_n \rightrightarrows f }\)\end{icloze} \begin{icloze}{4}if and only if\end{icloze}
     \[
         \begin{gathered}
             \begin{icloze}{1}\forall \varepsilon > 0 \quad \exists N \in \mathbf{N} \quad \forall m, n \geq N\end{icloze}
@@ -85,7 +123,7 @@
 
 \begin{note}{2b9e4671775a43e9aa4a6b4d581b1658}
     Let \({ (f_n) }\) be a sequence of function on a set \({ A }\).
-    Then \({ f_n \to f }\) uniformly if and only if
+    Then \({ f_n \rightrightarrows f }\) if and only if
     \[
         \begin{gathered}
             \forall \varepsilon > 0 \quad \exists N \in \mathbf{N} \quad \forall m, n \geq N \\
@@ -121,5 +159,15 @@
         Triple triangle inequality after adding and subtracting \({ f_N }\).
     \end{cloze}
 \end{note}
+
+% Lecture 26.10.22 {{{
+\begin{note}{06425162bee447479d3a4f5c71c9cf2a}
+    Let \({ f_n \to f }\) on a set \({ A }\) and \({ c \in A }\).
+    If \begin{icloze}{1}the convergence is uniform and all \({ f_n }\) are continuous at \({ c }\),\end{icloze} then
+    \[
+        \lim_{x \to c} \lim_{n \to \infty} f_n(x) = \begin{icloze}{2}\lim_{n \to \infty} \lim_{x \to c} f_n(x).\end{icloze}
+    \]
+\end{note}
+% }}}
 
 \end{document}
