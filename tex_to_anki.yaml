@@ -54,7 +54,11 @@ decks:
   1439356338:
     name: Maths Self-Study::Abstract Algebra::1 Introduction to Groups
     source_files:
-      - ./abstract_algebra/introduction_to_groups/main.tex
+      - abstract_algebra/introduction_to_groups/main.tex
+  1852091702:
+    name: Maths Self-Study::Abstract Algebra::2 Subgroups
+    source_files:
+      - abstract_algebra/subgroups/main.tex
   1736233271:
     name: University::Logic and Algorithms
     description: |
