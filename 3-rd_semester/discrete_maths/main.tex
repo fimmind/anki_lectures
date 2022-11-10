@@ -926,4 +926,116 @@
     \]
 \end{note}
 
+\section{Семинар 09.11.22}
+\begin{note}{d782cd98cdeb44098d0d1c31a6912d8d}
+    Кратко булев набор \({ (\alpha_1, \alpha_2, \ldots, \alpha_n) }\) обозначается \begin{icloze}{1}\({ \widetilde \alpha ^{n} }\)\end{icloze} или \begin{icloze}{1}\({ \widetilde \alpha }\).\end{icloze}
+\end{note}
+
+\begin{note}{b4eabdff1da9430caa51dea1f7973ebb}
+    \begin{icloze}{2}Множество всех двоичных наборов длины \({ n }\)\end{icloze} называют \begin{icloze}{1}\({ n }\)-мерным булевым кубом.\end{icloze}
+\end{note}
+
+\begin{note}{ae679a4256e04958a9d0d03ce4b174a2}
+    \begin{icloze}{2}\({ n }\)-мерный булев куб\end{icloze} обозначается \begin{icloze}{1}\({ B^{n} }\)\end{icloze} или \begin{icloze}{1}\({ E_2^{n} }\).\end{icloze}
+\end{note}
+
+\begin{note}{c06059c4d3014e8f8d7762ecb2e7fb4e}
+    Пусть \({ \widetilde \alpha, \widetilde \beta \in B^{n} }\).
+    \begin{icloze}{2}Расстоянием Хэмминга между \({ \widetilde \alpha^{n} }\) и \({ \widetilde \beta^{n} }\)\end{icloze} называется
+    \begin{icloze}{1}число координат, в которых наборы \({ \widetilde \alpha }\) и \({ \widetilde \beta }\) различны.\end{icloze}
+\end{note}
+
+\begin{note}{4b632fb9309f40b5b4286d3acbc0f06d}
+    Пусть \({ \widetilde \alpha, \widetilde \beta \in B^{n} }\).
+    \begin{icloze}{2}Расстояние Хэмминга между \({ \widetilde \alpha }\) и \({ \widetilde \beta }\)\end{icloze} обозначается \begin{icloze}{1}\({ \rho(\widetilde \alpha, \widetilde \beta) }\).\end{icloze}
+\end{note}
+
+\begin{note}{37fb9e894285459ea68b457c8ce5d2d3}
+    Булевы наборы \({ \widetilde \alpha^{n} }\) и \({ \widetilde \beta^{n} }\) называются \begin{icloze}{2}соседними,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \rho(\widetilde \alpha, \widetilde \beta) = 1.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{96ae235391374f19821a21b56b6d8b98}
+    Булевы наборы \({ \widetilde \alpha^{n} }\) и \({ \widetilde \beta^{n} }\) называются \begin{icloze}{2}противоположными,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            \rho(\widetilde \alpha, \widetilde \beta) = n.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{463c6576cc6b4f2cb06d5c75b36c3db1}
+    \begin{icloze}{2}Множество всех булевых функций, зависящих от переменных \({ x_1, \ldots, x_n }\)\end{icloze} будем обозначать через
+    \begin{icloze}{1}
+        \[
+            P_2(X^{n}).
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{d4d14bf7854d445e80552d7c67d03d4f}
+    \[
+        \left\lVert P_2(X^{n}) \right\rVert = \begin{icloze}{1}2^{2^{n}}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{152863b499e64f64b2374c749fbde8ad}
+    \begin{icloze}{1}Константы \({ 0, 1 }\)\end{icloze} являются \begin{icloze}{2}нульместными\end{icloze} булевыми функциями.
+\end{note}
+
+\begin{note}{a0b4e4b264844402aed619c4fd37ca24}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    Что есть \({ T(f) }\)?
+
+    \begin{cloze}{1}
+        Таблица, в которой слева --- значения аргументов, справа --- значения функции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1122c8a455b64cf789b394df752b821e}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    Что есть \({ \Pi_{k,n-k}(f) }\)?
+
+    \begin{cloze}{1}
+        Таблица, в которой слева --- значения \({ k }\) аргументов, сверху --- значения остальных аргументов, на пересечении --- значение функции.
+    \end{cloze}
+\end{note}
+
+\begin{note}{53de4b3157f34550908c2cc6c8752a37}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    Что есть \({ N_{f} }\)?
+
+    \begin{cloze}{1}
+        Множество наборов \({ \widetilde \alpha }\), для которых \({ f(\widetilde \alpha) = 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ec43c333201b45f28e9a03f6a2828c27}
+    Как в булева функция задаётся в виде вектора значений?
+
+    \begin{cloze}{1}
+        Значения функции в лексикографическом порядке следования наборов аргументов.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d5f6af188d8a41b2a3a644065c3ffa60}
+    Логическая операция \begin{icloze}{2}<<не-и>>\end{icloze} так же называется \begin{icloze}{1}штрихом Шеффера.\end{icloze}
+\end{note}
+
+\begin{note}{5cb3b093852847ad992d8f92afed8778}
+    В булевой алгебре, \begin{icloze}{2}штрих Шеффера\end{icloze} обозначается \begin{icloze}{1}\({ x_1 \mid x_2 }\).\end{icloze}
+\end{note}
+
+\begin{note}{ec1d6d17cbb045b8abb57d404f0e5314}
+    Логическая операция \begin{icloze}{2}<<не-или>>\end{icloze} так же называется \begin{icloze}{1}стрелкой Пирса.\end{icloze}
+\end{note}
+
+\begin{note}{5bc24294b87949fe93f07f9db9363cc5}
+    В булевой алгебре, \begin{icloze}{2}стрелка Пирса\end{icloze} обозначается \begin{icloze}{1}\({ x_1 \downarrow x_2 }\).\end{icloze}
+\end{note}
+
 \end{document}
