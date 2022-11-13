@@ -268,4 +268,115 @@
     Then \({ f(x + \frac{1}{n}) }\) \begin{icloze}{1}converges uniformly to \({ f }\).\end{icloze}
 \end{note}
 
+\section{Uniform Convergence and Differentiation} % 6.3
+\begin{note}{37f46dbb09f54423a835e842d402ee19}
+    What sequence is considered in the Differentiable Limit Theorem?
+
+    \begin{cloze}{1}
+        A sequence of differentiable functions that converges point\-wise on a closed interval.
+    \end{cloze}
+\end{note}
+
+\begin{note}{19574e41800e43678628e78581f801cc}
+    When applying the Differentiable Limit Theorem, is it necessary for the limit to be differentiable?
+
+    \begin{cloze}{1}
+        No, this is one of the implications.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5ef400e26d2541e589faa672492059bf}
+    When do we conclude something form the Differentiable Limit Theorem?
+
+    \begin{cloze}{1}
+        When the derivatives converges uniformly.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f7da48c586d2457baad72d900c07defd}
+    What do we conclude from The Differentiable Limit Theorem?
+
+    \begin{cloze}{1}
+        The limit \({ f }\) is differentiable and \({ f' = \lim f'_n }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{61acf9aeed834980a9dbaa77746b89e0}
+    Let \({ f_n \to f }\) on \({ [a, b] }\) and each \({ f_n }\) is differentiable.
+    What do we know about \({ f }\) if \({ f'_n \to g }\)?
+
+    \begin{cloze}{1}
+        Nothing.
+    \end{cloze}
+\end{note}
+
+\begin{note}{63a1ccb4818a4cd281f9b4d9513500a0}
+    Let \({ f_n \to f }\) on \({ [a, b] }\) and each \({ f_n }\) is differentiable.
+    What do we know about \({ f }\) if \({ f'_n \rightrightarrows g }\)?
+
+    \begin{cloze}{1}
+        \({ f }\) is differentiable and \({ f' = g }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a720c08c553f46a0b0423c46f4c19a2e}
+    What is the key idea in the proof of the Differentiable Limit Theorem?
+
+    \begin{cloze}{1}
+        Rewrite the limit's derivative by definition.
+    \end{cloze}
+\end{note}
+
+\begin{note}{31222913007d4ceda945e1a21642c876}
+    In the proof of the Differentiable Limit Theorem, how do you find an upper bound for
+    \[
+        \left\lvert \frac{f(x + h) - f(x)}{h} - g(x) \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        Expand it using the triple triangle inequality involving \({ f_N }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{d239aa3eedd346a69139a5a8b1d94ce7}
+    In the proof of the Differentiable Limit Theorem, how do you choose \({ N }\)?
+
+    \begin{cloze}{1}
+        By the Cauchy Criterion for \({ f'_n \rightrightarrows g }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{70bbcff5bceb49c7b0abb25a8ab9be35}
+    In the proof of the Differentiable Limit Theorem, how do you find an upper bound for
+    \[
+        \left\lvert f'_N(x) - g(x) \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        Take the limit of the inequality from the Cauchy Criterion.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee6b7ee23d0a48a8a32afe978be50a7d}
+    In the proof of the Differentiable Limit Theorem, how do you find an upper bound for
+    \[
+        \left\lvert \frac{f_N(x + h) - f_N(x)}{h} - f'_N(x) \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        Pick \({ \delta }\) by the definition of differentiability of \({ f_N }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cdb10b03a9254c5abfe796106c1d3e9b}
+    In the proof of the Differentiable Limit Theorem, how do you find an upper bound for
+    \[
+        \left\lvert \frac{f(x + h) - f(x)}{h} - \frac{f_{N}(x + h) - f_N(x)}{h} \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        The Mean Value Theorem for \({ f_N - f_m }\) and make \({ m \to \infty }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
