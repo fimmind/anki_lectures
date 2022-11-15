@@ -1081,6 +1081,10 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{811fe08112ea4d4184e59731f1744d49}
+    В алгебре логики, \begin{icloze}{2}сложение по модулю \({ 2 }\)\end{icloze} обозначается \begin{icloze}{1}\({ \oplus }\).\end{icloze}
+\end{note}
+
 \section{Булевы алгебры}
 \begin{note}{20f3d9e66cae48b4872cde6c9ed57d3a}
     Что есть верхняя граница в контексте произвольного частично упорядоченного множества?
@@ -1293,6 +1297,75 @@
     \begin{cloze}{1}
         Показать, что правая часть является дополнением по определению.
     \end{cloze}
+\end{note}
+
+\begin{note}{d7959d4251d34780bf02493d717f2c6a}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра,\: \({ f, g : X^{n} \to X }\).
+    Функции \({ f }\) и \({ g }\) называются взаимно двойственными, если
+    \[
+        f(x_1, \ldots, x_n) = \overline{g(\overline{x_1}, \ldots, \overline{x_n})}.
+    \]
+\end{note}
+
+\begin{note}{13cfa6ef0b5649518e5f73d626669239}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра, \({ f : X^{n} \to X }\).
+    \begin{icloze}{2}Функция, двойственная к \({ f }\),\end{icloze} обозначается \begin{icloze}{1}\({ f^* }\).\end{icloze}
+\end{note}
+
+\begin{note}{dd63d9bebef6405bad499b8ac612b3d2}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра, \({ f : X^{n} \to X }\).
+    \[
+        (f^*)^* = \begin{icloze}{1}f.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{f46b68627d9a4a49ae7759f86e1198b1}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра, \({ f : X^{n} \to X }\).
+    Функция \({ f }\) называется \begin{icloze}{1}самодвойственной,\end{icloze} если \begin{icloze}{2}\({ f^* = f }\).\end{icloze}
+\end{note}
+
+\begin{note}{f94e35db4a9047a7bee032a5cae511d0}
+    Пусть \({ f : B^{n} \to B }\).
+    Если
+    \[
+        f = (\alpha_1, \ldots, \alpha_{2^{n}}),
+    \]
+    то
+    \[
+        f^* = \begin{icloze}{1}(\bar \alpha_{2^{n}}, \ldots, \bar \alpha_1).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{cdf74506714e476ca5dfe2e59883d032}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра. \({ \mathbf{0}^* = \begin{icloze}{1}\mathbf{1}\end{icloze} }\).
+\end{note}
+
+\begin{note}{7a361ce9cbe84f77b236a38d96ee29a6}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра. \({ \mathbf{1}^* = \begin{icloze}{1}\mathbf{0}\end{icloze} }\).
+\end{note}
+
+\begin{note}{a83c28cd41a247e0905cb9b46bc30c39}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра. \({ \land^* = \begin{icloze}{1}\lor\end{icloze} }\).
+\end{note}
+
+\begin{note}{32ec500412874f4cb81569a5483da5c9}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра. \({ \lor^* = \begin{icloze}{1}\land\end{icloze} }\).
+\end{note}
+
+\begin{note}{1ed5cffea17343ef9953a3bed3081904}
+    В алгебре логики, \({ \oplus^* = \begin{icloze}{1}\operatorname{\sim}\end{icloze} }\).
+\end{note}
+
+\begin{note}{c7ec94fd1e224455bb8338bc967651b5}
+    В алгебре логики, \({ \operatorname{\sim}^* = \begin{icloze}{1}\oplus\end{icloze} }\).
+\end{note}
+
+\begin{note}{6d5ed061caee4a21b5e098a197019176}
+    В алгебре логики, \({ \mid^* = \begin{icloze}{1}\downarrow\end{icloze} }\).
+\end{note}
+
+\begin{note}{d99e4bd6874d47aeb0185f58610c8ab8}
+    В алгебре логики, \({ \downarrow^* = \begin{icloze}{1}\mid\end{icloze} }\).
 \end{note}
 
 \end{document}
