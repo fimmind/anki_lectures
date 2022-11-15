@@ -926,7 +926,7 @@
     \]
 \end{note}
 
-\section{Семинар 09.11.22}
+\section{Алгебра логики}
 \begin{note}{d782cd98cdeb44098d0d1c31a6912d8d}
     Кратко булев набор \({ (\alpha_1, \alpha_2, \ldots, \alpha_n) }\) обозначается \begin{icloze}{1}\({ \widetilde \alpha ^{n} }\)\end{icloze} или \begin{icloze}{1}\({ \widetilde \alpha }\).\end{icloze}
 \end{note}
@@ -1078,6 +1078,220 @@
 
     \begin{cloze}{1}
         Ни \({ x_1 }\), ни \({ x_2 }\).
+    \end{cloze}
+\end{note}
+
+\section{Булевы алгебры}
+\begin{note}{20f3d9e66cae48b4872cde6c9ed57d3a}
+    Что есть верхняя граница в контексте произвольного частично упорядоченного множества?
+
+    \begin{cloze}{1}
+        Элемент \({ \geqslant }\) любому элементу множества.
+    \end{cloze}
+\end{note}
+
+\begin{note}{43fa1e0fee2c4a718e26e0c7f9c37c46}
+    Что есть нижняя граница в контексте произвольного частично упорядоченного множества?
+
+    \begin{cloze}{1}
+        Элемент \({ \leqslant }\) любому элементу множества.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0ac55444db6e4fed8fa19d402da0fde0}
+    Что есть супремум в контексте произвольного частично упорядоченного множества?
+
+    \begin{cloze}{1}
+        Наименьшая из верхних границ.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7f565979844841de8441229417e3e1c8}
+    Что есть супремум в контексте произвольного частично упорядоченного множества?
+
+    \begin{cloze}{1}
+        Наибольшая из нижних границ.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b6e17bbaad124d3ebd6e98b8381a867f}
+    Какое множество рассматривается в определении решётки?
+
+    \begin{cloze}{1}
+        Частично упорядоченное.
+    \end{cloze}
+\end{note}
+
+\begin{note}{99e77ba59fe64260b79e25d9f28cad08}
+    Какое частично упорядоченное множество называется решёткой?
+
+    \begin{cloze}{1}
+        Любое двухэлементное подмножество имеет \({ \sup }\) и \({ \inf }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{37a3e12e05de4cdfab62d0dea07344d1}
+    Пусть \({ (X, \leqslant) }\) --- решётка, \({ a, b \in X }\).
+    Тогда
+    \[
+        \begin{icloze}{2}a \land b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sup \left\{ a, b \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c9da1f844e3f4bd9bbe116283730ceeb}
+    Пусть \({ (X, \leqslant) }\) --- решётка, \({ a, b \in X }\).
+    Тогда
+    \[
+        \begin{icloze}{2}a \lor b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\inf \left\{ a, b \right\}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{95e0104c61f1411a8b36c0dccc9a0c7d}
+    Решётку так же можно определить как универсальную алгебру с операциями \begin{icloze}{1}\({ \land }\) и \({ \lor }\).\end{icloze}
+\end{note}
+
+\begin{note}{647880d6a2d84657b6ed1d688cf8a568}
+    Какие аксиомы должны выполняться в определении решётки как универсальной алгебры?
+
+    \begin{cloze}{1}
+        Идемпотентность, коммутативность, ассоциативность, поглощение.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a70eaa64be014d1f8d32db2187ac39b0}
+    \begin{icloze}{1}
+        \[
+            a \land a = a \quad \text{и} \quad a \lor a = a.
+        \]
+    \end{icloze}
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{2}Идемпотентность\end{icloze}>> (из определения решётки)
+    \end{center}
+\end{note}
+
+\begin{note}{3d74bd246a8448588f6d80ab75840d4e}
+    Пусть \({ (X, \leqslant) }\) --- решётка,\: \({ a, b \in X }\).
+    Тогда
+    \[
+        \begin{icloze}{2}a \leq b\end{icloze} \iff a \land b = \begin{icloze}{1}a\end{icloze}.
+    \]
+\end{note}
+
+\begin{note}{900809a351c54ff4a39993d52ae1e388}
+    Пусть \({ (X, \leqslant) }\) --- решётка,\: \({ a, b \in X }\).
+    Тогда
+    \[
+        \begin{icloze}{2}a \leq b\end{icloze} \iff a \lor b = \begin{icloze}{1}b\end{icloze}.
+    \]
+\end{note}
+
+\begin{note}{33c337ecec8e4e5e8457ad2312f7a0ce}
+    Решётка называется \begin{icloze}{2}дистрибутивной,\end{icloze} если \begin{icloze}{1}в ней \({ \land }\) и \({ \lor }\) обоюдно дистрибутивны.\end{icloze}
+\end{note}
+
+\begin{note}{e6915cd9a90b49cdbba81443ba0a14ab}
+    \begin{icloze}{2}Нулём\end{icloze} \begin{icloze}{3}частично\end{icloze} упорядоченного множества называется \begin{icloze}{1}его наименьший элемент.\end{icloze}
+\end{note}
+
+\begin{note}{12dd64fc8d0648eca210d44a0b7e5ae5}
+    Ноль частично упорядоченного множества обозначается \begin{icloze}{1}\({ \mathbf{0} }\).\end{icloze}
+\end{note}
+
+\begin{note}{730dc345dc804811be6c1f82b9350a94}
+    \begin{icloze}{2}Единицей\end{icloze} \begin{icloze}{3}частично\end{icloze} упорядоченного множества называется \begin{icloze}{1}его наибольший элемент.\end{icloze}
+\end{note}
+
+\begin{note}{543c12d0c8214d79ac9fca56bb2ec02e}
+    Единица частично упорядоченного множества обозначается \begin{icloze}{1}\({ \mathbf{1} }\).\end{icloze}
+\end{note}
+
+\begin{note}{b4bef54da8aa41d1863424cc97398a77}
+    Пусть \({ A }\) --- множество.
+    Тогда ноль \({ (\mathcal P(A), \subseteq) }\) --- это \begin{icloze}{1}\({ \emptyset }\).\end{icloze}
+\end{note}
+
+\begin{note}{8c05502489844ebb8fa500e583edd7d1}
+    Пусть \({ A }\) --- множество.
+    Тогда единица \({ (\mathcal P(A), \subseteq) }\) --- это \begin{icloze}{1}\({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{94ed508a73f945fc8a6b4c1803cef774}
+    Пусть \({ (X, \leqslant) }\) --- решётка,\: \({ x, y \in X }\).
+    Элементы \({ x }\) и \({ y }\) называются \begin{icloze}{2}дизъюнктивными,\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            x \land y = \mathbf{0}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{ef9dbbf66ec64b659e16cdb4bb830f5e}
+    Пусть \({ (X, \leqslant) }\) --- решётка,\: \({ x, y \in X }\).
+    Элемент \({ y }\) называется \begin{icloze}{2}дополнением \({ x }\),\end{icloze} если
+    \begin{icloze}{1}
+        \[
+            x \land y = \mathbf{0} \quad \text{и} \quad x \lor y = \mathbf{1}.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{eb16dfe04f534fcd95dfce6b0eab9636}
+    Для каких решёток имеет смысл понятие дополнения?
+
+    \begin{cloze}{1}
+        Для решёток с нулём и единицей.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2b49c7f09eeb4fa09c205e6ef5416e6b}
+    Для начала, булева алгебра --- это \begin{icloze}{1}решётка.\end{icloze}
+\end{note}
+
+\begin{note}{e823cfd66b9a4b7aba2bcfeb6ae82e0c}
+    Какую решётку называют булевой алгеброй?
+
+    \begin{cloze}{1}
+        Дистрибутивную; с нулём и единицей; каждый элемент имеет дополнение.
+    \end{cloze}
+\end{note}
+
+\begin{note}{520a3543220b49dea92ab712105e5b01}
+    Как называют дистрибутивную решётку с нулём и единицей, каждый элемент которой имеет дополнение?
+
+    \begin{cloze}{1}
+        Булева алгебра.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5486cf3db94f4129bf68eed1e3194939}
+    Каждый элемент булевой алгебры имеет \begin{icloze}{1}единственное дополнение.\end{icloze}
+\end{note}
+
+\begin{note}{eb156d1ea036435a89006401851c38d6}
+    Пусть \({ (X, \leqslant) }\) --- булева алгебра,\: \({ x \in X }\).
+    \begin{icloze}{2}Дополнение \({ x }\)\end{icloze} обозначается \begin{icloze}{1}\({ \overline{x} }\).\end{icloze}
+\end{note}
+
+\begin{note}{2b88d7541f5641d5ac8623f8a78c3384}
+    Каждый элемент булевой алгебры имеет единственное дополнение.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        Умножить \({ \overline{x} }\) на \({ x \lor x^* }\), где \({ x^* }\) --- второе дополнение.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6baeed8e7301491ea3dfca0b6fd7750d}
+    Для булевых алгебр верны \begin{icloze}{1}все основные законы\end{icloze} алгебры логики.
+\end{note}
+
+\begin{note}{4faa85785e62481db5f40d0026177f6e}
+    В чём ключевая идея доказательства законов Де-Моргана для булевых алгебр?
+
+    \begin{cloze}{1}
+        Показать, что правая часть является дополнением по определению.
     \end{cloze}
 \end{note}
 
