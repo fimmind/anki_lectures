@@ -892,13 +892,13 @@
 \begin{note}{a10b62e86e38446c85f4bb8c5807d6c2}
     Биномиальный коэффициент из \({ n }\) по \({ r }\) обозначается
     \[
-        \begin{icloze}{1}C_n^k\end{icloze} \quad \text{или} \quad \begin{icloze}{1}\binom{n}{k}.\end{icloze}
+        \begin{icloze}{1}C_n^r\end{icloze} \quad \text{или} \quad \begin{icloze}{1}\binom{n}{r}.\end{icloze}
     \]
 \end{note}
 
 \begin{note}{3221712b5dda4ebe9e522f4508804522}
     \[
-        \binom{n}{k} \overset{\text{def}}= \begin{icloze}{1}\frac{(n)_{r}}{r!}\end{icloze}
+        \binom{n}{r} \overset{\text{def}}= \begin{icloze}{1}\frac{(n)_{r}}{r!}\end{icloze}
     \]
 \end{note}
 
@@ -1024,7 +1024,7 @@
 \end{note}
 
 \begin{note}{ec43c333201b45f28e9a03f6a2828c27}
-    Как в булева функция задаётся в виде вектора значений?
+    Как булева функция задаётся в виде вектора значений?
 
     \begin{cloze}{1}
         Значения функции в лексикографическом порядке следования наборов аргументов.
@@ -1111,7 +1111,7 @@
 \end{note}
 
 \begin{note}{7f565979844841de8441229417e3e1c8}
-    Что есть супремум в контексте произвольного частично упорядоченного множества?
+    Что есть инфимум в контексте произвольного частично упорядоченного множества?
 
     \begin{cloze}{1}
         Наибольшая из нижних границ.
@@ -1138,7 +1138,7 @@
     Пусть \({ (X, \leqslant) }\) --- решётка, \({ a, b \in X }\).
     Тогда
     \[
-        \begin{icloze}{2}a \land b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sup \left\{ a, b \right\}.\end{icloze}
+        \begin{icloze}{2}a \lor b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\sup \left\{ a, b \right\}.\end{icloze}
     \]
 \end{note}
 
@@ -1146,7 +1146,7 @@
     Пусть \({ (X, \leqslant) }\) --- решётка, \({ a, b \in X }\).
     Тогда
     \[
-        \begin{icloze}{2}a \lor b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\inf \left\{ a, b \right\}.\end{icloze}
+        \begin{icloze}{2}a \land b\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\inf \left\{ a, b \right\}.\end{icloze}
     \]
 \end{note}
 
@@ -1368,6 +1368,11 @@
 
 \begin{note}{d99e4bd6874d47aeb0185f58610c8ab8}
     В алгебре логики, \({ \downarrow^* = \begin{icloze}{1}\mid\end{icloze} }\).
+\end{note}
+
+\begin{note}{abf23bd834914587b24eb8d0cf857c59}
+    Пусть \({ f : B \to B }\) и \({ f(x) = x }\).
+    Тогда \({ f^* = \begin{icloze}{1}f\end{icloze} }\).
 \end{note}
 
 \end{document}
