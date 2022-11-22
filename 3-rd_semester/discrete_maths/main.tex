@@ -987,6 +987,18 @@
     \begin{icloze}{1}Константы \({ 0, 1 }\)\end{icloze} являются \begin{icloze}{2}нульместными\end{icloze} булевыми функциями.
 \end{note}
 
+\begin{note}{d06f0289418d4a41b071c552a48bff09}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    Тогда
+    \begin{icloze}{2}
+        переменные
+        \[
+            x_1, x_2, \ldots, x_2
+        \]
+    \end{icloze}
+    называются \begin{icloze}{1}аргументами функции \({ f }\).\end{icloze}
+\end{note}
+
 \begin{note}{a0b4e4b264844402aed619c4fd37ca24}
     Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
     Что есть \({ T(f) }\)?
@@ -994,6 +1006,11 @@
     \begin{cloze}{1}
         Таблица, в которой слева --- значения аргументов, справа --- значения функции.
     \end{cloze}
+\end{note}
+
+\begin{note}{bf9b50dc17e84201a627f5c871ea6c31}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    \begin{icloze}{2}Таблица \({ T(f) }\)\end{icloze} называется \begin{icloze}{1}таблицей истинности \({ f }\).\end{icloze}
 \end{note}
 
 \begin{note}{1122c8a455b64cf789b394df752b821e}
@@ -1029,6 +1046,170 @@
     \begin{cloze}{1}
         Значения функции в лексикографическом порядке следования наборов аргументов.
     \end{cloze}
+\end{note}
+
+\begin{note}{6b8ed8864e3f468bb75dec0ad534e2b6}
+    Как строится разложение булевой функции по нескольким переменным?
+
+    \begin{cloze}{1}
+        Аналогично разложению по одной построить дизъюнкцию по всем возможным значениям этих переменных.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3915fbd594044a7782a5ecfb1b697c23}
+    Пусть \({ f }\) --- булева функция.
+    Переменная \({ x_i }\) называется \begin{icloze}{2}фиктивной,\end{icloze} если \begin{icloze}{1}\({ f }\) выражается формулой, не содержащей \({ x_i }\).\end{icloze}
+\end{note}
+
+\begin{note}{ca616b103ccb43dbbb362f5dcf0fa7f6}
+    Пусть \({ f }\) --- булева функция.
+    Переменная \({ x_i }\) называется \begin{icloze}{2}существенной,\end{icloze} если \begin{icloze}{1}она не является фиктивной.\end{icloze}
+\end{note}
+
+\begin{note}{1a853308fb53438c836240f876a13076}
+    Пусть \({ f }\) --- булева функция.
+    Как показать, что \({ x_i }\) является существенной переменной?
+
+    \begin{cloze}{1}
+        Найти два набора аргументов, отличающихся только значением \({ x_i }\), для которых отличается значение \({ f }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b171f4d5373543008b3c7165b170294d}
+    Пусть \({ x_i \in X^{n} }\) и \({ \sigma \in B }\).
+    Тогда
+    \[
+        \begin{icloze}{2}x_i^{\sigma}\end{icloze} \overset{\text{def}}=
+        \begin{icloze}{1}
+            \begin{cases}
+                x_i, & \sigma = 1, \\
+                \bar x_i, & \sigma = 0.
+            \end{cases}
+        \end{icloze}
+    \]
+\end{note}
+
+\begin{note}{3ff8ee76361d4f8aa2dc6817fb8e23c5}
+    Пусть \({ x_i \in X^{n} }\) и \({ \sigma \in B }\).
+    Выражение \({ x_i^{\sigma} }\) называется \begin{icloze}{1}буквой.\end{icloze}
+\end{note}
+
+\begin{note}{434c03fe1f394ebf9ed47f45f7432dcc}
+    Что называется конъюнкцией над множеством переменных?
+
+    \begin{cloze}{1}
+        Конъюнкция набора букв из этих переменных.
+    \end{cloze}
+\end{note}
+
+\begin{note}{285409914ff4434dba7d33024928ee2c}
+    Что называется дизъюнкцией над множеством переменных?
+
+    \begin{cloze}{1}
+        Дизъюнкция набора букв из этих переменных.
+    \end{cloze}
+\end{note}
+
+\begin{note}{08a4fb8d8f014dfab25d4e1bb8a7f2e3}
+    Конъюнкция (или дизъюнкция) над множеством переменных называется \begin{icloze}{2}элементарной,\end{icloze} если она \begin{icloze}{1}не содержит двух одинаковых переменных.\end{icloze}
+\end{note}
+
+\begin{note}{69bac32971cb4720860b4dd4a9d453cb}
+    \begin{icloze}{2}Число букв\end{icloze} в элементарной конъюнкции (или дизъюнкции) называется \begin{icloze}{1}её рангом.\end{icloze}
+\end{note}
+
+\begin{note}{085748c48aca434f80ee81ccc4326795}
+    Что считают элементарной конъюнкцией нулевого ранга?
+
+    \begin{cloze}{1}
+        Константу \({ 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{54299e611ec9467c80fdf0edb992ffda}
+    Что считают элементарной дизъюнкцией нулевого ранга?
+
+    \begin{cloze}{1}
+        Константу \({ 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7daec66acbc147049ae871ee63127e67}
+    \begin{icloze}{1}Дизъюнкция попарно различных элементарных конъюнкций\end{icloze} называется \begin{icloze}{2}дизъюнктивной нормальной формой.\end{icloze}
+\end{note}
+
+\begin{note}{9da6ac44d6864608adffeff2f2653b9e}
+    \begin{icloze}{1}Конъюнкция попарно различных элементарных дизъюнкций\end{icloze} называется \begin{icloze}{2}конъюнктивной нормальной формой.\end{icloze}
+\end{note}
+
+\begin{note}{4b63a16430be4e91a44d687409d1a59f}
+    Дизъюнктивная нормальная форма называется \begin{icloze}{2}совершенной,\end{icloze} если \begin{icloze}{1}все её элементарные конъюнкции имеют максимальный ранг.\end{icloze}
+\end{note}
+
+\begin{note}{7f6e14160f284a26b1685ab037b732a0}
+    Конъюнктивная нормальная форма называется \begin{icloze}{2}совершенной,\end{icloze} если \begin{icloze}{1}все её элементарные дизъюнкции имеют максимальный ранг.\end{icloze}
+\end{note}
+
+\begin{note}{5f9836f8024544a29c0d75faa28110d8}
+    Что для элементарной конъюнкции означает обладание максимальным рангом?
+
+    \begin{cloze}{1}
+        Она содержит все переменные.
+    \end{cloze}
+\end{note}
+
+\begin{note}{5c8cca9d57834de1a77e826c87fcff5f}
+    Что называется минимальным термом набора переменных?
+
+    \begin{cloze}{1}
+        Элементарная конъюнкция, содержащая все эти переменные.
+    \end{cloze}
+\end{note}
+
+\begin{note}{487bd0adfeec4611abb3e25da2b5c9d7}
+    \begin{icloze}{2}Минимальный терм\end{icloze} сокращается как \begin{icloze}{1}минтерм.\end{icloze}
+\end{note}
+
+\begin{note}{bbfcc84390d84f24abd0aee0aa1dfc13}
+    Пусть \({ f(\widetilde x^{n}) }\) --- булева функция.
+    Тогда
+    \[
+        f(\widetilde x^{n}) = \begin{icloze}{1}x_i \cdot f|_{x_i = 1} \lor \bar x_i \cdot f|_{x_i = 0}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{2}Теорема разложения для д.н.ф.\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{45d478dc3b0b46789b3b2af3d10d0c35}
+    Каждая булева функция \begin{icloze}{3}единственным образом\end{icloze} представляется в виде \begin{icloze}{1}совершенной\end{icloze} дизъюнктивной (или конъюнктивной) нормальной формы \begin{icloze}{2}своих аргументов.\end{icloze}
+\end{note}
+
+\begin{note}{3115335543484943b10f4139847114fa}
+    Каждая булева функция единственным образом представляется в виде совершенной дизъюнктивной нормальной формы своих аргументов.
+    В чём ключевая идея доказательства?
+
+    \begin{cloze}{1}
+        С.д.н.ф. состоит из минтермов, отвечающих единицам в векторе значений.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ad0588753e0342ea901fb670f955419b}
+    Как строится с.д.н.ф. по таблице значений булевой функции?
+
+    \begin{cloze}{1}
+        Для каждой единицы строится соответствующий минтерм.
+   \end{cloze}
+\end{note}
+
+\begin{note}{86b0370b79784d5cb1f61f8d43ea62ca}
+    Как строится с.к.н.ф. по таблице значений булевой функции?
+
+    \begin{cloze}{1}
+        Для каждого нуля строится соответствующая элементарная дизъюнкция.
+   \end{cloze}
 \end{note}
 
 \begin{note}{d5f6af188d8a41b2a3a644065c3ffa60}
@@ -1083,6 +1264,14 @@
 
 \begin{note}{811fe08112ea4d4184e59731f1744d49}
     В алгебре логики, \begin{icloze}{2}сложение по модулю \({ 2 }\)\end{icloze} обозначается \begin{icloze}{1}\({ \oplus }\).\end{icloze}
+\end{note}
+
+\begin{note}{e2f54e00eb6649a2924ef3362262984c}
+    В алгебре логики, \({ \overline{a \sim b} = \begin{icloze}{1}a \oplus b\end{icloze} }\).
+\end{note}
+
+\begin{note}{c2e62b1e91d7494ba8a272bc7d96ae90}
+    В алгебре логики, \({ \overline{a \oplus b} = \begin{icloze}{1}a \sim b\end{icloze} }\).
 \end{note}
 
 \section{Булевы алгебры}
@@ -1396,14 +1585,6 @@
 \begin{note}{abf23bd834914587b24eb8d0cf857c59}
     Пусть \({ f : B \to B }\) и \({ f(x) = x }\).
     Тогда \({ f^* = \begin{icloze}{1}f\end{icloze} }\).
-\end{note}
-
-\begin{note}{e2f54e00eb6649a2924ef3362262984c}
-    В алгебре логики, \({ \overline{a \sim b} = \begin{icloze}{1}a \oplus b\end{icloze} }\).
-\end{note}
-
-\begin{note}{c2e62b1e91d7494ba8a272bc7d96ae90}
-    В алгебре логики, \({ \overline{a \oplus b} = \begin{icloze}{1}a \sim b\end{icloze} }\).
 \end{note}
 
 \end{document}
