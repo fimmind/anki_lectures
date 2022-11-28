@@ -599,7 +599,15 @@
 \end{note}
 
 \begin{note}{034c6da627e9416d94fe7048441924c4}
-    If \({ \sum a_n x^{n} }\) \begin{icloze}{2}converges at some point \({ x_0 \in \mathbf{R} }\)\end{icloze} then \begin{icloze}{1}it converges absolutely for any \({ x }\) satisfying \({ \left\lvert x \right\rvert < \left\lvert x_0 \right\rvert }\).\end{icloze}
+    If \({ \sum a_n x^{n} }\) \begin{icloze}{2}converges at some point \({ x_0 \in \mathbf{R} }\)\end{icloze} then \begin{icloze}{1}it converges absolutely\end{icloze} for any \begin{icloze}{3}\({ x }\) satisfying \({ \left\lvert x \right\rvert < \left\lvert x_0 \right\rvert }\).\end{icloze}
+\end{note}
+
+\begin{note}{cf119f74fc394dc3a2d9d0c72dd70be5}
+    What do we know about \({ \sum a_n x^{n} }\) if it converges at some \({ x_0 }\)?
+
+    \begin{cloze}{1}
+        It converges absolutely withing the open interval.
+    \end{cloze}
 \end{note}
 
 \begin{note}{fed41f842cd54bb1b712f694b52659f9}
@@ -645,6 +653,19 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{cc247e245b4d47ce8e408ff25ad39c6d}
+    Every power series \begin{icloze}{1}converges absolutely\end{icloze} withing \begin{icloze}{2}the interior of its interval of convergence.\end{icloze}
+\end{note}
+
+\begin{note}{0fce527887bb4236b7813a76f877c418}
+    Every power series converges absolutely withing the interior of its interval of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Follows from the ``Interior Convergence'' theorem.
+    \end{cloze}
+\end{note}
+
 \begin{note}{a11ccad617764a25a049ee310707b122}
     \begin{icloze}{2}The radius of convergence\end{icloze} of \({ \sum a_n x^{n} }\) is \begin{icloze}{1}the half length of its interval of convergence.\end{icloze}
 \end{note}
@@ -654,6 +675,126 @@
 
     \begin{cloze}{1}
         Who knows\ldots
+    \end{cloze}
+\end{note}
+
+% Lecture 28.11.22 {{{
+\begin{note}{18c470fb2da44b60a1d569d93b89f643}
+    How can the radius of convergence of a power series be calculated?
+
+    \begin{cloze}{1}
+        Using either the Root Test or the Ratio Test.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b5c35bb7db58465a910f8283bf5f6196}
+    How can you use the Root Test to calculate the radius of convergence of a power series?
+
+    \begin{cloze}{1}
+        Take the inverse of the coefficients' roots' limit.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1badd0dc0e5c4500aa468131632c62b9}
+    How can you use the Ratio Test to calculate the radius of convergence of a power series?
+
+    \begin{cloze}{1}
+        Take the inverse of the coefficients' ratios' limit.
+    \end{cloze}
+\end{note}
+
+\begin{note}{819016ab8f2c4bfc971839823a9fd8e0}
+    Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
+    Then
+    \[
+        R = \begin{icloze}{1}\left( \limsup \sqrt[n]{\left\lvert c_n \right\rvert} \right)^{-1}.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        <<\begin{icloze}{2}Cauchy–Hadamard Theorem\end{icloze}>>
+    \end{center}
+\end{note}
+
+\begin{note}{b32f1ebd412842729b113cf6836014e4}
+    What is the key idea in the proof of the Cauchy-Hadamard Theorem?
+
+    \begin{cloze}{1}
+        The Root Test.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9223bf629d1a492a892f77c69e4d1cad}
+    What does it mean for a power series to be centered at \({ a \neq 0 }\)?
+
+    \begin{cloze}{1}
+        It is expressed in terms of \({ (x - a) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b41b3e3920ae4372a12438b11d262544}
+    Let \({ \sum a_n (x - a)^{n} }\) be a power series.
+    Then \begin{icloze}{2}the value \({ a }\)\end{icloze} is called \begin{icloze}{1}the center of the series.\end{icloze}
+\end{note}
+
+\begin{note}{36acf2e7094146dd8a30193845ea7928}
+    Any power series centered at \({ a \neq 0 }\) may be turned into \begin{icloze}{2}a series centered at \({ 0 }\)\end{icloze} by
+    \begin{icloze}{1}
+        substituting
+        \[
+            t = x - a.
+        \]
+    \end{icloze}
+\end{note}
+% }}}
+
+\begin{note}{872483e057f74ba7addfdfbd543a41a8}
+    If \({ \sum a_n x^{n} }\) \begin{icloze}{2}converges absolutely at a point \({ x_0 }\),\end{icloze} then \begin{icloze}{1}it converges uniformly\end{icloze} on \begin{icloze}{3}\({ [-c, c] }\), where \({ c = \left\lvert x_0 \right\rvert }\).\end{icloze}
+\end{note}
+
+\begin{note}{8bfee12c2af34918aa416ea9071592ca}
+    What do we know about \({ \sum a_n x^{n} }\) if it converges absolutely at some \({ x_0 }\)?
+
+    \begin{cloze}{1}
+        It converges uniformly on the closed interval.
+    \end{cloze}
+\end{note}
+
+\begin{note}{091856fb98e84114b9b21203616d0e36}
+    If \({ \sum a_n x^{n} }\) converges absolutely at a point \({ x_0 }\), then it converges uniformly on \({ [-c, c] }\), where \({ c = \left\lvert x_0 \right\rvert }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The Weierstrass M-Test.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ffe00dc944e34558ba9caec75dbcf5cc}
+    If \({ \sum a_n x^{n} }\) converges absolutely at a point \({ x_0 }\), then it converges uniformly on \({ [-c, c] }\), where \({ c = \left\lvert x_0 \right\rvert }\).
+    What is used as the sequence of upper bounds in the proof?
+
+    \begin{cloze}{1}
+        The values at \({ x_0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{23b23a23d1eb4887a5bb4f0edc237a7d}
+    Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
+    If \begin{icloze}{2}\({ \sum a_n x^{n} }\) converges absolutely at \({ x = R }\),\end{icloze} then \begin{icloze}{1}it converges uniformly on \({ [-R, R] }\).\end{icloze}
+\end{note}
+
+\begin{note}{95017b4b22bf4a64a943cc3064449625}
+    Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
+    Then for any \({ r \in \begin{icloze}{3}[0, R)\end{icloze} }\), the series \({ \sum a_n x^{n} }\) \begin{icloze}{2}converges uniformly\end{icloze} on \begin{icloze}{1}\({ [-r, r] }\).\end{icloze}
+\end{note}
+
+\begin{note}{57e2d62cb3ce40e48ee6290824fbafeb}
+    Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
+    Then for any \({ r \in [0, R) }\), the series \({ \sum a_n x^{n} }\) converges uniformly on \({ [-r, r] }\).
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The series converges absolutely at \({ x = r }\).
     \end{cloze}
 \end{note}
 
