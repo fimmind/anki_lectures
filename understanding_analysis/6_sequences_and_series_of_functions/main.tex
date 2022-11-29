@@ -268,6 +268,45 @@
     Then \({ f(x + \frac{1}{n}) }\) \begin{icloze}{1}converges uniformly to \({ f }\).\end{icloze}
 \end{note}
 
+\begin{note}{4973de785b1848b3b54d17231e4b30ae}
+    Which algebraic operations preserve uniform convergence?
+
+    \begin{cloze}{1}
+        Scalar multiplication, addition and taking absolute value.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7631431e512c41e6ae5297fc6ceac974}
+    Let \({ (f_n) }\) and \({ (g_n) }\) be uniformly convergent.
+    Does \({ (f_n + g_n) }\) necessarily converge uniformly?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{27a9c677417c4e419898dae4e0ede000}
+    Let \({ (f_n) }\) and \({ (g_n) }\) be uniformly convergent.
+    Does \({ (f_n g_n) }\) necessarily converge uniformly?
+
+    \begin{cloze}{1}
+        No.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f40712aa05b84bfa9a3b039deb85d93c}
+    Give an example of two sequences of functions that converge uniformly, but who's product only converges pointwise.
+
+    \begin{cloze}{1}
+        \({ x }\) and \({ \frac{1}{n} }\) on all of \({ \mathbf{R} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{6076795b810c44ce93275f5095e37919}
+    Let \({ (f_n) }\) and \({ (g_n) }\) be uniformly convergent.
+    If \begin{icloze}{2}both sequences are uniformly bounded,\end{icloze} then \begin{icloze}{1}\({ (f_n g_n) }\) converge uniformly.\end{icloze}
+\end{note}
+
 \section{Uniform Convergence and Differentiation} % 6.3
 \begin{note}{37f46dbb09f54423a835e842d402ee19}
     What sequence is considered in the Differentiable Limit Theorem?
@@ -817,6 +856,261 @@
 
     \begin{cloze}{1}
         The series converges absolutely at \({ x = r }\).
+    \end{cloze}
+\end{note}
+
+% Lecture 23.11.22 {{{
+\begin{note}{6752618ba2a441c0925b861d87f54ec5}
+    A family of functions is called \begin{icloze}{2}uniformly bounded,\end{icloze} if \begin{icloze}{1}all of the functions can be bounded by the same constant.\end{icloze}
+\end{note}
+
+\begin{note}{6762cdc6398d434b8757d1770c21a186}
+    How is the Abel's test modified for functional series?
+
+    \begin{cloze}{1}
+        The series converges uniformly and the monotone sequence is uniformly bounded.
+    \end{cloze}
+\end{note}
+
+\begin{note}{48bf5bd4803c4bbd914aae81b730ee5d}
+    What do we conclude from the Abel's test when it is applied to functional series?
+
+    \begin{cloze}{1}
+        The product's series converges uniformly.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4a5eae4d10b5402bb82a217882420fe1}
+    What is the key idea in the proof of the Abel's test for functional series?
+
+    \begin{cloze}{1}
+        Identical to numerical series.
+    \end{cloze}
+\end{note}
+
+\begin{note}{8d72659c94aa40eaba69706c0a5d9b08}
+   How is the Dirichlet's test modified for functional series?
+
+   \begin{cloze}{1}
+        The partial sums are uniformly bounded and the monotone sequence converges uniformly (to \({ 0 }\)).
+   \end{cloze}
+\end{note}
+
+\begin{note}{0b666eddc70b42f3bc716d6bffac7683}
+    What do we conclude from the Dirichlet's test when it is applied to functional series?
+
+    \begin{cloze}{1}
+        The product's series converges uniformly.
+    \end{cloze}
+\end{note}
+
+\begin{note}{da9daf8da106446d9e2cb20b78b1df0c}
+    What is the key idea in the proof of the Dirichlet's test for functional series?
+
+    \begin{cloze}{1}
+        Identical to numerical series.
+    \end{cloze}
+\end{note}
+% }}}
+
+\begin{note}{6d76ab5f2fcd4fed9bced7b3956adf74}
+    What object is considered in the Abel's Theorem?
+
+    \begin{cloze}{1}
+        Any power series.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1ff48bc8962a4da0b548a6ac2ee95cd5}
+    When do we conclude something from the Abel's Theorem?
+
+    \begin{cloze}{1}
+        When the power series converges at an end-point of its interval of convergence.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d2056277e2184080838572a8a28bf953}
+    What do we conclude from the Abel's Theorem?
+
+    \begin{cloze}{1}
+        The power series converges uniformly at \({ [0, R] }\) or \({ [-R, 0] }\), respectively.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d9f5a15d2a074638a3befb9b4ae99500}
+    Why in the Abel's Theorem we only consider a half of the interval \({ [-R, R] }\)?
+
+    \begin{cloze}{1}
+        To keep our attention on a single end-point.
+    \end{cloze}
+\end{note}
+
+\begin{note}{cf9f508a5aca4e4b911bd777d82e2e69}
+    Give an example of a power series that converges at \({ x = R }\), but diverges at \({ x = -R }\).
+
+    \begin{cloze}{1}
+        Alternating \({ \frac{x^{n}}{n} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7f4749f737ab47a7874b1cfe9761d482}
+    What is the key idea in the proof of the Abel's Theorem?
+
+    \begin{cloze}{1}
+        Factor out \({ \left( \frac{x}{R} \right)^{n} }\) and apply the Abel's Test.
+    \end{cloze}
+\end{note}
+
+\begin{note}{261655c9501e48aa8c75ba9fa5bd13cb}
+    When applying the Abel's Test in the proof of the Abel's Theorem, which sequence is the ``sequentially'' uniformly convergent one?
+
+    \begin{cloze}{1}
+        \({ \left( a_n R^{n} \right) }\) view as a functional series.
+    \end{cloze}
+\end{note}
+
+\begin{note}{08cb33e043454d9eb9e1ad2e379b2228}
+    When applying the Abel's Test in the proof of the Abel's Theorem, which sequence is the monotone, uniformly bounded one?
+
+    \begin{cloze}{1}
+        The factored \({ \left( \frac{x}{R} \right)^{n} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{1d25928aac204afd8878944bd82b08ed}
+    How can the theorems related to the uniform convergence of a power series be summarised?
+
+    \begin{cloze}{1}
+        The converge is uniform on any compact set within its interval of convergence.
+    \end{cloze}
+\end{note}
+
+\begin{note}{815678a33a2347fcafec7a196cebc701}
+    Any power series \begin{icloze}{1}converges uniformly\end{icloze} on any \begin{icloze}{2}compact\end{icloze} subset of its interval of convergence.
+\end{note}
+
+\begin{note}{14710a3a80de483c8122e797da679c72}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    What is the interval of convergence of
+    \[
+        \sum n a_n x^{n-1}\,?
+    \]
+
+    \begin{cloze}{1}
+        An interval with the same radius.
+    \end{cloze}
+\end{note}
+
+\begin{note}{29c970bf736841719d13b9711ea4fb75}
+    How does the dif\-fer\-en\-ti\-ated power series behave at the end-points of the original interval of convergence?
+
+    \begin{cloze}{1}
+        How knows\ldots
+    \end{cloze}
+\end{note}
+
+\begin{note}{a855331e13c74a9bb8d2ed157378136a}
+    Give an example of a power series, that converges at one of end-points of its interval of convergence, but who's dif\-fer\-en\-ti\-ated series diverges at the same very point.
+
+    \begin{cloze}{1}
+        The alternating \({ \frac{x^{n}}{n} }\) at \({ x = 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{d3327533574d4f658356b768d5e931dc}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    Then \({ \sum n a_n x^{n-1} }\) has the same radius of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Use the Cauchy-Hadamard Theorem.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0ceca97e500344858eadc1030687ebd4}
+    Let \({ (a_n) }\) and \({ (b_n) }\) be sequences.
+    Then
+    \[
+        \limsup a_n b_n = \begin{icloze}{1}\text{[Who knows\ldots]}\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d54a087cff04470bb2a7e141f206b7a1}
+    Let \({ (a_n) }\) and \({ (b_n) }\) be sequences.
+    If \begin{icloze}{2}\({ \lim a_n > 0 }\),\end{icloze} then
+    \[
+        \limsup a_n b_n = \begin{icloze}{1}\lim a_n \cdot \limsup b_n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8ed2ade8fae24fde9eeedbbe63b8da6a}
+    Let \({ (a_n) }\) and \({ (b_n) }\) be sequences.
+    If \begin{icloze}{2}\({ \lim a_n < 0 }\),\end{icloze} then
+    \[
+        \limsup a_n b_n = \begin{icloze}{1}\lim a_n \cdot \liminf b_n.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d907711a2c0148c885d62302233039cf}
+    Let \({ (a_n) }\) and \({ (b_n) }\) be sequences.
+    If \({ \lim a_n > 0 }\), then
+    \[
+        \limsup a_n b_n = \lim a_n \cdot \limsup b_n.
+    \]
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Show that it is the largest subsequential limit.
+    \end{cloze}
+\end{note}
+
+\begin{note}{408cb435462e45868a152c7eaf22ef60}
+    Any power series is \begin{icloze}{2}continuous\end{icloze} on \begin{icloze}{1}its interval of convergence.\end{icloze}
+\end{note}
+
+\begin{note}{750b19a7e31d4dfb84f1e450d92925ae}
+    Any power series is continuous on its interval of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Consider a compact subset, that contains a given point.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6658d21f879a4693930642304e0a975c}
+    Any power series is \begin{icloze}{2}infinitely differentiable\end{icloze} on \begin{icloze}{1}the interior of its interval of convergence.\end{icloze}
+\end{note}
+
+\begin{note}{c6b5c255a9f94434a2b258c5379db034}
+    Any power series is differentiable on the interior of its interval of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        Consider a compact subset, that contains a given point.
+    \end{cloze}
+\end{note}
+
+\begin{note}{21c8e2fa0e6e4ba2944f6926e9428b0b}
+    How do you find the derivative of a power series?
+
+    \begin{cloze}{1}
+        Differentiate term-by-term.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a2913d0326f04c109c3bf15f49aa239e}
+    Is it possible for a power series to be differentiable at an end-point of its interval of convergence?
+
+    \begin{cloze}{1}
+        Yes.
+    \end{cloze}
+\end{note}
+
+\begin{note}{84c4cd40364d4c39af2f53c8cd3886bd}
+    Give an example of a power series that is differentiable at an end-point of its interval of convergence.
+
+    \begin{cloze}{1}
+        Alternating \({ \frac{x^{n}}{n^2} }\) at \({ x = 1 }\).
     \end{cloze}
 \end{note}
 
