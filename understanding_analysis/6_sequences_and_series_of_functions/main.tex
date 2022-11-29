@@ -680,7 +680,7 @@
 
 % Lecture 28.11.22 {{{
 \begin{note}{18c470fb2da44b60a1d569d93b89f643}
-    How can the radius of convergence of a power series be calculated?
+    What are the simplest methods for calculating the radius of convergence of a power series?
 
     \begin{cloze}{1}
         Using either the Root Test or the Ratio Test.
@@ -707,13 +707,35 @@
     Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
     Then
     \[
-        R = \begin{icloze}{1}\left( \limsup \sqrt[n]{\left\lvert c_n \right\rvert} \right)^{-1}.\end{icloze}
+        R = \begin{icloze}{1}\left( \limsup \sqrt[n]{\left\lvert a_n \right\rvert} \right)^{-1}.\end{icloze}
     \]
 
     \begin{center}
         \tiny
         <<\begin{icloze}{2}Cauchy–Hadamard Theorem\end{icloze}>>
     \end{center}
+\end{note}
+
+\begin{note}{197b7547ea3349ce827335925cf42930}
+    In the Cauchy-Hadamard Theorem, what happens when
+    \[
+        \limsup \sqrt[n]{\left\lvert a_n \right\rvert} = 0\,?
+    \]
+
+    \begin{cloze}{1}
+        The radius is infinite.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e998f9fea2924dc8b9884bfb954bfedd}
+    In the Cauchy-Hadamard Theorem, what happens when
+    \[
+        \limsup \sqrt[n]{\left\lvert a_n \right\rvert} = \infty\,?
+    \]
+
+    \begin{cloze}{1}
+        The radius equals to \({ 0 }\).
+    \end{cloze}
 \end{note}
 
 \begin{note}{b32f1ebd412842729b113cf6836014e4}
@@ -742,7 +764,7 @@
     \begin{icloze}{1}
         substituting
         \[
-            t = x - a.
+            \bar x = x - a.
         \]
     \end{icloze}
 \end{note}
