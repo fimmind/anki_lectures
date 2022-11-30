@@ -302,6 +302,15 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{fec44b8a25b24523a0bb9d452feb5b7d}
+    Give a ``more visual'' example showing that uniform convergence is not always preserved under multiplication.
+
+    \begin{cloze}{1}
+        \({ x^2 }\) and \({ \frac{(\sin x)^n}{n} }\).
+        % https://www.desmos.com/calculator/cla08rzhs7
+    \end{cloze}
+\end{note}
+
 \begin{note}{6076795b810c44ce93275f5095e37919}
     Let \({ (f_n) }\) and \({ (g_n) }\) be uniformly convergent.
     If \begin{icloze}{2}both sequences are uniformly bounded,\end{icloze} then \begin{icloze}{1}\({ (f_n g_n) }\) converge uniformly.\end{icloze}
@@ -989,6 +998,15 @@
     Any power series \begin{icloze}{1}converges uniformly\end{icloze} on any \begin{icloze}{2}compact\end{icloze} subset of its interval of convergence.
 \end{note}
 
+\begin{note}{63eed7cd06074230b34d1df61cbe8f5b}
+    Any power series converges uniformly on any compact subset of its interval of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The series converges uniformly on the closed interval, that wraps the compact subset.
+    \end{cloze}
+\end{note}
+
 \begin{note}{14710a3a80de483c8122e797da679c72}
     Let \({ \sum a_n x^{n} }\) be a power series.
     What is the interval of convergence of
@@ -1061,6 +1079,22 @@
 
     \begin{cloze}{1}
         Show that it is the largest subsequential limit.
+    \end{cloze}
+\end{note}
+
+\begin{note}{109e7bda00f849b59010ded779de8cd6}
+    Let \({ (a_n) }\) and \({ (b_n) }\) be sequences.
+    If \({ \lim a_n > 0 }\), then
+    \[
+        \limsup a_n b_n = \lim a_n \cdot \limsup b_n.
+    \]
+    In the proof, how do you apply the product rule to
+    \[
+        \lim a_{k_j} b_{k_j}\,?
+    \]
+
+    \begin{cloze}{1}
+        Choose a convergent subsequence of \({ (b_{k_j}) }\).
     \end{cloze}
 \end{note}
 
