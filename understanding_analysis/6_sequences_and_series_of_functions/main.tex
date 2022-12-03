@@ -848,6 +848,11 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{f8f6226e01f74c2f99f8a59913c6b044}
+    Let \({ \sum a_n x^{n} }\) converge absolutely at a point \({ x_0 }\).
+    Then not only it converges uniformly at \({ [-c, c] }\), where \({ c = \left\lvert x_0 \right\rvert }\), but also \begin{icloze}{1}it converges absolutely at \({ [-c, c] }\).\end{icloze}
+\end{note}
+
 \begin{note}{23b23a23d1eb4887a5bb4f0edc237a7d}
     Let \({ R }\) be the radius of convergence of \({ \sum a_n x^{n} }\).
     If \begin{icloze}{2}\({ \sum a_n x^{n} }\) converges absolutely at \({ x = R }\),\end{icloze} then \begin{icloze}{1}it converges uniformly on \({ [-R, R] }\).\end{icloze}
@@ -1146,6 +1151,137 @@
     \begin{cloze}{1}
         Alternating \({ \frac{x^{n}}{n^2} }\) at \({ x = 1 }\).
     \end{cloze}
+\end{note}
+
+\begin{note}{c1da1dd7fa1a439f813932d1ff197f10}
+    Let \({ \sum a_n x^{n} }\) converge at an end-point \({ x_0 \neq 0 }\) of its interval of convergence.
+    When is differentiable at this point?
+
+    \begin{cloze}{1}
+        Whenever the differentiated series converges at \({ x_0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5f268586b8f94f03bdcd24ccc44c984c}
+    What is the interval of convergence of
+    \[
+        x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} - \cdots\,?
+    \]
+
+    \begin{cloze}{1}
+        \({ (-1, 1] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{00d179b62ee64669a1c21d4ce1302819}
+    For what values of \({ x }\) is
+    \[
+        x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \frac{x^5}{5} - \cdots
+    \]
+    differentiable?
+
+    \begin{cloze}{1}
+        \({ -1 < x < 1 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8630c8226f464037a5fa5b0989071505}
+    Give an example of a power series that converges conditionally at both \({ x = -1 }\) and \({ x = 1 }\).
+
+    \begin{cloze}{1}
+        \({ \frac{1}{n} x^{n} }\) with the sign alternating every two terms.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c392909466044067aa165dcb760bfa64}
+    How do you find the antiderivative of a power series?
+
+    \begin{cloze}{1}
+        Antidifferentiate term-by-term.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c37db23d6c9d4e238f6be62803b940ae}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    On which set does
+    \[
+        \sum \frac{a_n}{n+1}x^{n+1}
+    \]
+    converge?
+
+    \begin{cloze}{1}
+        The original interval of convergence, perhaps including some extra end-points.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1fbab8666cfe4c99a76c37833048a2fc}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    What is the radius of convergence of
+    \[
+        \sum \frac{a_n}{n+1}x^{n+1}\,?
+    \]
+
+    \begin{cloze}{1}
+        Same as the original.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b3fa1fa7f12a448e89b81223dd868bf7}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    How does
+    \[
+        \sum \frac{a_n}{n+1}x^{n+1}
+    \]
+    behave at the end-points of its interval of convergence?
+
+    \begin{cloze}{1}
+        It must converge if the original series does so.
+    \end{cloze}
+\end{note}
+
+\begin{note}{26f4c030950e4d3c85009bc6ced85569}
+    Let \({ \sum a_n x^{n} }\) be a power series.
+    Then
+    \[
+        \sum \frac{a_n}{n+1}x^{n+1}
+    \]
+    converges at the original interval of convergence.
+    What is the key idea in the proof?
+
+    \begin{cloze}{1}
+        The Abel's Test for numerical series.
+    \end{cloze}
+\end{note}
+
+\begin{note}{77211252be1f4def99a19cdec10f109d}
+    On which set a power series is guaranteed to have an antiderivative?
+
+    \begin{cloze}{1}
+        The entire interval of convergence.
+    \end{cloze}
+\end{note}
+
+\begin{note}{bcde90c525294c3db8bcaaf6299e84fc}
+    How do you find the value of
+    \[
+        \sum \frac{n}{2^{n}}\,?
+    \]
+
+    \begin{cloze}{1}
+        It is almost the derivative of \({ \sum x^{n} }\) at \({ x = \frac{1}{2} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b5059ae5d9994c48a996e35e8510f9dc}
+    \[
+        1 + x + x^2 + x^3 + \cdots = \begin{icloze}{1}\frac{1}{1 - x}\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{7b06e0dcbf124495b1eb712e00b053bd}
+    \[
+        x + 2x^2 + 3x^3 + 4x^4 + \cdots = \begin{icloze}{1}\frac{x}{(1-x)^2}\,.\end{icloze}
+    \]
 \end{note}
 
 \end{document}
