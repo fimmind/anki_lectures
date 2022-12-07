@@ -1354,4 +1354,132 @@
     \end{cloze}
 \end{note}
 
+\section{Taylor Series}
+\begin{note}{0914695ea5d547e89e22d1d7ab5601c6}
+    What is the power series representation of \({ \arctan(x) }\)?
+
+    \begin{cloze}{1}
+        \({ x - \frac{1}{3}x^{3} + \frac{1}{5}x^{5} - \frac{1}{7} x^{7} + \cdots }\)
+    \end{cloze}
+\end{note}
+
+\begin{note}{ac27df93ef7844dd92ff6795d7a234c3}
+    How do you find the power series representation of \({ \arctan(x) }\) (assuming no knowledge about it's derivatives)?
+
+    \begin{cloze}{1}
+        Deduce from the power series expansion of \({ \frac{1}{1-x} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{785d121c13ad44fa886120397df7525d}
+    How do you produce the power series representation of \({ \arctan(x) }\) from the power series expansion of \({ \frac{1}{1-x} }\)?
+
+    \begin{cloze}{1}
+        Substitute \({ -x^2 }\) and take the antiderivative.
+    \end{cloze}
+\end{note}
+
+\begin{note}{39fae994dab84daa9432a0de86cf210a}
+    What is the assumption of the Taylor's Formula?
+
+    \begin{cloze}{1}
+        A function has a valid power series representation.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a0f51af429a6460aa52fb799c41d0f17}
+    In the hypothesis of the Taylor's Formula, on which set must the power series representation be valid?
+
+    \begin{cloze}{1}
+        A nontrivial interval centered at zero.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9146ee4f363a40dda0907c2520bbf327}
+    What is the statement of the Taylor's Formula?
+
+    \begin{cloze}{1}
+        The \({ n }\)-th coefficient is \({ \frac{f^{(n)}(0)}{n!} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c0172988148c43abab348375810bc483}
+    What is the key idea in the proof of the Taylor's Formula?
+
+    \begin{cloze}{1}
+        Calculate the \({ n }\)-th derivatives of the power series.
+    \end{cloze}
+\end{note}
+
+\begin{note}{be1c0cd1dc67489292f987020b36a626}
+    Let \({ f }\) be infinitely differentiable at a point \({ a }\).
+    Then
+    \begin{icloze}{2}
+        the series
+        \[
+            \sum \frac{f^{(n)}(a)}{n!} (x - a)^{n}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}the Taylor series of \({ f }\) centered at \({ a }\).\end{icloze}
+\end{note}
+
+\begin{note}{4b80359f67c848879bb3267507874f83}
+    For which functions is the Taylor series defined?
+
+    \begin{cloze}{1}
+        Infinitely differentiable at the center point.
+    \end{cloze}
+\end{note}
+
+% Lecture 30.11.22 {{{
+\begin{note}{0cb2b10acf66420d8ae9921589cd0c6f}
+    Let \({ f }\) be infinitely differentiable at a point \({ a }\).
+    Then \begin{icloze}{2}the coefficients \({ \frac{f^{(n)}(a)}{n!} }\)\end{icloze} are called \begin{icloze}{1}the Taylor coefficients.\end{icloze}
+\end{note}
+
+\begin{note}{34c2ad6abed54d1e9c13f827f9b22afd}
+    \begin{icloze}{2}A Taylor series centered at zero\end{icloze} is also called \begin{icloze}{1}a Maclaurin series.\end{icloze}
+\end{note}
+% }}}
+
+\begin{note}{f5641a38607b4ef09fb94eb42636cd0c}
+    Is there anything special about zero, when speaking of the Taylor series?
+
+    \begin{cloze}{1}
+        Nothing but the notational simplicity.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a559dfe7fa134c90ada27d41069f61ce}
+    On which set of points is the Taylor series of \({ f }\) always guaranteed to converge to \({ f }\)?
+
+    \begin{cloze}{1}
+        Only at the center point.
+    \end{cloze}
+\end{note}
+
+\begin{note}{dbd63641408d44a783796f4d22f094fd}
+    Give a counterexample against the validity of the Taylor series representation.
+
+    \begin{cloze}{1}
+        \({ e^{-\frac{1}{x^2}} }\) extended to be continuous at \({ 0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{0efd72deacc64762a35d64e0f4430920}
+    What is notable about \({ e^{\frac{1}{-x^2}} }\)?
+
+    \begin{cloze}{1}
+        It is \textit{extremely} flat at the origin.
+    \end{cloze}
+\end{note}
+
+\begin{note}{70ed29e038784ae188c2ee5466b96528}
+    Why doesn't \({ e^{-\frac{1}{x}} }\) work out as a counterexample against the validity of the Taylor series representation?
+
+    \begin{cloze}{1}
+        It tends to infinity as \({ x \to 0^{-} }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
