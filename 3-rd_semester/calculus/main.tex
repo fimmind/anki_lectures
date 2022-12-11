@@ -1086,4 +1086,182 @@
     Функция \({ f }\) называется \begin{icloze}{2}аналитической на промежутке \({ (A, B) }\),\end{icloze} если \begin{icloze}{1}она аналитична в каждой точке \({ (A, B) }\).\end{icloze}
 \end{note}
 
+\begin{note}{124c24286bb94e2281c6386440f38d2c}
+    В чём основная задача анализа Фурье?
+
+    \begin{cloze}{1}
+        Разложение периодических функций в ряд по косинусам и синусам.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f659146465f64b918c69ce46c8ae72e5}
+    Задачей \begin{icloze}{2}анализа Фурье\end{icloze} является поиск разложения вида
+    \[
+        f(x) = \begin{icloze}{1}\frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{c6879c7d93d34aadac9c7b7f69bdc5eb}
+    Разложение вида
+    \[
+        f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.
+    \]
+    применимо к функциям \begin{icloze}{1}с периодом \({ 2\pi }\).\end{icloze}
+\end{note}
+
+\begin{note}{2af4cc16ab5c4331ba6fdc4d8e33606d}
+    Пусть функция \({ f }\) имеет период \({ T }\).
+    Как привезти её к функции с периодом \({ 2\pi }\)?
+
+    \begin{cloze}{1}
+        Рассмотреть
+        \[
+            x \mapsto f\left( \frac{x}{2\pi} \cdot T \right)\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{dfca446221d84d72a637ce570b31bbce}
+    Чем примечательно интегрирование периодических функций?
+
+    \begin{cloze}{1}
+        Значение интеграла по промежутку длиной в период не зависит от сдвига промежутка.
+    \end{cloze}
+\end{note}
+
+\begin{note}{512ee88e6cec4fa193d82ca1d7252a90}
+    Как показать, что система
+    \[
+        1, \cos x, \sin x, \cos 2x, \sin 2x, \ldots
+    \]
+    ортогональна?
+
+    \begin{cloze}{1}
+        Явно вычислить скалярные произведения, используя формулы для произведений \({ \sin }\) и \({ \cos }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cf31d7904d0f4319829798700280b559}
+    В контексте какого скалярного произведения система
+    \[
+        1, \cos x, \sin x, \cos 2x, \sin 2x, \ldots
+    \]
+    является ортогональной?
+
+    \begin{cloze}{1}
+        \({ \displaystyle (f, g) = \int_{0}^{2\pi} f g }\)\,.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e680e2296ca447878109aa1bd98e0564}
+    \[
+        \int_{0}^{2\pi} \sin mx = \begin{icloze}{1}0,\end{icloze} \quad (n > 0).
+    \]
+\end{note}
+
+\begin{note}{a263ac35453841f1a469b0b5826b0799}
+    \[
+        \int_{0}^{2\pi} \cos nx = \begin{icloze}{1}0,\end{icloze} \quad (n > 0).
+    \]
+\end{note}
+
+\begin{note}{5c3bed81f2b94a069fc8c60688cd3739}
+    \[
+        \int_{0}^{2\pi} \sin mx \cdot \cos nx\: dx = \begin{icloze}{1}0,\end{icloze} \quad (\begin{icloze}{2}\forall n, m\end{icloze})
+    \]
+\end{note}
+
+\begin{note}{4cb5eceb345d4acbb7db16116de48c3b}
+    \[
+        \int_{0}^{2\pi} \sin mx \sin nx\: dx = \begin{icloze}{1}0,\end{icloze} \quad (\begin{icloze}{2}n \neq m\end{icloze}).
+    \]
+\end{note}
+
+\begin{note}{198569868a6b4e77a0e1891b73c4c088}
+    \[
+        \int_{0}^{2\pi} \sin^2 nx \: dx = \begin{icloze}{1}\pi.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{2b2d5635b2a14ee18b7cf8824f1bbc56}
+    \[
+        \int_{0}^{2\pi} \cos mx \cos nx\: dx = \begin{icloze}{1}0,\end{icloze} \quad (\begin{icloze}{2}n \neq m\end{icloze}).
+    \]
+\end{note}
+
+\begin{note}{69df715bc9ba414bae72641bbf74d1f5}
+    \[
+        \int_{0}^{2\pi} \cos^2 nx \: dx = \begin{icloze}{1}\pi.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8a035b960ad54a9aa060b304bf8462ee}
+    Пусть функция \({ f }\) имеет разложение вида
+    \[
+        f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.
+    \]
+    Как можно найти значения коэффициента \({ a_k }\)?
+
+    \begin{cloze}{1}
+        Проинтегрировать \({ f(x) \cos kx }\) на \({ [0, 2\pi] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{ebe1bbbdc4ce44c5941e1f2e887651d9}
+    Пусть функция \({ f }\) имеет разложение вида
+    \[
+        f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.
+    \]
+    Тогда
+    \[
+        a_k = \begin{icloze}{1}\frac{1}{\pi} \int_{0}^{2\pi} f(x) \cos kx\: dx\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{8a5ae715c85e4758b5c5fcc97e93bcd9}
+    Пусть функция \({ f }\) имеет разложение вида
+    \[
+        f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.
+    \]
+    Как можно найти значения коэффициента \({ b_k }\)?
+
+    \begin{cloze}{1}
+        Проинтегрировать \({ f(x) \sin kx }\) на \({ [0, 2\pi] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{cfcfaee0ac304ebe95c11b2b5c016c7d}
+    Пусть функция \({ f }\) имеет разложение вида
+    \[
+        f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx)\,.
+    \]
+    Тогда
+    \[
+        b_k = \begin{icloze}{1}\frac{1}{\pi} \int_{0}^{2\pi} f(x) \sin kx\: dx\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{67542462c1d046c7b986155c804058a9}
+    Пусть \({ f }\) периодична с периодом \({ 2\pi }\).
+    Коэффициенты,
+    \begin{align*}
+        a_k &= \frac{1}{\pi} \int_{0}^{2\pi} f(x) \cos kx\: dx\,, \\
+        b_k &= \frac{1}{\pi} \int_{0}^{2\pi} f(x) \sin kx\: dx
+    \end{align*}
+    называются \begin{icloze}{1}коэффициентами Фурье функции \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{7045668d58db45ad9892a6b3813128fd}
+    Пусть \({ f }\) периодична с периодом \({ 2\pi }\).
+    \begin{icloze}{1}Разложение \({ f }\) по системе \({ \left\{ 1, \cos nx, \sin nx \right\} }\) с коэффициентами Фурье\end{icloze} называется \begin{icloze}{1}рядом Фурье функции \({ f }\).\end{icloze}
+\end{note}
+
+\begin{note}{fdee5342607e4a57933450d0d3fe819e}
+    Как строится ряд Фурье для функции, определённой на конечном интервале?
+
+    \begin{cloze}{1}
+        Сначала функция периодически продолжается на всю числовую ось.
+    \end{cloze}
+\end{note}
+
 \end{document}
