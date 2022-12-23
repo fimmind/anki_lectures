@@ -1098,4 +1098,244 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 14.12.22}
+\begin{note}{1dbe2f8bdd994378839dddcaf69ffebf}
+    Что называется нормальной системой ОДУ?
+
+    \begin{cloze}{1}
+        Система ОДУ \({ \frac{dy_i}{dx} = f_i(x, y_1, \ldots, y_m) }\) для \({ i = 1, \ldots, m }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5acbc74ff5274cebae6e7b060adfd7fc}
+    Какой должны быть функции \({ f_i }\) из определения нормальной системы ОДУ?
+
+    \begin{cloze}{1}
+        Любые функции на некоторой общей области.
+    \end{cloze}
+\end{note}
+
+\begin{note}{62d1d346e7d84fa480c253bc7ffe8feb}
+    Любое дифференциальное уравнение, разрешённое относительно старшей производной, сводится к \begin{icloze}{1}нормальной системе ОДУ специальной вида.\end{icloze}
+\end{note}
+
+\begin{note}{96ea219edca14258bd7a4fce45d39800}
+    Какие ОДУ высших порядков гарантированно сводятся к нормальной системе ОДУ?
+
+    \begin{cloze}{1}
+        Разрешённые относительно старшей производной.
+    \end{cloze}
+\end{note}
+
+\begin{note}{85cb7f9eac2b41d8ac0ff8551a26e0b6}
+    К какой нормальной системе сводится ОДУ
+    \[
+        \frac{d^{m}y}{dx^{m}} = f(x, y, y', \ldots, y^{(m-1)})\,?
+    \]
+
+    \begin{cloze}{1}
+        \[
+            \begin{cases}
+                y_0 = y, \\
+                y_{i+1} = y'_i, \\
+                y_m = f(\ldots).
+            \end{cases}
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{0ad55ab69a854bcbbb1a172e5f3ea76c}
+    Пусть \({ x \in \mathbb R^{n} }\).
+    \begin{icloze}{2}
+        Величина
+        \[
+            \max_i \left\lvert x_i \right\rvert
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}максимум-нормой вектора \({ x }\).\end{icloze}
+\end{note}
+
+\begin{note}{5148d0bcd40f4a1caf2a3cb03b8d1fe2}
+    Пусть \({ x \in \mathbb R^{n} }\).
+    \begin{icloze}{2}Максимум-норма вектора \({ x }\)\end{icloze} обозначается \begin{icloze}{1}\({ \left\lvert x \right\rvert }\).\end{icloze}
+\end{note}
+
+\begin{note}{898c3fb2a0e949ec92dfe51da414f60f}
+    Пусть \({ x \in \mathbb R^{n} }\).
+    Каким соотношением связаны \({ \left\lVert x \right\rVert }\) и \({ \left\lvert x \right\rvert }\)?
+    (Оценка снизу для \({ \left\lvert x \right\rvert }\).)
+
+    \begin{cloze}{1}
+        \[
+            \left\lVert x \right\rVert \leqslant \sqrt{n} \left\lvert x \right\rvert\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{7104b4d248e24eb68bd2b7ba38bad530}
+    Пусть \({ x \in \mathbb R^{n} }\).
+    Каким соотношением связаны \({ \left\lVert x \right\rVert }\) и \({ \left\lvert x \right\rvert }\)?
+    (Оценка сверху для \({ \left\lvert x \right\rvert }\).)
+
+    \begin{cloze}{1}
+        \[
+            \quad \left\lvert x \right\rvert \leqslant \left\lVert x \right\rVert\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{489adc55335c42919fe3f46965f5a6ae}
+    Пусть \({ A = (a_{ij}) \in \mathbb R^{n \times m} }\).
+    \begin{icloze}{2}
+        Величина
+        \[
+            \max_{i,j} a_ij
+        \]
+    \end{icloze}
+    называется \begin{icloze}{1}максимум-нормой матрицы \({ A }\).\end{icloze}
+\end{note}
+
+\begin{note}{f810fa6058094303a4bd1bb3cedaaf8e}
+    Пусть \({ A = (a_{ij}) \in \mathbb R^{n \times m} }\).
+    \begin{icloze}{2}Максимум-норма матрицы \({ A }\)\end{icloze} обозначается \begin{icloze}{1}\({ \left\lVert A \right\rVert }\).\end{icloze}
+\end{note}
+
+\begin{note}{b352b66d7dd14b1a9b2ba2e66d888d5c}
+    Пусть \({ A \in \mathbb R^{n \times m}, B \in \mathbb R^{m \times l} }\).
+    Что можно сказать о \({ \left\lVert A \cdot B \right\rVert }\)?
+
+    \begin{cloze}{1}
+        \[
+            \left\lVert A \cdot B \right\rVert \leqslant m \left\lVert A \right\rVert \left\lVert B \right\rVert\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{335e8560b4c44a4c806181b559981011}
+    Пусть \({ A \in \mathbb R^{n \times m}, x \in \mathbb R^{m} }\).
+    Что можно сказать о \({ \left\lvert Ax \right\rvert }\)?
+
+    \begin{cloze}{1}
+        \[
+            \left\lvert x \right\rvert \leqslant m \left\lVert A \right\rVert \cdot \left\lvert x \right\rvert\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{b4cbd2c25e924ec78b6044c556b86bf3}
+    Пусть \({ f : [a, b] \to \mathbb R^{n} }\).
+    Вектор-функция \({ f }\) называется \begin{icloze}{2}интегрируемой,\end{icloze} если \begin{icloze}{1}все \({ f_i }\) интегрируемы.\end{icloze}
+\end{note}
+
+\begin{note}{04c57fb9b7804a999fdec80fd902491c}
+    Пусть \({ f : [a, b] \to \mathbb R^{n} }\).
+    Тогда
+    \[
+        \begin{icloze}{2}\int_{a}^{b} f\end{icloze} \overset{\text{def}}= \begin{icloze}{1}\begin{pmatrix}
+            \int_{a}^{b} f_i
+        \end{pmatrix} \in \mathbb R^{n}.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{ee80a65e53c644b7a5ad9908f5e49528}
+    Пусть \({ f : [a, b] \to \mathbb R^{n} }\) интегрируема и \begin{icloze}{2}\({ \left\lvert f \right\rvert \leqslant M }\).\end{icloze}
+    Тогда
+    \[
+        \left\lvert \int_{a}^{b} f \right\rvert \leqslant \begin{icloze}{1}M(b - a).\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{b957e9e00eee4363903fc87643ce7fd5}
+    Как в векторном виде записывается нормальная система ОДУ?
+
+    \begin{cloze}{1}
+        \[
+            \frac{dy}{dx} = f(x, y)\,,
+        \]
+        где \({ y }\) --- вектор-функция, \({ f }\) --- отображение на области.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee6d475bfc6d40e5af0793bfd09da0e8}
+    Что фактически является решением нормальной системы ОДУ в векторном виде?
+
+    \begin{cloze}{1}
+        Вектор-функция на некотором интервале.
+    \end{cloze}
+\end{note}
+
+\begin{note}{231b400e13e949e9a728a321099f9010}
+    Как ставится задача Коши для нормальной системы ОДУ?
+
+    \begin{cloze}{1}
+        Так же как для ОДУ первого порядка, но с векторными начальными данными.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c7fa040588b644e0872aab7d789419ec}
+    Что устанавливает условие Липшица (интуитивно)?
+
+    \begin{cloze}{1}
+        Отображение увеличивает расстояние между точками не более чем в \({ L }\) раз.
+    \end{cloze}
+\end{note}
+
+\begin{note}{f828a753435f412b8a1544ceaffdf050}
+    Как выглядит условие Липшица для \({ f : G \subseteq \mathbb R^{n} \to \mathbb R^{m} }\)?
+
+    \begin{cloze}{1}
+        \begin{gather*}
+            \left\lVert f(x) - f(y) \right\rVert \leqslant L\left\lVert x - y \right\rVert \\
+            \forall x, y \in G\,.
+        \end{gather*}
+    \end{cloze}
+\end{note}
+
+\begin{note}{ccc2b3d677b44cc2a1105918d53fa9db}
+    Пусть \({ f : G \subseteq \mathbb R^{n} \to \mathbb R^{m} }\).
+    Как называется условие
+    \begin{gather*}
+        \left\lVert f(x) - f(y) \right\rVert \leqslant L\left\lVert x - y \right\rVert \\
+        \forall x, y \in G\,?
+    \end{gather*}
+
+    \begin{cloze}{1}
+        Условие Липшица.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4b7cc86c9503491290ec6d101a4cb723}
+    \begin{icloze}{2}Значение \({ L }\)\end{icloze} из определения \begin{icloze}{2}условия Липшица\end{icloze} называют \begin{icloze}{1}константой Липшица.\end{icloze}
+\end{note}
+
+\begin{note}{d28025b79af146e8a00c926de2bd80b8}
+    Множество \begin{icloze}{2}всех липшицевых отображений\end{icloze} на множестве \({ H }\) обозначается \begin{icloze}{1}\({ \operatorname{Lip}(H) }\).\end{icloze}
+\end{note}
+
+\begin{note}{f57d54d7b53747ae9e26af0c12ea83f0}
+    Пусть \({ f : G \subseteq \mathbb R^{n} \to \mathbb R^{m} }\).
+    Говорят, что \begin{icloze}{2}\({ f }\) удовлетворяет условию Липшица\end{icloze} по переменным \({ x_{i_1}, \ldots, x_{i_k} }\), если
+    \begin{icloze}{1}
+        \({ f }\) является липшицевой при любом фиксированном значении остальных переменных.
+    \end{icloze}
+\end{note}
+
+\begin{note}{8f3c6f4b5a514cf5a5bd4fc268c0ca17}
+    Множество \begin{icloze}{2}всех функций, удовлетворяющих условию Липшица по переменной \({ x }\),\end{icloze} на множестве \({ H }\) обозначается \begin{icloze}{1}\({ \operatorname{Lip}_x (H) }\).\end{icloze}
+\end{note}
+
+\begin{note}{8dd4d146c7f6410d81e59d0d9cf70e79}
+    Говорят, что \({ f : G \subseteq \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{2}удовлетворяет условию Липшица локально в точке \({ x_0 \in G }\),\end{icloze} если
+    \begin{icloze}{1}
+        внутри \({ G }\) найдётся окрестность \({ x_0 }\), на которой \({ f }\) является липшицевой.
+    \end{icloze}
+\end{note}
+
+\begin{note}{915f61d4e6dd41e3ae1cc164fdeb321b}
+    Говорят, что \({ f : G \subseteq \mathbb R^{n} \to \mathbb R^{m} }\) \begin{icloze}{2}удовлетворяет условию Липшица локально на \({ G }\),\end{icloze} если
+    \begin{icloze}{1}
+        \({ f }\) локально липшицева в любой точке \({ G }\).
+    \end{icloze}
+\end{note}
+
 \end{document}
