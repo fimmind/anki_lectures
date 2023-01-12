@@ -1598,4 +1598,87 @@
     \end{cloze}
 \end{note}
 
+\section{Лекция 21.12.22}
+\begin{note}{f075132ed82c4c6a87d2bacaeb61a7a6}
+    Как определяется частичная сумма ряда \({ \sum_{n \in \mathbb Z} a_n }\)?
+
+    \begin{cloze}{1}
+        Сумма от \({ a_{-k} }\) до \({ a_k }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{52518a8f21a94b5ca40cce0ed48b6420}
+    Как ряд Фурье запаивается в экспоненциальной форме?
+
+    \begin{cloze}{1}
+        \[
+            \sum_{n \in \mathbb Z} c_n e^{i nx}.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{5cb814e06e514bbab9de89636a2056de}
+    Как ряд Фурье в тригонометрической записи привести к экспоненциальной форме?
+
+    \begin{cloze}{1}
+        Через формулы Эйлера.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2a543da90ce94d149fc00d00159cf586}
+    Пусть дан ряд Фурье
+    \[
+        \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx) = \sum_{n \in \mathbb Z} c_n e^{i nx}\,.
+    \]
+    Как \({ c_n }\) выражается через \({ a_n, b_n }\) для \({ n > 0 }\)?
+
+    \begin{cloze}{1}
+        \({ \frac{1}{2}(a_n - ib_n) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{8f1f4605f0d643f3a81edcb52c36b5bf}
+    Пусть дан ряд Фурье
+    \[
+        \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx) = \sum_{n \in \mathbb Z} c_n e^{i nx}\,.
+    \]
+    Как \({ c_{-n} }\) выражается через \({ a_n, b_n }\) для \({ n > 0 }\)?
+
+    \begin{cloze}{1}
+        \({ \frac{1}{2}(a_n + ib_n) }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{17d3e4c6c13d4ff68957bcc03f88748d}
+    Пусть дан ряд Фурье
+    \[
+        \frac{a_0}{2} + \sum_{n=1}^{\infty} (a_n \cos nx + b_n \sin nx) = \sum_{n \in \mathbb Z} c_n e^{i nx}\,.
+    \]
+    Как \({ c_0 }\) выражается через изначальные коэффициенты?
+
+    \begin{cloze}{1}
+        \({ \frac{a_0}{2} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{613d457df89a4ad68ab32c124f308600}
+    Пусть \({ f }\) периодична с периодом \({ 2\pi }\).
+    Как выводится интегральная формула для коэффициентов ряда Фурье \({ f }\)?
+
+    \begin{cloze}{1}
+        Через их связь с коэффициентами в тригонометрической записи.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d3624b2bd96a4696b561dcae634c1da1}
+    Пусть \({ f }\) периодична с периодом \({ 2\pi }\).
+    Как определяются коэффициенты Фурье \({ f }\) в тригонометрической форме?
+
+    \begin{cloze}{1}
+        \[
+            c_n = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x) e^{-i nx}\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
 \end{document}
