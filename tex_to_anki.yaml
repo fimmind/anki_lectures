@@ -121,7 +121,7 @@ model:
       {{cloze:Text}}
 
       <div class="deck">
-        {{Deck}}
+        {{Subdeck}}
       </div>
     back: |
       {{cloze:Text}}
@@ -132,7 +132,7 @@ model:
       {{/Back Extra}}
 
       <div class="deck">
-        {{Deck}}
+        {{Subdeck}}
       </div>
     css: |
       .card {
