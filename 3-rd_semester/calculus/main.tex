@@ -1681,4 +1681,109 @@
     \end{cloze}
 \end{note}
 
+\begin{note}{e909dbe9a169419ea86fe2c964eae6a6}
+    Как ядро Дирихле определяется в экспоненциальном виде?
+
+    \begin{cloze}{1}
+        Как частная сумма ряда
+        \[
+            \sum_{n \in \mathbb Z} e^{i ku}\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{fa9bdfb72168417c97cb711c6b13a465}
+    Как ядро Дирихле определяется в тригонометрическом виде?
+
+    \begin{cloze}{1}
+        Частичная сумма ряда
+        \[
+            1 + 2 \sum_{k = 1}^{\infty} \cos ku\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{e6e5ee10845646ab8dcd748471112d90}
+    Как ядро Дирихле выражается аналитически?
+
+    \begin{cloze}{1}
+        \[
+            u \mapsto \frac{\sin \left[ (n+\frac{1}{2})u \right]}{\sin \frac{u}{2}}\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{9b31df11e6da4d819e4225dbf0471337}
+    Как из тригонометрического вида ядра Дирихле получить его аналитическое выражение?
+
+    \begin{cloze}{1}
+        Умножить и поделить на \({ \sin \frac{u}{2} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2dce5c69dca3450aaee6de2527a3d7dc}
+    Как из экспоненциального вида ядра Дирихле получить его аналитическое выражение?
+
+    \begin{cloze}{1}
+        Частичная сумма геометрической прогрессии и формулы Эйлера.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0d94bfa61d9242c9ae0ff4778349f8cd}
+    \begin{icloze}{2}Ядро Дирихле порядка \({ n }\)\end{icloze} обозначается \begin{icloze}{1}\({ D_n (\,\cdot\,) }\).\end{icloze}
+\end{note}
+
+\begin{note}{b6451f88225242628cd856a597e2f5f7}
+    Ядро Дирихле порядка \({ n }\) периодично с периодом \begin{icloze}{1}\({ 2\pi }\).\end{icloze}
+\end{note}
+
+\begin{note}{2f9896b98be041e09a26a90329bab0a3}
+    \[
+        D_n(0) = \begin{icloze}{1}2n + 1.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (\({ D_n }\) --- ядро Дирихле.)
+    \end{center}
+\end{note}
+
+\begin{note}{7bcf23025ba446029af812c04f251f89}
+    \[
+        \int_{-\pi}^{\pi} D_n = \begin{icloze}{1}2\pi.\end{icloze}
+    \]
+
+    \begin{center}
+        \tiny
+        (\({ D_n }\) --- ядро Дирихле.)
+    \end{center}
+\end{note}
+
+\begin{note}{33851282ccac4f6dac70325562a6aa45}
+    Интегральная формула для частичной суммы ряда Фурье\ldots
+
+    \begin{cloze}{1}
+        \[
+            \frac{1}{2\pi} \int_{x-\pi}^{x+\pi} f(x-u) D_{n}(u)\: du\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{a6d637214d9f42cd8836fad0a5a39966}
+    Как выводится интегральная формула для частной суммы ряда Фурье?
+
+    \begin{cloze}{1}
+        Из интегральных формул для коэффициентов и линейности интеграла.
+    \end{cloze}
+\end{note}
+
+\begin{note}{184da0d0964b462886c144f907c1dafc}
+    Пусть \({ f }\) периодична с периодом \({ 2\pi }\).
+    Тогда
+    \[
+        \frac{1}{2\pi} \int_{x - \pi}^{x + \pi} f(x - u) D_n(u)\: du
+    \]
+    есть значение \begin{icloze}{1}\({ n }\)-й частичной суммы ряда Фурье \({ f }\).\end{icloze}
+\end{note}
+
 \end{document}
