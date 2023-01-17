@@ -1786,4 +1786,135 @@
     есть значение \begin{icloze}{1}\({ n }\)-й частичной суммы ряда Фурье \({ f }\).\end{icloze}
 \end{note}
 
+\begin{note}{0a7db5e527cf439382b61f1e7c347d15}
+    Пусть \({ f : \mathbb R \to \mathbb R }\).
+    \[
+        \int_{\mathbb R} f \overset{\text{def}}= \begin{icloze}{1}\int_{-\infty}^{+\infty} f\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{adfe18ba7f9749c7961ecfb7d937ffda}
+    Какие функции рассматриваются в лемме Римана-Лебега?
+
+    \begin{cloze}{1}
+        Абсолютно интегрируемые на всей вещественной оси.
+    \end{cloze}
+\end{note}
+
+\begin{note}{9dbf920feee84079a6a4f541c78c6924}
+    Какое условие ставится в лемме Римана-Лебега?
+
+    \begin{cloze}{1}
+        Конечность \({ \int_{\mathbb R} \left\lvert f \right\rvert }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{5e6e11bdfaca408c965d6f7e3a98833a}
+    Поведение какого интеграла рассматривается в лемме Римана-Лебега?
+
+    \begin{cloze}{1}
+        \[
+            \int_{\mathbb R} f(x) e^{i \lambda x}\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{8d36f6c34bac455797f54b78e001c815}
+    Что в лемме Римана-Лебега утверждается о поведении рассматриваемого интеграла?
+
+    \begin{cloze}{1}
+        Он бесконечно мал при \({ \lambda \to \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{7db9640421d04f6db0aff00e51f1b83c}
+    Как лемма Римана-Лебега применяется к интегралам по конечным промежуткам?
+
+    \begin{cloze}{1}
+        Функция доопределяется нулём вне промежутка.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a466a9f04fb1474fb5df53f79796dffe}
+    Пусть \({ \int_{\mathbb R} \left\lvert f \right\rvert < +\infty }\).
+    Что можно сказать о
+    \[
+        \int_{\mathbb R} f(x) \cos (\lambda x)\: dx\,?
+    \]
+
+    \begin{cloze}{1}
+        Он бесконечно мал при \({ \lambda \to \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a0d6e16577f64e99b33805b6860d3f7c}
+    Пусть \({ \int_{\mathbb R} \left\lvert f \right\rvert < +\infty }\).
+    Что можно сказать о
+    \[
+        \int_{\mathbb R} f(x) \sin (\lambda x)\: dx\,?
+    \]
+
+    \begin{cloze}{1}
+        Он бесконечно мал при \({ \lambda \to \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2ea58c53c7584179b8b7217073e51415}
+    К каким периодическим функциям применим принцип локализации для рядов Фурье?
+
+    \begin{cloze}{1}
+        К абсолютно интегрируемым.
+    \end{cloze}
+\end{note}
+
+\begin{note}{1eed1f99b5a4437c9994353ca3aeaaec}
+    Что, в общих чертах, утверждает принцип локализации для рядов Фурье?
+
+    \begin{cloze}{1}
+        Поведение ряда Фурье в точке полностью определяется поведением функции в сколь угодно маленькой окрестности этой точки.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e5ab08a7b763420bba7ab14e47f420b3}
+    Окрестность какого радиуса рассматривается в формальной формулировке принципа локализации для рядов Фурье?
+
+    \begin{cloze}{1}
+        \({ 0 < \delta \leqslant \pi }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{c1cf97c7d3404af2b767c54158c019fc}
+    Более формально, \begin{icloze}{2}принцип локализации\end{icloze} для рядов Фурье утверждает, что
+    \[
+        s_n(x) = \begin{icloze}{1}\frac{1}{2\pi} \int_{-\delta}^{\delta} f(x-u) D_n(u)\: du + o(1)\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{706e7ddd1e444d7fb7bec84579b4415b}
+    В чём ключевая идея доказательства принципа локализации для рядов Фурье?
+
+    \begin{cloze}{1}
+        Интегральная формула для частичных сумм; аддитивность интеграла и лемма Римана-Лебега.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0ab72f4ed532466d89795d09d1eb6b99}
+    В доказательстве принципа локализации для рядов Фурье, на какие промежутки разбивается интегральное выражение частных сумм?
+
+    \begin{cloze}{1}
+        \({ [-\pi, -\delta],\: [-\delta, \delta],\: [\delta, \pi] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{f021db706f404ea083b936725132c607}
+    Как доказательстве принципа локализации для рядов Фурье применить лемму Римана-Лебега к
+    \[
+        \int_{\delta}^{\pi} f(x - u) D_n(u)\: du\,?
+    \]
+
+    \begin{cloze}{1}
+        Дать нижнюю оценку знаменателю в аналитическом выражении \({ D_n(u) }\).
+    \end{cloze}
+\end{note}
+
 \end{document}
