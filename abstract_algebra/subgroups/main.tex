@@ -350,4 +350,161 @@
     Then \begin{icloze}{1}\({ \bigcup_{i=1}^{\infty} H_i }\) is a subgroup of \({ G }\).\end{icloze}
 \end{note}
 
+\section{Centralizers and Normalizers, Stabilizers and Kernels}
+\begin{note}{93de251693e74655a5752529379e7081}
+    For what do we define centralizers in groups?
+
+    \begin{cloze}{1}
+        For nonempty subsets of the group.
+    \end{cloze}
+\end{note}
+
+\begin{note}{b46233e067ea4c24b38af57081ef1db3}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    \begin{icloze}{1}
+        The set
+        \[
+            \left\{ g \in G \mid gag^{-1} = a \text{ for all } a \in A \right\}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{2}the centralizer of \({ A }\) in \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{3c2adb104b55494a8a248b4e6cf72980}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    \begin{icloze}{2}The centralizer of \({ A }\) in \({ G }\)\end{icloze} is denoted
+    \begin{icloze}{1}
+        \[
+            C_G(A)\,.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{aeea9d02d1a8429ab94927313c1e2194}
+    How can centralizers be redefined in terms of commutativity?
+
+    \begin{cloze}{1}
+        As the set of all the elements that commute with every element of the subset.
+    \end{cloze}
+\end{note}
+
+\begin{note}{588fd51b4281485c87a74faa9ddbf8f5}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    The centralizer of \({ A }\) in \({ G }\) forms \begin{icloze}{1}a subgroup of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{18e60ffefbe647a6aa9b7a9feeb58ef1}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    When is the centralizer of \({ A }\) in \({ G }\) a subgroup of \({ G }\)?
+
+    \begin{cloze}{1}
+        Always.
+    \end{cloze}
+\end{note}
+
+\begin{note}{23eee6bafc20447987eaab729108324e}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    In the special case when \({ A = \left\{ a \right\} }\) we shall write \begin{icloze}{1}simply \({ C_{G}(a) }\)\end{icloze} instead of \begin{icloze}{2}\({ C_{G}(\left\{ a \right\}) }\).\end{icloze}
+\end{note}
+
+\begin{note}{92e1f52031224232bf8ac69f4014862c}
+    Let \({ G }\) be a group and \({ a \in G }\).
+    Then
+    \[
+        \begin{icloze}{1}\langle a \rangle\end{icloze} \subseteq C_G(a)\,.
+    \]
+\end{note}
+
+\begin{note}{656f69d38b7e4f41882f7feda5410dde}
+    \[
+        C_{Q_8}(i) = \begin{icloze}{1}\left\{ 1, -1, i, -i \right\}\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1fd69e94ef324e30a0054ea4860105e4}
+    \[
+        C_{Q_8}(1) = \begin{icloze}{1}Q_8\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{1ec04d8a609e442690da0ee9332a9647}
+    For what do we define centers in groups?
+
+    \begin{cloze}{1}
+        For the group itself.
+    \end{cloze}
+\end{note}
+
+\begin{note}{936431cf3df24996965ce022800fa1bc}
+    Let \({ G }\) be a group.
+    \begin{icloze}{2}The set of elements of \({ G }\) commuting with all elements of \({ G }\)\end{icloze} is called \begin{icloze}{1}the center of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{4fdf7ab9640d453a9eb90b77b45f35b2}
+    Let \({ G }\) be a group.
+    \begin{icloze}{2}The center of \({ G }\)\end{icloze} is denoted \begin{icloze}{1}\({ Z(G) }\).\end{icloze}
+\end{note}
+
+\begin{note}{b7d3c0377db64825b9428611799a938c}
+    Let \({ G }\) be a group.
+    The center of \({ G }\) forms \begin{icloze}{1}a subgroup of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{3c3e0bd81b194850bbeed0d6688646ea}
+    Let \({ G }\) be a group.
+    When is the center of \({ G }\) a subgroup of \({ G }\)?
+
+    \begin{cloze}{1}
+        Always.
+    \end{cloze}
+\end{note}
+
+\begin{note}{10b56b05fab34d6a91d494a9c515f2a4}
+    Let \({ G }\) be a group.
+    \begin{icloze}{2}The center of \({ G }\)\end{icloze} is the centralizer of \begin{icloze}{1}\({ G }\) in \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{4c598c0713ef4d649fe3629dfcd8a0c7}
+    For what do we define normalizers in groups?
+
+    \begin{cloze}{1}
+        For nonempty subsets.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ea05e39de520479892867fd132778337}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    \begin{icloze}{1}
+        The set
+        \[
+            \left\{ g \in G \mid gAg^{-1} = A \right\}
+        \]
+    \end{icloze}
+    is called \begin{icloze}{1}the normalizer of \({ A }\) in \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{c4b4c4424c6549c6b9afccb2945d17ee}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    \begin{icloze}{2}The normalizer of \({ A }\) in \({ G }\)\end{icloze} is denoted
+    \begin{icloze}{1}
+        \[
+            N_G(A)\,.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f831383807f34538b90b130d417dfb95}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    The normalizer of \({ A }\) in \({ G }\) forms \begin{icloze}{1}a subgroup of \({ G }\).\end{icloze}
+\end{note}
+
+\begin{note}{b536e255fed54b02a1036b9baf6a7dc6}
+    Let \({ G }\) be a group and \({ A }\) be a nonempty subset of \({ G }\).
+    When is the normalizer of \({ A }\) in \({ G }\) a subgroup of \({ G }\)?
+
+    \begin{cloze}{1}
+        Always.
+    \end{cloze}
+\end{note}
+
 \end{document}
