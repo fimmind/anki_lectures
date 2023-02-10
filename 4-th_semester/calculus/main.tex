@@ -1,0 +1,173 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Лекция 08.02.23 (1)}
+\begin{note}{c479b17923b04cc899ccd36d430abf6e}
+    Для каких функций определяется интеграл Фурье?
+
+    \begin{cloze}{1}
+        Кусочно-гладких на любом отрезке и абсолютно интегрируемых на \({ \mathbb R }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{2e470cdc0266434182a07d52209c1bca}
+    Откуда, в общих чертах, возникает понятие интеграла Фурье?
+
+    \begin{cloze}{1}
+        Из предельного перехода от рядов Фурье.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a801b28fdfec4b9fa7c62fd2092d035a}
+    Как выглядит ряд Фурье \({ 2l }\)-периодической функции?
+
+    \begin{cloze}{1}
+        \[
+            \frac{a_0}{2} + \sum_{n=1}^{\infty}(a_n \cos \frac{\pi nx}{l} + b_n \sin \frac{\pi nx}{l})\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{a59aff7532704ca498a695bca1ca01d1}
+    Как определяются коэффициенты \({ a_n }\) ряда Фурье \({ 2l }\)-пери\-о\-ди\-чес\-кой функции?
+
+    \begin{cloze}{1}
+        \[
+            \frac{1}{l} \int_{-l}^{l} f(x) \cos \frac{\pi nx}{l}\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{9ecca0b0846a4282ba65eb6706848d71}
+    Как определяются коэффициенты \({ b_n }\) ряда Фурье \({ 2l }\)-пери\-о\-ди\-чес\-кой функции?
+
+    \begin{cloze}{1}
+        \[
+            \frac{1}{l} \int_{-l}^{l} f(x) \sin \frac{\pi nx}{l}\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{64752d21c9814733ac5b4fc4a8ebb571}
+    Для каких функций выполняется интегральная формула Фурье?
+
+    \begin{cloze}{1}
+        Кусочно-гладких на любом отрезке и абсолютно интегрируемых на \({ \mathbb R }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{b4fb252816f14260aae170ff59eb8c0d}
+    Как выводится интегральная формула Фурье?
+
+    \begin{cloze}{1}
+        Как предел разложения в ряд Фурье на \({ [-r, r] }\) при \({ r \to \infty }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a459215af9634f8a9ef3a69def0eb908}
+    Что в выводе интегральной формулы Фурье происходит со свободным членом разложения в ряд Фурье?
+
+    \begin{cloze}{1}
+        Он стремится к нулю.
+    \end{cloze}
+\end{note}
+
+\begin{note}{58b7f21884cd410fb9bd777ec693ebc4}
+    Как в выводе интегральной формулы Фурье перейти от суммы к интегралу?
+
+    \begin{cloze}{1}
+        Использовать неформальное сходство с интегральной суммой соответствующего интеграла.
+    \end{cloze}
+\end{note}
+
+\begin{note}{c9abe7ec159c45c2a383de945f6c72e5}
+    Как в выводе интегральной формулы Фурье показать неформальное сходство выражения
+    \[
+        \sum_{n=1}^{\infty} \frac{1}{l} \left( \int_{-l}^{l} f(x) \cos \frac{\pi n (x - u)}{l}\: du \right)
+    \]
+    с соответствующей интегральной суммой?
+
+    \begin{cloze}{1}
+        Ввести \({ \lambda_k = \frac{\pi n}{l} }\), откуда \({ \Delta \lambda_k = \frac{\pi}{l} }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{3b4198d58dcc4333b79c02b0ff82b891}
+    Интеграл Фурье\ldots
+
+    \begin{cloze}{1}
+        \[
+            \int_{0}^{\infty} (a(\lambda) \cos \lambda x + b(\lambda) \sin \lambda x)\: d\lambda\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{c889f142f0cf44e0b06b987221c635da}
+    Как определяется коэффициент \({ a(\lambda) }\) в интеграле Фурье функции \({ f }\)?
+
+    \begin{cloze}{1}
+        \[
+            a(\lambda) = \frac{1}{\pi} \int_{\mathbb R} f(x) \cos \lambda x\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{d1a6cd839e7c4a2786c48a1a3ad6b0fa}
+    Как определяется коэффициент \({ b(\lambda) }\) в интеграле Фурье функции \({ f }\)?
+
+    \begin{cloze}{1}
+        \[
+            b(\lambda) = \frac{1}{\pi} \int_{\mathbb R} f(x) \sin \lambda x\: dx\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{3ea5ca54f4a44a11a08a441ee3f997ea}
+    Коэффициенты \({ a(\lambda) }\) и \({ b(\lambda) }\) в интеграле Фурье фактически задают \begin{icloze}{1}закон распределения амплитуд и начальных фаз в зависимости от частоты.\end{icloze}
+\end{note}
+
+\begin{note}{a77d334a54924e4ba13350819b4aa62e}
+    Как называется интеграл
+    \[
+        \frac{1}{\pi} \int_{0}^{\infty} d\lambda \int_{\mathbb R} f(u) \cos (\lambda(t-x))\: du\,?
+    \]
+
+    \begin{cloze}{1}
+        Интеграл Фурье.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2106cbd921f24b16abbcd357a0ca9e55}
+    Что утверждает интегральная формула Фурье?
+
+    \begin{cloze}{1}
+        Равенство среднего значения односторонних пределов значению интегралу Фурье.
+    \end{cloze}
+\end{note}
+
+\begin{note}{0cb0976cbc5442fd977022e6b98b5088}
+    Как интеграл Фурье упрощается для нечётных функций?
+
+    \begin{cloze}{1}
+        Остаются только синусы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{ee2657adb0724053ab951a4022088d05}
+    Как интеграл Фурье упрощается для чётных функций?
+
+    \begin{cloze}{1}
+        Остаются только косинусы.
+    \end{cloze}
+\end{note}
+
+\begin{note}{405a32411509412b8a3b7a6a0384c14b}
+    Как интеграл Фурье строится для функций, определённых на \({ (0, +\infty) }\)?
+
+    \begin{cloze}{1}
+        Путём (не)чётного продолжения функции на \({ \mathbb R }\).
+    \end{cloze}
+\end{note}
+
+\end{document}
