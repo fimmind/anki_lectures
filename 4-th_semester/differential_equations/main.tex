@@ -1,0 +1,106 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Лекция 08.02.23}
+\begin{note}{75827b1592ce43c89cb6b0ced3b4d31f}
+    Что называют точкой единственности нормальной системы ОДУ?
+
+    \begin{cloze}{1}
+        Точку, в которой любые два решения совпадают в какой-то окрестности.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2ea8ea4d05724302a63c54bc0da567d3}
+    Что называют областью единственности нормальной системы ОДУ?
+
+    \begin{cloze}{1}
+        Множество, каждая точка которого является точкой единственности.
+    \end{cloze}
+\end{note}
+
+\begin{note}{d01750d4171240d29b0a0cd7c3d3c529}
+    Как называется множество, каждая точка которого является точкой единственности нормальной системы ОДУ?
+
+    \begin{cloze}{1}
+        Область единственности.
+    \end{cloze}
+\end{note}
+
+\begin{note}{4d1523d66ab844aa9b0704cc711c3417}
+    Какой объект рассматривается в лемме Гронуолла?
+
+    \begin{cloze}{1}
+        Вещественная функция, непрерывная на интервале.
+    \end{cloze}
+\end{note}
+
+\begin{note}{543b9220dd454bd9924332527fd9daf3}
+    При каком условии мы можем что-либо заключить из леммы Гронуолла?
+
+    \begin{cloze}{1}
+        Функция неотрицательна и удовлетворяет верхней оценке специального вида.
+    \end{cloze}
+\end{note}
+
+\begin{note}{a3ecb63abd4a4f7cb6f0b3816af87e42}
+    Какая верхняя оценка рассматривается в условии леммы Гронуолла для функции \({ u(x) }\)?
+
+    \begin{cloze}{1}
+        \[
+            u(x) \leqslant \lambda + \mu \left\lvert \int_{x_0}^{x} u \right\rvert\,.
+        \]
+    \end{cloze}
+\end{note}
+
+\begin{note}{d9166e03442c40348858cea60c552e7b}
+    Что мы заключаем из леммы Гронуолла при
+    \[
+        0 \leqslant u(x) \leqslant \lambda + \mu \left\lvert \int_{x_0}^{x} u \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        Функция мажорируется \({ \lambda e^{\mu\left\lvert x - x_0 \right\rvert} }\)
+    \end{cloze}
+\end{note}
+
+\begin{note}{d0ac7971eb0848c5945bd44448c69ed2}
+    Как называется утверждение, дающее верхнюю оценку значению функции, удовлетворяющей неравенству
+    \[
+        0 \leqslant u(x) \leqslant \lambda + \mu \left\lvert \int_{x_0}^{x} u \right\rvert\,?
+    \]
+
+    \begin{cloze}{1}
+        Лемма Гронуолла.
+    \end{cloze}
+\end{note}
+
+\begin{note}{027057804d3b47cda81edd42af57dd3a}
+    Каков первый шаг в доказательстве леммы Гронуолла?
+
+    \begin{cloze}{1}
+        Не умаляя общности, \({ x > x_0 }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{a1c68ab3f1ae4bdbbee93390da3a3de8}
+    В чём основная идея доказательства леммы Гронуолла?
+
+    \begin{cloze}{1}
+        Продифференцировать правую часть и получить для неё рекуррентное неравенство.
+    \end{cloze}
+\end{note}
+
+\begin{note}{e95c91c2543a47bf89a1249f77ff6307}
+    В доказательстве леммы Гронуолла, что делать с
+    \[
+        F'(x) \leqslant \mu F(x)\,,
+    \]
+    где \({ F(x) }\) --- верхняя оценка из условия леммы?
+
+    \begin{cloze}{1}
+        Перенести всё налево, умножить на \({ e^{\mu(x - x_0)} }\) и ``признать врага в лицо.''
+    \end{cloze}
+\end{note}
+
+\end{document}
