@@ -1,0 +1,119 @@
+%! TeX root = ./main.tex
+\input{../../prelude.tex}
+
+\begin{document}
+\section{Лекция 09.02.23}
+\begin{note}{79b958e8be694a3b83cd89b928e5aae4}
+    Что называют параметрическим заданием кривой в \({ \mathbb R^{n} }\)?
+
+    \begin{cloze}{1}
+        Функцию \({ [a, b] \to \mathbb R^{n} }\), образ которой есть эта кривая.
+    \end{cloze}
+\end{note}
+
+\begin{note}{3b28daea0e1e4ffe81b7758981a6bb16}
+    \begin{icloze}{2}Кривую, заданную функцией \({ r(t) = (a \cos t, a \sin t, bt) }\),\end{icloze} называют \begin{icloze}{1}винтовой линией.\end{icloze}
+\end{note}
+
+\begin{note}{0643b310d0514a60b14130a5867c1cc1}
+    Какую кривую задаёт функция
+    \[
+        r(t) = r_0 + a \cdot \cos t + b \cdot \sin t,
+    \]
+    где \({ a \nparallel b }\)?
+
+    \begin{cloze}{1}
+        Эллипс или его часть.
+    \end{cloze}
+\end{note}
+
+\begin{note}{08561b0906eb4b9fb26157cd151c828d}
+    Пусть \({ x, y \in \mathbb R^3 }\).
+    Будем обозначать \begin{icloze}{2}векторное произведение \({ x }\) и \({ y }\)\end{icloze} как
+    \begin{icloze}{1}
+        \[
+            x \times y\,.
+        \]
+    \end{icloze}
+\end{note}
+
+\begin{note}{f8572b0420af4a389692df35d2d82d33}
+    Какие операции рассматриваются в теореме об основных свойствах пределов?
+
+    \begin{cloze}{1}
+        Сложение; скалярное умножение; скалярное, векторное и смешанное произведения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{2c99b2b2bbb544a7aac21c6ff5e6bab3}
+    Пусть \({ f, g : D \subset \mathbb R \to \mathbb R^3 }\) имеют конечный предел при \({ t \to t_0 }\).
+    Тогда
+    \[
+        \lim_{t \to t_0} f(t) \times g(t) = \begin{icloze}{1}\lim_{t \to t_0} f(t) \times \lim_{t \to t_0} g(t)\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{d60d339b9c574d838147d0a0cc81d60a}
+    Пусть \({ f, g, h : D \subset \mathbb R \to \mathbb R^3 }\) имеют конечные пределы \({ a, b, c }\) при \({ t \to t_0 }\).
+    Тогда
+    \[
+        \lim_{t \to t_0} \langle f(t)\ g(t)\ h(t) \rangle = \begin{icloze}{1}\langle a\ b\ c \rangle\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{9a193e2daa7047199dc9fcd45b7938b8}
+    Какие операции рассматриваются в теореме о правилах дифференцирования?
+
+    \begin{cloze}{1}
+        Сложение; скалярное умножение; скалярное, векторное и смешанное произведения.
+    \end{cloze}
+\end{note}
+
+\begin{note}{6ba9c6c7add94fa586bb883d5467bc72}
+    Пусть \({ f, g : D \subset \mathbb R \to \mathbb R^3 }\) дифференцируемы в точке \({ t_0 }\).
+    Тогда в точке \({ t_0 }\)
+    \[
+        \left( f \times g \right)' = \begin{icloze}{1}f' \times g + f \times g'\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{0416c87d2140470593af7b9c1c564cc8}
+    Пусть \({ f, g, h : D \subset \mathbb R \to \mathbb R^3 }\) дифференцируемы в точке \({ t_0 }\).
+    Тогда в точке \({ t_0 }\)
+    \[
+        \left\langle f\ g\ h \right\rangle' = \begin{icloze}{1}\left\langle f'\ g\ h \right\rangle + \left\langle f\ g'\ h \right\rangle + \left\langle f\ g\ h' \right\rangle\,.\end{icloze}
+    \]
+\end{note}
+
+\begin{note}{5a646a0db3d34eee8579bb83412924a3}
+    Пусть \({ f : [a, b] \to \mathbb R^{n} }\) дифференцируема.
+    При каком условии \({ \left\lVert f \right\rVert }\) является константой?
+
+    \begin{cloze}{1}
+        Тогда и только тогда, когда \({ f \perp f' }\) на \({ [a, b] }\).
+    \end{cloze}
+\end{note}
+
+\begin{note}{e330f7ef26a140bca35fb90f7042b8b6}
+    Пусть \({ f : [a, b] \to \mathbb R^{n} }\) дифференцируема.
+    Что можно сказать, если \({ f' \perp f }\) на \({ [a, b] }\)?
+
+    \begin{cloze}{1}
+        \({ \left\lVert f \right\rVert }\) есть константа.
+    \end{cloze}
+\end{note}
+
+\begin{note}{cf3478aeeeb541e19d61a3e71a6ac6fa}
+    Каков геометрический смысл производной вектор-функции?
+
+    \begin{cloze}{1}
+        Тангенс угла наклона предела секущих.
+    \end{cloze}
+\end{note}
+
+\begin{note}{7962af5eb83846c0895c35f5f5edee1f}
+    Пусть \({ f : \langle A, B \rangle \to \mathbb R^{n} }\) дифференцируема в точке \({ t_0 }\).
+    Тогда \begin{icloze}{2}\({ d_{t_0}f(t - t_0) }\)\end{icloze} так же называют \begin{icloze}{1}главной частью приращения \({ f }\) в точке \({ t_0 }\).\end{icloze}
+\end{note}
+
+\end{document}

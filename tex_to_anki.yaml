@@ -35,6 +35,10 @@ decks:
     name: University::4-th Semester::Differential Equations
     source_files:
       - 4-th_semester/differential_equations/main.tex
+  1649255992:
+    name: University::4-th Semester::Differential Geometry
+    source_files:
+      - 4-th_semester/differential_geometry/main.tex
   2005274619:
     name: University::Lie Algebras
     description: |
